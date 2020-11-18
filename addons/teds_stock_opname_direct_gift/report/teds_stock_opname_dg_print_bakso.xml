@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+<template id="teds_stock_opname_dg_print_bakso">
+    <t t-call="report.html_container">
+        <t t-foreach="docs" t-as="o">
+                <div class="page">
+                    <div class="oe_structure"/>
+                        <div class="row"> 
+                        </div>
+                        <table class="table table-bordered">
+                            <tr>
+                                <td><span align="center"><h3>BERITA ACARA STOCK OPNAME DIRECT GIFT</h3></span></td>
+                            </tr>
+                            <tr>
+                                <th>No Refrensi: <span t-esc="name(data)"/></th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table class="table">
+                                        <tr>
+                                            <th>Branch</th>
+                                            <th>: <span t-esc="branch(data)"/></th>
+                                            <th>Jam Mulai</th>
+                                            <th>: <span t-esc="jam_mulai(data)"/></th>
+                                        </tr>
+                                        <tr>
+                                            <th>Division</th>
+                                            <th>: <span t-esc="division(data)"/></th>
+                                            <th>Jam Selesai</th> 
+                                            <th>: <span t-esc="jam_selesai(data)"/></th>
+                                        </tr>
+                                        <tr>
+                                            <th>Tanggal SO</th>
+                                            <th colspan="3">: <span t-esc="tgl_so(data)"/></th>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table width="100%" style="font-size:12px">
+                                        <tr height="20px">
+                                            <th style="font-size:12">Hasil Stock Opname hari ini sebagai berikut:</th>
+                                        </tr>
+                                        <tr>
+                                            <table class="table table-bordered" style="font-size:10px">
+                                                <tr>
+                                                    <td></td>
+                                                    <th>QTY</th>
+                                                    <th>Amount</th>
+                                                </tr>
+                                                <t t-if="tot_qty(data) != 0">
+                                                    <tr>
+                                                        <th>1. Total Secara Sistem</th>
+                                                        <td><span t-esc="tot_qty(data)"/></td>
+                                                        <td><span t-esc="tot_amount(data)"/></td>
+                                                    </tr>
+                                                </t>
+                                                <t t-if="tot_qty_fisik_total(data) != 0">
+                                                    <tr>
+                                                        <td>Saldo Fisik (hasil hitungan)</td>
+                                                        <td><span t-esc="tot_qty_fisik_total(data)"/></td>
+                                                        <td><span t-esc="tot_amount_total(data)"/></td>
+
+                                                    </tr>
+                                                </t>
+                                                <t t-if="tot_qty_fisik_baik(data) != 0">
+                                                    <tr>
+                                                        <td>Fisik Baik</td>
+                                                        <td><span t-esc="tot_qty_fisik_baik(data)"/></td>
+                                                    </tr>
+                                                </t>
+                                                <t t-if="tot_qty_fisik_rusak(data) != 0">
+                                                    <tr>
+                                                        <td>Fisik Rusak</td>
+                                                        <td><span t-esc="tot_qty_fisik_rusak(data)"/></td>
+                                                    </tr>
+                                                </t>
+                                                <t t-if="tot_selisih_qty(data) != 0">
+                                                    <tr>
+                                                        <td>Selisih</td>
+                                                        <td><span t-esc="tot_selisih_qty(data)"/></td>
+                                                        <td><span t-esc="tot_selisih_amount(data)"/></td>
+                                                    </tr>
+                                                </t>
+                                                <t t-if="tot_saldo_log_book(data) != 0">
+                                                    <tr>
+                                                        <td>Saldo Logbook</td>
+                                                        <td><span t-esc="tot_saldo_log_book(data)"/></td>
+                                                        <td></td>
+                                                    </tr>
+                                                </t>
+                                                <t t-if="tot_dg_other(data) != 0">
+                                                    <tr>
+                                                        <th>2. Total tidak tercatat di sistem (hasil hitungan)</th>
+                                                        <td><span t-esc="tot_dg_other(data)"/></td>
+                                                        <td></td>
+                                                    </tr>
+                                                </t>
+                                                <t t-if="tot_qty_fisik_baik_other(data) != 0">
+                                                    <tr>
+                                                        <td>Fisik Baik</td>
+                                                        <td><span t-esc="tot_qty_fisik_baik_other(data)"/></td>
+                                                        <td></td>
+                                                    </tr>
+                                                </t>
+                                                <t t-if="tot_qty_fisik_rusak_other(data) != 0">
+                                                    <tr>
+                                                        <td>Fisik Rusak</td>
+                                                        <td><span t-esc="tot_qty_fisik_rusak_other(data)"/></td>
+                                                        <td></td>
+                                                    </tr>
+                                                </t>
+                                                <t t-if="tot_dg(data) != 0">
+                                                    <tr>
+                                                        <th>Total Direct Gift</th>
+                                                        <th><span t-esc="tot_dg(data)"/></th>
+                                                        <td></td>
+                                                    </tr>
+                                                </t>
+                                            </table>
+                                        </tr>
+                                        <tr height="5px">
+                                            <th><u>PERNYATAAN</u></th>
+                                        </tr>
+                                        <tr height="10px">
+                                            <td>                                            
+                                                Proses stock opname ini telah berjalan dengan baik dan hasil ini telah dinyatakan sah untuk diakui dan telah didukung oleh dokumen yang seharusnya dilampirkan.
+                                            </td>
+                                        </tr>
+                                        <tr height="20px">
+                                            <td>
+                                                <table class="table table-bordered">
+                                                    <tr>
+                                                        <td><span t-esc="note_bakso(data)"/></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center">
+                                                <table class="table table-bordered" style="font-size:10px">
+                                                    <tr>
+                                                        <td colspan="3" align="center"><b>PERSON IN CHARGE YANG BERTUGAS</b></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center">PIC SO</td>
+                                                        <td colspan="2" align="center">MENGETAHUI</td>
+                                                    </tr>
+                                                    <tr height="80px">
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th><span t-esc="adh(data)"/></th>
+                                                        <th><span t-esc="staff_bbn(data)"/></th>
+                                                        <th><span t-esc="soh(data)"/></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>ADH</td>
+                                                        <td>PDI</td>
+                                                        <td>SOH</td>  
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="3">
+                                                            <span t-esc="data['user']"/>, <span t-esc="data['date']"/>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>  
+                                    </table>
+                                </td>
+                            </tr>                            
+                        </table>
+                    <div class="oe_structure"/>
+                </div>
+        </t>
+    </t>
+</template>
+</data>
+</openerp>

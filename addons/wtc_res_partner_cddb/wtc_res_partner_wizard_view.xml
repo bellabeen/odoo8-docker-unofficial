@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data> 
+    	 <record id="wtc_res_partner_wuth_cddb" model="ir.ui.view">
+            <field name="name">wtc.res.partner.with.cddb</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+				<xpath expr="//page[@string='Accounting']" position="after">
+					<page string="CDDB">
+						<field name="cddb_line" context="{'customer_id': active_id}">
+							<tree string="CDDB">
+								<field name="cddb_code"></field>
+								<field name="name"/>
+								<field name="no_ktp"/>
+								<field name="no_hp"/>
+								<field name="agama_id"/>
+								<field name="pendidikan_id"/>
+								<field name="pekerjaan_id"/>
+								<field name="pengeluaran_id"/>
+							</tree>
+						</field>
+					</page>						
+		 			<page string="Kartu Keluarga">
+			 			<field name="kartukeluarga_ids">
+							<tree string="Kartu Keluarga" editable="bottom">
+								<field name="name"/>
+								<field name="nik"/>
+								<field name="tgl_lahir"/>
+								<field name="hub"/>						
+							</tree>
+						</field>	
+		 			</page>
+				</xpath>
+            </field>
+        </record>
+	</data>
+</openerp>
+															

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    
+        <record id="remark_so" model="wtc.remark">
+            <field name="model_id" ref="dealer_sale_order.model_dealer_sale_order"/> 
+            <field name="remark">PENJUALAN SEPEDA MOTOR HONDA</field>
+        </record>
+    
+        <record id="remark_wo" model="wtc.remark">
+            <field name="model_id" ref="wtc_work_order.model_wtc_work_order"/> 
+            <field name="remark">PENJUALAN SPAREPART ATAU SERVICE</field>
+        </record>
+        
+        <record id="remark_or" model="wtc.remark">
+            <field name="model_id" ref="account_voucher.model_account_voucher"/> 
+            <field name="remark">PENDAPATAN ATAS PENJUALAN LAIN LAIN</field>
+        </record>   
+        
+        <record id="remark_pg" model="wtc.remark">
+            <field name="model_id" ref="wtc_faktur_pajak.model_wtc_faktur_pajak_gabungan"/> 
+            <field name="remark">FAKTUR PAJAK GABUNGAN</field>
+        </record>             
+    </data>
+</openerp>
+            

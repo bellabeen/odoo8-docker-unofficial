@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_wtc_other_payable_all,wtc_other_payable all,model_wtc_other_payable,,1,1,1,1

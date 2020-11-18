@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+
+<!-- Check Available -->
+        <record id="group_button_on_process_pengiriman_bpkb" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">On Process Pengiriman BPKB</field>
+            <field name="implied_ids" eval="[(4, ref('group_teds_pengiriman_bpkb_read'))]"/>
+        </record>
+        
+        <record id="group_button_process_pengiriman_bpkb" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Process Pengiriman BPKB</field>
+            <field name="implied_ids" eval="[(4, ref('group_teds_pengiriman_bpkb_read'))]"/>
+        </record>        
+        
+        <record id="group_button_received_pengiriman_bpkb" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Received Pengiriman BPKB</field>
+            <field name="implied_ids" eval="[(4, ref('group_teds_pengiriman_bpkb_read'))]"/>
+        </record>
+
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+            <field name="implied_ids" eval="[
+                (4,ref('group_button_on_process_pengiriman_bpkb')),
+                (4,ref('group_button_process_pengiriman_bpkb')),
+                (4,ref('group_button_received_pengiriman_bpkb')),
+                
+            ]"/> 
+            </record> 
+    </data>
+</openerp>

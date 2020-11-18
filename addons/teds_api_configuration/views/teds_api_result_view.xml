@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+		<record id="view_teds_api_result_tree" model="ir.ui.view">
+            <field name="name">teds.api.result.tree</field>
+            <field name="model">teds.api.result</field>
+            <field name="arch" type="xml">
+                <tree string="Api Result" editable="bottom">
+                    <field name="name"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="teds_api_result_action" model="ir.actions.act_window">
+            <field name="name">Api Result</field>
+            <field name="res_model">teds.api.result</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        <menuitem id='teds_api_result_menuitem' parent='wtc_dealer_menu.ma_branches_menu' action='teds_api_result_action' sequence='102'/>
+
+    </data>
+</openerp>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+        
+            
+           
+         <report  
+            id="report_picking_sj" string="picking sj" 
+            model="stock.picking" 
+            name="rml.wtc.stock.picking.sj" 
+            rml="wtc_stock/report/wtc_stock_picking_sj_report.rml" 
+            auto="False" menu="False"/>
+            
+            
+          <report  
+            id="report_picking_list" string="packing list" 
+            model="stock.picking" 
+            name="rml.wtc.stock.packing" 
+            rml="wtc_stock/report/wtc_stock_packing_picking_list_report.rml" 
+            auto="False" menu="False"/>
+            
+            
+        <!--  <report  
+            id="report_internal_transfer" string="Internal Transfer" 
+            model="stock.picking" 
+            name="rml.stock.picking.internal.transfer" 
+            rml="wtc_stock/report/wtc_internal_transfer_report.rml" 
+            auto="False" menu="False"/> -->
+            
+         <report 
+            string="Internal Transfer" 
+            id="report_internal_transfer"
+            model="stock.picking" 
+            report_type="qweb-pdf"
+            name="wtc_stock.wtc_internal_transfer_report" 
+            file="wtc_stock.wtc_internal_transfer_report" 
+            menu="False"/>
+            
+        
+        
+	</data>
+</openerp>

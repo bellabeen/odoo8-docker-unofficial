@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+	   <record id="view_teds_api_button_work_order_form" model="ir.ui.view">
+            <field name="name">teds.api.button.work.order.form</field>
+            <field name="model">teds.api.button</field>
+            <field name="inherit_id" ref="teds_api_configuration.view_teds_api_button_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/header[@name='header_button']" position="inside">
+                    <button name="api_teds_work_order_limit" type="object" string="Auto Work Order"/>
+                    <button name="api_teds_work_order_part_sales" type="object" string="Auto Work Order SLS"/>
+                    <button name="api_teds_work_order_error" type="object" string="Auto Work Order Error"/>
+                    <button name="api_teds_work_order_bundling" type="object" string="Auto Work Order Bundling"/>
+                </xpath>
+            </field>
+        </record>
+    	
+        <record id="view_api_wtc_work_order_form" model="ir.ui.view">
+            <field name="name">api.wtc.work.order.form</field>
+            <field name="model">wtc.work.order</field>
+            <field name="inherit_id" ref="wtc_work_order.view_wtc_work_order_form"/>
+            <field name="arch" type="xml">
+                <field name="alasan_ke_ahass" position="after">
+                    <field name="nomor_sa" readonly="1"/>
+                </field>
+            </field>
+        </record>
+
+        <record id='view_api_wtc_work_order_search' model='ir.ui.view'>
+            <field name='name'>api.wtc.work.order.search</field>
+            <field name='model'>wtc.work.order</field>
+            <field name="inherit_id" ref="wtc_work_order.view_wtc_work_order_search"/>
+            <field name="arch" type="xml">
+                <field name="lot_id" position="after">
+                    <field name="nomor_sa" string="No Service Advisor DMS"/>
+                </field>
+            </field>
+        </record>
+    </data>
+</openerp>

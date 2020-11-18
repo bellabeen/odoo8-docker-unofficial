@@ -1,0 +1,8 @@
+import wtc_bank_transfer
+import wtc_branch_config
+import wtc_approval_bank_transfer
+import wtc_bank_statement
+import wtc_cancel_bank_transfer
+import wtc_account_journal
+import wtc_account_voucher_new
+import report

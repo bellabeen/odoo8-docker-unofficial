@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="teds_nrfs_report_wizard_view_form" model="ir.ui.view">
+            <field name="name">teds.nrfs.report.wizard.form</field>
+            <field name="model">teds.nrfs.report.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Laporan NRFS">
+                    <group col="4" colspan="4" attrs="{'invisible':[('state_x','=','get')]}">
+                        <field name="state" required="1" />
+                        <label for="start_date" string="Tgl NRFS"/>
+                        <div>
+                            <field name="start_date" class="oe_inline" style="margin-right: 3px;" />&#160;s/d&#160;
+                            <field name="end_date" class="oe_inline" />
+                        </div>
+                    </group>
+                    <field invisible="1" name="state_x"/>                
+                    <newline/>    
+                    <group col="4" fill="0" attrs="{'invisible':[('state_x','!=','get')]}">
+                        <separator colspan="4" string="Excel Report Generated. Click link below to download ..." attrs="{'invisible':[('state_x','=','choose')]}"/>
+                        <field name="name" invisible="1" width="100" attrs="{'invisible':[('state_x','=','choose')]}"/>
+                        <field name="data_x" nolabel="1" readonly="0" width="100" filename="name" attrs="{'invisible':[('state_x','=','choose')]}"/>
+                    </group>
+                    <footer>
+                        <button name="export_to_xls" attrs="{'invisible':[('state_x','=','get')]}" string="Export XLS" type="object" class="oe_highlight"/>
+                        <button name="export_to_csv" attrs="{'invisible':[('state_x','=','get')]}" string="Export CSV" type="object" class="oe_highlight"/>
+                        <button string="Cancel" attrs="{'invisible':[('state_x','=','get')]}" class="oe_link" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="teds_nrfs_report_wizard_action" model="ir.actions.act_window">
+            <field name="name">Laporan NRFS</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">teds.nrfs.report.wizard</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="teds_nrfs_report_wizard_view_form"/>
+            <field name="target">new</field>
+        </record>
+        <menuitem id="teds_nrfs_report_wizard_menu" 
+            parent="wtc_dealer_menu.showroom_report_menu"
+            sequence="105"
+            action="teds_nrfs_report_wizard_action"
+        /> 
+    </data>
+</openerp>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data> 
+
+		<record id="master_serial_number" model="ir.ui.view">
+		            <field name="name">master.serial.number</field>
+		            <field name="model">stock.production.lot</field>
+		            <field name="inherit_id" ref="stock.view_production_lot_form"/>
+		            <field name="arch" type="xml">
+				    <field name="product_id" position="before" >
+				    	<field name="chassis_no" readonly="1"/>
+				    	<field name="chassis_code" readonly="1"/>
+				     	<field name="branch_id" readonly="1"/>
+				     	<field name="division" readonly="1"/>
+				     	<field name="sale_order_id" readonly="1"/>
+				     	<field name="customer_invoice_id" readonly="1"/>
+				   	</field>
+		  				<xpath expr='//group[@name="main_group"]' position='inside'>
+		     				<group col="2">			     				
+								<field name="tahun" on_change="tahun_change(tahun)" readonly="1"/>
+								<field name="state"  readonly="1"/>
+								<field name="state_stnk"  readonly="1"/>
+								<field name="reserved" readonly="1"/>
+								<field name="receipt_id" readonly="1"/>
+								<field name="location_id" readonly="1"/>
+								<field name="customer_reserved" readonly="1"/>
+								<field name="ready_for_sale" readonly="1"/>
+								<field name="picking_id" readonly="1"/>
+								<field name="in_date" readonly="1"/>
+		     				</group>
+		     						<group  string="Purchase" col="4" colspan="4">
+		     						<field name="purchase_order_id"  readonly="1"/>
+		     						<field name="no_sipb"  readonly="1"/>
+		     						<field name="no_ship_list"  readonly="1"/>
+		     						<field name="no_faktur"  readonly="1"/>
+		     						<field name="supplier_id" readonly="1"/>
+			            			<field name="po_date" readonly="1"/>
+			            			<field name="tgl_ship_list" readonly="1"/>
+			            			<field name="expedisi_id"  readonly="1"/>
+									<field name="receive_date" readonly="1"/>
+									<field name="freight_cost" readonly="1"/>
+				            </group>
+				            <group  string="SALES MD" col="4" colspan="4">
+		     						<field name="dealer_id"  readonly="1"/>
+		     						<field name="tgl_cetak_faktur" invisible="1" readonly="1"/>
+			            			<field name="sales_md_date"  readonly="1"/>
+			            			<field name="tgl_mohon_faktur" invisible="1" readonly="1"/>	
+									<field name="do_md_date"  readonly="1"/>				            		
+				            </group>
+				            <group  string="SALES DEALER" col="4" colspan="4">
+		     						<field name="invoice_date" readonly="1"/>
+			            			<field name="do_date" readonly="1"/>	
+									<field name="customer_id"  readonly="1"/>
+									<field name="finco_id"  readonly="1"/>
+									<field name="customer_stnk" readonly="1"/>
+									<field name="jenis_penjualan" readonly="1"/>
+									<field name="dp" readonly="1"/>
+									<field name="tenor" readonly="1"/>
+									<field name="cicilan" readonly="1"/>
+							</group>
+							<group  string="STNK DAN BPKB" col="4" colspan="4">
+									<field name="biro_jasa_id" readonly="1"/>
+									<field name="tgl_faktur" readonly="1"/>
+									<field name="faktur_stnk" readonly="1"/>			
+				            		<field name="tgl_terima" readonly="1"/>
+									<field name="tgl_notice" readonly="1"/>
+									<field name="no_notice" readonly="1"/>	
+									<field name="tgl_stnk" readonly="1"/>		
+				            		<field name="no_stnk" readonly="1"/>
+									<field name="tgl_bpkb" readonly="1"/>
+									<field name="no_bpkb" readonly="1"/>
+			            			<field name="no_polisi" readonly="1"/>	
+																			
+				            </group>
+							<group  string="WORKSHOP" col="4" colspan="4">
+		     						<field name="kode_buku" readonly="1"/>
+			            			<field name="nama_buku" readonly="1"/>
+			            	</group>
+		     			</xpath>
+		                
+		            </field>
+		        </record>
+	<record id="view_lot_filter" model="ir.ui.view">
+            <field name="name">stock.production.lot.list.select</field>
+            <field name="model">stock.production.lot</field>
+            <field name="inherit_id" ref="stock.search_product_lot_filter"/>
+            <field name="arch" type="xml">
+            	<field name='name' position='replace'/>
+            	<field name="product_id" position='after'>
+            		<field name='name' string='No Engine'/>
+                    <field name="customer_stnk"/> 
+                    <field name="no_polisi"/>              		           		
+            	</field>
+            </field>
+        </record> 
+	</data>
+</openerp>

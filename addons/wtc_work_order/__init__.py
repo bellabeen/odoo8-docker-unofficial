@@ -1,0 +1,16 @@
+import wtc_work_order
+#import wtc_customer_invoice
+import wtc_kpb_expired
+#import wtc_picking_slip
+import wtc_start_stop_wo
+import wtc_collecting_kpb
+import wtc_production_stock_lot
+import wtc_approval_wo
+import wtc_kpb_engine_type
+import report
+import wtc_harga_jasa
+import wtc_workshop_category
+import wtc_branch_config
+import wizard
+import wtc_faktur_pajak_wo
+import teds_work_order

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id='view_teds_api_configuration_tree' model='ir.ui.view'>
+            <field name='name'>teds.api.configuration.tree</field>
+            <field name='model'>teds.api.configuration</field>
+            <field name="arch" type="xml">
+            	<tree string="Api Configuration">
+					<field name="branch_id"/>
+            	</tree>
+            </field>
+        </record>
+
+        <record id='view_teds_api_configuration_form' model='ir.ui.view'>
+            <field name='name'>teds.api.configuration.form</field>
+            <field name='model'>teds.api.configuration</field>
+            <field name="arch" type="xml">
+            	<form string="Api Configuration">
+                    <header>
+                        <button name="action_generate_token" type="object" string="Generate Token" attrs="{'invisible':[('is_super_user','=',False)]}"/>
+                    </header>
+            		<sheet>
+            			<group>
+            				<group>
+                                <field name="branch_id" options="{'no_open':True,'no_create':True}" attrs="{'required':[('is_super_user','=',False)]}"/>
+    	        				<field name="database"/>
+                                <field name="username"/>
+                                <field name="password" password="True"/>
+        					</group>
+                            <group>
+                                <field name="host"/>
+                                <field name="port"/>
+                                <field name="is_super_user"/>
+                            </group>
+            			</group>
+                        <notebook attrs="{'invisible':[('is_super_user','=',False)]}">
+                            <page string="Tokens">
+                                <field name="token_ids" readonly="1">
+                                    <tree editable="top">
+                                        <field name="token"/>
+                                        <field name="expired_on"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+            		</sheet>
+            	</form>
+            </field>
+        </record>
+
+        <record id="teds_api_configuration_action" model="ir.actions.act_window">
+            <field name="name">Api Configuration</field>
+            <field name="res_model">teds.api.configuration</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        <menuitem id='teds_api_configuration_menuitem' parent='wtc_dealer_menu.ma_branches_menu' action='teds_api_configuration_action' sequence='100'/>
+    </data>
+</openerp>

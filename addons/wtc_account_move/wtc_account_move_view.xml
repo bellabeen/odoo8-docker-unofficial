@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="wtc_account_move_form_view">
+		    <field name="name">wtc.account.move.form</field>
+		    <field name="model">account.move</field>
+		    <field name="type">form</field>
+		    <field name="inherit_id" ref="account.view_move_form"/>
+		    <field name="arch" type="xml">
+		    	<xpath expr="/form/notebook/page/field/tree/field[@name='invoice']" position="before">
+                    <field name="branch_id"/>
+                    <field name="division"/>
+                </xpath>
+            	<xpath expr="//page[@string='Journal Items']" position="after">
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+									<field name="confirm_uid" readonly="1"></field>
+									<field name="confirm_date" readonly="1"></field>									
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+									<field name="cancel_uid" readonly="1"></field>
+									<field name="cancel_date" readonly="1"></field>									
+								</group>
+							</group>
+						</page>
+				</xpath>                
+		    </field>
+		</record>
+	</data>
+</openerp>

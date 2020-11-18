@@ -1,0 +1,9 @@
+import wtc_report_stock_tree
+import wtc_report_stock_unit
+import wtc_report_stock_type_warna
+import wtc_report_stock_location
+import wtc_report_stock_accesories
+import wtc_report_stock_sparepart
+import wtc_report_stock_sparepart_reserved
+import wtc_report_stock_sparepart_csv
+import wtc_report_stock_direct_gift

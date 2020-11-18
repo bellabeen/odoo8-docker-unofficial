@@ -1,0 +1,12 @@
+import wtc_stock_picking_bastk_report
+import wtc_stock_picking_sj_report
+# import wtc_stock_report
+# import wtc_stock_report_xls
+# import wtc_stock_sparepart_report
+# import wtc_stock_sparepart_report_xls
+import wtc_stock_packing_picking_list_report
+import wtc_stock_bukti_penerimaan_report
+import wtc_stock_surat_jalan_report
+import wtc_print_serial_number
+import wtc_internal_transfer_report
+import wtc_cetak_surat_jalan

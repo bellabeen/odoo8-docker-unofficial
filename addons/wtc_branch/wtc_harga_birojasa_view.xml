@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+	
+		<record model="ir.ui.view" id="wtc_harga_birojasa_form_view">
+		    <field name="name">wtc.harga.birojasa.form.view</field>
+		    <field name="model">wtc.branch</field>
+		    <field name="inherit_id" ref="wtc_branch_form_view" />
+		    <field name="arch" type="xml">
+		        <data>
+		        	<xpath expr="//group" position="after">
+		        		<notebook>
+			                <page string="Biro Jasa">
+			                	<field name="harga_birojasa_ids">
+			                		<tree string="Biro Jasa" editable="bottom">
+			                			<field name="birojasa_id" options="{'no_create': True,'no_open': True}" />
+			                			<field name="default_birojasa" />
+			                			<field name="harga_bbn_id"/>
+			                		</tree>
+			                	</field>
+			                </page>
+							<page string="Audit Trail">
+								<group>
+									<group>
+										<field name="create_uid" readonly="1"></field>
+										<field name="create_date" readonly="1"></field>
+									</group>
+									<group>							
+										<field name="write_uid" readonly="1"></field>
+										<field name="write_date" readonly="1"></field>
+									</group>
+								</group>
+							</page>				                
+		                </notebook>
+		            </xpath>          
+		        </data>
+		    </field>
+		</record>
+	</data>
+</openerp>

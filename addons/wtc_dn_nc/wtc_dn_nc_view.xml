@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data> 
+    	
+		<record model="ir.ui.view" id="wtc_payment_request_tree_view2">
+		    <field name="name">wtc.dn.nc.tree</field>
+		    <field name="model">wtc.dn.nc</field>
+		    <field name="arch" type="xml">
+		        <tree string="List Payment Request">
+		        	<field name="number"/>
+					<field name="date"/>		        	
+		            <field name="branch_id"/>
+					<field name="division"/>		            
+		            <field name="partner_id"/>	
+		            <field name="transaksi"/>
+		            <field name="jenis_transaksi_id"/>
+		            <field name="state"/>	            
+		        </tree>
+		     </field>
+		</record>
+		    	
+        <record model="ir.ui.view" id="wtc_payment_request_form_view2">
+            <field name="name">wtc.dn.nc.form.view</field>
+            <field name="model">wtc.dn.nc</field>
+            <field name="arch" type="xml">
+                <form string="Payment Request">
+                <header>
+            		<button name='proforma_voucher' groups='wtc_dn_nc.group_wtc_dn_nc_payment_request_confirm' class="oe_highlight" states='approved' type='object' string='Confirm'></button>            	
+					<button name="request_approval" states="draft" string="RFA" type='object' class="oe_highlight"/>	
+					<button name="approval_approve" states="waiting_for_approval" string="Approve" type='object' class="oe_highlight"/>
+					<button name="%(wtc_approval.wtc_approval_reject_wizard_action)d" states="waiting_for_approval" string="Reject" 
+					type="action" context="{'model_name':'wtc.dn.nc','update_value':{'approval_state':'r','state':'draft'}}"/>
+					<button name="%(wtc_approval.wtc_approval_cancel_wizard_action)d" states="waiting_for_approval" 
+					string="Cancel Approval" type="action" context="{'model_name':'wtc.dn.nc','update_value':{'approval_state':'b','state':'draft'}}"/>
+                    <button name="%(wtc_approval.wtc_cancel_approval_wizard)d"  states="approved" string="Cancel Approval" type="action"  groups="wtc_account_voucher.group_wtc_payment_request_cancel_after_approval" context="{'model_name':'wtc.dn.nc','update_value':{'approval_state':'b','state':'draft'}}"/>
+
+					<button name="action_print_payment_request" attrs="{'invisible': [('state','in',('draft','cancel'))]}" type="object" string="Print" class="oe_highlight" icon="gtk-print"/>                    
+                    <field name="state" widget="statusbar" statusbar_visible="draft,waiting_for_approval,approve,posted" statusbar_colors='{"proforma":"blue"}'/>
+                </header>
+                <sheet string="Payment Request">
+                    <h1><label for="number" string="Payment Request"/> <field name="number" class="oe_inline" readonly="1"/></h1>
+                    <div class="oe_right oe_button_box" name="buttons" attrs="{'invisible':[('create_date','=',False)]}">
+                        <button class="oe_inline oe_stat_button" type="object" name="action_view_history" attrs="{'invisible': [('transaksi','!=','rutin')]}" icon="fa-list">
+                        <field string="History" name="jml_history" widget="statinfo"/>
+                        </button>     
+                    </div>
+                    <group>
+                        <group>
+                            <field name="branch_id" options="{'no_open':True,'no_create':True}" on_change='branch_onchange_payment_request(branch_id)' required="True" attrs="{'readonly': ['|',('state','!=','draft'),('number','!=',False)]}"/>
+                        </group>
+                        <group>
+                            <field name="division" required="True" attrs="{'readonly': ['|',('state','!=','draft'),('number','!=',False)]}" />
+                        </group>
+                    </group>                     
+                    <group>
+                        <group>
+					    	<field name="transaksi" on_change='transaksi_change(transaksi)' required="True" attrs="{'readonly': [('state','!=','draft')]}"/>
+					    	<field name="jenis_transaksi_id" options="{'no_create': True,'no_open':True}" attrs="{'invisible': [('transaksi','!=','rutin')],'required': [('transaksi','=','rutin')]}"/>                            
+                            <field name='partner_type' on_change='onchange_partner_type(partner_type)' context="{'partner_type':partner_type}" required='1' attrs="{'readonly': [('state','!=','draft')]}"/>
+                            <field name="partner_id" required='1' domain="['|',('supplier','!=',False),('ahass','!=',False)]" string="Supplier" context="{'default_customer': 0, 'search_default_supplier': 1, 'default_supplier': 1}" options="{'no_open':True,'no_create':True}"/>
+                            <field name="account_id" invisible='1' domain="[('type', 'in', ['liquidity', 'payable'])]"/>
+                            <field name="name" colspan="2" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="company_id" widget="selection" groups="base.group_multi_company"/>
+					    	<field name="no_document" attrs="{'readonly': [('state','!=','draft')]}"/>
+                            	                            
+                        </group>
+                        <group>
+                            <field name="date" string="Bill Date" readonly='1'/>
+                            <field name="date_due" required='1'/>
+							<field name="approval_state"/>                            
+                            <field name="journal_id" domain="[('type','in',['purchase','purchase_refund'])]"
+                                widget="selection" invisible='1'/>                    
+					    	<field name="tgl_document"/>                            
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Bill Information">
+                            <field name="line_dr_ids" attrs="{'invisible':[('transaksi','=','rutin')]}">
+                                <tree string="Expense Lines" editable="bottom">
+                                    <field name='branch_id' options="{'no_create': True,'no_open':True}"/>
+                                	<field name="account_id" domain="[('active','!=',False),('type','!=','view')]" required='True' />
+                                    <field name="name" required="True" on_change="name_payment_request_onchange(name,parent.branch_id,parent.division)"/>
+                                    <field name="amount"/>
+                                    <field name="tax_id" widget="many2many_tags"/>
+									<field name="amount_subtotal"/>	           
+                                    <field name="is_rutin" invisible="1"/>                         
+                                </tree>
+                            </field>
+                            <field name="line_dr_rutin_ids" attrs="{'invisible':[('transaksi','!=','rutin')]}">
+                                <tree editable="bottom">
+                                    <field name='branch_id' options="{'no_create': True,'no_open':True}"/>
+                                    <field name="type_detail_id" options="{'no_create': True,'no_open':True}" domain="[('type_id','=',parent.jenis_transaksi_id)]" attrs="{'required':['|',('type_detail_id','!=',False),('name','=',False)]}"/>
+                                    <field name="note" attrs="{'required':[('type_detail_id','!=',False)]}"/>
+                                    <field name="name" invisible="1" required="1"/>
+                                    <field name="name_show" readonly="1"/>
+                                    <field name="account_id" options="{'no_open':True,'no_create':True}" invisible="1" required="1"/>
+                                    <field name="account_show_id" options="{'no_open':True,'no_create':True}" readonly="1"/>
+                                    <field name="amount"/>
+                                    <field name="tax_id" widget="many2many_tags"/>
+                                    <field name="amount_subtotal"/>
+                                    <field name="is_rutin" invisible="1"/>                                     
+                                </tree>
+                            </field>
+                            <group>
+                                <field name="narration" placeholder="Internal Notes" nolabel="1"/>
+                                <group class="oe_subtotal_footer oe_right">
+                                    <field name='untaxed_amount'/>
+                                    <field name="tax_amount"/>
+                                    <div class="oe_subtotal_footer_separator">
+                                        <label for="amount"/>
+                                        <button type="object" class="oe_link oe_edit_only"
+                                            name="compute_tax" string="(update)"
+                                            attrs="{'invisible': [('state','!=','draft')]}"/>
+                                                                       
+			          				 </div>
+                                    <field name="amount" nolabel="1" class="oe_subtotal_footer_separator"/>
+                                </group>
+                            </group>
+                        </page>
+						<!-- <page string="History Pembayaran" col="1">
+							<group col="4">
+							<field colspan="4" name="payments_request_ids" nolabel="1" widget="one2many_list">
+								<tree string="" editable="false" edit="false" create="false" delete="false">
+										<field name="account_id" domain="[('user_type.report_type','=','expense'), ('type','!=','view')]"/>
+	                                    <field name="name"/>
+	                                    <field name="amount"/>                                    
+								</tree>
+	                       </field>
+							</group>
+						</page>      -->
+						<page string="Faktur Pajak" attrs="{'invisible': [('tax_amount','&lt;=',0)]}">
+							<group>
+								<field name="pajak_gabungan"/>
+								<field name="no_faktur_pajak" on_change="faktur_pajak_change(no_faktur_pajak)" 
+								attrs="{'required': [('pajak_gabungan','=',False),('tax_amount','&gt;',0)]}"/>
+								<field name="tgl_faktur_pajak" attrs="{'required': [('pajak_gabungan','=',False),('tax_amount','&gt;',0)]}"/>
+							</group>
+						</page>							                   
+                        <page string="Journal Items" attrs="{'invisible': [('state','!=','posted')]}">
+                            <group col="4">
+                                <field name="period_id"/>
+                            </group>
+                            <field name="move_ids" readonly="1">
+                                <tree string="Journal Items">
+                                	<field name='branch_id'/>
+                                	<field name='division'/>
+                                    <field name="move_id"/>
+                                    <field name="ref"/>
+                                    <field name="date"/>
+                                    <field name="partner_id"/>
+                                    <field name="account_id"/>
+                                    <field name="name"/>
+                                    <field name="debit"/>
+                                    <field name="credit"/>
+                                    <field name="state"/>
+                                    <field name="reconcile_id"/>
+                                    <field name="amount_currency"/>
+                                </tree>
+                            </field>
+                        </page>                        
+						<page string="Approval">
+							<field name="approval_ids">
+								<tree string="Approval" editable="bottom" create="false" edit="false" delete="false" >
+									<field name="group_id" />
+									<field name="branch_id"/>
+									<field name="division"/>
+									<field name="limit"/>
+									<field name="sts"/>
+									<field name="reason"/>
+									<field name="pelaksana_id"/>
+									<field name="tanggal"/>
+								</tree>
+							</field>
+						</page>	
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+									<field name="confirm_uid" readonly="1"></field>
+									<field name="confirm_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+									<field name="cancel_uid" readonly="1"></field>
+									<field name="cancel_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>			                       
+                    </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+ 		<record id="view_wtc_payment_request_filter2" model="ir.ui.view">
+            <field name="name">payment.request.search.view</field>
+            <field name="model">wtc.dn.nc</field>
+            <field name="arch" type="xml">
+                <search string="Search Payment Request">
+                    <field name="number" string="Voucher"/>
+                    <field name="branch_id"/> 
+                    <field name="partner_id" string="Supplier"/> 
+					<filter string="Draft" name="state_draft" domain="[('state','=','draft')]" />
+					<filter string="Waiting for Approval" name="state_wfa" domain="[('state','=','waiting_for_approval')]" />
+					<filter string="Approved" name="state_approved" domain="[('state','=','approved')]" />
+					<filter string="Posted" name="state_posted" domain="[('state','=','posted')]" />                      	
+                    <group expand="0" string="Group By">
+                        <filter string="Branch" icon="terp-partner" domain="[]" context="{'group_by':'branch_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>  
+                  
+		<record model="ir.actions.act_window" id="wtc_payment_request_action2">
+		    <field name="name">Payment Request</field>
+		    <field name="res_model">wtc.dn.nc</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		    <field name="search_view_id" ref="view_wtc_payment_request_filter2"/>
+                    <field name="domain">[('type','=','NC')]</field>
+            <field name="context">{'type':'NC',"search_default_state_draft":1,"search_default_state_wfa":1}</field>
+		</record>
+		<menuitem id="wtc_payment_request_submenu" parent="wtc_dealer_menu.backoffice_nontrade_menu"  action="wtc_payment_request_action2" sequence="30"/> 				  
+	</data>
+</openerp>
+			        
+        

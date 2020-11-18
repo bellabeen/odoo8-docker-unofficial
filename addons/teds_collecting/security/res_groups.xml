@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+		<record id="teds_collecting_group_read" model="res.groups">
+			<field name="category_id" ref="wtc_branch.tdm_role" />
+			<field name="name">TEDS Collecting Read</field>
+			<field name="menu_access" eval="[(4, ref('teds_collecting_menu_action'))]" />
+		</record>
+
+		<record id="teds_collecting_access_read" model="ir.model.access">
+			<field name="model_id" ref="model_teds_collecting" />
+			<field name="name">teds_collecting read</field>
+			<field name="group_id" ref="teds_collecting_group_read" />
+			<field name="perm_read">1</field>
+		</record>
+
+		<record id="teds_collecting_group_update" model="res.groups">
+			<field name="category_id" ref="wtc_branch.tdm_role" />
+			<field name="name">TEDS Collecting Update</field>
+			<field name="implied_ids" eval="[(4, ref('teds_collecting_group_read'))]" />
+		</record>
+
+		<record id="teds_collecting_access_update" model="ir.model.access">
+			<field name="model_id" ref="model_teds_collecting" />
+			<field name="name">teds_collecting update</field>
+			<field name="group_id" ref="teds_collecting_group_update" />
+			<field name="perm_create">1</field>
+			<field name="perm_write">1</field>
+		</record>
+
+		<record id="teds_collecting_group_delete" model="res.groups">
+			<field name="category_id" ref="wtc_branch.tdm_role" />
+			<field name="name">TEDS Collecting Delete</field>
+			<field name="implied_ids" eval="[(4, ref('teds_collecting_group_read'))]" />
+		</record>
+
+		<record id="teds_collecing_access_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_collecting" />
+			<field name="name">teds_collecing delete</field>
+			<field name="group_id" ref="teds_collecting_group_delete" />
+			<field name="perm_unlink">1</field>
+		</record>
+
+		<record id="teds_collecting_cancel_group_read" model="res.groups">
+			<field name="category_id" ref="wtc_branch.tdm_role" />
+			<field name="name">TEDS Collecting Cancel Read</field>
+			<field name="menu_access" eval="[(4, ref('teds_collecting_cancel_menu_action'))]" />
+		</record>
+
+		<record id="teds_collecting_cancel_access_read" model="ir.model.access">
+			<field name="model_id" ref="model_teds_collecting_cancel" />
+			<field name="name">teds_collecting_cancel read</field>
+			<field name="group_id" ref="teds_collecting_cancel_group_read" />
+			<field name="perm_read">1</field>
+		</record>
+
+		<record id="teds_collecting_cancel_group_update" model="res.groups">
+			<field name="category_id" ref="wtc_branch.tdm_role" />
+			<field name="name">TEDS Collecting Cancel Update</field>
+			<field name="implied_ids" eval="[(4, ref('teds_collecting_cancel_group_read'))]" />
+		</record>
+
+		<record id="teds_collecting_cancel_access_update" model="ir.model.access">
+			<field name="model_id" ref="model_teds_collecting_cancel" />
+			<field name="name">teds_collecting_cancel update</field>
+			<field name="group_id" ref="teds_collecting_cancel_group_update" />
+			<field name="perm_create">1</field>
+			<field name="perm_write">1</field>
+		</record>
+
+		<record id="teds_collecting_cancel_group_delete" model="res.groups">
+			<field name="category_id" ref="wtc_branch.tdm_role" />
+			<field name="name">TEDS Collecting Cancel Delete</field>
+			<field name="implied_ids" eval="[(4, ref('teds_collecting_cancel_group_read'))]" />
+		</record>
+
+		<record id="teds_collecing_cancel_access_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_collecting_cancel" />
+			<field name="name">teds_collecing_cancel delete</field>
+			<field name="group_id" ref="teds_collecting_cancel_group_delete" />
+			<field name="perm_unlink">1</field>
+		</record>
+
+		<record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[
+				(4,ref('teds_collecting_group_read')),
+				(4,ref('teds_collecting_group_update')),
+				(4,ref('teds_collecting_group_delete')),
+				(4,ref('teds_collecting_cancel_group_read')),
+				(4,ref('teds_collecting_cancel_group_update')),
+				(4,ref('teds_collecting_cancel_group_delete')),
+				]" />
+		</record>
+	</data>
+</openerp>
+

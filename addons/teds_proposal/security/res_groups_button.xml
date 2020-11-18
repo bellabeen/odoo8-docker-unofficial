@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    <!-- RFA -->
+        <record id="group_button_rfa_proposal" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">RFA Proposal</field>
+            <field name="implied_ids" eval="[(4, ref('group_teds_proposal_read'))]"/>
+        </record>
+        <record id="access_button_rfa_proposal_read" model="ir.model.access">
+            <field name="model_id" ref="model_teds_proposal"/>
+            <field name="name">button_rfa_proposal read</field>
+            <field name="group_id" ref="group_button_rfa_proposal"/>
+            <field name="perm_write">1</field>
+        </record>
+        <record id="access_button_rfa_approval_line_proposal_update" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">button_rfa_approval_line_proposal update</field>
+            <field name="group_id" ref="group_button_rfa_proposal"/>
+            <field name="perm_read">1</field>
+            <field name="perm_create">1</field>
+        </record> 
+    <!-- Close Proposal -->
+        <record id="group_button_close_proposal" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Close Proposal</field>
+            <field name="implied_ids" eval="[(4, ref('group_teds_proposal_read'))]"/>
+        </record>
+        <record id="access_button_close_proposal_read" model="ir.model.access">
+            <field name="model_id" ref="model_teds_proposal"/>
+            <field name="name">button_close_proposal read</field>
+            <field name="group_id" ref="group_button_close_proposal"/>
+            <field name="perm_write">1</field>
+        </record>
+    <!-- Budget Approval -->
+        <record id="group_button_approval_budget_proposal" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Approve Budget Proposal</field>
+            <field name="implied_ids" eval="[(4, ref('group_teds_proposal_read'))]"/>
+        </record>
+        <record id="access_button_approval_budget_proposal_read" model="ir.model.access">
+            <field name="model_id" ref="model_teds_proposal"/>
+            <field name="name">button_approve_budget_proposal read</field>
+            <field name="group_id" ref="group_button_approval_budget_proposal"/>
+            <field name="perm_write">1</field>
+        </record>
+        <record id="access_button_approve_approval_line_proposal_update" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">button_approve_approval_line_proposal update</field>
+            <field name="group_id" ref="group_button_approval_budget_proposal"/>
+            <field name="perm_read">1</field>
+            <field name="perm_write">1</field>
+        </record> 
+    <!-- Print Proposal -->
+        <record id="group_button_print_proposal" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Print Proposal</field>
+            <field name="implied_ids" eval="[(4, ref('group_teds_proposal_read'))]"/>
+        </record>
+        <record id="access_button_print_proposal_read" model="ir.model.access">
+            <field name="model_id" ref="model_teds_proposal"/>
+            <field name="name">button_print_proposal read</field>
+            <field name="group_id" ref="group_button_print_proposal"/>
+            <field name="perm_read">1</field>
+        </record>
+    <!-- Include in admin -->
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+            <field name="implied_ids" eval="[
+                (4,ref('group_button_rfa_proposal')),
+                (4,ref('group_button_approval_budget_proposal')),
+                (4,ref('group_button_close_proposal')),
+                (4,ref('group_button_print_proposal')),
+            ]"/> 
+        </record> 
+    </data>
+</openerp>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="wtc_mutation_request_branch_rule" model="ir.rule">
+            <field name="name">wtc.mutation.request branch rule</field>
+            <field name="model_id" ref="model_wtc_mutation_request"/>
+            <field name="domain_force">[('branch_id','in',[b.id for b in user.area_id.branch_ids])]</field>
+        </record>
+        <record id="wtc_stock_distribution_branch_rule" model="ir.rule">
+            <field name="name">wtc.stock.distribution branch rule</field>
+            <field name="model_id" ref="model_wtc_stock_distribution"/>
+            <field name="domain_force">[('branch_id','in',[b.id for b in user.area_id.branch_ids])]</field>
+        </record>
+        <record id="wtc_mutation_order_branch_rule" model="ir.rule">
+            <field name="name">wtc.mutation.order branch rule</field>
+            <field name="model_id" ref="model_wtc_mutation_order"/>
+            <field name="domain_force">[('branch_id','in',[b.id for b in user.area_id.branch_ids])]</field>
+        </record>
+    </data>
+</openerp>

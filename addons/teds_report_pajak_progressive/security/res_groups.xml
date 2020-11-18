@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+	<!-- view_teds_mekanik_mitra_absensi_wizard -->	
+		<record id="group_teds_report_pajak_progressive_wizard" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Laporan Pajak Progressive Wizard</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_report_pajak_progressive_wizard_menuitem'))]"/>  
+		</record>
+
+	<!-- SYS ADMIN -->
+	 	<record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[
+				(4,ref('group_teds_report_pajak_progressive_wizard')),
+			]"/> 
+		</record>
+	</data>
+</openerp>

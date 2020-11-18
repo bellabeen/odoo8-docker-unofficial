@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>		
+		<record id="view_teds_work_order_import_wizard" model="ir.ui.view" >
+		    <field name="name">teds.work.order.import.wizard</field>
+		    <field name="model">teds.work.order.import.wizard</field>
+		    <field name="arch" type="xml">
+		    	<form>
+		    		<sheet>
+		    			<group>
+		    				<field name="file" required="1"/>
+		    			</group>
+		    			<footer>
+	     	                <button name="action_import" string="Execute" type="object" class="oe_highlight" />
+	   						<button string="Cancel" class="oe_link" special="cancel" />
+						</footer>
+		    		</sheet>
+		    	</form>
+		    </field>
+		</record>
+	</data>
+</openerp>

@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_teds_cash_count,teds_cash_count,model_teds_cash_count,,1,0,0,0
+access_teds_cash_count_detail,teds_cash_count_detail,model_teds_cash_count_detail,,1,0,0,0
+access_teds_cash_count_other,teds_cash_count_other,model_teds_cash_count_other,,1,0,0,0

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">  	
+    	
+<!-- Report SO Undelivered -->	
+	
+        <record id="group_report_so_undelivered" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Report SO MD Undelivered</field> 
+            <field name="menu_access" eval="[(4, ref('menu_report_so_undelivered')),(4, ref('menu_report_so_undelivered_wo'))]"/>  
+        </record> 
+	                      
+        <record id="access_report_so_undelivered" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_report_so_undelivered"/>
+            <field name="name">report_so_md_undelivered read</field> 
+            <field name="group_id" ref="group_report_so_undelivered"/>  
+            <field name="perm_read">1</field>
+            <field name="perm_create">1</field>
+            <field name="perm_write">1</field>
+            <field name="perm_unlink">1</field> 
+        </record> 
+
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[(4,ref('group_report_so_undelivered'))
+											]"/> 
+		</record>                                                                                            
+    </data>
+</openerp>

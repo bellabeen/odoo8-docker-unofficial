@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+	    <record id="view_teds_listing_cetak_kwitansi_pembawayaran_wizard" model="ir.ui.view">
+			<field name="name">teds.listing.cetak.kwitansi.pembayaran.wizard</field>
+			<field name="model">teds.listing.cetak.kwitansi</field>
+			<field name="priority">10</field>
+			<field name="arch" type="xml">
+				<form>
+					<sheet>
+						<group>
+							<field name="no_bukti_pembayaran" required="1"/>
+							<field name="tgl_pembayaran" required="1"/>
+						</group>
+						<footer>
+     	                    <button name="action_submit_pembayaran" string="Submit" type="object" class="oe_highlight"/>
+     	                    <button string="Cancel" class="oe_link" special="cancel" />
+    	                </footer>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		
+		<record id="view_teds_listing_cetak_kwitansi_faktur_wizard" model="ir.ui.view">
+			<field name="name">teds.listing.cetak.kwitansi.faktur.wizard</field>
+			<field name="model">teds.listing.cetak.kwitansi</field>
+			<field name="priority">5</field>
+			<field name="arch" type="xml">
+				<form>
+					<sheet>
+						<group>
+							<field name="no_faktur_pajak" required="1"/>
+						</group>
+						<footer>
+     	                    <button name="action_submit_faktur" string="Update" type="object" class="oe_highlight"/>
+     	                    <button string="Cancel" class="oe_link" special="cancel" />
+    	                </footer>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		
+		<record id="view_teds_listing_cetak_kwitansi_tree" model="ir.ui.view">
+			<field name="name">teds.listing.cetak.kwitansi.tree</field>
+			<field name="model">teds.listing.cetak.kwitansi</field>
+			<field name="priority">1</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="branch_id"/>
+					<field name="name"/>
+					<field name="date"/>
+					<field name="no_refrence"/>
+					<field name="nama_pembayar"/>
+					<field name="total"/>
+					<field name="state"/>
+				</tree>
+			</field>
+		</record>
+		
+		<record id="view_teds_listing_cetak_kwitansi_form" model="ir.ui.view">
+			<field name="name">teds.listing.cetak.kwitansi.form</field>
+			<field name="model">teds.listing.cetak.kwitansi</field>
+			<field name="priority">1</field>			
+			<field name="arch" type="xml">
+				<form>
+					<header>
+						<button name="action_post" string="Post" type="object" states="draft" groups="teds_cetak_kwitansi.group_teds_cetak_kwitansi_post_button"/>
+						<button name="action_print" string="Print" type="object" states="posted"/>
+						<button name="action_update_faktur_pajak" string="Faktur Pajak" type="object" attrs="{'invisible':['|',('state','=','draft'),('no_faktur_pajak','!=',False)]}" groups="teds_cetak_kwitansi.group_teds_cetak_kwitansi_faktur_pajak_button"/>
+						<button name="action_to_revisi" string="Revisi" type="object" states="posted" groups="teds_cetak_kwitansi.group_teds_revisi_cetak_listing_kwitansi_button"/>
+						<button name="action_pembayaran_kwitansi" string="Pembayaran" type="object" states="posted" groups="teds_cetak_kwitansi.group_teds_pembayaran_cetak_listing_kwitansi_button"/>
+						<field name="state" widget="statusbar" statusbar_visible="draft,posted"/>
+					</header>
+					<sheet>
+						<div class="oe_title">                      
+	                        <label string="No Kwitansi"/>
+	                        <h1>
+	                            <field name="name" readonly="1"/>
+	                        </h1>
+  						</div>
+						<group>
+							<group>
+								<field name="branch_id" options="{'no_open':True,'no_create':True}" required="1" attrs="{'readonly':[('name','!=',False)]}"/>
+								<field name="nama_pembayar" required="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+								<field name="total" required="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+								<field name="redaksi" required="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+								<field name="journal_id" options="{'no_open':True,'no_create':True}" required="1" attrs="{'readonly':[('state','!=','draft')]}" domain="[('id','=',0)]" widget="selection"/>
+								<field name="nama_rekening" readonly="1"/>
+								<field name="no_bukti_pembayaran" readonly="1" attrs="{'invisible':[('no_bukti_pembayaran','=',False)]}"/> 
+								<field name="tgl_pembayaran" readonly="1" attrs="{'invisible':[('tgl_pembayaran','=',False)]}"/>
+							</group>
+							<group>
+								<field name="date" readonly="1"/>
+								<field name="jenis_transaksi" attrs="{'required':[('date','>=','2020-09-29')],'readonly':[('state','!=','draft')]}"/>
+								<field name="no_refrence" attrs="{'readonly':[('state','!=','draft')]}"/>
+								<field name="pimpinan_cabang" required="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+								<field name="is_ppn" readonly="1"/>
+								<field name="no_faktur_pajak" attrs="{'required':[('is_ppn','!=',False)],'invisible':[('is_ppn','=',False)],'readonly':[('state','!=','draft')]}"/>
+								<field name="cetakan_ke" readonly="1" groups="teds_cetak_kwitansi.group_teds_allow_cetak_listing_kwitansi"/>
+							</group>
+						</group>
+						<notebook >		              
+							<page string="Audit Trail">
+								<group>
+									<group>
+										<field name="create_uid" readonly="1"/>
+										<field name="create_date" readonly="1"/>
+										<field name="confirm_uid" readonly="1"/>
+										<field name="confirm_date" readonly="1"/>
+									</group>
+									<group>							
+										<field name="write_uid" readonly="1"/>
+										<field name="write_date" readonly="1"/>
+									</group>
+								</group>
+							</page>		                 
+			            </notebook>	
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<record id="action_teds_listing_cetak_kwitansi" model="ir.actions.act_window">
+	        <field name="name">Listing Cetak Kwitansi</field>
+	        <field name="type">ir.actions.act_window</field>
+	        <field name="res_model">teds.listing.cetak.kwitansi</field>
+	        <field name="view_type">form</field>
+	        <field name="view_mode">tree,form</field>
+	    </record>
+
+    	<menuitem id="teds_listing_cetak_kwitansi_menuitem" parent="wtc_dealer_menu.backoffice_bankandcash_menu" sequence="90" action="action_teds_listing_cetak_kwitansi"/>
+		
+				<!-- Print Bakso -->
+		<report 
+            string="Print Cetak Kwitansi" 
+            id="action_teds_lisiting_cetak_kwitansi_print" 
+            model="teds.listing.cetak.kwitansi" 
+            report_type="qweb-pdf"
+            name="teds_cetak_kwitansi.teds_lisiting_cetak_kwitansi_print" 
+            file="teds_cetak_kwitansi.teds_lisiting_cetak_kwitansi_print" 
+            menu="False"/>
+
+	</data>
+</openerp>

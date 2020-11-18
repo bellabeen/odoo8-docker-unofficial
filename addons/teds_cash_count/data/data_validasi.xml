@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">    
+        <record id="cash_count_validasi_1" model="teds.cash.count.validasi">
+            <field name="name">Sudah disetor ke bank</field>
+            <field name="type">cash</field>
+            <field name="note">Slip setor terlampir</field>
+        </record>
+        <record id="cash_count_validasi_2" model="teds.cash.count.validasi">
+            <field name="name">Belum disetor ke bank</field>
+            <field name="type">cash</field>
+        </record>
+        <record id="cash_count_validasi_3" model="teds.cash.count.validasi">
+            <field name="name">Nota belum ada</field>
+            <field name="type">petty_cash</field>
+            <field name="note">Belum Reimburse</field>
+        </record>
+        <record id="cash_count_validasi_4" model="teds.cash.count.validasi">
+            <field name="name">Klaim NC</field>
+            <field name="type">petty_cash</field>
+        </record>
+        <record id="cash_count_validasi_5" model="teds.cash.count.validasi">
+            <field name="name">Klaim Lainnya</field>
+            <field name="type">petty_cash</field>
+        </record>
+    </data>
+</openerp>    

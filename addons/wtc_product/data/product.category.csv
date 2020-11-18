@@ -1,0 +1,75 @@
+id,name,parent_id:id,type
+categ_unit,Unit,,view
+categ_sparepart,Sparepart,,view
+categ_umum,Umum,,view
+categ_extras,Extras,,view
+categ_service,Service,,view
+categ_unit_cub,CUB,categ_unit,view
+categ_unit_at,AT,categ_unit,view
+categ_unit_sport,SPORT,categ_unit,view
+categ_sparepart_accec,ACCEC,categ_sparepart,normal
+categ_sparepart_ahm,AHM,categ_sparepart,normal
+categ_sparepart_batt,BATT,categ_sparepart,normal
+categ_sparepart_bldrv,BLDRV,categ_sparepart,normal
+categ_sparepart_brake,BRAKE,categ_sparepart,normal
+categ_sparepart_brng,BRNG,categ_sparepart,normal
+categ_sparepart_brng2,BRNG2,categ_sparepart,normal
+categ_sparepart_brng3,BRNG3,categ_sparepart,normal
+categ_sparepart_cable,CABLE,categ_sparepart,normal
+categ_sparepart_cckit,CCKIT,categ_sparepart,normal
+categ_sparepart_cdkgp,CDKGP,categ_sparepart,normal
+categ_sparepart_cdkit,CDKIT,categ_sparepart,normal
+categ_sparepart_chain,CHAIN,categ_sparepart,normal
+categ_sparepart_elect,ELECT,categ_sparepart,normal
+categ_sparepart_gmo,GMO,categ_sparepart,normal
+categ_sparepart_gst,GST,categ_sparepart,normal
+categ_sparepart_hplas,HPLAS,categ_sparepart,normal
+categ_sparepart_impor,IMPOR,categ_sparepart,normal
+categ_sparepart_muf,MUF,categ_sparepart,normal
+categ_sparepart_oil,OIL,categ_sparepart,normal
+categ_sparepart_pacc,PACC,categ_sparepart,normal
+categ_sparepart_plast,PLAST,categ_sparepart,normal
+categ_sparepart_rbr,RBR,categ_sparepart,normal
+categ_sparepart_rimwh,RIMWH,categ_sparepart,normal
+categ_sparepart_rskit,RSKIT,categ_sparepart,normal
+categ_sparepart_sd,SD,categ_sparepart,normal
+categ_sparepart_shock,SHOCK,categ_sparepart,normal
+categ_sparepart_splug,SPLUG,categ_sparepart,normal
+categ_sparepart_splur,SPLUR,categ_sparepart,normal
+categ_sparepart_str,STR,categ_sparepart,normal
+categ_sparepart_tbhgp,TBHGP,categ_sparepart,normal
+categ_sparepart_tbvl,TBVL,categ_sparepart,normal
+categ_sparepart_tire,TIRE,categ_sparepart,normal
+categ_sparepart_tire1,TIRE1,categ_sparepart,normal
+categ_sparepart_tl,TL,categ_sparepart,normal
+categ_umum_umum,UMUM,categ_umum,normal
+categ_umum_direct_gift,DIRECT GIFT,categ_umum,normal
+categ_service_cla,CLA,categ_service,normal
+categ_service_hr,HR,categ_service,normal
+categ_service_kpb,KPB,categ_service,view
+categ_service_lr,LR,categ_service,normal
+categ_service_qs,QS,categ_service,view
+categ_extras_tools,Tools,categ_extras,normal
+categ_extras_spion,Spion,categ_extras,normal
+categ_extras_buku_service,Buku Service,categ_extras,normal
+categ_extras_buku_manual,Buku Manual,categ_extras,normal
+categ_extras_battery,Battery,categ_extras,normal
+categ_extras_helm,Helm,categ_extras,normal
+categ_unit_cub_low_end,CUB LOW END,categ_unit_cub,normal
+categ_unit_cub_mid_end,CUB MID END,categ_unit_cub,normal
+categ_unit_cub_high_end,CUB HIGH END,categ_unit_cub,normal
+categ_unit_at_low_end,AT LOW END,categ_unit_at,normal
+categ_unit_at_mid_end,AT MID END,categ_unit_at,normal
+categ_unit_at_high_end,AT HIGH END,categ_unit_at,normal
+categ_unit_at_cbu,AT CBU,categ_unit_at,normal
+categ_unit_sport_low_end,SPORT LOW END,categ_unit_sport,normal
+categ_unit_sport_mid_end,SPORT MID END,categ_unit_sport,normal
+categ_unit_sport_high_end,SPORT HIGH END,categ_unit_sport,normal
+categ_unit_sport_cbu,SPORT CBU,categ_unit_sport,normal
+categ_service_kpb_1,KPB1,categ_service_kpb,normal
+categ_service_kpb_2,KPB2,categ_service_kpb,normal
+categ_service_kpb_3,KPB3,categ_service_kpb,normal
+categ_service_kpb_4,KPB4,categ_service_kpb,normal
+categ_service_qs_cs,CS,categ_service_qs,normal
+categ_service_qs_ls,LS,categ_service_qs,normal
+categ_service_qs_or+,OR+,categ_service_qs,normal

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+    <record id="view_wtc_report_all_faktur_pajak" model="ir.ui.view">
+      <field name="name">Report All Faktur Pajak</field>
+      <field name="model">wtc.report.faktur.pajak</field>
+      <field name="type">form</field>
+      <field name="arch" type="xml">
+         <form string="Laporan All Faktur Pajak">
+          <group attrs="{'invisible':[('state_x','=','get')]}">
+            <field name="option" required="1"/>
+      <field name="pajak_gabungan" attrs="{'invisible': [('option','not in',('faktur_pajak','faktur_pajak_others'))]}"></field>       
+            <field name="thn_penggunaan" attrs="{'invisible': [('option','in',('faktur_pajak_gabungan','regenerate_faktur_pajak'))]}"/>
+            <field name="state_faktur_pajak" attrs="{'invisible':[('option','!=','faktur_pajak')]}"/>
+            <field name="state_generate_faktur_pajak" attrs="{'invisible':[('option','!=','generate_faktur_pajak')]}"/>
+            <field name="state_other_faktur_pajak" attrs="{'invisible':[('option','!=','faktur_pajak_others')]}"/>      
+            <field name="state_regenerate_faktur_pajak" attrs="{'invisible':[('option','!=','regenerate_faktur_pajak')]}"/>   
+            <field name="division" attrs="{'invisible': [('option','!=','faktur_pajak_gabungan')]}"/>
+            <field name="state_gabungan_faktur_pajak" attrs="{'invisible': [('option','!=','faktur_pajak_gabungan')]}"/>
+      <label for="start_date" string="Date"/>
+        <div>
+          <field name="start_date" class="oe_inline"/> - <field name="end_date" class="oe_inline"/>
+        </div>                
+          </group>
+          
+          <notebook colspan="5" attrs="{'invisible':[('state_x','=','get')]}">
+            <page string="Branchs" attrs="{'invisible': [('option','!=','faktur_pajak_gabungan')]}">
+               <field name="branch_ids" colspan="4" nolabel="1"/>
+            </page>
+            <page string="Form" attrs="{'invisible': [('option','not in',('faktur_pajak','regenerate_faktur_pajak'))]}">
+              <field name="model_ids" colspan="4" nolabel="1"/>
+            </page>    
+            <page string="Partners" attrs="{'invisible': [('option','in',('generate_faktur_pajak','regenerate_faktur_pajak'))]}">
+              <field name="partner_ids" colspan="4" nolabel="1"/>
+            </page>
+        </notebook>
+        <newline/>  
+
+        <field invisible="1" name="state_x"/> 
+        <group col="4" fill="0" attrs="{'invisible':[('state_x','!=','get')]}">
+            <separator colspan="4" string="Excel Report Generated. Click link below to download ..." attrs="{'invisible':[('state_x','=','choose')]}"/>
+            <field name="name" invisible="1" width="100" attrs="{'invisible':[('state_x','=','choose')]}"/>
+            <field name="data_x" nolabel="1" readonly="0" width="100" filename="name" attrs="{'invisible':[('state_x','=','choose')]}"/>
+        </group>
+
+          <footer>
+            <button name="excel_report" string="Export" type="object" class="oe_highlight" attrs="{'invisible':[('state_x','=','get')]}"/>
+            <label string="or  . " attrs="{'invisible':[('state_x','=','get')]}" />
+            <button string="Cancel" attrs="{'invisible':[('state_x','=','get')]}" class="oe_link" special="cancel" />
+          </footer>
+        </form>
+      </field>
+    </record>
+
+
+
+    <record id="action_report_faktur_pajak_wizard" model="ir.actions.act_window">
+      <field name="name">All Faktur Pajak</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">wtc.report.faktur.pajak</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">form</field>
+      <field name="view_id" ref="view_wtc_report_all_faktur_pajak"/>
+      <field name="target">new</field>
+    </record>
+   <menuitem id="menu_report_faktur_pajak"  parent="wtc_dealer_menu.backoffice_report_menu" sequence="4"  action="action_report_faktur_pajak_wizard"/>  
+
+  </data>
+</openerp>

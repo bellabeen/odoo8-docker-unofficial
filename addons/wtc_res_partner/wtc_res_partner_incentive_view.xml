@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="wtc_res_partner_incentive_form_view">
+    		<field name="name">wtc.res.partner.incentive.form</field>            
+    		<field name="model">res.partner</field>            
+    		<field name="inherit_id" ref="base.view_partner_form"/>
+    		<field name="arch" type="xml">
+       			<xpath expr="//page[@name='sales_purchases']" position="after">
+	                <page string="Incentive Finco" attrs="{'invisible': [('finance_company','!=', True)]}">
+	                	<field name="incentive_finco_ids" attrs="{'invisible': [('finance_company','!=', True)]}" >
+	                		<tree string="Incentive Finco"  >	                			
+	                			 <field name="name" />
+	                			 <field name="start_date" />
+	                			 <field name="end_date" />  
+	                			 <field name="active" />
+	                		</tree>
+	                		<form string="Incentive Finco">
+	                			<group col="4">
+	                				<field name="name" />
+	                				<field name="active" />
+	                				<field name="start_date" />
+	                			 	<field name="end_date" />
+	                			</group>
+
+				                <field name="incentive_finco_detail_ids" colspan="4" nolabel="1">
+				                    <tree string="Details" editable="top">
+				                        <field name="branch_id" options="{'no_create': True,'no_open': True}"/>
+				                        <field name="incentive"/>
+				                    </tree>
+				                </field>
+	                		</form>
+	                	</field>
+	                </page>
+	            </xpath>
+       		</field>
+       	</record>	
+	</data>
+</openerp>

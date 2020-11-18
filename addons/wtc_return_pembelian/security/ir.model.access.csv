@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_wtc_return_pembelian_all,wtc_return_pembelian_all,model_wtc_return_pembelian,,1,1,1,1
+access_wtc_return_pembelian_line_all,wtc_wtc_return_pembelian_line_all,model_wtc_return_pembelian_line,,1,1,1,1
+access_wtc_return_penjualan_all,wtc_return_penjualan_all,model_wtc_return_penjualan,,1,1,1,1
+access_wtc_return_penjualan_line_all,wtc_wtc_return_penjualan_line_all,model_wtc_return_penjualan_line,,1,1,1,1
+access_wtc_return_penjualan_all,wtc_return_penjualan all,model_wtc_return_penjualan,,1,1,1,1
+access_wtc_return_penjualan_line_all,wtc_return_penjualan_line all,model_wtc_return_penjualan_line,,1,1,1,1

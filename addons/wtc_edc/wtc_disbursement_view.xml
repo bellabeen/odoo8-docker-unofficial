@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data> 
+    	
+		<record model="ir.ui.view" id="disbursement_tree_view">
+		    <field name="name">wtc.disbursement.tree.view</field>
+		    <field name="model">wtc.disbursement</field>
+		    <field name="arch" type="xml">
+		        <tree string="List disbursement">
+		        	<field name="name"/>
+		            <field name="branch_id"/>
+					<field name="date"/>	
+					<field name="journal_id"/>
+					<field name="amount"/>
+					<field name="diff_amount"/>            		            			            	
+		            <field name="state"/>
+		            	            
+		        </tree>
+		     </field>
+		</record>
+		    	
+		<record model="ir.ui.view" id="disbursement_form_view">
+		    <field name="name">wtc.disbursement.form.view</field>
+		    <field name="model">wtc.disbursement</field>
+		    <field name="arch" type="xml">		       	        	
+				<form>
+					<header>
+						<button name="post_disbursement" groups='wtc_edc.group_wtc_disbursement_post' states="draft" string="Post" type="object" class="oe_highlight"/>
+						<!--button name="cancel_disbursement" groups='wtc_edc.group_wtc_disbursement_edc_cancel' states="draft,posted" string="Cancel" type="object" confirm="Apa anda yakin ingin membatalkan transaksi ini ?"/-->
+						<field name="state" widget="statusbar" statusbar_visible="draft,posted" statusbar_colors='{"draft":"red","posted":"blue"}'/>	
+	           		</header>
+					<sheet>  
+	        			<div class="oe_title">
+			        		<h2>
+				                <label string="Disbursement EDC"/>    			
+				 				<field name="name" class="oe_inline"/>
+			 				</h2>
+	 					</div>			        							        	 
+						<group col="2" colspan="2">   
+							<group>
+								<field name="branch_id" options="{'no_create': True,'no_open': True}" attrs="{'readonly': ['|',('state','!=','draft'),('name','!=',False)]}" />
+							</group>  
+							<group>
+								<field name="division" attrs="{'readonly': [('state','!=','draft')]}" />						
+							</group>
+							<group>
+							    <field name="journal_id" options="{'no_create': True,'no_open': True}" required="1" attrs="{'readonly': [('state','!=','draft')]}" />								    																									
+							    <field name="edc_journal_id" options="{'no_create': True,'no_open': True}" required="1" attrs="{'readonly': [('state','!=','draft')]}" />								    																									
+							    <field name="amount" required="1" attrs="{'readonly': [('state','!=','draft')]}"/>
+																	
+							</group> 
+							<group>
+								<field name="memo" attrs="{'readonly': ['|',('state','!=','draft'),('name','!=',False)]}" />
+								<field name="date" readonly="1"/>
+							</group>        														
+						</group>
+	                    <notebook colspan="5">
+	                        <page string="Disbursement Detail">
+		                        <field colspan="4" name="disbursement_line" nolabel="1" widget="one2many_list" attrs="{'readonly': [('state','!=','draft')]}">
+		                            <tree string="" editable="top">
+		                            	<field name="disbursement_id" invisible='1'/>
+		                            	<field name="move_line_id" required='1' string='Journal'/>
+						                <field name="ref"/>
+						                <field name="partner_id"/>
+						                <field name="account_id"/>
+						                <field name="debit"/>
+						                <field name="name" invisible="1"/>
+						             </tree>
+		                        </field>
+	                            
+								<group class="oe_subtotal_footer oe_right">
+									<field name="diff_amount" widget='monetary'/>
+								</group>
+                             
+								<div class="oe_clear"/>
+								<field name="description" class="oe_inline" placeholder="Note..." attrs="{'readonly': [('state','!=','draft')]}"/> 									                    			                    								    														
+																	
+	                        </page>
+	                        <page string="Journal Items" attrs="{'invisible': [('state','=','draft')]}">
+	                            <group col="4">
+	                                <field name="period_id"/>
+	                            </group>
+	                            <field name="move_ids" readonly="1">
+	                               <tree string="Journal Items">
+	                                   <field name="move_id"/>
+	                                   <field name="ref"/>
+	                                   <field name="date"/>
+	                                   <field name="statement_id"/>
+	                                   <field name="partner_id"/>
+	                                   <field name="account_id"/>
+	                                   <field name="name"/>
+	                                   <field name="debit"/>
+	                                   <field name="credit"/>
+	                                   <field name="state"/>
+	                                   <field name="reconcile_id"/>
+	                               </tree>
+	                            </field>
+	                        </page>
+							<page string="Audit Trail">
+								<group>
+									<group>
+										<field name="create_uid" readonly="1"></field>
+										<field name="create_date" readonly="1"></field>
+										<field name="confirm_uid" readonly="1"></field>
+										<field name="confirm_date" readonly="1"></field>
+									</group>
+									<group>							
+										<field name="write_uid" readonly="1"></field>
+										<field name="write_date" readonly="1"></field>
+										<field name="cancel_uid" readonly="1"></field>
+										<field name="cancel_date" readonly="1"></field>
+									</group>
+								</group>
+							</page>	                                                
+	                    </notebook>							   		                																
+					</sheet>
+				</form>	
+		    </field>
+		</record>
+		
+ 		<record id="view_disbursement" model="ir.ui.view">
+            <field name="name">disbursement.list.select</field>
+            <field name="model">wtc.disbursement</field>
+            <field name="arch" type="xml">
+                <search string="Search Disbursement">
+                    <field name="name" string="Reference"/>
+                    <field name="branch_id"/>
+                    <field name="division"/>
+					<field name="journal_id"/> 
+					<field name="edc_journal_id"/>                    
+                    <group expand="0" string="Group By">
+                        <filter string="Branch" icon="terp-partner" domain="[]" context="{'group_by':'branch_id'}"/>
+                        <filter string="Date" icon="terp-go-month" domain="[]" context="{'group_by':'date'}"/>                    
+                    </group>
+                </search>
+            </field>
+        </record>		
+		<record model="ir.actions.act_window" id="disbursement_action">
+		    <field name="name">Disbursement EDC</field>
+		    <field name="res_model">wtc.disbursement</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		    <field name="search_view_id" ref="view_disbursement"/>
+		</record>
+					
+		<menuitem id="disbursement_submenu" name="Disbursement EDC" parent="wtc_dealer_menu.backoffice_bankandcash_menu"  action="disbursement_action" sequence="4"/> 		
+		
+	</data>
+</openerp>
+															

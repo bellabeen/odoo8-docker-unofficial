@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">  	   
+        
+        <record id="access_approval_portal_wtc_journal_memorial_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_journal_memorial"/>
+            <field name="name">approval_portal_model_wtc_journal_memorial read</field> 
+            <field name="group_id" ref="wtc_approval.group_approval_portal_read"/>  
+            <field name="perm_read">1</field> 
+        </record>
+         
+<!-- Journal Memorial Read -->	
+	
+        <record id="group_journal_memorial_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Journal Memorial Read</field> 
+            <field name="menu_access" eval="[(4, ref('journalmemorial_submenu'))]"/>  
+        </record> 
+        
+        <record id="access_journal_memorial_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_journal_memorial"/>
+            <field name="name">journal_memorial read</field> 
+            <field name="group_id" ref="group_journal_memorial_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+                
+        <record id="access_journal_memorial_line_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_journal_memorial_line"/>
+            <field name="name">journal_memorial_line read</field> 
+            <field name="group_id" ref="group_journal_memorial_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+             
+        <record id="access_journal_memorial_journal_read" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_journal"/>
+            <field name="name">journal_memorial_journal read</field> 
+            <field name="group_id" ref="group_journal_memorial_read"/>  
+            <field name="perm_read">1</field> 
+        </record>
+        
+        <record id="access_journal_memorial_account_read" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_account"/>
+            <field name="name">journal_memorial_account read</field> 
+            <field name="group_id" ref="group_journal_memorial_read"/>  
+            <field name="perm_read">1</field> 
+        </record>
+                
+        <record id="access_journal_memorial_period_read" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_period"/>
+            <field name="name">journal_memorial_period read</field> 
+            <field name="group_id" ref="group_journal_memorial_read"/>  
+            <field name="perm_read">1</field> 
+        </record>
+                
+        <record id="access_journal_memorial_approval_line_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">journal_memorial_approval_line read</field> 
+            <field name="group_id" ref="group_journal_memorial_read"/>  
+            <field name="perm_read">1</field> 
+        </record>
+                
+<!-- Journal Memorial update -->	
+	
+        <record id="group_journal_memorial_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Journal Memorial Update</field> 
+            <field name="menu_access" eval="[(4, ref('journalmemorial_submenu'))]"/>  
+            <field name="implied_ids" eval="[(4, ref('group_journal_memorial_read'))]"/> 
+        </record>
+                
+       <record id="access_journal_memorial_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_journal_memorial"/>
+            <field name="name">journal_memorial update</field> 
+            <field name="group_id" ref="group_journal_memorial_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+        
+        <record id="access_journal_memorial_line_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_journal_memorial_line"/>
+            <field name="name">journal_memorial_line update</field> 
+            <field name="group_id" ref="group_journal_memorial_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>                   
+
+        <record id="access_journal_memorial_approval_line_update" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">journal_memorial_approval_line update</field> 
+            <field name="group_id" ref="group_journal_memorial_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record> 
+        
+<!-- Journal Memorial Delete -->        
+	
+        <record id="group_journal_memorial_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Journal Memorial Delete</field> 
+            <field name="menu_access" eval="[(4, ref('journalmemorial_submenu'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_journal_memorial_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_journal_memorial_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_journal_memorial"/>
+            <field name="name">journal_memorial delete</field> 
+            <field name="group_id" ref="group_journal_memorial_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>      
+        
+        <record id="access_journal_memorial_line_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_journal_memorial_line"/>
+            <field name="name">journal_memorial_line delete</field> 
+            <field name="group_id" ref="group_journal_memorial_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>            
+                
+<!-- Import Journal Memorial -->	
+	
+        <record id="group_import_jm_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Import Journal Memorial Read</field> 
+            <field name="menu_access" eval="[(4, ref('menu_import_jm'))]"/>  
+        </record> 
+        
+        <record id="access_import_jm_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_eksport_import.model_eksport_import"/>
+            <field name="name">import_jm read</field> 
+            <field name="group_id" ref="group_import_jm_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+      
+        <record id="access_import_jm_model_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_journal_memorial.model_wtc_journal_memorial"/>
+            <field name="name">import_jm_model read</field> 
+            <field name="group_id" ref="group_import_jm_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+                                        
+        <record id="group_import_jm_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Import Journal Memorial Update</field> 
+            <field name="menu_access" eval="[(4, ref('menu_import_jm'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_import_jm_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_import_jm_update" model="ir.model.access">
+            <field name="model_id" ref="wtc_eksport_import.model_eksport_import"/>
+            <field name="name">import_jm update</field> 
+            <field name="group_id" ref="group_import_jm_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+                                                  
+    </data>
+</openerp>

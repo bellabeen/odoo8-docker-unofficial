@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data> 
+    	
+		<record model="ir.ui.view" id="netoff_tree_view">
+		    <field name="name">wtc.net.off.tree.view</field>
+		    <field name="model">wtc.net.off</field>
+		    <field name="arch" type="xml">
+		        <tree string="List Net Off">
+		        	<field name="name"/>
+		            <field name="branch_id"/>
+					<field name="partner_id"/>	
+					<field name="account_id"/>            		            			            	
+		            <field name="date"/>
+		            <field name='state'/>            
+		        </tree>
+		     </field>
+		</record>
+		    	
+		<record model="ir.ui.view" id="netoff_form_view">
+		    <field name="name">wtc.net.off.form.view</field>
+		    <field name="model">wtc.net.off</field>
+		    <field name="arch" type="xml">		       	        	
+				<form>
+					<header>
+						<field name="state" widget="statusbar" statusbar_visible="draft,confirm"/>	
+	           		</header>
+					<sheet>  
+	        			<div class="oe_title">
+			        		<h2>
+				                <label string="Journal Net Off"/>    			
+				 				<field name="name" class="oe_inline" readonly='1'/>
+			 				</h2>
+	 					</div>			        							        	 
+						<group col="2" colspan="2">   
+							<group>
+								<field name="branch_id" required="1" options="{'no_create': True,'no_open': True}" attrs="{'readonly': ['|',('state','!=','draft'),('name','!=',False)]}" />
+							    <field name="partner_id" options="{'no_create': True,'no_open': True}" attrs="{'readonly': [('state','!=','draft')]}"/>								    																									
+								<field name="description" attrs="{'readonly': [('state','!=','draft')]}" />
+							</group> 
+							<group>
+								<field name="date"/>																								
+								<field name="account_id" required="1" options="{'no_create': True,'no_open': True}" attrs="{'readonly': [('state','!=','draft')]}"/>
+								<field name="reconcile_id" attrs="{'invisible': [('state','!=','post')],'readonly': [('state','!=','draft')]}" options="{'no_create': True}"/>
+							</group>        														
+						</group>
+	                    <notebook colspan="5">
+	                        <page string="Journal Detail">
+		                        <field colspan="4" name="net_off_line" nolabel="1" widget="one2many_list" attrs="{'readonly': [('state','!=','draft')]}">
+		                            <tree string="" editable="top">
+		                            	<field name='move_line_id' required="1" options="{'no_create': True,'no_open': True}"/>
+						                <field name="account_id" options="{'no_create': True,'no_open': True}"/>
+						                <field name="branch_id" options="{'no_create': True,'no_open': True}"/>
+										<field name="partner_id" options="{'no_create': True,'no_open': True}"/>						                
+						                <field name="debit" sum="Total debit"/>
+										<field name="credit" sum="Total Credit"/>	
+						                <field name="reconcile_partial_id" />		
+						             </tree>
+		                        </field>
+	                            
+								<group class="oe_subtotal_footer oe_right">
+									<field name="total_debit" invisible='1' widget='monetary'/>
+									<field name="total_credit" invisible='1' widget='monetary'/>
+									<field name="total_residual" readonly='1' widget='monetary'/>
+								</group>
+								<div class="oe_clear"/>                             
+	                        </page>
+							<page string="Audit Trail">
+								<group>
+									<group>
+										<field name="create_uid" readonly="1"></field>
+										<field name="create_date" readonly="1"></field>
+										<field name="confirm_uid" readonly="1"></field>
+										<field name="confirm_date" readonly="1"></field>										
+									</group>
+									<group>							
+										<field name="write_uid" readonly="1"></field>
+										<field name="write_date" readonly="1"></field>
+									</group>
+								</group>
+							</page>	                                              
+	                    </notebook>							   		                																
+					</sheet>
+				</form>	
+		    </field>
+		</record>
+		
+ 		<record id="view_netoff" model="ir.ui.view">
+            <field name="name">netoff.list.select</field>
+            <field name="model">wtc.net.off</field>
+            <field name="arch" type="xml">
+                <search string="Search Net Off">
+                    <field name="name" string="Reference"/>
+                    <field name="branch_id"/> 
+                    <field name='partner_id'/>
+                    <field name='account_id'/>
+                </search>
+            </field>
+        </record>		
+		<record model="ir.actions.act_window" id="netoff_action">
+		    <field name="name">Net Off</field>
+		    <field name="res_model">wtc.net.off</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		    <field name="search_view_id" ref="view_netoff"/>
+		</record>
+					
+		<menuitem id="netoff_submenu" name="Journal Net Off" parent="account.menu_finance_entries"  action="netoff_action" sequence="8"/> 		
+	</data>
+</openerp>
+															

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+		<record id="view_customer_invoice_groups" model="ir.ui.view">
+            <field name="name">account.invoice.customer.dealer</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="arch" type="xml">
+		        <button name="invoice_open" position="attributes">
+		        	<attribute name="groups">dealer_sale_order.group_customer_invoice_validate</attribute>
+		        </button>    
+		        <button name="invoice_cancel" position="attributes">
+		        	<attribute name="groups">dealer_sale_order.group_customer_invoice_cancel</attribute>
+		        </button>	
+		        <button name="action_cancel_draft" position="attributes">
+		        	<attribute name="groups">dealer_sale_order.group_customer_invoice_to_draft</attribute>
+		        </button>  	
+		        <button name="%(account.action_account_invoice_refund)d" position="attributes">
+		        	<attribute name="groups">dealer_sale_order.group_customer_invoice_refund_invoice</attribute>
+		        </button> 		        
+		        <!--<button name="invoice_pay_customer" position="attributes">
+		        	<attribute name="groups">dealer_sale_order.group_customer_invoice_register_payment</attribute>
+		        </button> -->		        	        	                     
+            </field>
+        </record>        
+</data>
+</openerp>

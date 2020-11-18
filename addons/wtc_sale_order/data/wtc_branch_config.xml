@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+
+		<record id="journal_so_unit" model="account.journal">
+			<field name="name">Journal Sales Order Unit</field>
+			<field name="code">SLU</field>
+			<field name="type">sale</field>
+			<field name="default_debit_account_id" ref="l10n_id_honda.chart_11210101" />
+		</record>
+
+		<record id="journal_so_part" model="account.journal">
+			<field name="name">Journal Sales Order Part</field>
+			<field name="code">SLP</field>
+			<field name="type">sale</field>
+			<field name="default_debit_account_id" ref="l10n_id_honda.chart_11210201" />
+		</record>
+		
+		<record id="journal_bb_jual" model="account.journal">
+			<field name="name">Journal Blind Bonus Jual</field>
+			<field name="code">BB</field>
+			<field name="type">purchase</field>
+		</record>
+
+        <record id="wtc_branch.wtc_branch_config_mml" model="wtc.branch.config">
+        	<field name="wtc_so_journal_unit_id" ref="journal_so_unit" />
+        	<field name="wtc_so_journal_sparepart_id" ref="journal_so_part" />
+        	<field name="wtc_so_account_discount_cash_id" ref="l10n_id_honda.chart_45110101" />
+        	<field name="wtc_so_account_discount_program_id" ref="l10n_id_honda.chart_45110102" />
+        	<field name="wtc_so_account_discount_lainnya_id" ref="l10n_id_honda.chart_51110101" />
+        	<field name="wtc_so_journal_bind_bonus_jual_id" ref="journal_bb_jual" />
+        </record>
+
+    </data>
+</openerp>

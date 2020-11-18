@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+	<!-- teds_stock_opname_stnk -->	
+		<record id="group_teds_stock_opname_stnk_read" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Stock Opname STNK Read</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_stock_opname_stnk_menuitem'))]"/>
+		</record>
+
+		<record id="access_teds_stock_opname_stnk_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_stock_opname_stnk"/>
+      		<field name="name">teds_stock_opname_stnk read</field> 
+      		<field name="group_id" ref="group_teds_stock_opname_stnk_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="access_teds_stock_opname_stnk_line_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_stock_opname_stnk_line"/>
+      		<field name="name">teds_stock_opname_stnk_line read</field> 
+      		<field name="group_id" ref="group_teds_stock_opname_stnk_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="access_teds_stock_opname_stnk_other_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_stock_opname_stnk_other"/>
+      		<field name="name">teds_stock_opname_stnk_other read</field> 
+      		<field name="group_id" ref="group_teds_stock_opname_stnk_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="group_teds_stock_opname_stnk_update" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Stock Opname STNK Update</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_stock_opname_stnk_menuitem'))]"/>
+	      	<field name="implied_ids" eval="[(4, ref('group_teds_stock_opname_stnk_read'))]"/>  
+		</record>
+
+		<record id="access_teds_stock_opname_stnk_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_stock_opname_stnk"/>
+      		<field name="name">teds_stock_opname_stnk update</field> 
+      		<field name="group_id" ref="group_teds_stock_opname_stnk_read"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+		
+		<record id="access_teds_stock_opname_stnk_line_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_stock_opname_stnk_line"/>
+      		<field name="name">teds_stock_opname_stnk_line update</field> 
+      		<field name="group_id" ref="group_teds_stock_opname_stnk_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 		
+  		</record>
+		
+		<record id="access_teds_stock_opname_stnk_other_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_stock_opname_stnk_other"/>
+      		<field name="name">teds_stock_opname_stnk_other read</field> 
+      		<field name="group_id" ref="group_teds_stock_opname_stnk_read"/>  
+      		<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+		
+		<record id="group_teds_stock_opname_stnk_delete" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Stock Opname STNK Delete</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_stock_opname_stnk_menuitem'))]"/>
+	      	<field name="implied_ids" eval="[(4, ref('group_teds_stock_opname_stnk_read'))]"/>  
+		</record>
+
+		<record id="access_teds_stock_opname_stnk_delete" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_stock_opname_stnk"/>
+      		<field name="name">teds_stock_opname_stnk delete</field> 
+      		<field name="group_id" ref="group_teds_stock_opname_stnk_delete"/>  
+			<field name="perm_unlink">1</field> 
+		</record>
+		
+		<record id="access_teds_stock_opname_stnk_line_delete" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_stock_opname_stnk_line"/>
+      		<field name="name">teds_stock_opname_stnk_line delete</field> 
+      		<field name="group_id" ref="group_teds_stock_opname_stnk_delete"/>  
+			<field name="perm_unlink">1</field> 		
+  		</record>
+		
+		<record id="access_teds_stock_opname_stnk_other_delete" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_stock_opname_stnk_other"/>
+      		<field name="name">teds_stock_opname_stnk_other delete</field> 
+      		<field name="group_id" ref="group_teds_stock_opname_stnk_delete"/>  
+			<field name="perm_unlink">1</field>		
+		</record>
+
+	<!-- teds_stock_opname_bpkb -->	
+		<record id="group_teds_stock_opname_bpkb_read" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Stock Opname BPKB Read</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_stock_opname_bpkb_menuitem'))]"/>
+		</record>
+
+		<record id="access_teds_stock_opname_bpkb_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_stock_opname_bpkb"/>
+      		<field name="name">teds_stock_opname_bpkb read</field> 
+      		<field name="group_id" ref="group_teds_stock_opname_bpkb_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="access_teds_stock_opname_bpkb_line_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_stock_opname_bpkb_line"/>
+      		<field name="name">teds_stock_opname_bpkb_line read</field> 
+      		<field name="group_id" ref="group_teds_stock_opname_bpkb_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="access_teds_stock_opname_bpkb_other_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_stock_opname_bpkb_other"/>
+      		<field name="name">teds_stock_opname_bpkb_other read</field> 
+      		<field name="group_id" ref="group_teds_stock_opname_bpkb_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="group_teds_stock_opname_bpkb_update" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Stock Opname BPKB Update</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_stock_opname_bpkb_menuitem'))]"/>
+	      	<field name="implied_ids" eval="[(4, ref('group_teds_stock_opname_bpkb_read'))]"/>  
+		</record>
+
+		<record id="access_teds_stock_opname_bpkb_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_stock_opname_bpkb"/>
+      		<field name="name">teds_stock_opname_bpkb update</field> 
+      		<field name="group_id" ref="group_teds_stock_opname_bpkb_read"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+		
+		<record id="access_teds_stock_opname_bpkb_line_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_stock_opname_bpkb_line"/>
+      		<field name="name">teds_stock_opname_bpkb_line update</field> 
+      		<field name="group_id" ref="group_teds_stock_opname_bpkb_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 		
+  		</record>
+		
+		<record id="access_teds_stock_opname_bpkb_other_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_stock_opname_bpkb_other"/>
+      		<field name="name">teds_stock_opname_bpkb_other read</field> 
+      		<field name="group_id" ref="group_teds_stock_opname_bpkb_read"/>  
+      		<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+		
+		<record id="group_teds_stock_opname_bpkb_delete" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Stock Opname BPKB Delete</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_stock_opname_bpkb_menuitem'))]"/>
+	      	<field name="implied_ids" eval="[(4, ref('group_teds_stock_opname_bpkb_read'))]"/>  
+		</record>
+
+		<record id="access_teds_stock_opname_bpkb_delete" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_stock_opname_bpkb"/>
+      		<field name="name">teds_stock_opname_bpkb delete</field> 
+      		<field name="group_id" ref="group_teds_stock_opname_bpkb_delete"/>  
+			<field name="perm_unlink">1</field> 
+		</record>
+		
+		<record id="access_teds_stock_opname_bpkb_line_delete" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_stock_opname_bpkb_line"/>
+      		<field name="name">teds_stock_opname_bpkb_line delete</field> 
+      		<field name="group_id" ref="group_teds_stock_opname_bpkb_delete"/>  
+			<field name="perm_unlink">1</field> 		
+  		</record>
+		
+		<record id="access_teds_stock_opname_bpkb_other_delete" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_stock_opname_bpkb_other"/>
+      		<field name="name">teds_stock_opname_bpkb_other delete</field> 
+      		<field name="group_id" ref="group_teds_stock_opname_bpkb_delete"/>  
+			<field name="perm_unlink">1</field>		
+		</record>
+
+		<record id="group_teds_laporan_stock_opname_wizard_delete" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Laporan Stock Opname Wizard</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_laporan_stock_opname_wizard_menuitem'))]"/>
+		</record>
+
+		<record id="group_teds_laporan_stock_opname_detail_wizard_delete" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Laporan Stock Opname Detail Wizard</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_laporan_stock_opname_detail_wizard_menuitem'))]"/>
+		</record>
+
+		<record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[
+				(4,ref('group_teds_stock_opname_stnk_read')),
+				(4,ref('group_teds_stock_opname_stnk_update')),
+				(4,ref('group_teds_stock_opname_stnk_delete')),
+				(4,ref('group_teds_stock_opname_bpkb_read')),
+				(4,ref('group_teds_stock_opname_bpkb_update')),
+				(4,ref('group_teds_stock_opname_bpkb_delete')),
+				(4,ref('group_teds_laporan_stock_opname_wizard_delete')),
+			]"/> 
+		</record>
+	</data>
+</openerp>

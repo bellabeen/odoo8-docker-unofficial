@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<!-- views and menus -->
+		<record id="teds_collecting_view_tree" model="ir.ui.view">
+			<field name="name">Collecting AR/AP</field>
+			<field name="model">teds.collecting</field>
+			<field name="arch" type="xml">
+				<tree string="Collecting AR/AP" default_order="date desc">
+					<field name="name"/>
+					<field name="division"/>
+					<field name="date"/>
+					<field name="type"/>
+					<field name="account_id"/>
+					<field name="state"/>
+				</tree>
+			</field>
+		</record>
+
+		<record id="teds_collecting_view_form" model="ir.ui.view">
+			<field name="name">Collecting AR/AP</field>
+			<field name="model">teds.collecting</field>
+			<field name="arch" type="xml">
+				<form string="Collecting AR/AP">
+					<header>
+						<button string="Get Detail" name="action_get_detail" type="object" attrs="{'invisible': [('amount','!=',0)]}" class="oe_highlight" />
+						<button string="Confirm" name="action_confirm" type="object" states="draft" attrs="{'invisible':['|',('amount','=',0)]}" class="oe_highlight" />
+						<field name="state" widget="statusbar" statusbar_visible="draft,confirm" />
+					</header>
+					<sheet>
+						<div class="oe_title">
+							<h2>
+								<label string="Collecting"/>
+								<field name="name" class="oe_inline"/>
+							</h2>
+						</div>
+						<group col="4" colspan="4">
+							<field name="branch_id" options="{'no_create': True,'no_open': True}" attrs="{'readonly': ['|',('state','!=','draft'),('name','!=',False)]}"/>
+							<field name="division" attrs="{'readonly': [('state','!=','draft')]}" />
+							<field name="partner_id" options="{'no_create': True,'no_open': True}" attrs="{'readonly': [('state','!=','draft')]}" />
+							<field name="date" readonly="1"/>
+							<field name="type" attrs="{'readonly': [('state','!=','draft')]}" />
+							<label for="date_start"/>
+							<div>
+								<field name="date_start" attrs="{'readonly': [('state','!=','draft')]}" class="oe_inline"/> - 
+								<field name="date_end" attrs="{'readonly': [('state','!=','draft')]}" class="oe_inline"/>
+							</div>
+							<field name="account_id" options="{'no_create': True,'no_open': True}" attrs="{'readonly': [('state','!=','draft')]}" domain="[('type','=',type)]" />
+							<field name="date_maturity" attrs="{'readonly': [('state','!=','draft')]}" />
+							<field name="journal_id" options="{'no_create':True,'no_open':True}" attrs="{'readonly': [('state','!=','draft')]}" />
+							<field name="amount" readonly="1" />
+							<field name="description" attrs="{'readonly': [('state','!=','draft')]}" colspan="4" />
+						</group>
+						<notebook>
+							<page string="Move Lines">
+								<field name="move_line_ids" nolabel="1" colspan="4" readonly="1" >
+									<tree string="" editable="top" edit="false" create="false">
+										<field name="name"/>
+										<field name="ref" />
+										<field name="journal_id" />
+										<field name="period_id" />
+										<field name="date" />
+										<field name="debit" sum="Total Debit" />
+										<field name="credit" sum="Total Credit" />
+									</tree>
+								</field>
+							</page>
+							<page string="Audit Trail">
+								<group>
+									<field name="create_uid" readonly="1"/>
+									<field name="create_date" readonly="1"/>
+									<field name="write_uid" readonly="1"/>
+									<field name="write_date" readonly="1"/>
+									<field name="confirm_uid" readonly="1"/>
+									<field name="confirm_date" readonly="1"/>
+								</group>
+							</page>
+						</notebook>
+					</sheet>
+					<div class="oe_chatter">
+					</div>
+				</form>
+			</field>
+		</record>
+
+		<!-- actions -->
+		<record id="teds_collecting_action" model="ir.actions.act_window">
+			<field name="name">Collecting AR/AP</field>
+			<field name="res_model">teds.collecting</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		
+		<menuitem
+			id="teds_collecting_menu_action"
+			name="Collecting AR/AP"
+			parent="wtc_dealer_menu.backoffice_nontrade_menu"
+			action="teds_collecting_action"
+			sequence="80"
+		/>
+	</data>
+</openerp>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+    <record id="view_report_kpb" model="ir.ui.view">
+		<field name="name">Laporan Stock Sparepart</field>
+		<field name="model">wtc.report.kpb</field>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+	        <form string="Laporan Stock Sparepart">
+	        	<group col="4" colspan="4" attrs="{'invisible':[('state_x','=','get')]}">
+                    <label for="start_date" string="Date"/>
+                    <div>
+                        <field name="start_date" class="oe_inline"/> - <field name="end_date" class="oe_inline"/>
+                    </div>
+                    <field name="kpb"/>
+                    <field name="jenis_oli"/>
+                    <field name="state"/>
+                </group>
+	          	
+				<notebook colspan="5" attrs="{'invisible':[('state_x','=','get')]}">
+		      		<page string="Branch">
+						<field name="branch_ids" colspan="4" nolabel="1"/>
+		      		</page>
+	        	</notebook>
+                <field invisible="1" name="state_x"/>                
+                <newline/>    
+                <group col="4" fill="0" attrs="{'invisible':[('state_x','!=','get')]}">
+                    <separator colspan="4" string="Report Generated. Click link below to download ..." attrs="{'invisible':[('state_x','=','choose')]}"/>
+                    <field name="name" invisible="1" width="100" attrs="{'invisible':[('state_x','=','choose')]}"/>
+                    <field name="data_x" nolabel="1" readonly="0" width="100" filename="name" attrs="{'invisible':[('state_x','=','choose')]}"/>
+                </group>
+                <footer>
+                   <!--  <button name="excel_report" attrs="{'invisible':[('state_x','=','get')]}" string="Export Report" type="object" class="oe_highlight"/> -->
+                    <button name="csv_report" attrs="{'invisible':[('state_x','=','get')]}" string="CSV Report" type="object" class="oe_highlight"/>
+                    <label string="or  . " attrs="{'invisible':[('state_x','=','get')]}" />
+                    <button string="Cancel" attrs="{'invisible':[('state_x','=','get')]}" class="oe_link" special="cancel" />
+                </footer>
+	          	
+	        </form>
+    	</field>
+    </record>
+
+    
+    <record id="action_report_kpb" model="ir.actions.act_window">
+        <field name="name">Report KPB</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">wtc.report.kpb</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_report_kpb"/>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_report_kpb" parent="wtc_dealer_menu.workshop_report_menu" sequence="2" action="action_report_kpb"/>
+	</data>
+</openerp>

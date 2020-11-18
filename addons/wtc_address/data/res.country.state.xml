@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    
+        <record id="province_id_1100" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">NANGGROE ACEH DARUSSALAM</field>
+            <field name="code">1100</field>
+        </record>
+    
+        <record id="province_id_1200" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">SUMATERA UTARA</field>
+            <field name="code">1200</field>
+        </record>
+    
+        <record id="province_id_1300" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">SUMATERA BARAT</field>
+            <field name="code">1300</field>
+        </record>
+    
+        <record id="province_id_1400" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">RIAU</field>
+            <field name="code">1400</field>
+        </record>
+    
+        <record id="province_id_1500" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">JAMBI</field>
+            <field name="code">1500</field>
+        </record>
+    
+        <record id="province_id_1600" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">SUMATERA SELATAN</field>
+            <field name="code">1600</field>
+        </record>
+    
+        <record id="province_id_1700" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">BENGKULU</field>
+            <field name="code">1700</field>
+        </record>
+    
+        <record id="province_id_1800" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">LAMPUNG</field>
+            <field name="code">1800</field>
+        </record>
+    
+        <record id="province_id_1900" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">BANGKA BELITUNG</field>
+            <field name="code">1900</field>
+        </record>
+    
+        <record id="province_id_2000" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">KEPULAUAN RIAU</field>
+            <field name="code">2000</field>
+        </record>
+    
+        <record id="province_id_3100" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">DKI JAKARTA</field>
+            <field name="code">3100</field>
+        </record>
+    
+        <record id="province_id_3200" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">JAWA BARAT</field>
+            <field name="code">3200</field>
+        </record>
+    
+        <record id="province_id_3300" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">JAWA TENGAH</field>
+            <field name="code">3300</field>
+        </record>
+    
+        <record id="province_id_3400" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">D.I. YOGYAKARTA</field>
+            <field name="code">3400</field>
+        </record>
+    
+        <record id="province_id_3500" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">JAWA TIMUR</field>
+            <field name="code">3500</field>
+        </record>
+    
+        <record id="province_id_3600" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">BANTEN</field>
+            <field name="code">3600</field>
+        </record>
+    
+        <record id="province_id_5100" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">BALI</field>
+            <field name="code">5100</field>
+        </record>
+    
+        <record id="province_id_5200" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">NUSA TENGGARA BARAT</field>
+            <field name="code">5200</field>
+        </record>
+    
+        <record id="province_id_5300" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">NUSA TENGGARA TIMUR</field>
+            <field name="code">5300</field>
+        </record>
+    
+        <record id="province_id_6100" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">KALIMANTAN BARAT</field>
+            <field name="code">6100</field>
+        </record>
+    
+        <record id="province_id_6200" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">KALIMANTAN TENGAH</field>
+            <field name="code">6200</field>
+        </record>
+    
+        <record id="province_id_6300" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">KALIMANTAN SELATAN</field>
+            <field name="code">6300</field>
+        </record>
+    
+        <record id="province_id_6400" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">KALIMANTAN TIMUR</field>
+            <field name="code">6400</field>
+        </record>
+    
+        <record id="province_id_7100" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">SULAWESI UTARA</field>
+            <field name="code">7100</field>
+        </record>
+    
+        <record id="province_id_7200" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">SULAWESI TENGAH</field>
+            <field name="code">7200</field>
+        </record>
+    
+        <record id="province_id_7300" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">SULAWESI SELATAN</field>
+            <field name="code">7300</field>
+        </record>
+    
+        <record id="province_id_7400" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">SULAWESI TENGGARA</field>
+            <field name="code">7400</field>
+        </record>
+    
+        <record id="province_id_7500" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">GORONTALO</field>
+            <field name="code">7500</field>
+        </record>
+    
+        <record id="province_id_7600" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">SULAWESI BARAT</field>
+            <field name="code">7600</field>
+        </record>
+    
+        <record id="province_id_8100" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">MALUKU</field>
+            <field name="code">8100</field>
+        </record>
+    
+        <record id="province_id_8200" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">MALUKU UTARA</field>
+            <field name="code">8200</field>
+        </record>
+    
+        <record id="province_id_9100" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">PAPUA BARAT</field>
+            <field name="code">9100</field>
+        </record>
+    
+        <record id="province_id_9400" model="res.country.state">
+            <field name="country_id" ref="base.id"/>
+            <field name="name">PAPUA</field>
+            <field name="code">9400</field>
+        </record>
+    </data>
+</openerp>

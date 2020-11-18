@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>    
+       <report  
+            id="report_dealer_sale_order_dp_po" string="DP PO" 
+            model="dealer.sale.order.po" 
+            name="rml.dealer.sale.order.dp.po" 
+            rml="dealer_sale_order/report/dealer_sale_order_dp_report.rml" 
+            auto="False" menu="False"/>     
+            
+        <report  
+            id="report_dealer_sale_order_pelunasan_dso" string="Pelunasan DSO" 
+            model="dealer.sale.order.pelunasan.dso" 
+            name="rml.dealer.sale.order.pelunasan.dso" 
+            rml="dealer_sale_order/report/dealer_sale_order_pelunasan_dso_report.rml" 
+            auto="False" menu="False"/>
+
+       <report  
+            id="report_dealer_sale_order_pelunasan" string="Pelunasan Leasing" 
+            model="dealer.sale.order.pelunasan" 
+            name="rml.dealer.sale.order.pelunasan" 
+            rml="dealer_sale_order/report/dealer_sale_order_pelunasan_leasing_report.rml" 
+            auto="False" menu="False"/> 
+       
+       
+       <report  
+            id="report_dealer_sale_order_bpkb" string="Pernyataan BPKB" 
+            model="dealer.sale.order.pernyataan.bpkb" 
+            name="rml.dealer.sale.order.pernyataan.bpkb" 
+            rml="dealer_sale_order/report/dealer_sale_order_pernyataan_bpkb_report.rml" 
+            auto="False" menu="False"/>  
+            
+        <report  
+            id="report_dealer_sale_order_subsidi_leasing" string="Subsidi Leasing" 
+            model="dealer.sale.order.subsidi.leasing" 
+            name="rml.dealer.sale.order.subsidi.leasing" 
+            rml="dealer_sale_order/report/dealer_sale_order_subsidi_leasing_report.rml" 
+            auto="False" menu="False"/>    
+            
+       <report  
+            id="report_dealer_sale_order_surat_jalan" string="Surat Jalan" 
+            model="dealer.sale.order.surat.jalan" 
+            name="rml.dealer.sale.order.surat.jalan" 
+            rml="dealer_sale_order/report/dealer_sale_order_surat_jalan.rml" 
+            auto="False" menu="False"/> 
+            
+       <report  
+            id="report_dealer_sale_order_invoice" string="Invoice" 
+            model="dealer.sale.order.invoice" 
+            name="rml.dealer.sale.order.invoice" 
+            rml="dealer_sale_order/report/dealer_sale_order_invoice_report.rml" 
+            auto="False" menu="False"/> 
+        
+       <report  
+            id="report_dealer_sale_order_bastk" string="bastk" 
+            model="dealer.sale.order.bastk" 
+            name="rml.dealer.sale.order.bastk" 
+            rml="dealer_sale_order/report/dealer_sale_order_bastk_report.rml" 
+            auto="False" menu="False"/>
+            
+       
+       <report 
+            string="test" 
+            id="action_report_test" 
+            model="dealer.sale.order" 
+            report_type="qweb-html"
+            name="dealer_sale_order.report_test" 
+            file="dealer_sale_order.report_test" 
+        />
+                  
+    </data>
+</openerp>

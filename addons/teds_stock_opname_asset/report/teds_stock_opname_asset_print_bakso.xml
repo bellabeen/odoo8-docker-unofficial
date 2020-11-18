@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+<template id="teds_stock_opname_asset_print_bakso">
+    <t t-call="report.html_container">
+        <t t-foreach="docs" t-as="o">
+                <div class="page">
+                    <div class="oe_structure"/>
+                        <div class="row"> 
+                        </div>
+                        <table class="table table-bordered">
+                            <tr>
+                                <td><span align="center"><h3>BERITA ACARA STOCK OPNAME ASSET</h3></span></td>
+                            </tr>
+                            <tr>
+                                <th>No Refrensi: <span t-esc="name(data)"/></th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table width="100%" style="border-collapse: collapse; font-size: 11px;">
+                                        <tr>
+                                            <th colspan="2" style="padding: 5px">Pada hari ini telah dilakukan Stock Opname Motor Aset + Mobil Delivery TDM</th>
+                                        </tr>
+                                        <tr>
+                                            <td width="30%" style="padding: 5px;">Cabang</td>
+                                            <td>: <span t-esc="branch(data)"/></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 5px;">Division</td>
+                                            <td>: Administrasi</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 5px;">Tanggal</td>
+                                            <td>: <span t-esc="tgl_so(data)"/></td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2" style="padding: 5px"><u>Hasil Stock Opname adalah sebagai berikut</u></th>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 5px;">Total Sistem</td>
+                                            <td>: <span t-esc="saldo_sistem(data)"/></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 5px;">Total Fisik Tercatat Sistem</td>
+                                            <td>: <span t-esc="saldo_cabang(data)+saldo_pic(data)"/></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 5px;">Total Fisik Tidak Tercatat</td>
+                                            <td>: <span t-esc="other_asset(data)"/></td>
+                                        </tr>
+                                        <!-- <t t-if="saldo_pic(data) > 0">
+                                            <tr>
+                                                <td style="padding: 5px;">Total Fisik Dipinjam PIC</td>
+                                                <td>: <span t-esc="saldo_pic(data)"/></td>
+                                            </tr>
+                                        </t>
+                                        <t t-if="saldo_hilang(data) > 0">
+                                            <tr>
+                                                <td style="padding: 5px;">Total Fisik Hilang</td>
+                                                <td>: <span t-esc="saldo_hilang(data)"/></td>
+                                            </tr>
+                                        </t>
+                                        <t t-if="saldo_tidak_ada(data) > 0">
+                                            <tr>
+                                                <td style="padding: 5px;">Total Fisik Tidak Ada</td>
+                                                <td>: <span t-esc="saldo_tidak_ada(data)"/></td>
+                                            </tr>
+                                        </t> -->
+                                        <tr>
+                                            <th style="padding: 5px">Total Fisik Asset</th>
+                                            <th>: <span t-esc="total_stock(data)"/></th>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr height="20px">
+                                <td>
+                                    <b><u>Catatan</u></b><br/>
+                                    <table class="table table-bordered">
+                                        <tr>
+                                            <td><span t-esc="note_bakso(data)"/></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <table class="table table-bordered" style="font-size:10px">
+                                        <tr>
+                                            <td colspan="2" align="center">PIC SO</td>
+                                            <td align="center">MENGETAHUI</td>
+                                        </tr>
+                                        <tr height="80px">
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th><span t-esc="adh(data)"/></th>
+                                            <th><span t-esc="pdi(data)"/></th>
+                                            <th><span t-esc="soh(data)"/></th>
+                                        </tr>
+                                        <tr>
+                                            <td>ADH</td>
+                                            <td>PDI / Kamek / SA</td>
+                                            <td>SOH</td>  
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3">
+                                                <span t-esc="data['user']"/>, <span t-esc="data['date']"/>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>  
+                        </table>
+                    <div class="oe_structure"/>
+                </div>
+        </t>
+    </t>
+</template>
+</data>
+</openerp>

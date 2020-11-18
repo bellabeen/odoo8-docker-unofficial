@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+	
+		<record model="ir.ui.view" id="wtc_harga_ekspedisi_form_view">
+		    <field name="name">wtc.harga.ekspedisi.form.view</field>
+		    <field name="model">wtc.branch</field>
+		    <field name="inherit_id" ref="wtc_harga_birojasa_form_view"/>
+		    <field name="arch" type="xml">
+		        <data>
+		        	<xpath expr="//page[@string='Biro Jasa']" position="after">
+		                <page string="Ekspedisi">
+		                	<field name="harga_ekspedisi_ids">
+		                		<tree string="Ekspedisi" editable="bottom">
+		                			<field name="ekspedisi_id" options="{'no_create':True, 'no_open':True}"/>
+		                			<field name="kota_penerimaan" required="1"/>
+		                			<field name="default_ekspedisi"/>
+		                			<field name="harga_ekspedisi_id"/>
+		                		</tree>
+		                	</field>
+		                </page>
+		            </xpath>          
+		        </data>
+		    </field>
+		</record>
+		
+		<record model="ir.ui.view" id="wtc_pricelist_expedition_form_view">
+		    <field name="name">wtc.pricelist.expedition.form</field>
+		    <field name="model">wtc.pricelist.expedition</field>
+		    <field name="arch" type="xml">
+		    	<form>
+	    			<label for="name" class="oe_edit_only"/>
+                    <h1>
+                        <field name="name"/>
+                    </h1>
+	        		<group col="2">
+	        			<field name="active" />
+	        		</group>
+	        		<notebook>
+	        			<page string="Pricelist Expedition">
+		    				<field name="pricelist_expedition_line_ids" colspan="4" nolabel="1">
+	        			 		<tree string="Expedition Line">
+	                				<field name="name"/>
+		                			<field name="active"/>
+									<field name="start_date"/>
+									<field name="end_date"/>
+								</tree>
+	                		</field>
+                		</page>
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>	                		
+               		</notebook>
+		    	</form>
+		    </field>
+		</record>
+
+		<record model="ir.ui.view" id="wtc_pricelist_expedition_tree_view">
+		    <field name="name">wtc.pricelist.expedition.tree</field>
+		    <field name="model">wtc.pricelist.expedition</field>
+		    <field name="arch" type="xml">
+		    	<tree>
+        			<field name="name"/>
+        			<field name="active"/>
+		    	</tree>    
+		    </field>
+		</record>
+		
+		<record model="ir.ui.view" id="wtc_pricelist_expedition_line_form_view">
+		    <field name="name">wtc.pricelist.expedition.line.form</field>
+		    <field name="model">wtc.pricelist.expedition.line</field>
+		    <field name="arch" type="xml">
+		    	<form>
+		    		<sheet>
+		        		<group col="4">
+		        			<field name="name"/>
+		        			<field name="active" />
+								<label for="start_date" string="Effective Date"/>	
+                			<div>
+                				<field name="start_date" class="oe_inline"/> - <field name="end_date" class="oe_inline"/>
+                			</div>
+		        		</group>
+	    				<field name="pricelist_expedition_line_detail_ids" colspan="4" nolabel="1">
+        			 		<tree string="Expedition Line Details" editable="top">
+                				<field name="product_template_id" domain="[('id','=',0)]"/>
+								<field name="cost"/>
+							</tree>
+                		</field>
+		        	</sheet>
+		    	</form>    
+		    </field>
+		</record>
+		
+		<record model="ir.actions.act_window" id="harga_ekspedisi_action">
+		    <field name="name">Harga Ekspedisi</field>
+		    <field name="res_model">wtc.pricelist.expedition</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		</record>
+		
+		<menuitem id="harga_ekspedisi_submenu" name="Harga Ekspedisi" parent="wtc_dealer_menu.showroom_configuration_menu" action="harga_ekspedisi_action"/>
+		
+	</data>
+</openerp>

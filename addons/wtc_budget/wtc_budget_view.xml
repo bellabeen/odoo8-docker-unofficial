@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>  
+
+		<record id="wtc_crossovered_budget_form_view" model="ir.ui.view">
+			<field name="name">wtc.crossovered.budget.form</field>
+			<field name="model">crossovered.budget</field>
+			<field name="inherit_id" ref="account_budget.crossovered_budget_view_form"/>
+			<field name="arch" type="xml">			
+				<button name="cancel" position="replace"/>           	
+            	<button name="draft" position="before">
+                        <button string="Cancel Budget" name="cancel" states="confirm,validate" type="workflow" confirm="Apa anda yakin ingin membatalkan transaksi ini ?"/>
+            	</button>
+            			
+				<xpath expr="//page" position="after">
+					<page string="Audit Trail">
+						<group>
+							<group>
+								<field name="create_uid" readonly="1"></field>
+								<field name="create_date" readonly="1"></field>
+								<field name="confirm_uid" readonly="1"></field>
+								<field name="confirm_date" readonly="1"></field>
+							</group>
+							<group>							
+								<field name="write_uid" readonly="1"></field>
+								<field name="write_date" readonly="1"></field>
+								<field name="cancel_uid" readonly="1"></field>
+								<field name="cancel_date" readonly="1"></field>
+							</group>
+						</group>
+					</page>
+				</xpath>				
+			</field>
+		</record>
+		
+		<record id="wtc_account_budget_post_form_view" model="ir.ui.view">
+			<field name="name">wtc.account.budget.post</field>
+			<field name="model">account.budget.post</field>
+			<field name="inherit_id" ref="account_budget.view_budget_post_form"/>
+			<field name="arch" type="xml">					
+				<xpath expr="//page" position="after">
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>
+				</xpath>				
+			</field>
+		</record>				        		        
+ 	</data>
+ </openerp>
+       		
+       		
+	

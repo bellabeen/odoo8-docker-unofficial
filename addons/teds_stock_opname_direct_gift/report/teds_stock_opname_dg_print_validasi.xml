@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+<template id="teds_stock_opname_dg_print_validasi">
+    <t t-call="report.html_container">
+        <t t-foreach="docs" t-as="o">
+                <div class="page">
+                    <div class="oe_structure"/>
+                        <div class="row"> 
+                        </div>
+                        <div class="col-xs-12">
+                            <table style="font-size:10px; width:100%; line-height:200%" border="1">
+                                <tr>
+                                    <th colspan="4" style="font-size:13px;"><span t-esc="name(data)"/></th>
+                                </tr>
+                                <tr>
+                                    <th width="10%%" style="padding-top:10px">Branch</th>
+                                    <td>: <span t-esc="branch(data)"/></td>
+
+                                    <th width="10%%">PDI</th>
+                                    <td>: <span t-esc="staff_bbn(data)"/></td>
+                                </tr>
+                                <tr>
+                                    <th>Division</th>
+                                    <td>: <span t-esc="division(data)"/></td>
+
+                                    <th>ADH</th>
+                                    <td>: <span t-esc="adh(data)"/></td>            
+                                </tr>
+                                <tr>
+                                    <th>Tanggal SO</th>
+                                    <td>: <span t-esc="tgl_so(data)"/></td>
+
+                                    <th>SOH</th>
+                                    <td>: <span t-esc="soh(data)"/></td>
+                                </tr>
+                            </table>
+                            <p style="padding-top:5px"><b>Data Stock Direct Gift</b></p>
+                            <table class="table" style="font-size:8px">
+                                <tr>
+                                    <th>No</th>
+                                    <th>Nama Barang</th>
+                                    <th>Aging</th>
+                                    <th>Harga Satuan</th>
+                                    <th>Qty Sistem</th>
+                                    <th>Amount Total Sistem</th>
+                                    <th>Qty Fisik Baik</th>
+                                    <th>Qty Fisik Rusak</th>
+                                    <th>Total Qty Fisik</th>
+                                    <th>Amount Total Fisik</th>
+                                    <th>Selisih Qty</th>
+                                    <th>Selisih Amount</th>
+                                    <th>Saldo Logbook</th>
+                                </tr>
+                                <tr t-foreach="detail_ids(data)" t-as="detail">
+                                    <td><span t-esc="no_urut()"/></td>
+                                    <td><span t-esc="detail['product']"/></td>
+                                    <td><span t-esc="detail['aging']"/></td>
+                                    <td><span t-esc="detail['harga_satuan']"/></td>
+                                    <td><span t-esc="detail['qty']"/></td>
+                                    <td><span t-esc="detail['amount']"/></td>
+                                    <td><span t-esc="detail['qty_fisik_baik']"/></td>
+                                    <td><span t-esc="detail['qty_fisik_rusak']"/></td>
+                                    <td><span t-esc="detail['qty_fisik_total']"/></td>
+                                    <td><span t-esc="detail['amount_total']"/></td>
+                                    <td><span t-esc="detail['selisih_qty']"/></td>
+                                    <td><span t-esc="detail['selisih_amount']"/></td>
+                                    <td><span t-esc="detail['saldo_log_book']"/></td>
+                                </tr>
+                                <tr>
+                                    <th colspan="4">Total</th>
+                                    <th><span t-esc="tot_qty(data)"/></th>
+                                    <th><span t-esc="tot_amount(data)"/></th>
+                                    <th><span t-esc="tot_qty_fisik_baik(data)"/></th>
+                                    <th><span t-esc="tot_qty_fisik_rusak(data)"/></th>
+                                    <th><span t-esc="tot_qty_fisik_total(data)"/></th>
+                                    <th><span t-esc="tot_amount_total(data)"/></th>
+                                    <th><span t-esc="tot_selisih_qty(data)"/></th>
+                                    <th><span t-esc="tot_selisih_amount(data)"/></th>
+                                    <th><span t-esc="tot_saldo_log_book(data)"/></th>
+                                </tr>
+                                <tr>
+                                    <td colspan="13"><span t-esc="data['user']"/>, <span t-esc="data['date']"/></td>
+                                </tr>
+                            </table>  
+                            <b style="padding-top:5px">Fisik Tidak Tercatat Sistem</b>
+                            <table class="table" style="font-size:8px;">
+                                <tr>
+                                    <th>No</th>
+                                    <th>Nama Barang</th>
+                                    <th>Qty Fisik Baik</th>
+                                    <th>Qty Fisik Rusak</th>
+                                    <th>Total Qty Fisik</th>
+                                    <th>Saldo Logbook</th>
+                                </tr>
+                                <tr t-foreach="other_dg_ids(data)" t-as="other">
+                                    <td><span t-esc="no_urut_other()"/></td>
+                                    <td><span t-esc="other['nama_product']"/></td>
+                                    <td><span t-esc="other['qty_fisik_baik']"/></td>
+                                    <td><span t-esc="other['qty_fisik_rusak']"/></td>
+                                    <td><span t-esc="other['qty_fisik_total']"/></td>
+                                    <td><span t-esc="other['saldo_log_book']"/></td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">Total</th>
+                                    <th><span t-esc="tot_other_baik(data)"/></th>
+                                    <th><span t-esc="tot_other_rusak(data)"/></th>
+                                    <th><span t-esc="tot_other_total(data)"/></th>
+                                    <th><span t-esc="tot_other_log_book(data)"/></th>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-xs-12">
+                             <table class="table table-bordered" style="font-size:10px">
+                                <tr>
+                                    <td align="center">PIC SO</td>
+                                    <td colspan="2" align="center">MENGETAHUI</td>
+                                </tr>
+                                <tr height="80px">
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th><span t-esc="adh(data)"/></th>
+                                    <th><span t-esc="staff_bbn(data)"/></th>
+                                    <th><span t-esc="soh(data)"/></th>
+                                </tr>
+                                <tr>
+                                    <td>ADH</td>
+                                    <td>PDI</td>
+                                    <td>SOH</td>  
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                        <span t-esc="data['user']"/>, <span t-esc="data['date']"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>                  
+                    <div class="oe_structure"/>
+                </div>
+        </t>
+    </t>
+</template>
+</data>
+</openerp>

@@ -1,0 +1,2886 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    
+        <record id="sequnce_journal_purchase_unit_dsr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DSR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DSR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_djj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DJJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DJJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_djb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DJB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DJB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_djs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DJS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DJS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_djm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DJM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DJM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dju" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DJU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DJU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dsm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DSM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DSM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dsg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DSG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DSG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dsb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DSB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DSB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dsp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DSP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DSP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dsk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DSK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DSK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dup" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DUP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DUP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_duk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DUK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DUK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dle" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DLE</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DLE/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dlp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DLP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DLP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dlm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DLM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DLM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dlh" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DLH</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DLH/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dlx" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DLX</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DLX/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dll" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DLL</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DLL/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dld" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DLD</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DLD/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dlf" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DLF</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DLF/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dlv" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DLV</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DLV/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dlq" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DLQ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DLQ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dlc" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DLC</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DLC/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dly" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DLY</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DLY/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dlw" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DLW</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DLW/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dlu" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DLU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DLU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dlt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DLT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DLT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dls" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DLS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DLS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dlo" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DLO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DLO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dln" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DLN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DLN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dlk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DLK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DLK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dlj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DLJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DLJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dli" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DLI</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DLI/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dlg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DLG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DLG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dlb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DLB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DLB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dla" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DLA</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DLA/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dlr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DLR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DLR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_hho" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit HHO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/HHO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_mml" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit MML</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/MML/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dbl" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DBL</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DBL/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dbk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DBK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DBK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dbb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DBB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DBB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dbs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DBS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DBS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dbt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DBT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DBT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dds" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DDS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DDS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_ddc" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DDC</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DDC/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_ddb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DDB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DDB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dda" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DDA</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DDA/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_ddd" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DDD</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DDD/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dde" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DDE</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DDE/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_ddg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DDG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DDG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_ddm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DDM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DDM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_ddj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DDJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DDJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_ddt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DDT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DDT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_ddi" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DDI</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DDI/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dxk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DXK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DXK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dxt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DXT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DXT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dxs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DXS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DXS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dxg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DXG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DXG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dxb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DXB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DXB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dxn" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DXN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DXN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dwt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DWT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DWT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dwr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DWR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DWR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dwp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DWP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DWP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dwo" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DWO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DWO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dwk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DWK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DWK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dws" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DWS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DWS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dwg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DWG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DWG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dwm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DWM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DWM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_dwn" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DWN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DWN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_unit_ddu" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Unit DDU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POU/DDU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dsr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DSR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DSR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_djj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DJJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DJJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_djb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DJB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DJB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_djs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DJS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DJS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_djm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DJM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DJM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dju" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DJU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DJU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dsm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DSM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DSM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dsg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DSG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DSG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dsb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DSB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DSB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dsp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DSP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DSP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dsk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DSK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DSK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dup" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DUP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DUP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_duk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DUK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DUK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dle" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DLE</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DLE/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dlp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DLP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DLP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dlm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DLM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DLM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dlh" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DLH</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DLH/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dlx" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DLX</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DLX/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dll" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DLL</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DLL/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dld" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DLD</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DLD/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dlf" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DLF</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DLF/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dlv" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DLV</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DLV/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dlq" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DLQ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DLQ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dlc" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DLC</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DLC/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dly" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DLY</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DLY/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dlw" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DLW</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DLW/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dlu" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DLU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DLU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dlt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DLT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DLT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dls" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DLS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DLS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dlo" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DLO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DLO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dln" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DLN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DLN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dlk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DLK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DLK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dlj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DLJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DLJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dli" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DLI</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DLI/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dlg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DLG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DLG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dlb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DLB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DLB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dla" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DLA</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DLA/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dlr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DLR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DLR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_hho" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart HHO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/HHO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_mml" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart MML</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/MML/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dbl" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DBL</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DBL/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dbk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DBK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DBK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dbb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DBB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DBB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dbs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DBS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DBS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dbt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DBT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DBT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dds" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DDS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DDS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_ddc" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DDC</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DDC/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_ddb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DDB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DDB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dda" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DDA</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DDA/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_ddd" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DDD</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DDD/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dde" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DDE</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DDE/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_ddg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DDG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DDG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_ddm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DDM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DDM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_ddj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DDJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DDJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_ddt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DDT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DDT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_ddi" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DDI</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DDI/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dxk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DXK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DXK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dxt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DXT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DXT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dxs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DXS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DXS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dxg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DXG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DXG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dxb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DXB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DXB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dxn" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DXN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DXN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dwt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DWT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DWT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dwr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DWR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DWR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dwp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DWP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DWP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dwo" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DWO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DWO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dwk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DWK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DWK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dws" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DWS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DWS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dwg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DWG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DWG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dwm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DWM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DWM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_dwn" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DWN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DWN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_sparepart_ddu" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Sparepart DDU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POS/DDU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dsr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DSR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DSR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_djj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DJJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DJJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_djb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DJB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DJB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_djs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DJS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DJS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_djm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DJM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DJM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dju" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DJU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DJU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dsm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DSM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DSM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dsg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DSG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DSG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dsb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DSB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DSB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dsp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DSP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DSP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dsk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DSK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DSK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dup" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DUP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DUP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_duk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DUK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DUK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dle" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DLE</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DLE/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dlp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DLP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DLP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dlm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DLM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DLM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dlh" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DLH</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DLH/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dlx" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DLX</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DLX/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dll" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DLL</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DLL/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dld" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DLD</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DLD/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dlf" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DLF</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DLF/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dlv" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DLV</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DLV/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dlq" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DLQ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DLQ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dlc" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DLC</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DLC/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dly" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DLY</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DLY/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dlw" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DLW</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DLW/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dlu" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DLU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DLU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dlt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DLT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DLT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dls" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DLS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DLS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dlo" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DLO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DLO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dln" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DLN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DLN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dlk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DLK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DLK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dlj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DLJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DLJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dli" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DLI</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DLI/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dlg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DLG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DLG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dlb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DLB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DLB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dla" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DLA</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DLA/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dlr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DLR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DLR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_hho" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum HHO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/HHO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_mml" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum MML</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/MML/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dbl" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DBL</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DBL/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dbk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DBK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DBK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dbb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DBB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DBB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dbs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DBS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DBS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dbt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DBT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DBT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dds" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DDS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DDS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_ddc" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DDC</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DDC/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_ddb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DDB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DDB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dda" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DDA</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DDA/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_ddd" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DDD</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DDD/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dde" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DDE</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DDE/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_ddg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DDG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DDG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_ddm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DDM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DDM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_ddj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DDJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DDJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_ddt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DDT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DDT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_ddi" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DDI</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DDI/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dxk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DXK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DXK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dxt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DXT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DXT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dxs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DXS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DXS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dxg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DXG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DXG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dxb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DXB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DXB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dxn" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DXN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DXN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dwt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DWT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DWT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dwr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DWR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DWR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dwp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DWP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DWP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dwo" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DWO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DWO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dwk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DWK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DWK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dws" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DWS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DWS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dwg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DWG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DWG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dwm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DWM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DWM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_dwn" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DWN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DWN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_purchase_umum_ddu" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Purchase Umum DDU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">POG/DDU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dsr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DSR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DSR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_djj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DJJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DJJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_djb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DJB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DJB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_djs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DJS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DJS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_djm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DJM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DJM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dju" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DJU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DJU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dsm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DSM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DSM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dsg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DSG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DSG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dsb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DSB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DSB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dsp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DSP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DSP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dsk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DSK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DSK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dup" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DUP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DUP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_duk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DUK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DUK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dle" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DLE</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DLE/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dlp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DLP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DLP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dlm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DLM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DLM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dlh" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DLH</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DLH/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dlx" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DLX</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DLX/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dll" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DLL</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DLL/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dld" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DLD</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DLD/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dlf" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DLF</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DLF/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dlv" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DLV</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DLV/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dlq" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DLQ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DLQ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dlc" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DLC</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DLC/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dly" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DLY</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DLY/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dlw" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DLW</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DLW/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dlu" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DLU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DLU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dlt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DLT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DLT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dls" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DLS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DLS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dlo" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DLO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DLO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dln" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DLN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DLN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dlk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DLK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DLK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dlj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DLJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DLJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dli" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DLI</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DLI/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dlg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DLG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DLG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dlb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DLB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DLB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dla" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DLA</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DLA/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dlr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DLR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DLR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_hho" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli HHO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/HHO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_mml" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli MML</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/MML/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dbl" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DBL</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DBL/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dbk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DBK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DBK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dbb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DBB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DBB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dbs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DBS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DBS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dbt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DBT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DBT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dds" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DDS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DDS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_ddc" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DDC</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DDC/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_ddb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DDB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DDB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dda" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DDA</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DDA/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_ddd" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DDD</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DDD/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dde" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DDE</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DDE/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_ddg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DDG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DDG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_ddm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DDM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DDM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_ddj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DDJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DDJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_ddt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DDT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DDT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_ddi" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DDI</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DDI/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dxk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DXK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DXK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dxt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DXT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DXT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dxs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DXS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DXS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dxg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DXG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DXG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dxb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DXB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DXB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dxn" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DXN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DXN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dwt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DWT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DWT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dwr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DWR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DWR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dwp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DWP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DWP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dwo" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DWO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DWO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dwk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DWK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DWK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dws" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DWS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DWS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dwg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DWG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DWG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dwm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DWM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DWM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_dwn" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DWN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DWN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_blind_bonus_beli_ddu" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Blind Bonus Beli DDU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">BB/DDU/%(y)s/%(month)s/</field> 
+        </record>
+
+    </data>
+</openerp>    

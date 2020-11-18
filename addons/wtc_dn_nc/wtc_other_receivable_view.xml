@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+    	
+		<record model="ir.ui.view" id="wtc_other_receivable_tree_view2">
+		    <field name="name">wtc.dn.nc.tree.dn</field>
+		    <field name="model">wtc.dn.nc</field>
+		    <field name="arch" type="xml">
+		        <tree >
+		        	<field name="number"/>
+					<field name="date"/>		        	
+		            <field name="branch_id"/>
+					<field name="division"/>		            
+		            <field name="partner_id"/>	
+		            <field name="account_id"/>
+		            <field name="amount"/>
+		            <field name="state"/>	            
+		        </tree>
+		     </field>
+		</record>
+		    	
+        <record model="ir.ui.view" id="view_sale_receipt_form_dn">
+            <field name="name">wtc.dn.nc.sale.form</field>
+            <field name="model">wtc.dn.nc</field>
+            <field name="arch" type="xml">
+                <form string="Sales Receipt">
+                <header>
+                    <button name="request_approval" states="draft" string="RFA" type='object' class="oe_highlight"/>    
+
+                    <button name="approval_approve" states="waiting_for_approval" string="Approve" type='object' class="oe_highlight"/>
+
+                    <button name="%(wtc_approval.wtc_approval_reject_wizard_action)d" states="waiting_for_approval" string="Reject" 
+                    type="action" context="{'model_name':'wtc.dn.nc','update_value':{'approval_state':'r','state':'draft'}}"/>
+
+                    <button name="%(wtc_approval.wtc_approval_cancel_wizard_action)d" states="waiting_for_approval" 
+                    string="Cancel Approval" type="action" context="{'model_name':'wtc.dn.nc','update_value':{'approval_state':'b','state':'draft'}}"/>
+
+                    <button name="%(wtc_approval.wtc_cancel_approval_wizard)d"  states="approved" string="Cancel Approval" type="action"  groups="wtc_account_voucher.group_wtc_payment_request_cancel_after_approval" context="{'model_name':'wtc.dn.nc','update_value':{'approval_state':'b','state':'draft'}}"/>
+
+                    <button name="proforma_voucher" string="Validate" states="approved" class="oe_highlight" type='object'/>
+
+            	    <button name="%(report_other_receivable)d"  attrs="{'invisible': [('state','!=','posted')]}" state="posted" type="action" string="Print" class="oe_highlight"  icon="gtk-print"/>
+
+             	    <button name="print_wizard_kwitansi" attrs="{'invisible': [('state','!=','posted')]}" type="object" string="Print Kwitansi" class="oe_highlight" icon="gtk-print" />
+             	             	               
+                    <button name="action_cancel_draft" type="object" states="cancel" string="Set to Draft"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,approved,posted" statusbar_colors='{"proforma":"blue"}'/>
+                </header>
+                <sheet string="Sales Receipt" >
+                    <h1><label for="number" string="Sales Receipt"/> <field name="number" class="oe_inline" readonly="1"/></h1>
+                    <group>
+                        <group>
+                            <field name="branch_id" attrs="{'readonly': ['|',('state','!=','draft'),('number','!=',False)]}" options="{'no_open':True,'no_create':True}" required="True" on_change="branch_id_onchange_other_receivable(branch_id)"/>
+                        </group>
+                        <group>
+                            <field name="division" required="True" attrs="{'readonly': [('state','!=','draft')]}"/>
+                        </group>                    	
+                        <group>
+                            <field name="type" invisible="True"/>
+                            <field name="company_id" widget="selection" groups="base.group_multi_company" invisible='1'/>
+		                	<field name="partner_type" required='1' on_change="onchange_partner_type(partner_type)" attrs="{'readonly': [('state','!=','draft')]}"/>
+					    	<field name="partner_id" required="True" domain="[('customer','=',True)]" string="Customer" context="{'search_default_customer':1, 'show_address': 1}" options="{'no_open':True,'no_create_edit':True}"/>                            <field name="account_id"
+                                  domain="[('type','in', ['liquidity', 'receivable'])]"/>
+					    	
+                            <field name="date_due" required='1'/>
+                        </group>
+                        <group>
+                            <field name="journal_id" invisible='1' domain="[('type','in',['sale','sale_refund'])]" widget="selection"/>
+                            <field name="date" readonly='1'/>
+                            <field name="name"/>
+					    	<field name="user_id"/>
+					    	<field name="cetak_ke" readonly='1'/>                            
+                            <field name="currency_id" invisible="1"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Sales Information">
+						    <field name="line_cr_ids" context="{'journal_id':journal_id, 'type':type, 'partner_id':partner_id}">
+			                   <tree string="Sales Lines" editable="bottom">
+			                   	   <field name="branch_id"/>
+			                       <field name="account_id" domain="[('active','!=',False),('type','!=','view')]" required='True'/>
+			                   	   <field name="name" on_change="name_other_receivable_onchange(name,parent.branch_id,parent.division)" required="True"/>
+                                   <field name="amount"/>
+                                   <field name="tax_id" widget="many2many_tags"/>
+								   <field name="amount_subtotal"/>
+			                   </tree>
+			                  </field>  
+                            <group>
+                                <field name="narration" placeholder="Internal Notes" nolabel="1"/>
+                                <group class="oe_subtotal_footer oe_right">
+                                    <field name='untaxed_amount'/>
+                                    <field name="tax_amount"/>
+                                    <div class="oe_subtotal_footer_separator">
+                                        <label for="amount"/>
+                                        <button type="object" class="oe_link oe_edit_only"
+                                            name="compute_tax" string="(update)"
+                                            attrs="{'invisible': [('state','!=','draft')]}"/>
+			          				 </div>
+                                    <field name="amount" nolabel="1" class="oe_subtotal_footer_separator"/>
+                                </group>
+                            </group>
+                        </page>
+				 		<page string='Faktur Pajak' attrs="{'invisible': [('tax_amount','&lt;=',0)]}"  >
+				 			<group>
+				 				<field name='pajak_gabungan' attrs="{'readonly': [('state','!=','draft')]}"></field>
+				 				<field name='faktur_pajak_id' readonly='1'></field>
+				 			</group>
+				 		</page>
+                        <page string="Approval">
+                            <field name="approval_ids">
+                                <tree string="Approval" editable="bottom" create="false" edit="false" delete="false" >
+                                    <field name="group_id" />
+                                    <field name="branch_id"/>
+                                    <field name="division"/>
+                                    <field name="limit"/>
+                                    <field name="sts"/>
+                                    <field name="reason"/>
+                                    <field name="pelaksana_id"/>
+                                    <field name="tanggal"/>
+                                </tree>
+                            </field>
+                        </page>
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+									<field name="confirm_uid" readonly="1"></field>
+									<field name="confirm_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+									<field name="cancel_uid" readonly="1"></field>
+									<field name="cancel_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>                        
+                        <page string="Journal Items" attrs="{'invisible': [('state','!=','posted')]}">
+                            <group col="4">
+                                <field name="period_id"/>
+                            </group>
+                            <field name="move_ids" readonly="1">
+                                <tree string="Journal Items">
+                                	<field name='branch_id'/>
+                                	<field name='division'/>
+                                    <field name="move_id"/>
+                                    <field name="ref"/>
+                                    <field name="date"/>
+                                    <field name="partner_id"/>
+                                    <field name="account_id"/>
+                                    <field name="name"/>
+                                    <field name="debit"/>
+                                    <field name="credit"/>
+                                    <field name="state"/>
+                                    <field name="reconcile_id"/>
+                                    <field name="amount_currency"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+		<record id="view_voucher_filter_saledn" model="ir.ui.view">
+            <field name="name">wtc.dn.nc.sale.select</field>
+            <field name="model">wtc.dn.nc</field>
+            <field name="arch" type="xml">
+                <search string="Search Vouchers">
+                    <field name="number" string="Voucher"/>
+                    <field name="date"/>
+                    <filter icon="terp-document-new" string="Draft" domain="[('state','=','draft')]" help="Draft Vouchers"/>
+                    <filter icon="terp-camera_test" string="Posted" domain="[('state','=','posted')]" help="Posted Vouchers"/>
+                    <field name="partner_id" string="Customer" filter_domain="[('partner_id','child_of',self)]"/>
+                    <field name="journal_id" widget="selection" context="{'journal_id': self, 'set_visible':False}" domain="[('type','in',('sale','sale_refund'))]"/> <!-- Keep widget=selection on this field to pass numeric `self` value, which is not the case for regular m2o widgets! -->
+                    <field name="period_id"/>
+					<filter string="Draft" name="state_draft" domain="[('state','=','draft')]" />
+					<filter string="Waiting for Approval" name="state_wfa" domain="[('state','=','waiting_for_approval')]" />
+					<filter string="Approved" name="state_approved" domain="[('state','=','approved')]" />
+					<filter string="Posted" name="state_posted" domain="[('state','=','posted')]" />                      
+                    <group expand="0" string="Group By">
+                        <filter string="Customer" icon="terp-personal" domain="[]" context="{'group_by':'partner_id'}"/>
+                        <filter string="Journal" icon="terp-folder-orange" domain="[]" context="{'group_by':'journal_id'}"/>
+                        <filter string="Period" icon="terp-go-month" domain="[]" context="{'group_by':'period_id','visible':True}"/>
+                        <filter string="Status" icon="terp-stock_effects-object-colorize" domain="[]" context="{'group_by':'state'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_sale_receipt_new" model="ir.actions.act_window">
+            <field name="name">Other Receivable</field>
+            <field name="res_model">wtc.dn.nc</field>
+            <field name="view_type">form</field>
+            <field name="domain">[('journal_id.type','in',['sale','sale_refund']), ('type','=','DN')]</field>
+            <field name="context">{'default_type': 'sale',"search_default_state_draft":1,"search_default_state_wfa":1,"search_default_state_approved":1, 'type': 'DN','other_receivable':'other_receivable'}</field>
+            <field name="view_id" eval="False"/>
+            <field name="search_view_id" ref="view_voucher_filter_saledn"/>
+            <field name="target">current</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to create a sale receipt.
+              </p><p>
+                When the sale receipt is confirmed, you can record the customer
+                payment related to this sales receipt.
+              </p>
+            </field>
+        </record>
+        <record id="action_sale_receipt_tree_dn" model="ir.actions.act_window.view">
+            <field eval="1" name="sequence"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="wtc_other_receivable_tree_view2"/>
+            <field name="act_window_id" ref="action_sale_receipt_new"/>
+        </record>
+        <record id="action_sale_receipt_form_dn" model="ir.actions.act_window.view">
+            <field eval="2" name="sequence"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_sale_receipt_form_dn"/>
+            <field name="act_window_id" ref="action_sale_receipt_new"/>
+        </record>
+                        		
+        <menuitem id="wtc_other_receivable_menuitem_custom_dn" parent="wtc_dealer_menu.backoffice_nontrade_menu" sequence="40" action="action_sale_receipt_new"/>
+    </data>
+</openerp>       

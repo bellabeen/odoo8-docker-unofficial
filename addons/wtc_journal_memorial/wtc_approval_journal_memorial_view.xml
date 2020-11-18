@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>  
+	    	
+	<record id="wtc_approval_journal_memorial_form_view" model="ir.ui.view">
+		<field name="name">wtc.journal.memorial.approval.form</field>
+		<field name="model">wtc.journal.memorial</field>
+		<field name="inherit_id" ref="journalmemorial_form_view"/>
+		<field name="arch" type="xml">
+			<field name="state" position="before">
+				<button name="view_jm" type="object" attrs="{'invisible': [('cancel_refered','=',False)]}" string="View Cancelled Journal" class="oe_highlight"></button>								
+				<button name="wkf_request_approval" groups='wtc_journal_memorial.group_wtc_journal_memorial_rfa' states="draft" string="RFA" type="object" class="oe_highlight"/>
+				<button name="cancel_memorial" groups='wtc_journal_memorial.group_wtc_journal_memorial_cancel' attrs="{'invisible': ['|',('state','in',('draft','waiting_for_approval','cancel')),('code','=','cancel'),('state_periode','=','draft')]}" string="Cancel Journal" type="object" confirm="Apa anda yakin ingin membatalkan transaksi ini?"/>
+				<button name="wkf_approval" groups='wtc_journal_memorial.group_wtc_journal_memorial_approve_approval' states="waiting_for_approval" string="Approve" type="object" class="oe_highlight"/>
+				<button name="%(wtc_approval.wtc_approval_reject_wizard_action)d" attrs="{'invisible': [('state','!=','waiting_for_approval')]}" string="Reject" type="action"
+				context="{'model_name':'wtc.journal.memorial','update_value':{'approval_state':'r','state':'draft'}}"/>
+				<button name="%(wtc_approval.wtc_approval_cancel_wizard_action)d" attrs="{'invisible': [('state','!=','waiting_for_approval')]}" 
+				string="Cancel Approval" type="action" context="{'model_name':'wtc.journal.memorial','update_value':{'approval_state':'b','state':'draft'}}"/>																		
+																															 			
+			</field>
+			<field name="description" position="after">
+				<field name="approval_state"/>
+			</field>								
+			<xpath expr="//page[@string='Journal Items']" position="after">
+				<page string="Approval">
+					<field name="approval_ids">
+						<tree string="Approval" editable="bottom" create="false" edit="false" delete="false" >
+							<field name="group_id" />
+							<field name="branch_id"/>
+							<field name="division"/>
+							<field name="limit"/>
+							<field name="sts"/>
+							<field name="reason"/>
+							<field name="pelaksana_id"/>
+							<field name="tanggal"/>
+						</tree>
+					</field>
+				</page> 				
+			</xpath>
+		</field>
+	</record>
+	  
+
+	          
+ 	</data>
+ </openerp>
+       		
+       		
+	

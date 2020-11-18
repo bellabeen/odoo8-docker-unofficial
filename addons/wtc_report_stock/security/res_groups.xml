@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+
+        <!-- Report Stock Unit -->
+
+        <record id="group_report_stock_unit_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Report Stock Unit Read</field>
+            <field name="menu_access" eval="[(4, ref('menu_stock_unit_report'))]"/>
+        </record>
+
+        <record id="group_report_stock_unit_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Report Stock Unit Update</field>
+            <field name="menu_access" eval="[(4, ref('menu_stock_unit_report'))]"/>
+            <field name="implied_ids" eval="[(4, ref('group_report_stock_unit_read'))]"/>
+        </record>
+
+        <!-- Report Stock Unit Tree-->
+
+        <record id="group_report_stock_unit_tree_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Report Stock Unit Tree Read</field> 
+            <field name="menu_access" eval="[(4, ref('menu_wtc_report_stock_tree'))]"/>  
+        </record>
+
+        <record id="group_report_stock_unit_tree_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Report Stock Unit Tree Update</field>
+            <field name="menu_access" eval="[(4, ref('menu_wtc_report_stock_tree'))]"/>
+            <field name="implied_ids" eval="[(4, ref('group_report_stock_unit_tree_read'))]"/>
+        </record>
+
+        <!-- Report Stock Sparepart -->
+
+        <record id="group_report_stock_sparepart_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Report Stock Sparepart Read</field> 
+            <field name="menu_access" eval="[(4, ref('menu_stock_report_sparepart'))]"/>
+        </record>
+
+        <record id="group_report_stock_sparepart_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Report Stock Sparepart Update</field> 
+            <field name="menu_access" eval="[(4, ref('menu_stock_report_sparepart'))]"/>
+            <field name="implied_ids" eval="[(4, ref('group_report_stock_sparepart_read'))]"/>
+        </record>
+
+        <!-- Report Stock Accesories -->
+
+        <record id="group_report_stock_accesories_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Report Stock Accesories Read</field> 
+            <field name="menu_access" eval="[(4, ref('menu_showroom_report_stock_accesories'))]"/>
+        </record>
+
+        <record id="group_report_stock_accesories_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Report Stock Accesoreis Update</field>
+            <field name="menu_access" eval="[(4, ref('menu_showroom_report_stock_accesories'))]"/>
+            <field name="implied_ids" eval="[(4, ref('group_report_stock_accesories_read'))]"/>
+        </record>
+        
+        <!-- Report Stock Direct Gift -->
+
+        <record id="group_report_stock_direct_gift_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Report Stock Direct Gift Read</field> 
+            <field name="menu_access" eval="[(4, ref('menu_showroom_report_stock_direct_gift'))]"/>
+        </record>
+
+        <record id="group_report_stock_direct_gift_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Report Stock Direct Gift Update</field>
+            <field name="menu_access" eval="[(4, ref('menu_showroom_report_stock_direct_gift'))]"/>
+            <field name="implied_ids" eval="[(4, ref('group_report_stock_direct_gift_read'))]"/>
+        </record>
+
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+            <field name="implied_ids" eval="[(4,ref('group_report_stock_sparepart_read')),
+                                            (4,ref('group_report_stock_sparepart_update')),
+                                            (4,ref('group_report_stock_unit_read')),
+                                            (4,ref('group_report_stock_unit_update')),
+                                            (4,ref('group_report_stock_unit_tree_read')),
+                                            (4,ref('group_report_stock_unit_tree_update')),
+                                            (4,ref('group_report_stock_direct_gift_update')),
+                                            (4,ref('group_report_stock_accesories_update')),
+                                            ]"/>
+        </record>
+    </data>
+</openerp>

@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_teds_api_button,teds_api_button,model_teds_api_button,,1,0,0,0
+access_teds_api_configuration,teds_api_configuration,model_teds_api_configuration,,1,0,0,0
+access_teds_api_log,teds_api_log,model_teds_api_log,,1,0,0,0
+access_teds_api_list_partner,teds_api_list_partner,model_teds_api_list_partner,,1,0,0,0

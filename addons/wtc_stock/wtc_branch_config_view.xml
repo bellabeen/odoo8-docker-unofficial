@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+    
+		<record id="wtc_branch_config_stock_view" model="ir.ui.view">
+            <field name="name">wtc.branch.config.stock.view</field>
+            <field name="model">wtc.branch.config</field>
+            <field name="inherit_id" ref="wtc_branch.wtc_branch_config_form_view"/>
+            <field name="arch" type="xml">
+            
+                <xpath expr="/form/sheet/group" position="after">
+               		<group string="Penerimaan Gudang">
+               			<field name="freight_cost_journal_id"/>
+                   	</group>
+                </xpath>
+                
+            </field>
+        </record>
+        
+	</data>
+</openerp>

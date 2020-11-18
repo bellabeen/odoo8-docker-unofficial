@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_eksport_ahm_pod_all,eksport_ahm_pod all,model_eksport_ahm_pod,,1,1,1,1
+access_eksport_ahm_rec_all,eksport_ahm_rec all,model_eksport_ahm_rec,,1,1,1,1
+access_eksport_ahm_sal_all,eksport_ahm_sal all,model_eksport_ahm_sal,,1,1,1,1
+access_eksport_ahm_sto_all,eksport_ahm_sto all,model_eksport_ahm_sto,,1,1,1,1

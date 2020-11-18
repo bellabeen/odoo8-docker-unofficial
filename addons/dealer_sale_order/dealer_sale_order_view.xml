@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    
+    
+          <record id="dealer_sale_order_wizard_print_view" model="ir.ui.view">
+            <field name="name">dealer.sale.order.wizard.print</field>
+            <field name="model">dealer.sale.order</field>
+            <field name="arch" type="xml">
+                <form string="SO">
+                    <button name="%(report_dealer_sale_order_dp_po)d" string="Print DP PO" type="action" class="oe_highlight"/> 
+                    <!-- <button name="%(report_dealer_sale_order_pelunasan)d" string="Print Pelunasan Leasing" type="action" class="oe_highlight"/>  -->
+                    <button name="print_wizard_pelunasan_leasing"   string="Print Pelunasan Leasing" type="object"  class="oe_highlight" groups="base.group_user"/>
+                    <button name="%(report_dealer_sale_order_bpkb)d" string="Print Serah BPKB" type="action" class="oe_highlight"/> 
+                    <button name="print_wizard_subsidi_leasing"   string="Print Subsidi Leasing" type="object"  class="oe_highlight" groups="base.group_user"/>
+                    <!-- <button name="%(report_dealer_sale_order_surat_jalan)d" string="Print Surat Jalan" type="action" class="oe_highlight"/> -->
+                    <button name="%(report_dealer_sale_order_invoice)d" string="Print Invoice" type="action" class="oe_highlight"/> 
+                    <!-- <button name="%(report_dealer_sale_order_bastk)d" string="Print BASTK" type="action" class="oe_highlight"/>  -->
+                    <button name="%(report_dealer_sale_order_pelunasan_dso)d" string="Print Pelunasan COD" attrs="{'invisible': [('is_cod','=',False)]}" type="action" class="oe_highlight"/> 
+                    <field name="is_cod" class="oe_inline" invisible='1'/>
+                    
+                    <button name="action_print_surat_kuasa_dso" string="Print Surat Kuasa" type="object"  attrs="{'invisible': [('state','not in',('progress','done'))]}" class="oe_highlight"/> 
+                    <field name="is_cod" class="oe_inline" invisible='1'/>
+                    <field name="state" invisible="1"/>
+                </form>
+
+            </field>
+        </record>
+        
+        <record id="print_wizard_subsidi_leasing_view" model="ir.ui.view">
+            <field name="name">dealer.sale.order.subsidi.leasing.print</field>
+            <field name="model">dealer.sale.order</field>
+            <field name="arch" type="xml">
+                <form string="SO">
+                    <group>
+                    <field name="untuk_pembayaran"/>
+                    </group>
+                    <!-- <button name="%(report_dealer_sale_order_subsidi_leasing)d" string="Print" type="action" class="oe_highlight"/> -->
+                	<button name="dso_print_subsidi_leasing" string="Print" type="object" class="oe_highlight"/>
+                </form>
+            </field>
+        </record>
+        
+        
+        
+        <record id="print_wizard_pelunasan_leasing_view" model="ir.ui.view">
+            <field name="name">dealer.sale.order.pelunasan.leasing.print</field>
+            <field name="model">dealer.sale.order</field>
+            <field name="arch" type="xml">
+                <form string="Pelunasan Leasing">
+                    <group>
+                    <field name="branch_id" invisible="True"/>
+                    <field name="journal_id" required="True" domain="[('branch_id','=',branch_id)]" options="{'no_create': True,'no_open':True}"/>
+                    </group>
+                    <button name="%(report_dealer_sale_order_pelunasan)d" string="Print" type="action" class="oe_highlight"/>
+                
+                </form>
+            </field>
+        </record>
+        
+        
+        <record id="wizard_unused_view" model="ir.ui.view">
+            <field name="name">dealer.sale.order.unused</field>
+            <field name="model">dealer.sale.order</field>
+            <field name="arch" type="xml">
+                <form string="Reason">
+                    <group>
+                    <field name="reason_unused" />
+                    </group>
+                    <button name="action_button_confirm_reason_unused" string="Confirm" type="object" class="oe_highlight"/>
+                </form>
+            </field>
+        </record>
+        
+        
+        <record id="dealer_sale_order_filter" model="ir.ui.view">
+            <field name="name">dealer.sale.order.filter</field>
+            <field name="model">dealer.sale.order</field>
+            <field name="arch" type="xml">
+                <search string="Search Dealer Sale Order">
+                    <field name="name"/>
+                    <field name="partner_id"/>
+                    <field name='branch_id'/>
+                    <field name='division'/>  
+                    <field name='partner_komisi_id'/>
+                    <field name='finco_id'/> 
+                    <field name='user_id'/> 
+                    <filter string="Draft" name="state_draft" domain="[('state','=','draft')]" />
+                    <filter string="Waiting for Approval" name="state_wfa" domain="[('state','=','waiting_for_approval')]" />
+                    <filter string="Approved" name="state_approved" domain="[('state','=','approved')]" />
+                    <filter string="Sales Order" name="state_progress" domain="[('state','=','progress')]" />
+                    <filter string="Done" name="state_done" domain="[('state','=','done')]" />                                    
+                    <group expand="1" string="Group By">
+                        <filter string="Branch" context="{'group_by':'branch_id'}"/>
+                    </group>                
+                </search>
+            </field>
+        </record>        
+        
+    <record id="view_order_tree" model="ir.ui.view">
+            <field name="name">dealer.sale.order.tree</field>
+            <field name="model">dealer.sale.order</field>
+            <field name="priority">2</field>
+            <field name="arch" type="xml">
+                <tree string="Dealer Sales Orders"  colors="grey:state=='cancel';blue:state in ('waiting_date','manual');red:state in ('invoice_except','shipping_except')">
+                    <!-- <field name="message_unread" invisible="1"/> -->
+                    <field name="name" string="Order Number"/>
+                    <field name="date_order"/>
+                    <field name="partner_id"/>
+                    <field name="user_id"/>
+                    <field name='finco_id'/>
+                   <!--  <field name="amount_total" sum="Total Tax Included"/> -->
+                    <field name="state"/>
+                </tree>
+            </field>
+     </record>
+    
+    <record id="sale_order_dealer_form" model="ir.ui.view">
+            <field name="name">dealer.sale.order.form</field>
+            <field name="model">dealer.sale.order</field>            
+            <field name="arch" type="xml">
+                <form string="Sales Orders">                
+                <header>                
+                    <button name="action_button_confirm" states="approved" string="Confirm Sale" type="object" class="oe_highlight" groups="base.group_user"/>
+                    <button name="action_tidak_digunakan" states="draft" string="Unused" type="object" class="oe_highlight" groups="base.group_user"/>
+                    <button name="action_button_claim" type='object' string="Claim" attrs="{'invisible': [('state','not in',('progress','done'))],'readonly': [('claimed_date','!=',False)]}" groups="base.group_user" class="oe_highlight"/>                   
+                    <button name="action_button_confirm" states="sent" string="Confirm Sale" class="oe_highlight" type="object" groups="base.group_user"/>
+                    <!-- <button name="action_invoice_create" states="progress" string="Create Invoice" type="object"  class="oe_highlight" groups="base.group_user"/> -->
+                    <button name="action_view_do" attrs="{'invisible': ['|',('picking_dummy','!=',True),('state','not in',('progress','done'))]}" string="View Delivery Order" type="object"  class="oe_highlight" groups="base.group_user"/>
+                    <!-- <button name="action_view_do" states="progress" string="View Delivery Order" type="object"  class="oe_highlight" groups="base.group_user"/> -->
+                    <button name="action_view_invoices" states="progress,done" string="View Invoices" type="object"  class="oe_highlight" groups="base.group_user"/>
+                    <button name="print_wizard"  states="progress,done" string="Print" type="object"  class="oe_highlight" groups="base.group_user"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,waiting_for_approval,approved,progress,done" statusbar_colors='{"invoice_except":"red","waiting_date":"blue"}'/>
+                </header>
+                <sheet>
+                        <div class="oe_title">                      
+                            <h1>
+                                <label string="Sales Order"/>
+                                <field name="name" class="oe_inline" readonly="1"/> 
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="payment_term" invisible="1" options="{'no_create': True,'no_open':True}" class="oe_inline"/>
+                                <field name="branch_id" options="{'no_show':True,'no_create':True,'no_open':True}" attrs="{'readonly': [('name','!=',False)]}" on_change="branch_change(branch_id)" class="oe_inline"/>                         
+                                <field name="date_order" readonly="1" class="oe_inline"/>
+                                <field name="cddb_id" options="{'no_create': True,'no_open':True}" attrs="{'readonly': [('state','not in','draft')]}" class="oe_inline" domain="[('customer_id','=',partner_id)]"/>
+                                <field name="kecamatan_cddb_rel" class="oe_inline"/>
+                                <field name='employee_id' invisible='1'/>
+                                <field name="partner_komisi_id" options="{'no_create': True,'no_open':True}" attrs="{'readonly': [('state','not in','draft')]}" class="oe_inline"/>
+                                <field name="sales_koordinator_id"  options="{'no_create': True,'no_open':True}" attrs="{'readonly': [('state','not in','draft')], 'required': [('date_order','&gt;=','2016-06-01')]}" class="oe_inline" domain="[('branch_ids','in',branch_id)]"/>
+                                <field name="finco_id" options="{'no_create': True,'no_open':True}" attrs="{'readonly': [('state','not in','draft')]}" class="oe_inline" on_change="partner_id_change(partner_id,finco_id)"/>
+                                <field name="payment_term_dummy" readonly="1" class="oe_inline"/>
+                                <field name="alamat_kirim" attrs="{'readonly': [('state','not in','draft')]}"/>
+                                <field name="claimed_date" readonly='1'/>
+                                <field name="picking_dummy" invisible="1"/>
+                            </group>
+                            <group>
+                                <field name="division" attrs="{'readonly': [('state','not in','draft')]}" class="oe_inline"/>
+                                <field name="partner_id" options="{'no_create': True,'no_open':True}" attrs="{'readonly': [('state','not in','draft')]}" class="oe_inline" on_change="partner_id_change(partner_id,finco_id)"/>
+                                <field name="city_cddb_rel" class="oe_inline"/>
+                                <field name="user_id" options="{'no_create': True,'no_open':True}" attrs="{'readonly': [('state','not in','draft')]}" on_change="onchange_sales(user_id,branch_id)" class="oe_inline" domain="[('branch_ids','in',branch_id)]"/>
+                                <!--field name="section_id" options="{'no_create': True,'no_open':True}" attrs="{'readonly': [('state','not in','draft')]}" class="oe_inline"/-->
+                                <field name="sales_source" on_change="onchange_source(sales_source,branch_id)"  attrs="{'readonly': [('state','not in','draft')]}" class="oe_inline" />
+                                <field name="sales_source_location" options="{'no_create': True,'no_open':True}" class="oe_inline" attrs="{'invisible': [('sales_source','not in',('canvasing','pos','pameran','channel'))], 'required': [('sales_source','in',('canvasing','pos','pameran','channel')),('date_order','&gt;=','2016-03-01')], 'readonly': [('state','!=','draft')]}" domain="[('branch_id','=',branch_id),('jenis','=',sales_source),('start_date','&lt;=',time.strftime('%Y-%m-%d %H:%M:%S')),('end_date','&gt;=',time.strftime('%Y-%m-%d %H:%M:%S'))]" />
+                                <field name="customer_dp" class="oe_inline"/>
+                                <field name="is_cod" class="oe_inline" attrs="{'readonly': [('state','not in','draft')]}"/>
+                                <field name="reason_unused" attrs="{'invisible': [('state','!=','unused')]}"  class="oe_inline"/>
+                            </group>
+                         </group>
+                    <notebook >
+                        <page string="Sales Order Line" >
+                            <field name="dealer_sale_order_line" domain="['dealer_sale_order_line_id','=',active_id']" attrs="{'readonly': [('state','not in','draft')]}" context="{'dealer_sale_order_line_id':active_id,'finco_id':finco_id}">                                
+                                    <tree >
+                                        <field name="product_id" on_change="product_id_change(product_id,parent.branch_id)" domain="[('sale_ok','=',True)]"/>
+                                        <field name="product_desc" />                                                                       
+                                        <field name="location_id"/>                                         
+                                        <field name="lot_id" domain="{[('location_id','=',location_id)]}"/>
+                                        <field name="chassis_no"/>  
+                                        <field name="umur_stock"/>
+                                        <field name="product_qty"/>
+                                        <field name="price_unit"/>                                      
+                                        <field name="discount_total"/>
+                                        <field name="is_bbn" />
+                                        <!-- <field name="plat" attrs="{'required': [('is_bbn','!=',False),('is_bbn','!=', 'T')]}"/> -->
+                                        <field name="partner_stnk_id" editable="top" attrs="{'required': [('is_bbn','!=',False),('is_bbn','!=', 'T')]}"/>
+                                        <!-- <field name="biro_jasa_id" on_change="biro_jasa_id_change(product_id,parent.branch_id,plat)" attrs="{'required': [('is_bbn','!=',False),('is_bbn','!=', 'T')]}"/> -->
+                                        <field name="price_bbn"/> 
+                                        <field name="tax_id" /> 
+                                        <field name="price_subtotal"/>
+                                    </tree>
+                                    <form  >
+                                        <group>
+                                            <group col="4">
+                                            
+                                                <field name="categ_id" on_change="category_change(categ_id,parent.branch_id,parent.finco_id,parent.partner_komisi_id)" class="oe_inline"/>
+                                                <field name="product_id" options="{'no_create': True,'no_open':True}" on_change="product_id_change(product_id,parent.branch_id)" class="oe_inline"/>
+                                                <field name="product_desc" />
+                                                <field name="location_id"  options="{'no_create': True,'no_open':True}" on_change="location_change(location_id,product_id)" domain="[('branch_id','=',parent.branch_id),('usage','=','internal')]" class="oe_inline"/>   <!-- on_change="location_change(location_id,product_id) -->                                        
+                                                <field name="lot_id" options="{'no_create': True,'no_open':True}" domain="[('state','=','stock'),('product_id','=',product_id),('location_id','=',location_id)]" class="oe_inline" on_change="lot_id_change(lot_id)"/>
+                                                <field name="chassis_no"/>
+                                                <field name="product_qty" class="oe_inline" readonly="1"/>                                              
+                                                <field name="finco_tgl_po" class="oe_inline" attrs="{'required': [('finco_dummy','!=',0)],'invisible':[('finco_dummy','=',0)]}"/>
+                                                <field name="finco_no_po" class="oe_inline" attrs="{'required': [('finco_dummy','!=',0)],'invisible':[('finco_dummy','=',0)]}"/>
+                                                <label for="tenor_list" string="Tenor" attrs="{'invisible':[('finco_dummy','=',0)]}"/>
+                                                <div>
+                                                    <field name="tenor_list" class="oe_inline" attrs="{'required': [('finco_dummy','!=',0)],'invisible':[('finco_dummy','=',0)]}"/>
+                                                    <field name="finco_tenor" class="oe_inline" attrs="{'required': [('finco_dummy','!=',0)],'invisible':['|',('finco_dummy','=',0),('tenor_list','!=','lainnya')]}"/>
+                                                </div>
+                                                <field name="cicilan" class="oe_inline" attrs="{'required': [('finco_dummy','!=',0)],'invisible':[('finco_dummy','=',0)]}"/>
+                                                <field name="is_bbn" class="oe_inline" on_change="onchange_is_bbn(is_bbn,parent.branch_id)" /> 
+                                                <field name="plat" attrs="{'required': [('is_bbn','=','Y')], 'readonly': [('is_bbn','=','T')]}" class="oe_inline"/>
+                                                <field name="partner_stnk_id" options="{'no_create': True,'no_open':True}" editable="top" attrs="{'required': [('is_bbn','=','Y')], 'readonly': [('is_bbn','=','T')]}" class="oe_inline" on_change="partner_stnk_id_change(partner_stnk_id)" />
+                                                <field name="biro_jasa_id" options="{'no_create': True,'no_open':True}" on_change="biro_jasa_id_change(product_id,parent.branch_id,plat,biro_jasa_id,city_id)" attrs="{'required': [('is_bbn','=','Y')], 'readonly': [('is_bbn','=','T')]}" class="oe_inline"/>
+                                                <field name="uang_muka" on_change="onchange_uang_muka(uang_muka,parent.finco_id)"/>
+                                                <field name="tax_id" invisible="1" options="{'no_create': True}" widget="many2many_tags" domain="[('parent_id','=',False),('type_tax_use','=','sale')]" class="oe_inline"/>
+                                                <field name="discount_po" on_change="onchange_discount_po(discount_po)"/>
+                                                <field name="city_id" invisible="1" />
+                                            </group>
+                                            
+                                        </group>
+                                            <group>
+                                                
+                                                <field name="price_unit_show" readonly="1"/>
+                                                <field name="discount_total"/>                                                                                              
+                                                <field name="price_bbn_show" readonly="1" />
+                                                <field name="price_subtotal"/>
+                                                <field name="accrue_ekspedisi" invisible="1"/>
+                                                <field name="accrue_proses_bbn" invisible="1"/>
+                                            </group>
+                                            <group>
+                                                <field name="price_unit" invisible="1" on_change="onchange_price(price_unit)"/>
+                                                <field name="price_bbn" invisible="1" on_change="onchange_price_bbn(price_bbn)"/>
+                                                <field name="price_bbn_beli" invisible="1"/>
+                                                <field name="price_unit_beli" invisible="1"/>
+                                                <field name="price_bbn_proses" invisible="1"/>
+                                                <field name="price_bbn_jasa" invisible="1"/>
+                                                <field name="price_bbn_jasa_area" invisible="1"/>
+                                                <field name="price_bbn_fee_pusat" invisible="1"/>
+                                                <field name="price_bbn_notice" invisible="1"/>
+                                                <field name="insentif_finco" invisible="1"/>
+                                                <field name="branch_dummy" invisible="1"/>
+                                                <field name="finco_dummy" invisible="1"/>
+                                                <field name="komisi_dummy" invisible="1"/>
+                                                  
+                                            </group>
+                                        
+                                        <notebook>
+                                            <page string="Discount Line">
+                                                <field name="discount_line" on_change="discount_line_change(discount_line)">
+                                                    <tree editable="top">
+                                                        <field name="program_subsidi"  options="{'no_create': True}" domain="[('area_id.branch_ids','=',parent.branch_dummy),('state','=','approved'),('active','=',True),('date_start','&lt;=',time.strftime('%Y-%m-%d %H:%M:%S')),('date_end','&gt;=',time.strftime('%Y-%m-%d %H:%M:%S'))]" on_change="program_subsidi_change(parent.product_id,program_subsidi,parent.uang_muka,parent.finco_dummy,parent.branch_dummy)"/>
+                                                        <field name="tipe_subsidi" invisible="1"/>
+                                                        <field name="discount" on_change="program_subsidi_change(parent.product_id,program_subsidi,parent.uang_muka,parent.finco_dummy,parent.branch_dummy)"/>
+                                                        <field name="discount_pelanggan" on_change="onchange_discount_pelanggan(program_subsidi,tipe_subsidi,discount,discount_pelanggan)"/>
+                                                        <field name="ps_ahm" invisible="1"/>
+                                                        <field name="ps_md" invisible="1"/>
+                                                        <field name="ps_finco" invisible="1"/>
+                                                        <field name="ps_dealer" invisible="1"/>
+                                                        <field name="ps_others" invisible="1"/>
+                                                        
+                                                    </tree>
+                                                    
+                                                </field>                                            
+                                            </page>
+                                            <page string="Barang Bonus Line">
+                                                <field name="barang_bonus_line" on_change="discount_line_change(barang_bonus_line)">
+                                                    <tree editable="top">
+                                                        <field name="barang_subsidi_id" domain="[('area_id.branch_ids','=',parent.branch_dummy),('state','=','approved'),('active','=',True),('date_start','&lt;=',time.strftime('%Y-%m-%d %H:%M:%S')),('date_end','&gt;=',time.strftime('%Y-%m-%d %H:%M:%S'))]" options="{'no_create': True}" on_change="barang_bonus_change(parent.product_id,barang_subsidi_id)"/>
+                                                        <field name="product_subsidi_id" on_change="barang_bonus_change(parent.product_id,barang_subsidi_id)" options="{'no_create': True}" />
+                                                        <field name="barang_qty" on_change="barang_bonus_change(parent.product_id,barang_subsidi_id)"/>
+                                                        <field name="price_barang" on_change="barang_bonus_change(parent.product_id,barang_subsidi_id)"/>
+                                                        <field name="bb_ahm" invisible="1"/>
+                                                        <field name="bb_md" invisible="1"/>
+                                                        <field name="bb_finco" invisible="1"/>
+                                                        <field name="bb_dealer" invisible="1"/>
+                                                        <field name="bb_others" invisible="1"/>
+                                                    </tree>
+                                                    
+                                                </field>                                            
+                                            </page>
+                                            
+                                            <page string="Hutang Komisi">
+                                                    
+                                                    <group col="2">
+                                                        <field name="hutang_komisi_id" domain="[('area_id.branch_ids','=',parent.branch_id),('state','=','approved'),('date_start','&lt;=',time.strftime('%Y-%m-%d %H:%M:%S')),('date_end','&gt;=',time.strftime('%Y-%m-%d %H:%M:%S'))]" attrs="{'required': [('komisi_dummy','!=',0)]}" options="{'no_create': True,'no_open': True}" on_change="onchange_hutang_komisi(product_id,hutang_komisi_id,parent.partner_komisi_id)"/>
+                                                        <field name="tipe_komisi" readonly="1"/>
+                                                        <field name="hutang_komisi_amount" readonly="1"/>
+                                                        <field name="amount_hutang_komisi" attrs="{'required': [('komisi_dummy','!=',0)]}" on_change="onchange_amount_hc(product_id,hutang_komisi_id,tipe_komisi,amount_hutang_komisi,parent.partner_komisi_id,hutang_komisi_amount)"/>
+                                                    </group>
+                                                                                
+                                            </page>
+                                        </notebook>
+                                    </form>
+                            </field>
+                            <group class="oe_subtotal_footer oe_right" colspan="2" name="Sales Total">
+                                <field name="amount_untaxed" widget='monetary' options="{'currency_field': 'currency_id'}"/>
+                                <field name="amount_tax" widget='monetary' options="{'currency_field': 'currency_id'}"/>
+                                <field name="amount_bbn" widget='monetary' options="{'currency_field': 'currency_id'}"/>
+                                <div class="oe_subtotal_footer_seperator oe_inline">
+                                <label for="amount_total"/>
+                                <button name="button_dummy"
+                                        states="draft" string="(update)" type="object" class="oe_edit_only oe_link"/>
+                                </div>
+                                <field name="amount_total" nolabel="1" class="oe_subtotal_footer_separator" widget='monetary' options="{'currency_field': 'currency_id'}"/>
+                             </group> 
+                             <div class="oe_clear"/>
+                         </page>
+                         <page string="Alokasi DP">
+                            <field name="hutang_lain_line">
+                                <tree editable="bottom">
+                                    <field name="hl_id" options="{'no_create': True}" on_change="onchange_hl(hl_id)" domain="[('branch_id','=',parent.branch_id),('division','=',parent.division),('partner_id','=',parent.partner_id),('credit','>',0),('reconcile_id','=',False)]"/>
+                                    <field name="amount_hl_original_show"/>
+                                    <field name="amount_hl_balance_show"/>
+                                    <field name="amount_hl_original" invisible="1"/>
+                                    <field name="amount_hl_balance" invisible="1"/>
+                                    <field name="amount_hl_allocation" sum="Total HL" on_change="onchange_amount_hl(amount_hl_allocation,amount_hl_balance)"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string='Faktur Pajak' >
+                            <group>
+                                <field name='pajak_gabungan' ></field>
+                                <field name='faktur_pajak_id' readonly='1'></field>
+                            </group>
+                        </page>                      
+                        <page string="Other Info">
+                            <group col="4">
+                                <group>
+                                    <field name="amount_harga_jual"/>
+                                    <field name="amount_total_disc"/>
+                                    <field name="amount_beban_dealer"/>
+                                    <field name="amount_tax_info"/>
+                                    <field name="amount_bbn_info"/>
+                                    <field name="amount_piutang"/>
+                                    <field name="amount_gp_unit"/>
+                                    <field name="amount_gp_bbn"/>
+                                </group>
+                                <group>
+                                    <field name="amount_pot"/>
+                                    <field name="amount_ps"/>
+                                    <field name="amount_hc"/>
+                                    <field name="amount_dp_info"/>
+                                    <field name="amount_ps_md"/>
+				                	<field name="amount_ps_finco"/>
+				                	<field name="amount_ps_dealer"/>
+                                </group>
+                            </group>
+                        </page>
+                        <page string="Summary Diskon">
+                            <field name="summary_diskon_ids" readonly="1">
+                                <tree>
+                                    <field name="product_id"/>
+                                    <field name="product_qty"/>
+                                    <field name="beban_ps"/>
+                                    <field name="beban_bb"/>
+                                    <field name="beban_po"/>
+                                    <field name="beban_hc"/>
+                                    <field name="amount_average"/>
+                                </tree>
+                            </field>
+                        </page>
+                        
+                    </notebook> 
+                    </sheet>                        
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window" id="dealer_sale_order_action">
+            <field name="name">Dealer Sales Order</field>
+            <field name="res_model">dealer.sale.order</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{"search_default_state_draft":1,"search_default_state_wfa":1,"search_default_state_approved":1}</field>
+        </record>
+        <record model="ir.actions.act_window" id="account_voucher.action_vendor_receipt">
+            <field name="domain">[('is_hutang_lain','=',False),('journal_id.type', 'in', ['bank', 'cash','edc']),('type','=','receipt')]</field>
+        </record>   
+            
+        <menuitem id="wtc_showroom_menu_sub" name="Showroom" parent="wtc_dealer_menu.wtc_dealer_top_menu" sequence="10"/>
+        
+        <menuitem action="dealer_sale_order_action" id="menu_dealer_sale_order" parent="wtc_dealer_menu.showroom_sales_menu" sequence="3" />
+        <menuitem action="account.action_invoice_tree1" id="menu_action_invoice_tree1_1" parent="wtc_dealer_menu.showroom_sales_menu" sequence="4" />
+        <menuitem action="account.action_invoice_tree1" id="menu_action_invoice_tree1_2" parent="wtc_dealer_menu.workshop_sales_menu" sequence="5" />
+        
+        <menuitem action="account_voucher.action_vendor_receipt" icon="STOCK_JUSTIFY_FILL" id="menu_action_vendor_receipt_5"  parent="wtc_dealer_menu.backoffice_bankandcash_menu" sequence="30"/>  
+        <menuitem action="account_voucher.action_vendor_receipt" icon="STOCK_JUSTIFY_FILL" id="menu_action_vendor_receipt_3"  parent="wtc_dealer_menu.showroom_sales_menu" sequence="5"/>
+        <menuitem action="account_voucher.action_vendor_receipt" icon="STOCK_JUSTIFY_FILL" id="menu_action_vendor_receipt_4"  parent="wtc_dealer_menu.workshop_sales_menu" sequence="6"/>
+            
+<!-- NEW -->            
+                                
+        <menuitem action="sales_team.crm_case_section_salesteams_act" id="menu_master_sales_team"  parent="wtc_dealer_menu.ma_sales_menu" sequence="1"/>
+
+       	<report 
+            string="Print Leasing" 
+            id="menu_report_cash3" 
+            model="dealer.sale.order" 
+            report_type="qweb-pdf"
+            name="dealer_sale_order.wtc_report_print_subsidi_leasing" 
+            file="dealer_sale_order.wtc_report_print_subsidi_leasing" 
+            menu="False"/>
+    <!--     <report 
+            string="Print Pelunasan DSO" 
+            id="menu_report_dso" 
+            model="dealer.sale.order" 
+            report_type="qweb-pdf"
+            name="dealer_sale_order.wtc_report_print_pelunasan_dso" 
+            file="dealer_sale_order.wtc_report_print_pelunasan_dso" 
+            menu="False"/> -->
+	    
+    </data>
+</openerp>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+	  	<record id="view_teds_bank_mutasi_button_bca_form" model="ir.ui.view" >
+		    <field name="name">teds.bank.mutasi.button.bca.form</field>
+		    <field name="model">teds.bank.mutasi</field>
+		    <field name="inherit_id" ref="teds_bank_reconcile.teds_bank_mutasi_form_view"/>
+		    <field name="arch" type="xml">
+		    	<button name="button_reconcile" position="after">
+					<button name="schedule_auto_posting_bca" string="Auto Posting BCA" type="object" groups="teds_b2b_bca.group_bank_mutasi_auto_posting_bca_button"/>
+		    	</button>
+		    </field>
+		</record>
+	</data>
+</openerp>

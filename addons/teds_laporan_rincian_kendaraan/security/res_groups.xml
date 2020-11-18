@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="group_teds_laporan_rincian_kendaraan_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">TEDS Laporan Rincian Kendaraan Read</field>
+            <field name="menu_access" eval="[(4, ref('menu_teds_laporan_rincian_kendaraan_wizard'))]"/>
+        </record>    
+   	</data>
+</openerp>

@@ -1,0 +1,2831 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+     
+        <record id="kab_id_1101" model="wtc.city">
+            <field name="state_id" ref="province_id_1100"/>
+            <field name="name">KAB. SIMEULUE</field>
+            <field name="code">1101</field>
+        </record>
+    
+        <record id="kab_id_1102" model="wtc.city">
+            <field name="state_id" ref="province_id_1100"/>
+            <field name="name">KAB. ACEH SINGKIL</field>
+            <field name="code">1102</field>
+        </record>
+    
+        <record id="kab_id_1103" model="wtc.city">
+            <field name="state_id" ref="province_id_1100"/>
+            <field name="name">KAB. ACEH SELATAN</field>
+            <field name="code">1103</field>
+        </record>
+    
+        <record id="kab_id_1104" model="wtc.city">
+            <field name="state_id" ref="province_id_1100"/>
+            <field name="name">KAB. ACEH TENGGARA</field>
+            <field name="code">1104</field>
+        </record>
+    
+        <record id="kab_id_1105" model="wtc.city">
+            <field name="state_id" ref="province_id_1100"/>
+            <field name="name">KAB. ACEH TIMUR</field>
+            <field name="code">1105</field>
+        </record>
+    
+        <record id="kab_id_1106" model="wtc.city">
+            <field name="state_id" ref="province_id_1100"/>
+            <field name="name">KAB. ACEH TENGAH</field>
+            <field name="code">1106</field>
+        </record>
+    
+        <record id="kab_id_1107" model="wtc.city">
+            <field name="state_id" ref="province_id_1100"/>
+            <field name="name">KAB. ACEH BARAT</field>
+            <field name="code">1107</field>
+        </record>
+    
+        <record id="kab_id_1108" model="wtc.city">
+            <field name="state_id" ref="province_id_1100"/>
+            <field name="name">KAB. ACEH BESAR</field>
+            <field name="code">1108</field>
+        </record>
+    
+        <record id="kab_id_1109" model="wtc.city">
+            <field name="state_id" ref="province_id_1100"/>
+            <field name="name">KAB. PIDIE</field>
+            <field name="code">1109</field>
+        </record>
+    
+        <record id="kab_id_1110" model="wtc.city">
+            <field name="state_id" ref="province_id_1100"/>
+            <field name="name">KAB. BIREUEN</field>
+            <field name="code">1110</field>
+        </record>
+    
+        <record id="kab_id_1111" model="wtc.city">
+            <field name="state_id" ref="province_id_1100"/>
+            <field name="name">KAB. ACEH UTARA</field>
+            <field name="code">1111</field>
+        </record>
+    
+        <record id="kab_id_1112" model="wtc.city">
+            <field name="state_id" ref="province_id_1100"/>
+            <field name="name">KAB. ACEH BARAT DAYA</field>
+            <field name="code">1112</field>
+        </record>
+    
+        <record id="kab_id_1113" model="wtc.city">
+            <field name="state_id" ref="province_id_1100"/>
+            <field name="name">KAB. GAYO LUES</field>
+            <field name="code">1113</field>
+        </record>
+    
+        <record id="kab_id_1114" model="wtc.city">
+            <field name="state_id" ref="province_id_1100"/>
+            <field name="name">KAB. ACEH TAMIANG</field>
+            <field name="code">1114</field>
+        </record>
+    
+        <record id="kab_id_1115" model="wtc.city">
+            <field name="state_id" ref="province_id_1100"/>
+            <field name="name">KAB. NAGAN RAYA</field>
+            <field name="code">1115</field>
+        </record>
+    
+        <record id="kab_id_1116" model="wtc.city">
+            <field name="state_id" ref="province_id_1100"/>
+            <field name="name">KAB. ACEH JAYA</field>
+            <field name="code">1116</field>
+        </record>
+    
+        <record id="kab_id_1117" model="wtc.city">
+            <field name="state_id" ref="province_id_1100"/>
+            <field name="name">KAB. BENER MERIAH</field>
+            <field name="code">1117</field>
+        </record>
+    
+        <record id="kab_id_1118" model="wtc.city">
+            <field name="state_id" ref="province_id_1100"/>
+            <field name="name">KAB. PIDIE JAYA</field>
+            <field name="code">1118</field>
+        </record>
+    
+        <record id="kab_id_1171" model="wtc.city">
+            <field name="state_id" ref="province_id_1100"/>
+            <field name="name">KOTA BANDA ACEH</field>
+            <field name="code">1171</field>
+        </record>
+    
+        <record id="kab_id_1172" model="wtc.city">
+            <field name="state_id" ref="province_id_1100"/>
+            <field name="name">KOTA SABANG</field>
+            <field name="code">1172</field>
+        </record>
+    
+        <record id="kab_id_1173" model="wtc.city">
+            <field name="state_id" ref="province_id_1100"/>
+            <field name="name">KOTA LANGSA</field>
+            <field name="code">1173</field>
+        </record>
+    
+        <record id="kab_id_1174" model="wtc.city">
+            <field name="state_id" ref="province_id_1100"/>
+            <field name="name">KOTA LHOKSEUMAWE</field>
+            <field name="code">1174</field>
+        </record>
+    
+        <record id="kab_id_1175" model="wtc.city">
+            <field name="state_id" ref="province_id_1100"/>
+            <field name="name">KOTA SUBULUSSALAM</field>
+            <field name="code">1175</field>
+        </record>
+    
+        <record id="kab_id_1201" model="wtc.city">
+            <field name="state_id" ref="province_id_1200"/>
+            <field name="name">KAB. NIAS</field>
+            <field name="code">1201</field>
+        </record>
+    
+        <record id="kab_id_1202" model="wtc.city">
+            <field name="state_id" ref="province_id_1200"/>
+            <field name="name">KAB. MANDAILING NATAL</field>
+            <field name="code">1202</field>
+        </record>
+    
+        <record id="kab_id_1203" model="wtc.city">
+            <field name="state_id" ref="province_id_1200"/>
+            <field name="name">KAB. TAPANULI SELATAN</field>
+            <field name="code">1203</field>
+        </record>
+    
+        <record id="kab_id_1204" model="wtc.city">
+            <field name="state_id" ref="province_id_1200"/>
+            <field name="name">KAB. TAPANULI TENGAH</field>
+            <field name="code">1204</field>
+        </record>
+    
+        <record id="kab_id_1205" model="wtc.city">
+            <field name="state_id" ref="province_id_1200"/>
+            <field name="name">KAB. TAPANULI UTARA</field>
+            <field name="code">1205</field>
+        </record>
+    
+        <record id="kab_id_1206" model="wtc.city">
+            <field name="state_id" ref="province_id_1200"/>
+            <field name="name">KAB. TOBA SAMOSIR</field>
+            <field name="code">1206</field>
+        </record>
+    
+        <record id="kab_id_1207" model="wtc.city">
+            <field name="state_id" ref="province_id_1200"/>
+            <field name="name">KAB. LABUHAN BATU</field>
+            <field name="code">1207</field>
+        </record>
+    
+        <record id="kab_id_1208" model="wtc.city">
+            <field name="state_id" ref="province_id_1200"/>
+            <field name="name">KAB. ASAHAN</field>
+            <field name="code">1208</field>
+        </record>
+    
+        <record id="kab_id_1209" model="wtc.city">
+            <field name="state_id" ref="province_id_1200"/>
+            <field name="name">KAB. SIMALUNGUN</field>
+            <field name="code">1209</field>
+        </record>
+    
+        <record id="kab_id_1210" model="wtc.city">
+            <field name="state_id" ref="province_id_1200"/>
+            <field name="name">KAB. DAIRI</field>
+            <field name="code">1210</field>
+        </record>
+    
+        <record id="kab_id_1211" model="wtc.city">
+            <field name="state_id" ref="province_id_1200"/>
+            <field name="name">KAB. KARO</field>
+            <field name="code">1211</field>
+        </record>
+    
+        <record id="kab_id_1212" model="wtc.city">
+            <field name="state_id" ref="province_id_1200"/>
+            <field name="name">KAB. DELI SERDANG</field>
+            <field name="code">1212</field>
+        </record>
+    
+        <record id="kab_id_1213" model="wtc.city">
+            <field name="state_id" ref="province_id_1200"/>
+            <field name="name">KAB. LANGKAT</field>
+            <field name="code">1213</field>
+        </record>
+    
+        <record id="kab_id_1214" model="wtc.city">
+            <field name="state_id" ref="province_id_1200"/>
+            <field name="name">KAB. NIAS SELATAN</field>
+            <field name="code">1214</field>
+        </record>
+    
+        <record id="kab_id_1215" model="wtc.city">
+            <field name="state_id" ref="province_id_1200"/>
+            <field name="name">KAB. HUMBANG HASUNDUTAN</field>
+            <field name="code">1215</field>
+        </record>
+    
+        <record id="kab_id_1216" model="wtc.city">
+            <field name="state_id" ref="province_id_1200"/>
+            <field name="name">KAB. PAKPAK BHARAT</field>
+            <field name="code">1216</field>
+        </record>
+    
+        <record id="kab_id_1217" model="wtc.city">
+            <field name="state_id" ref="province_id_1200"/>
+            <field name="name">KAB. SAMOSIR</field>
+            <field name="code">1217</field>
+        </record>
+    
+        <record id="kab_id_1218" model="wtc.city">
+            <field name="state_id" ref="province_id_1200"/>
+            <field name="name">KAB. SERDANG BEDAGAI</field>
+            <field name="code">1218</field>
+        </record>
+    
+        <record id="kab_id_1219" model="wtc.city">
+            <field name="state_id" ref="province_id_1200"/>
+            <field name="name">KAB. BATU BARA</field>
+            <field name="code">1219</field>
+        </record>
+    
+        <record id="kab_id_1220" model="wtc.city">
+            <field name="state_id" ref="province_id_1200"/>
+            <field name="name">KAB. PADANG LAWAS UTARA</field>
+            <field name="code">1220</field>
+        </record>
+    
+        <record id="kab_id_1221" model="wtc.city">
+            <field name="state_id" ref="province_id_1200"/>
+            <field name="name">KAB. PADANG LAWAS</field>
+            <field name="code">1221</field>
+        </record>
+    
+        <record id="kab_id_1271" model="wtc.city">
+            <field name="state_id" ref="province_id_1200"/>
+            <field name="name">KOTA SIBOLGA</field>
+            <field name="code">1271</field>
+        </record>
+    
+        <record id="kab_id_1272" model="wtc.city">
+            <field name="state_id" ref="province_id_1200"/>
+            <field name="name">KOTA TANJUNG BALAI</field>
+            <field name="code">1272</field>
+        </record>
+    
+        <record id="kab_id_1273" model="wtc.city">
+            <field name="state_id" ref="province_id_1200"/>
+            <field name="name">KOTA PEMATANG SIANTAR</field>
+            <field name="code">1273</field>
+        </record>
+    
+        <record id="kab_id_1274" model="wtc.city">
+            <field name="state_id" ref="province_id_1200"/>
+            <field name="name">KOTA TEBING TINGGI</field>
+            <field name="code">1274</field>
+        </record>
+    
+        <record id="kab_id_1275" model="wtc.city">
+            <field name="state_id" ref="province_id_1200"/>
+            <field name="name">KOTA MEDAN</field>
+            <field name="code">1275</field>
+        </record>
+    
+        <record id="kab_id_1276" model="wtc.city">
+            <field name="state_id" ref="province_id_1200"/>
+            <field name="name">KOTA BINJAI</field>
+            <field name="code">1276</field>
+        </record>
+    
+        <record id="kab_id_1277" model="wtc.city">
+            <field name="state_id" ref="province_id_1200"/>
+            <field name="name">KOTA PADANGSIDIMPUAN</field>
+            <field name="code">1277</field>
+        </record>
+    
+        <record id="kab_id_1301" model="wtc.city">
+            <field name="state_id" ref="province_id_1300"/>
+            <field name="name">KAB. KEPULAUAN MENTAWAI</field>
+            <field name="code">1301</field>
+        </record>
+    
+        <record id="kab_id_1302" model="wtc.city">
+            <field name="state_id" ref="province_id_1300"/>
+            <field name="name">KAB. PESISIR SELATAN</field>
+            <field name="code">1302</field>
+        </record>
+    
+        <record id="kab_id_1303" model="wtc.city">
+            <field name="state_id" ref="province_id_1300"/>
+            <field name="name">KAB. SOLOK</field>
+            <field name="code">1303</field>
+        </record>
+    
+        <record id="kab_id_1304" model="wtc.city">
+            <field name="state_id" ref="province_id_1300"/>
+            <field name="name">KAB. SAWAHLUNTO/ SIJUNJUNG</field>
+            <field name="code">1304</field>
+        </record>
+    
+        <record id="kab_id_1305" model="wtc.city">
+            <field name="state_id" ref="province_id_1300"/>
+            <field name="name">KAB. TANAH DATAR</field>
+            <field name="code">1305</field>
+        </record>
+    
+        <record id="kab_id_1306" model="wtc.city">
+            <field name="state_id" ref="province_id_1300"/>
+            <field name="name">KAB. PADANG PARIAMAN</field>
+            <field name="code">1306</field>
+        </record>
+    
+        <record id="kab_id_1307" model="wtc.city">
+            <field name="state_id" ref="province_id_1300"/>
+            <field name="name">KAB. AGAM</field>
+            <field name="code">1307</field>
+        </record>
+    
+        <record id="kab_id_1308" model="wtc.city">
+            <field name="state_id" ref="province_id_1300"/>
+            <field name="name">KAB. LIMA PULUH KOTO</field>
+            <field name="code">1308</field>
+        </record>
+    
+        <record id="kab_id_1309" model="wtc.city">
+            <field name="state_id" ref="province_id_1300"/>
+            <field name="name">KAB. PASAMAN</field>
+            <field name="code">1309</field>
+        </record>
+    
+        <record id="kab_id_1310" model="wtc.city">
+            <field name="state_id" ref="province_id_1300"/>
+            <field name="name">KAB. SOLOK SELATAN</field>
+            <field name="code">1310</field>
+        </record>
+    
+        <record id="kab_id_1311" model="wtc.city">
+            <field name="state_id" ref="province_id_1300"/>
+            <field name="name">KAB. DHARMAS RAYA</field>
+            <field name="code">1311</field>
+        </record>
+    
+        <record id="kab_id_1312" model="wtc.city">
+            <field name="state_id" ref="province_id_1300"/>
+            <field name="name">KAB. PASAMAN BARAT</field>
+            <field name="code">1312</field>
+        </record>
+    
+        <record id="kab_id_1371" model="wtc.city">
+            <field name="state_id" ref="province_id_1300"/>
+            <field name="name">KOTA PADANG</field>
+            <field name="code">1371</field>
+        </record>
+    
+        <record id="kab_id_1372" model="wtc.city">
+            <field name="state_id" ref="province_id_1300"/>
+            <field name="name">KOTA SOLOK</field>
+            <field name="code">1372</field>
+        </record>
+    
+        <record id="kab_id_1373" model="wtc.city">
+            <field name="state_id" ref="province_id_1300"/>
+            <field name="name">KOTA SAWAH LUNTO</field>
+            <field name="code">1373</field>
+        </record>
+    
+        <record id="kab_id_1374" model="wtc.city">
+            <field name="state_id" ref="province_id_1300"/>
+            <field name="name">KOTA PADANG PANJANG</field>
+            <field name="code">1374</field>
+        </record>
+    
+        <record id="kab_id_1375" model="wtc.city">
+            <field name="state_id" ref="province_id_1300"/>
+            <field name="name">KOTA BUKITTINGGI</field>
+            <field name="code">1375</field>
+        </record>
+    
+        <record id="kab_id_1376" model="wtc.city">
+            <field name="state_id" ref="province_id_1300"/>
+            <field name="name">KOTA PAYAKUMBUH</field>
+            <field name="code">1376</field>
+        </record>
+    
+        <record id="kab_id_1377" model="wtc.city">
+            <field name="state_id" ref="province_id_1300"/>
+            <field name="name">KOTA PARIAMAN</field>
+            <field name="code">1377</field>
+        </record>
+    
+        <record id="kab_id_1401" model="wtc.city">
+            <field name="state_id" ref="province_id_1400"/>
+            <field name="name">KAB. KUANTAN SINGINGI</field>
+            <field name="code">1401</field>
+        </record>
+    
+        <record id="kab_id_1402" model="wtc.city">
+            <field name="state_id" ref="province_id_1400"/>
+            <field name="name">KAB. INDRAGIRI HULU</field>
+            <field name="code">1402</field>
+        </record>
+    
+        <record id="kab_id_1403" model="wtc.city">
+            <field name="state_id" ref="province_id_1400"/>
+            <field name="name">KAB. INDRAGIRI HILIR</field>
+            <field name="code">1403</field>
+        </record>
+    
+        <record id="kab_id_1404" model="wtc.city">
+            <field name="state_id" ref="province_id_1400"/>
+            <field name="name">KAB. PELALAWAN</field>
+            <field name="code">1404</field>
+        </record>
+    
+        <record id="kab_id_1405" model="wtc.city">
+            <field name="state_id" ref="province_id_1400"/>
+            <field name="name">KAB. SIAK</field>
+            <field name="code">1405</field>
+        </record>
+    
+        <record id="kab_id_1406" model="wtc.city">
+            <field name="state_id" ref="province_id_1400"/>
+            <field name="name">KAB. KAMPAR</field>
+            <field name="code">1406</field>
+        </record>
+    
+        <record id="kab_id_1408" model="wtc.city">
+            <field name="state_id" ref="province_id_1400"/>
+            <field name="name">KAB. BENGKALIS</field>
+            <field name="code">1408</field>
+        </record>
+    
+        <record id="kab_id_1409" model="wtc.city">
+            <field name="state_id" ref="province_id_1400"/>
+            <field name="name">KAB. ROKAN HILIR</field>
+            <field name="code">1409</field>
+        </record>
+    
+        <record id="kab_id_1410" model="wtc.city">
+            <field name="state_id" ref="province_id_1400"/>
+            <field name="name">KAB. ROKAN HULU</field>
+            <field name="code">1410</field>
+        </record>
+    
+        <record id="kab_id_1471" model="wtc.city">
+            <field name="state_id" ref="province_id_1400"/>
+            <field name="name">KOTA PEKANBARU</field>
+            <field name="code">1471</field>
+        </record>
+    
+        <record id="kab_id_1473" model="wtc.city">
+            <field name="state_id" ref="province_id_1400"/>
+            <field name="name">KOTA DUMAI</field>
+            <field name="code">1473</field>
+        </record>
+    
+        <record id="kab_id_1501" model="wtc.city">
+            <field name="state_id" ref="province_id_1500"/>
+            <field name="name">KAB. KERINCI</field>
+            <field name="code">1501</field>
+        </record>
+    
+        <record id="kab_id_1502" model="wtc.city">
+            <field name="state_id" ref="province_id_1500"/>
+            <field name="name">KAB. MERANGIN</field>
+            <field name="code">1502</field>
+        </record>
+    
+        <record id="kab_id_1503" model="wtc.city">
+            <field name="state_id" ref="province_id_1500"/>
+            <field name="name">KAB. SAROLANGUN</field>
+            <field name="code">1503</field>
+        </record>
+    
+        <record id="kab_id_1504" model="wtc.city">
+            <field name="state_id" ref="province_id_1500"/>
+            <field name="name">KAB. BATANG HARI</field>
+            <field name="code">1504</field>
+        </record>
+    
+        <record id="kab_id_1505" model="wtc.city">
+            <field name="state_id" ref="province_id_1500"/>
+            <field name="name">KAB. MUARO JAMBI</field>
+            <field name="code">1505</field>
+        </record>
+    
+        <record id="kab_id_1506" model="wtc.city">
+            <field name="state_id" ref="province_id_1500"/>
+            <field name="name">KAB. TANJUNG JABUNG TIMUR</field>
+            <field name="code">1506</field>
+        </record>
+    
+        <record id="kab_id_1507" model="wtc.city">
+            <field name="state_id" ref="province_id_1500"/>
+            <field name="name">KAB. TANJUNG JABUNG BARAT</field>
+            <field name="code">1507</field>
+        </record>
+    
+        <record id="kab_id_1508" model="wtc.city">
+            <field name="state_id" ref="province_id_1500"/>
+            <field name="name">KAB. TEBO</field>
+            <field name="code">1508</field>
+        </record>
+    
+        <record id="kab_id_1509" model="wtc.city">
+            <field name="state_id" ref="province_id_1500"/>
+            <field name="name">KAB. BUNGO</field>
+            <field name="code">1509</field>
+        </record>
+    
+        <record id="kab_id_1571" model="wtc.city">
+            <field name="state_id" ref="province_id_1500"/>
+            <field name="name">KOTA JAMBI</field>
+            <field name="code">1571</field>
+        </record>
+    
+        <record id="kab_id_1601" model="wtc.city">
+            <field name="state_id" ref="province_id_1600"/>
+            <field name="name">KAB. OGAN KOMERING ULU</field>
+            <field name="code">1601</field>
+        </record>
+    
+        <record id="kab_id_1602" model="wtc.city">
+            <field name="state_id" ref="province_id_1600"/>
+            <field name="name">KAB. OGAN KOMERING ILIR</field>
+            <field name="code">1602</field>
+        </record>
+    
+        <record id="kab_id_1603" model="wtc.city">
+            <field name="state_id" ref="province_id_1600"/>
+            <field name="name">KAB. MUARA ENIM</field>
+            <field name="code">1603</field>
+        </record>
+    
+        <record id="kab_id_1604" model="wtc.city">
+            <field name="state_id" ref="province_id_1600"/>
+            <field name="name">KAB. LAHAT</field>
+            <field name="code">1604</field>
+        </record>
+    
+        <record id="kab_id_1605" model="wtc.city">
+            <field name="state_id" ref="province_id_1600"/>
+            <field name="name">KAB. MUSI RAWAS</field>
+            <field name="code">1605</field>
+        </record>
+    
+        <record id="kab_id_1606" model="wtc.city">
+            <field name="state_id" ref="province_id_1600"/>
+            <field name="name">KAB. MUSI BANYUASIN</field>
+            <field name="code">1606</field>
+        </record>
+    
+        <record id="kab_id_1607" model="wtc.city">
+            <field name="state_id" ref="province_id_1600"/>
+            <field name="name">KAB. BANYUASIN</field>
+            <field name="code">1607</field>
+        </record>
+    
+        <record id="kab_id_1608" model="wtc.city">
+            <field name="state_id" ref="province_id_1600"/>
+            <field name="name">KAB. OGAN KOMERING ULU SELATAN</field>
+            <field name="code">1608</field>
+        </record>
+    
+        <record id="kab_id_1609" model="wtc.city">
+            <field name="state_id" ref="province_id_1600"/>
+            <field name="name">KAB. OGAN KOMERING ULU TIMUR</field>
+            <field name="code">1609</field>
+        </record>
+    
+        <record id="kab_id_1610" model="wtc.city">
+            <field name="state_id" ref="province_id_1600"/>
+            <field name="name">KAB. OGAN ILIR</field>
+            <field name="code">1610</field>
+        </record>
+    
+        <record id="kab_id_1611" model="wtc.city">
+            <field name="state_id" ref="province_id_1600"/>
+            <field name="name">KAB. EMPAT LAWANG</field>
+            <field name="code">1611</field>
+        </record>
+    
+        <record id="kab_id_1671" model="wtc.city">
+            <field name="state_id" ref="province_id_1600"/>
+            <field name="name">KOTA PALEMBANG</field>
+            <field name="code">1671</field>
+        </record>
+    
+        <record id="kab_id_1672" model="wtc.city">
+            <field name="state_id" ref="province_id_1600"/>
+            <field name="name">KOTA PRABUMULIH</field>
+            <field name="code">1672</field>
+        </record>
+    
+        <record id="kab_id_1673" model="wtc.city">
+            <field name="state_id" ref="province_id_1600"/>
+            <field name="name">KOTA PAGAR ALAM</field>
+            <field name="code">1673</field>
+        </record>
+    
+        <record id="kab_id_1674" model="wtc.city">
+            <field name="state_id" ref="province_id_1600"/>
+            <field name="name">KOTA LUBUKLINGGAU</field>
+            <field name="code">1674</field>
+        </record>
+    
+        <record id="kab_id_1701" model="wtc.city">
+            <field name="state_id" ref="province_id_1700"/>
+            <field name="name">KAB. BENGKULU SELATAN</field>
+            <field name="code">1701</field>
+        </record>
+    
+        <record id="kab_id_1702" model="wtc.city">
+            <field name="state_id" ref="province_id_1700"/>
+            <field name="name">KAB. REJANG LEBONG</field>
+            <field name="code">1702</field>
+        </record>
+    
+        <record id="kab_id_1703" model="wtc.city">
+            <field name="state_id" ref="province_id_1700"/>
+            <field name="name">KAB. BENGKULU UTARA</field>
+            <field name="code">1703</field>
+        </record>
+    
+        <record id="kab_id_1704" model="wtc.city">
+            <field name="state_id" ref="province_id_1700"/>
+            <field name="name">KAB. KAUR</field>
+            <field name="code">1704</field>
+        </record>
+    
+        <record id="kab_id_1705" model="wtc.city">
+            <field name="state_id" ref="province_id_1700"/>
+            <field name="name">KAB. SELUMA</field>
+            <field name="code">1705</field>
+        </record>
+    
+        <record id="kab_id_1706" model="wtc.city">
+            <field name="state_id" ref="province_id_1700"/>
+            <field name="name">KAB. MUKOMUKO</field>
+            <field name="code">1706</field>
+        </record>
+    
+        <record id="kab_id_1707" model="wtc.city">
+            <field name="state_id" ref="province_id_1700"/>
+            <field name="name">KAB. LEBONG</field>
+            <field name="code">1707</field>
+        </record>
+    
+        <record id="kab_id_1708" model="wtc.city">
+            <field name="state_id" ref="province_id_1700"/>
+            <field name="name">KAB. KEPAHIANG</field>
+            <field name="code">1708</field>
+        </record>
+    
+        <record id="kab_id_1771" model="wtc.city">
+            <field name="state_id" ref="province_id_1700"/>
+            <field name="name">KOTA BENGKULU</field>
+            <field name="code">1771</field>
+        </record>
+    
+        <record id="kab_id_1801" model="wtc.city">
+            <field name="state_id" ref="province_id_1800"/>
+            <field name="name">KAB. LAMPUNG BARAT</field>
+            <field name="code">1801</field>
+        </record>
+    
+        <record id="kab_id_1802" model="wtc.city">
+            <field name="state_id" ref="province_id_1800"/>
+            <field name="name">KAB. TANGGAMUS</field>
+            <field name="code">1802</field>
+        </record>
+    
+        <record id="kab_id_1803" model="wtc.city">
+            <field name="state_id" ref="province_id_1800"/>
+            <field name="name">KAB. LAMPUNG SELATAN</field>
+            <field name="code">1803</field>
+        </record>
+    
+        <record id="kab_id_1804" model="wtc.city">
+            <field name="state_id" ref="province_id_1800"/>
+            <field name="name">KAB. LAMPUNG TIMUR</field>
+            <field name="code">1804</field>
+        </record>
+    
+        <record id="kab_id_1805" model="wtc.city">
+            <field name="state_id" ref="province_id_1800"/>
+            <field name="name">KAB. LAMPUNG TENGAH</field>
+            <field name="code">1805</field>
+        </record>
+    
+        <record id="kab_id_1806" model="wtc.city">
+            <field name="state_id" ref="province_id_1800"/>
+            <field name="name">KAB. LAMPUNG UTARA</field>
+            <field name="code">1806</field>
+        </record>
+    
+        <record id="kab_id_1807" model="wtc.city">
+            <field name="state_id" ref="province_id_1800"/>
+            <field name="name">KAB. WAY KANAN</field>
+            <field name="code">1807</field>
+        </record>
+    
+        <record id="kab_id_1871" model="wtc.city">
+            <field name="state_id" ref="province_id_1800"/>
+            <field name="name">KOTA BANDAR LAMPUNG</field>
+            <field name="code">1871</field>
+        </record>
+    
+        <record id="kab_id_1872" model="wtc.city">
+            <field name="state_id" ref="province_id_1800"/>
+            <field name="name">KOTA METRO</field>
+            <field name="code">1872</field>
+        </record>
+    
+        <record id="kab_id_1873" model="wtc.city">
+            <field name="state_id" ref="province_id_1800"/>
+            <field name="name">KAB. PESAWARAN</field>
+            <field name="code">1873</field>
+        </record>
+    
+        <record id="kab_id_1808" model="wtc.city">
+            <field name="state_id" ref="province_id_1800"/>
+            <field name="name">KAB. TULANG BAWANG</field>
+            <field name="code">1808</field>
+        </record>
+    
+        <record id="kab_id_1875" model="wtc.city">
+            <field name="state_id" ref="province_id_1800"/>
+            <field name="name">KAB. MESUJI</field>
+            <field name="code">1875</field>
+        </record>
+    
+        <record id="kab_id_1876" model="wtc.city">
+            <field name="state_id" ref="province_id_1800"/>
+            <field name="name">KAB. PRINGSEWU</field>
+            <field name="code">1876</field>
+        </record>
+    
+        <record id="kab_id_1901" model="wtc.city">
+            <field name="state_id" ref="province_id_1900"/>
+            <field name="name">KAB. BANGKA</field>
+            <field name="code">1901</field>
+        </record>
+    
+        <record id="kab_id_1902" model="wtc.city">
+            <field name="state_id" ref="province_id_1900"/>
+            <field name="name">KAB. BELITUNG</field>
+            <field name="code">1902</field>
+        </record>
+    
+        <record id="kab_id_1903" model="wtc.city">
+            <field name="state_id" ref="province_id_1900"/>
+            <field name="name">KAB. BANGKA BARAT</field>
+            <field name="code">1903</field>
+        </record>
+    
+        <record id="kab_id_1904" model="wtc.city">
+            <field name="state_id" ref="province_id_1900"/>
+            <field name="name">KAB. BANGKA TENGAH</field>
+            <field name="code">1904</field>
+        </record>
+    
+        <record id="kab_id_1905" model="wtc.city">
+            <field name="state_id" ref="province_id_1900"/>
+            <field name="name">KAB. BANGKA SELATAN</field>
+            <field name="code">1905</field>
+        </record>
+    
+        <record id="kab_id_1906" model="wtc.city">
+            <field name="state_id" ref="province_id_1900"/>
+            <field name="name">KAB. BELITUNG TIMUR</field>
+            <field name="code">1906</field>
+        </record>
+    
+        <record id="kab_id_1971" model="wtc.city">
+            <field name="state_id" ref="province_id_1900"/>
+            <field name="name">KOTA PANGKAL PINANG</field>
+            <field name="code">1971</field>
+        </record>
+    
+        <record id="kab_id_2101" model="wtc.city">
+            <field name="state_id" ref="province_id_2000"/>
+            <field name="name">KAB. KARIMUN</field>
+            <field name="code">2101</field>
+        </record>
+    
+        <record id="kab_id_2103" model="wtc.city">
+            <field name="state_id" ref="province_id_2000"/>
+            <field name="name">KAB. NATUNA</field>
+            <field name="code">2103</field>
+        </record>
+    
+        <record id="kab_id_2104" model="wtc.city">
+            <field name="state_id" ref="province_id_2000"/>
+            <field name="name">KAB. LINGGA</field>
+            <field name="code">2104</field>
+        </record>
+    
+        <record id="kab_id_2105" model="wtc.city">
+            <field name="state_id" ref="province_id_2000"/>
+            <field name="name">KAB. BINTAN</field>
+            <field name="code">2105</field>
+        </record>
+    
+        <record id="kab_id_2171" model="wtc.city">
+            <field name="state_id" ref="province_id_2000"/>
+            <field name="name">KOTA BATAM</field>
+            <field name="code">2171</field>
+        </record>
+    
+        <record id="kab_id_2172" model="wtc.city">
+            <field name="state_id" ref="province_id_2000"/>
+            <field name="name">KOTA TANJUNG PINANG</field>
+            <field name="code">2172</field>
+        </record>
+    
+        <record id="kab_id_3101" model="wtc.city">
+            <field name="state_id" ref="province_id_3100"/>
+            <field name="name">KAB. KEPULAUAN SERIBU</field>
+            <field name="code">3101</field>
+        </record>
+    
+        <record id="kab_id_3171" model="wtc.city">
+            <field name="state_id" ref="province_id_3100"/>
+            <field name="name">KOTA JAKARTA SELATAN</field>
+            <field name="code">3171</field>
+        </record>
+    
+        <record id="kab_id_3172" model="wtc.city">
+            <field name="state_id" ref="province_id_3100"/>
+            <field name="name">KOTA JAKARTA TIMUR</field>
+            <field name="code">3172</field>
+        </record>
+    
+        <record id="kab_id_3173" model="wtc.city">
+            <field name="state_id" ref="province_id_3100"/>
+            <field name="name">KOTA JAKARTA PUSAT</field>
+            <field name="code">3173</field>
+        </record>
+    
+        <record id="kab_id_3174" model="wtc.city">
+            <field name="state_id" ref="province_id_3100"/>
+            <field name="name">KOTA JAKARTA BARAT</field>
+            <field name="code">3174</field>
+        </record>
+    
+        <record id="kab_id_3175" model="wtc.city">
+            <field name="state_id" ref="province_id_3100"/>
+            <field name="name">KOTA JAKARTA UTARA</field>
+            <field name="code">3175</field>
+        </record>
+    
+        <record id="kab_id_3201" model="wtc.city">
+            <field name="state_id" ref="province_id_3200"/>
+            <field name="name">KAB. BOGOR</field>
+            <field name="code">3201</field>
+        </record>
+    
+        <record id="kab_id_3202" model="wtc.city">
+            <field name="state_id" ref="province_id_3200"/>
+            <field name="name">KAB. SUKABUMI</field>
+            <field name="code">3202</field>
+        </record>
+    
+        <record id="kab_id_3203" model="wtc.city">
+            <field name="state_id" ref="province_id_3200"/>
+            <field name="name">KAB. CIANJUR</field>
+            <field name="code">3203</field>
+        </record>
+    
+        <record id="kab_id_3204" model="wtc.city">
+            <field name="state_id" ref="province_id_3200"/>
+            <field name="name">KAB. BANDUNG</field>
+            <field name="code">3204</field>
+        </record>
+    
+        <record id="kab_id_3205" model="wtc.city">
+            <field name="state_id" ref="province_id_3200"/>
+            <field name="name">KAB. GARUT</field>
+            <field name="code">3205</field>
+        </record>
+    
+        <record id="kab_id_3206" model="wtc.city">
+            <field name="state_id" ref="province_id_3200"/>
+            <field name="name">KAB. TASIKMALAYA</field>
+            <field name="code">3206</field>
+        </record>
+    
+        <record id="kab_id_3207" model="wtc.city">
+            <field name="state_id" ref="province_id_3200"/>
+            <field name="name">KAB. CIAMIS</field>
+            <field name="code">3207</field>
+        </record>
+    
+        <record id="kab_id_3208" model="wtc.city">
+            <field name="state_id" ref="province_id_3200"/>
+            <field name="name">KAB. KUNINGAN</field>
+            <field name="code">3208</field>
+        </record>
+    
+        <record id="kab_id_3209" model="wtc.city">
+            <field name="state_id" ref="province_id_3200"/>
+            <field name="name">KAB. CIREBON</field>
+            <field name="code">3209</field>
+        </record>
+    
+        <record id="kab_id_3210" model="wtc.city">
+            <field name="state_id" ref="province_id_3200"/>
+            <field name="name">KAB. MAJALENGKA</field>
+            <field name="code">3210</field>
+        </record>
+    
+        <record id="kab_id_3211" model="wtc.city">
+            <field name="state_id" ref="province_id_3200"/>
+            <field name="name">KAB. SUMEDANG</field>
+            <field name="code">3211</field>
+        </record>
+    
+        <record id="kab_id_3212" model="wtc.city">
+            <field name="state_id" ref="province_id_3200"/>
+            <field name="name">KAB. INDRAMAYU</field>
+            <field name="code">3212</field>
+        </record>
+    
+        <record id="kab_id_3213" model="wtc.city">
+            <field name="state_id" ref="province_id_3200"/>
+            <field name="name">KAB. SUBANG</field>
+            <field name="code">3213</field>
+        </record>
+    
+        <record id="kab_id_3214" model="wtc.city">
+            <field name="state_id" ref="province_id_3200"/>
+            <field name="name">KAB. PURWAKARTA</field>
+            <field name="code">3214</field>
+        </record>
+    
+        <record id="kab_id_3215" model="wtc.city">
+            <field name="state_id" ref="province_id_3200"/>
+            <field name="name">KAB. KARAWANG</field>
+            <field name="code">3215</field>
+        </record>
+    
+        <record id="kab_id_3216" model="wtc.city">
+            <field name="state_id" ref="province_id_3200"/>
+            <field name="name">KAB. BEKASI</field>
+            <field name="code">3216</field>
+        </record>
+    
+        <record id="kab_id_3217" model="wtc.city">
+            <field name="state_id" ref="province_id_3200"/>
+            <field name="name">KAB. BANDUNG BARAT</field>
+            <field name="code">3217</field>
+        </record>
+    
+        <record id="kab_id_3271" model="wtc.city">
+            <field name="state_id" ref="province_id_3200"/>
+            <field name="name">KOTA BOGOR</field>
+            <field name="code">3271</field>
+        </record>
+    
+        <record id="kab_id_3272" model="wtc.city">
+            <field name="state_id" ref="province_id_3200"/>
+            <field name="name">KOTA SUKABUMI</field>
+            <field name="code">3272</field>
+        </record>
+    
+        <record id="kab_id_3273" model="wtc.city">
+            <field name="state_id" ref="province_id_3200"/>
+            <field name="name">KOTA BANDUNG</field>
+            <field name="code">3273</field>
+        </record>
+    
+        <record id="kab_id_3274" model="wtc.city">
+            <field name="state_id" ref="province_id_3200"/>
+            <field name="name">KOTA CIREBON</field>
+            <field name="code">3274</field>
+        </record>
+    
+        <record id="kab_id_3275" model="wtc.city">
+            <field name="state_id" ref="province_id_3200"/>
+            <field name="name">KOTA BEKASI</field>
+            <field name="code">3275</field>
+        </record>
+    
+        <record id="kab_id_3276" model="wtc.city">
+            <field name="state_id" ref="province_id_3200"/>
+            <field name="name">KOTA DEPOK</field>
+            <field name="code">3276</field>
+        </record>
+    
+        <record id="kab_id_3277" model="wtc.city">
+            <field name="state_id" ref="province_id_3200"/>
+            <field name="name">KOTA CIMAHI</field>
+            <field name="code">3277</field>
+        </record>
+    
+        <record id="kab_id_3278" model="wtc.city">
+            <field name="state_id" ref="province_id_3200"/>
+            <field name="name">KOTA TASIKMALAYA</field>
+            <field name="code">3278</field>
+        </record>
+    
+        <record id="kab_id_3279" model="wtc.city">
+            <field name="state_id" ref="province_id_3200"/>
+            <field name="name">KOTA BANJAR</field>
+            <field name="code">3279</field>
+        </record>
+    
+        <record id="kab_id_3301" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KAB. CILACAP</field>
+            <field name="code">3301</field>
+        </record>
+    
+        <record id="kab_id_3302" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KAB. BANYUMAS</field>
+            <field name="code">3302</field>
+        </record>
+    
+        <record id="kab_id_3303" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KAB. PURBALINGGA</field>
+            <field name="code">3303</field>
+        </record>
+    
+        <record id="kab_id_3304" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KAB. BANJARNEGARA</field>
+            <field name="code">3304</field>
+        </record>
+    
+        <record id="kab_id_3305" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KAB. KEBUMEN</field>
+            <field name="code">3305</field>
+        </record>
+    
+        <record id="kab_id_3306" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KAB. PURWOREJO</field>
+            <field name="code">3306</field>
+        </record>
+    
+        <record id="kab_id_3307" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KAB. WONOSOBO</field>
+            <field name="code">3307</field>
+        </record>
+    
+        <record id="kab_id_3308" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KAB. MAGELANG</field>
+            <field name="code">3308</field>
+        </record>
+    
+        <record id="kab_id_3309" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KAB. BOYOLALI</field>
+            <field name="code">3309</field>
+        </record>
+    
+        <record id="kab_id_3310" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KAB. KLATEN</field>
+            <field name="code">3310</field>
+        </record>
+    
+        <record id="kab_id_3311" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KAB. SUKOHARJO</field>
+            <field name="code">3311</field>
+        </record>
+    
+        <record id="kab_id_3312" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KAB. WONOGIRI</field>
+            <field name="code">3312</field>
+        </record>
+    
+        <record id="kab_id_3313" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KAB. KARANGANYAR</field>
+            <field name="code">3313</field>
+        </record>
+    
+        <record id="kab_id_3314" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KAB. SRAGEN</field>
+            <field name="code">3314</field>
+        </record>
+    
+        <record id="kab_id_3315" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KAB. GROBOGAN</field>
+            <field name="code">3315</field>
+        </record>
+    
+        <record id="kab_id_3316" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KAB. BLORA</field>
+            <field name="code">3316</field>
+        </record>
+    
+        <record id="kab_id_3317" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KAB. REMBANG</field>
+            <field name="code">3317</field>
+        </record>
+    
+        <record id="kab_id_3318" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KAB. PATI</field>
+            <field name="code">3318</field>
+        </record>
+    
+        <record id="kab_id_3319" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KAB. KUDUS</field>
+            <field name="code">3319</field>
+        </record>
+    
+        <record id="kab_id_3320" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KAB. JEPARA</field>
+            <field name="code">3320</field>
+        </record>
+    
+        <record id="kab_id_3321" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KAB. DEMAK</field>
+            <field name="code">3321</field>
+        </record>
+    
+        <record id="kab_id_3322" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KAB. SEMARANG</field>
+            <field name="code">3322</field>
+        </record>
+    
+        <record id="kab_id_3323" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KAB. TEMANGGUNG</field>
+            <field name="code">3323</field>
+        </record>
+    
+        <record id="kab_id_3324" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KAB. KENDAL</field>
+            <field name="code">3324</field>
+        </record>
+    
+        <record id="kab_id_3325" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KAB. BATANG</field>
+            <field name="code">3325</field>
+        </record>
+    
+        <record id="kab_id_3326" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KAB. PEKALONGAN</field>
+            <field name="code">3326</field>
+        </record>
+    
+        <record id="kab_id_3327" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KAB. PEMALANG</field>
+            <field name="code">3327</field>
+        </record>
+    
+        <record id="kab_id_3328" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KAB. TEGAL</field>
+            <field name="code">3328</field>
+        </record>
+    
+        <record id="kab_id_3329" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KAB. BREBES</field>
+            <field name="code">3329</field>
+        </record>
+    
+        <record id="kab_id_3371" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KOTA MAGELANG</field>
+            <field name="code">3371</field>
+        </record>
+    
+        <record id="kab_id_3372" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KOTA SURAKARTA</field>
+            <field name="code">3372</field>
+        </record>
+    
+        <record id="kab_id_3373" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KOTA SALATIGA</field>
+            <field name="code">3373</field>
+        </record>
+    
+        <record id="kab_id_3374" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KOTA SEMARANG</field>
+            <field name="code">3374</field>
+        </record>
+    
+        <record id="kab_id_3375" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KOTA PEKALONGAN</field>
+            <field name="code">3375</field>
+        </record>
+    
+        <record id="kab_id_3376" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KOTA TEGAL</field>
+            <field name="code">3376</field>
+        </record>
+    
+        <record id="kab_id_3377" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KOTA CILACAP</field>
+            <field name="code">3377</field>
+        </record>
+    
+        <record id="kab_id_3378" model="wtc.city">
+            <field name="state_id" ref="province_id_3300"/>
+            <field name="name">KOTA PURWOKERTO</field>
+            <field name="code">3378</field>
+        </record>
+    
+        <record id="kab_id_3401" model="wtc.city">
+            <field name="state_id" ref="province_id_3400"/>
+            <field name="name">KAB. KULON PROGO</field>
+            <field name="code">3401</field>
+        </record>
+    
+        <record id="kab_id_3402" model="wtc.city">
+            <field name="state_id" ref="province_id_3400"/>
+            <field name="name">KAB. BANTUL</field>
+            <field name="code">3402</field>
+        </record>
+    
+        <record id="kab_id_3403" model="wtc.city">
+            <field name="state_id" ref="province_id_3400"/>
+            <field name="name">KAB. GUNUNG KIDUL</field>
+            <field name="code">3403</field>
+        </record>
+    
+        <record id="kab_id_3404" model="wtc.city">
+            <field name="state_id" ref="province_id_3400"/>
+            <field name="name">KAB. SLEMAN</field>
+            <field name="code">3404</field>
+        </record>
+    
+        <record id="kab_id_3471" model="wtc.city">
+            <field name="state_id" ref="province_id_3400"/>
+            <field name="name">KOTA YOGYAKARTA</field>
+            <field name="code">3471</field>
+        </record>
+    
+        <record id="kab_id_3501" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KAB. PACITAN</field>
+            <field name="code">3501</field>
+        </record>
+    
+        <record id="kab_id_3502" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KAB. PONOROGO</field>
+            <field name="code">3502</field>
+        </record>
+    
+        <record id="kab_id_3503" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KAB. TRENGGALEK</field>
+            <field name="code">3503</field>
+        </record>
+    
+        <record id="kab_id_3504" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KAB. TULUNGAGUNG</field>
+            <field name="code">3504</field>
+        </record>
+    
+        <record id="kab_id_3505" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KAB. BLITAR</field>
+            <field name="code">3505</field>
+        </record>
+    
+        <record id="kab_id_3506" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KAB. KEDIRI</field>
+            <field name="code">3506</field>
+        </record>
+    
+        <record id="kab_id_3507" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KAB. MALANG</field>
+            <field name="code">3507</field>
+        </record>
+    
+        <record id="kab_id_3508" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KAB. LUMAJANG</field>
+            <field name="code">3508</field>
+        </record>
+    
+        <record id="kab_id_3509" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KAB. JEMBER</field>
+            <field name="code">3509</field>
+        </record>
+    
+        <record id="kab_id_3510" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KAB. BANYUWANGI</field>
+            <field name="code">3510</field>
+        </record>
+    
+        <record id="kab_id_3511" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KAB. BONDOWOSO</field>
+            <field name="code">3511</field>
+        </record>
+    
+        <record id="kab_id_3512" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KAB. SITUBONDO</field>
+            <field name="code">3512</field>
+        </record>
+    
+        <record id="kab_id_3513" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KAB. PROBOLINGGO</field>
+            <field name="code">3513</field>
+        </record>
+    
+        <record id="kab_id_3514" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KAB. PASURUAN</field>
+            <field name="code">3514</field>
+        </record>
+    
+        <record id="kab_id_3515" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KAB. SIDOARJO</field>
+            <field name="code">3515</field>
+        </record>
+    
+        <record id="kab_id_3516" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KAB. MOJOKERTO</field>
+            <field name="code">3516</field>
+        </record>
+    
+        <record id="kab_id_3517" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KAB. JOMBANG</field>
+            <field name="code">3517</field>
+        </record>
+    
+        <record id="kab_id_3518" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KAB. NGANJUK</field>
+            <field name="code">3518</field>
+        </record>
+    
+        <record id="kab_id_3519" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KAB. MADIUN</field>
+            <field name="code">3519</field>
+        </record>
+    
+        <record id="kab_id_3520" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KAB. MAGETAN</field>
+            <field name="code">3520</field>
+        </record>
+    
+        <record id="kab_id_3521" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KAB. NGAWI</field>
+            <field name="code">3521</field>
+        </record>
+    
+        <record id="kab_id_3522" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KAB. BOJONEGORO</field>
+            <field name="code">3522</field>
+        </record>
+    
+        <record id="kab_id_3523" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KAB. TUBAN</field>
+            <field name="code">3523</field>
+        </record>
+    
+        <record id="kab_id_3524" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KAB. LAMONGAN</field>
+            <field name="code">3524</field>
+        </record>
+    
+        <record id="kab_id_3525" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KAB. GRESIK</field>
+            <field name="code">3525</field>
+        </record>
+    
+        <record id="kab_id_3526" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KAB. BANGKALAN</field>
+            <field name="code">3526</field>
+        </record>
+    
+        <record id="kab_id_3527" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KAB. SAMPANG</field>
+            <field name="code">3527</field>
+        </record>
+    
+        <record id="kab_id_3528" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KAB. PAMEKASAN</field>
+            <field name="code">3528</field>
+        </record>
+    
+        <record id="kab_id_3529" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KAB. SUMENEP</field>
+            <field name="code">3529</field>
+        </record>
+    
+        <record id="kab_id_3571" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KOTA KEDIRI</field>
+            <field name="code">3571</field>
+        </record>
+    
+        <record id="kab_id_3572" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KOTA BLITAR</field>
+            <field name="code">3572</field>
+        </record>
+    
+        <record id="kab_id_3573" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KOTA MALANG</field>
+            <field name="code">3573</field>
+        </record>
+    
+        <record id="kab_id_3574" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KOTA PROBOLINGGO</field>
+            <field name="code">3574</field>
+        </record>
+    
+        <record id="kab_id_3575" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KOTA PASURUAN</field>
+            <field name="code">3575</field>
+        </record>
+    
+        <record id="kab_id_3577" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KOTA MADIUN</field>
+            <field name="code">3577</field>
+        </record>
+    
+        <record id="kab_id_3578" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KOTA SURABAYA</field>
+            <field name="code">3578</field>
+        </record>
+    
+        <record id="kab_id_3579" model="wtc.city">
+            <field name="state_id" ref="province_id_3500"/>
+            <field name="name">KOTA BATU</field>
+            <field name="code">3579</field>
+        </record>
+    
+        <record id="kab_id_3601" model="wtc.city">
+            <field name="state_id" ref="province_id_3600"/>
+            <field name="name">KAB. PANDEGLANG</field>
+            <field name="code">3601</field>
+        </record>
+    
+        <record id="kab_id_3602" model="wtc.city">
+            <field name="state_id" ref="province_id_3600"/>
+            <field name="name">KAB. LEBAK</field>
+            <field name="code">3602</field>
+        </record>
+    
+        <record id="kab_id_3603" model="wtc.city">
+            <field name="state_id" ref="province_id_3600"/>
+            <field name="name">KAB. TANGERANG</field>
+            <field name="code">3603</field>
+        </record>
+    
+        <record id="kab_id_3604" model="wtc.city">
+            <field name="state_id" ref="province_id_3600"/>
+            <field name="name">KAB. SERANG</field>
+            <field name="code">3604</field>
+        </record>
+    
+        <record id="kab_id_3671" model="wtc.city">
+            <field name="state_id" ref="province_id_3600"/>
+            <field name="name">KOTA TANGERANG</field>
+            <field name="code">3671</field>
+        </record>
+    
+        <record id="kab_id_3672" model="wtc.city">
+            <field name="state_id" ref="province_id_3600"/>
+            <field name="name">KOTA CILEGON</field>
+            <field name="code">3672</field>
+        </record>
+    
+        <record id="kab_id_3673" model="wtc.city">
+            <field name="state_id" ref="province_id_3600"/>
+            <field name="name">KOTA SERANG</field>
+            <field name="code">3673</field>
+        </record>
+    
+        <record id="kab_id_5101" model="wtc.city">
+            <field name="state_id" ref="province_id_5100"/>
+            <field name="name">KAB. JEMBRANA</field>
+            <field name="code">5101</field>
+        </record>
+    
+        <record id="kab_id_5102" model="wtc.city">
+            <field name="state_id" ref="province_id_5100"/>
+            <field name="name">KAB. TABANAN</field>
+            <field name="code">5102</field>
+        </record>
+    
+        <record id="kab_id_5103" model="wtc.city">
+            <field name="state_id" ref="province_id_5100"/>
+            <field name="name">KAB. BADUNG</field>
+            <field name="code">5103</field>
+        </record>
+    
+        <record id="kab_id_5104" model="wtc.city">
+            <field name="state_id" ref="province_id_5100"/>
+            <field name="name">KAB. GIANYAR</field>
+            <field name="code">5104</field>
+        </record>
+    
+        <record id="kab_id_5105" model="wtc.city">
+            <field name="state_id" ref="province_id_5100"/>
+            <field name="name">KAB. KLUNGKUNG</field>
+            <field name="code">5105</field>
+        </record>
+    
+        <record id="kab_id_5106" model="wtc.city">
+            <field name="state_id" ref="province_id_5100"/>
+            <field name="name">KAB. BANGLI</field>
+            <field name="code">5106</field>
+        </record>
+    
+        <record id="kab_id_5107" model="wtc.city">
+            <field name="state_id" ref="province_id_5100"/>
+            <field name="name">KAB. KARANG ASEM</field>
+            <field name="code">5107</field>
+        </record>
+    
+        <record id="kab_id_5108" model="wtc.city">
+            <field name="state_id" ref="province_id_5100"/>
+            <field name="name">KAB. BULELENG</field>
+            <field name="code">5108</field>
+        </record>
+    
+        <record id="kab_id_5171" model="wtc.city">
+            <field name="state_id" ref="province_id_5100"/>
+            <field name="name">KOTA DENPASAR</field>
+            <field name="code">5171</field>
+        </record>
+    
+        <record id="kab_id_5201" model="wtc.city">
+            <field name="state_id" ref="province_id_5200"/>
+            <field name="name">KAB. LOMBOK BARAT</field>
+            <field name="code">5201</field>
+        </record>
+    
+        <record id="kab_id_5202" model="wtc.city">
+            <field name="state_id" ref="province_id_5200"/>
+            <field name="name">KAB. LOMBOK TENGAH</field>
+            <field name="code">5202</field>
+        </record>
+    
+        <record id="kab_id_5203" model="wtc.city">
+            <field name="state_id" ref="province_id_5200"/>
+            <field name="name">KAB. LOMBOK TIMUR</field>
+            <field name="code">5203</field>
+        </record>
+    
+        <record id="kab_id_5204" model="wtc.city">
+            <field name="state_id" ref="province_id_5200"/>
+            <field name="name">KAB. SUMBAWA</field>
+            <field name="code">5204</field>
+        </record>
+    
+        <record id="kab_id_5205" model="wtc.city">
+            <field name="state_id" ref="province_id_5200"/>
+            <field name="name">KAB. DOMPU</field>
+            <field name="code">5205</field>
+        </record>
+    
+        <record id="kab_id_5206" model="wtc.city">
+            <field name="state_id" ref="province_id_5200"/>
+            <field name="name">KAB. BIMA</field>
+            <field name="code">5206</field>
+        </record>
+    
+        <record id="kab_id_5207" model="wtc.city">
+            <field name="state_id" ref="province_id_5200"/>
+            <field name="name">KAB. SUMBAWA BARAT</field>
+            <field name="code">5207</field>
+        </record>
+    
+        <record id="kab_id_5271" model="wtc.city">
+            <field name="state_id" ref="province_id_5200"/>
+            <field name="name">KOTA MATARAM</field>
+            <field name="code">5271</field>
+        </record>
+    
+        <record id="kab_id_5272" model="wtc.city">
+            <field name="state_id" ref="province_id_5200"/>
+            <field name="name">KOTA BIMA</field>
+            <field name="code">5272</field>
+        </record>
+    
+        <record id="kab_id_5301" model="wtc.city">
+            <field name="state_id" ref="province_id_5300"/>
+            <field name="name">KAB. SUMBA BARAT</field>
+            <field name="code">5301</field>
+        </record>
+    
+        <record id="kab_id_5302" model="wtc.city">
+            <field name="state_id" ref="province_id_5300"/>
+            <field name="name">KAB. SUMBA TIMUR</field>
+            <field name="code">5302</field>
+        </record>
+    
+        <record id="kab_id_5303" model="wtc.city">
+            <field name="state_id" ref="province_id_5300"/>
+            <field name="name">KAB. KUPANG</field>
+            <field name="code">5303</field>
+        </record>
+    
+        <record id="kab_id_5304" model="wtc.city">
+            <field name="state_id" ref="province_id_5300"/>
+            <field name="name">KAB. TIMOR TENGAH SELATAN</field>
+            <field name="code">5304</field>
+        </record>
+    
+        <record id="kab_id_5305" model="wtc.city">
+            <field name="state_id" ref="province_id_5300"/>
+            <field name="name">KAB. TIMOR TENGAH UTARA</field>
+            <field name="code">5305</field>
+        </record>
+    
+        <record id="kab_id_5306" model="wtc.city">
+            <field name="state_id" ref="province_id_5300"/>
+            <field name="name">KAB. BELU</field>
+            <field name="code">5306</field>
+        </record>
+    
+        <record id="kab_id_5307" model="wtc.city">
+            <field name="state_id" ref="province_id_5300"/>
+            <field name="name">KAB. ALOR</field>
+            <field name="code">5307</field>
+        </record>
+    
+        <record id="kab_id_5308" model="wtc.city">
+            <field name="state_id" ref="province_id_5300"/>
+            <field name="name">KAB. LEMBATA</field>
+            <field name="code">5308</field>
+        </record>
+    
+        <record id="kab_id_5309" model="wtc.city">
+            <field name="state_id" ref="province_id_5300"/>
+            <field name="name">KAB. FLORES TIMUR</field>
+            <field name="code">5309</field>
+        </record>
+    
+        <record id="kab_id_5310" model="wtc.city">
+            <field name="state_id" ref="province_id_5300"/>
+            <field name="name">KAB. SIKKA</field>
+            <field name="code">5310</field>
+        </record>
+    
+        <record id="kab_id_5311" model="wtc.city">
+            <field name="state_id" ref="province_id_5300"/>
+            <field name="name">KAB. ENDE</field>
+            <field name="code">5311</field>
+        </record>
+    
+        <record id="kab_id_5312" model="wtc.city">
+            <field name="state_id" ref="province_id_5300"/>
+            <field name="name">KAB. NGADA</field>
+            <field name="code">5312</field>
+        </record>
+    
+        <record id="kab_id_5313" model="wtc.city">
+            <field name="state_id" ref="province_id_5300"/>
+            <field name="name">KAB. MANGGARAI</field>
+            <field name="code">5313</field>
+        </record>
+    
+        <record id="kab_id_5314" model="wtc.city">
+            <field name="state_id" ref="province_id_5300"/>
+            <field name="name">KAB. ROTE-NDAO</field>
+            <field name="code">5314</field>
+        </record>
+    
+        <record id="kab_id_5315" model="wtc.city">
+            <field name="state_id" ref="province_id_5300"/>
+            <field name="name">KAB. MANGGARAI BARA</field>
+            <field name="code">5315</field>
+        </record>
+    
+        <record id="kab_id_5316" model="wtc.city">
+            <field name="state_id" ref="province_id_5300"/>
+            <field name="name">KAB. NAGEKEO</field>
+            <field name="code">5316</field>
+        </record>
+    
+        <record id="kab_id_5317" model="wtc.city">
+            <field name="state_id" ref="province_id_5300"/>
+            <field name="name">KAB. SUMBA TENGAH</field>
+            <field name="code">5317</field>
+        </record>
+    
+        <record id="kab_id_5318" model="wtc.city">
+            <field name="state_id" ref="province_id_5300"/>
+            <field name="name">KAB. SUMBA BARAT DAYA</field>
+            <field name="code">5318</field>
+        </record>
+    
+        <record id="kab_id_5319" model="wtc.city">
+            <field name="state_id" ref="province_id_5300"/>
+            <field name="name">KAB. MANGGARAI TIMUR</field>
+            <field name="code">5319</field>
+        </record>
+    
+        <record id="kab_id_5371" model="wtc.city">
+            <field name="state_id" ref="province_id_5300"/>
+            <field name="name">KOTA KUPANG</field>
+            <field name="code">5371</field>
+        </record>
+    
+        <record id="kab_id_6101" model="wtc.city">
+            <field name="state_id" ref="province_id_6100"/>
+            <field name="name">KAB. SAMBAS</field>
+            <field name="code">6101</field>
+        </record>
+    
+        <record id="kab_id_6102" model="wtc.city">
+            <field name="state_id" ref="province_id_6100"/>
+            <field name="name">KAB. BENGKAYANG</field>
+            <field name="code">6102</field>
+        </record>
+    
+        <record id="kab_id_6103" model="wtc.city">
+            <field name="state_id" ref="province_id_6100"/>
+            <field name="name">KAB. LANDAK</field>
+            <field name="code">6103</field>
+        </record>
+    
+        <record id="kab_id_6104" model="wtc.city">
+            <field name="state_id" ref="province_id_6100"/>
+            <field name="name">KAB. PONTIANAK</field>
+            <field name="code">6104</field>
+        </record>
+    
+        <record id="kab_id_6105" model="wtc.city">
+            <field name="state_id" ref="province_id_6100"/>
+            <field name="name">KAB. SANGGAU</field>
+            <field name="code">6105</field>
+        </record>
+    
+        <record id="kab_id_6106" model="wtc.city">
+            <field name="state_id" ref="province_id_6100"/>
+            <field name="name">KAB. KETAPANG</field>
+            <field name="code">6106</field>
+        </record>
+    
+        <record id="kab_id_6107" model="wtc.city">
+            <field name="state_id" ref="province_id_6100"/>
+            <field name="name">KAB. SINTANG</field>
+            <field name="code">6107</field>
+        </record>
+    
+        <record id="kab_id_6108" model="wtc.city">
+            <field name="state_id" ref="province_id_6100"/>
+            <field name="name">KAB. KAPUAS HULU</field>
+            <field name="code">6108</field>
+        </record>
+    
+        <record id="kab_id_6109" model="wtc.city">
+            <field name="state_id" ref="province_id_6100"/>
+            <field name="name">KAB. SEKADAU</field>
+            <field name="code">6109</field>
+        </record>
+    
+        <record id="kab_id_6110" model="wtc.city">
+            <field name="state_id" ref="province_id_6100"/>
+            <field name="name">KAB. MELAWI</field>
+            <field name="code">6110</field>
+        </record>
+    
+        <record id="kab_id_6111" model="wtc.city">
+            <field name="state_id" ref="province_id_6100"/>
+            <field name="name">KAB. KAYONG UTARA</field>
+            <field name="code">6111</field>
+        </record>
+    
+        <record id="kab_id_6112" model="wtc.city">
+            <field name="state_id" ref="province_id_6100"/>
+            <field name="name">KAB. KUBU RAYA</field>
+            <field name="code">6112</field>
+        </record>
+    
+        <record id="kab_id_6171" model="wtc.city">
+            <field name="state_id" ref="province_id_6100"/>
+            <field name="name">KOTA PONTIANAK</field>
+            <field name="code">6171</field>
+        </record>
+    
+        <record id="kab_id_6172" model="wtc.city">
+            <field name="state_id" ref="province_id_6100"/>
+            <field name="name">KOTA SINGKAWANG</field>
+            <field name="code">6172</field>
+        </record>
+    
+        <record id="kab_id_6201" model="wtc.city">
+            <field name="state_id" ref="province_id_6200"/>
+            <field name="name">KAB. KOTAWARINGIN BARAT</field>
+            <field name="code">6201</field>
+        </record>
+    
+        <record id="kab_id_6202" model="wtc.city">
+            <field name="state_id" ref="province_id_6200"/>
+            <field name="name">KAB. KOTAWARINGIN TIMUR</field>
+            <field name="code">6202</field>
+        </record>
+    
+        <record id="kab_id_6203" model="wtc.city">
+            <field name="state_id" ref="province_id_6200"/>
+            <field name="name">KAB. KAPUAS</field>
+            <field name="code">6203</field>
+        </record>
+    
+        <record id="kab_id_6204" model="wtc.city">
+            <field name="state_id" ref="province_id_6200"/>
+            <field name="name">KAB. BARITO SELATAN</field>
+            <field name="code">6204</field>
+        </record>
+    
+        <record id="kab_id_6205" model="wtc.city">
+            <field name="state_id" ref="province_id_6200"/>
+            <field name="name">KAB. BARITO UTARA</field>
+            <field name="code">6205</field>
+        </record>
+    
+        <record id="kab_id_6206" model="wtc.city">
+            <field name="state_id" ref="province_id_6200"/>
+            <field name="name">KAB. SUKAMARA</field>
+            <field name="code">6206</field>
+        </record>
+    
+        <record id="kab_id_6207" model="wtc.city">
+            <field name="state_id" ref="province_id_6200"/>
+            <field name="name">KAB. LAMANDAU</field>
+            <field name="code">6207</field>
+        </record>
+    
+        <record id="kab_id_6208" model="wtc.city">
+            <field name="state_id" ref="province_id_6200"/>
+            <field name="name">KAB. SERUYAN</field>
+            <field name="code">6208</field>
+        </record>
+    
+        <record id="kab_id_6209" model="wtc.city">
+            <field name="state_id" ref="province_id_6200"/>
+            <field name="name">KAB. KATINGAN</field>
+            <field name="code">6209</field>
+        </record>
+    
+        <record id="kab_id_6210" model="wtc.city">
+            <field name="state_id" ref="province_id_6200"/>
+            <field name="name">KAB. PULANG PISAU</field>
+            <field name="code">6210</field>
+        </record>
+    
+        <record id="kab_id_6211" model="wtc.city">
+            <field name="state_id" ref="province_id_6200"/>
+            <field name="name">KAB. GUNUNG MAS</field>
+            <field name="code">6211</field>
+        </record>
+    
+        <record id="kab_id_6212" model="wtc.city">
+            <field name="state_id" ref="province_id_6200"/>
+            <field name="name">KAB. BARITO TIMUR</field>
+            <field name="code">6212</field>
+        </record>
+    
+        <record id="kab_id_6213" model="wtc.city">
+            <field name="state_id" ref="province_id_6200"/>
+            <field name="name">KAB. MURUNG RAYA</field>
+            <field name="code">6213</field>
+        </record>
+    
+        <record id="kab_id_6271" model="wtc.city">
+            <field name="state_id" ref="province_id_6200"/>
+            <field name="name">KOTA PALANGKA RAYA</field>
+            <field name="code">6271</field>
+        </record>
+    
+        <record id="kab_id_6301" model="wtc.city">
+            <field name="state_id" ref="province_id_6300"/>
+            <field name="name">KAB. TANAH LAUT</field>
+            <field name="code">6301</field>
+        </record>
+    
+        <record id="kab_id_6302" model="wtc.city">
+            <field name="state_id" ref="province_id_6300"/>
+            <field name="name">KAB. KOTA BARU</field>
+            <field name="code">6302</field>
+        </record>
+    
+        <record id="kab_id_6303" model="wtc.city">
+            <field name="state_id" ref="province_id_6300"/>
+            <field name="name">KAB. BANJAR</field>
+            <field name="code">6303</field>
+        </record>
+    
+        <record id="kab_id_6304" model="wtc.city">
+            <field name="state_id" ref="province_id_6300"/>
+            <field name="name">KAB. BARITO KUALA</field>
+            <field name="code">6304</field>
+        </record>
+    
+        <record id="kab_id_6305" model="wtc.city">
+            <field name="state_id" ref="province_id_6300"/>
+            <field name="name">KAB. TAPIN</field>
+            <field name="code">6305</field>
+        </record>
+    
+        <record id="kab_id_6306" model="wtc.city">
+            <field name="state_id" ref="province_id_6300"/>
+            <field name="name">KAB. HULU SUNGAI SELATAN</field>
+            <field name="code">6306</field>
+        </record>
+    
+        <record id="kab_id_6307" model="wtc.city">
+            <field name="state_id" ref="province_id_6300"/>
+            <field name="name">KAB. HULU SUNGAI TENGAH</field>
+            <field name="code">6307</field>
+        </record>
+    
+        <record id="kab_id_6308" model="wtc.city">
+            <field name="state_id" ref="province_id_6300"/>
+            <field name="name">KAB. HULU SUNGAI UTARA</field>
+            <field name="code">6308</field>
+        </record>
+    
+        <record id="kab_id_6309" model="wtc.city">
+            <field name="state_id" ref="province_id_6300"/>
+            <field name="name">KAB. TABALONG</field>
+            <field name="code">6309</field>
+        </record>
+    
+        <record id="kab_id_6310" model="wtc.city">
+            <field name="state_id" ref="province_id_6300"/>
+            <field name="name">KAB. BALANGAN</field>
+            <field name="code">6310</field>
+        </record>
+    
+        <record id="kab_id_6311" model="wtc.city">
+            <field name="state_id" ref="province_id_6300"/>
+            <field name="name">KAB. TANAH BUMBU</field>
+            <field name="code">6311</field>
+        </record>
+    
+        <record id="kab_id_6371" model="wtc.city">
+            <field name="state_id" ref="province_id_6300"/>
+            <field name="name">KOTA BANJARMASIN</field>
+            <field name="code">6371</field>
+        </record>
+    
+        <record id="kab_id_6372" model="wtc.city">
+            <field name="state_id" ref="province_id_6300"/>
+            <field name="name">KOTA BANJARBARU</field>
+            <field name="code">6372</field>
+        </record>
+    
+        <record id="kab_id_6401" model="wtc.city">
+            <field name="state_id" ref="province_id_6400"/>
+            <field name="name">KAB. PASIR</field>
+            <field name="code">6401</field>
+        </record>
+    
+        <record id="kab_id_6402" model="wtc.city">
+            <field name="state_id" ref="province_id_6400"/>
+            <field name="name">KAB. KUTAI BARAT</field>
+            <field name="code">6402</field>
+        </record>
+    
+        <record id="kab_id_6403" model="wtc.city">
+            <field name="state_id" ref="province_id_6400"/>
+            <field name="name">KAB. KUTAI KARTANEGARA</field>
+            <field name="code">6403</field>
+        </record>
+    
+        <record id="kab_id_6404" model="wtc.city">
+            <field name="state_id" ref="province_id_6400"/>
+            <field name="name">KAB. KUTAI TIMUR</field>
+            <field name="code">6404</field>
+        </record>
+    
+        <record id="kab_id_6405" model="wtc.city">
+            <field name="state_id" ref="province_id_6400"/>
+            <field name="name">KAB. BERAU</field>
+            <field name="code">6405</field>
+        </record>
+    
+        <record id="kab_id_6406" model="wtc.city">
+            <field name="state_id" ref="province_id_6400"/>
+            <field name="name">KAB. MALINAU</field>
+            <field name="code">6406</field>
+        </record>
+    
+        <record id="kab_id_6407" model="wtc.city">
+            <field name="state_id" ref="province_id_6400"/>
+            <field name="name">KAB. BULONGAN</field>
+            <field name="code">6407</field>
+        </record>
+    
+        <record id="kab_id_6408" model="wtc.city">
+            <field name="state_id" ref="province_id_6400"/>
+            <field name="name">KAB. NUNUKAN</field>
+            <field name="code">6408</field>
+        </record>
+    
+        <record id="kab_id_6409" model="wtc.city">
+            <field name="state_id" ref="province_id_6400"/>
+            <field name="name">KAB. PENAJAM PASER</field>
+            <field name="code">6409</field>
+        </record>
+    
+        <record id="kab_id_6410" model="wtc.city">
+            <field name="state_id" ref="province_id_6400"/>
+            <field name="name">KAB. TANA TIDUNG</field>
+            <field name="code">6410</field>
+        </record>
+    
+        <record id="kab_id_6471" model="wtc.city">
+            <field name="state_id" ref="province_id_6400"/>
+            <field name="name">KOTA BALIKPAPAN</field>
+            <field name="code">6471</field>
+        </record>
+    
+        <record id="kab_id_6472" model="wtc.city">
+            <field name="state_id" ref="province_id_6400"/>
+            <field name="name">KOTA SAMARINDA</field>
+            <field name="code">6472</field>
+        </record>
+    
+        <record id="kab_id_6473" model="wtc.city">
+            <field name="state_id" ref="province_id_6400"/>
+            <field name="name">KOTA TARAKAN</field>
+            <field name="code">6473</field>
+        </record>
+    
+        <record id="kab_id_6474" model="wtc.city">
+            <field name="state_id" ref="province_id_6400"/>
+            <field name="name">KOTA BONTANG</field>
+            <field name="code">6474</field>
+        </record>
+    
+        <record id="kab_id_7101" model="wtc.city">
+            <field name="state_id" ref="province_id_7100"/>
+            <field name="name">KAB. BOLAANG MENGON</field>
+            <field name="code">7101</field>
+        </record>
+    
+        <record id="kab_id_7102" model="wtc.city">
+            <field name="state_id" ref="province_id_7100"/>
+            <field name="name">KAB. MINAHASA</field>
+            <field name="code">7102</field>
+        </record>
+    
+        <record id="kab_id_7103" model="wtc.city">
+            <field name="state_id" ref="province_id_7100"/>
+            <field name="name">KAB. KEPULAUAN SANGIHE</field>
+            <field name="code">7103</field>
+        </record>
+    
+        <record id="kab_id_7104" model="wtc.city">
+            <field name="state_id" ref="province_id_7100"/>
+            <field name="name">KAB. KEPULAUAN TALAUD</field>
+            <field name="code">7104</field>
+        </record>
+    
+        <record id="kab_id_7105" model="wtc.city">
+            <field name="state_id" ref="province_id_7100"/>
+            <field name="name">KAB. MINAHASA SELATAN</field>
+            <field name="code">7105</field>
+        </record>
+    
+        <record id="kab_id_7106" model="wtc.city">
+            <field name="state_id" ref="province_id_7100"/>
+            <field name="name">KAB. MINAHASA UTARA</field>
+            <field name="code">7106</field>
+        </record>
+    
+        <record id="kab_id_7107" model="wtc.city">
+            <field name="state_id" ref="province_id_7100"/>
+            <field name="name">KAB. BOLMONG UTARA</field>
+            <field name="code">7107</field>
+        </record>
+    
+        <record id="kab_id_7108" model="wtc.city">
+            <field name="state_id" ref="province_id_7100"/>
+            <field name="name">KAB. KEPULAUAN SITARO</field>
+            <field name="code">7108</field>
+        </record>
+    
+        <record id="kab_id_7109" model="wtc.city">
+            <field name="state_id" ref="province_id_7100"/>
+            <field name="name">KAB. MINAHASA TENGGARA</field>
+            <field name="code">7109</field>
+        </record>
+    
+        <record id="kab_id_7171" model="wtc.city">
+            <field name="state_id" ref="province_id_7100"/>
+            <field name="name">KOTA MANADO</field>
+            <field name="code">7171</field>
+        </record>
+    
+        <record id="kab_id_7172" model="wtc.city">
+            <field name="state_id" ref="province_id_7100"/>
+            <field name="name">KOTA BITUNG</field>
+            <field name="code">7172</field>
+        </record>
+    
+        <record id="kab_id_7173" model="wtc.city">
+            <field name="state_id" ref="province_id_7100"/>
+            <field name="name">KOTA TOMOHON</field>
+            <field name="code">7173</field>
+        </record>
+    
+        <record id="kab_id_7174" model="wtc.city">
+            <field name="state_id" ref="province_id_7100"/>
+            <field name="name">KOTA KOTAMOBAGU</field>
+            <field name="code">7174</field>
+        </record>
+    
+        <record id="kab_id_7201" model="wtc.city">
+            <field name="state_id" ref="province_id_7200"/>
+            <field name="name">KAB. BANGGAI KEPULAUAN</field>
+            <field name="code">7201</field>
+        </record>
+    
+        <record id="kab_id_7202" model="wtc.city">
+            <field name="state_id" ref="province_id_7200"/>
+            <field name="name">KAB. BANGGAI</field>
+            <field name="code">7202</field>
+        </record>
+    
+        <record id="kab_id_7203" model="wtc.city">
+            <field name="state_id" ref="province_id_7200"/>
+            <field name="name">KAB. MOROWALI</field>
+            <field name="code">7203</field>
+        </record>
+    
+        <record id="kab_id_7204" model="wtc.city">
+            <field name="state_id" ref="province_id_7200"/>
+            <field name="name">KAB. POSO</field>
+            <field name="code">7204</field>
+        </record>
+    
+        <record id="kab_id_7205" model="wtc.city">
+            <field name="state_id" ref="province_id_7200"/>
+            <field name="name">KAB. DONGGALA</field>
+            <field name="code">7205</field>
+        </record>
+    
+        <record id="kab_id_7206" model="wtc.city">
+            <field name="state_id" ref="province_id_7200"/>
+            <field name="name">KAB. TOLI-TOLI</field>
+            <field name="code">7206</field>
+        </record>
+    
+        <record id="kab_id_7207" model="wtc.city">
+            <field name="state_id" ref="province_id_7200"/>
+            <field name="name">KAB. BUOL</field>
+            <field name="code">7207</field>
+        </record>
+    
+        <record id="kab_id_7208" model="wtc.city">
+            <field name="state_id" ref="province_id_7200"/>
+            <field name="name">KAB. PARIGI MOUTONG</field>
+            <field name="code">7208</field>
+        </record>
+    
+        <record id="kab_id_7209" model="wtc.city">
+            <field name="state_id" ref="province_id_7200"/>
+            <field name="name">KAB. TOJO UNA-UNA</field>
+            <field name="code">7209</field>
+        </record>
+    
+        <record id="kab_id_7271" model="wtc.city">
+            <field name="state_id" ref="province_id_7200"/>
+            <field name="name">KOTA PALU</field>
+            <field name="code">7271</field>
+        </record>
+    
+        <record id="kab_id_7301" model="wtc.city">
+            <field name="state_id" ref="province_id_7300"/>
+            <field name="name">KAB. SELAYAR</field>
+            <field name="code">7301</field>
+        </record>
+    
+        <record id="kab_id_7302" model="wtc.city">
+            <field name="state_id" ref="province_id_7300"/>
+            <field name="name">KAB. BULUKUMBA</field>
+            <field name="code">7302</field>
+        </record>
+    
+        <record id="kab_id_7303" model="wtc.city">
+            <field name="state_id" ref="province_id_7300"/>
+            <field name="name">KAB. BANTAENG</field>
+            <field name="code">7303</field>
+        </record>
+    
+        <record id="kab_id_7304" model="wtc.city">
+            <field name="state_id" ref="province_id_7300"/>
+            <field name="name">KAB. JENEPONTO</field>
+            <field name="code">7304</field>
+        </record>
+    
+        <record id="kab_id_7305" model="wtc.city">
+            <field name="state_id" ref="province_id_7300"/>
+            <field name="name">KAB. TAKALAR</field>
+            <field name="code">7305</field>
+        </record>
+    
+        <record id="kab_id_7306" model="wtc.city">
+            <field name="state_id" ref="province_id_7300"/>
+            <field name="name">KAB. GOWA</field>
+            <field name="code">7306</field>
+        </record>
+    
+        <record id="kab_id_7307" model="wtc.city">
+            <field name="state_id" ref="province_id_7300"/>
+            <field name="name">KAB. SINJAI</field>
+            <field name="code">7307</field>
+        </record>
+    
+        <record id="kab_id_7308" model="wtc.city">
+            <field name="state_id" ref="province_id_7300"/>
+            <field name="name">KAB. MAROS</field>
+            <field name="code">7308</field>
+        </record>
+    
+        <record id="kab_id_7309" model="wtc.city">
+            <field name="state_id" ref="province_id_7300"/>
+            <field name="name">KAB. PANGKAJENE KEPULAUAN</field>
+            <field name="code">7309</field>
+        </record>
+    
+        <record id="kab_id_7310" model="wtc.city">
+            <field name="state_id" ref="province_id_7300"/>
+            <field name="name">KAB. BARRU</field>
+            <field name="code">7310</field>
+        </record>
+    
+        <record id="kab_id_7311" model="wtc.city">
+            <field name="state_id" ref="province_id_7300"/>
+            <field name="name">KAB. BONE</field>
+            <field name="code">7311</field>
+        </record>
+    
+        <record id="kab_id_7312" model="wtc.city">
+            <field name="state_id" ref="province_id_7300"/>
+            <field name="name">KAB. SOPPENG</field>
+            <field name="code">7312</field>
+        </record>
+    
+        <record id="kab_id_7313" model="wtc.city">
+            <field name="state_id" ref="province_id_7300"/>
+            <field name="name">KAB. WAJO</field>
+            <field name="code">7313</field>
+        </record>
+    
+        <record id="kab_id_7314" model="wtc.city">
+            <field name="state_id" ref="province_id_7300"/>
+            <field name="name">KAB. SIDENRENG RAPPANG</field>
+            <field name="code">7314</field>
+        </record>
+    
+        <record id="kab_id_7315" model="wtc.city">
+            <field name="state_id" ref="province_id_7300"/>
+            <field name="name">KAB. PINRANG</field>
+            <field name="code">7315</field>
+        </record>
+    
+        <record id="kab_id_7316" model="wtc.city">
+            <field name="state_id" ref="province_id_7300"/>
+            <field name="name">KAB. ENREKANG</field>
+            <field name="code">7316</field>
+        </record>
+    
+        <record id="kab_id_7317" model="wtc.city">
+            <field name="state_id" ref="province_id_7300"/>
+            <field name="name">KAB. LUWU</field>
+            <field name="code">7317</field>
+        </record>
+    
+        <record id="kab_id_7318" model="wtc.city">
+            <field name="state_id" ref="province_id_7300"/>
+            <field name="name">KAB. TANA TORAJA</field>
+            <field name="code">7318</field>
+        </record>
+    
+        <record id="kab_id_7322" model="wtc.city">
+            <field name="state_id" ref="province_id_7300"/>
+            <field name="name">KAB. LUWU UTARA</field>
+            <field name="code">7322</field>
+        </record>
+    
+        <record id="kab_id_7325" model="wtc.city">
+            <field name="state_id" ref="province_id_7300"/>
+            <field name="name">KAB. LUWU TIMUR</field>
+            <field name="code">7325</field>
+        </record>
+    
+        <record id="kab_id_7326" model="wtc.city">
+            <field name="state_id" ref="province_id_7300"/>
+            <field name="name">KAB. TORAJA UTARA</field>
+            <field name="code">7326</field>
+        </record>
+    
+        <record id="kab_id_7371" model="wtc.city">
+            <field name="state_id" ref="province_id_7300"/>
+            <field name="name">KOTA MAKASSAR</field>
+            <field name="code">7371</field>
+        </record>
+    
+        <record id="kab_id_7372" model="wtc.city">
+            <field name="state_id" ref="province_id_7300"/>
+            <field name="name">KOTA PARE-PARE</field>
+            <field name="code">7372</field>
+        </record>
+    
+        <record id="kab_id_7373" model="wtc.city">
+            <field name="state_id" ref="province_id_7300"/>
+            <field name="name">KOTA PALOPO</field>
+            <field name="code">7373</field>
+        </record>
+    
+        <record id="kab_id_7401" model="wtc.city">
+            <field name="state_id" ref="province_id_7400"/>
+            <field name="name">KAB. BUTON</field>
+            <field name="code">7401</field>
+        </record>
+    
+        <record id="kab_id_7402" model="wtc.city">
+            <field name="state_id" ref="province_id_7400"/>
+            <field name="name">KAB. MUNA</field>
+            <field name="code">7402</field>
+        </record>
+    
+        <record id="kab_id_7403" model="wtc.city">
+            <field name="state_id" ref="province_id_7400"/>
+            <field name="name">KAB. KONAWE</field>
+            <field name="code">7403</field>
+        </record>
+    
+        <record id="kab_id_7404" model="wtc.city">
+            <field name="state_id" ref="province_id_7400"/>
+            <field name="name">KAB. KOLAKA</field>
+            <field name="code">7404</field>
+        </record>
+    
+        <record id="kab_id_7405" model="wtc.city">
+            <field name="state_id" ref="province_id_7400"/>
+            <field name="name">KAB. KONAWE SELATAN</field>
+            <field name="code">7405</field>
+        </record>
+    
+        <record id="kab_id_7406" model="wtc.city">
+            <field name="state_id" ref="province_id_7400"/>
+            <field name="name">KAB. BOMBANA</field>
+            <field name="code">7406</field>
+        </record>
+    
+        <record id="kab_id_7407" model="wtc.city">
+            <field name="state_id" ref="province_id_7400"/>
+            <field name="name">KAB. WAKATOBI</field>
+            <field name="code">7407</field>
+        </record>
+    
+        <record id="kab_id_7408" model="wtc.city">
+            <field name="state_id" ref="province_id_7400"/>
+            <field name="name">KAB. KOLAKA UTARA</field>
+            <field name="code">7408</field>
+        </record>
+    
+        <record id="kab_id_7409" model="wtc.city">
+            <field name="state_id" ref="province_id_7400"/>
+            <field name="name">KAB. KONAWE UTARA</field>
+            <field name="code">7409</field>
+        </record>
+    
+        <record id="kab_id_7410" model="wtc.city">
+            <field name="state_id" ref="province_id_7400"/>
+            <field name="name">KAB. BUTON UTARA</field>
+            <field name="code">7410</field>
+        </record>
+    
+        <record id="kab_id_7471" model="wtc.city">
+            <field name="state_id" ref="province_id_7400"/>
+            <field name="name">KOTA KENDARI</field>
+            <field name="code">7471</field>
+        </record>
+    
+        <record id="kab_id_7472" model="wtc.city">
+            <field name="state_id" ref="province_id_7400"/>
+            <field name="name">KOTA BAUBAU</field>
+            <field name="code">7472</field>
+        </record>
+    
+        <record id="kab_id_7501" model="wtc.city">
+            <field name="state_id" ref="province_id_7500"/>
+            <field name="name">KAB. BOALEMO</field>
+            <field name="code">7501</field>
+        </record>
+    
+        <record id="kab_id_7502" model="wtc.city">
+            <field name="state_id" ref="province_id_7500"/>
+            <field name="name">KAB. GORONTALO</field>
+            <field name="code">7502</field>
+        </record>
+    
+        <record id="kab_id_7503" model="wtc.city">
+            <field name="state_id" ref="province_id_7500"/>
+            <field name="name">KAB. POHUWATO</field>
+            <field name="code">7503</field>
+        </record>
+    
+        <record id="kab_id_7504" model="wtc.city">
+            <field name="state_id" ref="province_id_7500"/>
+            <field name="name">KAB. BONE BOLANGO</field>
+            <field name="code">7504</field>
+        </record>
+    
+        <record id="kab_id_7505" model="wtc.city">
+            <field name="state_id" ref="province_id_7500"/>
+            <field name="name">KAB. GORONTALO UTARA</field>
+            <field name="code">7505</field>
+        </record>
+    
+        <record id="kab_id_7571" model="wtc.city">
+            <field name="state_id" ref="province_id_7500"/>
+            <field name="name">KOTA GORONTALO</field>
+            <field name="code">7571</field>
+        </record>
+    
+        <record id="kab_id_7605" model="wtc.city">
+            <field name="state_id" ref="province_id_7600"/>
+            <field name="name">KAB. MAMUJU UTARA</field>
+            <field name="code">7605</field>
+        </record>
+    
+        <record id="kab_id_7603" model="wtc.city">
+            <field name="state_id" ref="province_id_7600"/>
+            <field name="name">KAB. MAMASA</field>
+            <field name="code">7603</field>
+        </record>
+    
+        <record id="kab_id_7604" model="wtc.city">
+            <field name="state_id" ref="province_id_7600"/>
+            <field name="name">KAB. MAMUJU</field>
+            <field name="code">7604</field>
+        </record>
+    
+        <record id="kab_id_7601" model="wtc.city">
+            <field name="state_id" ref="province_id_7600"/>
+            <field name="name">KAB. MAJENE</field>
+            <field name="code">7601</field>
+        </record>
+    
+        <record id="kab_id_7602" model="wtc.city">
+            <field name="state_id" ref="province_id_7600"/>
+            <field name="name">KAB. POLEWALI MAMAS</field>
+            <field name="code">7602</field>
+        </record>
+    
+        <record id="kab_id_8101" model="wtc.city">
+            <field name="state_id" ref="province_id_8100"/>
+            <field name="name">KAB. MALUKU TENGGARA BARAT</field>
+            <field name="code">8101</field>
+        </record>
+    
+        <record id="kab_id_8102" model="wtc.city">
+            <field name="state_id" ref="province_id_8100"/>
+            <field name="name">KAB. MALUKU TENGGARA</field>
+            <field name="code">8102</field>
+        </record>
+    
+        <record id="kab_id_8103" model="wtc.city">
+            <field name="state_id" ref="province_id_8100"/>
+            <field name="name">KAB. MALUKU TENGAH</field>
+            <field name="code">8103</field>
+        </record>
+    
+        <record id="kab_id_8104" model="wtc.city">
+            <field name="state_id" ref="province_id_8100"/>
+            <field name="name">KAB. BURU</field>
+            <field name="code">8104</field>
+        </record>
+    
+        <record id="kab_id_8105" model="wtc.city">
+            <field name="state_id" ref="province_id_8100"/>
+            <field name="name">KAB. KEPULAUAN ARU</field>
+            <field name="code">8105</field>
+        </record>
+    
+        <record id="kab_id_8106" model="wtc.city">
+            <field name="state_id" ref="province_id_8100"/>
+            <field name="name">KAB. SERAM BAGIAN BARAT</field>
+            <field name="code">8106</field>
+        </record>
+    
+        <record id="kab_id_8107" model="wtc.city">
+            <field name="state_id" ref="province_id_8100"/>
+            <field name="name">KAB. SERAM BAGIAN TIMUR</field>
+            <field name="code">8107</field>
+        </record>
+    
+        <record id="kab_id_8108" model="wtc.city">
+            <field name="state_id" ref="province_id_8100"/>
+            <field name="name">KAB. MALUKU BARAT DAYA</field>
+            <field name="code">8108</field>
+        </record>
+    
+        <record id="kab_id_8109" model="wtc.city">
+            <field name="state_id" ref="province_id_8100"/>
+            <field name="name">KAB. BURU SELATAN</field>
+            <field name="code">8109</field>
+        </record>
+    
+        <record id="kab_id_8171" model="wtc.city">
+            <field name="state_id" ref="province_id_8100"/>
+            <field name="name">KOTA AMBON</field>
+            <field name="code">8171</field>
+        </record>
+    
+        <record id="kab_id_8172" model="wtc.city">
+            <field name="state_id" ref="province_id_8100"/>
+            <field name="name">KOTA TUAL</field>
+            <field name="code">8172</field>
+        </record>
+    
+        <record id="kab_id_8201" model="wtc.city">
+            <field name="state_id" ref="province_id_8200"/>
+            <field name="name">KAB. HALMAHERA BARAT</field>
+            <field name="code">8201</field>
+        </record>
+    
+        <record id="kab_id_8202" model="wtc.city">
+            <field name="state_id" ref="province_id_8200"/>
+            <field name="name">KAB. HALMAHERA TENGAH</field>
+            <field name="code">8202</field>
+        </record>
+    
+        <record id="kab_id_8203" model="wtc.city">
+            <field name="state_id" ref="province_id_8200"/>
+            <field name="name">KAB. KEPULAUAN SULA</field>
+            <field name="code">8203</field>
+        </record>
+    
+        <record id="kab_id_8204" model="wtc.city">
+            <field name="state_id" ref="province_id_8200"/>
+            <field name="name">KAB. HALMAHERA SELATAN</field>
+            <field name="code">8204</field>
+        </record>
+    
+        <record id="kab_id_8205" model="wtc.city">
+            <field name="state_id" ref="province_id_8200"/>
+            <field name="name">KAB. HALMAHERA UTARA</field>
+            <field name="code">8205</field>
+        </record>
+    
+        <record id="kab_id_8206" model="wtc.city">
+            <field name="state_id" ref="province_id_8200"/>
+            <field name="name">KAB. HALMAHERA TIMUR</field>
+            <field name="code">8206</field>
+        </record>
+    
+        <record id="kab_id_8271" model="wtc.city">
+            <field name="state_id" ref="province_id_8200"/>
+            <field name="name">KOTA TERNATE</field>
+            <field name="code">8271</field>
+        </record>
+    
+        <record id="kab_id_8272" model="wtc.city">
+            <field name="state_id" ref="province_id_8200"/>
+            <field name="name">KOTA TIDORE KEPULAUAN</field>
+            <field name="code">8272</field>
+        </record>
+    
+        <record id="kab_id_9107" model="wtc.city">
+            <field name="state_id" ref="province_id_9100"/>
+            <field name="name">KAB. SORONG</field>
+            <field name="code">9107</field>
+        </record>
+    
+        <record id="kab_id_9108" model="wtc.city">
+            <field name="state_id" ref="province_id_9100"/>
+            <field name="name">KAB. MANOKWARI</field>
+            <field name="code">9108</field>
+        </record>
+    
+        <record id="kab_id_9110" model="wtc.city">
+            <field name="state_id" ref="province_id_9100"/>
+            <field name="name">KAB. FAK FAK</field>
+            <field name="code">9110</field>
+        </record>
+    
+        <record id="kab_id_9111" model="wtc.city">
+            <field name="state_id" ref="province_id_9100"/>
+            <field name="name">KAB. SORONG SELATAN</field>
+            <field name="code">9111</field>
+        </record>
+    
+        <record id="kab_id_9112" model="wtc.city">
+            <field name="state_id" ref="province_id_9100"/>
+            <field name="name">KAB. RAJA AMPAT</field>
+            <field name="code">9112</field>
+        </record>
+    
+        <record id="kab_id_9113" model="wtc.city">
+            <field name="state_id" ref="province_id_9100"/>
+            <field name="name">KAB. TELUK BENTUNI</field>
+            <field name="code">9113</field>
+        </record>
+    
+        <record id="kab_id_9114" model="wtc.city">
+            <field name="state_id" ref="province_id_9100"/>
+            <field name="name">KAB. TELUK WONDAMA</field>
+            <field name="code">9114</field>
+        </record>
+    
+        <record id="kab_id_9115" model="wtc.city">
+            <field name="state_id" ref="province_id_9100"/>
+            <field name="name">KAB. KAIMANA</field>
+            <field name="code">9115</field>
+        </record>
+    
+        <record id="kab_id_9171" model="wtc.city">
+            <field name="state_id" ref="province_id_9100"/>
+            <field name="name">KOTA SORONG</field>
+            <field name="code">9171</field>
+        </record>
+    
+        <record id="kab_id_9401" model="wtc.city">
+            <field name="state_id" ref="province_id_9400"/>
+            <field name="name">KAB. MERAUKE</field>
+            <field name="code">9401</field>
+        </record>
+    
+        <record id="kab_id_9402" model="wtc.city">
+            <field name="state_id" ref="province_id_9400"/>
+            <field name="name">KAB. JAYAWIJAYA</field>
+            <field name="code">9402</field>
+        </record>
+    
+        <record id="kab_id_9403" model="wtc.city">
+            <field name="state_id" ref="province_id_9400"/>
+            <field name="name">KAB. JAYAPURA</field>
+            <field name="code">9403</field>
+        </record>
+    
+        <record id="kab_id_9404" model="wtc.city">
+            <field name="state_id" ref="province_id_9400"/>
+            <field name="name">KAB. NABIRE</field>
+            <field name="code">9404</field>
+        </record>
+    
+        <record id="kab_id_9408" model="wtc.city">
+            <field name="state_id" ref="province_id_9400"/>
+            <field name="name">KAB. YAPEN WAROPEN</field>
+            <field name="code">9408</field>
+        </record>
+    
+        <record id="kab_id_9409" model="wtc.city">
+            <field name="state_id" ref="province_id_9400"/>
+            <field name="name">KAB. BIAK NUMFOR</field>
+            <field name="code">9409</field>
+        </record>
+    
+        <record id="kab_id_9410" model="wtc.city">
+            <field name="state_id" ref="province_id_9400"/>
+            <field name="name">KAB. PANIAI</field>
+            <field name="code">9410</field>
+        </record>
+    
+        <record id="kab_id_9411" model="wtc.city">
+            <field name="state_id" ref="province_id_9400"/>
+            <field name="name">KAB. PUNCAK JAYA</field>
+            <field name="code">9411</field>
+        </record>
+    
+        <record id="kab_id_9412" model="wtc.city">
+            <field name="state_id" ref="province_id_9400"/>
+            <field name="name">KAB. MIMIKA</field>
+            <field name="code">9412</field>
+        </record>
+    
+        <record id="kab_id_9413" model="wtc.city">
+            <field name="state_id" ref="province_id_9400"/>
+            <field name="name">KAB. BOVEN DIGOEL</field>
+            <field name="code">9413</field>
+        </record>
+    
+        <record id="kab_id_9414" model="wtc.city">
+            <field name="state_id" ref="province_id_9400"/>
+            <field name="name">KAB. MAPPI</field>
+            <field name="code">9414</field>
+        </record>
+    
+        <record id="kab_id_9415" model="wtc.city">
+            <field name="state_id" ref="province_id_9400"/>
+            <field name="name">KAB. ASMAT</field>
+            <field name="code">9415</field>
+        </record>
+    
+        <record id="kab_id_9417" model="wtc.city">
+            <field name="state_id" ref="province_id_9400"/>
+            <field name="name">KAB. PEGUNUNGAN BINTANG</field>
+            <field name="code">9417</field>
+        </record>
+    
+        <record id="kab_id_9418" model="wtc.city">
+            <field name="state_id" ref="province_id_9400"/>
+            <field name="name">KAB. TOLIKARA</field>
+            <field name="code">9418</field>
+        </record>
+    
+        <record id="kab_id_9419" model="wtc.city">
+            <field name="state_id" ref="province_id_9400"/>
+            <field name="name">KAB. SARMI</field>
+            <field name="code">9419</field>
+        </record>
+    
+        <record id="kab_id_9420" model="wtc.city">
+            <field name="state_id" ref="province_id_9400"/>
+            <field name="name">KAB. KEEROM</field>
+            <field name="code">9420</field>
+        </record>
+    
+        <record id="kab_id_9426" model="wtc.city">
+            <field name="state_id" ref="province_id_9400"/>
+            <field name="name">KAB. WAROPEN</field>
+            <field name="code">9426</field>
+        </record>
+    
+        <record id="kab_id_9427" model="wtc.city">
+            <field name="state_id" ref="province_id_9400"/>
+            <field name="name">KAB. SUPIORI</field>
+            <field name="code">9427</field>
+        </record>
+    
+        <record id="kab_id_9428" model="wtc.city">
+            <field name="state_id" ref="province_id_9400"/>
+            <field name="name">KAB. MEMBERAMO RAYA</field>
+            <field name="code">9428</field>
+        </record>
+    
+        <record id="kab_id_9429" model="wtc.city">
+            <field name="state_id" ref="province_id_9400"/>
+            <field name="name">KAB. YAHUKIMO</field>
+            <field name="code">9429</field>
+        </record>
+    
+        <record id="kab_id_9471" model="wtc.city">
+            <field name="state_id" ref="province_id_9400"/>
+            <field name="name">KOTA JAYAPURA</field>
+            <field name="code">9471</field>
+        </record>
+    </data>
+</openerp>

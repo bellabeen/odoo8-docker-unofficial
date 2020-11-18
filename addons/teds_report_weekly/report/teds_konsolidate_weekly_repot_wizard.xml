@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    	<record id="view_teds_konsolidate_weekly_report_wizard" model="ir.ui.view">
+            <field name="name">teds.konsolidate.weekly.report.wizard</field>
+            <field name="model">teds.konsolidate.weekly.report.wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                	<sheet>
+                		<group attrs="{'invisible':[('state_x','=','get')]}">
+                            <group>
+                                <label for="bulan" string="Periode"/>
+                                <div>
+                                    <field name="bulan" class="oe_inline" required="1"/> - <field name="tahun" class="oe_inline" required="1"/>
+                                </div>
+                            </group>
+                		</group>
+                 		<field invisible="1" name="state_x"/>                
+		                <newline/>    
+		                <group col="4" fill="0" attrs="{'invisible':[('state_x','!=','get')]}">
+		                    <separator colspan="4" string="Excel Report Generated. Click link below to download ..." attrs="{'invisible':[('state_x','=','choose')]}"/>
+		                    <field name="name" invisible="1" width="100" attrs="{'invisible':[('state_x','=','choose')]}"/>
+		                    <field name="data_x" nolabel="1" readonly="0" width="100" filename="name" attrs="{'invisible':[('state_x','=','choose')]}"/>
+		                </group>
+                		<footer>
+			                <button name="action_export" attrs="{'invisible':[('state_x','=','get')]}" string="Export Report" type="object" class="oe_highlight"/>
+			                <label string="or  . " attrs="{'invisible':[('state_x','=','get')]}" />
+			                <button string="Cancel" attrs="{'invisible':[('state_x','=','get')]}" class="oe_link" special="cancel" />
+			            </footer>
+                	</sheet>
+                </form>
+            </field>
+        </record>  
+
+        <record id="action_teds_konsolidate_weekly_report_wizard" model="ir.actions.act_window">
+            <field name="name">Report Konsolidate Weekly</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">teds.konsolidate.weekly.report.wizard</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+	    </record>
+
+	    <menuitem id="teds_konsolidate_weekly_report_wizard_menu" parent="teds_report_weekly.teds_report_weekly_menu" sequence="10" action="action_teds_konsolidate_weekly_report_wizard"/> 
+    </data>
+</openerp>

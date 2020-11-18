@@ -1,0 +1,48 @@
+
+<openerp>
+    <data>  
+    
+    	<record id="view_wtc_p2p_file_upo_form_view" model="ir.ui.view">
+            <field name="name">export.upo.form</field>
+            <field name="model">eksport.upo</field>
+            <field name="arch" type="xml">
+                <form string="P2P File UPO" create="0" edit="0" delete="0">
+                    <field name="name"/>
+                    <field name="p2p_id"/>
+                    <field name="url_file" widget="url"/>
+                    <field name="data_file"/>
+                </form>
+            </field>
+        </record>	
+        
+ 		<record id="view_wtc_p2p_file_upo_tree_view" model="ir.ui.view">
+            <field name="name">export.upo.tree</field>
+            <field name="model">eksport.upo</field>
+            <field name="arch" type="xml">
+                <tree string="P2P File UPO" create="0" edit="0" delete="0">
+                    <field name="name"/>
+                    <field name="p2p_id"/>
+                </tree>
+            </field>
+        </record>		
+		<record model="ir.actions.act_window" id="wtc_p2p_file_upo_action">
+		    <field name="name">P2P File UPO</field>
+		    <field name="res_model">eksport.upo</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		</record>
+
+        <record id="view_wtc_p2p_upo_filter" model="ir.ui.view">
+            <field name="name">wtc.p2p.upo.filter</field>
+            <field name="model">eksport.upo</field>
+            <field name="arch" type="xml">
+                <search string="Search">
+                   <field name="name"/>
+                   <field name='p2p_id'/>
+                </search>
+            </field>
+        </record>       
+		
+		<menuitem id="p2p_file_upo_submenu" name="P2P File UPO" parent="wtc_dealer_menu.p2p_configuration_menu"  action="wtc_p2p_file_upo_action" sequence="40"/>
+ 	</data>
+</openerp>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data> 
+		
+		<record model="ir.ui.view" id="pengurusan_stnk_bpkb_tree_view">
+		    <field name="name">pengurusan.stnk.bpkb.tree</field>
+		    <field name="model">wtc.pengurusan.stnk.bpkb</field>
+		    <field name="arch" type="xml">
+		        <tree string="List Pengurusan STNK dan BPKB">
+		        	<field name="name"/>
+		            <field name="branch_id"/>
+					<field name="division"/>		            
+		            <field name="partner_id"/>	
+		            <field name="tgl_pengurusan"/>	  
+		            <field name="state"/>	            
+		        </tree>
+		     </field>
+		</record>
+ 
+		<record model="ir.ui.view" id="pengurusan_stnk_bpkb_form_view">
+		    <field name="name">pengurusan.stnk.bpkb.form</field>
+		    <field name="model">wtc.pengurusan.stnk.bpkb</field>
+		    <field name="arch" type="xml">
+		        <form string="Form Pengurusan STNK dan BPKB">
+				<header>
+						<button name="view_invoice" type="object" states="confirm" string="View PO" class="oe_highlight"></button>
+						<button name="pengurusan_confirm" groups='wtc_pengurusan_stnk_bpkb.group_wtc_pengurusan_stnk_bpkb_confirm' type="workflow" states="draft" string="Confirm" class="oe_highlight"/>
+						<button name="cancel_pengurusan" groups='wtc_pengurusan_stnk_bpkb.group_wtc_pengurusan_stnk_bpkb_cancel' type="object" states="confirm,draft,approved" string="Cancel" confirm="Apa anda yakin ingin membatalkan transaksi ini ?"/>
+						<field name="state" widget="statusbar" statusbar_visible="draft,confirm,done" statusbar_colors='{"draft":"red","approved":"blue"}'/>	
+           		</header>		        	
+		        	<sheet>
+			        	<div class="oe_title">
+			        		<h2>
+				                <label string="Pengurusan STNK dan BPKB"/>    			
+				 				<field name="name" class="oe_inline"/>
+			 				</h2>
+			        	</div>       
+						<group col="2" colspan="2">   
+							<group>
+								<field name="branch_id" options="{'no_create': True,'no_open': True}" on_change="birojasa_change(branch_id,partner_id)" attrs="{'readonly': ['|',('state','!=','draft'),('name','!=',False)]}" />
+							</group>            
+						    <group>
+	                    		<field name="division" required="1" attrs="{'readonly': [('state','!=','draft')]}" />
+	                    	</group>
+	                    	<group>
+							    <field name="partner_id" on_change="birojasa_change(branch_id,partner_id)" required="1" options="{'no_create': True,'no_open': True}" attrs="{'readonly': [('state','!=','draft')]}" />								    	
+								<field name="customer_id" required="1" options="{'no_create': True,'no_open': True}" attrs="{'readonly': [('state','!=','draft')]}"/>
+							</group>
+				            <group>  
+								<field name="tgl_pengurusan" required="1" readonly="1"/>						               
+							</group>   
+						</group>	
+						
+						<notebook colspan="5">
+		                    <page string="Engine line">
+		                        <field colspan="4" name="pengurusan_line" nolabel="1" widget="one2many_list" attrs="{'readonly': [('state','!=','draft')]}">
+		                            <tree string="" editable="bottom">
+						                <field name="name" options="{'no_create': True,'no_open': True}" on_change="onchange_engine(name,parent.partner_id,plat,parent.branch_id)"/>
+						                <field name="customer_stnk" required="1" options="{'no_create': True,'no_open': True}"/>
+						                <field name="plat" required="1" on_change="onchange_plat(name,parent.partner_id,plat,parent.branch_id)"/>																	                       																		                
+						             </tree>
+		                        </field>
+		                    </page>
+							<page string="Audit Trail">
+								<group>
+									<group>
+										<field name="create_uid" readonly="1"></field>
+										<field name="create_date" readonly="1"></field>
+										<field name="confirm_uid" readonly="1"></field>
+										<field name="confirm_date" readonly="1"></field>
+									</group>
+									<group>							
+										<field name="write_uid" readonly="1"></field>
+										<field name="write_date" readonly="1"></field>
+										<field name="cancel_uid" readonly="1"></field>
+										<field name="cancel_date" readonly="1"></field>
+									</group>
+								</group>
+							</page>			                    
+		                </notebook>				
+		           </sheet>
+		        </form>
+		    </field>
+		</record>
+
+ 		<record id="view_pengurusan_stnk_bpkb_filter" model="ir.ui.view">
+            <field name="name">pengurusan.stnk.bpkb.list.select</field>
+            <field name="model">wtc.pengurusan.stnk.bpkb</field>
+            <field name="arch" type="xml">
+                <search string="Search Pengurusan STNK dan BPKB">
+                    <field name="name" string="Reference"/>
+                    <field name="branch_id"/> 
+                    <field name="partner_id" string="Biro Jasa"/> 
+                    <filter name="draft" string="Draft" domain="[('state','=','draft')]"/>
+                    <filter name="confirm" string="Confirmed" domain="[('state','=','confirm')]"/>
+                    <group expand="0" string="Group By">
+                        <filter string="Branch" icon="terp-partner" domain="[]" context="{'group_by':'branch_id'}"/>
+                        <filter string="Tanggal" icon="terp-go-month" domain="[]" context="{'group_by':'tgl_pengurusan'}"/>                    
+                    </group>
+                </search>
+            </field>
+        </record>		
+		<record model="ir.actions.act_window" id="pengurusan_stnk_bpkb_action">
+		    <field name="name">Pengurusan STNK dan BPKB</field>
+		    <field name="res_model">wtc.pengurusan.stnk.bpkb</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		    <field name="search_view_id" ref="view_pengurusan_stnk_bpkb_filter"/>
+			<field name="context">{"search_default_draft":1}</field>		    
+		    			    
+		</record>
+					
+		<menuitem id="pengurusan_stnk_bpkb_submenu" name="Pengurusan STNK &amp; BPKB Off The Road" parent="wtc_dealer_menu.stnk_bpkb_pengurusan_stnk_bpkb_menu"  action="pengurusan_stnk_bpkb_action" sequence="20"/> 				  
+	</data>
+</openerp>
+															

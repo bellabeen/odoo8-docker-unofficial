@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+		<record id="wtc_purchase_order_branch_config_view" model="ir.ui.view">
+            <field name="name">wtc.branch.config.purchase.order.view</field>
+            <field name="model">wtc.branch.config</field>
+            <field name="inherit_id" ref="wtc_branch.wtc_branch_config_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/sheet/group" position="after">
+                  
+                   		<group string="Sale Order">
+                   			<field name="wtc_so_journal_unit_id" domain="[('type','=','sale')]"/>
+                   			<field name="wtc_so_journal_sparepart_id" domain="[('type','=','sale')]"/>
+                   			<field name="wtc_so_account_discount_cash_id"/>
+                   			<field name="wtc_so_account_discount_program_id"/>
+                   			<field name="wtc_so_account_discount_lainnya_id"/>
+                   			<field name="wtc_so_journal_bind_bonus_jual_id"/>
+                        <field name="wtc_so_account_discount_cash_sparepart_id"/>
+                        <field name="wtc_so_account_discount_cash_oil_id"/>
+                   			
+                   		</group>
+                   
+                </xpath>
+            </field>
+        </record>
+</data>
+</openerp>

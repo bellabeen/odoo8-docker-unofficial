@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		 <record id="act_cancel_so" model="workflow.activity">
+            <field name="wkf_id" ref="sale.wkf_sale"/>
+            <field name="name">Cancel</field>
+            <field name="kind">stopall</field>
+            <field name="flow_stop">True</field>
+            <field name="action">wkf_action_cancel()</field>
+            <field name="join_mode">XOR</field>
+        </record>
+
+        <record id="act_unused_so" model="workflow.activity">
+            <field name="wkf_id" ref="sale.wkf_sale"/>
+            <field name="name">Unused</field>
+            <field name="kind">stopall</field>
+            <field name="flow_stop">True</field>
+            <field name="action">wkf_action_unused()</field>
+            <field name="join_mode">XOR</field>
+        </record>
+        
+        <record id="act_paid_delivered" model="workflow.activity">
+            <field name="wkf_id" ref="sale.wkf_sale"/>
+            <field name="name">paid_delivered</field>
+            <field name="action">is_so_done()</field>
+            <field name="kind">function</field>
+            <field name="join_mode">XOR</field>
+        </record>
+        
+        <record id="sale.act_invoice_end" model="workflow.activity">
+        	 <field name="split_mode">OR</field>
+        </record>
+        <record id="trans_ship_cancel" model="workflow.transition">
+			<field name="act_from" ref="sale.act_ship"/>
+			<field name="act_to" ref="act_cancel_so"/>
+			<field name="signal">so_cancel</field>
+		</record>
+		
+		<record id="sale.trans_invoice_end_done" model="workflow.transition">
+            <field name="act_to" ref="act_paid_delivered"/>
+        </record>
+		
+		<record id="sale.trans_ship_end_done" model="workflow.transition">
+            <field name="act_to" ref="act_paid_delivered"/>
+        </record>
+        
+        <record id="trans_paid_delivered_cancel" model="workflow.transition">
+			<field name="act_from" ref="act_paid_delivered"/>
+			<field name="act_to" ref="act_cancel_so"/>
+			<field name="signal">so_cancel</field>
+		</record>
+		
+		 <record id="trans_done_cancel" model="workflow.transition">
+			<field name="act_from" ref="sale.act_done"/>
+			<field name="act_to" ref="act_cancel_so"/>
+			<field name="signal">so_cancel</field>
+		</record>
+
+        <record id="trans_draft_unused" model="workflow.transition">
+            <field name="act_from" ref="sale.act_draft"/>
+            <field name="act_to" ref="act_unused_so"/>
+            <field name="signal">so_unused</field>
+        </record>
+
+        <record id="trans_sent_unused" model="workflow.transition">
+            <field name="act_from" ref="sale.act_sent"/>
+            <field name="act_to" ref="act_unused_so"/>
+            <field name="signal">so_unused</field>
+        </record>
+        
+        <record id="trans_paid_delivered_done" model="workflow.transition">
+			<field name="act_from" ref="act_paid_delivered"/>
+			<field name="act_to" ref="sale.act_done"/>
+			<field name="signal">action_done</field>
+		</record>
+        
+	</data>
+</openerp>

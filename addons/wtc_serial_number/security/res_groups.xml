@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    
+<!-- Serial Number -->
+		
+        <record id="group_serial_number_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Serial Number Read</field>
+            <field name="menu_access" eval="[(4, ref('stock.menu_action_production_lot_form'))]"/>
+        </record>
+        
+        <record id="access_serial_number_read" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">serial_number read</field>
+            <field name="group_id" ref="group_serial_number_read"/>
+            <field name="perm_read">1</field>
+        </record>
+
+        <record id="group_serial_number_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Serial Number Update</field>
+            <field name="menu_access" eval="[(4, ref('stock.menu_action_production_lot_form'))]"/>
+			<field name="implied_ids" eval="[(4, ref('group_serial_number_read'))]"/>
+        </record>
+        
+        <record id="access_serial_number_update" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">serial_number update</field> 
+            <field name="group_id" ref="group_serial_number_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+
+        <record id="group_serial_number_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Serial Number Delete</field> 
+            <field name="menu_access" eval="[(4, ref('stock.menu_action_production_lot_form'))]"/> 
+			<field name="implied_ids" eval="[(4, ref('group_serial_number_read'))]"/>            	            	
+        </record>
+        
+		<record id="access_serial_number_delete" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">serial_number delete</field>
+            <field name="group_id" ref="group_serial_number_delete"/>
+            <field name="perm_unlink">1</field>
+        </record>
+
+        
+<!-- All Operation -->
+		
+        <record id="group_all_operation_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">All Operation Read</field>
+            <field name="menu_access" eval="[(4, ref('stock.menu_action_picking_type_form'))]"/>
+        </record>
+   
+        <record id="access_all_operations_read" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_picking_type"/>
+            <field name="name">res_all_operation read</field>
+            <field name="group_id" ref="group_all_operation_read"/>
+            <field name="perm_read">1</field>
+        </record>
+		
+        <record id="access_all_operation_pickings_read" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_picking"/>
+            <field name="name">res_all_operation_picking read</field>
+            <field name="group_id" ref="group_all_operation_read"/>  
+            <field name="perm_read">1</field>
+        </record>
+
+        <record id="group_all_operation_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">All Operation Update</field>
+            <field name="menu_access" eval="[(4, ref('stock.menu_action_picking_type_form'))]"/>
+			<field name="implied_ids" eval="[(4, ref('group_all_operation_read'))]"/>
+        </record>
+        
+        <record id="access_all_operation_update" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_picking_type"/>
+            <field name="name">res_all_operation update</field> 
+            <field name="group_id" ref="group_all_operation_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+        
+        <record id="access_all_operation_picking_update" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_picking"/>
+            <field name="name">res_all_operation_picking update</field> 
+            <field name="group_id" ref="group_all_operation_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>
+
+        <record id="group_all_operation_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">All Operation Delete</field> 
+            <field name="menu_access" eval="[(4, ref('stock.menu_action_picking_type_form'))]"/> 
+			<field name="implied_ids" eval="[(4, ref('group_all_operation_read'))]"/>            	            	
+        </record>
+        
+		<record id="access_all_operation_delete" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_picking_type"/>
+            <field name="name">res_all_operation delete</field>
+            <field name="group_id" ref="group_all_operation_delete"/>
+            <field name="perm_unlink">1</field>
+        </record>
+        
+        <record id="access_all_operation_picking_delete" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_picking"/>
+            <field name="name">res_all_operation_picking delete</field>
+            <field name="group_id" ref="group_all_operation_delete"/>
+            <field name="perm_unlink">1</field>
+        </record>
+                
+<!-- Stock Move -->
+		
+        <record id="group_wtc_stock_moves_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Stock Move Read</field>
+            <field name="menu_access" eval="[(4, ref('stock.menu_action_move_form2'))]"/>
+        </record>
+        
+        <record id="access_stock_move_read" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_move"/>
+            <field name="name">stock_move read</field>
+            <field name="group_id" ref="group_wtc_stock_moves_read"/>
+            <field name="perm_read">1</field>
+        </record>
+		
+        <record id="group_stock_move_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Stock Move Update</field>
+            <field name="menu_access" eval="[(4, ref('stock.menu_action_move_form2'))]"/>
+			<field name="implied_ids" eval="[(4, ref('group_wtc_stock_moves_read'))]"/>
+        </record>
+        
+        <record id="access_stock_move_update" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_move"/>
+            <field name="name">stock_move update</field> 
+            <field name="group_id" ref="group_stock_move_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>
+                
+
+        <record id="group_stock_move_delete_fincoy" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Stock Move Delete</field> 
+            <field name="menu_access" eval="[(4, ref('stock.menu_action_move_form2'))]"/>
+			<field name="implied_ids" eval="[(4, ref('group_wtc_stock_moves_read'))]"/>            	            	
+        </record>
+        
+		<record id="access_stock_move_delete" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_move"/>
+            <field name="name">stock_move delete</field>
+            <field name="group_id" ref="group_stock_move_delete_fincoy"/>
+            <field name="perm_unlink">1</field>
+        </record>
+         
+    </data>
+</openerp>

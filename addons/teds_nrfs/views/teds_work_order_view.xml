@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+        <record id="teds_work_order_nrfs_view_form" model="ir.ui.view" >
+            <field name="name">teds.work.order.nrfs.form</field>
+            <field name="model">wtc.work.order</field>
+            <field name="inherit_id" ref="wtc_work_order.view_wtc_work_order_form"/>
+            <field name="arch" type="xml">
+        		<field name="lot_id" position="before">
+        			<field name="nrfs_id" attrs="{'invisible':[('type','!=','CLA')]}" readonly="1" options="{'no_open':True,'no_create':True}" />
+        		</field>
+            </field>
+        </record>
+    </data>
+</openerp>

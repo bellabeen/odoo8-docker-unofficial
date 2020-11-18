@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+   
+		<record model="ir.ui.view" id="wtc_employee_form3_view">
+		    <field name="name">wtc.employee</field>           
+		    <field name="model">hr.employee</field>                                  
+		    <field name="inherit_id" ref="hr.view_employee_form"/>
+		    <field name="arch" type="xml">
+		    	<xpath expr="//sheet" position="before">
+		    		<header>
+		    			<button name="send_data_employee" type="object" string="Send Data" attrs="{'invisible':[('b2b_status_api','=','done')]}" groups="wtc_hr_employee.group_button_send_data_employee"/>
+		    			<field name="b2b_status_api" invisible="1"/>
+		    		</header>
+		    	</xpath>
+		    	<field name="identification_id" position="replace"/>
+
+		        <field name="name" position="after">
+		        	<field name="nip" placeholder="NIP" readonly="context.get('branch_control', False)"/>
+		        </field>		    	
+		    	
+		    	<field name="job_id" position="after">
+		        	<field name="branch_id" options="{'no_create': True,'no_open': True}" required="1" on_change="_onchange_branch(branch_id)"/>
+		            <field name="division"/>  
+		    		<field name="area_id" options="{'no_create': True,'no_open': True}"/>
+				 	<field name="npwp" />
+		            <field name="shift" />
+		            <field name="sales_ahm" /> 	
+		        </field>
+		        
+		    	<field name="user_id" position="replace"/>
+		    	<field name="job_id" position="replace"/>
+		    	<field name="work_email" position="replace"/>
+		    	<label for="work_email" position="replace"/>
+		    	<field name="category_ids" position="after">
+		    		<label for="work_email" class="oe_edit_only"/>
+		    	 	<field name="work_email" widget="email"/>
+		            <field name="login"/>	        
+		    	 				    	 	
+		    	</field>
+		    	<field name="department_id" position="after">
+		    	 	<field name="job_id" options="{'no_create': True,'no_open': True}" required="1" on_change="onchange_department(job_id)"/>
+		    	</field> 	
+            	<field name="address_home_id" position="attributes">
+            		<attribute name="invisible">1</attribute> 
+            	</field> 		    		    	   	
+		    	<field name="address_home_id" position="after">
+		    		<label for="address" string="Address"/>
+				  	<div>
+                  		<field name="street" placeholder="Street..."/>
+
+                  		<div>
+		    				<field name="street2" placeholder="Street" style="width: 50%%"/>
+		                   	<field name="rt" placeholder="RT" style="width: 25%%"/>
+							<field name="rw" placeholder="RW" style="width: 25%%"/>
+							<field name="state_id" class="oe_no_button" placeholder="Province" style="width: 50%%" options='{"no_open": True}' on_change="_onchange_province(state_id)"/>
+							<field name="city_id" options="{'no_create': True,'no_open': True}" placeholder="City" style="width: 50%%" on_change="_onchange_city(city_id)"/>
+							<field name="kecamatan_id" placeholder="Kecamatan" style="width: 50%%" on_change="_onchange_kecamatan(kecamatan_id)" />
+							<field name="kecamatan" placeholder="Kecamatan" style="width: 50%%" />						
+							<field name="zip_id" placeholder="ZIP" style="width: 50%%" options='{"no_open": True}' on_change="_onchange_zip(zip_id)" />                               	
+		                    <field name="kelurahan" class="oe_no_button" placeholder="Kelurahan" style="width: 50%%"/>                             	
+			                                  	
+          
+                  		</div>
+	                                               
+                	</div> 
+                	
+               		<field name="phone" placeholder="No Telp" class="oe_no_button" options='{"no_open": True}' /> 
+					<field name="mobile" placeholder="No Handphone" class="oe_no_button" options='{"no_open": True}' />
+					<field name="fax" placeholder="Fax" class="oe_no_button" options='{"no_open": True}' />
+					<field name="email" placeholder="E-mail" class="oe_no_button" options='{"no_open": True}' />
+	    	   </field>
+			   <field name="work_location" position="after">
+			   		<field name="user_id" invisible="1" options="{'no_create': True,'no_open': True}"/>		        			  
+		        	<field name="no_kontrak"/>
+		        	<field name="identification_id" required="1" string="No KTP"/>
+	               	<field name="tgl_masuk" required="1"/>
+	               	<field name="tgl_keluar"/>
+	               	<field name="pmt_ke"/>	      
+	               	<field name="bank" required="1"/> 
+                	<field name="no_rekening" attrs="{'invisible':[('bank','=',False)],'required':[('bank','!=',False)]}"/>     
+		        </field>
+				<xpath expr="//page[@string='HR Settings']" position="after">
+					
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>
+				</xpath>	
+				<!-- <xpath expr="//field[@name='active']" position="after">
+						<field name="user" attrs="{'invisible':[('create_uid','!=',False)]}"/>
+						<field name="user_nip" attrs="{'invisible':[('user','=',False)],'required':[('user','=',True)]}"/>
+				</xpath>    -->
+				<xpath expr="//field[@name='active']" position="after">
+						<field name="user" attrs="{'invisible':[('create_uid','!=',False),('user','=',False),('login','!=',False)]}"/>
+				</xpath>  
+				
+		     </field>
+		</record> 
+
+		<record model="ir.ui.view" id="wtc_employee_tag_view">
+		    <field name="name">wtc.employee.tag</field>           
+		    <field name="model">hr.employee.category</field>                                  
+		    <field name="inherit_id" ref="hr.view_employee_category_form"/>
+		    <field name="arch" type="xml">
+				<xpath expr="//form" position="inside">
+					<notebook>
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>
+					</notebook>
+				</xpath>				
+		     </field>
+		</record>	     
+
+        <record id="open_view_employee_list_my_salesman" model="ir.actions.act_window">
+            <field name="name">Salesman</field>
+            <field name="res_model">hr.employee</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">kanban,tree,form</field>
+            <field name="domain">[('branch_control','!=',False)]</field>
+            <field name="context">{'branch_control':True}</field>
+            <field name="view_id" eval="False"/>
+            <field name="search_view_id" ref="hr.view_employee_filter"/>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to add a new employee.
+              </p><p>
+                With just a quick glance on the Odoo employee screen, you
+                can easily find all the information you need for each person;
+                contact data, job position, availability, etc.
+              </p>
+            </field>
+        </record>
+
+        <record id="view_employee_filter_inherit" model="ir.ui.view">
+	        <field name="name">view.employe.filter.inherit</field>
+	        <field name="model">hr.employee</field>
+	        <field name="inherit_id" ref="hr.view_employee_filter"/>
+	        <field name="type">form</field>
+	        <field name="arch" type="xml">
+	        	<field name="category_ids" position="after">
+	        		<field name="job_id"/>
+                </field>   
+	        </field>
+    	</record>
+  		
+		<menuitem action="open_view_employee_list_my_salesman" id="wtc_employee_branch_control_menu" name="Salesman" sequence="4" parent="hr.menu_hr_main"/> 		         
+</data>
+</openerp>

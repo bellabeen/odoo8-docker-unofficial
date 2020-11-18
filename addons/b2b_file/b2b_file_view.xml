@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    
+        <record id="b2b_file_tree" model="ir.ui.view">
+            <field name="name">b2b.file.tree</field>
+            <field name="model">b2b.file</field>
+            <field name="arch" type="xml">
+                <tree string="Read File">
+	                <field name="name"/>
+	                <field name="ext"/>
+	                <field name="date"/>	
+	                
+	               <field name="state"/>
+                </tree>
+            </field>
+        </record>	
+
+        <record id="view_b2b_file_form" model="ir.ui.view">
+            <field name="name">b2b.file.form</field>
+            <field name="model">b2b.file</field>
+            <field name="arch" type="xml">
+                <form string="Read File">
+                
+                <header>
+                	 <button name="read_file" string="Read File" type="object" class="oe_highlight"/>
+                	 <button name="check_file_in_proses" string="Do Import" type="object" class="oe_highlight"/>
+                	 <button name="check_file" string="Check File" type="object" class="oe_highlight"/>
+                	 <button name="proses" string="Proses" type="object" class="oe_highlight"/>
+                	 <button name="proses_sparepart" string="Proses Sparepart" type="object" class="oe_highlight"/>
+                     <button name="check_ps_status" string="Change Status PS (Transfer)" type="object" class="oe_highlight"/>
+                </header>
+               
+				<sheet>
+                    <group>
+                    	<field name="name"/>
+		                <field name="ext"/>
+		                <field name="date"/>	
+                    </group>
+                    
+                </sheet> 
+                </form>
+            </field>
+        </record>
+
+
+        
+        
+      <record id="action_b2b_file" model="ir.actions.act_window">
+             <field name="res_model">b2b.file</field>
+             <field name="type">ir.actions.act_window</field>
+             <field name="view_type">form</field>
+             <field name="view_mode">tree,form</field>
+             <field name="name">B2B File</field>
+       </record>
+
+    
+	
+	
+		
+		
+		
+	    <menuitem id="wtc_b2b_file"  parent="wtc_dealer_menu.workshop_report_menu" sequence="6"  action="action_b2b_file"/>
+
+	
+	</data>
+</openerp>

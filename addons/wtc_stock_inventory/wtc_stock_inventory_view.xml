@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+	
+		<record id="wtc_stock_inventory_import_wizard_view" model="ir.ui.view">
+            <field name="name">wtc.stock.inventory.import.wizard</field>
+            <field name="model">stock.inventory</field>
+            <field name="arch" type="xml">
+                <form string="Stock Inventory">
+           			<field name="import_file"/>
+           			<footer>
+           				<button name="action_import" string="Import" type="object" class="oe_highlight"/>
+           			or 
+	                    <button string="Cancel" class="oe_link" special="cancel" />
+	                </footer>
+                </form>
+            </field>
+        </record>
+		
+		<record id="wtc_stock_inventory_form_view" model="ir.ui.view">
+			<field name="name">wtc.stock.inventory.form</field>
+			<field name="model">stock.inventory</field>
+			<field name="inherit_id" ref="stock.view_inventory_form"/>
+			<field name="arch" type="xml">
+				
+				<button name="action_cancel_draft" position="replace"/>
+				<button name="action_cancel_inventory" position="before">
+					<button name="action_close" states="confirm" string="Close Inventory" type="object" class="oe_highlight"/>
+					<button name="action_open" states="closed" string="Re-open Inventory" type="object" class="oe_highlight"/>
+					<button name="action_export" states="confirm" string="Export Excel" type="object" class="oe_highlight"/>
+					<button name="import_wizard"  states="confirm" string="Import" type="object" class="oe_highlight"/>
+				</button>
+				<button name="action_cancel_inventory" position="attributes">
+					<attribute name="states">confirm,closed</attribute>
+				</button>
+				<button name="action_done" position="attributes">
+					<attribute name="states">closed</attribute>
+				</button>
+				<field name="period_id" position="replace"/>
+				<field name="location_id" position="attributes">
+					<attribute name="options">{'no_open':True, 'no_create':True}</attribute>
+					<attribute name="attrs">{'readonly': [('name','!=',False)]}</attribute>
+					<attribute name="domain">[('usage','=','internal'),('branch_id','!=',False)]}</attribute>
+				</field>
+				<field name="product_id" position="attributes">
+					<attribute name="options">{'no_open':True, 'no_create':True}</attribute>
+				</field>
+				<field name="name" position="attributes">
+					<attribute name="readonly">1</attribute>
+					<attribute name="required">0</attribute>
+				</field>
+				<field name="line_ids" position="attributes">
+					<attribute name="attrs">{'readonly': [('state','in',['closed','cancel','done'])]}</attribute>
+				</field>
+				<field name="state" position="attributes">
+					<attribute name="statusbar_visible">draft,confirm,closed,done</attribute>
+				</field>
+				<field name="location_id" position="after">
+					<field name="all_location" attrs="{'readonly': [('state','!=','draft')]}"/>
+					<field name="division" required="True" attrs="{'readonly': [('state','!=','draft')]}"/>
+					<field name="is_scrap" attrs="{'readonly': [('state','!=','draft')]}"/>
+				</field>
+				<field name="date" position="after">
+					<field name="start_date" readonly="True"/>
+					<field name="end_date" readonly="True"/>
+					<field name="remark" attrs="{'readonly': [('state','!=','draft')]}"/>
+					<field name="data_x" string="Excel File" attrs="{'invisible': [('data_x','=',False)]}"/>
+				</field>
+				
+				
+				<field name="product_qty" position="after">
+					<field name="deviation"/>
+					<field name="price_unit"/>
+				</field>
+				<field name="product_id" position="attributes">
+					<attribute name="options">{'no_open':True, 'no_create':True}</attribute>
+				</field>
+				
+				<field name="location_id" position="attributes">
+					<attribute name="options">{'no_open':True, 'no_create':True}</attribute>
+				</field>
+				<field name="prod_lot_id" position="attributes">
+					<attribute name="options">{'no_open':True, 'no_create':True}</attribute>
+				</field>
+				<field name="line_ids" position="after">
+					<group class="oe_subtotal_footer oe_right">
+                     	<field name="amount_total" widget='monetary'/>
+                     	<field name="total_theoretical_qty" widget='monetary'/>
+                     	<field name="total_product_qty" widget='monetary'/>
+                     	<field name="total_deviation_minus" widget='monetary'/>
+                     	<field name="total_deviation_plus" widget='monetary'/>
+					</group>
+					<div class="oe_clear"/>
+				</field>
+				
+				<xpath expr="//sheet" position="inside">
+					<notebook>
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+									<field name="close_uid" readonly="1"></field>
+									<field name="close_date" readonly="1"></field>
+									<field name="confirm_uid" readonly="1"></field>
+									<field name="confirm_date" readonly="1"></field>
+								</group>
+								<group>
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+									<field name="cancel_uid" readonly="1"></field>
+									<field name="cancel_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>
+					</notebook>
+				</xpath>
+				
+			</field>
+		</record>
+		
+	</data>
+</openerp>

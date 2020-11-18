@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">  	   
+        
+<!-- Cancel Kwitansi -->	
+	
+        <record id="group_wtc_cancel_kwitansi_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Cancel Kwitansi Read</field> 
+            <field name="menu_access" eval="[(4, ref('cancel_kwitansi_submenu'))]"/>  
+        </record> 
+        
+        <record id="access_wtc_cancel_kwitansi_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cancel_kwitansi"/>
+            <field name="name">wtc_cancel_kwitansi read</field> 
+            <field name="group_id" ref="group_wtc_cancel_kwitansi_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+                         
+        <record id="group_wtc_cancel_kwitansi_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Cancel Kwitansi Update</field> 
+            <field name="menu_access" eval="[(4, ref('cancel_kwitansi_submenu'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_wtc_cancel_kwitansi_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_wtc_cancel_kwitansi_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cancel_kwitansi"/>
+            <field name="name">wtc_cancel_kwitansi update</field> 
+            <field name="group_id" ref="group_wtc_cancel_kwitansi_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+                 
+        <record id="group_wtc_cancel_kwitansi_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Cancel Kwitansi delete</field> 
+            <field name="menu_access" eval="[(4, ref('cancel_kwitansi_submenu'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_wtc_cancel_kwitansi_read'))]"/>            	            	
+        </record>
+                                
+        <record id="access_wtc_cancel_kwitansi_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cancel_kwitansi"/>
+            <field name="name">wtc_cancel_kwitansi delete</field> 
+            <field name="group_id" ref="group_wtc_cancel_kwitansi_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>      
+
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[(4,ref('group_wtc_cancel_kwitansi_read')),
+											(4,ref('group_wtc_cancel_kwitansi_update')),
+											(4,ref('group_wtc_cancel_kwitansi_delete')),
+
+											]"/> 
+		</record>          
+                               
+    </data>
+</openerp>

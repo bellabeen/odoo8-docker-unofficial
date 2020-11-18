@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="dealer_sale_order_rule" model="ir.rule">
+            <field name="name">dealer.sale.order branch rule</field>
+            <field name="model_id" ref="model_dealer_sale_order"/>
+            <field name="domain_force">[('branch_id','in',[b.id for b in user.area_id.branch_ids])]</field>
+        </record>
+        
+         <record id="dealer_spk_rule" model="ir.rule">
+            <field name="name">dealer.spk branch rule</field>
+            <field name="model_id" ref="model_dealer_spk"/>
+            <field name="domain_force">[('branch_id','in',[b.id for b in user.area_id.branch_ids])]</field>
+        </record>
+        
+        <record id="dealer_register_spk_rule" model="ir.rule">
+            <field name="name">dealer.register.spk branch rule</field>
+            <field name="model_id" ref="model_dealer_register_spk"/>
+            <field name="domain_force">[('branch_id','in',[b.id for b in user.area_id.branch_ids])]</field>
+        </record>
+        
+        <record id="dealer_distribusi_spk_rule" model="ir.rule">
+            <field name="name">dealer.distribusi.spk branch rule</field>
+            <field name="model_id" ref="model_dealer_distribusi_spk"/>
+            <field name="domain_force">[('branch_id','in',[b.id for b in user.area_id.branch_ids])]</field>
+        </record>
+        
+        <record id="dealer_pengembalian_spk_rule" model="ir.rule">
+            <field name="name">dealer.pengembalian.spk branch rule</field>
+            <field name="model_id" ref="model_dealer_pengembalian_spk"/>
+            <field name="domain_force">[('branch_id','in',[b.id for b in user.area_id.branch_ids])]</field>
+        </record>
+        
+     
+        <record id="dealer_sale_order_analysis_rule" model="ir.rule">
+            <field name="name">dealer.sale.order.analysis branch rule</field>
+            <field name="model_id" ref="model_dealer_sale_order_analysis"/>
+            <field name="domain_force">[('branch_id','in',[b.id for b in user.area_id.branch_ids])]</field>
+        </record>
+        
+        <record id="dealer_spk_report_rule" model="ir.rule">
+            <field name="name">dealer.spk.report branch rule</field>
+            <field name="model_id" ref="model_dealer_spk_report"/>
+            <field name="domain_force">[('branch_id','in',[b.id for b in user.area_id.branch_ids])]</field>
+        </record>
+        
+    </data>
+</openerp>

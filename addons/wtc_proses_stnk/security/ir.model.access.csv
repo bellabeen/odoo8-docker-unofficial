@@ -1,0 +1,22 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_wtc_lokasi_bpkb_all,wtc_lokasi_bpkb all,model_wtc_lokasi_bpkb,,1,1,1,1
+access_wtc_lokasi_stnk_all,wtc_lokasi_stnk all,model_wtc_lokasi_stnk,,1,1,1,1
+access_wtc_mutasi_bpkb_all,wtc_mutasi_bpkb all,model_wtc_mutasi_bpkb,,1,1,1,1
+access_wtc_mutasi_bpkb_line_all,wtc_mutasi_bpkb_line all,model_wtc_mutasi_bpkb_line,,1,1,1,1
+access_wtc_mutasi_stnk_all,wtc_mutasi_stnk all,model_wtc_mutasi_stnk,,1,1,1,1
+access_wtc_mutasi_stnk_line_all,wtc_mutasi_stnk_line all,model_wtc_mutasi_stnk_line,,1,1,1,1
+access_wtc_penerimaan_bpkb_all,wtc_penerimaan_bpkb all,model_wtc_penerimaan_bpkb,,1,1,1,1
+access_wtc_penerimaan_bpkb_line_all,wtc_penerimaan_bpkb_line all,model_wtc_penerimaan_bpkb_line,,1,1,1,1
+access_wtc_penerimaan_stnk_all,wtc_penerimaan_stnk all,model_wtc_penerimaan_stnk,,1,1,1,1
+access_wtc_penerimaan_stnk_line_all,wtc_penerimaan_stnk_line all,model_wtc_penerimaan_stnk_line,,1,1,1,1
+access_wtc_proses_birojasa_all,wtc_proses_birojasa all,model_wtc_proses_birojasa,,1,1,1,1
+access_wtc_proses_birojasa_line_all,wtc_proses_birojasa_line all,model_wtc_proses_birojasa_line,,1,1,1,1
+access_wtc_proses_stnk_all,wtc_proses_stnk all,model_wtc_proses_stnk,,1,1,1,1
+access_wtc_cancel_proses_stnk_all,wtc_cancel_proses_stnk all,model_wtc_cancel_proses_stnk,,1,1,1,1
+access_wtc_cancel_proses_stnk_line_all,wtc_cancel_proses_stnk_line all,model_wtc_cancel_proses_stnk_line,,1,1,1,1
+access_wtc_cancel_penerimaan_stnk_line_all,wtc_cancel_penerimaan_stnk_line all,model_wtc_cancel_penerimaan_stnk_line,,1,1,1,1
+access_wtc_cancel_penerimaan_stnk_all,wtc_cancel_penerimaan_stnk all,model_wtc_cancel_penerimaan_stnk,,1,1,1,1
+access_wtc_cancel_penerimaan_bpkb_line_all,wtc_cancel_penerimaan_bpkb_line all,model_wtc_cancel_penerimaan_bpkb_line,,1,1,1,1
+access_wtc_cancel_penerimaan_bpkb_all,wtc_cancel_penerimaan_bpkb all,model_wtc_cancel_penerimaan_bpkb,,1,1,1,1
+access_wtc_pajak_progressive_all,wtc_wtc_pajak_progressive all,model_wtc_pajak_progressive,,1,1,1,1
+access_wtc_pajak_progressive_line_all,wtc_pajak_progressive_line all,model_wtc_pajak_progressive_line,,1,1,1,1

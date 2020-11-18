@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>  
+
+	<record id="wtc_approval_birojasa_form_view" model="ir.ui.view">
+		<field name="name">wtc.approval.birojasa.form</field>
+		<field name="model">wtc.proses.birojasa</field>
+		<field name="inherit_id" ref="proses_birojasa_form_view"/>
+		<field name="arch" type="xml">
+	
+			<button name="birojasa_confirm" position="after">
+				<button name="approval_request" groups='wtc_proses_stnk.group_wtc_proses_birojasa_rfa' states="draft" string="RFA" type="workflow" class="oe_highlight"/>	
+				<button name="approval_approve" states="waiting_for_approval" groups='wtc_proses_stnk.group_wtc_proses_birojasa_approve' string="Approve" type="workflow" class="oe_highlight"/>
+				<button name="%(wtc_approval.wtc_approval_reject_wizard_action)d" states="waiting_for_approval" string="Reject" type="action" context="{'model_name':'wtc.proses.birojasa','next_workflow':'approval_reject'}"/>
+				<button name="%(wtc_approval.wtc_approval_cancel_wizard_action)d" groups='wtc_proses_stnk.group_wtc_proses_birojasa_cancel_approval' states="waiting_for_approval" string="Cancel Approval" type="action" context="{'model_name':'wtc.proses.birojasa','next_workflow':'approval_cancel'}"/>
+				<button name="%(wtc_approval.wtc_cancel_approval_wizard)d"  states="confirmed" string="Cancel Approval" type="action"  groups="wtc_proses_stnk.group_cancel_approval_bj" context="{'model_name':'wtc.proses.birojasa','next_workflow':'approval_cancel_bj'}"/>	 																
+			</button> 
+								
+			<field name="tgl_dok" position="after">
+				<field name="approval_state"/>
+			</field>
+				
+			<xpath expr="//page[@string='Invoicing']" position="after">
+				<page string="Approval">
+					<field name="approval_ids">
+						<tree string="Approval" editable="bottom" create="false" edit="false" delete="false" >
+							<field name="group_id" />
+							<field name="branch_id"/>
+							<field name="division"/>
+							<field name="limit"/>
+							<field name="sts"/>
+							<field name="reason"/>
+							<field name="pelaksana_id"/>
+							<field name="tanggal"/>
+						</tree>
+					</field>
+				</page>
+				<page string="Audit Trail">
+					<group>
+						<group>
+							<field name="create_uid" readonly="1"></field>
+							<field name="create_date" readonly="1"></field>
+							<field name="confirm_uid" readonly="1"></field>
+							<field name="confirm_date" readonly="1"></field>
+						</group>
+						<group>							
+							<field name="write_uid" readonly="1"></field>
+							<field name="write_date" readonly="1"></field>
+							<field name="cancel_uid" readonly="1"></field>
+							<field name="cancel_date" readonly="1"></field>
+						</group>
+					</group>
+				</page>					
+			</xpath>
+		</field>
+	</record>
+	  
+
+	          
+ 	</data>
+ </openerp>
+       		
+       		
+	

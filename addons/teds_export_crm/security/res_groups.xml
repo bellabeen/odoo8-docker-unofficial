@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">     
+        
+        <record id="group_teds_export_crm_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Export Crm Read</field> 
+            <field name="menu_access" eval="[(4, ref('menu_export_crm'))]"/>  
+        </record> 
+                
+        <record id="access_teds_export_crm_read" model="ir.model.access">
+            <field name="model_id" ref="model_teds_export_crm"/>
+            <field name="name">menu_export_crm read</field> 
+            <field name="group_id" ref="group_teds_export_crm_read"/>  
+            <field name="perm_read">1</field> 
+        </record>
+        
+            <record id="wtc_branch.group_sys_admin" model="res.groups">
+            <field name="implied_ids" eval="[
+                                            (4,ref('group_teds_export_crm_read'))
+                                            ]"/> 
+            </record> 
+     
+                                                
+    </data>
+</openerp>

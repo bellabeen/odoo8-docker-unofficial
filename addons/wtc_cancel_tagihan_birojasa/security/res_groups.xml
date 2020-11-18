@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    
+<!--Pajak Progressive Cancel -->
+        <!-- Read -->
+        <record id="group_pajak_progressive_cancel_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Tagihan Pajak Progressive Cancel Read</field>
+            <field name="menu_access" eval="[(4, ref('cancel_pajak_progressive_submenu'))]"/>
+        </record>
+        
+        <record id="acces_pajak_progressive_cancel_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cancel_pajak_progressive"/>
+            <field name="name">pajak_progressive_cancel read </field>
+            <field name="group_id" ref="group_pajak_progressive_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+
+        <!-- Update -->
+        <record id="group_pajak_progressive_cancel_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Tagihan Pajak Progressive Cancel Update</field>
+            <field name="menu_access" eval="[(4, ref('cancel_pajak_progressive_submenu'))]"/>
+            <field name="implied_ids" eval="[(4, ref('group_pajak_progressive_cancel_read'))]"/>
+        </record>
+        
+        <record id="acces_pajak_progressive_cancel_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cancel_pajak_progressive"/>
+            <field name="name">pajak_progressive_cancel update</field>
+            <field name="group_id" ref="group_pajak_progressive_cancel_update"/>
+            <field name="perm_create">1</field>
+            <field name="perm_write">1</field>
+        </record>
+
+        <!-- delete -->
+        <record id="group_pajak_progressive_cancel_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Tagihan Pajak Progressive Cancel Delete</field>
+            <field name="menu_access" eval="[(4, ref('cancel_pajak_progressive_submenu'))]"/>
+            <field name="implied_ids" eval="[(4, ref('group_pajak_progressive_cancel_read'))]"/>
+        </record>
+        
+        <record id="acces_pajak_progressive_cancel_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cancel_pajak_progressive"/>
+            <field name="name">pajak_progressive_cancel update</field>
+            <field name="group_id" ref="group_pajak_progressive_cancel_update"/>
+            <field name="perm_unlink">1</field>
+        </record>
+
+
+<!-- Tagihan Birojasa Cancel -->
+		
+        <record id="group_birojasa_cancel_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Tagihan Birojasa Cancel Read</field>
+            <field name="menu_access" eval="[
+				(4, ref('birojasa_cancel_menu')),
+				]"/>
+        </record>
+        
+        <record id="access_birojasa_cancel_read" model="ir.model.access">
+            <field name="model_id" ref="model_birojasa_cancel"/>
+            <field name="name">birojasa_cancel read</field>
+            <field name="group_id" ref="group_birojasa_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_birojasa_cancel_approval_line_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">birojasa_cancel_approval_line read</field>
+            <field name="group_id" ref="group_birojasa_cancel_read"/>  
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_birojasa_cancel_dso_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_proses_stnk.model_wtc_proses_birojasa"/>
+            <field name="name">birojasa_cancel_bj read</field>
+            <field name="group_id" ref="group_birojasa_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_birojasa_cancel_dso_line_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_proses_stnk.model_wtc_proses_birojasa_line"/>
+            <field name="name">birojasa_cancel_bj_line read</field>
+            <field name="group_id" ref="group_birojasa_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_birojasa_cancel_account_invoice_read" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice"/>
+            <field name="name">birojasa_cancel_account_invoice read</field>
+            <field name="group_id" ref="group_birojasa_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_birojasa_cancel_account_invoice_line_read" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice_line"/>
+            <field name="name">birojasa_cancel_account_invoice_line read</field>
+            <field name="group_id" ref="group_birojasa_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_birojasa_cancel_stock_production_lot_read" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">birojasa_cancel_stock_lot read</field>
+            <field name="group_id" ref="group_birojasa_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="group_birojasa_cancel_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Tagihan Birojasa Cancel Update</field>
+            <field name="menu_access" eval="[
+				(4, ref('birojasa_cancel_menu')),
+				]"/>
+			<field name="implied_ids" eval="[(4, ref('group_birojasa_cancel_read'))]"/>
+        </record>
+        
+        <record id="access_birojasa_cancel_update" model="ir.model.access">
+            <field name="model_id" ref="model_birojasa_cancel"/>
+            <field name="name">birojasa_cancel update</field> 
+            <field name="group_id" ref="group_birojasa_cancel_update"/>  
+            <field name="perm_create">1</field>
+            <field name="perm_write">1</field>
+        </record>
+		
+        <record id="group_birojasa_cancel_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Tagihan Birojasa Cancel Delete</field> 
+            <field name="menu_access" eval="[
+				(4, ref('birojasa_cancel_menu')),
+				]"/>
+			<field name="implied_ids" eval="[(4, ref('group_birojasa_cancel_read'))]"/>            	            	
+        </record>
+        
+		<record id="access_birojasa_cancel_delete" model="ir.model.access">
+            <field name="model_id" ref="model_birojasa_cancel"/>
+            <field name="name">birojasa_cancel delete</field>
+            <field name="group_id" ref="group_birojasa_cancel_delete"/>
+            <field name="perm_unlink">1</field>
+        </record>
+        
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[(4,ref('group_birojasa_cancel_read')),
+				(4,ref('group_birojasa_cancel_update')),
+				(4,ref('group_birojasa_cancel_delete')),
+				]"/>
+		</record>
+		
+    </data>
+</openerp>

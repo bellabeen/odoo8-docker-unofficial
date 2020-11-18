@@ -1,0 +1,1446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    
+        <record id="sequnce_journal_payment_request_dsr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DSR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DSR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_djj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DJJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DJJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_djb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DJB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DJB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_djs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DJS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DJS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_djm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DJM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DJM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dju" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DJU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DJU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dsm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DSM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DSM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dsg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DSG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DSG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dsb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DSB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DSB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dsp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DSP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DSP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dsk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DSK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DSK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dup" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DUP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DUP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_duk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DUK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DUK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dle" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DLE</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DLE/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dlp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DLP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DLP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dlm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DLM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DLM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dlh" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DLH</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DLH/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dlx" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DLX</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DLX/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dll" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DLL</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DLL/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dld" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DLD</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DLD/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dlf" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DLF</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DLF/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dlv" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DLV</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DLV/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dlq" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DLQ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DLQ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dlc" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DLC</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DLC/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dly" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DLY</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DLY/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dlw" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DLW</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DLW/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dlu" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DLU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DLU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dlt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DLT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DLT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dls" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DLS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DLS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dlo" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DLO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DLO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dln" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DLN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DLN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dlk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DLK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DLK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dlj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DLJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DLJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dli" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DLI</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DLI/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dlg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DLG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DLG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dlb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DLB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DLB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dla" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DLA</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DLA/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dlr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DLR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DLR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_hho" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request HHO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/HHO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_mml" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request MML</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/MML/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dbl" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DBL</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DBL/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dbk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DBK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DBK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dbb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DBB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DBB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dbs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DBS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DBS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dbt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DBT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DBT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dds" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DDS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DDS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_ddc" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DDC</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DDC/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_ddb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DDB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DDB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dda" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DDA</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DDA/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_ddd" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DDD</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DDD/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dde" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DDE</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DDE/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_ddg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DDG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DDG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_ddm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DDM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DDM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_ddj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DDJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DDJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_ddt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DDT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DDT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_ddi" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DDI</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DDI/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dxk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DXK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DXK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dxt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DXT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DXT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dxs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DXS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DXS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dxg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DXG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DXG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dxb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DXB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DXB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dxn" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DXN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DXN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dwt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DWT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DWT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dwr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DWR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DWR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dwp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DWP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DWP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dwo" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DWO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DWO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dwk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DWK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DWK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dws" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DWS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DWS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dwg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DWG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DWG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dwm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DWM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DWM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_dwn" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DWN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DWN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_payment_request_ddu" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Payment Request DDU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PR/DDU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dsr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DSR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DSR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_djj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DJJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DJJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_djb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DJB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DJB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_djs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DJS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DJS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_djm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DJM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DJM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dju" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DJU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DJU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dsm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DSM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DSM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dsg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DSG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DSG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dsb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DSB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DSB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dsp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DSP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DSP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dsk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DSK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DSK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dup" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DUP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DUP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_duk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DUK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DUK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dle" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DLE</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DLE/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dlp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DLP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DLP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dlm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DLM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DLM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dlh" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DLH</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DLH/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dlx" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DLX</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DLX/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dll" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DLL</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DLL/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dld" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DLD</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DLD/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dlf" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DLF</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DLF/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dlv" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DLV</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DLV/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dlq" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DLQ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DLQ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dlc" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DLC</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DLC/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dly" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DLY</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DLY/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dlw" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DLW</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DLW/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dlu" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DLU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DLU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dlt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DLT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DLT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dls" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DLS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DLS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dlo" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DLO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DLO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dln" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DLN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DLN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dlk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DLK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DLK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dlj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DLJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DLJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dli" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DLI</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DLI/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dlg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DLG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DLG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dlb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DLB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DLB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dla" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DLA</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DLA/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dlr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DLR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DLR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_hho" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable HHO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/HHO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_mml" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable MML</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/MML/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dbl" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DBL</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DBL/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dbk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DBK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DBK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dbb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DBB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DBB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dbs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DBS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DBS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dbt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DBT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DBT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dds" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DDS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DDS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_ddc" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DDC</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DDC/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_ddb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DDB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DDB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dda" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DDA</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DDA/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_ddd" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DDD</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DDD/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dde" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DDE</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DDE/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_ddg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DDG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DDG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_ddm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DDM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DDM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_ddj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DDJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DDJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_ddt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DDT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DDT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_ddi" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DDI</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DDI/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dxk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DXK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DXK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dxt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DXT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DXT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dxs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DXS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DXS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dxg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DXG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DXG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dxb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DXB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DXB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dxn" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DXN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DXN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dwt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DWT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DWT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dwr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DWR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DWR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dwp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DWP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DWP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dwo" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DWO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DWO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dwk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DWK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DWK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dws" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DWS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DWS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dwg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DWG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DWG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dwm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DWM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DWM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_dwn" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DWN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DWN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_other_receivable_ddu" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Other Receivable DDU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">OR/DDU/%(y)s/%(month)s/</field> 
+        </record>
+ 
+    </data>
+</openerp>   

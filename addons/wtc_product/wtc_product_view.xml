@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    
+        <record model="ir.ui.view" id="wtc_product_template_form_view">
+            <field name="name">wtc.product.template.form</field>
+            <field name="model">product.template</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="product.product_template_only_form_view"/>
+            <field name="arch" type="xml">
+            	
+            	<field name="type" position="after">
+            		<field name="kd_mesin" on_change="kd_mesin_change(kd_mesin)"/>
+            		<field name="category_product_id"/>
+            	</field>
+            	<field name="active" position="after">
+            		<field name="series"/>
+            	</field>
+            	<xpath expr="//page[@string='Variants']" position="after">
+					<page string="Extras">
+                        <field colspan="4" name="extras_line" nolabel="1" widget="one2many_list">
+                            <tree string="Barang Extras" editable="top">
+                            	<field name="product_id" on_change="product_change(product_id,parent.categ_id)" options="{'no_open':True, 'no_create':True}"/>
+				                <field name="quantity"/>
+                            </tree>
+                        </field>
+					</page>
+					<page string="Audit Trail">
+						<group>
+							<group>
+								<field name="create_uid" readonly="1"></field>
+								<field name="create_date" readonly="1"></field>
+							</group>
+							<group>							
+								<field name="write_uid" readonly="1"></field>
+								<field name="write_date" readonly="1"></field>
+							</group>
+						</group>
+					</page>					
+				</xpath>
+
+				            	
+        	</field>
+        </record>
+        
+        <record model="ir.ui.view" id="wtc_product_template_form_view2">
+            <field name="name">wtc.product.template.form</field>
+            <field name="model">product.template</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="account.product_template_form_view"/>
+            <field name="arch" type="xml"> 
+            	      
+            	<xpath expr="//page[@string='Accounting']" position="replace">
+            		<page string="Accounting" groups='wtc_product.group_wtc_accounting_product_valuation_read'>
+                        <group>
+                            <label for="categ_id" string="Internal Category"/>
+                            <div><field name="categ_id" colspan="3" nolabel="1"/></div>
+                        </group>
+                        <group name="properties">
+                            <group>
+                                <field name="property_account_income" domain="[('type','=','other')]"/>
+                                <field name="taxes_id" colspan="2" widget="many2many_tags"/>
+                            </group>
+                            <group>
+                                <field name="property_account_expense" domain="[('type','=','other')]"/>
+                                <field name="supplier_taxes_id" colspan="2" widget="many2many_tags"/>
+                            </group>
+                        </group>            				
+            		</page>
+            	</xpath>        		
+        	</field>
+        </record>
+            	
+        <record model="ir.ui.view" id="product_attribute_value_code_form_view">
+            <field name="name">wtc.product.attribute.value.form.code</field>
+            <field name="model">product.attribute.value</field>
+            <field name="inherit_id" ref="product.variants_tree_view" />
+            <field name="arch" type="xml">
+                <field name="name" position="after">
+                    <field name="code"/>
+                </field>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="wtc_product_price_types_form_view">
+            <field name="name">wtc.product.price.types</field>
+            <field name="model">product.price.type</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="product.product_price_type_view"/>
+            <field name="arch" type="xml">
+            	<xpath expr="//form" position="inside">
+            		<notebook>
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>
+					</notebook>
+				</xpath>
+            	
+        	</field>
+        </record>   
+
+        <record model="ir.ui.view" id="wtc_product_product_form_view">
+            <field name="name">wtc.product.product</field>
+            <field name="model">product.product</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="product.product_normal_form_view"/>
+            <field name="arch" type="xml">
+            	<xpath expr="//page[@string='Sales']" position="after">
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>
+				</xpath>
+        	</field>
+        </record> 
+                
+        <record model="ir.ui.view" id="wtc_product_category_form_view">
+            <field name="name">wtc.product.category</field>
+            <field name="model">product.category</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="product.product_category_form_view"/>
+            <field name="arch" type="xml">
+            	<xpath expr="//sheet" position="inside">
+            		<notebook>
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>
+					</notebook>
+				</xpath>
+            	
+        	</field>
+        </record>    
+        
+        <record model="ir.ui.view" id="wtc_product_uom_category_form_view">
+            <field name="name">wtc.product.uom.category</field>
+            <field name="model">product.uom.categ</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="product.product_uom_categ_form_view"/>
+            <field name="arch" type="xml">
+            	<xpath expr="//form" position="inside">
+            		<notebook>
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>
+					</notebook>
+				</xpath>
+            	
+        	</field>
+        </record>  
+        
+        <record model="ir.ui.view" id="wtc_category_product_tree_view">
+		    <field name="name">wtc.category.product.tree</field>
+		    <field name="model">wtc.category.product</field>
+		    <field name="arch" type="xml">
+		        <tree string="List Category">
+		           	<field name="name"/>
+		        </tree>
+		     </field>
+		</record>
+ 
+		<record model="ir.ui.view" id="wtc_category_product_form_view">
+		    <field name="name">wtc.category.product.form</field>
+		    <field name="model">wtc.category.product</field>
+		    <field name="arch" type="xml">
+		        <form string="Form Category Service">
+		            <group>
+		            	<field name="name" options="{'no_open':True, 'no_create':True}"/>
+		            </group>
+		            
+		             <notebook>
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>
+					</notebook>
+		        </form>
+		        
+		    </field>
+		</record>
+		
+		<record id="action_wtc_category_product" model="ir.actions.act_window">
+			 <field name="name">Category Service</field>
+             <field name="res_model">wtc.category.product</field>
+             <field name="type">ir.actions.act_window</field>
+             <field name="view_type">form</field>
+             <field name="view_mode">tree,form</field>
+       </record>
+       
+       <record model="ir.ui.view" id="wtc_category_product_service_tree_view">
+		    <field name="name">wtc.category.product.service.tree</field>
+		    <field name="model">wtc.category.product.service</field>
+		    <field name="arch" type="xml">
+		        <tree string="List Product Category Service">
+		           	<field name="category_product_id"/>
+		           	<field name="product_id"/>
+		           	<field name="price"/>
+		        </tree>
+		     </field>
+		</record>
+ 
+		<record model="ir.ui.view" id="wtc_category_product_service_form_view">
+		    <field name="name">wtc.category.product.service.form</field>
+		    <field name="model">wtc.category.product.service</field>
+		    <field name="arch" type="xml">
+		        <form string="Form Category Product Service">
+		            <group>
+		            	<field name="category_product_id" options="{'no_open':True, 'no_create':True}" required="1"/>
+		           		<field name="product_id" options="{'no_open':True, 'no_create':True}" domain="[('categ_id','=','OIL')]" required="1"/>
+		           		<field name="price" required="1"/>
+		            </group>
+		            
+		             <notebook>
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>
+					</notebook>
+		        </form>
+		        
+		    </field>
+		</record>
+
+        <record id="view_wtc_category_product_service_filter" model="ir.ui.view">
+            <field name="name">wtc.category.product.service.filter</field>
+            <field name="model">wtc.category.product.service</field>
+            <field name="arch" type="xml">
+                <search string="Search">
+                    <field name="product_id"/>
+                    <field name="category_product_id"/>
+                </search>
+            </field>
+        </record>
+		
+		<record id="action_wtc_category_product_service" model="ir.actions.act_window">
+			 <field name="name">Category Product Service</field>
+             <field name="res_model">wtc.category.product.service</field>
+             <field name="type">ir.actions.act_window</field>
+             <field name="view_type">form</field>
+             <field name="view_mode">tree,form</field>
+       </record>
+       
+       <menuitem action="action_wtc_category_product" id="menu_wtc_category_product_action" parent="wtc_dealer_menu.workshop_configuration_menu" sequence="25" />
+       <menuitem action="action_wtc_category_product_service" id="menu_wtc_category_product_service_action" parent="wtc_dealer_menu.workshop_configuration_menu" sequence="26" />
+<!-- New -->       
+       <menuitem action="product.product_template_action" id="menu_product_template_master"  parent="wtc_dealer_menu.ma_products_menu" sequence="40"/>	
+       <menuitem action="product.product_normal_action" id="menu_product_variant_master"  parent="wtc_dealer_menu.ma_products_menu" sequence="50"/>
+       <menuitem action="product.variants_action" id="menu_attribute_values_master"  parent="wtc_dealer_menu.ma_products_menu" sequence="60"/>
+       
+       	       
+       <record model="ir.ui.menu" id="stock.menu_stock_root" >
+       		<field name="groups_id" eval="[(6,0,[])]"/>
+       </record>
+               
+        <record model="ir.actions.act_window" id="product.product_template_action">
+            <field name="view_mode">tree,form</field>
+        </record>   
+        
+        <record model="ir.actions.act_window" id="product.product_normal_action_sell">
+            <field name="view_mode">tree,form</field>
+        </record> 
+             
+        <record model="ir.actions.act_window" id="product.product_normal_action_tree">
+            <field name="view_mode">tree,form</field>
+        </record> 
+         
+        <record model="ir.actions.act_window" id="product.product_variant_action">
+            <field name="view_mode">tree,form</field>
+        </record> 
+        
+        <record model="ir.actions.act_window" id="product.product_normal_action">
+            <field name="view_mode">tree,form</field>
+        </record> 
+                               
+        <record model="ir.ui.view" id="wtc_view_stock_product_template_tree">
+            <field name="name">wtc.product.template.stock.tree.inherit</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="stock.view_stock_product_template_tree"/>
+            <field name="arch" type="xml">
+                <tree position="attributes">
+                    <attribute name="colors" position='replace'></attribute>
+                </tree>                            	
+            	<field name="qty_available" position='replace'/>
+            	<field name="virtual_available" position='replace'/>            	            	
+        	</field>
+        </record>  
+            
+        <record model="ir.ui.view" id="wtc_view_stock_product_product_tree">
+            <field name="name">wtc.product.product.stock.tree.inherit</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="stock.view_stock_product_tree"/>
+            <field name="arch" type="xml">
+                <tree position="attributes">
+                    <attribute name="colors" position='replace'></attribute>
+                </tree>
+            	<field name="qty_available" position='replace'/>
+            	<field name="virtual_available" position='replace'/>            	            	
+        	</field>
+        </record>  
+                            
+    </data>
+</openerp>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    
+<!-- Supplier Invoice Validate  -->
+		
+        <record id="group_supplier_invoice_validate" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Supplier Invoice Validate</field>
+            <field name="implied_ids" eval="[(4, ref('group_supplier_invoice_read'))]"/>
+        </record>     
+        
+        <record id="access_supplier_invoice_validate" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice"/>
+            <field name="name">access_supplier_invoice_validate read</field>
+            <field name="group_id" ref="group_supplier_invoice_validate"/>
+            <field name="perm_write">1</field>
+        </record>
+               
+        <record id="access_supplier_invoice_validate_tax" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice_tax"/>
+            <field name="name">access_supplier_invoice_validate_tax read</field>
+            <field name="group_id" ref="group_supplier_invoice_validate"/>
+            <field name="perm_write">1</field>
+        </record>
+                
+        <record id="access_supplier_invoice_validate_purchase_order" model="ir.model.access">
+            <field name="model_id" ref="purchase.model_purchase_order"/>
+            <field name="name">access_supplier_invoice_validate_po read</field>
+            <field name="group_id" ref="group_supplier_invoice_validate"/>
+            <field name="perm_read">1</field>
+            <field name="perm_write">1</field>
+        </record>
+                
+        <record id="access_supplier_invoice_validate_purchase_order_line" model="ir.model.access">
+            <field name="model_id" ref="purchase.model_purchase_order_line"/>
+            <field name="name">access_supplier_invoice_validate_po read</field>
+            <field name="group_id" ref="group_supplier_invoice_validate"/>
+            <field name="perm_read">1</field>
+            <field name="perm_write">1</field>
+        </record>
+                
+        <record id="access_supplier_invoice_validate_asset asset" model="ir.model.access">
+            <field name="model_id" ref="account_asset.model_account_asset_asset"/>
+            <field name="name">access_supplier_invoice_validate_asset read</field>
+            <field name="group_id" ref="group_supplier_invoice_validate"/>
+            <field name="perm_read">1</field>
+        </record>
+                
+        <record id="access_supplier_invoice_line_validate" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice_line"/>
+            <field name="name">access_supplier_invoice_line_validate read</field>
+            <field name="group_id" ref="group_supplier_invoice_validate"/>
+            <field name="perm_write">1</field>
+        </record>
+                 
+        <record id="access_supplier_invoice_product_template_validate" model="ir.model.access">
+            <field name="model_id" ref="product.model_product_template"/>
+            <field name="name">access_supplier_invoice_product_template_validate read</field>
+            <field name="group_id" ref="group_supplier_invoice_validate"/>
+            <field name="perm_write">1</field>
+            <field name="perm_read">1</field>
+        </record>
+                
+        <record id="access_supplier_invoice_product_product_validate" model="ir.model.access">
+            <field name="model_id" ref="product.model_product_product"/>
+            <field name="name">access_supplier_invoice_product_product_validate read</field>
+            <field name="group_id" ref="group_supplier_invoice_validate"/>
+            <field name="perm_write">1</field>
+            <field name="perm_read">1</field>
+        </record>
+                
+        <record id="access_supplier_invoice_move_validate" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move"/>
+            <field name="name">access_supplier_invoice_move_validate read</field>
+            <field name="group_id" ref="group_supplier_invoice_validate"/>
+            <field name="perm_write">1</field>
+            <field name="perm_create">1</field>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_supplier_invoice_move_line_validate" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move_line"/>
+            <field name="name">access_supplier_invoice_move_line_validate read</field>
+            <field name="group_id" ref="group_supplier_invoice_validate"/>
+            <field name="perm_write">1</field>
+            <field name="perm_create">1</field>
+            <field name="perm_read">1</field>
+        </record>
+        
+<!-- Supplier Invoice Cancel  -->
+		
+        <record id="group_supplier_invoice_cancel" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Supplier Invoice Cancel</field>
+            <field name="implied_ids" eval="[(4, ref('group_supplier_invoice_read'))]"/>
+        </record>
+                
+        <record id="access_supplier_invoice_cancel_write" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice"/>
+            <field name="name">access_supplier_invoice_cancel write</field>
+            <field name="group_id" ref="group_supplier_invoice_cancel"/>
+            <field name="perm_write">1</field>
+        </record>
+                     
+<!-- Supplier Invoice Renew Price  -->
+		
+        <record id="group_supplier_invoice_renew_price" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Supplier Invoice Renew Price</field>
+            <field name="implied_ids" eval="[(4, ref('group_supplier_invoice_read'))]"/>
+        </record>
+                
+        <record id="access_supplier_invoice_renew_price_write" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice"/>
+            <field name="name">access_supplier_invoice_renew_price write</field>
+            <field name="group_id" ref="group_supplier_invoice_renew_price"/>
+            <field name="perm_write">1</field>
+        </record>
+             
+        <record id="access_supplier_invoice_renew_price_tax" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice_tax"/>
+            <field name="name">access_supplier_invoice_renew_price_tax create</field>
+            <field name="group_id" ref="group_supplier_invoice_renew_price"/>
+            <field name="perm_create">1</field>
+        </record>
+                
+        <record id="access_supplier_invoice_line_renew_price_write" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice_line"/>
+            <field name="name">access_supplier_invoice_renew_price_line write</field>
+            <field name="group_id" ref="group_supplier_invoice_renew_price"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_supplier_invoice_line_renew_price_pricelist_read" model="ir.model.access">
+            <field name="model_id" ref="product.model_product_pricelist"/>
+            <field name="name">access_supplier_invoice_pricelist read</field>
+            <field name="group_id" ref="group_supplier_invoice_renew_price"/>
+            <field name="perm_read">1</field>
+        </record>        
+        
+<!-- Supplier Invoice Refund Invoice  -->
+		
+        <record id="group_supplier_invoice_refund_invoice" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Supplier Invoice Refund Invoice</field>
+            <field name="implied_ids" eval="[(4, ref('group_supplier_invoice_read'))]"/>
+        </record>
+                
+        <record id="access_supplier_invoice_refund_write" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice"/>
+            <field name="name">access_supplier_invoice_refund write</field>
+            <field name="group_id" ref="group_supplier_invoice_refund_invoice"/>
+            <field name="perm_write">1</field>
+            <field name="perm_create">1</field>
+        </record>        	
+                           
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[(4,ref('group_supplier_invoice_validate')),
+				                             (4,ref('group_supplier_invoice_cancel')),
+				                             (4,ref('group_supplier_invoice_renew_price')),
+											 (4,ref('group_supplier_invoice_refund_invoice')),
+				                              ]">
+			</field> 
+		</record>                           
+    </data>
+</openerp>

@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <!-- Form -->
+        <record id="view_journal_security_users_form" model="ir.ui.view">
+            <field name="name">journal_security.users.form</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_form"/>
+            <field name="arch" type="xml">
+                <field name="company_id" position="after">
+                    <label for="area_id" class="oe_edit_only" groups="wtc_branch.group_branch_security"/>
+                    <field name="area_id" context="{'user_preference': 0}" groups="wtc_branch.group_branch_security"/>
+                    <label for="dealer_id" class="oe_edit_only" groups="wtc_branch.group_branch_security"/>
+                    <field name="dealer_id" context="{'user_preference': 0}" groups="wtc_branch.group_branch_security"/>                
+                </field>
+                <group string="Allowed Companies" position="after">
+                    <group string="Allowed Branches" groups="wtc_branch.group_branch_security">
+                        <field name="branch_ids" nolabel="1" widget="many2many_tags"/>
+                    </group>
+                </group>
+            	<xpath expr="//page[@string='Preferences']" position="after">
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>
+				</xpath>                
+            </field>
+        </record>
+
+        <record id="view_journal_security_user_preference_form" model="ir.ui.view">
+            <field name="name">journal_security.user.preference.form</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_form_simple_modif"/>
+            <field name="arch" type="xml">
+                <field name="company_id" position="after">
+                    <field name="area_id_show" readonly="1" contest="{'user_preference':0}" options="{'no_create': True}" groups="wtc_branch.group_branch_security"/>
+                    <field name="dealer_id_show" readonly="1" contest="{'user_preference':0}" options="{'no_create': True}" groups="wtc_branch.group_branch_security"/>                    	                    	                
+                </field>
+            	<xpath expr="//form/group" position="after">
+							<group>
+                    			<field name="branch_ids_show" widget="many2many_tags" colspan='2' readonly="1" contest="{'user_preference':0}" options="{'no_create': True}" groups="wtc_branch.group_branch_security"/>			
+							</group>
+				</xpath>                
+            </field>
+        </record>
+        
+    </data>
+</openerp>

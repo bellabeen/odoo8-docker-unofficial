@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+	
+	
+	<record id="kwitansi_wizard_customer_payment_view" model="ir.ui.view">
+            <field name="name">kwitansi.wizard.customer.payment</field>
+            <field name="model">account.voucher</field>
+            <field name="priority" eval="115"/>
+            <field name="arch" type="xml" >
+                <form string="Kwitansi">
+           			 <group>
+		                <field name="kwitansi_id" options="{'no_create': True,'no_open':True}" required="True"/>
+		            	<field name="reason_cancel_kwitansi" attrs="{'invisible': [('cetak_ke','&lt;','1')],'required': [('cetak_ke','&gt;','0')]}"/>
+		            	<field name="cetak_ke" invisible="1"/>
+		             </group>
+		             <group>
+		                <button name="%(kwitansi)d"  type="action" string="Print" class="oe_highlight"/>
+		            </group>
+                </form>
+            </field>
+        </record>
+        
+		<record id="view_wtc_account_voucher_supplier" model="ir.ui.view">
+            <field name="name">wtc.account.voucher.supplier.search.view</field>
+            <field name="model">account.voucher</field>
+            <field name="inherit_id" ref="account_voucher.view_voucher_filter_vendor_pay"/>
+            <field name="arch" type="xml">
+            	<field name="number" position='after'>
+            		<field name='branch_id' options="{'no_open':True,'no_create_edit':True}"/>
+                    <field name="division"/>    
+                    <field name="inter_branch_id"/>                  	                    	
+            	</field>
+            </field>
+        </record>        
+		<record id="view_wtc_account_voucher" model="ir.ui.view">
+            <field name="name">wtc.account.voucher.search.view</field>
+            <field name="model">account.voucher</field>
+            <field name="inherit_id" ref="account_voucher.view_voucher_filter_customer_pay"/>
+            <field name="arch" type="xml">
+            	<field name="number" position='after'>
+            		<field name='branch_id' options="{'no_open':True,'no_create_edit':True}"/>
+                    <field name="division"/>                  	                    	
+            	</field>
+            </field>
+        </record>		
+		<record model="ir.ui.view" id="wtc_account_voucher_receipt_form_view">
+		    <field name="name">wtc.account.voucher.receipt.form</field>
+		    <field name="model">account.voucher</field>
+		    <field name="type">form</field>
+		    <field name="inherit_id" ref="account_voucher.view_vendor_receipt_form"/>
+		    <field name="arch" type="xml">
+		    	<field name="line_dr_ids" position="replace"></field>
+		    	<label for="line_dr_ids" position="replace"/>
+		    	<field name="line_cr_ids" position="replace"></field>
+		    	<label for="line_cr_ids" position="replace"/>	
+		    	<field name='name' position='after'>
+		    		<field name='kwitansi' on_change='change_kwitansi(kwitansi)' attrs="{'readonly': [('state','!=','draft')]}"/>
+		    		<field name="cetak_ke" readonly='1'/>
+		    	</field>
+		    	<field name='partner_id' position="before">
+		    		<field name='partner_type' on_change='onchange_partner_type(partner_type)' required='1' context="{'partner_type':partner_type}"/>
+		    	</field>
+		    	<button name="action_cancel_draft" position='attributes'>
+		    		<attribute name='groups'>wtc_account_voucher.group_wtc_account_voucher_to_draft</attribute>
+		    	</button>	
+		    	<button name="cancel_voucher" position='attributes'>
+		    		<attribute name='groups'>wtc_account_voucher.group_wtc_account_voucher_reconcile</attribute>
+		    	</button>			    		    			    			    			    	
+			    <xpath expr="/form/sheet/notebook/page/group" position="before">
+                    <label for="line_cr_ids" invisible="context.get('line_type', False)"/>
+                    <field name="line_cr_ids" context="{'journal_id':journal_id, 'type':type, 'partner_id':partner_id, 'branch_id':inter_branch_id,'division':division}" on_change="onchange_line_ids(line_dr_ids, line_cr_ids, amount, currency_id, type, context)">
+                        <tree string="Invoices and outstanding transactions" editable="bottom" colors="gray:amount==0">
+                            <field name="move_line_id" context="{'journal_id':parent.journal_id, 'partner_id':parent.partner_id, 'branch_id':parent.inter_branch_id, 'division':parent.division}"
+                                on_change="onchange_move_line_id(move_line_id,parent.amount,parent.currency_id,parent.journal_id)"
+                                 domain="[('kwitansi','=',kwitansi),('account_id.type','=','receivable'),('debit','!=',0), ('reconcile_id','=', False),('partner_id','=',parent.partner_id),('branch_id','=',parent.inter_branch_id),('division','=',parent.division)]"
+                                 required="1"/>
+                            <field name="account_id"  groups="base.group_no_one" domain="[('type','=','receivable')]"/>
+                            <field name="date_original" readonly="1"/>
+                            <field name='kwitansi' invisible='1'/>
+                            <field name="date_due" readonly="1"/>
+                            <field name="amount_original" readonly="1"/>
+                            <field name="amount_unreconciled" readonly="1"/>
+                            <field name="reconcile" on_change="onchange_reconcile(reconcile, amount, amount_unreconciled, context)" />
+                            <field name="amount" sum="Total Allocation" on_change="onchange_amount(amount, amount_unreconciled, context)" string="Allocation"/>
+                        </tree>
+                    </field>			    	
+			    	<label for="line_dr_ids"/>
+                    <field name="line_dr_ids" context="{'journal_id':journal_id, 'partner_id':partner_id, 'branch_id':branch_id, 'division':division}" on_change="onchange_line_ids(line_dr_ids, line_cr_ids, amount, currency_id, type, context)">
+                        <tree string="Debit" editable="bottom" colors="gray:amount==0">
+                            <field name="move_line_id" context="{'journal_id':parent.journal_id, 'partner_id':parent.partner_id, 'branch_id':parent.branch_id, 'division':parent.division}"
+                                on_change="onchange_move_line_id(move_line_id,parent.amount,parent.currency_id,parent.journal_id)"
+                                domain="[('account_id.type','=','payable'),('credit','!=',0), ('reconcile_id','=', False), ('partner_id','=',parent.partner_id),('branch_id','=',parent.branch_id),('division','=',parent.division)]"
+                                required="1"/>
+                            <field name="account_id"  groups="base.group_no_one" domain="[('type','=','receivable')]"/>
+                            <field name="date_original" readonly="1"/>
+                            <field name="date_due" readonly="1"/>
+                            <field name="amount_original" readonly="1"/>
+                            <field name="amount_unreconciled" readonly="1"/>
+                            <field name="reconcile" on_change="onchange_reconcile(reconcile, amount, amount_unreconciled, context)"/>
+                            <field name="amount" sum="Total Allocation" on_change="onchange_amount(amount, amount_unreconciled, context)" string="Allocation"/>
+                        </tree>
+                    </field>
+	            </xpath>
+	            		    	
+			    <xpath expr="//button[@name='cancel_voucher']" position="after">
+	             	<button name="print_wizard_kwitansi"  attrs="{'invisible': ['|',('kwitansi','!=',False),('state','!=','posted')]}" type="object" icon="gtk-print" string="Print Kwitansi" class="oe_highlight" />
+	            </xpath>
+
+				<xpath expr="//field[@name='amount']" position="replace">
+					<field name="amount" class="oe_inline"
+                        string="Paid Amount"
+                        widget="monetary" options="{'currency_field': 'currency_id'}"
+                        on_change="onchange_amount(amount, payment_rate, partner_id, journal_id, currency_id, type, date, payment_rate_currency_id, company_id, context)"/>
+				</xpath>
+		    	<xpath expr="/form/sheet/group" position="before">
+                    <group>
+                        <group>
+                            <field name="branch_id" options="{'no_open':True,'no_create_edit':True}" attrs="{'readonly': [('state','!=','draft')]}" required="1" on_change="branch_change(branch_id)"/>
+                        </group>
+                        <group>
+                            <field name="division"  on_change="onchange_division(division)" attrs="{'readonly': [('state','!=','draft')]}" required="1"/>
+                            <field name="inter_branch_id" on_change="inter_branch_receipt_change(inter_branch_id)" attrs="{'readonly': [('state','!=','draft')]}" string="Terima Untuk" options="{'no_open':True,'no_create':True}" />
+                        </group>
+                    </group>
+                </xpath>              
+		    </field>
+		</record>
+		
+	<record id="view_sale_receipt_other_receivable_form_wo" model="ir.ui.view">
+            <field name="name">account.voucher.branch</field>
+            <field name="model">account.voucher</field>
+            <field name="inherit_id" ref="account_voucher.view_vendor_receipt_dialog_form"/>
+            <field name="arch" type="xml">
+            <field name="partner_id" position="before">
+			    <field name="branch_id" required="True"/>
+			    	
+			    </field>  
+			 <field name="date" position="before">
+			    	<field name="division"  required="True"/>
+			    </field> 
+			</field>
+		</record> 
+		
+		
+		<record id="view_invoice_customer" model="ir.ui.view">
+            <field name="name">account.invoice.customer.pay.dealer</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//button[@name='invoice_pay_customer']" position="replace">
+                    <button name="invoice_pay_customer" type="object" string="Register Payment"
+                        attrs="{'invisible': ['|', ('state','!=','open'), ('sent','=',True)]}"/>
+                    <button name="invoice_pay_customer" type="object" string="Register Payment"
+                        attrs="{'invisible': ['|', ('state','!=','open'), ('sent','=',False)]}" class="oe_highlight"/>
+                </xpath>
+            </field>
+        </record>
+
+       <record id="view_account_voucher_form" model="ir.ui.view">
+            <field name="name">account.voucher.form</field>
+            <field name="model">account.voucher</field>
+            <field name="inherit_id" ref="account_voucher.view_voucher_form"/>
+            <field name="arch" type="xml">
+		        <field name="tax_amount" position="attributes">
+		        	<attribute name="required">True</attribute>
+		        </field>
+            	<xpath expr="//page[@string='Journal Items']" position="after">
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>
+				</xpath>                
+            </field>        
+        </record>
+
+		<record id="view_sale_receipt_other_receivable_form" model="ir.ui.view">
+            <field name="name">account.voucher.other.receivable</field>
+            <field name="model">account.voucher</field>
+            <field name="inherit_id" ref="account_voucher.view_sale_receipt_form"/>
+            <field name="arch" type="xml">
+            <button name="action_cancel_draft" position="replace"/>  
+            <xpath expr="//button[@name='cancel_voucher']" position="after">
+             <button name="%(report_other_receivable)d"  attrs="{'invisible': [('state','!=','posted')]}" state="posted" type="action" string="Print" class="oe_highlight"  icon="gtk-print"/>
+             <button name="action_cancel_draft" invisible='1'/>
+            </xpath>
+		    <xpath expr="//button[@name='cancel_voucher']" position="after">
+             	<button name="print_wizard_kwitansi" attrs="{'invisible': [('state','!=','posted')]}" type="object" string="Print Kwitansi" class="oe_highlight" icon="gtk-print" />
+            </xpath>     
+            <xpath expr="/form/sheet/group" position="before">
+                    <group>
+                        <group>
+                            <field name="branch_id" options="{'no_open':True,'no_create_edit':True}" required="True" on_change="branch_id_onchange(branch_id)"/>
+                        </group>
+                        <group>
+                            <field name="division"   on_change="onchange_division(division)" required="True" />
+                        </group>
+                    </group>            
+                </xpath>               
+                <field name="partner_id" position="replace">
+                	<field name="partner_type" required='1' on_change="onchange_partner_type(partner_type)"/>
+			    	<field name="partner_id" required="True" domain="[('customer','=',True)]" on_change="onchange_partner_id(partner_id,journal_id, amount, currency_id, type, date, context)" string="Customer" context="{'search_default_customer':1, 'show_address': 1}" options="{'no_open':True,'no_create_edit':True}"/>
+			    </field>
+			    
+                 <field name="journal_id" position="replace">
+			    	<field name="journal_id" invisible="True"/>
+			    </field>
+			    
+			    <field name="account_id" position="replace">
+			    	<field name="account_id" options="{'no_open':True,'no_create_edit':True}"/>
+			    </field>
+            	<field name="date" position="attributes">
+            		<attribute name="readonly">1</attribute> 
+            	</field>		
+            	<field name="tax_id" position="attributes">
+            		<attribute name="domain" eval="[('price_include','=',False),('type_tax_use','in',('sale','all')), ('parent_id', '=', False)]"></attribute> 
+            	</field>
+            	<field name="date_due" position="replace"/>
+			    <field name="date" position="after">
+			    	<field name="date_due" required='1' />
+			    </field>			    
+	            <field name="name" position="after">
+			    	<field name="user_id"/>
+			    	<field name="cetak_ke" readonly='1'/>
+			    </field>    
+				
+			    <xpath expr="//field[@name='line_cr_ids']" position="replace">
+			    <field name="line_cr_ids" on_change="onchange_price(line_cr_ids, tax_id, partner_id)" context="{'journal_id':journal_id, 'type':type, 'partner_id':partner_id}">
+                   <tree string="Sales Lines" editable="bottom">
+                       <field name="account_id" domain="[('active','!=',False),('type','!=','view')]" required='True'/>
+                   	   <field name="name" on_change="account_id_onchange(name,parent.branch_id,parent.division)" required="True"/>
+                       <field name="amount" sum="Total"/>
+                       <field name="account_analytic_id" groups="analytic.group_analytic_accounting"/>
+                   </tree>
+                  </field>  
+
+                 </xpath>    
+				 <xpath expr="//page" position="after">
+				 		<page string='Faktur Pajak' attrs="{'invisible': [('tax_id','=',False)]}"  >
+				 			<group>
+				 				<field name='pajak_gabungan'></field>
+				 				<field name='faktur_pajak_id' readonly='1'></field>
+				 			</group>
+				 		</page>
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+									<field name="confirm_uid" readonly="1"></field>
+									<field name="confirm_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+									<field name="cancel_uid" readonly="1"></field>
+									<field name="cancel_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>
+				</xpath>                             			   
+	       </field>		
+		</record> 
+
+		<record id="view_voucher_filter_sale2" model="ir.ui.view">
+            <field name="name">account.voucher.sale.select</field>
+            <field name="model">account.voucher</field>
+            <field name="arch" type="xml">
+                <search string="Search Vouchers">
+                    <field name="number" string="Voucher"/>
+                    <field name="date"/>
+                    <filter icon="terp-document-new" string="Draft" domain="[('state','=','draft')]" help="Draft Vouchers"/>
+                    <filter icon="terp-camera_test" string="Posted" domain="[('state','=','posted')]" help="Posted Vouchers"/>
+                    <field name="partner_id" string="Customer" filter_domain="[('partner_id','child_of',self)]"/>
+                    <field name="journal_id" widget="selection" context="{'journal_id': self, 'set_visible':False}" domain="[('type','in',('sale','sale_refund'))]"/> <!-- Keep widget=selection on this field to pass numeric `self` value, which is not the case for regular m2o widgets! -->
+                    <field name="period_id"/>
+                    <group expand="0" string="Group By">
+                        <filter string="Customer" icon="terp-personal" domain="[]" context="{'group_by':'partner_id'}"/>
+                        <filter string="Journal" icon="terp-folder-orange" domain="[]" context="{'group_by':'journal_id'}"/>
+                        <filter string="Period" icon="terp-go-month" domain="[]" context="{'group_by':'period_id','visible':True}"/>
+                        <filter string="Status" icon="terp-stock_effects-object-colorize" domain="[]" context="{'group_by':'state'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_sale_receipt2" model="ir.actions.act_window">
+            <field name="name">Other Receivable Old</field>
+            <field name="res_model">account.voucher</field>
+            <field name="view_type">form</field>
+            <field name="domain">[('journal_id.type','in',['sale','sale_refund']), ('type','=','sale')]</field>
+            <field name="context">{'default_type': 'sale', 'type': 'sale','other_receivable':'other_receivable'}</field>
+            <field name="view_id" eval="False"/>
+            <field name="search_view_id" ref="view_voucher_filter_sale2"/>
+            <field name="target">current</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to create a sale receipt.
+              </p><p>
+                When the sale receipt is confirmed, you can record the customer
+                payment related to this sales receipt.
+              </p>
+            </field>
+        </record>
+        <record id="action_sale_receipt_tree" model="ir.actions.act_window.view">
+            <field eval="1" name="sequence"/>
+            <field name="view_mode">tree</field>
+            <field name="act_window_id" ref="action_sale_receipt2"/>
+        </record>
+        <record id="action_sale_receipt_form" model="ir.actions.act_window.view">
+            <field eval="2" name="sequence"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="account_voucher.view_sale_receipt_form"/>
+            <field name="act_window_id" ref="action_sale_receipt2"/>
+        </record>
+                        		
+        <menuitem id="wtc_other_receivable_menuitem_custom" parent="wtc_dealer_menu.backoffice_nontrade_menu" sequence="40" action="action_sale_receipt2"/>
+			
+		<record id="view_purchase_receipt_payments_req_form" model="ir.ui.view">
+            <field name="name">account.voucher.payments.request</field>
+            <field name="model">account.voucher</field>
+            <field name="inherit_id" ref="account_voucher.view_purchase_receipt_form"/>
+            <field name="arch" type="xml">            
+            
+            <xpath expr="//button[@name='cancel_voucher']" position="before">
+             <button name="%(report_payments_request)d"  attrs="{'invisible': [('state','!=','posted')]}" state="posted" type="action" string="Print" class="oe_highlight"  icon="gtk-print"/>
+            </xpath>
+            
+            	<xpath expr="/form/sheet/group" position="before">
+                    <group>
+                        <group>
+                            <field name="branch_id" options="{'no_open':True,'no_create_edit':True}" on_change='branch_onchange_payment_request(branch_id)' required="True"/>
+                        </group>
+                        <group>
+                            <field name="division"  on_change="onchange_division(division)" required="True" />
+                        </group>
+                    </group>                    
+                </xpath>
+                <field name="journal_id" position="replace">
+			    	<field name="journal_id" invisible="1"/>
+			    </field>
+			    
+			    <field name="account_id" position="replace">
+			    	<field name="account_id" invisible="1"/>
+			    </field>
+                  
+				<field name="journal_id" position="after">
+			    	<field name="no_document"/>
+			    	<field name="tgl_document"/>
+			    </field>
+			    <field name="account_id" position="after">
+			    	<field name="transaksi" on_change='transaksi_change(transaksi)' required="True"/>
+			    	<field name="jenis_transaksi_id" options="{'no_create': True,'no_open':True}" on_change="jenis_transaksi_change(jenis_transaksi_id,branch_id)" attrs="{'invisible': [('transaksi','!=','rutin')],'required': [('transaksi','=','rutin')]}" class="oe_inline"/>
+			    </field>
+			    
+            	<field name="partner_id" position="attributes">
+            		<attribute name="domain">['|',('supplier','!=',False),('ahass','!=',False)]</attribute>
+            		<attribute name='required'>True</attribute> 
+            		<attribute name='options'>{'no_create': True,'no_open':True}</attribute> 
+            	</field>
+            	            	       			    
+			     <xpath expr="//field[@name='line_dr_ids']" position="replace">
+				    	<field name="line_dr_ids" on_change="onchange_price(line_dr_ids, tax_id, partner_id)" context="{'journal_id':journal_id,'partner_id':partner_id}">
+                                <tree string="Expense Lines" editable="bottom">
+                                   <!--<field name='branch_id' options="{'no_create': True,'no_open':True}" />-->                                 	                                	
+			                       <field name="account_id" domain="[('active','!=',False),('type','!=','view')]" required='True'/>
+                                   <field name="name" required="True" on_change="name_onchange(name,parent.branch_id,parent.division)"/>
+			                       <field name="amount" sum='Total Amount'/>
+			                       <field name="account_analytic_id" groups="analytic.group_analytic_accounting"/>
+                                </tree>
+                         </field>
+                 </xpath> 
+                                  
+			    <xpath expr="//page[@string='Bill Information']" position="after">
+					<page string="History Pembayaran" col="1">
+						<group col="4">
+						<field colspan="4" name="payments_request_ids" nolabel="1" widget="one2many_list">
+							<tree string="" editable="false" edit="false" create="false" delete="false">
+									<field name="account_id" domain="[('user_type.report_type','=','expense'), ('type','!=','view')]"/>
+                                    <field name="name"/>
+                                    <field name="amount"/>
+                                    <field name="account_analytic_id" groups="analytic.group_analytic_accounting"/>
+							</tree>
+                       </field>
+						</group>
+					</page>
+				</xpath> 
+			   
+	       </field>		
+		</record>
+		
+    	 <record id="view_wtc_payments_request_type_tree" model="ir.ui.view">
+            <field name="name">wtc.payments.request.type.tree</field>
+            <field name="model">wtc.payments.request.type</field>
+            <field name="arch" type="xml">
+                <tree string="Payment Request Type">
+                	<field name="name"/>
+	                
+                </tree>
+            </field>
+        </record>
+        
+        <record id="view_wtc_payment_request_type_form" model="ir.ui.view">
+            <field name="name">wtc.payments.request.type.form</field>
+            <field name="model">wtc.payments.request.type</field>
+            <field name="arch" type="xml">
+                <form string="Payment Request Type">
+                	<separator string="Payment Request Type"/>
+	                    <group>
+							<field name="name"/>
+		                 </group>
+
+		            <notebook>
+		            	<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>	
+		            </notebook>			                 
+        		</form>
+     		</field>
+    	</record>
+    	
+    	<record model="ir.actions.act_window" id="wtc_payment_request_type">
+		    <field name="name">Payment Request Type Payment</field>
+		    <field name="res_model">wtc.payments.request.type</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		</record>
+
+        <menuitem id="wtc_payment_request_type_menuitem" name="Payment Request Type" parent="wtc_dealer_menu.backoffice_configuration_menu" action="wtc_payment_request_type" sequence="20"/>
+			
+	    <record model="ir.ui.view" id="view_other_payable_form">
+            <field name="name">account.voucher.other.payable.form</field>
+            <field name="model">account.voucher</field>
+            <field name="arch" type="xml">
+                <form string="Other Payable">
+                <header>
+                	<button name="print_wizard_kwitansi"  attrs="{'invisible': ['|',('kwitansi','!=',False),('state','!=','posted')]}" type="object" icon="gtk-print" string="Print Kwitansi" class="oe_highlight" />
+                    <button name="proforma_voucher" string="Validate" states="draft" class="oe_highlight"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,posted" statusbar_colors='{"proforma":"blue"}'/>
+                </header>
+	                <sheet string="Other Payable">
+	                 <div class="oe_title">                      
+	       				<h1>
+				            <label string="Hutang Lain"/>
+				 			<field name="number" class="oe_inline" readonly="1"/>	
+    			        </h1>
+                    </div>
+	                 <group col="2" colspan="2">
+	                 	<group>
+                    		<field name="branch_id" on_change="branch_id_other_payable(branch_id)" required="True" options="{'no_open':True,'no_create_edit':True}" attrs="{'readonly': [('state','!=','draft')]}"/>
+                    	</group>
+                    	<group>
+                    		<field name="division"  on_change="onchange_division(division)" required="True" attrs="{'readonly': [('state','!=','draft')]}"/>
+                    	</group>
+	                    <group>
+                            <field name="type" invisible="True"/>
+                            <field name="company_id" widget="selection" on_change="onchange_company(partner_id, journal_id, currency_id, company_id)" groups="base.group_multi_company"/>
+                            <field name="partner_id" required="True" domain="[('customer','=',True)]" on_change="onchange_partner_id(partner_id, journal_id, amount, currency_id, type, date)" string="Customer" context="{'search_default_customer':1, 'show_address': 1}" options="{'no_open':True,'no_create_edit':True,'always_reload': True}"/>
+                            <field name="paid_amount" required="True"/>
+                            <field name="journal_id" options="{'no_open':True,'no_create_edit':True}" domain="[('type','in',('bank','cash','edc'))]" string='Payment Method' on_change="journal_id_change_other_payable(journal_id)"/>
+                            <field name="account_id" domain="[('type','in', ['liquidity', 'receivable'])]" invisible="True"/>
+                            <field name="pay_now" invisible="True" on_change="onchange_payment(pay_now, journal_id, partner_id)" required="1"/>
+                            <field name="date_due" attrs="{'invisible':[('pay_now','=','pay_now')]}"/>
+							<field name="journal_type" invisible="1"/>
+                        </group>
+                        <group>
+                        	<field name="date" readonly='1' on_change="onchange_date(date, currency_id, currency_id, amount, company_id)"/>
+                            <field name="reference"/>
+                            <field name="name"/>
+                            <field name="paid" invisible="1"/>
+                            <field name="paid_amount_in_company_currency" invisible="1"/>
+                            <field name="currency_id" invisible="1"/>
+                            <field name='kwitansi' on_change='change_kwitansi(kwitansi)' attrs="{'readonly': [('state','!=','draft')]}"/>
+                        </group>
+	                  </group>
+	                 <notebook>
+                        <page string="Other Payable Lines">
+                            <field name="line_cr_ids">
+                                <tree string="Other Payable Lines" editable="bottom">                                   
+                                    <field name="account_id" on_change="name_payable_onchange(account_id,parent.branch_id,parent.division)" options="{'no_open':True,'no_create_edit':True}" domain="[('user_type.report_type','=','income'),('type','!=','view')]" />
+                                    <field name="name" required="True"/>
+                                    <field name="amount" sum="Total"/>
+                                </tree>
+                          </field>
+                          <group>
+                                <field name="narration" placeholder="Internal Notes" nolabel="1"/>
+                                <group class="oe_subtotal_footer oe_right">
+                                    <field name="tax_id" 
+                                        on_change="onchange_price(line_cr_ids, tax_id, partner_id)"
+                                        widget="selection" nolabel="1" invisible="True" placeholder="Tax"
+                                        domain="[('type_tax_use','in',('purchase','all')), ('parent_id', '=', False)]"
+                                        />
+                                        <button type="object" class="oe_link oe_edit_only"
+                                            name="compute_tax" string="(update)"
+                                            attrs="{'invisible': [('state','!=','draft')]}"/>
+			            			
+                                    <field name="amount" readonly='1' class="oe_inline"/>
+                                </group>
+                            </group>
+                        </page>
+                        
+						<page string="EDC" attrs="{'invisible':[('journal_type','!=','edc')]}">
+							<group>
+								<field name="card_no" attrs="{'required':[('journal_type','=','edc')],'readonly':[('state','!=','draft')]}"/>
+								<field name="card_name" attrs="{'required':[('journal_type','=','edc')],'readonly':[('state','!=','draft')]}"/>
+								<field name="approval_code" attrs="{'required':[('journal_type','=','edc')],'readonly':[('state','!=','draft')]}"/>
+								<field name="percentage" attrs="{'readonly':[('state','!=','draft')]}"/>
+								<field name="amount_edc" attrs="{'required':[('journal_type','=','edc')]}"/>						
+							</group>	
+						</page>	
+                        <page string="Journal Items" attrs="{'invisible': [('state','!=','posted')]}">
+                            <group col="4">
+                                <field name="period_id"/>
+                                <field name="audit"/>
+                            </group>
+                            <field name="move_ids" readonly="1">
+                               <tree string="Journal Items">
+                                   <field name="move_id"/>
+                                   <field name="ref"/>
+                                   <field name="date"/>
+                                   <field name="statement_id"/>
+                                   <field name="partner_id"/>
+                                   <field name="account_id"/>
+                                   <field name="name"/>
+                                   <field name="debit"/>
+                                   <field name="credit"/>
+                                   <field name="state"/>
+                                   <field name="reconcile_id"/>
+                               </tree>
+                            </field>
+                        </page>
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+									<field name="confirm_uid" readonly="1"></field>
+									<field name="confirm_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+									<field name="cancel_uid" readonly="1"></field>
+									<field name="cancel_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>                        
+                    </notebook>
+                    
+	             	</sheet>
+                   
+                </form>
+            </field>
+        </record>
+		
+ 		<record id="view_hutang_lain_search" model="ir.ui.view">
+            <field name="name">account.voucher</field>
+            <field name="model">account.voucher</field>
+            <field name="arch" type="xml">
+                <search string="Search Hutang Lain">
+                    <field name="name"/>
+                    <field name='division'/>
+                    <field name="branch_id"/> 
+                    <field name="partner_id"/>
+                    <group expand="0" string="Group By">
+                        <filter string="Branch" icon="terp-partner" domain="[]" context="{'group_by':'branch_id'}"/>
+                        <filter string="Tanggal" icon="terp-go-month" domain="[]" context="{'group_by':'date'}"/>                    
+                    </group>
+                </search>
+            </field>
+        </record>	
+	<record id="action_other_payable" model="ir.actions.act_window">
+            <field name="name">Hutang Lain Old</field>
+            <field name="res_model">account.voucher</field>
+            <field name="view_type">form</field>
+            <field name="domain">[ ('type','=','receipt'),('is_hutang_lain','!=',False)]</field>
+            <field name="context">{'default_type':'receipt', 'type':'receipt','hutang_lain':'yes'}</field>
+            <field name="view_id" eval="False"/>
+            <field name="search_view_id" ref="view_hutang_lain_search"/>
+            <field name="target">current</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to register a other payable. 
+              </p><p>
+                When the other payable is confirmed, you can record the
+                supplier payment related to this other payable.
+              </p>
+            </field>
+        </record>
+	
+	<record id="action_other_payable_tree" model="ir.actions.act_window.view">
+            <field eval="1" name="sequence"/>
+            <field name="view_mode">tree</field>
+            <field name="act_window_id" ref="action_other_payable"/>
+        </record>
+        
+         <record id="action_purchase_receipt_form" model="ir.actions.act_window.view">
+            <field eval="22" name="sequence"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_other_payable_form"/>
+            <field name="act_window_id" ref="action_other_payable"/>
+        </record>
+
+		<menuitem id="wtc_other_payable_menuitem_custom" parent="wtc_dealer_menu.backoffice_nontrade_menu" sequence="42" action="action_other_payable"/>
+				
+                	
+		        			
+	</data>
+</openerp>

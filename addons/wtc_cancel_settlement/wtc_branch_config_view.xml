@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+    
+		<record id="wtc_branch_config_settelement_cancel_view" model="ir.ui.view">
+            <field name="name">wtc.branch.config.settelement.cancel.view</field>
+            <field name="model">wtc.branch.config</field>
+            <field name="inherit_id" ref="wtc_cancellation.wtc_branch_config_stock_view"/>
+            <field name="arch" type="xml">
+            
+                <field name="so_cancel_sparepart_journal_id" position="after">
+               		<field name="settlement_cancel_journal_id" options="{'no_create': True,'no_open':True}"/>
+                </field>
+                
+            </field>
+        </record>
+        
+	</data>
+</openerp>

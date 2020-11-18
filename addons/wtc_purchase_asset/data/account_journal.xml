@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    	
+        <record id="sequnce_journal_depresiasi_asset" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Depresiasi</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">FA/%(year)s/</field> 
+        </record>
+            	
+        <record id="journal_depresiasi_asset" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dsr"/>
+            <field name="code">FA</field>
+            <field name="type">general</field>   
+            <field name="name">Depresiasi</field>  
+            <field name="sequence_id" ref="sequnce_journal_depresiasi_asset"/>   
+            <field name="cash_control">1</field> 
+        </record>
+        
+        <record id="journal_purchase_asset" model="account.journal">
+            <field name="code">PA</field>
+            <field name="type">purchase</field>
+            <field name="name">Journal Purchase Asset</field>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_45110101"/>
+			<field name="entry_posted">True</field>               
+        </record>
+             
+        <record id="journal_receipt_asset" model="account.journal">
+            <field name="code">RA</field>
+            <field name="type">general</field>
+            <field name="name">Journal Receipt Asset</field>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_45110101"/>
+			<field name="entry_posted">True</field>            
+        </record>
+        
+        <record id="journal_asset_adjustment" model="account.journal">
+            <field name="code">AA</field>
+            <field name="type">general</field>
+            <field name="name">Journal Asset Adjustment</field>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_45110101"/>
+			<field name="entry_posted">True</field>            
+        </record>
+                
+        <record id="journal_asset_disposal" model="account.journal">
+            <field name="code">DA</field>
+            <field name="type">general</field>
+            <field name="name">Journal Disposal Asset</field>
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11319999"/>
+			<field name="entry_posted">True</field>            
+        </record>
+                           
+    </data>
+</openerp>        

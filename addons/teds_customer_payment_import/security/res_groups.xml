@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+		<record id="teds_customer_payment_import_wizard_read" model="res.groups">
+			<field name="category_id" ref="wtc_branch.tdm_role" />
+			<field name="name">TEDS Advance FIF (Import)</field>
+			<field name="menu_access" eval="[(4, ref('teds_customer_payment_import_wizard_menuitem'))]" />
+		</record>
+	</data>
+</openerp>

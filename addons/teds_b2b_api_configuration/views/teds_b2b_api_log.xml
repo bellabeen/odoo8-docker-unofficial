@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+		<record id="view_teds_b2b_api_log_tree" model="ir.ui.view">
+            <field name="name">teds.b2b.api.log.tree</field>
+            <field name="model">teds.b2b.api.log</field>
+            <field name="arch" type="xml">
+                <tree string="Api log">
+                    <field name="name"/>
+                    <field name="type"/>
+                    <field name="date"/>
+                    <field name="response_code"/>
+                    <field name="request_type"/>
+                    <field name="url"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record id="view_teds_b2b_api_log_form" model="ir.ui.view">
+            <field name="name">teds.b2b.api.log.form</field>
+            <field name="model">teds.b2b.api.log</field>
+            <field name="arch" type="xml">
+                <form string="Api log">
+                    <sheet>
+                        <group>         
+                            <group>                 
+                                <field name="name" readonly="1"/>
+                                <field name="type"/>
+                                <field name="url"/>
+                                <field name="request_type"/>
+                                <field name="request"/>
+                                <field name="jml_data"/>
+                            </group>
+                            <group>
+                                <field name="date"/>
+                                <field name="response_code"/>
+                                <field name="response"/>
+                            </group>
+                        </group>                         
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Search -->
+        <record id="view_teds_b2b_api_log_filter" model="ir.ui.view">
+            <field name="name">teds.b2b.api.log.filter</field>
+            <field name="model">teds.b2b.api.log</field>
+            <field name="arch" type="xml">
+                <search string="Search">
+                    <field name="name"/>
+                    <field name="url"/>
+                    <field name="response_code"/>
+                    <field name="request"/>
+                    <group expand="1" string="Group By">
+                        <filter string="Name" name="gby_name" context="{'group_by':'name'}"/>
+                        <filter string="Status Code" name="gby_response_code" context="{'group_by':'response_code'}"/>
+                        <filter string="Responses" name="gby_response" context="{'group_by':'response'}"/>
+                        <filter string="URL" name="gby_url" context="{'group_by':'url'}"/>
+                    </group>                       
+
+                </search>
+            </field>
+        </record> 
+        
+
+        <record id="action_teds_b2b_api_log" model="ir.actions.act_window">
+            <field name="name">B2b API Log</field>
+            <field name="res_model">teds.b2b.api.log</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        
+        <menuitem id="teds_b2b_api_log_menuitem" parent="teds_b2b_api_top_menu" action="action_teds_b2b_api_log" sequence="5"/>
+
+    </data>
+</openerp>

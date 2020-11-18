@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+        <record id="view_dms_mft_serv_conf_tree" model="ir.ui.view">
+            <field name="name">teds.mft.serv.conf.tree</field>
+            <field name="model">teds.mft.serv.conf</field>
+            <field name="arch" type="xml">
+                <tree string="Configuration MFT Server">
+                <field name="host_remote"/>
+                <field name="user_remote"/>
+                <field name="password_remote"/>
+                <field name="folder_path_remote"/>
+                <field name="active"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record id="view_dms_mft_serv_conf_form" model="ir.ui.view">
+            <field name="name">teds.mft.serv.conf.form</field>
+            <field name="model">teds.mft.serv.conf</field>            
+            <field name="arch" type="xml">
+                <form string="Configuration File">
+                <sheet>
+                    <div class="oe_title">                      
+                    <h1>
+                        <label string="Configuration MFT Server"/>
+                    </h1>
+                    </div>
+                        <group>
+                            <field name="host_remote"/>
+                            <field name="user_remote"/>
+                            <field name="password_remote"/>
+                            <field name="folder_path_remote"/>
+                            <field name="active"/>
+                        </group>
+                </sheet>   	                    
+                </form>
+            </field>
+        </record>
+            
+        <record model="ir.actions.act_window" id="view_teds_mft_serv_conf_action">
+            <field name="name">MFT File Configuration</field>
+            <field name="res_model">teds.mft.serv.conf</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem parent="wtc_dealer_menu.ma_branches_menu" id="dms_mft_server_conf_menu" action="view_teds_mft_serv_conf_action" sequence="17"/>
+
+    </data>
+</openerp>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+<template id="berita_acara_mutasi_asset_print">
+    <t t-call="report.html_container">
+        <t t-foreach="docs" t-as="o">
+            <div class="page">
+                <div class="oe_structure"/>
+                    <div class="row"> 
+                        <table style="border-collapse: collapse; border: 1px solid black; width:100%;font-size:11px;">
+                            <tr style="border: 1px solid black">
+                                <td width="10%" style="padding-top:10px; padding-left:20px; padding-bottom:10px">
+                                    <img src="/wtc_branch/static/src/img/logo.png" width="60%" height="26%"/><br/>
+                                    <b style="font-size:12px;text-align:center">Tunas Group</b>
+                                </td>
+                                <td style="padding-right:15px;">
+                                    <div style="text-align:center;padding-right:80px; font-size:12px;">
+                                        <h3>BERITA ACARA MUTASI ASSET</h3>
+                                    </div>
+                                </td>
+                            </tr> 
+                            <tr align="right">
+                                <td colspan="2" style="padding-top:10px; padding-right: 10px;padding-bottom:10px">Tanggal : <span t-esc="tgl()"/></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="padding-top:10px; padding-left:10px;padding-right:10px">
+                                    <table class="table" style="padding-top:30px; padding-left:30px;padding-right:30px">
+                                        <tr>
+                                            <th style="width:10%">Dari Cabang</th>
+                                            <th style="width:2%">:</th>
+                                            <td><span t-esc="branch_sender_name(data)"/></td>
+                                            
+                                            <th style="width:10%">Ke Cabang</th>
+                                            <th style="width:2%">:</th>
+                                            <td><span t-esc="o.branch_id.name"/></td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>Kode Lokasi</th>
+                                            <th>:</th>
+                                            <td><span t-esc="branch_sender_code(data)"/></td>
+                                            
+                                            <th>Kode Lokasi</th>
+                                            <th>:</th>
+                                            <td><span t-esc="o.branch_id.code"/></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="padding-top:20px; padding-left:20px;padding-right:20px">
+                                    <table class="table table-bordered" style="padding-top:30px; padding-left:30px;padding-right:30px">
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Kode Asset</th>
+                                            <th>Nama Asset</th>
+                                            <th>Harga Beli</th>
+                                            <th>Akum Penyusutan</th>
+                                            <th>Nilai Buku</th>
+                                            <th>Alasan Mutasi</th>
+                                        </tr>
+                                        <tr t-foreach="o.detail_ids" t-as="l" height="30%">
+                                            <td><span t-esc="no_urut()"/></td>
+                                            <td><span t-esc="l.code"/></td>
+                                            <td><span t-esc="l.asset_id.name"/></td>
+                                            <td><span t-esc="l.amount"/></td>
+                                            <td><span t-esc="l.akumulasi_penyusutan"/></td>
+                                            <td><span t-esc="l.nilai_buku"/></td>    
+                                            <td><span t-esc="l.keterangan"/></td>    
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="padding-top:20px; padding-left:20px;padding-right:20px">
+                                    <table style="font-size:9px; width:100%; line-height:200%" border="2" class="table table-bordered">
+                                        <tr style="border: 1px solid black">
+                                            <th colspan="2" style="text-align:center;">Cabang Pengirim</th>
+                                            <th colspan="3" style="text-align:center;">Diketahui</th>
+                                            <th style="text-align:center;">Disetujui</th>
+                                            <th colspan="2" style="text-align:center;">Cabang Penerima</th>
+                                        </tr>
+                                        <tr height="70">
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr style="border: 1px solid black">
+                                            <th style="text-align:center;">(ADH / SOH)</th>
+                                            <th style="width:80px;text-align:center;">(AM)</th>
+                                            <th style="text-align:center;">(Admin / Part Manager)</th>
+                                            <th style="width:90px;text-align:center;">(GM)</th>
+                                            <th style="text-align:center;">(Fixed Asset Spv)</th>
+                                            <th style="text-align:center;">(Opertion Director)</th>    
+                                            <th style="text-align:center;">(ADH / SOH)</th>
+                                            <th style="width:80px;text-align:center;">(AM)</th>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+            </div>          
+        </t>
+    </t>
+</template>
+</data>
+</openerp>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">    
+        <record id="group_teds_so_stnk_generate_stock_button" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Teds Stock Opname STNK Generate Stock</field>
+            <field name="implied_ids" eval="[(4, ref('group_teds_stock_opname_stnk_read'))]"/>
+        </record>     
+        <record id="group_teds_so_stnk_posted_button" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Teds Stock Opname STNK Post</field>
+            <field name="implied_ids" eval="[(4, ref('group_teds_stock_opname_stnk_read'))]"/>
+        </record>     
+        <record id="group_teds_so_stnk_print_validasi_button" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Teds Stock Opname STNK Print Validasi</field>
+            <field name="implied_ids" eval="[(4, ref('group_teds_stock_opname_stnk_read'))]"/>
+        </record>     
+        <record id="group_teds_so_stnk_print_bakso_button" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Teds Stock Opname STNK Print Bakso</field>
+            <field name="implied_ids" eval="[(4, ref('group_teds_stock_opname_stnk_read'))]"/>
+        </record>
+
+
+        <record id="group_teds_so_bpkb_generate_stock_button" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Teds Stock Opname BPKB Generate Stock</field>
+            <field name="implied_ids" eval="[(4, ref('group_teds_stock_opname_bpkb_read'))]"/>
+        </record>     
+        <record id="group_teds_so_bpkb_posted_button" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Teds Stock Opname BPKB Post</field>
+            <field name="implied_ids" eval="[(4, ref('group_teds_stock_opname_bpkb_read'))]"/>
+        </record>     
+        <record id="group_teds_so_bpkb_print_validasi_button" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Teds Stock Opname BPKB Print Validasi</field>
+            <field name="implied_ids" eval="[(4, ref('group_teds_stock_opname_bpkb_read'))]"/>
+        </record>     
+        <record id="group_teds_so_bpkb_print_bakso_button" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Teds Stock Opname BPKB Print Bakso</field>
+            <field name="implied_ids" eval="[(4, ref('group_teds_stock_opname_stnk_read'))]"/>
+        </record>
+
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[
+                (4,ref('group_teds_so_stnk_posted_button')),
+                (4,ref('group_teds_so_stnk_print_validasi_button')),
+                (4,ref('group_teds_so_stnk_print_bakso_button')),
+				(4,ref('group_teds_so_bpkb_generate_stock_button')),
+				(4,ref('group_teds_so_bpkb_posted_button')),
+				(4,ref('group_teds_so_bpkb_print_validasi_button')),
+				(4,ref('group_teds_so_bpkb_print_bakso_button')),
+			]"/> 
+		</record>
+
+
+
+
+    </data>
+</openerp>

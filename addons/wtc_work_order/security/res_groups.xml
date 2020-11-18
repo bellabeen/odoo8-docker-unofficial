@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">  	
+    	
+    <record id="group_button_reset_clocking" model="res.groups">
+        <field name="category_id" ref="wtc_branch.tdm_role"/>
+        <field name="name">Button Reset Clocking WO</field> 
+        <field name="implied_ids" eval="[(4, ref('group_wtc_work_order_read'))]"/>  
+    </record> 
+
+<!-- Work Order --> 
+    
+        <record id="group_wtc_work_order_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Work Order Read</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_work_order_form'))]"/>  
+        </record> 
+        
+        <record id="access_wtc_work_order_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_work_order"/>
+            <field name="name">wtc_work_order read</field> 
+            <field name="group_id" ref="group_wtc_work_order_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+
+        <record id="access_wtc_work_order_line_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_work_order_line"/>
+            <field name="name">wtc_work_order_line read</field> 
+            <field name="group_id" ref="group_wtc_work_order_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+
+        <record id="access_wtc_work_order_approval_line_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">wtc_work_order_approval_line read</field> 
+            <field name="group_id" ref="group_wtc_work_order_read"/>  
+            <field name="perm_read">1</field> 
+        </record>
+        
+         <record id="access_stock_production_lot_wo_read" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">wtc_work_order_stock_production_lot read</field> 
+            <field name="group_id" ref="group_wtc_work_order_read"/>  
+            <field name="perm_read">1</field> 
+        </record>
+        
+        <record id="access_account_journal_wo_read" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_journal"/>
+            <field name="name">wtc_work_order_account_journal read</field> 
+            <field name="group_id" ref="group_wtc_work_order_read"/>  
+            <field name="perm_read">1</field> 
+        </record>
+        
+        <record id="access_account_invoice_tax_wo_read" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice_tax"/>
+            <field name="name">wtc_work_order_account_invoice_tax read</field> 
+            <field name="group_id" ref="group_wtc_work_order_read"/>  
+            <field name="perm_read">1</field> 
+        </record>
+                                
+        <record id="group_wtc_work_order_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Work Order Update</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_work_order_form'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_wtc_work_order_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_wtc_work_order_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_work_order"/>
+            <field name="name">wtc_work_order update</field> 
+            <field name="group_id" ref="group_wtc_work_order_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+        
+        <record id="access_wtc_work_order_line_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_work_order_line"/>
+            <field name="name">wtc_work_order_line update</field> 
+            <field name="group_id" ref="group_wtc_work_order_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>                   
+
+        <record id="access_wtc_work_order_approval_line_update" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">wtc_work_order_approval_line update</field> 
+            <field name="group_id" ref="group_wtc_work_order_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record> 
+        
+        <record id="group_wtc_work_order_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Work Order Delete</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_work_order_form'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_wtc_work_order_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_wtc_work_order_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_work_order"/>
+            <field name="name">wtc_work_order delete</field> 
+            <field name="group_id" ref="group_wtc_work_order_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>      
+        
+        <record id="access_wtc_work_order_line_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_work_order_line"/>
+            <field name="name">wtc_work_order_line delete</field> 
+            <field name="group_id" ref="group_wtc_work_order_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>  
+
+<!-- Start Stop Work Order -->	
+	
+        <record id="group_wtc_start_stop_wo_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Start Stop Work Order Read</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_menu_start_stop_wo_form'))]"/>  
+        </record> 
+        
+        <record id="access_wtc_start_stop_wo_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_start_stop_wo"/>
+            <field name="name">wtc_start_stop_wo read</field> 
+            <field name="group_id" ref="group_wtc_start_stop_wo_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+        
+        <record id="group_wtc_start_stop_wo_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Start Stop Work Order Update</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_menu_start_stop_wo_form'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_wtc_start_stop_wo_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_wtc_start_stop_wo_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_start_stop_wo"/>
+            <field name="name">wtc_start_stop_wo update</field> 
+            <field name="group_id" ref="group_wtc_start_stop_wo_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>                       
+        
+        <record id="group_wtc_start_stop_wo_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Start Stop Work Order Delete</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_menu_start_stop_wo_form'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_wtc_start_stop_wo_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_wtc_start_stop_wo_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_start_stop_wo"/>
+            <field name="name">wtc_start_stop_wo delete</field> 
+            <field name="group_id" ref="group_wtc_start_stop_wo_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>      
+        
+<!-- Outstanding Claim KPB -->	
+	
+        <record id="group_outstanding_claim_kpb_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Outstanding Claim KPB Read</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_outstanding_claim_kpb_menu_item'))]"/>  
+        </record> 
+        
+        <record id="access_outstanding_claim_kpb_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_work_order"/>
+            <field name="name">outstanding_claim_kpb read</field> 
+            <field name="group_id" ref="group_outstanding_claim_kpb_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+        
+        <record id="group_outstanding_claim_kpb_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Outstanding Claim KPB Update</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_outstanding_claim_kpb_menu_item'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_outstanding_claim_kpb_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_outstanding_claim_kpb_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_work_order"/>
+            <field name="name">outstanding_claim_kpb update</field> 
+            <field name="group_id" ref="group_outstanding_claim_kpb_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>                       
+       
+<!-- Collecting KPB -->	
+	
+        <record id="group_wtc_collecting_kpb_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Collecting KPB Read</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_collecting_menu_item'))]"/>  
+        </record> 
+        
+        <record id="access_wtc_collecting_kpb_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_collecting_kpb"/>
+            <field name="name">wtc_collecting_kpb read</field> 
+            <field name="group_id" ref="group_wtc_collecting_kpb_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+
+        <record id="access_wtc_collecting_kpb_line_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_collecting_kpb_line"/>
+            <field name="name">wtc_collecting_kpb_line read</field> 
+            <field name="group_id" ref="group_wtc_collecting_kpb_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+
+        <record id="access_wtc_collecting_kpb_wo_line_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_work_order"/>
+            <field name="name">wtc_collecting_kpb_wo_line read</field> 
+            <field name="group_id" ref="group_wtc_collecting_kpb_read"/>  
+            <field name="perm_read">1</field> 
+        </record>
+                                
+        <record id="group_wtc_collecting_kpb_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Collecting KPB Update</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_collecting_menu_item'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_wtc_collecting_kpb_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_wtc_collecting_kpb_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_collecting_kpb"/>
+            <field name="name">wtc_collecting_kpb update</field> 
+            <field name="group_id" ref="group_wtc_collecting_kpb_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+        
+        <record id="access_wtc_collecting_kpb_line_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_collecting_kpb_line"/>
+            <field name="name">wtc_collecting_kpb_line update</field> 
+            <field name="group_id" ref="group_wtc_collecting_kpb_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>                   
+
+        <record id="access_wtc_collecting_kpb_wo_line_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_work_order"/>
+            <field name="name">wtc_collecting_kpb_wo_line update</field> 
+            <field name="group_id" ref="group_wtc_collecting_kpb_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record> 
+        
+        <record id="group_wtc_collecting_kpb_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Collecting KPB Delete</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_collecting_menu_item'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_wtc_collecting_kpb_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_wtc_collecting_kpb_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_collecting_kpb"/>
+            <field name="name">wtc_collecting_kpb delete</field> 
+            <field name="group_id" ref="group_wtc_collecting_kpb_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>      
+        
+        <record id="access_wtc_collecting_kpb_line_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_collecting_kpb_line"/>
+            <field name="name">wtc_collecting_kpb_line delete</field> 
+            <field name="group_id" ref="group_wtc_collecting_kpb_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>
+ 
+        <record id="access_wtc_collecting_kpb_wo_line_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_work_order"/>
+            <field name="name">wtc_collecting_kpb_wo_line delete</field> 
+            <field name="group_id" ref="group_wtc_collecting_kpb_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record> 
+   
+<!-- Report WIP -->	
+	
+        <record id="group_report_wip_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Report WIP Read</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_wtc_work_order_WIP'))]"/>  
+        </record>      
+                        
+        <record id="group_report_wip_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Report WIP Update</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_wtc_work_order_WIP'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_report_wip_read'))]"/>            	            	
+        </record>
+        
+<!-- KPB Expired -->	
+	
+        <record id="group_wtc_kpb_expired_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">KPB Expired Read</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_kpb_expired_form'))]"/>  
+        </record> 
+        
+        <record id="access_wtc_kpb_expired_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_kpb_expired"/>
+            <field name="name">wtc_kpb_expired read</field> 
+            <field name="group_id" ref="group_wtc_kpb_expired_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+                                     
+        <record id="group_wtc_kpb_expired_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">KPB Expired Update</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_kpb_expired_form'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_wtc_kpb_expired_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_wtc_kpb_expired_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_kpb_expired"/>
+            <field name="name">wtc_kpb_expired update</field> 
+            <field name="group_id" ref="group_wtc_kpb_expired_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>              
+                
+        <record id="group_wtc_kpb_expired_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">KPB Expired Delete</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_kpb_expired_form'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_wtc_kpb_expired_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_wtc_kpb_expired_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_kpb_expired"/>
+            <field name="name">wtc_kpb_expired delete</field> 
+            <field name="group_id" ref="group_wtc_kpb_expired_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>
+        
+<!-- KPB Engine Type -->	
+	
+        <record id="group_wtc_kpb_engine_type_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">KPB Engine Type Read</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_kpb_engine_type_form'))]"/>  
+        </record> 
+        
+        <record id="access_wtc_kpb_engine_type_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_kpb_engine_type"/>
+            <field name="name">wtc_kpb_engine_type read</field> 
+            <field name="group_id" ref="group_wtc_kpb_engine_type_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+                        
+        <record id="access_wtc_kpb_engine_price_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_kpb_engine_price"/>
+            <field name="name">wtc_kpb_engine_price read</field> 
+            <field name="group_id" ref="group_wtc_kpb_engine_type_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+                             
+        <record id="group_wtc_kpb_engine_type_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">KPB Engine Type Update</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_kpb_engine_type_form'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_wtc_kpb_engine_type_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_wtc_kpb_engine_type_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_kpb_engine_type"/>
+            <field name="name">wtc_kpb_engine_type update</field> 
+            <field name="group_id" ref="group_wtc_kpb_engine_type_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>              
+             
+        <record id="access_wtc_kpb_engine_price_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_kpb_engine_price"/>
+            <field name="name">wtc_kpb_engine_price update</field> 
+            <field name="group_id" ref="group_wtc_kpb_engine_type_read"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record> 
+                   
+        <record id="group_wtc_kpb_engine_type_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">KPB Engine Type Delete</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_kpb_engine_type_form'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_wtc_kpb_engine_type_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_wtc_kpb_engine_type_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_kpb_engine_type"/>
+            <field name="name">wtc_kpb_engine_type delete</field> 
+            <field name="group_id" ref="group_wtc_kpb_engine_type_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>          
+        
+        <record id="access_wtc_kpb_engine_price_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_kpb_engine_price"/>
+            <field name="name">wtc_kpb_engine_price delete</field> 
+            <field name="group_id" ref="group_wtc_kpb_engine_type_read"/>  
+            <field name="perm_unlink">1</field>      	
+        </record>   
+        
+        
+<!-- Harga Jasa Version -->	
+	
+        <record id="group_wtc_harga_jasa_version_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Harga Jasa Version Read</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_harga_jasa_version_menuitem'))]"/>  
+        </record> 
+        
+        <record id="access_wtc_harga_jasa_version_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_harga_jasa_version"/>
+            <field name="name">wtc_harga_jasa_version read</field> 
+            <field name="group_id" ref="group_wtc_harga_jasa_version_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+                                     
+        <record id="group_wtc_harga_jasa_version_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Harga Jasa Version Update</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_harga_jasa_version_menuitem'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_wtc_harga_jasa_version_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_wtc_harga_jasa_version_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_harga_jasa_version"/>
+            <field name="name">wtc_harga_jasa_version update</field> 
+            <field name="group_id" ref="group_wtc_harga_jasa_version_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>              
+                
+        <record id="group_wtc_harga_jasa_version_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Harga Jasa Version Delete</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_harga_jasa_version_menuitem'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_wtc_harga_jasa_version_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_wtc_harga_jasa_version_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_harga_jasa_version"/>
+            <field name="name">wtc_harga_jasa_version delete</field> 
+            <field name="group_id" ref="group_wtc_harga_jasa_version_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>      
+        
+<!-- Harga Jasa -->	
+	
+        <record id="group_wtc_harga_jasa_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Harga Jasa Read</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_harga_jasa_menuitem'))]"/>  
+        </record> 
+        
+        <record id="access_wtc_harga_jasa_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_harga_jasa"/>
+            <field name="name">wtc_harga_jasa read</field> 
+            <field name="group_id" ref="group_wtc_harga_jasa_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+                                     
+        <record id="group_wtc_harga_jasa_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Harga Jasa Update</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_harga_jasa_menuitem'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_wtc_harga_jasa_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_wtc_harga_jasa_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_harga_jasa"/>
+            <field name="name">wtc_harga_jasa update</field> 
+            <field name="group_id" ref="group_wtc_harga_jasa_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>              
+                
+        <record id="group_wtc_harga_jasa_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Harga Jasa Delete</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_harga_jasa_menuitem'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_wtc_harga_jasa_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_wtc_harga_jasa_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_harga_jasa"/>
+            <field name="name">wtc_harga_jasa delete</field> 
+            <field name="group_id" ref="group_wtc_harga_jasa_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>   
+        
+        <record id="access_approval_portal_work_order_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_work_order"/>
+            <field name="name">approval_portal_model_work_order read</field> 
+            <field name="group_id" ref="wtc_approval.group_approval_portal_read"/>  
+            <field name="perm_read">1</field> 
+        </record>
+                
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[(4,ref('group_wtc_work_order_read')),
+												(4,ref('group_wtc_work_order_update')),
+												(4,ref('group_wtc_work_order_delete')),
+												(4,ref('group_wtc_start_stop_wo_read')),
+												(4,ref('group_wtc_start_stop_wo_update')),
+												(4,ref('group_wtc_start_stop_wo_delete')),
+												(4,ref('group_outstanding_claim_kpb_read')),
+												(4,ref('group_outstanding_claim_kpb_update')),
+												(4,ref('group_wtc_collecting_kpb_read')),
+												(4,ref('group_wtc_collecting_kpb_update')),
+												(4,ref('group_wtc_collecting_kpb_delete')),
+												(4,ref('group_report_wip_read')),
+												(4,ref('group_report_wip_update')),
+												(4,ref('group_wtc_kpb_expired_read')),
+												(4,ref('group_wtc_kpb_expired_update')),
+												(4,ref('group_wtc_kpb_expired_delete')),
+												(4,ref('group_wtc_kpb_engine_type_read')),
+												(4,ref('group_wtc_kpb_engine_type_update')),
+												(4,ref('group_wtc_kpb_engine_type_delete')),
+												(4,ref('group_wtc_harga_jasa_version_read')),
+												(4,ref('group_wtc_harga_jasa_version_update')),
+												(4,ref('group_wtc_harga_jasa_version_delete')),
+												(4,ref('group_wtc_harga_jasa_read')),
+												(4,ref('group_wtc_harga_jasa_update')),
+												(4,ref('group_wtc_harga_jasa_delete')),
+
+											]"/> 
+		</record>           
+                                                  
+    </data>
+</openerp>

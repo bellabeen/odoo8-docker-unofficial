@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    
+        <record id="pricelist_beli_part_2015_default" model="product.pricelist.item">
+            <field name="price_version_id" ref="pricelist_beli_part_2015"/>   
+            <field name="product_tmpl_id" ref=""/>   
+            <field name="base">1</field>   
+            <field name="price_discount"></field> 
+            <field name="price_surcharge"></field>  
+        </record>
+    
+        <record id="pricelist_jual_part_2015_default" model="product.pricelist.item">
+            <field name="price_version_id" ref="pricelist_jual_part_2015"/>   
+            <field name="product_tmpl_id" ref=""/>   
+            <field name="base">1</field>   
+            <field name="price_discount"></field> 
+            <field name="price_surcharge"></field>  
+        </record>
+    
+        <record id="pricelist_jual_bbn_merah_all_2015_default" model="product.pricelist.item">
+            <field name="price_version_id" ref="pricelist_jual_bbn_merah_all_2015"/>   
+            <field name="product_tmpl_id" ref=""/>   
+            <field name="base">1</field>   
+            <field name="price_discount">-1</field> 
+            <field name="price_surcharge">1</field>  
+        </record>
+    </data>
+</openerp>
+                

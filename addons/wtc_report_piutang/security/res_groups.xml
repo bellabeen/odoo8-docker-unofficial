@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1"> 
+    	
+<!-- Laporan Piutang -->	
+	
+        <record id="group_laporan_piutang_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Laporan Piutang Read</field> 
+            <field name="menu_access" eval="[(4, ref('menu_piutang_report'))]"/>  
+        </record> 
+                
+        <record id="group_laporan_piutang_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Laporan Piutang Update</field> 
+            <field name="menu_access" eval="[(4, ref('menu_piutang_report'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_laporan_piutang_read'))]"/>            	            	
+        </record>
+     
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[(4,ref('group_laporan_piutang_read')),
+											(4,ref('group_laporan_piutang_update')),
+
+											]"/> 
+		</record>                                                                                                  
+    </data>
+</openerp>

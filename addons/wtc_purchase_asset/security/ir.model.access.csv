@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_wtc_transfer_asset_all,wtc_transfer_asset all,model_wtc_transfer_asset,,1,1,1,1
+access_wtc_asset_classification_all,wtc_asset_classification all,model_wtc_asset_classification,,1,1,1,1
+access_wtc_transfer_asset_line_all,wtc_transfer_asset_line all,model_wtc_transfer_asset_line,,1,1,1,1
+access_wtc_purchase_asset_line_all,wtc_purchase_asset_line all,model_wtc_purchase_asset_line,,1,1,1,1
+access_wtc_purchase_asset_all,wtc_purchase_asset all,model_wtc_purchase_asset,,1,1,1,1
+access_wtc_asset_adjustment_all,wtc_asset_adjustment all,model_wtc_asset_adjustment,,1,1,1,1
+access_wtc_disposal_asset_line_all,wtc_disposal_asset_line all,model_wtc_disposal_asset_line,,1,1,1,1
+access_wtc_disposal_asset_all,wtc_disposal_asset all,model_wtc_disposal_asset,,1,1,1,1
+access_teds_master_lokasi_asset,teds_master_lokasi_asset,model_teds_master_lokasi_asset,,1,0,0,0

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+		<record id="teds_bank_mutasi_group_read" model="res.groups">
+			<field name="category_id" ref="wtc_branch.tdm_role" />
+			<field name="name">Teds Bank Mutasi Read</field>
+			<field name="menu_access" eval="[(4, ref('teds_bank_mutasi_menuitem'))]" />
+		</record>
+
+		<record id="teds_bank_mutasi_access_read" model="ir.model.access">
+			<field name="model_id" ref="model_teds_bank_mutasi" />
+			<field name="name">teds_bank_mutasi read</field>
+			<field name="group_id" ref="teds_bank_mutasi_group_read" />
+			<field name="perm_read">1</field>
+		</record>
+
+		<record id="teds_bank_mutasi_group_update" model="res.groups">
+			<field name="category_id" ref="wtc_branch.tdm_role" />
+			<field name="name">Teds Bank Mutasi Update</field>
+			<field name="implied_ids" eval="[(4, ref('teds_bank_mutasi_group_read'))]" />
+		</record>
+
+		<record id="teds_bank_mutasi_access_update" model="ir.model.access">
+			<field name="model_id" ref="model_teds_bank_mutasi" />
+			<field name="name">teds_bank_mutasi update</field>
+			<field name="group_id" ref="teds_bank_mutasi_group_update" />
+			<field name="perm_create">1</field>
+			<field name="perm_write">1</field>
+		</record>
+
+		<record id="teds_bank_mutasi_group_delete" model="res.groups">
+			<field name="category_id" ref="wtc_branch.tdm_role" />
+			<field name="name">Teds Bank Mutasi Delete</field>
+			<field name="implied_ids" eval="[(4, ref('teds_bank_mutasi_group_read'))]" />
+		</record>
+
+		<record id="teds_bank_mutasi_access_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_bank_mutasi" />
+			<field name="name">teds_bank_mutasi delete</field>
+			<field name="group_id" ref="teds_bank_mutasi_group_delete" />
+			<field name="perm_unlink">1</field>
+		</record>
+		
+		
+		
+		
+		
+		<record id="teds_import_rekening_koran_group_read" model="res.groups">
+			<field name="category_id" ref="wtc_branch.tdm_role" />
+			<field name="name">Teds Import Rekening Koran Read</field>
+			<field name="menu_access" eval="[(4, ref('teds_import_bank_mutasi_menuitem'))]" />
+		</record>
+
+		<record id="teds_import_rekening_koran_access_read" model="ir.model.access">
+			<field name="model_id" ref="model_teds_import_rekening_koran" />
+			<field name="name">teds_import_rekening_koran read</field>
+			<field name="group_id" ref="teds_import_rekening_koran_group_read" />
+			<field name="perm_read">1</field>
+		</record>
+
+		<record id="teds_import_rekening_koran_group_update" model="res.groups">
+			<field name="category_id" ref="wtc_branch.tdm_role" />
+			<field name="name">Teds Import Rekening Koran Update</field>
+			<field name="implied_ids" eval="[(4, ref('teds_import_rekening_koran_group_read'))]" />
+		</record>
+
+		<record id="teds_import_rekening_koran_access_update" model="ir.model.access">
+			<field name="model_id" ref="model_teds_import_rekening_koran" />
+			<field name="name">teds_import_rekening_koran update</field>
+			<field name="group_id" ref="teds_import_rekening_koran_group_update" />
+			<field name="perm_create">1</field>
+			<field name="perm_write">1</field>
+		</record>
+
+		<record id="teds_import_rekening_koran_group_delete" model="res.groups">
+			<field name="category_id" ref="wtc_branch.tdm_role" />
+			<field name="name">Teds Import Rekening Koran Delete</field>
+			<field name="implied_ids" eval="[(4, ref('teds_import_rekening_koran_group_read'))]" />
+		</record>
+
+		<record id="teds_import_rekening_koran_access_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_import_rekening_koran" />
+			<field name="name">teds_import_rekening_koran delete</field>
+			<field name="group_id" ref="teds_import_rekening_koran_group_delete" />
+			<field name="perm_unlink">1</field>
+		</record>
+		
+		<record id="teds_import_rekening_koran_group_2_read" model="res.groups">
+			<field name="category_id" ref="wtc_branch.tdm_role" />
+			<field name="name">Teds Import Rekening Koran (Update) Read</field>
+			<field name="menu_access" eval="[(4, ref('teds_import_bank_mutasi_2_menuitem'))]" />
+		</record>
+		
+		
+		<record id="teds_bank_reconcile_group_read" model="res.groups">
+			<field name="category_id" ref="wtc_branch.tdm_role" />
+			<field name="name">Teds Bank Reconcile Read</field>
+			<field name="menu_access" eval="[(4, ref('teds_bank_reconcile_menuitem'))]" />
+		</record>
+
+		<record id="teds_bank_reconcile_access_read" model="ir.model.access">
+			<field name="model_id" ref="model_teds_bank_reconcile" />
+			<field name="name">teds_bank_reconcile read</field>
+			<field name="group_id" ref="teds_import_rekening_koran_group_read" />
+			<field name="perm_read">1</field>
+		</record>
+
+		<record id="teds_bank_reconcile_group_update" model="res.groups">
+			<field name="category_id" ref="wtc_branch.tdm_role" />
+			<field name="name">Teds Bank Reconcile Update</field>
+			<field name="implied_ids" eval="[(4, ref('teds_bank_reconcile_group_read'))]" />
+		</record>
+
+		<record id="teds_bank_reconcile_update" model="ir.model.access">
+			<field name="model_id" ref="model_teds_bank_reconcile" />
+			<field name="name">teds_bank_reconcile update</field>
+			<field name="group_id" ref="teds_bank_reconcile_group_update" />
+			<field name="perm_create">1</field>
+			<field name="perm_write">1</field>
+		</record>
+
+		<record id="teds_bank_reconcile_group_delete" model="res.groups">
+			<field name="category_id" ref="wtc_branch.tdm_role" />
+			<field name="name">Teds Bank Reconcile Delete</field>
+			<field name="implied_ids" eval="[(4, ref('teds_bank_reconcile_group_read'))]" />
+		</record>
+
+		<record id="teds_bank_reconcile_access_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_bank_reconcile" />
+			<field name="name">teds_import_rekening_koran delete</field>
+			<field name="group_id" ref="teds_bank_reconcile_group_delete" />
+			<field name="perm_unlink">1</field>
+		</record>
+		
+	<!-- Bank Reconcile Cancel -->
+		<record id="group_teds_bank_reconcile_cancel_read" model="res.groups">
+			<field name="category_id" ref="wtc_branch.tdm_role" />
+			<field name="name">Teds Bank Reconcile Cancel Read</field>
+			<field name="menu_access" eval="[(4, ref('teds_bank_reconcile_cancel_menuitem'))]" />
+		</record>
+
+		<record id="access_teds_bank_reconcile_cancel_read" model="ir.model.access">
+			<field name="model_id" ref="model_teds_bank_reconcile_cancel" />
+			<field name="name">teds_bank_reconcile_cancel read</field>
+			<field name="group_id" ref="group_teds_bank_reconcile_cancel_read" />
+			<field name="perm_read">1</field>
+		</record>
+
+		<record id="group_teds_bank_reconcile_cancel_update" model="res.groups">
+			<field name="category_id" ref="wtc_branch.tdm_role" />
+			<field name="name">Teds Bank Reconcile Cancel Update</field>
+			<field name="menu_access" eval="[(4, ref('teds_bank_reconcile_cancel_menuitem'))]"/>
+			<field name="implied_ids" eval="[(4, ref('group_teds_bank_reconcile_cancel_read'))]" />
+		</record>
+
+		<record id="access_teds_bank_reconcile_cancel_update" model="ir.model.access">
+			<field name="model_id" ref="model_teds_bank_reconcile_cancel" />
+			<field name="name">teds_bank_reconcile_cancel update</field>
+			<field name="group_id" ref="group_teds_bank_reconcile_cancel_update" />
+			<field name="perm_create">1</field>
+			<field name="perm_write">1</field>
+		</record>
+
+		<record id="group_teds_bank_reconcile_cancel_delete" model="res.groups">
+			<field name="category_id" ref="wtc_branch.tdm_role" />
+			<field name="name">Teds Bank Reconcile Cancel Delete</field>
+			<field name="menu_access" eval="[(4, ref('teds_bank_reconcile_cancel_menuitem'))]"/>
+			<field name="implied_ids" eval="[(4, ref('group_teds_bank_reconcile_cancel_read'))]" />
+		</record>
+
+		<record id="access_teds_bank_reconcile_cancel_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_bank_reconcile_cancel" />
+			<field name="name">teds_bank_reconcile_cancel delete</field>
+			<field name="group_id" ref="group_teds_bank_reconcile_cancel_delete" />
+			<field name="perm_unlink">1</field>
+		</record>
+		
+
+		<record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[
+				(4,ref('teds_bank_mutasi_group_read')),
+				(4,ref('teds_bank_mutasi_group_update')),
+				(4,ref('teds_bank_mutasi_group_delete')),
+				(4,ref('teds_import_rekening_koran_group_read')),
+				(4,ref('teds_import_rekening_koran_group_update')),
+				(4,ref('teds_import_rekening_koran_group_delete')),
+				(4,ref('teds_bank_reconcile_group_read')),
+				(4,ref('teds_bank_reconcile_group_update')),
+				(4,ref('teds_bank_reconcile_group_delete')),
+				(4,ref('group_teds_bank_reconcile_cancel_read')),
+				(4,ref('group_teds_bank_reconcile_cancel_update')),
+				(4,ref('group_teds_bank_reconcile_cancel_delete')),
+
+				]" />
+		</record>
+	</data>
+</openerp>
+

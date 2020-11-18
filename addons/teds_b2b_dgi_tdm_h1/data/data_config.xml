@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">    
+        <record id="config_dgi_b2b_tdm" model="teds.b2b.api.config">
+            <field name="name">DGI B2B TDM</field>
+            <field name="is_dgi">True</field>
+            <field name="base_url">https://hoki.honda-ku.com/api/b2b/dgi-api/v1</field>
+        </record>
+    </data>
+</openerp>    

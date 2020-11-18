@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+
+	<!-- teds_part_hotline_monitoring -->	
+		<record id="group_teds_part_hotline_monitoring_read" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Part Hotline Monitoring Read</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_part_hotline_monitoring_menuitem'))]"/>  
+		</record>
+	
+	<!-- teds_part_hotline_laporan -->	
+		<record id="group_teds_laporan_part_hotline_wizard" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Laporan Part Hotline Wizard</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_laporan_part_hotline_wizard_menu'))]"/>  
+		</record>
+
+	<!-- teds_part_hotline_cancel -->	
+		<record id="group_teds_part_hotline_cancel_read" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Part Hotline Cancel Read</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_part_hotline_cancel_menuitem'))]"/>  
+		</record>
+
+		<record id="access_teds_part_hotline_cancel_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_part_hotline_cancel"/>
+      		<field name="name">teds_part_hotline_cancel read</field> 
+      		<field name="group_id" ref="group_teds_part_hotline_cancel_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="group_teds_part_hotline_cancel_update" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Part Hotline Cancel Update</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_part_hotline_cancel_menuitem'))]"/>  
+		</record>
+
+		<record id="access_teds_part_hotline_cancel_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_part_hotline_cancel"/>
+      		<field name="name">teds_part_hotline_cancel update</field> 
+      		<field name="group_id" ref="group_teds_part_hotline_cancel_update"/>  
+      		<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field>
+		</record>
+		
+		<record id="group_teds_part_hotline_cancel_delete" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Part Hotline Cancel Delete</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_part_hotline_cancel_menuitem'))]"/>  
+		</record>
+
+		<record id="access_teds_part_hotline_cancel_delete" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_part_hotline_cancel"/>
+      		<field name="name">teds_part_hotline_cancel delete</field> 
+      		<field name="group_id" ref="group_teds_part_hotline_cancel_delete"/>  
+      		<field name="perm_unlink">1</field> 
+		</record>
+		
+	<!-- teds_part_hotline -->	
+		<record id="group_teds_part_hotline_read" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Part Hotline Read</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_part_hotline_menuitem'))]"/>  
+		</record>
+
+		<record id="access_teds_part_hotline_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_part_hotline"/>
+      		<field name="name">teds_part_hotline read</field> 
+      		<field name="group_id" ref="group_teds_part_hotline_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="access_teds_part_hotline_detail_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_part_hotline_detail"/>
+      		<field name="name">teds_part_hotline_detail read</field> 
+      		<field name="group_id" ref="group_teds_part_hotline_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+
+		<record id="access_teds_part_hotline_available_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_part_hotline_available"/>
+      		<field name="name">teds_part_hotline_available read</field> 
+      		<field name="group_id" ref="group_teds_part_hotline_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="access_teds_part_hotline_alokasi_dp_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_part_hotline_alokasi_dp"/>
+      		<field name="name">teds_part_hotline_alokasi_dp read</field> 
+      		<field name="group_id" ref="group_teds_part_hotline_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+
+		<record id="group_teds_part_hotline_update" model="res.groups">
+    		<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Part Hotline Update</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_part_hotline_menuitem'))]"/>
+	      	<field name="implied_ids" eval="[(4, ref('group_teds_part_hotline_read'))]"/>  
+		</record>
+		
+		<record id="access_teds_part_hotline_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_part_hotline"/>
+      		<field name="name">teds_part_hotline update</field> 
+      		<field name="group_id" ref="group_teds_part_hotline_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+
+		<record id="access_teds_part_hotline_detail_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_part_hotline_detail"/>
+      		<field name="name">teds_part_hotline_detail update</field> 
+      		<field name="group_id" ref="group_teds_part_hotline_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field>
+		</record>
+
+		<record id="access_teds_part_hotline_available_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_part_hotline_available"/>
+      		<field name="name">teds_part_hotline_available update</field> 
+      		<field name="group_id" ref="group_teds_part_hotline_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field>
+		</record>
+		
+		<record id="access_teds_part_hotline_alokasi_dp_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_part_hotline_alokasi_dp"/>
+      		<field name="name">teds_part_hotline_alokasi_dp update</field> 
+      		<field name="group_id" ref="group_teds_part_hotline_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field>
+		</record>
+		
+		<record id="group_teds_part_hotline_delete" model="res.groups">
+    		<field name="category_id" ref="wtc_branch.tdm_role"/>
+      		<field name="name">Part Hotline Delete</field> 
+      		<field name="menu_access" eval="[(4, ref('teds_part_hotline_menuitem'))]"/>
+      		<field name="implied_ids" eval="[(4, ref('group_teds_part_hotline_read'))]"/>  
+		</record>
+		
+		<record id="access_teds_part_hotline_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_part_hotline"/>
+      		<field name="name">teds_part_hotline delete</field> 
+      		<field name="group_id" ref="group_teds_part_hotline_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+
+		<record id="access_teds_part_hotline_detail_delete" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_part_hotline_detail"/>
+      		<field name="name">teds_part_hotline_detail delete</field> 
+      		<field name="group_id" ref="group_teds_part_hotline_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+
+		<record id="access_teds_part_hotline_available_delete" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_part_hotline_available"/>
+      		<field name="name">teds_part_hotline_available delete</field> 
+      		<field name="group_id" ref="group_teds_part_hotline_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+		
+		<record id="access_teds_part_hotline_alokasi_dp_delete" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_part_hotline_alokasi_dp"/>
+      		<field name="name">teds_part_hotline_alokasi_dp delete</field> 
+      		<field name="group_id" ref="group_teds_part_hotline_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+
+		 <record id="wtc_branch.group_sys_admin" model="res.groups">
+            <field name="implied_ids" eval="[
+                (4,ref('group_teds_part_hotline_read')),
+                (4,ref('group_teds_part_hotline_update')),
+                (4,ref('group_teds_part_hotline_delete')),
+                (4,ref('group_teds_part_hotline_monitoring_read')),
+                (4,ref('group_teds_part_hotline_cancel_read')),
+                (4,ref('group_teds_part_hotline_cancel_update')),
+                (4,ref('group_teds_part_hotline_cancel_delete')),
+
+            ]"/> 
+            </record> 
+     
+	</data>
+</openerp>

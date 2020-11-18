@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_smcus_new_accounting_report,smcus.new.accounting.report,model_smcus_new_accounting_report,account.group_account_user,1,1,1,1
+access_smcus_zhr_cash_flow,smcus.zhr.cash.flow,model_smcus_zhr_cash_flow,account.group_account_user,1,1,1,1

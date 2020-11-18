@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+		
+		<record id="journal_pembatalan_po" model="account.journal">
+            <field name="name">Journal Pembatalan Purchase Order</field>
+            <field name="code">XPO</field>
+            <field name="type">purchase_refund</field>
+        </record>
+	</data>
+</openerp>

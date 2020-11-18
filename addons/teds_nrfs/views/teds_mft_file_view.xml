@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="teds_mft_ppo_urgent_view_form_inherited" model="ir.ui.view">
+            <field name="name">teds.mft.ppo.urgent.form.inherited</field>
+            <field name="model">teds.mft.file</field>
+            <field name="inherit_id" ref="b2b_file.view_teds_mft_file_form" />
+            <field name="arch" type="xml">
+                <button name="ssu_received" position="after">
+                    <button name="mft_generate_ppo_urgent" type="object" string="PPO Urgent" class="oe_highlight" />
+                    <button name="mft_generate_nrfs" type="object" string="NRFS" class="oe_highlight" />
+                </button>
+            </field>
+        </record>
+    </data>
+</openerp>

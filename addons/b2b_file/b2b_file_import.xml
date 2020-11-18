@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		
+		<record model="ir.ui.view" id="view_wizard_b2b_import">
+            <field name="name">Import B2B</field>
+            <field name="model">b2b.file.import</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form col="4" string="Import B2B" version="7.0">
+                    <group>
+                    	<field name="type"/>
+						<field name="data"/>
+					</group>
+					<footer>
+	                    <button name="import_file" string="Import" type="object" class="oe_highlight" />
+	                    or 
+	                    <button string="Cancel" class="oe_link" special="cancel" />
+	                </footer>
+                </form>
+            </field>
+        </record>
+              
+        <record model="ir.actions.act_window" id="action_export_import">
+            <field name="name">Import B2B</field>
+            <field name="res_model">b2b.file.import</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+        
+        
+    	<record model="ir.actions.act_window" id="b2b_file_import_action">
+		    <field name="name">B2B File Import</field>
+		    <field name="res_model">b2b.file.import</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">form</field>
+		    <field name="target">new</field>
+		</record>
+		<menuitem id="b2b_file_import_menuitem"  parent="wtc_dealer_menu.workshop_report_menu" sequence="8"  action="b2b_file_import_action"/>
+		
+       	
+	</data>
+</openerp>

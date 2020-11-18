@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <!-- New Type: TOP UP-->
+        <record id="purchase_order_type_part_topup" model="wtc.purchase.order.type">
+            <field name="category">Sparepart</field>
+            <field name="name">Topup</field>
+        </record>
+    </data>
+</openerp>

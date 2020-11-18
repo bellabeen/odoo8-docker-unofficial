@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+		
+		<record id="categ_unit" model="product.category">
+            <field name="name">Unit</field>
+            <field name="parent_id" ref=""/>
+            <field name="type">view</field>
+        </record>
+    
+        <record id="categ_sparepart" model="product.category">
+            <field name="name">Sparepart</field>
+            <field name="parent_id" ref=""/>
+            <field name="type">view</field>
+        </record>
+    
+        <record id="categ_umum" model="product.category">
+            <field name="name">Umum</field>
+            <field name="parent_id" ref=""/>
+            <field name="type">view</field>
+        </record>
+    
+        <record id="categ_extras" model="product.category">
+            <field name="name">Extras</field>
+            <field name="parent_id" ref=""/>
+            <field name="type">view</field>
+        </record>
+    
+        <record id="categ_service" model="product.category">
+            <field name="name">Service</field>
+            <field name="parent_id" ref=""/>
+            <field name="type">view</field>
+        </record>
+    
+        <record id="categ_unit_cub" model="product.category">
+            <field name="name">CUB</field>
+            <field name="parent_id" ref="categ_unit"/>
+            <field name="type">view</field>
+        </record>
+    
+        <record id="categ_unit_at" model="product.category">
+            <field name="name">AT</field>
+            <field name="parent_id" ref="categ_unit"/>
+            <field name="type">view</field>
+        </record>
+    
+        <record id="categ_unit_sport" model="product.category">
+            <field name="name">SPORT</field>
+            <field name="parent_id" ref="categ_unit"/>
+            <field name="type">view</field>
+        </record>
+    
+        <record id="categ_sparepart_accec" model="product.category">
+            <field name="name">ACCEC</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_ahm" model="product.category">
+            <field name="name">AHM</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_batt" model="product.category">
+            <field name="name">BATT</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_bldrv" model="product.category">
+            <field name="name">BLDRV</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_brake" model="product.category">
+            <field name="name">BRAKE</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_brng" model="product.category">
+            <field name="name">BRNG</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_brng2" model="product.category">
+            <field name="name">BRNG2</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_brng3" model="product.category">
+            <field name="name">BRNG3</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_cable" model="product.category">
+            <field name="name">CABLE</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_cckit" model="product.category">
+            <field name="name">CCKIT</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_cdkgp" model="product.category">
+            <field name="name">CDKGP</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_cdkit" model="product.category">
+            <field name="name">CDKIT</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_chain" model="product.category">
+            <field name="name">CHAIN</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_elect" model="product.category">
+            <field name="name">ELECT</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_gmo" model="product.category">
+            <field name="name">GMO</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_gst" model="product.category">
+            <field name="name">GST</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_hplas" model="product.category">
+            <field name="name">HPLAS</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_impor" model="product.category">
+            <field name="name">IMPOR</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_muf" model="product.category">
+            <field name="name">MUF</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_oil" model="product.category">
+            <field name="name">OIL</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_pacc" model="product.category">
+            <field name="name">PACC</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_plast" model="product.category">
+            <field name="name">PLAST</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_rbr" model="product.category">
+            <field name="name">RBR</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_rimwh" model="product.category">
+            <field name="name">RIMWH</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_rskit" model="product.category">
+            <field name="name">RSKIT</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_sd" model="product.category">
+            <field name="name">SD</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_shock" model="product.category">
+            <field name="name">SHOCK</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_splug" model="product.category">
+            <field name="name">SPLUG</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_splur" model="product.category">
+            <field name="name">SPLUR</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_str" model="product.category">
+            <field name="name">STR</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_tbhgp" model="product.category">
+            <field name="name">TBHGP</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_tbvl" model="product.category">
+            <field name="name">TBVL</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_tire" model="product.category">
+            <field name="name">TIRE</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_tire1" model="product.category">
+            <field name="name">TIRE1</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_tl" model="product.category">
+            <field name="name">TL</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_umum_umum" model="product.category">
+            <field name="name">UMUM</field>
+            <field name="parent_id" ref="categ_umum"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_umum_direct_gift" model="product.category">
+            <field name="name">DIRECT GIFT</field>
+            <field name="parent_id" ref="categ_umum"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_service_cla" model="product.category">
+            <field name="name">CLA</field>
+            <field name="parent_id" ref="categ_service"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_service_hr" model="product.category">
+            <field name="name">HR</field>
+            <field name="parent_id" ref="categ_service"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_service_kpb" model="product.category">
+            <field name="name">KPB</field>
+            <field name="parent_id" ref="categ_service"/>
+            <field name="type">view</field>
+        </record>
+    
+        <record id="categ_service_lr" model="product.category">
+            <field name="name">LR</field>
+            <field name="parent_id" ref="categ_service"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_service_qs" model="product.category">
+            <field name="name">QS</field>
+            <field name="parent_id" ref="categ_service"/>
+            <field name="type">view</field>
+        </record>
+    
+        <record id="categ_extras_tools" model="product.category">
+            <field name="name">Tools</field>
+            <field name="parent_id" ref="categ_extras"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_extras_spion" model="product.category">
+            <field name="name">Spion</field>
+            <field name="parent_id" ref="categ_extras"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_extras_buku_service" model="product.category">
+            <field name="name">Buku Service</field>
+            <field name="parent_id" ref="categ_extras"/>
+            <field name="type">normal</field>
+        </record>
+        
+        <record id="categ_extras_buku_manual" model="product.category">
+            <field name="name">Buku Manual</field>
+            <field name="parent_id" ref="categ_extras"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_extras_battery" model="product.category">
+            <field name="name">Battery</field>
+            <field name="parent_id" ref="categ_extras"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_extras_helm" model="product.category">
+            <field name="name">Helm</field>
+            <field name="parent_id" ref="categ_extras"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_unit_cub_low_end" model="product.category">
+            <field name="name">CUB LOW END</field>
+            <field name="parent_id" ref="categ_unit_cub"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_unit_cub_mid_end" model="product.category">
+            <field name="name">CUB MID END</field>
+            <field name="parent_id" ref="categ_unit_cub"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_unit_cub_high_end" model="product.category">
+            <field name="name">CUB HIGH END</field>
+            <field name="parent_id" ref="categ_unit_cub"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_unit_at_low_end" model="product.category">
+            <field name="name">AT LOW END</field>
+            <field name="parent_id" ref="categ_unit_at"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_unit_at_mid_end" model="product.category">
+            <field name="name">AT MID END</field>
+            <field name="parent_id" ref="categ_unit_at"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_unit_at_high_end" model="product.category">
+            <field name="name">AT HIGH END</field>
+            <field name="parent_id" ref="categ_unit_at"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_unit_at_cbu" model="product.category">
+            <field name="name">AT CBU</field>
+            <field name="parent_id" ref="categ_unit_at"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_unit_sport_low_end" model="product.category">
+            <field name="name">SPORT LOW END</field>
+            <field name="parent_id" ref="categ_unit_sport"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_unit_sport_mid_end" model="product.category">
+            <field name="name">SPORT MID END</field>
+            <field name="parent_id" ref="categ_unit_sport"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_unit_sport_high_end" model="product.category">
+            <field name="name">SPORT HIGH END</field>
+            <field name="parent_id" ref="categ_unit_sport"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_unit_sport_cbu" model="product.category">
+            <field name="name">SPORT CBU</field>
+            <field name="parent_id" ref="categ_unit_sport"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_service_kpb_1" model="product.category">
+            <field name="name">KPB1</field>
+            <field name="parent_id" ref="categ_service_kpb"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_service_kpb_2" model="product.category">
+            <field name="name">KPB2</field>
+            <field name="parent_id" ref="categ_service_kpb"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_service_kpb_3" model="product.category">
+            <field name="name">KPB3</field>
+            <field name="parent_id" ref="categ_service_kpb"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_service_kpb_4" model="product.category">
+            <field name="name">KPB4</field>
+            <field name="parent_id" ref="categ_service_kpb"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_service_qs_cs" model="product.category">
+            <field name="name">CS</field>
+            <field name="parent_id" ref="categ_service_qs"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_service_qs_ls" model="product.category">
+            <field name="name">LS</field>
+            <field name="parent_id" ref="categ_service_qs"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_service_qs_or+" model="product.category">
+            <field name="name">OR+</field>
+            <field name="parent_id" ref="categ_service_qs"/>
+            <field name="type">normal</field>
+        </record>
+        
+        <record id="categ_sparepart_pskit" model="product.category">
+            <field name="name">PSKIT</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+        
+        <record id="categ_sparepart_cool" model="product.category">
+            <field name="name">COOL</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+        
+        <record id="categ_sparepart_disk" model="product.category">
+            <field name="name">DISK</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+        
+        <record id="categ_sparepart_oseal" model="product.category">
+            <field name="name">OSEAL</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+        
+        <record id="categ_sparepart_pstn" model="product.category">
+            <field name="name">PSTN</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+        
+        <record id="categ_sparepart_rpist" model="product.category">
+            <field name="name">RPIST</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+        
+        <record id="categ_sparepart_tb1" model="product.category">
+            <field name="name">TB1</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+		
+        <record id="categ_sparepart_helm" model="product.category">
+            <field name="name">Helm</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+        
+        <record id="categ_sparepart_crkit" model="product.category">
+            <field name="name">CRKIT</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_dihvl" model="product.category">
+            <field name="name">DIHVL</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_elect" model="product.category">
+            <field name="name">ELECT</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_ephvl" model="product.category">
+            <field name="name">EPHVL</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_fluid" model="product.category">
+            <field name="name">FLUID</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_gmo" model="product.category">
+            <field name="name">GMO</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_gst" model="product.category">
+            <field name="name">GST</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_helm" model="product.category">
+            <field name="name">HELM</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_hplas" model="product.category">
+            <field name="name">HPLAS</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_impor" model="product.category">
+            <field name="name">IMPOR</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_lgs" model="product.category">
+            <field name="name">LGS</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_muf" model="product.category">
+            <field name="name">MUF</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_oil" model="product.category">
+            <field name="name">OIL</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_oli" model="product.category">
+            <field name="name">OLI</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_oseal" model="product.category">
+            <field name="name">OSEAL</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_other" model="product.category">
+            <field name="name">OTHER</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_pacc" model="product.category">
+            <field name="name">PACC</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_paint" model="product.category">
+            <field name="name">PAINT</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_plast" model="product.category">
+            <field name="name">PLAST</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_pskit" model="product.category">
+            <field name="name">PSKIT</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_pstn" model="product.category">
+            <field name="name">PSTN</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_rbr" model="product.category">
+            <field name="name">RBR</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_rimwh" model="product.category">
+            <field name="name">RIMWH</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_rphvl" model="product.category">
+            <field name="name">RPHVL</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_rpist" model="product.category">
+            <field name="name">RPIST</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_rskit" model="product.category">
+            <field name="name">RSKIT</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_rwhvl" model="product.category">
+            <field name="name">RWHVL</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_saoil" model="product.category">
+            <field name="name">SAOIL</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_sd" model="product.category">
+            <field name="name">SD</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_sdn" model="product.category">
+            <field name="name">SDN</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_shock" model="product.category">
+            <field name="name">SHOCK</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_spgui" model="product.category">
+            <field name="name">SPGUI</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_splug" model="product.category">
+            <field name="name">SPLUG</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_splur" model="product.category">
+            <field name="name">SPLUR</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_spoke" model="product.category">
+            <field name="name">SPOKE</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_str" model="product.category">
+            <field name="name">STR</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_tas" model="product.category">
+            <field name="name">TAS</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_tb1" model="product.category">
+            <field name="name">TB1</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_tbhgp" model="product.category">
+            <field name="name">TBHGP</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_tbvl" model="product.category">
+            <field name="name">TBVL</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_tire" model="product.category">
+            <field name="name">TIRE</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_tire1" model="product.category">
+            <field name="name">TIRE1</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_tl" model="product.category">
+            <field name="name">TL</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_valve" model="product.category">
+            <field name="name">VALVE</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_nonhgp-federal" model="product.category">
+            <field name="name">NONHGP-FEDERAL</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_nonhgp-aspira" model="product.category">
+            <field name="name">NONHGP-ASPIRA</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_nonhgp-blaze" model="product.category">
+            <field name="name">NONHGP-BLAZE</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+    
+        <record id="categ_sparepart_nonhgp-others" model="product.category">
+            <field name="name">NONHGP-OTHERS</field>
+            <field name="parent_id" ref="categ_sparepart"/>
+            <field name="type">normal</field>
+        </record>
+	</data>
+</openerp>

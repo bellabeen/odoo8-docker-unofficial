@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+		<record model="account.account.type" id="data_account_type_allowance">
+			<field name="name">Allowance</field>
+			<field name="code">allowance</field>
+			<field name="close_method">balance</field>
+		</record>
+		<record model="account.account.type" id="data_account_type_investment">
+			<field name="name">Investment</field>
+			<field name="code">investment</field>
+			<field name="close_method">balance</field>
+		</record>
+		<record model="account.account.type" id="data_account_type_intercompany">
+			<field name="name">Intercompany</field>
+			<field name="code">intercompany</field>
+			<field name="close_method">none</field>
+		</record>
+		<record model="account.account.type" id="data_account_type_accrued_expenses">
+			<field name="name">Accrued Expenses</field>
+			<field name="code">acc_expenses</field>
+			<field name="close_method">balance</field>
+		</record>
+		<record model="account.account.type" id="data_account_type_deferred_income">
+			<field name="name">Deferred Income</field>
+			<field name="code">def_income</field>
+			<field name="close_method">balance</field>
+		</record>
+		<record model="account.account.type" id="data_account_type_allow_write_off">
+			<field name="name">Allow Write Off</field>
+			<field name="code">write_off</field>
+			<field name="close_method">balance</field>
+		</record>
+		<record model="account.account.type" id="data_account_type_other">
+			<field name="name">Other</field>
+			<field name="code">other</field>
+			<field name="close_method">balance</field>
+		</record>
+		<record model="account.account.type" id="data_account_type_transfer_bank">
+			<field name="name">Transfer Bank</field>
+			<field name="code">transfer</field>
+			<field name="close_method">balance</field>
+		</record>
+		<record model="account.account.type" id="data_account_type_time_deposits">
+			<field name="name">Time Deposits</field>
+			<field name="code">deposits</field>
+			<field name="close_method">balance</field>
+		</record>
+    </data>
+</openerp>

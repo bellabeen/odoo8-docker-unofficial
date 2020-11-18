@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+		<record id="view_teds_api_button_penerimaan_stnk_form" model="ir.ui.view">
+            <field name="name">teds.api.button.penerimaann.stnk.form</field>
+            <field name="model">teds.api.button</field>
+            <field name="inherit_id" ref="teds_api_configuration.view_teds_api_button_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/header[@name='header_button']" position="inside">
+                    <button name="api_dms_penerimaan_stnk" type="object" string="Auto Penerimaann STNK"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_teds_api_button_penerimaann_bpkb_form" model="ir.ui.view">
+            <field name="name">teds.api.button.penerimaan.bpkb.form</field>
+            <field name="model">teds.api.button</field>
+            <field name="inherit_id" ref="teds_api_configuration.view_teds_api_button_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/header[@name='header_button']" position="inside">
+                    <button name="api_dms_penerimaan_bpkb" type="object" string="Auto Penerimaann BPKB"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_teds_api_button_penyerahan_stnk_form" model="ir.ui.view">
+            <field name="name">teds.api.button.penyerahan.stnk.form</field>
+            <field name="model">teds.api.button</field>
+            <field name="inherit_id" ref="teds_api_configuration.view_teds_api_button_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/header[@name='header_button']" position="inside">
+                    <button name="api_dms_penyerahan_stnk" type="object" string="Auto Penyerahan STNK"/>
+                </xpath>
+            </field>
+        </record>
+        
+        <record id="view_teds_api_button_penyerahan_bpkb_form" model="ir.ui.view">
+            <field name="name">teds.api.button.penyerahan.bpkb.form</field>
+            <field name="model">teds.api.button</field>
+            <field name="inherit_id" ref="teds_api_configuration.view_teds_api_button_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/header[@name='header_button']" position="inside">
+                    <button name="api_dms_penyerahan_bpkb" type="object" string="Auto Penyerahan BPKB"/>
+                </xpath>
+            </field>
+        </record>
+</data>
+</openerp>

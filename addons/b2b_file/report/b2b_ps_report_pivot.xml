@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+	<data>
+		<record id="view_b2b_file_ps_report_pivot" model="ir.ui.view">
+            <field name="name">file.ps.report.pivot</field>
+		    <field name="model">b2b.file.ps.report.pivot</field>
+		    <field name="arch" type="xml">
+                <graph string="Report PS Pivot" type="pivot">
+                    <field name="kode_ps" type="row"/>
+		            <field name="tanggal_ps" interval="month" type="col"/>
+		            <field name="qty_po" type="measure"/>
+		            <field name="qty_ps" type="measure"/>
+                </graph>
+            </field>
+        </record>
+
+		
+
+<!-- 	    <record id="view_sms_report_sentitems_graph" model="ir.ui.view">
+	    	<field name="name">sms.report.sentitems.graph</field>
+	     	<field name="model">sms.report.sentitems</field>
+	     	<field name="arch" type="xml">
+	        	<graph string="Sentitems Analysis">
+	            	<field name="partner_id" type="row"/>
+	             	<field name="jumlah_operator" type="measure"/>
+	             	<field name="jumlah_status" type="measure"/>
+	         	</graph>
+	     	</field>
+		</record>
+ -->
+		<record id="view_b2b_file_ps_report_pivot_search" model="ir.ui.view">
+	        <field name="name">b2b.file.ps.report.pivot.search</field>
+	        <field name="model">b2b.file.ps.report.pivot</field>
+	        <field name="arch" type="xml">
+	            <search string="Report PS">
+	                <filter name="packed at ahm" string="Packed at AHM" domain="[('status','=','packed at ahm')]"/>
+	                <filter name="on intransit" string="On Intransit" domain="[('status','=','on intransit')]"/>
+	                <filter name="received by md" string="Received by MD" domain="[('status','=','received by md')]"/>
+	                <field name="kode_ps"/>
+	                <field name="kode_sparepart"/>
+	                <field name="tanggal_ps"/>
+	             
+	                <group expand="1" string="Group By">
+	                    <filter string="Tanggal PS" name="tanggal_ps" context="{'group_by':'tanggal_ps'}"/>
+	                    <filter string="Status" context="{'group_by':'status'}" />
+	       				<filter string="Qty PS" context="{'group_by':'detail_ps'}" />
+	       				<filter string="Qty PO" context="{'group_by':'detail_po'}" />
+	                </group>
+	            </search>
+	        </field>
+    	</record>
+
+	 	<record id="action_b2b_file_ps_report_pivot" model="ir.actions.act_window">
+	        <field name="name">Report File PS Analysis</field>
+	        <field name="res_model">b2b.file.ps.report.pivot</field>
+	        <field name="view_type">form</field>
+	        <field name="view_mode">graph</field>
+	        <field name="view_id"/>
+	    </record>
+
+		<menuitem id="ps_report_pivot_submenu" parent="wtc_dealer_menu.workshop_report_menu" action="action_b2b_file_ps_report_pivot" sequence="107"/> 		
+	</data>
+	        
+</openerp>

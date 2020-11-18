@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+     
+	<record id="view_faktur_pajak_gabungan_tree" model="ir.ui.view">
+            <field name="name">wtc.faktur.pajak.gabungan.tree</field>
+            <field name="model">wtc.faktur.pajak.gabungan</field>
+            <field name="priority">2</field>
+            <field name="arch" type="xml">
+                <tree string="Faktur Pajak Gabungan">   
+                	<field name="name"/>                
+                    <field name="branch_id"/>
+                    <field name="division"/>
+                    <field name="date"/>
+                    <field name="faktur_pajak_id"/>
+                    <field name="customer_id"/>
+                    <field name="start_date"/>
+                    <field name="end_date"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+     </record>
+		 <record id="view_faktur_pajak_gabungan_search" model="ir.ui.view">
+            <field name="name">wtc.faktur.pajak.gabungan.search</field>
+            <field name="model">wtc.faktur.pajak.gabungan</field>
+            <field name="arch" type="xml">
+                <search string="Search Faktur Pajak Gabungan">
+                	<field name='name'/>
+                    <field name="branch_id"/>
+                    <field name="division"/>
+                    <field name="date"/>
+                    <field name="faktur_pajak_id"/>
+                    <field name="customer_id"/>
+                </search>
+            </field>
+        </record> 	
+	<record id="wtc_faktur_pajak_gabungan_form" model="ir.ui.view">
+            <field name="name">wtc.faktur.pajak.gabungan.form</field>
+            <field name="model">wtc.faktur.pajak.gabungan</field>            
+            <field name="arch" type="xml">
+                <form string="Faktur Pajak Gabungan"  >
+                
+                <header>
+                	
+                	 <button name="action_generate" groups='wtc_faktur_pajak.group_wtc_faktur_pajak_gabungan_generate' attrs="{'invisible':[('pajak_gabungan_line','&lt;&gt;',[])]}" string="Generate" class="oe_highlight" type="object"/>
+                	 <button name="action_confirmed" groups='wtc_faktur_pajak.group_wtc_faktur_pajak_gabungan_confirm' states="draft" string="Confirm" class="oe_highlight" type="object" confirm="Apa anda yakin ingin menggabungkan transaksi ini ?"/>
+                	 
+                	 <button name="print_report_pdf" groups='wtc_faktur_pajak.group_wtc_faktur_pajak_out_print' string="Print" type="object" class="oe_highlight"/>                   
+                	 <field name="state" widget="statusbar" statusbar_visible="draft,confirmed" />
+                	 
+                </header>
+                <sheet>
+                   		<div class="oe_title">                      
+		       				<h1>
+		       					<label string="Faktur Pajak Gabungan"/>    
+					            <field name="name" readonly="1" class="oe_inline"/>
+		    			    </h1>
+	                    </div>
+	                    <group>
+	                    	<group>
+	                    		<field name="branch_id" options="{'no_create': True,'no_open': True}" required="1" attrs="{'readonly': [('pajak_gabungan_line','&lt;&gt;',[])]}"/>
+	                    	</group>
+	                   		<group>
+								<field name="division" required="1" attrs="{'readonly': [('pajak_gabungan_line','&lt;&gt;',[])]}"/>		
+			                 </group>
+			                <group>
+			                	<field name="faktur_pajak_id" options="{'no_create': True,'no_open': True}" required="1" attrs="{'readonly': [('state','!=','draft')]}"/>
+	                    		<label for="start_date" />
+	                    		<div>
+	                    			<field name="start_date" class="oe_inline" required="1" attrs="{'readonly': [('pajak_gabungan_line','&lt;&gt;',[])]}"/>
+	                    			<label string="s/d" class="oe_inline"/>
+	                    			<field name="end_date" class="oe_inline" required="1" attrs="{'readonly': [('pajak_gabungan_line','&lt;&gt;',[])]}"></field>
+	                    		</div>
+	                    		<field name="date_pajak" required='1' attrs="{'readonly': [('state','!=','draft')]}"/>                	
+			                </group>
+			                <group>
+			                	<field name="date"/>
+			                	<field name="customer_id" options="{'no_create': True,'no_open': True}" required="1" attrs="{'readonly': [('pajak_gabungan_line','&lt;&gt;',[])]}"/>
+	                    		<field name="remark" invisible='1'/>
+			                </group>			                
+		                 </group>           		                
+		                  <notebook> 
+	                  		<page string='Transactions'>
+			                	<field name="pajak_gabungan_line" attrs="{'readonly': [('state','!=','draft')]}">                    			
+		                    		<tree editable="bottom" create="0">
+		                    			<field name="name" />
+		                    			<field name="date"/>
+		                    			<field name="total_amount"/>
+		                    			<field name="untaxed_amount"/>
+		                    			<field name="tax_amount"/>
+		                    		</tree>                 		
+			                    </field>		                  		                  		
+		                  	</page>
+							<page string="Audit Trail">
+								<group>
+									<group>
+										<field name="create_uid" readonly="1"></field>
+										<field name="create_date" readonly="1"></field>
+										<field name="confirm_uid" readonly="1"></field>
+										<field name="confirm_date" readonly="1"></field>
+									</group>
+									<group>							
+										<field name="write_uid" readonly="1"></field>
+										<field name="write_date" readonly="1"></field>
+									</group>
+								</group>
+							</page>		                 
+		            		</notebook>
+                	</sheet>   	                    
+                </form>
+            </field>
+        </record>
+        
+    	<record model="ir.actions.act_window" id="wtc_faktur_pajak_gabungan_action">
+		    <field name="name">Faktur Pajak Gabungan</field>
+		    <field name="res_model">wtc.faktur.pajak.gabungan</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		</record>
+		
+		
+		
+		<menuitem action="wtc_faktur_pajak_gabungan_action" sequence="300" id="menu_wtc_faktur_pajak_gabungan2" parent="wtc_dealer_menu.backoffice_tax_menu" />
+
+		<report 
+            string="Faktur Pajak Gabungan" 
+            id="menu_report_faktur_pajak_gabungan" 
+            model="wtc.faktur.pajak.gabungan" 
+            report_type="qweb-pdf"
+            name="wtc_faktur_pajak.wtc_faktur_pajak_gabungan_report" 
+            file="wtc_faktur_pajak.wtc_faktur_pajak_gabungan_report" 
+            menu="False"/>
+
+       	
+	</data>
+</openerp>

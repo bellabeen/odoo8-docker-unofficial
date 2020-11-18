@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+	
+		<!-- Purchase Order RFA -->
+
+		<record id="group_purchase_order_rfa" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Purchase Order RFA</field>
+            <field name="implied_ids" eval="[(4, ref('group_purchase_order_read'))]"/>
+        </record>
+        
+        <record id="access_purchase_order_rfa" model="ir.model.access">
+            <field name="model_id" ref="purchase.model_purchase_order"/>
+            <field name="name">purchase_order_rfa update</field>
+            <field name="group_id" ref="group_purchase_order_rfa"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_purchase_order_approval_line_rfa" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">purchase_order_approval_line_rfa write</field>
+            <field name="group_id" ref="group_purchase_order_rfa"/>
+            <field name="perm_create">1</field>
+        </record>
+        
+        <!-- Purchase Order Cancel Approval -->
+
+		<record id="group_purchase_order_cancel_approval" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Purchase Order Cancel Approval</field>
+            <field name="implied_ids" eval="[(4, ref('group_purchase_order_read'))]"/>
+        </record>
+        
+        <record id="access_purchase_order_cancel_approval" model="ir.model.access">
+            <field name="model_id" ref="purchase.model_purchase_order"/>
+            <field name="name">purchase_order_cancel_approval update</field>
+            <field name="group_id" ref="group_purchase_order_cancel_approval"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_purchase_order_approval_line_cancel" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">purchase_order_approval_line_cancel write</field>
+            <field name="group_id" ref="group_purchase_order_cancel_approval"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <!-- Purchase Order Approve -->
+
+		<record id="group_purchase_order_approve" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Purchase Order Approve</field>
+            <field name="implied_ids" eval="[(4, ref('group_purchase_order_read'))]"/>
+        </record>
+        
+        <record id="access_purchase_order_approve" model="ir.model.access">
+            <field name="model_id" ref="purchase.model_purchase_order"/>
+            <field name="name">purchase_order_approve update</field>
+            <field name="group_id" ref="group_purchase_order_approve"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_purchase_order_invoice_approve" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice"/>
+            <field name="name">purchase_order_invoice_approve write</field>
+            <field name="group_id" ref="group_purchase_order_approve"/>
+            <field name="perm_create">1</field>
+        </record>
+        
+        <record id="access_purchase_order_picking_approve" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_picking"/>
+            <field name="name">purchase_order_picking_approve write</field>
+            <field name="group_id" ref="group_purchase_order_approve"/>
+            <field name="perm_create">1</field>
+        </record>
+        
+        <!-- Purchase Order Cancel -->
+
+		<record id="group_purchase_order_cancel" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Purchase Order Cancel</field>
+            <field name="implied_ids" eval="[(4, ref('group_purchase_order_read'))]"/>
+        </record>
+        
+        <record id="access_purchase_order_cancel" model="ir.model.access">
+            <field name="model_id" ref="purchase.model_purchase_order"/>
+            <field name="name">purchase_order_cancel update</field>
+            <field name="group_id" ref="group_purchase_order_cancel"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_purchase_order_invoice_cancel" model="ir.model.access">
+            <field name="model_id" ref="purchase.model_purchase_order"/>
+            <field name="name">purchase_order_invoice_cancel write</field>
+            <field name="group_id" ref="group_purchase_order_cancel"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_purchase_order_picking_cancel" model="ir.model.access">
+            <field name="model_id" ref="purchase.model_purchase_order"/>
+            <field name="name">purchase_order_picking_cancel write</field>
+            <field name="group_id" ref="group_purchase_order_cancel"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <!-- Purchase Order Close Order -->
+
+		<record id="group_purchase_order_close_order" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Purchase Order Close Order</field>
+            <field name="implied_ids" eval="[(4, ref('group_purchase_order_read'))]"/>
+        </record>
+        
+        <record id="access_purchase_order_close_order" model="ir.model.access">
+            <field name="model_id" ref="purchase.model_purchase_order"/>
+            <field name="name">purchase_order_close_order update</field>
+            <field name="group_id" ref="group_purchase_order_close_order"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_purchase_order_invoice_close_order" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice"/>
+            <field name="name">purchase_order_invoice_close_order write</field>
+            <field name="group_id" ref="group_purchase_order_close_order"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_purchase_order_picking_close_order" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_picking"/>
+            <field name="name">purchase_order_picking_close_order write</field>
+            <field name="group_id" ref="group_purchase_order_close_order"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <!-- Purchase Order Print -->
+
+		<record id="group_purchase_order_print" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Purchase Order Print</field>
+            <field name="implied_ids" eval="[(4, ref('group_purchase_order_read'))]"/>
+        </record>
+        
+        
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[(4,ref('group_purchase_order_rfa')),
+				(4,ref('group_purchase_order_cancel_approval')),
+				(4,ref('group_purchase_order_approve')),
+				(4,ref('group_purchase_order_cancel')),
+				(4,ref('group_purchase_order_close_order')),
+				(4,ref('group_purchase_order_print')),
+				]">
+			</field>
+		</record>
+	
+	</data>
+</openerp>

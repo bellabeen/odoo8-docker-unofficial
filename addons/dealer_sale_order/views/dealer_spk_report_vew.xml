@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- vim:fdn=3:
+-->
+<openerp>
+    <data>
+        <template id="assets_backend" name="dealer_spk" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/dealer_sale_order/static/src/css/dealer_spk_report.css"/>
+                <script type="text/javascript" src="/dealer_sale_order/static/src/js/dealer_spk_report.js"></script>
+            </xpath>
+        </template>
+    </data>
+</openerp>

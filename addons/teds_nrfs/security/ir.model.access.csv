@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_all_teds_nrfs_master_gejala,access_all_teds_nrfs_master_gejala,model_teds_nrfs_master_gejala,,1,0,0,0
+access_all_teds_nrfs_master_penyebab,access_all_teds_nrfs_master_penyebab,model_teds_nrfs_master_penyebab,,1,0,0,0
+access_all_teds_nrfs_master_penanganan_unit,access_all_teds_nrfs_master_penanganan_unit,model_teds_nrfs_master_penanganan_unit,,1,0,0,0
+access_all_teds_nrfs,access_all_teds_nrfs,model_teds_nrfs,,1,0,0,0
+access_all_teds_nrfs_line,access_all_teds_nrfs_line,model_teds_nrfs_line,,1,0,0,0
+access_all_teds_nrfs_mft_history,access_all_teds_nrfs_mft_history,model_teds_nrfs_mft_history,,1,0,0,0
+access_all_teds_nrfs_line_stock,access_all_teds_nrfs_line_stock,model_teds_nrfs_line_stock,,1,0,0,0
+access_all_teds_nrfs_approval,access_all_teds_nrfs_approval,model_teds_nrfs_approval,,1,0,0,0

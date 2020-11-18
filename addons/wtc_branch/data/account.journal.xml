@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+
+    
+        <record id="journal_purchase_unit" model="account.journal">
+            <field name="code">PU</field>
+            <field name="type">purchase</field>
+            <field name="name">Journal Purchase Unit</field>
+            <field name="default_debit_account_id" ref=""/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_21210101"/>
+        </record>
+    
+        <record id="journal_purchase_sparepart" model="account.journal">
+            <field name="code">PS</field>
+            <field name="type">purchase</field>
+            <field name="name">Journal Purchase Sparepart</field>
+            <field name="default_debit_account_id" ref=""/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_212102"/>
+        </record>
+    
+        <record id="journal_purchase_umum" model="account.journal">
+            <field name="code">PG</field>
+            <field name="type">purchase</field>
+            <field name="name">Journal Purchase Umum</field>
+            <field name="default_debit_account_id" ref=""/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_21629906"/>
+        </record>
+    
+        <record id="journal_blind_bonus_beli" model="account.journal">
+            <field name="code">BB</field>
+            <field name="type">sale</field>
+            <field name="name">Journal Blind Bonus Beli</field>
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11319912"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_51119904"/>
+        </record>
+    
+        <record id="journal_pelunasan_dp" model="account.journal">
+            <field name="code">DP</field>
+            <field name="type">sale</field>
+            <field name="name">Journal Pelunasan DP</field>
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11210103"/>
+            <field name="default_credit_account_id" ref=""/>
+        </record>
+    
+        <record id="journal_pelunasan_so" model="account.journal">
+            <field name="code">SL</field>
+            <field name="type">sale</field>
+            <field name="name">Journal Pelunasan SO</field>
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11210101"/>
+            <field name="default_credit_account_id" ref=""/>
+        </record>
+    
+        <record id="journal_ps_finco" model="account.journal">
+            <field name="code">SF</field>
+            <field name="type">sale</field>
+            <field name="name">Journal PS Finco</field>
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11319903"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_51119906"/>
+        </record>
+    
+        <record id="journal_ps_md" model="account.journal">
+            <field name="code">SM</field>
+            <field name="type">sale</field>
+            <field name="name">Journal PS MD</field>
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11319902"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_51119906"/>
+        </record>
+    
+        <record id="journal_subsidi_barang_finco" model="account.journal">
+            <field name="code">BF</field>
+            <field name="type">sale</field>
+            <field name="name">Journal Subsidi Barang Finco</field>
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11319904"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_51119902"/>
+        </record>
+    
+        <record id="journal_hc" model="account.journal">
+            <field name="code">HC</field>
+            <field name="type">purchase</field>
+            <field name="name">Journal Hutang Komisi</field>
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_60150301"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_21519902"/>
+        </record>
+    
+        <record id="journal_incentive_finco" model="account.journal">
+            <field name="code">IN</field>
+            <field name="type">sale</field>
+            <field name="name">Journal Incentive Finco</field>
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11319905"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_79919903"/>
+        </record>
+    
+        <record id="journal_wo_reg" model="account.journal">
+            <field name="code">WR</field>
+            <field name="type">sale</field>
+            <field name="name">Journal WO Reguler</field>
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11210201"/>
+            <field name="default_credit_account_id" ref=""/>
+        </record>
+    
+        <record id="journal_wo_kpb" model="account.journal">
+            <field name="code">WK</field>
+            <field name="type">sale</field>
+            <field name="name">Journal WO KPB</field>
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11210202"/>
+            <field name="default_credit_account_id" ref=""/>
+        </record>
+    
+        <record id="journal_wo_jr" model="account.journal">
+            <field name="code">WJ</field>
+            <field name="type">sale</field>
+            <field name="name">Journal WO JR</field>
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11210204"/>
+            <field name="default_credit_account_id" ref=""/>
+        </record>
+    
+        <record id="journal_wo_claim" model="account.journal">
+            <field name="code">WC</field>
+            <field name="type">sale</field>
+            <field name="name">Journal WO Claim</field>
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11210203"/>
+            <field name="default_credit_account_id" ref=""/>
+        </record>
+    
+        <record id="journal_collecting_kpb" model="account.journal">
+            <field name="code">CK</field>
+            <field name="type">sale</field>
+            <field name="name">Journal Collecting KPB</field>
+            <field name="default_debit_account_id" ref=""/>
+            <field name="default_credit_account_id" ref=""/>
+        </record>
+    
+        <record id="journal_pajak_progressive" model="account.journal">
+            <field name="code">PP</field>
+            <field name="type">sale</field>
+            <field name="name">Journal Pajak Progressive</field>
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11210102"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_41110102"/>
+        </record>
+    
+        <record id="journal_bbn_jual" model="account.journal">
+            <field name="code">BJ</field>
+            <field name="type">sale</field>
+            <field name="name">Journal BBN Jual</field>
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11210102"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_41110102"/>
+        </record>
+    
+        <record id="journal_bbn_beli" model="account.journal">
+            <field name="code">BN</field>
+            <field name="type">purchase</field>
+            <field name="name">Journal BBN Beli</field>
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_51110102"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_21210301"/>
+        </record>
+    
+        <record id="journal_payment_request" model="account.journal">
+            <field name="code">PR</field>
+            <field name="type">purchase</field>
+            <field name="name">Journal Payment Request</field>
+            <field name="default_debit_account_id" ref=""/>
+            <field name="default_credit_account_id" ref=""/>
+        </record>
+    
+        <record id="journal_other_receiveable" model="account.journal">
+            <field name="code">OR</field>
+            <field name="type">sale</field>
+            <field name="name">Journal Other Receivable</field>
+            <field name="default_debit_account_id" ref=""/>
+            <field name="default_credit_account_id" ref=""/>
+        </record>
+    
+        <record id="journal_subsidi_barang_md" model="account.journal">
+            <field name="code">BM</field>
+            <field name="type">sale</field>
+            <field name="name">Journal Subsidi Barang MD</field>
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11319904"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_51119902"/>
+        </record>
+    </data>
+</openerp>

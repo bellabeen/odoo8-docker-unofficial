@@ -1,0 +1,124 @@
+id,attribute_id:id,code,name
+attribute_value_0,attribute_warna,0,00-DUMMY
+attribute_value_91,attribute_warna,91,91-CREAM NO STRIPE
+attribute_value_92,attribute_warna,92,92-BS EMULATOR
+attribute_value_93,attribute_warna,93,93-ORANGE NO STRP
+attribute_value_95,attribute_warna,95,95-PUTIH NO STRIPE
+attribute_value_96,attribute_warna,96,96-BLUE NO STRIPE
+attribute_value_98,attribute_warna,98,98-RED NO STRIPE
+attribute_value_99,attribute_warna,99,99-BLACK NO STRIPE
+attribute_value_ac,attribute_warna,AC,AC-ABU-ABU COKLAT
+attribute_value_ag,attribute_warna,AG,AG-ARMY GREEN
+attribute_value_ah,attribute_warna,AH,AH-ABU2 HITAM
+attribute_value_am,attribute_warna,AM,AM-ABUABU-HITAM RD
+attribute_value_ar,attribute_warna,AR,AR-ABU-ABU MERAH
+attribute_value_as,attribute_warna,AS,AS-ABU ABU SILVER
+attribute_value_bb,attribute_warna,BB,BB-BLACK BLUE
+attribute_value_bc,attribute_warna,BC,BC-BIRU-KREM
+attribute_value_be,attribute_warna,BE,BE-BLACK GREY
+attribute_value_bg,attribute_warna,BG,BG-BLACK GREEN
+attribute_value_bh,attribute_warna,BH,BH-BIRU HITAM
+attribute_value_bk,attribute_warna,BK,BK-BLACK
+attribute_value_bl,attribute_warna,BL,BL-BLUE
+attribute_value_bm,attribute_warna,BM,BM-BIRU MERAH
+attribute_value_bo,attribute_warna,BO,BO-BLACK ORANGE
+attribute_value_bp,attribute_warna,BP,BP-BIRU PUTIH
+attribute_value_bq,attribute_warna,BQ,BQ-BLUE
+attribute_value_br,attribute_warna,BR,BR-BLACK RED
+attribute_value_bs,attribute_warna,BS,BS-BLACK SILVER
+attribute_value_bt,attribute_warna,BT,BT-BLUE TELKOM
+attribute_value_bv,attribute_warna,BV,BV-BLACK VIOLET
+attribute_value_bw,attribute_warna,BW,BW-BROWN
+attribute_value_bx,attribute_warna,BX,BX-BLUE SILVER
+attribute_value_by,attribute_warna,BY,BY-BLACK YELLOW
+attribute_value_bz,attribute_warna,BZ,BZ-BIRU - SILVER
+attribute_value_ch,attribute_warna,CH,CH-COKLAT HITAM
+attribute_value_cp,attribute_warna,CP,CP-CHROME PLATING
+attribute_value_cr,attribute_warna,CR,CR-CREAM
+attribute_value_cs,attribute_warna,CS,CS-COKLAT - SILVER
+attribute_value_dk,attribute_warna,DK,DK-DARK KNIGHT
+attribute_value_gd,attribute_warna,GD,GD-GOLD
+attribute_value_gh,attribute_warna,GH,GH-HIJAU HITAM
+attribute_value_gr,attribute_warna,GR,GR-GREY
+attribute_value_gs,attribute_warna,GS,GS-GREY SILVER
+attribute_value_ha,attribute_warna,HA,HA-HITAM-ABU ABU
+attribute_value_hb,attribute_warna,HB,HB-HITAM BIRU
+attribute_value_hc,attribute_warna,HC,HC-HITAM-PUTIHBIRU
+attribute_value_hd,attribute_warna,HD,HD-HITAM-PUTIHPINK
+attribute_value_he,attribute_warna,HE,HE-HITAM-PINK
+attribute_value_hf,attribute_warna,HF,HF-HITAM - COKLAT
+attribute_value_hg,attribute_warna,HG,HG-HITAM PUTIH RD
+attribute_value_hh,attribute_warna,HH,HH-HITAM-HIJAU
+attribute_value_hj,attribute_warna,HJ,HJ-HITAM MERAH SV
+attribute_value_hk,attribute_warna,HK,HK-HITAM - KUNING
+attribute_value_hl,attribute_warna,HL,HL-HITAM KUNING SV
+attribute_value_hm,attribute_warna,HM,HM-HITAM MERAH
+attribute_value_ho,attribute_warna,HO,HO-HITAM ORANGE
+attribute_value_hp,attribute_warna,HP,HP-HITAM PUTIH
+attribute_value_hr,attribute_warna,HR,HR-HITAM - BIRU OR
+attribute_value_hs,attribute_warna,HS,HS-HITAM SILVER
+attribute_value_ht,attribute_warna,HT,HT-HIJAU PUTIH
+attribute_value_hu,attribute_warna,HU,HU-HITAM - BIRU PU
+attribute_value_hw,attribute_warna,HW,HW-HITAM-BEIGE
+attribute_value_hy,attribute_warna,HY,HY-HITAM-SILVER YL
+attribute_value_hz,attribute_warna,HZ,HZ-HITAM-SILVER BL
+attribute_value_kc,attribute_warna,KC,KC-KREM-COKLAT
+attribute_value_kh,attribute_warna,KH,KH-KUNING HITAM
+attribute_value_ks,attribute_warna,KS,KS-KUNING SILVER
+attribute_value_ls,attribute_warna,LS,LS-BIRU SILVER
+attribute_value_ma,attribute_warna,MA,MA-MERAH ABU-ABU
+attribute_value_mh,attribute_warna,MH,MH-MERAH HITAM
+attribute_value_mk,attribute_warna,MK,MK-MERAH-KREM
+attribute_value_mp,attribute_warna,MP,MP-MERAH PUTIH
+attribute_value_ms,attribute_warna,MS,MS-MERAH SILVER
+attribute_value_nk,attribute_warna,NK,NK-PINK
+attribute_value_ob,attribute_warna,OB,OB-ORANGE BIRU
+attribute_value_oh,attribute_warna,OH,OH-ORANGE HITAM
+attribute_value_op,attribute_warna,OP,OP-ORANGE PUTIH
+attribute_value_or,attribute_warna,OR,OR-ORANGE
+attribute_value_os,attribute_warna,OS,OS-ORANGE SILVER
+attribute_value_pa,attribute_warna,PA,PA-PUTIH ABU-ABU
+attribute_value_pb,attribute_warna,PB,PB-PUTIH BIRU
+attribute_value_pd,attribute_warna,PD,PD-PUTIH MERAH BIR
+attribute_value_pe,attribute_warna,PE,PE-PUTIH-BEIGE
+attribute_value_pf,attribute_warna,PF,PF-PUTIH PINK
+attribute_value_ph,attribute_warna,PH,PH-PUTIH HITAM
+attribute_value_pj,attribute_warna,PJ,PJ-PUTIH HIJAU
+attribute_value_pk,attribute_warna,PK,PK-PINK
+attribute_value_pm,attribute_warna,PM,PM-PUTIH MERAH
+attribute_value_po,attribute_warna,PO,PO-PUTIH ORANGE ME
+attribute_value_pp,attribute_warna,PP,PP-PINK PUTIH
+attribute_value_pr,attribute_warna,PR,PR-PINK SILVER
+attribute_value_ps,attribute_warna,PS,PS-PUTIH SILVER
+attribute_value_pv,attribute_warna,PV,PV-PUTIH VIOLET
+attribute_value_rd,attribute_warna,RD,RD-RED
+attribute_value_rs,attribute_warna,RS,RS-RED SILVER
+attribute_value_sa,attribute_warna,SA,SA-SILVER ABU-ABU
+attribute_value_sb,attribute_warna,SB,SB-SILVER BIRU
+attribute_value_sh,attribute_warna,SH,SH-SILVER HITAM
+attribute_value_sk,attribute_warna,SK,SK-SILVER KUNING
+attribute_value_sm,attribute_warna,SM,SM-SILVER MERAH
+attribute_value_st,attribute_warna,ST,ST-STONE GREY
+attribute_value_su,attribute_warna,SU,SU-SILVER UNGU
+attribute_value_sv,attribute_warna,SV,SV-SILVER
+attribute_value_sx,attribute_warna,SX,SX-SILVER AXIS GR.
+attribute_value_ua,attribute_warna,UA,UA-BIRU ABU-ABU
+attribute_value_uo,attribute_warna,UO,UO-BIRU ORANGE
+attribute_value_vh,attribute_warna,VH,VH-VIOLET HITAM
+attribute_value_vo,attribute_warna,VO,VO-VIOLET
+attribute_value_vp,attribute_warna,VP,VP-VIOLET-PUTIH
+attribute_value_vs,attribute_warna,VS,VS-VIOLET - SILVER
+attribute_value_wg,attribute_warna,WG,WG-WHITE GREEN
+attribute_value_wh,attribute_warna,WH,WH-WHITE
+attribute_value_wl,attribute_warna,WL,WL-WHITE BLUE
+attribute_value_wp,attribute_warna,WP,WP-WHITE PINK
+attribute_value_wr,attribute_warna,WR,WR-WHITE RED
+attribute_value_ws,attribute_warna,WS,WS-WHITE SILVER
+attribute_value_xb,attribute_warna,XB,XB-HITAM - BIRU
+attribute_value_xe,attribute_warna,XE,XE-HITAM - PINK
+attribute_value_xh,attribute_warna,XH,XH-HITAM - HIJAU
+attribute_value_xm,attribute_warna,XM,XM-HITAM - MERAH
+attribute_value_xo,attribute_warna,XO,XO-HITAM - ORANGE
+attribute_value_xs,attribute_warna,XS,XS-HITAM - SILVER
+attribute_value_yl,attribute_warna,YL,YL-YELLOW
+attribute_value_hv,attribute_warna,HV,HV-HITAM VIOLET

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+	  	<record id="view_teds_b2b_api_config_button_form" model="ir.ui.view" >
+		    <field name="name">teds.b2b.api.config.button.form</field>
+		    <field name="model">teds.b2b.api.config</field>
+		    <field name="inherit_id" ref="teds_b2b_api_configuration.view_teds_b2b_api_config_form"/>
+		    <field name="arch" type="xml">
+		    	<xpath expr="//header[@name='header']" position="inside">
+		    		<button name="schedule_balance_bca" type="object" string="Balance BCA" class="oe_highlight"/>
+		    		<button name="schedule_statements_bca" type="object" string="Statements BCA" class="oe_highlight"/>
+
+		    	</xpath>
+		    </field>
+		</record>
+	</data>
+</openerp>

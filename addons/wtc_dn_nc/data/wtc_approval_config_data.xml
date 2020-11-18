@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="config_approval_wtc_dn_nc_new2" model="wtc.approval.config">
+            <field name="name">New Payment Request</field>        	        	
+            <field name="form_id" ref="wtc_dn_nc.model_wtc_dn_nc"/> 
+            <field name="code">purchase</field>
+            <field name="type">biaya</field>
+        </record>
+                                                                                                                              
+    </data>
+</openerp>
+            

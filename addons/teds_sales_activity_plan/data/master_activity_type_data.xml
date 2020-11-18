@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+		<record model="master.act.type" id="master_act_type_a">
+			<field name="code">PTH</field>
+			<field name="name">Pameran Tenda Honda</field>
+			<field name="create_uid" ref="base.user_root"/>
+		</record>
+		<record model="master.act.type" id="master_act_type_b">
+			<field name="code">PMS</field>
+			<field name="name">Pameran Mall/Supermarket</field>
+			<field name="create_uid" ref="base.user_root"/>
+		</record>
+		<record model="master.act.type" id="master_act_type_c">
+			<field name="code">PPK</field>
+			<field name="name">Pameran Perkantoran</field>
+			<field name="create_uid" ref="base.user_root"/>
+		</record>
+		<record model="master.act.type" id="master_act_type_d">
+			<field name="code">KPH</field>
+			<field name="name">Kampung Honda</field>
+			<field name="create_uid" ref="base.user_root"/>
+		</record>
+		<record model="master.act.type" id="master_act_type_e">
+			<field name="code">SKH</field>
+			<field name="name">Sirkus Honda</field>
+			<field name="create_uid" ref="base.user_root"/>
+		</record>
+		<record model="master.act.type" id="master_act_type_f">
+			<field name="code">GRK</field>
+			<field name="name">Grebek Kampung</field>
+			<field name="create_uid" ref="base.user_root"/>
+		</record>
+		<record model="master.act.type" id="master_act_type_g">
+			<field name="code">SRE</field>
+			<field name="name">Showroom Event</field>
+			<field name="create_uid" ref="base.user_root"/>
+		</record>
+		<record model="master.act.type" id="master_act_type_h">
+			<field name="code">RSM</field>
+			<field name="name">Roadshow/Mobmer</field>
+			<field name="create_uid" ref="base.user_root"/>
+		</record>
+		<record model="master.act.type" id="master_act_type_i">
+			<field name="code">SFB</field>
+			<field name="name">Sales using Facebook</field>
+			<field name="create_uid" ref="base.user_root"/>
+		</record>
+		<record model="master.act.type" id="master_act_type_j">
+			<field name="code">SRD</field>
+			<field name="name">Sirkuit Ramadhan</field>
+			<field name="create_uid" ref="base.user_root"/>
+		</record>
+		<record model="master.act.type" id="master_act_type_k">
+			<field name="code">SCM</field>
+			<field name="name">Sales Community</field>
+			<field name="create_uid" ref="base.user_root"/>
+		</record>
+		<record model="master.act.type" id="master_act_type_l">
+			<field name="code">SKD</field>
+			<field name="name">Sales Kanvasing Door to Door</field>
+			<field name="create_uid" ref="base.user_root"/>
+		</record>
+		<record model="master.act.type" id="master_act_type_m">
+			<field name="code">SKS</field>
+			<field name="name">Sales Kanvasing Shop</field>
+			<field name="create_uid" ref="base.user_root"/>
+		</record>
+		<record model="master.act.type" id="master_act_type_n">
+			<field name="code">SMD</field>
+			<field name="name">Sales Mediator with Display</field>
+			<field name="create_uid" ref="base.user_root"/>
+		</record>
+		<record model="master.act.type" id="master_act_type_o">
+			<field name="code">SML</field>
+			<field name="name">Sales Mediator by Leasing</field>
+			<field name="create_uid" ref="base.user_root"/>
+		</record>
+		<record model="master.act.type" id="master_act_type_p">
+			<field name="code">SDG</field>
+			<field name="name">Sales using Direct Gift</field>
+			<field name="create_uid" ref="base.user_root"/>
+		</record>
+		<record model="master.act.type" id="master_act_type_q">
+			<field name="code">MGM</field>
+			<field name="name">Member Get Member</field>
+			<field name="create_uid" ref="base.user_root"/>
+		</record>
+	</data>
+</openerp>

@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">  	   
+        
+        
+<!-- Penerimaan STNK -->	
+	
+        <record id="group_proses_stnk_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">penerimaan STNK Read</field> 
+            <field name="menu_access" eval="[(4, ref('proses_stnk_submenu'))]"/>  
+        </record> 
+        
+        <record id="access_proses_stnk_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_proses_stnk"/>
+            <field name="name">proses_stnk read</field> 
+            <field name="group_id" ref="group_proses_stnk_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+
+        <record id="access_proses_stnk_line_read" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">proses_stnk_line read</field> 
+            <field name="group_id" ref="group_proses_stnk_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+                                
+        <record id="group_proses_stnk_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Proses STNK Update</field> 
+            <field name="menu_access" eval="[(4, ref('proses_stnk_submenu'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_proses_stnk_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_proses_stnk_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_proses_stnk"/>
+            <field name="name">proses_stnk update</field> 
+            <field name="group_id" ref="group_proses_stnk_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+        
+        <record id="access_proses_stnk_line_update" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">proses_stnk_line update</field> 
+            <field name="group_id" ref="group_proses_stnk_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>                   
+        
+        <record id="group_proses_stnk_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Proses STNK Delete</field> 
+            <field name="menu_access" eval="[(4, ref('proses_stnk_submenu'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_proses_stnk_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_proses_stnk_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_proses_stnk"/>
+            <field name="name">proses_stnk delete</field> 
+            <field name="group_id" ref="group_proses_stnk_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>      
+        
+        <record id="access_proses_stnk_line_delete" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">proses_stnk_line delete</field> 
+            <field name="group_id" ref="group_proses_stnk_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record> 
+
+<!--Pajak Progressive  -->
+        
+        <!-- Read -->
+        <record id="group_pajak_progressive_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Pajak Progressive Read</field> 
+            <field name="menu_access" eval="[(4,ref('wtc_pajak_progressive_menu'))]" /> 
+        </record>
+
+        <record id="access_pajak_progressive_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_pajak_progressive"/>
+            <field name="name">pajak_progressive read</field> 
+            <field name="group_id" ref="group_pajak_progressive_read"/>  
+            <field name="perm_read">1</field> 
+        </record>
+
+        <record id="access_pajak_progressive_line_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_pajak_progressive_line"/>
+            <field name="name">pajak_progressive_line read</field> 
+            <field name="group_id" ref="group_pajak_progressive_read"/>  
+            <field name="perm_read">1</field> 
+        </record>
+
+       
+        <record id="group_pajak_progressive_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Pajak Progressive Update</field> 
+            <field name="menu_access" eval="[(4,ref('wtc_pajak_progressive_menu'))]" />
+            <field name="implied_ids" eval="[(4, ref('group_pajak_progressive_read'))]"/>    
+        </record>
+        
+        <record id="access_pajak_progressive_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_pajak_progressive"/>
+            <field name="name">pajak_progressive update</field> 
+            <field name="group_id" ref="group_pajak_progressive_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>
+
+        <record id="access_pajak_progressive_line_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_pajak_progressive_line"/>
+            <field name="name">pajak_progressive_line update</field> 
+            <field name="group_id" ref="group_pajak_progressive_update"/>  
+            <field name="perm_create">1</field>
+            <field name="perm_write">1</field> 
+        </record>
+
+        
+        <record id="group_pajak_progressive_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Pajak Progressive Delete</field> 
+            <field name="menu_access" eval="[(4,ref('wtc_pajak_progressive_menu'))]" />
+            <field name="implied_ids" eval="[(4, ref('group_pajak_progressive_read'))]"/>    
+        </record>
+
+        <record id="access_pajak_progrssive_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_pajak_progressive"/>
+            <field name="name">pajak_progressive delete</field> 
+            <field name="group_id" ref="group_pajak_progressive_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>      
+        <record id="access_pajak_progrssive_line_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_pajak_progressive_line"/>
+            <field name="name">pajak_prressive_line delete</field> 
+            <field name="group_id" ref="group_pajak_progressive_delete"/>
+            <field name="perm_unlink">1</field> 
+        </record>      
+ 
+<!-- Tagihan Biro Jasa -->	
+	
+        <record id="group_tagihan_birojasa_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Tagihan Biro Jasa Read</field> 
+            <field name="menu_access" eval="[(4, ref('proses_birojasa_submenu'))]"/>  
+        </record> 
+        
+        <record id="access_tagihan_birojasa_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_proses_birojasa"/>
+            <field name="name">tagihan_birojasa read</field> 
+            <field name="group_id" ref="group_tagihan_birojasa_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+
+        <record id="access_tagihan_birojasa_line_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_proses_birojasa_line"/>
+            <field name="name">tagihan_birojasa_line read</field> 
+            <field name="group_id" ref="group_tagihan_birojasa_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+
+        <record id="access_tagihan_birojasa_approval_line_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">tagihan_birojasa_approval_line read</field> 
+            <field name="group_id" ref="group_tagihan_birojasa_read"/>  
+            <field name="perm_read">1</field> 
+        </record>
+                                
+        <record id="group_tagihan_birojasa_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Tagihan Biro Jasa Update</field> 
+            <field name="menu_access" eval="[(4, ref('proses_birojasa_submenu'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_tagihan_birojasa_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_tagihan_birojasa_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_proses_birojasa"/>
+            <field name="name">tagihan_birojasa update</field> 
+            <field name="group_id" ref="group_tagihan_birojasa_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+        
+        <record id="access_tagihan_birojasa_line_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_proses_birojasa_line"/>
+            <field name="name">tagihan_birojasa_line update</field> 
+            <field name="group_id" ref="group_tagihan_birojasa_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>                   
+
+        <record id="access_tagihan_birojasa_approval_line_update" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">tagihan_birojasa_approval_line update</field> 
+            <field name="group_id" ref="group_tagihan_birojasa_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record> 
+        
+        <record id="group_tagihan_birojasa_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Tagihan Biro Jasa Delete</field> 
+            <field name="menu_access" eval="[(4, ref('proses_birojasa_submenu'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_tagihan_birojasa_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_tagihan_birojasa_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_proses_birojasa"/>
+            <field name="name">tagihan_birojasa delete</field> 
+            <field name="group_id" ref="group_tagihan_birojasa_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>      
+        
+        <record id="access_tagihan_birojasa_line_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_proses_birojasa_line"/>
+            <field name="name">tagihan_birojasa_line delete</field> 
+            <field name="group_id" ref="group_tagihan_birojasa_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record> 
+      
+<!-- Penerimaan STNK -->	
+	
+        <record id="group_penerimaan_stnk_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Penerimaan STNK Read</field> 
+            <field name="menu_access" eval="[(4, ref('penerimaan_stnk_submenu'))]"/>  
+        </record> 
+        
+        <record id="access_penerimaan_stnk_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penerimaan_stnk"/>
+            <field name="name">penerimaan_stnk read</field> 
+            <field name="group_id" ref="group_penerimaan_stnk_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+
+        <record id="access_penerimaan_stnk_line_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penerimaan_stnk_line"/>
+            <field name="name">penerimaan_stnk_line read</field> 
+            <field name="group_id" ref="group_penerimaan_stnk_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+                        
+        <record id="group_penerimaan_stnk_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Penerimaan STNK Update</field> 
+            <field name="menu_access" eval="[(4, ref('penerimaan_stnk_submenu'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_penerimaan_stnk_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_penerimaan_stnk_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penerimaan_stnk"/>
+            <field name="name">penerimaan_stnk update</field> 
+            <field name="group_id" ref="group_penerimaan_stnk_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+        
+        <record id="access_penerimaan_stnk_line_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penerimaan_stnk_line"/>
+            <field name="name">penerimaan_stnk_line update</field> 
+            <field name="group_id" ref="group_penerimaan_stnk_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>                   
+
+        <record id="group_penerimaan_stnk_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Penerimaan STNK Delete</field> 
+            <field name="menu_access" eval="[(4, ref('penerimaan_stnk_submenu'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_penerimaan_stnk_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_penerimaan_stnk_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penerimaan_stnk"/>
+            <field name="name">penerimaan_stnk delete</field> 
+            <field name="group_id" ref="group_penerimaan_stnk_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>      
+        
+        <record id="access_penerimaan_stnk_line_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penerimaan_stnk_line"/>
+            <field name="name">penerimaan_stnk_line delete</field> 
+            <field name="group_id" ref="group_penerimaan_stnk_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>   
+        
+<!-- Penerimaan BPKB -->	
+	
+        <record id="group_penerimaan_bpkb_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Penerimaan BPKB Read</field> 
+            <field name="menu_access" eval="[(4, ref('penerimaan_bpkb_submenu'))]"/>  
+        </record> 
+        
+        <record id="access_penerimaan_bpkb_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penerimaan_bpkb"/>
+            <field name="name">penerimaan_bpkb read</field> 
+            <field name="group_id" ref="group_penerimaan_bpkb_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+
+        <record id="access_penerimaan_bpkb_line_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penerimaan_bpkb_line"/>
+            <field name="name">penerimaan_bpkb_line read</field> 
+            <field name="group_id" ref="group_penerimaan_bpkb_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+                        
+        <record id="group_penerimaan_bpkb_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Penerimaan BPKB Update</field> 
+            <field name="menu_access" eval="[(4, ref('penerimaan_bpkb_submenu'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_penerimaan_bpkb_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_penerimaan_bpkb_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penerimaan_bpkb"/>
+            <field name="name">penerimaan_bpkb update</field> 
+            <field name="group_id" ref="group_penerimaan_bpkb_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+        
+        <record id="access_penerimaan_bpkb_line_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penerimaan_bpkb_line"/>
+            <field name="name">penerimaan_bpkb_line update</field> 
+            <field name="group_id" ref="group_penerimaan_bpkb_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>                   
+
+        <record id="group_penerimaan_bpkb_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Penerimaan BPKB Delete</field> 
+            <field name="menu_access" eval="[(4, ref('penerimaan_bpkb_submenu'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_penerimaan_bpkb_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_penerimaan_bpkb_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penerimaan_bpkb"/>
+            <field name="name">penerimaan_bpkb delete</field> 
+            <field name="group_id" ref="group_penerimaan_bpkb_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>      
+        
+        <record id="access_penerimaan_bpkb_line_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penerimaan_bpkb_line"/>
+            <field name="name">penerimaan_bpkb_line delete</field> 
+            <field name="group_id" ref="group_penerimaan_bpkb_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>    
+        
+<!-- Mutasi STNK -->	
+	
+        <record id="group_mutasi_stnk_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Mutasi STNK Read</field> 
+            <field name="menu_access" eval="[(4, ref('mutasi_stnk_submenu'))]"/>  
+        </record> 
+        
+        <record id="access_mutasi_stnk_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_mutasi_stnk"/>
+            <field name="name">mutasi_stnk read</field> 
+            <field name="group_id" ref="group_mutasi_stnk_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+
+        <record id="access_mutasi_stnk_line_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_mutasi_stnk_line"/>
+            <field name="name">mutasi_stnk_line read</field> 
+            <field name="group_id" ref="group_mutasi_stnk_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+                        
+        <record id="group_mutasi_stnk_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Mutasi STNK Update</field> 
+            <field name="menu_access" eval="[(4, ref('mutasi_stnk_submenu'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_mutasi_stnk_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_mutasi_stnk_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_mutasi_stnk"/>
+            <field name="name">mutasi_stnk update</field> 
+            <field name="group_id" ref="group_mutasi_stnk_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+        
+        <record id="access_mutasi_stnk_line_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_mutasi_stnk_line"/>
+            <field name="name">mutasi_stnk_line update</field> 
+            <field name="group_id" ref="group_mutasi_stnk_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>                   
+
+        <record id="group_mutasi_stnk_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Mutasi STNK Delete</field> 
+            <field name="menu_access" eval="[(4, ref('mutasi_stnk_submenu'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_mutasi_stnk_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_mutasi_stnk_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_mutasi_stnk"/>
+            <field name="name">mutasi_stnk delete</field> 
+            <field name="group_id" ref="group_mutasi_stnk_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>      
+        
+        <record id="access_mutasi_stnk_line_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_mutasi_stnk_line"/>
+            <field name="name">mutasi_stnk_line delete</field> 
+            <field name="group_id" ref="group_mutasi_stnk_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>     
+        
+<!-- Mutasi BPKB -->	
+	
+        <record id="group_mutasi_bpkb_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Mutasi BPKB Read</field> 
+            <field name="menu_access" eval="[(4, ref('mutasi_bpkb_submenu'))]"/>  
+        </record> 
+        
+        <record id="access_mutasi_bpkb_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_mutasi_bpkb"/>
+            <field name="name">mutasi_bpkb read</field> 
+            <field name="group_id" ref="group_mutasi_bpkb_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+
+        <record id="access_mutasi_bpkb_line_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_mutasi_bpkb_line"/>
+            <field name="name">mutasi_bpkb_line read</field> 
+            <field name="group_id" ref="group_mutasi_bpkb_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+                        
+        <record id="group_mutasi_bpkb_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Mutasi BPKB Update</field> 
+            <field name="menu_access" eval="[(4, ref('mutasi_bpkb_submenu'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_mutasi_bpkb_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_mutasi_bpkb_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_mutasi_bpkb"/>
+            <field name="name">mutasi_bpkb update</field> 
+            <field name="group_id" ref="group_mutasi_bpkb_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+        
+        <record id="access_mutasi_bpkb_line_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_mutasi_bpkb_line"/>
+            <field name="name">mutasi_bpkb_line update</field> 
+            <field name="group_id" ref="group_mutasi_bpkb_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>                   
+
+        <record id="group_mutasi_bpkb_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Mutasi BPKB Delete</field> 
+            <field name="menu_access" eval="[(4, ref('mutasi_bpkb_submenu'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_mutasi_bpkb_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_mutasi_bpkb_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_mutasi_bpkb"/>
+            <field name="name">mutasi_bpkb delete</field> 
+            <field name="group_id" ref="group_mutasi_bpkb_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>      
+        
+        <record id="access_mutasi_bpkb_line_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_mutasi_bpkb_line"/>
+            <field name="name">mutasi_bpkb_line delete</field> 
+            <field name="group_id" ref="group_mutasi_bpkb_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>   
+
+<!-- Lokasi STNK -->	
+	
+        <record id="group_lokasi_stnk_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Lokasi STNK Read</field> 
+            <field name="menu_access" eval="[(4, ref('lokasi_stnk_submenu'))]"/>  
+        </record> 
+        
+        <record id="access_lokasi_stnk_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_lokasi_stnk"/>
+            <field name="name">lokasi_stnk read</field> 
+            <field name="group_id" ref="group_lokasi_stnk_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+   
+        <record id="access_lokasi_stnk_line_read" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">lokasi_stnk_line read</field> 
+            <field name="group_id" ref="group_lokasi_stnk_read"/>  
+            <field name="perm_read">1</field> 
+        </record>
+                                     
+        <record id="group_lokasi_stnk_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Lokasi STNK Update</field> 
+            <field name="menu_access" eval="[(4, ref('lokasi_stnk_submenu'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_lokasi_stnk_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_lokasi_stnk_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_lokasi_stnk"/>
+            <field name="name">lokasi_stnk update</field> 
+            <field name="group_id" ref="group_lokasi_stnk_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>              
+        
+        <record id="access_lokasi_stnk_line_update" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">lokasi_stnk_line update</field> 
+            <field name="group_id" ref="group_lokasi_stnk_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>
+                
+        <record id="group_lokasi_stnk_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Lokasi STNK Delete</field> 
+            <field name="menu_access" eval="[(4, ref('lokasi_stnk_submenu'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_lokasi_stnk_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_lokasi_stnk_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_lokasi_stnk"/>
+            <field name="name">lokasi_stnk delete</field> 
+            <field name="group_id" ref="group_lokasi_stnk_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>      
+        
+        <record id="access_lokasi_stnk_line_delete" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">lokasi_stnk_line delete</field> 
+            <field name="group_id" ref="group_lokasi_stnk_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>   
+        
+<!-- Lokasi BPKB -->	
+	
+        <record id="group_lokasi_bpkb_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Lokasi BPKB Read</field> 
+            <field name="menu_access" eval="[(4, ref('lokasi_bpkb_submenu'))]"/>  
+        </record> 
+        
+        <record id="access_lokasi_bpkb_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_lokasi_bpkb"/>
+            <field name="name">lokasi_bpkb read</field> 
+            <field name="group_id" ref="group_lokasi_bpkb_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+   
+        <record id="access_lokasi_bpkb_line_read" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">lokasi_bpkb_line read</field> 
+            <field name="group_id" ref="group_lokasi_bpkb_read"/>  
+            <field name="perm_read">1</field> 
+        </record>
+                                     
+        <record id="group_lokasi_bpkb_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Lokasi BPKB Update</field> 
+            <field name="menu_access" eval="[(4, ref('lokasi_bpkb_submenu'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_lokasi_bpkb_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_lokasi_bpkb_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_lokasi_bpkb"/>
+            <field name="name">lokasi_bpkb update</field> 
+            <field name="group_id" ref="group_lokasi_bpkb_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>              
+        
+        <record id="access_lokasi_bpkb_line_update" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">lokasi_bpkb_line update</field> 
+            <field name="group_id" ref="group_lokasi_bpkb_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>
+                
+        <record id="group_lokasi_bpkb_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Lokasi BPKB Delete</field> 
+            <field name="menu_access" eval="[(4, ref('lokasi_bpkb_submenu'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_lokasi_bpkb_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_lokasi_stnk_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_lokasi_bpkb"/>
+            <field name="name">lokasi_stnk delete</field> 
+            <field name="group_id" ref="group_lokasi_stnk_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>      
+        
+        <record id="access_lokasi_stnk_line_delete" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">lokasi_stnk_line delete</field> 
+            <field name="group_id" ref="group_lokasi_stnk_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>               
+        
+
+        <record id="access_approval_portal_birojasa_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_proses_stnk.model_wtc_proses_birojasa"/>
+            <field name="name">approval_portal_birojasa read</field> 
+            <field name="group_id" ref="wtc_approval.group_approval_portal_read"/>  
+            <field name="perm_read">1</field> 
+        </record>
+                   
+<!-- Cancel Proses STNK -->	
+	
+        <record id="group_cancel_proses_stnk_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Cancel Proses STNK Read</field> 
+            <field name="menu_access" eval="[(4, ref('cancel_proses_stnk_submenu'))]"/>  
+        </record> 
+        
+        <record id="access_cancel_proses_stnk_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cancel_proses_stnk"/>
+            <field name="name">cancel_proses_stnk read</field> 
+            <field name="group_id" ref="group_cancel_proses_stnk_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+
+        <record id="access_cancel_proses_stnk_line_read" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">cancel_proses_stnk_line read</field> 
+            <field name="group_id" ref="group_cancel_proses_stnk_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+
+                                
+        <record id="group_cancel_proses_stnk_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Cancel Proses STNK Update</field> 
+            <field name="menu_access" eval="[(4, ref('cancel_proses_stnk_submenu'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_cancel_proses_stnk_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_cancel_proses_stnk_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cancel_proses_stnk"/>
+            <field name="name">cancel_proses_stnk update</field> 
+            <field name="group_id" ref="group_cancel_proses_stnk_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+        
+        <record id="access_cancel_proses_stnk_line_update" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">cancel_proses_stnk_line update</field> 
+            <field name="group_id" ref="group_cancel_proses_stnk_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>                   
+        
+        <record id="group_cancel_proses_stnk_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Cancel Proses STNK Delete</field> 
+            <field name="menu_access" eval="[(4, ref('cancel_proses_stnk_submenu'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_cancel_proses_stnk_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_cancel_proses_stnk_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cancel_proses_stnk"/>
+            <field name="name">cancel_proses_stnk delete</field> 
+            <field name="group_id" ref="group_cancel_proses_stnk_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>      
+        
+        <record id="access_cancel_proses_stnk_line_delete" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">cancel_proses_stnk_line delete</field> 
+            <field name="group_id" ref="group_cancel_proses_stnk_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record> 
+              
+<!-- Cancel Penerimaan STNK -->	
+	
+        <record id="group_cancel_penerimaan_stnk_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Cancel Penerimaan STNK Read</field> 
+            <field name="menu_access" eval="[(4, ref('cancel_penerimaan_stnk_submenu'))]"/>  
+        </record> 
+        
+        <record id="access_cancel_penerimaan_stnk_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cancel_penerimaan_stnk"/>
+            <field name="name">cancel_penerimaan_stnk read</field> 
+            <field name="group_id" ref="group_cancel_penerimaan_stnk_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+
+        <record id="access_cancel_penerimaan_stnk_line_read" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">cancel_penerimaan_stnk_line read</field> 
+            <field name="group_id" ref="group_cancel_penerimaan_stnk_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+
+                                
+        <record id="group_cancel_penerimaan_stnk_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Cancel Penerimaan STNK Update</field> 
+            <field name="menu_access" eval="[(4, ref('cancel_penerimaan_stnk_submenu'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_cancel_penerimaan_stnk_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_cancel_penerimaan_stnk_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cancel_penerimaan_stnk"/>
+            <field name="name">cancel_penerimaan_stnk update</field> 
+            <field name="group_id" ref="group_cancel_penerimaan_stnk_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+        
+        <record id="access_cancel_penerimaan_stnk_line_update" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">cancel_penerimaan_stnk_line update</field> 
+            <field name="group_id" ref="group_cancel_penerimaan_stnk_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>                   
+        
+        <record id="group_cancel_penerimaan_stnk_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Cancel Penerimaan STNK Delete</field> 
+            <field name="menu_access" eval="[(4, ref('cancel_penerimaan_stnk_submenu'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_cancel_penerimaan_stnk_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_cancel_penerimaan_stnk_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cancel_penerimaan_stnk"/>
+            <field name="name">cancel_penerimaan_stnk delete</field> 
+            <field name="group_id" ref="group_cancel_penerimaan_stnk_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>      
+        
+        <record id="access_cancel_penerimaan_stnk_line_delete" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">cancel_penerimaan_stnk_line delete</field> 
+            <field name="group_id" ref="group_cancel_penerimaan_stnk_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record> 
+        
+<!-- Cancel Penerimaan BPKB -->	
+	
+        <record id="group_cancel_penerimaan_bpkb_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Cancel Penerimaan BPKB Read</field> 
+            <field name="menu_access" eval="[(4, ref('cancel_penerimaan_bpkb_submenu'))]"/>  
+        </record> 
+        
+        <record id="access_cancel_penerimaan_bpkb_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cancel_penerimaan_bpkb"/>
+            <field name="name">cancel_penerimaan_bpkb read</field> 
+            <field name="group_id" ref="group_cancel_penerimaan_bpkb_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+
+        <record id="access_cancel_penerimaan_bpkb_line_read" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">cancel_penerimaan_bpkb_line read</field> 
+            <field name="group_id" ref="group_cancel_penerimaan_bpkb_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+
+                                
+        <record id="group_cancel_penerimaan_bpkb_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Cancel Penerimaan BPKB Update</field> 
+            <field name="menu_access" eval="[(4, ref('cancel_penerimaan_bpkb_submenu'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_cancel_penerimaan_bpkb_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_cancel_penerimaan_bpkb_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cancel_penerimaan_bpkb"/>
+            <field name="name">cancel_penerimaan_bpkb update</field> 
+            <field name="group_id" ref="group_cancel_penerimaan_bpkb_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+        
+        <record id="access_cancel_penerimaan_bpkb_line_update" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">cancel_penerimaan_bpkb_line update</field> 
+            <field name="group_id" ref="group_cancel_penerimaan_bpkb_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>                   
+        
+        <record id="group_cancel_penerimaan_bpkb_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Cancel Penerimaan BPKB Delete</field> 
+            <field name="menu_access" eval="[(4, ref('cancel_penerimaan_bpkb_submenu'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_cancel_penerimaan_bpkb_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_cancel_penerimaan_bpkb_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cancel_penerimaan_bpkb"/>
+            <field name="name">cancel_penerimaan_bpkb delete</field> 
+            <field name="group_id" ref="group_cancel_penerimaan_bpkb_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>      
+        
+        <record id="access_cancel_penerimaan_bpkb_line_delete" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">cancel_penerimaan_bpkb_line delete</field> 
+            <field name="group_id" ref="group_cancel_penerimaan_bpkb_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>
+        
+        
+          <record id="group_generate_stnk_bpkb_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Generate STNK BPKB Read</field> 
+            <field name="menu_access" eval="[(4, ref('generate_stnk_bpkb_submenu'))]"/>  
+        </record> 
+
+        <record id="group_generate_stnk_bpkb_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Generate STNK BPKB Update</field> 
+            <field name="menu_access" eval="[(4, ref('generate_stnk_bpkb_submenu'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_generate_stnk_bpkb_read'))]"/>            	            	
+        </record>
+        
+        
+                
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[(4,ref('group_proses_stnk_read')),
+												(4,ref('group_proses_stnk_update')),
+												(4,ref('group_proses_stnk_delete')),
+												(4,ref('group_tagihan_birojasa_read')),
+												(4,ref('group_tagihan_birojasa_update')),
+												(4,ref('group_tagihan_birojasa_delete')),
+												(4,ref('group_penerimaan_stnk_read')),
+												(4,ref('group_penerimaan_stnk_update')),
+												(4,ref('group_penerimaan_stnk_delete')),
+												(4,ref('group_penerimaan_bpkb_read')),
+												(4,ref('group_penerimaan_bpkb_update')),
+												(4,ref('group_penerimaan_bpkb_delete')),
+												(4,ref('group_mutasi_stnk_read')),
+												(4,ref('group_mutasi_stnk_update')),
+												(4,ref('group_mutasi_stnk_delete')),
+												(4,ref('group_mutasi_bpkb_read')),
+												(4,ref('group_mutasi_bpkb_update')),
+												(4,ref('group_mutasi_bpkb_delete')),
+												(4,ref('group_lokasi_stnk_read')),
+												(4,ref('group_lokasi_stnk_update')),
+												(4,ref('group_lokasi_stnk_delete')),
+												(4,ref('group_lokasi_bpkb_read')),
+												(4,ref('group_lokasi_bpkb_update')),
+												(4,ref('group_lokasi_bpkb_delete')),
+												(4,ref('group_cancel_proses_stnk_read')),
+												(4,ref('group_cancel_proses_stnk_update')),
+												(4,ref('group_cancel_proses_stnk_delete')),	
+												(4,ref('group_cancel_penerimaan_stnk_read')),
+												(4,ref('group_cancel_penerimaan_stnk_update')),
+												(4,ref('group_cancel_penerimaan_stnk_delete')),
+												(4,ref('group_cancel_penerimaan_bpkb_read')),
+												(4,ref('group_cancel_penerimaan_bpkb_update')),
+												(4,ref('group_cancel_penerimaan_bpkb_delete')),	
+												(4,ref('group_generate_stnk_bpkb_read')),		
+												(4,ref('group_generate_stnk_bpkb_update')),									
+											]"/> 
+		</record>                                                                                          
+    </data>
+</openerp>

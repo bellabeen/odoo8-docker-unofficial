@@ -1,0 +1,2346 @@
+<openerp>
+<data noupdate="1">
+
+
+<record id="JF28_1" model="wtc.kpb.expired">
+  <field name="name">JF28</field>
+  <field name="description">PCX</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="JF28_2" model="wtc.kpb.expired">
+  <field name="name">JF28</field>
+  <field name="description">PCX</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JF28_3" model="wtc.kpb.expired">
+  <field name="name">JF28</field>
+  <field name="description">PCX</field>
+  <field name="service">3</field>
+  <field name="hari">255</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JF28_4" model="wtc.kpb.expired">
+  <field name="name">JF28</field>
+  <field name="description">PCX</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="KC17_1" model="wtc.kpb.expired">
+  <field name="name">KC17</field>
+  <field name="description">CBR 150</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="KC17_2" model="wtc.kpb.expired">
+  <field name="name">KC17</field>
+  <field name="description">CBR 150</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="KC17_3" model="wtc.kpb.expired">
+  <field name="name">KC17</field>
+  <field name="description">CBR 150</field>
+  <field name="service">3</field>
+  <field name="hari">255</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="KC17_4" model="wtc.kpb.expired">
+  <field name="name">KC17</field>
+  <field name="description">CBR 150</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="JBK1_4" model="wtc.kpb.expired">
+  <field name="name">JBK1</field>
+  <field name="description">Revo Fit FI</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="JBK1_3" model="wtc.kpb.expired">
+  <field name="name">JBK1</field>
+  <field name="description">Revo Fit FI</field>
+  <field name="service">3</field>
+  <field name="hari">255</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JBK1_2" model="wtc.kpb.expired">
+  <field name="name">JBK1</field>
+  <field name="description">Revo Fit FI</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JBK1_1" model="wtc.kpb.expired">
+  <field name="name">JBK1</field>
+  <field name="description">Revo Fit FI</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="MC41_1" model="wtc.kpb.expired">
+  <field name="name">MC41</field>
+  <field name="description">CBR 250</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="MC41_2" model="wtc.kpb.expired">
+  <field name="name">MC41</field>
+  <field name="description">CBR 250</field>
+  <field name="service">2</field>
+  <field name="hari">195</field>
+  <field name="km">6250</field>
+</record>
+    
+    
+<record id="MC41_3" model="wtc.kpb.expired">
+  <field name="name">MC41</field>
+  <field name="description">CBR 250</field>
+  <field name="service">3</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="MC41_4" model="wtc.kpb.expired">
+  <field name="name">MC41</field>
+  <field name="description">CBR 250</field>
+  <field name="service">4</field>
+  <field name="hari">555</field>
+  <field name="km">18250</field>
+</record>
+    
+    
+<record id="KF12_1" model="wtc.kpb.expired">
+  <field name="name">KF12</field>
+  <field name="description">PCX 150</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="KF12_2" model="wtc.kpb.expired">
+  <field name="name">KF12</field>
+  <field name="description">PCX 150</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="KF12_3" model="wtc.kpb.expired">
+  <field name="name">KF12</field>
+  <field name="description">PCX 150</field>
+  <field name="service">3</field>
+  <field name="hari">255</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="KF12_4" model="wtc.kpb.expired">
+  <field name="name">KF12</field>
+  <field name="description">PCX 150</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="JFB1_1" model="wtc.kpb.expired">
+  <field name="name">JFB1</field>
+  <field name="description">VARIO TECHNO 125</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="JFB1_2" model="wtc.kpb.expired">
+  <field name="name">JFB1</field>
+  <field name="description">VARIO TECHNO 125</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JFB1_3" model="wtc.kpb.expired">
+  <field name="name">JFB1</field>
+  <field name="description">VARIO TECHNO 125</field>
+  <field name="service">3</field>
+  <field name="hari">255</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JFB1_4" model="wtc.kpb.expired">
+  <field name="name">JFB1</field>
+  <field name="description">VARIO TECHNO 125</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="JFC1_1" model="wtc.kpb.expired">
+  <field name="name">JFC1</field>
+  <field name="description">VARIO TECHNO 125</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="JFC1_2" model="wtc.kpb.expired">
+  <field name="name">JFC1</field>
+  <field name="description">VARIO TECHNO 125</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JFC1_3" model="wtc.kpb.expired">
+  <field name="name">JFC1</field>
+  <field name="description">VARIO TECHNO 125</field>
+  <field name="service">3</field>
+  <field name="hari">255</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JFC1_4" model="wtc.kpb.expired">
+  <field name="name">JFC1</field>
+  <field name="description">VARIO TECHNO 125</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="JB01_1" model="wtc.kpb.expired">
+  <field name="name">JB01</field>
+  <field name="description">SUPRA X 125</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">600</field>
+</record>
+    
+    
+<record id="JB01_2" model="wtc.kpb.expired">
+  <field name="name">JB01</field>
+  <field name="description">SUPRA X 125</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">2250</field>
+</record>
+    
+    
+<record id="JB01_3" model="wtc.kpb.expired">
+  <field name="name">JB01</field>
+  <field name="description">SUPRA X 125</field>
+  <field name="service">3</field>
+  <field name="hari">195</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JB01_4" model="wtc.kpb.expired">
+  <field name="name">JB01</field>
+  <field name="description">SUPRA X 125</field>
+  <field name="service">4</field>
+  <field name="hari">315</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JB81_1" model="wtc.kpb.expired">
+  <field name="name">JB81</field>
+  <field name="description">SUPRA X 125</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">600</field>
+</record>
+    
+    
+<record id="JB81_2" model="wtc.kpb.expired">
+  <field name="name">JB81</field>
+  <field name="description">SUPRA X 125</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">2250</field>
+</record>
+    
+    
+<record id="JB81_3" model="wtc.kpb.expired">
+  <field name="name">JB81</field>
+  <field name="description">SUPRA X 125</field>
+  <field name="service">3</field>
+  <field name="hari">195</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JB81_4" model="wtc.kpb.expired">
+  <field name="name">JB81</field>
+  <field name="description">SUPRA X 125</field>
+  <field name="service">4</field>
+  <field name="hari">315</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JB91_1" model="wtc.kpb.expired">
+  <field name="name">JB91</field>
+  <field name="description">SUPRA X 125</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">600</field>
+</record>
+    
+    
+<record id="JB91_2" model="wtc.kpb.expired">
+  <field name="name">JB91</field>
+  <field name="description">SUPRA X 125</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">2250</field>
+</record>
+    
+    
+<record id="JB91_3" model="wtc.kpb.expired">
+  <field name="name">JB91</field>
+  <field name="description">SUPRA X 125</field>
+  <field name="service">3</field>
+  <field name="hari">195</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JB91_4" model="wtc.kpb.expired">
+  <field name="name">JB91</field>
+  <field name="description">SUPRA X 125</field>
+  <field name="service">4</field>
+  <field name="hari">315</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JBA1_1" model="wtc.kpb.expired">
+  <field name="name">JBA1</field>
+  <field name="description">CS 1</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">600</field>
+</record>
+    
+    
+<record id="JBA1_2" model="wtc.kpb.expired">
+  <field name="name">JBA1</field>
+  <field name="description">CS 1</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">2250</field>
+</record>
+    
+    
+<record id="JBA1_3" model="wtc.kpb.expired">
+  <field name="name">JBA1</field>
+  <field name="description">CS 1</field>
+  <field name="service">3</field>
+  <field name="hari">195</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JBA1_4" model="wtc.kpb.expired">
+  <field name="name">JBA1</field>
+  <field name="description">CS 1</field>
+  <field name="service">4</field>
+  <field name="hari">315</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JBB1_1" model="wtc.kpb.expired">
+  <field name="name">JBB1</field>
+  <field name="description">BLADE</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">600</field>
+</record>
+    
+    
+<record id="JBB1_2" model="wtc.kpb.expired">
+  <field name="name">JBB1</field>
+  <field name="description">BLADE</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">2250</field>
+</record>
+    
+    
+<record id="JBB1_3" model="wtc.kpb.expired">
+  <field name="name">JBB1</field>
+  <field name="description">BLADE</field>
+  <field name="service">3</field>
+  <field name="hari">195</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JBB1_4" model="wtc.kpb.expired">
+  <field name="name">JBB1</field>
+  <field name="description">BLADE</field>
+  <field name="service">4</field>
+  <field name="hari">315</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JBB2_1" model="wtc.kpb.expired">
+  <field name="name">JBB2</field>
+  <field name="description">BLADE</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">600</field>
+</record>
+    
+    
+<record id="JBB2_2" model="wtc.kpb.expired">
+  <field name="name">JBB2</field>
+  <field name="description">BLADE</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">2250</field>
+</record>
+    
+    
+<record id="JBB2_3" model="wtc.kpb.expired">
+  <field name="name">JBB2</field>
+  <field name="description">BLADE</field>
+  <field name="service">3</field>
+  <field name="hari">195</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JBB2_4" model="wtc.kpb.expired">
+  <field name="name">JBB2</field>
+  <field name="description">BLADE</field>
+  <field name="service">4</field>
+  <field name="hari">315</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JBC1_1" model="wtc.kpb.expired">
+  <field name="name">JBC1</field>
+  <field name="description">REVO 110</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">600</field>
+</record>
+    
+    
+<record id="JBC1_2" model="wtc.kpb.expired">
+  <field name="name">JBC1</field>
+  <field name="description">REVO 110</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">2250</field>
+</record>
+    
+    
+<record id="JBC1_3" model="wtc.kpb.expired">
+  <field name="name">JBC1</field>
+  <field name="description">REVO 110</field>
+  <field name="service">3</field>
+  <field name="hari">195</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JBC1_4" model="wtc.kpb.expired">
+  <field name="name">JBC1</field>
+  <field name="description">REVO 110</field>
+  <field name="service">4</field>
+  <field name="hari">315</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JBC2_1" model="wtc.kpb.expired">
+  <field name="name">JBC2</field>
+  <field name="description">REVO 110</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">600</field>
+</record>
+    
+    
+<record id="JBC2_2" model="wtc.kpb.expired">
+  <field name="name">JBC2</field>
+  <field name="description">REVO 110</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">2250</field>
+</record>
+    
+    
+<record id="JBC2_3" model="wtc.kpb.expired">
+  <field name="name">JBC2</field>
+  <field name="description">REVO 110</field>
+  <field name="service">3</field>
+  <field name="hari">195</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JBC2_4" model="wtc.kpb.expired">
+  <field name="name">JBC2</field>
+  <field name="description">REVO 110</field>
+  <field name="service">4</field>
+  <field name="hari">315</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JBC3_1" model="wtc.kpb.expired">
+  <field name="name">JBC3</field>
+  <field name="description">REVO 110</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">600</field>
+</record>
+    
+    
+<record id="JBC3_2" model="wtc.kpb.expired">
+  <field name="name">JBC3</field>
+  <field name="description">REVO 110</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">2250</field>
+</record>
+    
+    
+<record id="JBC3_3" model="wtc.kpb.expired">
+  <field name="name">JBC3</field>
+  <field name="description">REVO 110</field>
+  <field name="service">3</field>
+  <field name="hari">195</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JBC3_4" model="wtc.kpb.expired">
+  <field name="name">JBC3</field>
+  <field name="description">REVO 110</field>
+  <field name="service">4</field>
+  <field name="hari">315</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JBD1_1" model="wtc.kpb.expired">
+  <field name="name">JBD1</field>
+  <field name="description">REVO AT</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">600</field>
+</record>
+    
+    
+<record id="JBD1_2" model="wtc.kpb.expired">
+  <field name="name">JBD1</field>
+  <field name="description">REVO AT</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">2250</field>
+</record>
+    
+    
+<record id="JBD1_3" model="wtc.kpb.expired">
+  <field name="name">JBD1</field>
+  <field name="description">REVO AT</field>
+  <field name="service">3</field>
+  <field name="hari">195</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JBD1_4" model="wtc.kpb.expired">
+  <field name="name">JBD1</field>
+  <field name="description">REVO AT</field>
+  <field name="service">4</field>
+  <field name="hari">315</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JBE1_1" model="wtc.kpb.expired">
+  <field name="name">JBE1</field>
+  <field name="description">REVO 110</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">600</field>
+</record>
+    
+    
+<record id="JBE1_2" model="wtc.kpb.expired">
+  <field name="name">JBE1</field>
+  <field name="description">REVO 110</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">2250</field>
+</record>
+    
+    
+<record id="JBE1_3" model="wtc.kpb.expired">
+  <field name="name">JBE1</field>
+  <field name="description">REVO 110</field>
+  <field name="service">3</field>
+  <field name="hari">195</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JBE1_4" model="wtc.kpb.expired">
+  <field name="name">JBE1</field>
+  <field name="description">REVO 110</field>
+  <field name="service">4</field>
+  <field name="hari">315</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JBE2_1" model="wtc.kpb.expired">
+  <field name="name">JBE2</field>
+  <field name="description">REVO 110</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">600</field>
+</record>
+    
+    
+<record id="JBE2_2" model="wtc.kpb.expired">
+  <field name="name">JBE2</field>
+  <field name="description">REVO 110</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">2250</field>
+</record>
+    
+    
+<record id="JBE2_3" model="wtc.kpb.expired">
+  <field name="name">JBE2</field>
+  <field name="description">REVO 110</field>
+  <field name="service">3</field>
+  <field name="hari">195</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JBE2_4" model="wtc.kpb.expired">
+  <field name="name">JBE2</field>
+  <field name="description">REVO 110</field>
+  <field name="service">4</field>
+  <field name="hari">315</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JBE3_1" model="wtc.kpb.expired">
+  <field name="name">JBE3</field>
+  <field name="description">REVO 110</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">600</field>
+</record>
+    
+    
+<record id="JBE3_2" model="wtc.kpb.expired">
+  <field name="name">JBE3</field>
+  <field name="description">REVO 110</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">2250</field>
+</record>
+    
+    
+<record id="JBE3_3" model="wtc.kpb.expired">
+  <field name="name">JBE3</field>
+  <field name="description">REVO 110</field>
+  <field name="service">3</field>
+  <field name="hari">195</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JBE3_4" model="wtc.kpb.expired">
+  <field name="name">JBE3</field>
+  <field name="description">REVO 110</field>
+  <field name="service">4</field>
+  <field name="hari">315</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JBF1_1" model="wtc.kpb.expired">
+  <field name="name">JBF1</field>
+  <field name="description">SUPRA X 125 HELM-IN</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">600</field>
+</record>
+    
+    
+<record id="JBF1_2" model="wtc.kpb.expired">
+  <field name="name">JBF1</field>
+  <field name="description">SUPRA X 125 HELM-IN</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">2250</field>
+</record>
+    
+    
+<record id="JBF1_3" model="wtc.kpb.expired">
+  <field name="name">JBF1</field>
+  <field name="description">SUPRA X 125 HELM-IN</field>
+  <field name="service">3</field>
+  <field name="hari">195</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JBF1_4" model="wtc.kpb.expired">
+  <field name="name">JBF1</field>
+  <field name="description">SUPRA X 125 HELM-IN</field>
+  <field name="service">4</field>
+  <field name="hari">315</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JBG1_1" model="wtc.kpb.expired">
+  <field name="name">JBG1</field>
+  <field name="description">SUPRA X 125 INJEKSI</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">600</field>
+</record>
+    
+    
+<record id="JBG1_2" model="wtc.kpb.expired">
+  <field name="name">JBG1</field>
+  <field name="description">SUPRA X 125 INJEKSI</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">2250</field>
+</record>
+    
+    
+<record id="JBG1_3" model="wtc.kpb.expired">
+  <field name="name">JBG1</field>
+  <field name="description">SUPRA X 125 INJEKSI</field>
+  <field name="service">3</field>
+  <field name="hari">195</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JBG1_4" model="wtc.kpb.expired">
+  <field name="name">JBG1</field>
+  <field name="description">SUPRA X 125 INJEKSI</field>
+  <field name="service">4</field>
+  <field name="hari">315</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JBH1_1" model="wtc.kpb.expired">
+  <field name="name">JBH1</field>
+  <field name="description">BLADE</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">600</field>
+</record>
+    
+    
+<record id="JBH1_2" model="wtc.kpb.expired">
+  <field name="name">JBH1</field>
+  <field name="description">BLADE</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">2250</field>
+</record>
+    
+    
+<record id="JBH1_3" model="wtc.kpb.expired">
+  <field name="name">JBH1</field>
+  <field name="description">BLADE</field>
+  <field name="service">3</field>
+  <field name="hari">195</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JBH1_4" model="wtc.kpb.expired">
+  <field name="name">JBH1</field>
+  <field name="description">BLADE</field>
+  <field name="service">4</field>
+  <field name="hari">315</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JF02_1" model="wtc.kpb.expired">
+  <field name="name">JF02</field>
+  <field name="description">SPACY</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">600</field>
+</record>
+    
+    
+<record id="JF02_2" model="wtc.kpb.expired">
+  <field name="name">JF02</field>
+  <field name="description">SPACY</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">2250</field>
+</record>
+    
+    
+<record id="JF02_3" model="wtc.kpb.expired">
+  <field name="name">JF02</field>
+  <field name="description">SPACY</field>
+  <field name="service">3</field>
+  <field name="hari">195</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JF02_4" model="wtc.kpb.expired">
+  <field name="name">JF02</field>
+  <field name="description">SPACY</field>
+  <field name="service">4</field>
+  <field name="hari">315</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JF41_1" model="wtc.kpb.expired">
+  <field name="name">JF41</field>
+  <field name="description">BEAT</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">600</field>
+</record>
+    
+    
+<record id="JF41_2" model="wtc.kpb.expired">
+  <field name="name">JF41</field>
+  <field name="description">BEAT</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">2250</field>
+</record>
+    
+    
+<record id="JF41_3" model="wtc.kpb.expired">
+  <field name="name">JF41</field>
+  <field name="description">BEAT</field>
+  <field name="service">3</field>
+  <field name="hari">195</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JF41_4" model="wtc.kpb.expired">
+  <field name="name">JF41</field>
+  <field name="description">BEAT</field>
+  <field name="service">4</field>
+  <field name="hari">315</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JF51_1" model="wtc.kpb.expired">
+  <field name="name">JF51</field>
+  <field name="description">BEAT</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">600</field>
+</record>
+    
+    
+<record id="JF51_2" model="wtc.kpb.expired">
+  <field name="name">JF51</field>
+  <field name="description">BEAT</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">2250</field>
+</record>
+    
+    
+<record id="JF51_3" model="wtc.kpb.expired">
+  <field name="name">JF51</field>
+  <field name="description">BEAT</field>
+  <field name="service">3</field>
+  <field name="hari">195</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JF51_4" model="wtc.kpb.expired">
+  <field name="name">JF51</field>
+  <field name="description">BEAT</field>
+  <field name="service">4</field>
+  <field name="hari">315</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JF61_1" model="wtc.kpb.expired">
+  <field name="name">JF61</field>
+  <field name="description">SCOOPY</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">600</field>
+</record>
+    
+    
+<record id="JF61_2" model="wtc.kpb.expired">
+  <field name="name">JF61</field>
+  <field name="description">SCOOPY</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">2250</field>
+</record>
+    
+    
+<record id="JF61_3" model="wtc.kpb.expired">
+  <field name="name">JF61</field>
+  <field name="description">SCOOPY</field>
+  <field name="service">3</field>
+  <field name="hari">195</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JF61_4" model="wtc.kpb.expired">
+  <field name="name">JF61</field>
+  <field name="description">SCOOPY</field>
+  <field name="service">4</field>
+  <field name="hari">315</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JF71_1" model="wtc.kpb.expired">
+  <field name="name">JF71</field>
+  <field name="description">VARIO</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">600</field>
+</record>
+    
+    
+<record id="JF71_2" model="wtc.kpb.expired">
+  <field name="name">JF71</field>
+  <field name="description">VARIO</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">2250</field>
+</record>
+    
+    
+<record id="JF71_3" model="wtc.kpb.expired">
+  <field name="name">JF71</field>
+  <field name="description">VARIO</field>
+  <field name="service">3</field>
+  <field name="hari">195</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JF71_4" model="wtc.kpb.expired">
+  <field name="name">JF71</field>
+  <field name="description">VARIO</field>
+  <field name="service">4</field>
+  <field name="hari">315</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JF81_1" model="wtc.kpb.expired">
+  <field name="name">JF81</field>
+  <field name="description">VARIO</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">600</field>
+</record>
+    
+    
+<record id="JF81_2" model="wtc.kpb.expired">
+  <field name="name">JF81</field>
+  <field name="description">VARIO</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">2250</field>
+</record>
+    
+    
+<record id="JF81_3" model="wtc.kpb.expired">
+  <field name="name">JF81</field>
+  <field name="description">VARIO</field>
+  <field name="service">3</field>
+  <field name="hari">195</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JF81_4" model="wtc.kpb.expired">
+  <field name="name">JF81</field>
+  <field name="description">VARIO</field>
+  <field name="service">4</field>
+  <field name="hari">315</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JF91_1" model="wtc.kpb.expired">
+  <field name="name">JF91</field>
+  <field name="description">VARIO</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">600</field>
+</record>
+    
+    
+<record id="JF91_2" model="wtc.kpb.expired">
+  <field name="name">JF91</field>
+  <field name="description">VARIO</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">2250</field>
+</record>
+    
+    
+<record id="JF91_3" model="wtc.kpb.expired">
+  <field name="name">JF91</field>
+  <field name="description">VARIO</field>
+  <field name="service">3</field>
+  <field name="hari">195</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JF91_4" model="wtc.kpb.expired">
+  <field name="name">JF91</field>
+  <field name="description">VARIO</field>
+  <field name="service">4</field>
+  <field name="hari">315</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JFA1_1" model="wtc.kpb.expired">
+  <field name="name">JFA1</field>
+  <field name="description">SPACY HI INJEKSI</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">600</field>
+</record>
+    
+    
+<record id="JFA1_2" model="wtc.kpb.expired">
+  <field name="name">JFA1</field>
+  <field name="description">SPACY HI INJEKSI</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">2250</field>
+</record>
+    
+    
+<record id="JFA1_3" model="wtc.kpb.expired">
+  <field name="name">JFA1</field>
+  <field name="description">SPACY HI INJEKSI</field>
+  <field name="service">3</field>
+  <field name="hari">195</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JFA1_4" model="wtc.kpb.expired">
+  <field name="name">JFA1</field>
+  <field name="description">SPACY HI INJEKSI</field>
+  <field name="service">4</field>
+  <field name="hari">315</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="KC21_1" model="wtc.kpb.expired">
+  <field name="name">KC21</field>
+  <field name="description">MEGA PRO</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">600</field>
+</record>
+    
+    
+<record id="KC21_2" model="wtc.kpb.expired">
+  <field name="name">KC21</field>
+  <field name="description">MEGA PRO</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">2250</field>
+</record>
+    
+    
+<record id="KC21_3" model="wtc.kpb.expired">
+  <field name="name">KC21</field>
+  <field name="description">MEGA PRO</field>
+  <field name="service">3</field>
+  <field name="hari">195</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="KC21_4" model="wtc.kpb.expired">
+  <field name="name">KC21</field>
+  <field name="description">MEGA PRO</field>
+  <field name="service">4</field>
+  <field name="hari">315</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="KC31_1" model="wtc.kpb.expired">
+  <field name="name">KC31</field>
+  <field name="description">MEGA PRO</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">600</field>
+</record>
+    
+    
+<record id="KC31_2" model="wtc.kpb.expired">
+  <field name="name">KC31</field>
+  <field name="description">MEGA PRO</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">2250</field>
+</record>
+    
+    
+<record id="KC31_3" model="wtc.kpb.expired">
+  <field name="name">KC31</field>
+  <field name="description">MEGA PRO</field>
+  <field name="service">3</field>
+  <field name="hari">195</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="KC31_4" model="wtc.kpb.expired">
+  <field name="name">KC31</field>
+  <field name="description">MEGA PRO</field>
+  <field name="service">4</field>
+  <field name="hari">315</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="MC22_1" model="wtc.kpb.expired">
+  <field name="name">MC22</field>
+  <field name="description">TIGER</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">600</field>
+</record>
+    
+    
+<record id="MC22_2" model="wtc.kpb.expired">
+  <field name="name">MC22</field>
+  <field name="description">TIGER</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">2250</field>
+</record>
+    
+    
+<record id="MC22_3" model="wtc.kpb.expired">
+  <field name="name">MC22</field>
+  <field name="description">TIGER</field>
+  <field name="service">3</field>
+  <field name="hari">195</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="MC22_4" model="wtc.kpb.expired">
+  <field name="name">MC22</field>
+  <field name="description">TIGER</field>
+  <field name="service">4</field>
+  <field name="hari">315</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="MC23_1" model="wtc.kpb.expired">
+  <field name="name">MC23</field>
+  <field name="description">TIGER</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">600</field>
+</record>
+    
+    
+<record id="MC23_2" model="wtc.kpb.expired">
+  <field name="name">MC23</field>
+  <field name="description">TIGER</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">2250</field>
+</record>
+    
+    
+<record id="MC23_3" model="wtc.kpb.expired">
+  <field name="name">MC23</field>
+  <field name="description">TIGER</field>
+  <field name="service">3</field>
+  <field name="hari">195</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="MC23_4" model="wtc.kpb.expired">
+  <field name="name">MC23</field>
+  <field name="description">TIGER</field>
+  <field name="service">4</field>
+  <field name="hari">315</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JFD2_1" model="wtc.kpb.expired">
+  <field name="name">JFD2</field>
+  <field name="description">BEAT FI</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="JFD2_2" model="wtc.kpb.expired">
+  <field name="name">JFD2</field>
+  <field name="description">BEAT FI</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JFD2_3" model="wtc.kpb.expired">
+  <field name="name">JFD2</field>
+  <field name="description">BEAT FI</field>
+  <field name="service">3</field>
+  <field name="hari">255</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JFD2_4" model="wtc.kpb.expired">
+  <field name="name">JFD2</field>
+  <field name="description">BEAT FI</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="JFE1_1" model="wtc.kpb.expired">
+  <field name="name">JFE1</field>
+  <field name="description">BEAT FI</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="JFE1_2" model="wtc.kpb.expired">
+  <field name="name">JFE1</field>
+  <field name="description">BEAT FI</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JFE1_3" model="wtc.kpb.expired">
+  <field name="name">JFE1</field>
+  <field name="description">BEAT FI</field>
+  <field name="service">3</field>
+  <field name="hari">255</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JFE1_4" model="wtc.kpb.expired">
+  <field name="name">JFE1</field>
+  <field name="description">BEAT FI</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="JFD1_1" model="wtc.kpb.expired">
+  <field name="name">JFD1</field>
+  <field name="description">BEAT FI</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="JFD1_2" model="wtc.kpb.expired">
+  <field name="name">JFD1</field>
+  <field name="description">BEAT FI</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JFD1_3" model="wtc.kpb.expired">
+  <field name="name">JFD1</field>
+  <field name="description">BEAT FI</field>
+  <field name="service">3</field>
+  <field name="hari">255</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JFD1_4" model="wtc.kpb.expired">
+  <field name="name">JFD1</field>
+  <field name="description">BEAT FI</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="KC51_1" model="wtc.kpb.expired">
+  <field name="name">KC51</field>
+  <field name="description">VERZA</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="KC51_2" model="wtc.kpb.expired">
+  <field name="name">KC51</field>
+  <field name="description">VERZA</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="KC51_3" model="wtc.kpb.expired">
+  <field name="name">KC51</field>
+  <field name="description">VERZA</field>
+  <field name="service">3</field>
+  <field name="hari">255</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="KC51_4" model="wtc.kpb.expired">
+  <field name="name">KC51</field>
+  <field name="description">VERZA</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="KC52_1" model="wtc.kpb.expired">
+  <field name="name">KC52</field>
+  <field name="description">VERZA</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="KC52_2" model="wtc.kpb.expired">
+  <field name="name">KC52</field>
+  <field name="description">VERZA</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="KC52_3" model="wtc.kpb.expired">
+  <field name="name">KC52</field>
+  <field name="description">VERZA</field>
+  <field name="service">3</field>
+  <field name="hari">255</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="KC52_4" model="wtc.kpb.expired">
+  <field name="name">KC52</field>
+  <field name="description">VERZA</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="JFG1_1" model="wtc.kpb.expired">
+  <field name="name">JFG1</field>
+  <field name="description">SCOOPY FI</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="JFG1_2" model="wtc.kpb.expired">
+  <field name="name">JFG1</field>
+  <field name="description">SCOOPY FI</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JFG1_3" model="wtc.kpb.expired">
+  <field name="name">JFG1</field>
+  <field name="description">SCOOPY FI</field>
+  <field name="service">3</field>
+  <field name="hari">255</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JFG1_4" model="wtc.kpb.expired">
+  <field name="name">JFG1</field>
+  <field name="description">SCOOPY FI</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="JBJ1_1" model="wtc.kpb.expired">
+  <field name="name">JBJ1</field>
+  <field name="description">BLADE</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">600</field>
+</record>
+    
+    
+<record id="JBJ1_2" model="wtc.kpb.expired">
+  <field name="name">JBJ1</field>
+  <field name="description">BLADE</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">2250</field>
+</record>
+    
+    
+<record id="JBJ1_3" model="wtc.kpb.expired">
+  <field name="name">JBJ1</field>
+  <field name="description">BLADE</field>
+  <field name="service">3</field>
+  <field name="hari">195</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JBJ1_4" model="wtc.kpb.expired">
+  <field name="name">JBJ1</field>
+  <field name="description">BLADE</field>
+  <field name="service">4</field>
+  <field name="hari">315</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="KC41_1" model="wtc.kpb.expired">
+  <field name="name">KC41</field>
+  <field name="description">CB150R</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="KC41_2" model="wtc.kpb.expired">
+  <field name="name">KC41</field>
+  <field name="description">CB150R</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="KC41_3" model="wtc.kpb.expired">
+  <field name="name">KC41</field>
+  <field name="description">CB150R</field>
+  <field name="service">3</field>
+  <field name="hari">255</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="KC41_4" model="wtc.kpb.expired">
+  <field name="name">KC41</field>
+  <field name="description">CB150R</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="JFF1_1" model="wtc.kpb.expired">
+  <field name="name">JFF1</field>
+  <field name="description">VARIO TECHNO 125 ISS</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="JFF1_2" model="wtc.kpb.expired">
+  <field name="name">JFF1</field>
+  <field name="description">VARIO TECHNO 125 ISS</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JFF1_3" model="wtc.kpb.expired">
+  <field name="name">JFF1</field>
+  <field name="description">VARIO TECHNO 125 ISS</field>
+  <field name="service">3</field>
+  <field name="hari">255</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JFF1_4" model="wtc.kpb.expired">
+  <field name="name">JFF1</field>
+  <field name="description">VARIO TECHNO 125 ISS</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="JBK2_1" model="wtc.kpb.expired">
+  <field name="name">JBK2</field>
+  <field name="description">REVO SPOKE FI</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="JBK2_2" model="wtc.kpb.expired">
+  <field name="name">JBK2</field>
+  <field name="description">REVO SPOKE FI</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JBK2_3" model="wtc.kpb.expired">
+  <field name="name">JBK2</field>
+  <field name="description">REVO SPOKE FI</field>
+  <field name="service">3</field>
+  <field name="hari">255</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JBK2_4" model="wtc.kpb.expired">
+  <field name="name">JBK2</field>
+  <field name="description">REVO SPOKE FI</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="JBK3_1" model="wtc.kpb.expired">
+  <field name="name">JBK3</field>
+  <field name="description">Revo CW FI</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="JBK3_2" model="wtc.kpb.expired">
+  <field name="name">JBK3</field>
+  <field name="description">Revo CW FI</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JBK3_3" model="wtc.kpb.expired">
+  <field name="name">JBK3</field>
+  <field name="description">Revo CW FI</field>
+  <field name="service">3</field>
+  <field name="hari">255</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JBK3_4" model="wtc.kpb.expired">
+  <field name="name">JBK3</field>
+  <field name="description">Revo CW FI</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="KC61_1" model="wtc.kpb.expired">
+  <field name="name">KC61</field>
+  <field name="description">New Mega Pro CW FI</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="KC61_2" model="wtc.kpb.expired">
+  <field name="name">KC61</field>
+  <field name="description">New Mega Pro CW FI</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="KC61_3" model="wtc.kpb.expired">
+  <field name="name">KC61</field>
+  <field name="description">New Mega Pro CW FI</field>
+  <field name="service">3</field>
+  <field name="hari">255</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="KC61_4" model="wtc.kpb.expired">
+  <field name="name">KC61</field>
+  <field name="description">New Mega Pro CW FI</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="JBN1_1" model="wtc.kpb.expired">
+  <field name="name">JBN1</field>
+  <field name="description">Supra X 125 Spoke FI</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="JBN1_2" model="wtc.kpb.expired">
+  <field name="name">JBN1</field>
+  <field name="description">Supra X 125 Spoke FI</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JBN1_3" model="wtc.kpb.expired">
+  <field name="name">JBN1</field>
+  <field name="description">Supra X 125 Spoke FI</field>
+  <field name="service">3</field>
+  <field name="hari">255</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JBN1_4" model="wtc.kpb.expired">
+  <field name="name">JBN1</field>
+  <field name="description">Supra X 125 Spoke FI</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="JBP1_1" model="wtc.kpb.expired">
+  <field name="name">JBP1</field>
+  <field name="description">Supra X 125 CW FI</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="JBP1_2" model="wtc.kpb.expired">
+  <field name="name">JBP1</field>
+  <field name="description">Supra X 125 CW FI</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JBP1_3" model="wtc.kpb.expired">
+  <field name="name">JBP1</field>
+  <field name="description">Supra X 125 CW FI</field>
+  <field name="service">3</field>
+  <field name="hari">255</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JBP1_4" model="wtc.kpb.expired">
+  <field name="name">JBP1</field>
+  <field name="description">Supra X 125 CW FI</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="JFH1_1" model="wtc.kpb.expired">
+  <field name="name">JFH1</field>
+  <field name="description">New Vario CW F1</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="JFH1_2" model="wtc.kpb.expired">
+  <field name="name">JFH1</field>
+  <field name="description">New Vario CW F1</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JFH1_3" model="wtc.kpb.expired">
+  <field name="name">JFH1</field>
+  <field name="description">New Vario CW F1</field>
+  <field name="service">3</field>
+  <field name="hari">255</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JFH1_4" model="wtc.kpb.expired">
+  <field name="name">JFH1</field>
+  <field name="description">New Vario CW F1</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="JFJ1_1" model="wtc.kpb.expired">
+  <field name="name">JFJ1</field>
+  <field name="description">New Vario 125 Techo CBS</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="JFJ1_2" model="wtc.kpb.expired">
+  <field name="name">JFJ1</field>
+  <field name="description">New Vario 125 Techo CBS</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JFJ1_3" model="wtc.kpb.expired">
+  <field name="name">JFJ1</field>
+  <field name="description">New Vario 125 Techo CBS</field>
+  <field name="service">3</field>
+  <field name="hari">255</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JFJ1_4" model="wtc.kpb.expired">
+  <field name="name">JFJ1</field>
+  <field name="description">New Vario 125 Techo CBS</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="JFK1_1" model="wtc.kpb.expired">
+  <field name="name">JFK1</field>
+  <field name="description">New Vario 125 CBS ISS</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="JFK1_2" model="wtc.kpb.expired">
+  <field name="name">JFK1</field>
+  <field name="description">New Vario 125 CBS ISS</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JFK1_3" model="wtc.kpb.expired">
+  <field name="name">JFK1</field>
+  <field name="description">New Vario 125 CBS ISS</field>
+  <field name="service">3</field>
+  <field name="hari">255</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JFK1_4" model="wtc.kpb.expired">
+  <field name="name">JFK1</field>
+  <field name="description">New Vario 125 CBS ISS</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="JBL1_1" model="wtc.kpb.expired">
+  <field name="name">JBL1</field>
+  <field name="description">New Blade S 125 F1</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="JBL1_2" model="wtc.kpb.expired">
+  <field name="name">JBL1</field>
+  <field name="description">New Blade S 125 F1</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JBL1_3" model="wtc.kpb.expired">
+  <field name="name">JBL1</field>
+  <field name="description">New Blade S 125 F1</field>
+  <field name="service">3</field>
+  <field name="hari">255</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JBL1_4" model="wtc.kpb.expired">
+  <field name="name">JBL1</field>
+  <field name="description">New Blade S 125 F1</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="JBM1_1" model="wtc.kpb.expired">
+  <field name="name">JBM1</field>
+  <field name="description">New Blade R 125 F1</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="JBM1_2" model="wtc.kpb.expired">
+  <field name="name">JBM1</field>
+  <field name="description">New Blade R 125 F1</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JBM1_3" model="wtc.kpb.expired">
+  <field name="name">JBM1</field>
+  <field name="description">New Blade R 125 F1</field>
+  <field name="service">3</field>
+  <field name="hari">255</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JBM1_4" model="wtc.kpb.expired">
+  <field name="name">JBM1</field>
+  <field name="description">New Blade R 125 F1</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="JFM1_1" model="wtc.kpb.expired">
+  <field name="name">JFM1</field>
+  <field name="description">BEAT PGM FI</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="JFM1_2" model="wtc.kpb.expired">
+  <field name="name">JFM1</field>
+  <field name="description">BEAT PGM FI</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JFM1_3" model="wtc.kpb.expired">
+  <field name="name">JFM1</field>
+  <field name="description">BEAT PGM FI</field>
+  <field name="service">3</field>
+  <field name="hari">255</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JFM1_4" model="wtc.kpb.expired">
+  <field name="name">JFM1</field>
+  <field name="description">BEAT PGM FI</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="JFM2_1" model="wtc.kpb.expired">
+  <field name="name">JFM2</field>
+  <field name="description">BEAT PGM FI</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="JFM2_2" model="wtc.kpb.expired">
+  <field name="name">JFM2</field>
+  <field name="description">BEAT PGM FI</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JFM2_3" model="wtc.kpb.expired">
+  <field name="name">JFM2</field>
+  <field name="description">BEAT PGM FI</field>
+  <field name="service">3</field>
+  <field name="hari">255</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JFM2_4" model="wtc.kpb.expired">
+  <field name="name">JFM2</field>
+  <field name="description">BEAT PGM FI</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="JFN1_1" model="wtc.kpb.expired">
+  <field name="name">JFN1</field>
+  <field name="description">Beat PGM-F1</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="JFN1_2" model="wtc.kpb.expired">
+  <field name="name">JFN1</field>
+  <field name="description">Beat PGM-F1</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JFN1_3" model="wtc.kpb.expired">
+  <field name="name">JFN1</field>
+  <field name="description">Beat PGM-F1</field>
+  <field name="service">3</field>
+  <field name="hari">255</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JFN1_4" model="wtc.kpb.expired">
+  <field name="name">JFN1</field>
+  <field name="description">Beat PGM-F1</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="JFL1_1" model="wtc.kpb.expired">
+  <field name="name">JFL1</field>
+  <field name="description">Scoopy PGM-F1</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="JFL1_2" model="wtc.kpb.expired">
+  <field name="name">JFL1</field>
+  <field name="description">Scoopy PGM-F1</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JFL1_3" model="wtc.kpb.expired">
+  <field name="name">JFL1</field>
+  <field name="description">Scoopy PGM-F1</field>
+  <field name="service">3</field>
+  <field name="hari">195</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JFL1_4" model="wtc.kpb.expired">
+  <field name="name">JFL1</field>
+  <field name="description">Scoopy PGM-F1</field>
+  <field name="service">4</field>
+  <field name="hari">315</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="KC71_1" model="wtc.kpb.expired">
+  <field name="name">KC71</field>
+  <field name="description">New CBR 150 R</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1250</field>
+</record>
+    
+    
+<record id="KC71_2" model="wtc.kpb.expired">
+  <field name="name">KC71</field>
+  <field name="description">New CBR 150 R</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="KC71_3" model="wtc.kpb.expired">
+  <field name="name">KC71</field>
+  <field name="description">New CBR 150 R</field>
+  <field name="service">3</field>
+  <field name="hari">255</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="KC71_4" model="wtc.kpb.expired">
+  <field name="name">KC71</field>
+  <field name="description">New CBR 150 R</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="JFP1_1" model="wtc.kpb.expired">
+  <field name="name">JFP1</field>
+  <field name="description">BEAT SPORTY CW</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="JFP1_2" model="wtc.kpb.expired">
+  <field name="name">JFP1</field>
+  <field name="description">BEAT SPORTY CW</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JFP1_3" model="wtc.kpb.expired">
+  <field name="name">JFP1</field>
+  <field name="description">BEAT SPORTY CW</field>
+  <field name="service">3</field>
+  <field name="hari">225</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JFP1_4" model="wtc.kpb.expired">
+  <field name="name">JFP1</field>
+  <field name="description">BEAT SPORTY CW</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="JFP2_1" model="wtc.kpb.expired">
+  <field name="name">JFP2</field>
+  <field name="description">BEAT SPORTY CBS</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="JFP2_2" model="wtc.kpb.expired">
+  <field name="name">JFP2</field>
+  <field name="description">BEAT SPORTY CBS</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JFP2_3" model="wtc.kpb.expired">
+  <field name="name">JFP2</field>
+  <field name="description">BEAT SPORTY CBS</field>
+  <field name="service">3</field>
+  <field name="hari">225</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JFP2_4" model="wtc.kpb.expired">
+  <field name="name">JFP2</field>
+  <field name="description">BEAT SPORTY CBS</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="JFR1_1" model="wtc.kpb.expired">
+  <field name="name">JFR1</field>
+  <field name="description">BEAT SPORTY CBS ISS</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="JFR1_2" model="wtc.kpb.expired">
+  <field name="name">JFR1</field>
+  <field name="description">BEAT SPORTY CBS ISS</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JFR1_3" model="wtc.kpb.expired">
+  <field name="name">JFR1</field>
+  <field name="description">BEAT SPORTY CBS ISS</field>
+  <field name="service">3</field>
+  <field name="hari">225</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JFR1_4" model="wtc.kpb.expired">
+  <field name="name">JFR1</field>
+  <field name="description">BEAT SPORTY CBS ISS</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="JFS1_1" model="wtc.kpb.expired">
+  <field name="name">JFS1</field>
+  <field name="description">BEAT POP CW</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="JFS1_2" model="wtc.kpb.expired">
+  <field name="name">JFS1</field>
+  <field name="description">BEAT POP CW</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JFS1_3" model="wtc.kpb.expired">
+  <field name="name">JFS1</field>
+  <field name="description">BEAT POP CW</field>
+  <field name="service">3</field>
+  <field name="hari">225</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JFS1_4" model="wtc.kpb.expired">
+  <field name="name">JFS1</field>
+  <field name="description">BEAT POP CW</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="JFS2_1" model="wtc.kpb.expired">
+  <field name="name">JFS2</field>
+  <field name="description">BEAT POP CBS</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="JFS2_2" model="wtc.kpb.expired">
+  <field name="name">JFS2</field>
+  <field name="description">BEAT POP CBS</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JFS2_3" model="wtc.kpb.expired">
+  <field name="name">JFS2</field>
+  <field name="description">BEAT POP CBS</field>
+  <field name="service">3</field>
+  <field name="hari">225</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JFS2_4" model="wtc.kpb.expired">
+  <field name="name">JFS2</field>
+  <field name="description">BEAT POP CBS</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+    
+<record id="JFT1_1" model="wtc.kpb.expired">
+  <field name="name">JFT1</field>
+  <field name="description">BEAT POP CBS ISS</field>
+  <field name="service">1</field>
+  <field name="hari">75</field>
+  <field name="km">1100</field>
+</record>
+    
+    
+<record id="JFT1_2" model="wtc.kpb.expired">
+  <field name="name">JFT1</field>
+  <field name="description">BEAT POP CBS ISS</field>
+  <field name="service">2</field>
+  <field name="hari">135</field>
+  <field name="km">4250</field>
+</record>
+    
+    
+<record id="JFT1_3" model="wtc.kpb.expired">
+  <field name="name">JFT1</field>
+  <field name="description">BEAT POP CBS ISS</field>
+  <field name="service">3</field>
+  <field name="hari">225</field>
+  <field name="km">8250</field>
+</record>
+    
+    
+<record id="JFT1_4" model="wtc.kpb.expired">
+  <field name="name">JFT1</field>
+  <field name="description">BEAT POP CBS ISS</field>
+  <field name="service">4</field>
+  <field name="hari">375</field>
+  <field name="km">12250</field>
+</record>
+    
+
+</data>
+</openerp>

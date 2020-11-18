@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_wtc_faktur_pajak_all,wtc_faktur_pajak all,model_wtc_faktur_pajak,,1,1,1,1
+access_wtc_faktur_pajak_out_all,wtc_faktur_pajak_out all,model_wtc_faktur_pajak_out,,1,1,1,1
+access_wtc_signature,access_wtc_signature all,model_wtc_signature,,1,1,1,1
+access_wtc_remark,access_wtc_remark all,model_wtc_remark,,1,1,1,1
+access_wtc_faktur_pajak_gabungan,access_wtc_faktur_pajak_gabungan all,model_wtc_faktur_pajak_gabungan,,1,1,1,1
+access_wtc_faktur_pajak_gabungan_line,access_wtc_faktur_pajak_gabungan_line all,model_wtc_faktur_pajak_gabungan_line,,1,1,1,1
+access_wtc_regenerate_faktur_pajak_gabungan,access_wtc_regenerate_faktur_pajak_gabungan all,model_wtc_regenerate_faktur_pajak_gabungan,,1,1,1,1
+access_wtc_regenerate_faktur_pajak_gabungan_line,access_wtc_regenerate_faktur_pajak_gabungan_line all,model_wtc_regenerate_faktur_pajak_gabungan_line,,1,1,1,1

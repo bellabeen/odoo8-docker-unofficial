@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    	<record model="ir.ui.view" id="wtc_pajak_progressive_tree_view">
+		    <field name="name">wtc.pajak.progressive.tree</field>
+		    <field name="model">wtc.pajak.progressive</field>
+		    <field name="arch" type="xml">
+		        <tree string="List Pajak Progressive">
+		            <field name="name" />
+		            <field name="branch_id"/>
+		            <field name="division"/>
+		            <field name="state" /> 
+		        </tree>
+		    </field>
+    	</record>
+    	<record model="ir.ui.view" id="wtc_pajak_progressive_form_view">
+		    <field name="name">wtc.pajak.progressive.form</field>
+		    <field name="model">wtc.pajak.progressive</field>
+		    <field name="arch" type="xml">
+		        <form string="Form Pajak Progressive">
+		        <header>
+		        	<button name="confirm_invoice" string="Confirm" type="object" class="oe_highlight" states="draft" groups="wtc_proses_stnk.group_pajak_progressive_update"/>
+		            <field name="state" widget="statusbar" statusbar_visible="draft,confirmed" />
+		        </header>
+		        	<sheet>
+			        	<div class="oe_title">
+			        		<h2>
+	                            <field name="name" class="oe_inline" readonly="1"/>    				
+			 				</h2>
+			        	</div> 
+			        	<group col="2" colspan="2">   
+							<group>
+								<field name="branch_id" options="{'no_create': True,'no_open': True}" required="1" attrs="{'readonly': ['|',('state','!=','draft'),('name','!=',False)]}" />
+								<field name="biro_jasa_id" required="1" options="{'no_create': True,'no_open': True}" attrs="{'readonly': [('state','!=','draft')]}" />
+		        			</group>
+		        			<group>
+		        				<field name="division" attrs="{'readonly': [('state','!=','draft')]}" required="1"/>
+		        				<field name="tanggal" readonly="1"/>
+		        			</group>	
+						</group>
+						<notebook>
+							<page string="Pajak Progresive">
+								<field  name="pajak_progressive_line_ids" nolabel="1" widget="one2many_list" attrs="{'readonly': [('state','!=','draft')]}" context="{'form_view_ref': 'wtc_proses_stnk.wtc_pajak_progressive_line_form_view'}">
+									<tree>
+										<field name="lot_id" options="{'no_create': True,'no_open': True}"/>
+										<field name="customer_stnk_id"/>
+										<field name="pajak_progressive"/>
+										<field name="name" readonly="1"/>
+										<field name="invoice_id" readonly="1"/>
+										<field name="status" readonly="1"/>
+									</tree>								    
+								</field>
+							</page>
+							<page string="Audit Trail">
+								<group>
+									<group>
+ 										<field name="create_uid" readonly="1"></field>
+										<field name="create_date" readonly="1"></field>
+										<field name="confirm_uid" readonly="1"></field>
+										<field name="confirm_date" readonly="1"></field>
+ 									</group>
+									<group>
+ 										<field name="write_uid" readonly="1"></field>
+										<field name="write_date" readonly="1"></field> 
+										<field name="cancel_uid" readonly="1" states="cancelled"></field>
+										<field name="cancel_date" readonly="1" states="cancelled"></field>
+									</group>
+								</group>
+							</page>
+						</notebook>
+		           </sheet>
+		        </form>
+		     </field>
+		</record>
+
+		<record id="view_wtc_pajak_progressive_filter" model="ir.ui.view">
+		    <field name="name">wtc.pajak.progressive.filter</field>
+		    <field name="model">wtc.pajak.progressive</field>
+		    <field name="arch" type="xml">
+		        <search string="Search Pajak Progressive">
+		            <field name="name" string="No Reference"/>
+		            <field name="pajak_progressive_line_ids" filter_domain="[('pajak_progressive_line_ids.lot_id', '=', self)]" string="No Engine"/>
+		            <field name="pajak_progressive_line_ids" filter_domain="[('pajak_progressive_line_ids.name', '=', self)]" string="PPD"/>
+		            <field name="branch_id"/>
+		            <filter name="draft" string="Draft" domain="[('state','=','draft')]"/>
+                    <filter name="confirmed" string="Confirmed" domain="[('state','=','confirmed')]"/>
+                    <filter name="cancelled" string="Cancelled" domain="[('state','=','cancelled')]"/>
+
+		        </search>
+		    </field>
+		</record>
+
+    	<record model="ir.actions.act_window" id="pajak_progressive_action">
+		    <field name="name">Pajak Progressive</field>
+		    <field name="res_model">wtc.pajak.progressive</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		</record>
+
+		<record model="ir.ui.view" id="wtc_pajak_progressive_line_form_view">
+		    <field name="name">wtc.pajak.progressive.line.form</field>
+		    <field name="model">wtc.pajak.progressive.line</field>
+		    <field name="arch" type="xml">
+		    	<form string="PPD Detail">
+		    		<header>
+		        		<field name="status" widget="statusbar" statusbar_visible="draft,confirmed,cancelled" />
+		        	</header>
+		    		<sheet>
+		    			<div class="oe_title">
+			        		<h2>
+	                            <field name="name" class="oe_inline" readonly="1"/>    				
+			 				</h2>
+			        	</div> 
+		    			<group col="2">
+		    				<group>
+			    				<field name="invoice_id" attrs="{'invisible':[('status','=','draft')]}"/>
+			    				<field name="lot_id" options="{'no_create': True,'no_open': True}"/>
+			    				<field name="customer_stnk_id"/>
+		    				</group>
+		    				<group>
+		    					<field name="pajak_progressive" required="1"/>
+		    					<field name="cancel_uid" attrs="{'invisible':[('status','!=','cancelled')]}" readonly="1"/>
+		    					<field name="cancel_date" attrs="{'invisible':[('status','!=','cancelled')]}" readonly="1"/>
+		    				</group>
+		    			</group>
+
+		    		</sheet>
+		    	</form>
+		    </field>
+		</record>
+
+
+    	<menuitem id="wtc_pajak_progressive_menu" name="Pajak Progressive" parent="wtc_dealer_menu.stnk_bpkb_proses_stnk_menu"  action="pajak_progressive_action" sequence="18"/> 
+    </data>
+</openerp> 

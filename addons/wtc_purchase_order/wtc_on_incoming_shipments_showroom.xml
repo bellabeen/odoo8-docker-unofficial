@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+	
+		<record id="incoming_showroom_vpicktree" model="ir.ui.view">
+            <field name="name">incoming.showroom.stock.picking.tree</field>
+            <field name="model">stock.picking</field>
+            <field name="arch" type="xml">
+                <tree colors="blue:state == 'draft';grey:state == 'cancel';red:state not in ('cancel', 'done') and min_date &lt; current_date" string="Picking list">
+                    <field name="name"/>
+                    <field name="location_dest_id"/>
+                    <field name="partner_id"/>
+                    <field name="date"/>
+                    <field name="min_date" invisible="1"/>
+                    <field name="origin"/>
+                    <field name="group_id" invisible="1"/>
+                    <field name="backorder_id"/>
+                    <field name="division"/>   
+                    <field name="state"/>
+                    <field name="priority" invisible="1"/>
+                    <field name="picking_type_id" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+        
+		<record id="wtc_picking_incoming_showroom_action" model="ir.actions.act_window">
+            <field name="name">On Incoming Shipments</field>
+            <field name="res_model">stock.picking</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{"search_default_confirmed":1,"search_default_available":1,"search_default_waiting":1}</field>		           
+            <field name="domain">[('picking_type_code','in',['incoming','interbranch_in']), ('division','in',['Unit','Umum'])]</field>
+            <field name="search_view_id" ref="wtc_stock.wtc_view_picking_internal_search"/>
+        </record>
+        
+        <record id="wtc_picking_incoming_showroom_action_tree" model="ir.actions.act_window.view">
+            <field eval="1" name="sequence"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="incoming_showroom_vpicktree"/>
+            <field name="act_window_id" ref="wtc_picking_incoming_showroom_action"/>
+        </record>
+        
+        <record id="wtc_picking_internal_action_form" model="ir.actions.act_window.view">
+            <field eval="2" name="sequence"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="stock.view_picking_form"/>
+            <field name="act_window_id" ref="wtc_picking_incoming_showroom_action"/>
+        </record>
+        
+        <record id="wtc_picking_incoming_workshop_action" model="ir.actions.act_window">
+            <field name="name">On Incoming Shipments</field>
+            <field name="res_model">stock.picking</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('picking_type_code','in',['incoming','interbranch_in']), ('division','=','Sparepart')]</field>
+            <field name="context">{'search_default_available': 1}</field>
+            <field name="search_view_id" ref="wtc_stock.wtc_view_picking_internal_search"/>
+        </record>
+        
+        <record id="wtc_picking_incoming_workshop_action_tree" model="ir.actions.act_window.view">
+            <field eval="1" name="sequence"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="incoming_showroom_vpicktree"/>
+            <field name="act_window_id" ref="wtc_picking_incoming_workshop_action"/>
+        </record>
+        
+        <record id="wtc_picking_internal_action_form" model="ir.actions.act_window.view">
+            <field eval="2" name="sequence"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="stock.view_picking_form"/>
+            <field name="act_window_id" ref="wtc_picking_incoming_workshop_action"/>
+        </record>
+        
+        <menuitem action="wtc_picking_incoming_showroom_action" id="wtc_picking_incoming_showroom_menu" parent="wtc_dealer_menu.showroom_purchase_menu" sequence="4"/>
+        <menuitem action="wtc_picking_incoming_workshop_action" id="wtc_picking_incoming_workshop_menu" parent="wtc_dealer_menu.workshop_purchase_menu" sequence="4"/>
+	
+	</data>
+</openerp>

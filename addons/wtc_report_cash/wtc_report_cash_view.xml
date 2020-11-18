@@ -1,0 +1,16 @@
+ <?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+<!-- 
+ <report 
+            string="Non Patty Cash" 
+            id="menu_report_cash" 
+            model="wtc.report.cash" 
+            report_type="qweb-pdf"
+            name="wtc_report_cash.wtc_report_non" 
+            file="wtc_report_cash.wtc_report_non" 
+            menu="False"/> -->
+
+
+  </data>
+</openerp>

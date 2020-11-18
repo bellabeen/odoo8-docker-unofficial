@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data> 
+
+    	<record id="view_teds_proses_birojasa_print_pdf" model="ir.ui.view">
+            <field name="name">teds.proses.birojasa.print.pdf</field>
+            <field name="model">wtc.proses.birojasa</field>
+            <field name="inherit_id" ref="wtc_proses_stnk.proses_birojasa_form_view"/>
+            <field name="arch" type="xml">
+                <button name="wkf_action_cancel" position="after">
+                	<button name="action_confirm_document_ho" type="object" string="Confirm Document HO" class="oe_highlight" attrs="{'invisible':[('tgl_terima_document_ho','!=',False)]}" groups="teds_proses_birojasa.group_button_confirm_doc_ho"/>
+                    <button name="action_confirm_document_pajak" type="object" string="Confirm Document Pajak" class="oe_highlight" attrs="{'invisible':[('tgl_terima_document_pajak','!=',False)]}" groups="teds_proses_birojasa.group_button_confirm_doc_pajak"/>
+                    <button name="action_confirm_document_finance" type="object" string="Confirm Document Finance" class="oe_highlight" attrs="{'invisible':[('tgl_terima_document_finance','!=',False)]}" groups="teds_proses_birojasa.group_button_confirm_doc_finace"/>
+                </button>
+                <field name="is_cancelled" position="after">
+                    <field name="tgl_terima_document_ho" invisible="1"/>
+                    <field name="tgl_terima_document_pajak" invisible="1"/>
+                    <field name="tgl_terima_document_finance" invisible="1"/>
+                </field>
+            </field>
+        </record>
+    </data>
+</openerp>

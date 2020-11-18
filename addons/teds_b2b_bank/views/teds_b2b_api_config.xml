@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+	  	<record id="view_teds_b2b_api_config_bca_form" model="ir.ui.view" >
+		    <field name="name">teds.b2b.api.config.bca.form</field>
+		    <field name="model">teds.b2b.api.config</field>
+		    <field name="inherit_id" ref="teds_b2b_api_configuration.view_teds_b2b_api_config_form"/>
+		    <field name="arch" type="xml">
+		    	<field name="base_url" position="after">
+		    		<field name="corporate_id"/>
+					<field name="client_id"/>
+					<field name="client_secret"/>					
+		    	</field>
+		    </field>
+		</record>
+	</data>
+</openerp>

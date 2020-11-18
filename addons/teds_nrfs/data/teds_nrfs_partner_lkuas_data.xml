@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="partner_mml_lkuas" model="res.partner">
+    		<field name="name">MD Lampung</field>
+    		<field name="default_code">MML-LKUAS</field>
+    		<field name="is_company">True</field>
+    		<field name="branch">True</field>
+    		<field name="customer">True</field>
+    		<field name="mobile">087876529000</field>
+    		<field name="street">Jl. Ir. Sutami</field>
+    		<field name="state_id" ref="wtc_address.province_id_1800" />
+    		<field name="city_id" ref="wtc_address.kab_id_1803" />
+            <field name="kecamatan_id" ref="wtc_address.kec_id_1803080" />
+    		<field name="property_payment_term" ref="account.account_payment_term_line_immediate" />
+    	</record>
+    </data>
+</openerp>

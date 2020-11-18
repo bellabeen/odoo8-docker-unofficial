@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_wtc_p2p_periode_all,wtc_p2p_periode all,model_wtc_p2p_periode,,1,1,1,1
+access_wtc_p2p_product_all,wtc_p2p_product all,model_wtc_p2p_product,,1,1,1,1
+access_wtc_p2p_config_all,wtc_p2p_config all,model_wtc_p2p_config,,1,1,1,1
+access_wtc_p2p_purchase_order_all,wtc_p2p_purchase_order all,model_wtc_p2p_purchase_order,,1,1,1,1
+access_wtc_p2p_purchase_order_line_all,wtc_p2p_purchase_order_line all,model_wtc_p2p_purchase_order_line,,1,1,1,1

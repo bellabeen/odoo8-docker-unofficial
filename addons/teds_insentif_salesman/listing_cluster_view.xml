@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    <record id="listing_cluster_tree_view" model="ir.ui.view">
+        <field name="name">listing.cluster.tree.view</field>
+        <field name="model">teds.listing.table.insentif</field>
+        <field name="arch" type="xml">
+            <tree string="Listing Cluster">
+                <field name="name"/>
+                <field name="type_insentif"/>
+                <field name="cluster"/>
+                <field name="total"/>
+                <field name="cash"/>
+                <field name="credit"/>
+                <field name="point"/>
+                <field name="akumulasi"/>
+                <field name="insentif"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="listing_culster_search" model="ir.ui.view">
+        <field name="name">teds.listing.table.insentif.search</field>
+        <field name="model">teds.listing.table.insentif</field>
+        <field name="arch" type="xml">
+            <search string="Search Listing Cluster">
+                <field name='name'/>
+                <field name='cluster'/>
+                <field name='type_insentif'/>
+                <field name='total'/>
+            </search>
+        </field>
+    </record>       
+    
+    <record id="listing_cluster_form_view" model="ir.ui.view">
+        <field name="name">teds.listing.table.insentif.form.view</field>
+        <field name="model">teds.listing.table.insentif</field>
+        <field name="arch" type="xml">
+            <form string="Listing Cluster">
+
+                <header>
+                    <!-- <button name="posted" string="Post" type="object" attrs="{'invisible': [('state','!=','confirmed')]}" class="oe_highlight"/>                     -->
+                    <!-- <button name="view_picking" string="View Picking" type="object" attrs="{'invisible': [('state','not in',('confirmed','posted'))]}" class="oe_highlight"/> -->
+                    <!-- <button name="confirmed" string="Confirm" type="object" attrs="{'invisible': [('state','!=','approved')]}" class="oe_highlight"/>                     -->
+                    <!-- <field name="state" widget="statusbar" statusbar_visible="draft,waiting_for_approval,approved,confirmed,posted"/> -->
+                </header>
+
+                <sheet>
+                    <group col="4">
+                        <field name="name" required="1" options="{'no_open':True,'no_create':True}" string="Jabatan"/>
+                        <field name="cluster" attrs="{'invisible': [('name','not in',('SALESMAN TETAP','SALES PAYROLL','SALESMAN KONTRAK','SOH'))], 'required':[('name','in',('SALESMAN TETAP','SALES PAYROLL','SALESMAN KONTRAK','SOH'))]}"/> 
+                        <field name="type_insentif" attrs="{'invisible': [('name','not in',('SALESMAN PARTNER','KOORDINATOR SALESMAN','SOH'))], 'required':[('name','in',('SALESMAN PARTNER','KOORDINATOR SALESMAN','SOH'))]}"/>
+                        <field name="total" required="1"/>
+                        <field name="cash" string="Cash (Rp)" attrs="{'invisible': [('name','not in',('SALES COUNTER','SALESMAN TETAP','SALES PAYROLL','SALESMAN KONTRAK'))], 'required':[('name','in',('SALES COUNTER','SALESMAN TETAP','SALES PAYROLL','SALESMAN KONTRAK'))]}"/>
+                        <field name="credit" string="Credit (Rp)" attrs="{'invisible': [('name','not in',('SALES COUNTER','SALESMAN TETAP','SALES PAYROLL','SALESMAN KONTRAK'))], 'required':[('name','in',('SALES COUNTER','SALESMAN TETAP','SALES PAYROLL','SALESMAN KONTRAK'))]}"/>
+                        <field name="point" string="Point" attrs="{'invisible': [('name','not in',('SALESMAN TETAP','SALES PAYROLL','SALESMAN KONTRAK'))], 'required':[('name','in',('SALESMAN TETAP','SALES PAYROLL','SALESMAN KONTRAK'))]}"/>
+                        <field name="nilai_per_unit" required="1" string="Nilai/Unit (Rp)" attrs="{'invisible': [('name','not in',('SALESMAN PARTNER','KOORDINATOR SALESMAN'))], 'required':[('name','in',('SALESMAN PARTNER','KOORDINATOR SALESMAN'))]}"/>
+                        <field name="akumulasi" required="1" string="Akumulasi (Rp)" attrs="{'invisible': [('name','not in',('SALESMAN PARTNER','KOORDINATOR SALESMAN'))], 'required':[('name','in',('SALESMAN PARTNER','KOORDINATOR SALESMAN'))]}"/>
+                        <field name="insentif" required="1" string="Insentif (Rp)" attrs="{'invisible': [('name','not in',('SALESMAN PARTNER','KOORDINATOR SALESMAN','SOH'))], 'required':[('name','in',('SALESMAN PARTNER','KOORDINATOR SALESMAN','SOH'))]}"/>
+                        <!-- <field name="days" required="1" attrs="{'invisible': [('name','!=','SALES COUNTER')]}"/> -->
+                    </group>
+                    <notebook colspan="5">
+                        <page string="Audit Trail">
+                            <group>
+                                <group>
+                                    <field name="create_uid" readonly="1"></field>
+                                    <field name="create_date" readonly="1"></field>                 
+                                </group>
+                                <group>
+                                    <field name="write_uid" readonly="1"></field>
+                                    <field name="write_date" readonly="1"></field>
+                                </group>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model='ir.actions.act_window' id='listing_cluster_action'>
+        <field name='name'>Listing Tabel Insentif</field>
+        <field name='res_model'>teds.listing.table.insentif</field>
+        <field name='view_type'>form</field>
+        <field name='view_mode'>tree,form</field>
+    </record>
+    
+    <menuitem name='Listing Tabel Insentif' id='listing_reward_menu_showroom' parent='wtc_dealer_menu.ma_sales_menu' action='listing_cluster_action' sequence="6"/> 
+    
+    </data>
+</openerp>

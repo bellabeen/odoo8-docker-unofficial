@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">  	
+    	
+<!-- Customer Payments -->	
+	
+        <record id="group_customer_payment_read" model="res.groups">
+            <field name="menu_access" eval="[(4, ref('wtc_account_voucher.menu_action_vendor_receipt_backoffice')),
+            								(4, ref('wtc_account_voucher.menu_action_vendor_receipt_workshop')),
+            								(4, ref('wtc_account_voucher.menu_action_vendor_receipt_showroom'))]"/>  
+        </record> 
+        
+        <record id="access_customer_payment_read_new_model" model="ir.model.access">
+            <field name="model_id" ref="wtc_account_voucher.model_wtc_account_voucher"/>
+            <field name="name">customer_payment_new_model read</field> 
+            <field name="group_id" ref="group_customer_payment_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+                
+        <record id="access_customer_payment_line_read_new_model" model="ir.model.access">
+            <field name="model_id" ref="wtc_account_voucher.model_wtc_account_voucher_line"/>
+            <field name="name">customer_payment_line_new_model read</field> 
+            <field name="group_id" ref="group_customer_payment_read"/>  
+            <field name="perm_read">1</field> 
+        </record>          
+		    
+        <record id="group_customer_payment_update" model="res.groups">
+            <field name="menu_access" eval="[(4, ref('wtc_account_voucher.menu_action_vendor_receipt_backoffice')),
+            								(4, ref('wtc_account_voucher.menu_action_vendor_receipt_workshop')),
+            								(4, ref('wtc_account_voucher.menu_action_vendor_receipt_showroom'))]"/>  
+        </record>
+                   
+       <record id="access_customer_payment_update_new_model" model="ir.model.access">
+            <field name="model_id" ref="wtc_account_voucher.model_wtc_account_voucher"/>
+            <field name="name">customer_payment_new_model update</field> 
+            <field name="group_id" ref="group_customer_payment_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>
+        
+        <record id="access_customer_payment_line_update_new_model" model="ir.model.access">
+            <field name="model_id" ref="wtc_account_voucher.model_wtc_account_voucher_line"/>
+            <field name="name">customer_payment_line_new_model update</field> 
+            <field name="group_id" ref="group_customer_payment_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>  
+        
+        <record id="group_customer_payment_delete" model="res.groups">
+            <field name="menu_access" eval="[(4, ref('wtc_account_voucher.menu_action_vendor_receipt_backoffice')),
+            								(4, ref('wtc_account_voucher.menu_action_vendor_receipt_workshop')),
+            								(4, ref('wtc_account_voucher.menu_action_vendor_receipt_showroom'))]"/>
+        </record>
+            
+        <record id="access_customer_payment_delete_new_model" model="ir.model.access">
+            <field name="model_id" ref="wtc_account_voucher.model_wtc_account_voucher"/>
+            <field name="name">customer_payment_new_model delete</field> 
+            <field name="group_id" ref="group_customer_payment_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>      
+        
+        <record id="access_customer_payment_line_delete_new_model" model="ir.model.access">
+            <field name="model_id" ref="wtc_account_voucher.model_wtc_account_voucher_line"/>
+            <field name="name">customer_payment_line_new_model delete</field> 
+            <field name="group_id" ref="group_customer_payment_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record> 
+               
+<!-- Supplier Payments -->	
+	
+        <record id="group_supplier_payment_read" model="res.groups">
+            <field name="menu_access" eval="[(4, ref('wtc_account_voucher.menu_action_vendor_payment_showroom')),
+            								(4, ref('wtc_account_voucher.menu_action_vendor_payment_backoffice')),
+            								(4, ref('wtc_account_voucher.menu_action_vendor_payment_workshop'))]"/>
+        </record>
+                
+        <record id="access_supplier_payment_read_new_model" model="ir.model.access">
+            <field name="model_id" ref="wtc_account_voucher.model_wtc_account_voucher"/>
+            <field name="name">supplier_payment_new_model read</field> 
+            <field name="group_id" ref="group_supplier_payment_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+
+        <record id="access_supplier_payment_line_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_account_voucher.model_wtc_account_voucher_line"/>
+            <field name="name">supplier_payment_line_new_model read</field> 
+            <field name="group_id" ref="group_supplier_payment_read"/>  
+            <field name="perm_read">1</field> 
+        </record>  
+             
+        <record id="group_supplier_payment_update" model="res.groups">
+            <field name="menu_access" eval="[(4, ref('wtc_account_voucher.menu_action_vendor_payment_showroom')),
+            								(4, ref('wtc_account_voucher.menu_action_vendor_payment_backoffice')),
+            								(4, ref('wtc_account_voucher.menu_action_vendor_payment_workshop'))]"/>
+        </record>
+                 
+        <record id="access_supplier_payment_update_new_model" model="ir.model.access">
+            <field name="model_id" ref="wtc_account_voucher.model_wtc_account_voucher"/>
+            <field name="name">supplier_payment_new_model update</field> 
+            <field name="group_id" ref="group_supplier_payment_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+        
+        <record id="access_supplier_payment_line_update_new_model" model="ir.model.access">
+            <field name="model_id" ref="wtc_account_voucher.model_wtc_account_voucher_line"/>
+            <field name="name">supplier_payment_line_new_model update</field> 
+            <field name="group_id" ref="group_supplier_payment_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record> 
+                  
+        <record id="group_supplier_payment_delete" model="res.groups">
+            <field name="menu_access" eval="[(4, ref('wtc_account_voucher.menu_action_vendor_payment_showroom')),
+            								(4, ref('wtc_account_voucher.menu_action_vendor_payment_backoffice')),
+            								(4, ref('wtc_account_voucher.menu_action_vendor_payment_workshop'))]"/>
+        </record>
+              
+                        
+        <record id="access_supplier_payment_delete_new_model" model="ir.model.access">
+            <field name="model_id" ref="wtc_account_voucher.model_wtc_account_voucher"/>
+            <field name="name">supplier_payment_new_model delete</field> 
+            <field name="group_id" ref="group_supplier_payment_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>      
+        
+        <record id="access_supplier_payment_line_delete_new_model" model="ir.model.access">
+            <field name="model_id" ref="wtc_account_voucher.model_wtc_account_voucher_line"/>
+            <field name="name">supplier_payment_line_new_model delete</field> 
+            <field name="group_id" ref="group_supplier_payment_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>
+              
+<!-- Hutang Lain -->	
+	
+        <record id="group_hutang_lain_read" model="res.groups">
+            <field name="menu_access" eval="[(4, ref('wtc_account_voucher.wtc_other_payable_menuitem_custom_backoffice'))]"/>  
+        </record>
+        
+        <record id="access_hutang_lain_read_new_model" model="ir.model.access">
+            <field name="model_id" ref="wtc_account_voucher.model_wtc_account_voucher"/>
+            <field name="name">hutang_lain_new_model read</field> 
+            <field name="group_id" ref="group_hutang_lain_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+
+        <record id="access_hutang_lain_line_read_new_model" model="ir.model.access">
+            <field name="model_id" ref="wtc_account_voucher.model_wtc_account_voucher_line"/>
+            <field name="name">hutang_lain_line_new_model read</field> 
+            <field name="group_id" ref="group_hutang_lain_read"/>  
+            <field name="perm_read">1</field> 
+        </record>  
+        
+        <record id="group_hutang_lain_update" model="res.groups">
+            <field name="menu_access" eval="[(4, ref('wtc_account_voucher.wtc_other_payable_menuitem_custom_backoffice'))]"/>  
+        </record> 
+        
+        <record id="access_hutang_lain_update_new_model" model="ir.model.access">
+            <field name="model_id" ref="wtc_account_voucher.model_wtc_account_voucher"/>
+            <field name="name">hutang_lain_new_model update</field> 
+            <field name="group_id" ref="group_hutang_lain_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+
+        <record id="access_hutang_lain_line_update_new_model" model="ir.model.access">
+            <field name="model_id" ref="wtc_account_voucher.model_wtc_account_voucher_line"/>
+            <field name="name">hutang_lain_line_new_model update</field> 
+            <field name="group_id" ref="group_hutang_lain_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record> 
+        
+        <record id="group_hutang_lain_delete" model="res.groups">
+            <field name="menu_access" eval="[(4, ref('wtc_account_voucher.wtc_other_payable_menuitem_custom_backoffice'))]"/>  
+        </record>
+                
+        <record id="access_hutang_lain_delete_new_model" model="ir.model.access">
+            <field name="model_id" ref="wtc_account_voucher.model_wtc_account_voucher"/>
+            <field name="name">hutang_lain delete</field> 
+            <field name="group_id" ref="group_hutang_lain_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record> 
+
+        <record id="access_hutang_lain_line_delete_new_model" model="ir.model.access">
+            <field name="model_id" ref="wtc_account_voucher.model_wtc_account_voucher_line"/>
+            <field name="name">hutang_lain_line_new_model delete</field> 
+            <field name="group_id" ref="group_hutang_lain_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>
+                                                              
+    </data>
+</openerp>        

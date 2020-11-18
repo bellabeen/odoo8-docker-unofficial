@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+		<record id="view_sale_receipt_other_receivable_form" model="ir.ui.view">
+            <field name="name">account.voucher.other.receivable</field>
+            <field name="model">account.voucher</field>
+            <field name="inherit_id" ref="account_voucher.view_sale_receipt_form"/>
+            <field name="arch" type="xml">
+            <xpath expr="//button[@name='cancel_voucher']" position="after">
+             <button name="%(report_other_receivable)d"  attrs="{'invisible': [('state','!=','posted')]}" state="posted" type="action" string="Print" class="oe_highlight"  icon="gtk-print"/>
+            </xpath>
+		    <xpath expr="//button[@name='cancel_voucher']" position="after">
+             	<button name="print_wizard_kwitansi" attrs="{'invisible': [('state','!=','posted')]}" type="object" string="Print Kwitansi" class="oe_highlight" icon="gtk-print" />
+            </xpath>     
+            <xpath expr="/form/sheet/group" position="before">
+                    <group>
+                        <group>
+                            <field name="branch_id" required="True" on_change="branch_id_onchange(branch_id)"/>
+                        </group>
+                        <group>
+                            <field name="division"  required="True" />
+                        </group>
+                    </group>            
+                </xpath>               
+                <field name="partner_id" position="replace">
+			    	<field name="partner_id" required="True" domain="[('customer','=',True)]" on_change="onchange_partner_id(partner_id,journal_id, amount, currency_id, type, date, context)" string="Customer" context="{'search_default_customer':1, 'show_address': 1}" options='{"always_reload": True}'/>
+			    </field>
+			    
+                 <field name="journal_id" position="replace">
+			    	<field name="journal_id" invisible="True"/>
+			    </field>
+			    
+			    <field name="account_id" position="replace">
+			    	<field name="account_id" />
+			    </field>
+            	<field name="date" position="attributes">
+            		<attribute name="readonly">1</attribute> 
+            	</field>		
+            	<field name="tax_id" position="attributes">
+            		<attribute name="domain" eval="[('price_include','=',False),('type_tax_use','in',('sale','all')), ('parent_id', '=', False)]"></attribute> 
+            	</field>
+			    <field name="date" position="after">
+			    	<field name="date_due" required='1' />
+			    </field>			    
+	            <field name="name" position="after">
+			    	<field name="user_id"/>
+			    	<field name="cetak_ke" readonly='1'/>
+			    </field>    
+				
+			    <xpath expr="//field[@name='line_cr_ids']" position="replace">
+			    <field name="line_cr_ids" on_change="onchange_price(line_cr_ids, tax_id, partner_id)" context="{'journal_id':journal_id, 'type':type, 'partner_id':partner_id}">
+                   <tree string="Sales Lines" editable="bottom">
+                   	   <field name="name" on_change="name_onchange(name,parent.branch_id,parent.division)" required="True"/>
+                       <field name="account_id" required='True'/>
+                       <field name="amount" sum="Total"/>
+                       <field name="account_analytic_id" groups="analytic.group_analytic_accounting"/>
+                   </tree>
+                  </field>  
+		    		<!-- <field name="line_cr_ids" on_change="onchange_price(line_cr_ids, tax_id, partner_id)" context="{'journal_id':journal_id, 'type':type, 'partner_id':partner_id}">
+                       <tree string="Expense Lines" editable="bottom">
+                           <field name="name" on_change="name_onchange(name,parent.branch_id,parent.division)" required="True" />
+	                       <field name="account_id" required='True'/>
+	                       <field name="amount"/>
+	                       <field name="account_analytic_id" groups="analytic.group_analytic_accounting"/>
+                        </tree>
+                    </field> -->
+                 </xpath>    
+				 <xpath expr="//page" position="after">
+				 		<page string='Faktur Pajak' attrs="{'invisible': [('tax_id','=',False)]}"  >
+				 			<group>
+				 				<field name='pajak_gabungan'></field>
+				 				<field name='faktur_pajak_id' readonly='1'></field>
+				 			</group>
+				 		</page>
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+									<field name="confirm_uid" readonly="1"></field>
+									<field name="confirm_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+									<field name="cancel_uid" readonly="1"></field>
+									<field name="cancel_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>
+				</xpath>                             			   
+	       </field>		
+		</record> 
+
+		<record id="view_voucher_filter_sale2" model="ir.ui.view">
+            <field name="name">account.voucher.sale.select</field>
+            <field name="model">account.voucher</field>
+            <field name="arch" type="xml">
+                <search string="Search Vouchers">
+                    <field name="number" string="Voucher"/>
+                    <field name="date"/>
+                    <filter icon="terp-document-new" string="Draft" domain="[('state','=','draft')]" help="Draft Vouchers"/>
+                    <filter icon="terp-camera_test" string="Posted" domain="[('state','=','posted')]" help="Posted Vouchers"/>
+                    <field name="partner_id" string="Customer" filter_domain="[('partner_id','child_of',self)]"/>
+                    <field name="journal_id" widget="selection" context="{'journal_id': self, 'set_visible':False}" domain="[('type','in',('sale','sale_refund'))]"/> <!-- Keep widget=selection on this field to pass numeric `self` value, which is not the case for regular m2o widgets! -->
+                    <field name="period_id"/>
+                    <group expand="0" string="Group By">
+                        <filter string="Customer" icon="terp-personal" domain="[]" context="{'group_by':'partner_id'}"/>
+                        <filter string="Journal" icon="terp-folder-orange" domain="[]" context="{'group_by':'journal_id'}"/>
+                        <filter string="Period" icon="terp-go-month" domain="[]" context="{'group_by':'period_id','visible':True}"/>
+                        <filter string="Status" icon="terp-stock_effects-object-colorize" domain="[]" context="{'group_by':'state'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_sale_receipt2" model="ir.actions.act_window">
+            <field name="name">Other Receivable</field>
+            <field name="res_model">account.voucher</field>
+            <field name="view_type">form</field>
+            <field name="domain">[('journal_id.type','in',['sale','sale_refund']), ('type','=','sale')]</field>
+            <field name="context">{'default_type': 'sale', 'type': 'sale','other_receivable':'other_receivable'}</field>
+            <field name="view_id" eval="False"/>
+            <field name="search_view_id" ref="view_voucher_filter_sale2"/>
+            <field name="target">current</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to create a sale receipt.
+              </p><p>
+                When the sale receipt is confirmed, you can record the customer
+                payment related to this sales receipt.
+              </p>
+            </field>
+        </record>
+        <record id="action_sale_receipt_tree" model="ir.actions.act_window.view">
+            <field eval="1" name="sequence"/>
+            <field name="view_mode">tree</field>
+            <field name="act_window_id" ref="action_sale_receipt2"/>
+        </record>
+        <record id="action_sale_receipt_form" model="ir.actions.act_window.view">
+            <field eval="2" name="sequence"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="account_voucher.view_sale_receipt_form"/>
+            <field name="act_window_id" ref="action_sale_receipt2"/>
+        </record>
+                        		
+        <menuitem id="wtc_other_receivable_menuitem_custom" name="Other Receivable" parent="wtc_dealer_menu.backoffice_nontrade_menu" sequence="40" action="action_sale_receipt2"/>
+				 	
+	</data>
+</openerp>

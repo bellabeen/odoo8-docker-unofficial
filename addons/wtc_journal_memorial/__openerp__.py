@@ -1,0 +1,25 @@
+{
+    "name":"Journal Memorial",
+    "version":"1.0",
+    "author":"PT. WITACO",
+    "website":"http://witaco.com",
+    "category":"TDM",
+    "description":"Journals",
+    "depends":["base","account","wtc_branch","wtc_account_move","wtc_eksport_import"],
+    "init_xml":[],
+    "demo_xml":[],
+    "data":[
+                'security/res_groups.xml',
+                'security/res_groups_button.xml',                
+                'wtc_branch_config_view.xml',
+                'wtc_journal_memorial_view.xml',
+                'wtc_approval_journal_memorial_view.xml',
+                'security/ir_rule.xml',
+                'security/ir.model.access.csv',
+                'data/wtc_approval_config_data.xml',
+                'data/ir_sequence.xml',                 
+                'data/wtc_branch_config.xml',
+                  ],
+    "active":False,
+    "installable":True
+}

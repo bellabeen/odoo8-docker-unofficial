@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">  	
+    	
+<!-- Generate Faktur Pajak -->	
+	
+        <record id="group_generate_faktur_pajak_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Generate Faktur Pajak Read</field> 
+            <field name="menu_access" eval="[(4, ref('menu_wtc_faktur_pajak_out2')),
+            								 (4, ref('menu_wtc_generate_faktur_pajak2'))]"/>  
+        </record> 
+        
+        <record id="access_generate_faktur_pajak_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak"/>
+            <field name="name">generate_faktur_pajak read</field> 
+            <field name="group_id" ref="group_generate_faktur_pajak_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+
+        <record id="access_generate_faktur_pajak_out_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak_out"/>
+            <field name="name">generate_faktur_pajak_out read</field> 
+            <field name="group_id" ref="group_generate_faktur_pajak_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+                        
+        <record id="group_generate_faktur_pajak_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Generate Faktur Pajak Update</field> 
+            <field name="menu_access" eval="[(4, ref('menu_wtc_faktur_pajak_out2')),
+            								 (4, ref('menu_wtc_generate_faktur_pajak2'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_generate_faktur_pajak_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_generate_faktur_pajak_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak"/>
+            <field name="name">generate_faktur_pajak update</field> 
+            <field name="group_id" ref="group_generate_faktur_pajak_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+
+        <record id="access_generate_faktur_pajak_out_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak_out"/>
+            <field name="name">generate_faktur_pajak_out update</field> 
+            <field name="group_id" ref="group_generate_faktur_pajak_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>                  
+
+        <record id="group_generate_faktur_pajak_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Generate Faktur Pajak Delete</field> 
+            <field name="menu_access" eval="[(4, ref('menu_wtc_faktur_pajak_out2')),
+            								 (4, ref('menu_wtc_generate_faktur_pajak2'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_generate_faktur_pajak_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_generate_faktur_pajak_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak"/>
+            <field name="name">generate_faktur_pajak delete</field> 
+            <field name="group_id" ref="group_generate_faktur_pajak_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>        
+	
+        <record id="access_generate_faktur_pajak_out_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak_out"/>
+            <field name="name">generate_faktur_pajak_out delete</field> 
+            <field name="group_id" ref="group_generate_faktur_pajak_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record> 
+
+<!-- Regenerate Faktur Pajak -->	
+	
+        <record id="group_regenerate_faktur_pajak_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Regenerate Faktur Pajak Read</field> 
+            <field name="menu_access" eval="[(4, ref('menu_wtc_regenerate_faktur_pajak'))]"/>  
+        </record> 
+        
+        <record id="access_regenerate_faktur_pajak_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_regenerate_faktur_pajak_gabungan"/>
+            <field name="name">regenerate_faktur_pajak read</field> 
+            <field name="group_id" ref="group_regenerate_faktur_pajak_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+
+        <record id="access_regenerate_faktur_pajak_line_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_regenerate_faktur_pajak_gabungan_line"/>
+            <field name="name">regenerate_faktur_pajak_line read</field> 
+            <field name="group_id" ref="group_regenerate_faktur_pajak_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+                        
+        <record id="group_regenerate_faktur_pajak_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Regenerate Faktur Pajak Update</field> 
+            <field name="menu_access" eval="[(4, ref('menu_wtc_regenerate_faktur_pajak'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_regenerate_faktur_pajak_read'))]"/>            	            	
+        </record>
+        <record id="access_regenerate_faktur_pajak_out_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak_out"/>
+            <field name="name">regenerate_faktur_pajak_out update</field> 
+            <field name="group_id" ref="group_regenerate_faktur_pajak_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>                        
+        <record id="access_regenerate_faktur_pajak_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_regenerate_faktur_pajak_gabungan"/>
+            <field name="name">regenerate_faktur_pajak update</field> 
+            <field name="group_id" ref="group_regenerate_faktur_pajak_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+
+        <record id="access_regenerate_faktur_pajak_line_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_regenerate_faktur_pajak_gabungan_line"/>
+            <field name="name">regenerate_faktur_pajak_line update</field> 
+            <field name="group_id" ref="group_regenerate_faktur_pajak_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>                  
+
+        <record id="group_regenerate_faktur_pajak_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Regenerate Faktur Pajak Delete</field> 
+            <field name="menu_access" eval="[(4, ref('menu_wtc_regenerate_faktur_pajak'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_regenerate_faktur_pajak_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_regenerate_faktur_pajak_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_regenerate_faktur_pajak_gabungan"/>
+            <field name="name">regenerate_faktur_pajak delete</field> 
+            <field name="group_id" ref="group_regenerate_faktur_pajak_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>        
+	
+        <record id="access_regenerate_faktur_pajak_line_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_regenerate_faktur_pajak_gabungan_line"/>
+            <field name="name">regenerate_faktur_pajak_line delete</field> 
+            <field name="group_id" ref="group_regenerate_faktur_pajak_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record> 
+                
+<!-- Faktur Pajak -->	
+	
+        <record id="group_faktur_pajak_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Faktur Pajak Read</field> 
+            <field name="menu_access" eval="[(4, ref('menu_wtc_faktur_pajak_out2'))]"/>  
+        </record> 
+
+        <record id="access_faktur_pajak_out_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak_out"/>
+            <field name="name">faktur_pajak_out read</field> 
+            <field name="group_id" ref="group_faktur_pajak_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+                        
+        <record id="group_faktur_pajak_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Faktur Pajak Update</field> 
+            <field name="menu_access" eval="[(4, ref('menu_wtc_faktur_pajak_out2'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_faktur_pajak_read'))]"/>            	            	
+        </record>     
+
+        <record id="access_faktur_pajak_out_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak_out"/>
+            <field name="name">faktur_pajak_out update</field> 
+            <field name="group_id" ref="group_faktur_pajak_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>                  
+
+        <record id="group_faktur_pajak_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Faktur Pajak Delete</field> 
+            <field name="menu_access" eval="[(4, ref('menu_wtc_faktur_pajak_out2'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_faktur_pajak_read'))]"/>            	            	
+        </record>   
+	
+        <record id="access_faktur_pajak_out_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak_out"/>
+            <field name="name">faktur_pajak_out delete</field> 
+            <field name="group_id" ref="group_faktur_pajak_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record> 
+        
+<!-- Faktur Pajak Gabungan -->	
+	
+        <record id="group_faktur_pajak_gabungan_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Faktur Pajak Gabungan Read</field> 
+            <field name="menu_access" eval="[(4, ref('menu_wtc_faktur_pajak_gabungan2'))]"/>  
+        </record> 
+        
+        <record id="access_faktur_pajak_gabungan_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak_gabungan"/>
+            <field name="name">faktur_pajak_gabungan read</field> 
+            <field name="group_id" ref="group_faktur_pajak_gabungan_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+
+        <record id="access_faktur_pajak_gabungan_line_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak_gabungan_line"/>
+            <field name="name">faktur_pajak_gabungan_line read</field> 
+            <field name="group_id" ref="group_faktur_pajak_gabungan_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+                        
+        <record id="group_faktur_pajak_gabungan_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Faktur Pajak Gabungan Update</field> 
+            <field name="menu_access" eval="[(4, ref('menu_wtc_faktur_pajak_gabungan2'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_faktur_pajak_gabungan_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_faktur_pajak_gabungan_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak_gabungan"/>
+            <field name="name">faktur_pajak_gabungan update</field> 
+            <field name="group_id" ref="group_faktur_pajak_gabungan_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+
+        <record id="access_faktur_pajak_gabungan_line_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak_gabungan_line"/>
+            <field name="name">faktur_pajak_gabungan_line update</field> 
+            <field name="group_id" ref="group_faktur_pajak_gabungan_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>                  
+
+        <record id="group_faktur_pajak_gabungan_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Faktur Pajak Gabungan Delete</field> 
+            <field name="menu_access" eval="[(4, ref('menu_wtc_faktur_pajak_gabungan2'))]"/>    
+			<field name="implied_ids" eval="[(4, ref('group_faktur_pajak_gabungan_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_faktur_pajak_gabungan_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak_gabungan"/>
+            <field name="name">faktur_pajak_gabungan delete</field> 
+            <field name="group_id" ref="group_faktur_pajak_gabungan_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>        
+	
+        <record id="access_faktur_pajak_gabungan_line_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak_gabungan_line"/>
+            <field name="name">faktur_pajak_gabungan_line delete</field> 
+            <field name="group_id" ref="group_faktur_pajak_gabungan_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record> 
+
+<!-- Signature -->	
+	
+        <record id="group_signature_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Signature Read</field> 
+            <field name="menu_access" eval="[(4, ref('menu_wtc_signature'))]"/>  
+        </record> 
+
+        <record id="access_signature_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_signature"/>
+            <field name="name">signature read</field> 
+            <field name="group_id" ref="group_signature_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+                        
+        <record id="group_signature_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Signature Update</field> 
+            <field name="menu_access" eval="[(4, ref('menu_wtc_signature'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_signature_read'))]"/>            	            	
+        </record>     
+
+        <record id="access_signature_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_signature"/>
+            <field name="name">signature update</field> 
+            <field name="group_id" ref="group_signature_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>                  
+
+        <record id="group_signature_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Signature Delete</field> 
+            <field name="menu_access" eval="[(4, ref('menu_wtc_signature'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_signature_read'))]"/>            	            	
+        </record>   
+	
+        <record id="access_signature_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_signature"/>
+            <field name="name">signature delete</field> 
+            <field name="group_id" ref="group_signature_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record> 
+
+<!-- Remark -->	
+	
+        <record id="group_remark_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Remark Read</field> 
+            <field name="menu_access" eval="[(4, ref('menu_wtc_remark'))]"/>  
+        </record> 
+
+        <record id="access_remark_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_remark"/>
+            <field name="name">remark read</field> 
+            <field name="group_id" ref="group_remark_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+                        
+        <record id="group_remark_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Remark Update</field> 
+            <field name="menu_access" eval="[(4, ref('menu_wtc_remark'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_remark_read'))]"/>            	            	
+        </record>     
+
+        <record id="access_remark_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_remark"/>
+            <field name="name">remark update</field> 
+            <field name="group_id" ref="group_remark_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>                  
+
+        <record id="group_remark_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Remark Delete</field> 
+            <field name="menu_access" eval="[(4, ref('menu_wtc_remark'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_remark_read'))]"/>            	            	
+        </record>   
+	
+        <record id="access_remark_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_remark"/>
+            <field name="name">remark delete</field> 
+            <field name="group_id" ref="group_remark_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>                      
+        
+<!-- Faktur Pajak Other-->	
+	
+        <record id="group_faktur_pajak_other_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Faktur Pajak Others Read</field> 
+            <field name="menu_access" eval="[(4, ref('menu_wtc_faktur_pajak_other2'))]"/>  
+        </record> 
+        
+        <record id="access_faktur_pajak_other_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak_other"/>
+            <field name="name">faktur_pajak_other read</field> 
+            <field name="group_id" ref="group_faktur_pajak_other_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+
+        <record id="access_faktur_pajak_other_fpo_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak_out"/>
+            <field name="name">faktur_pajak_other_fpo read</field> 
+            <field name="group_id" ref="group_faktur_pajak_other_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+                        
+        <record id="group_faktur_pajak_other_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Faktur Pajak Others Update</field> 
+            <field name="menu_access" eval="[(4, ref('menu_wtc_faktur_pajak_other2'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_faktur_pajak_other_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_faktur_pajak_other_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak_other"/>
+            <field name="name">faktur_pajak_other update</field> 
+            <field name="group_id" ref="group_faktur_pajak_other_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+
+        <record id="access_faktur_pajak_other_fpo_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak_out"/>
+            <field name="name">faktur_pajak_other_fpo update</field> 
+            <field name="group_id" ref="group_faktur_pajak_other_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>                  
+
+        <record id="group_faktur_pajak_other_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Faktur Pajak Others Delete</field> 
+            <field name="menu_access" eval="[(4, ref('menu_wtc_faktur_pajak_other2'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_faktur_pajak_other_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_faktur_pajak_other_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak_other"/>
+            <field name="name">faktur_pajak_delete delete</field> 
+            <field name="group_id" ref="group_faktur_pajak_other_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>        
+	
+        <record id="access_faktur_pajak_other_fpo_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak_out"/>
+            <field name="name">faktur_pajak_other_fpo delete</field> 
+            <field name="group_id" ref="group_faktur_pajak_other_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record> 
+                
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[(4,ref('group_generate_faktur_pajak_read')),
+											(4,ref('group_generate_faktur_pajak_update')),
+											(4,ref('group_generate_faktur_pajak_delete')),
+											(4,ref('group_faktur_pajak_read')),
+											(4,ref('group_faktur_pajak_update')),
+											(4,ref('group_faktur_pajak_delete')),
+											(4,ref('group_faktur_pajak_gabungan_read')),
+											(4,ref('group_faktur_pajak_gabungan_update')),
+											(4,ref('group_faktur_pajak_gabungan_delete')),
+											(4,ref('group_signature_read')),
+											(4,ref('group_signature_update')),
+											(4,ref('group_signature_delete')),
+											(4,ref('group_remark_read')),
+											(4,ref('group_remark_update')),
+											(4,ref('group_remark_delete')),
+											(4,ref('group_regenerate_faktur_pajak_read')),
+											(4,ref('group_regenerate_faktur_pajak_update')),
+											(4,ref('group_regenerate_faktur_pajak_delete')),
+											]"/> 
+		</record>                                         
+    </data>
+</openerp>

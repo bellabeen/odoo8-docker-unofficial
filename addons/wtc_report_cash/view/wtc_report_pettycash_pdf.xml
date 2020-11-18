@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+<template id="wtc_report_pettycash_pdf">
+      <t t-name="report.external_layout_header">
+        <div class="header">
+            <div class="row">
+            <table id="t01">
+              <tr style="font-size: 10px;">
+                  <td>PT. TUNAS DWIPA MATRA</td>
+              </tr>
+              <tr style="font-size: 10px; font-weight:bold;">
+                 <td>Laporan Buku Besar Harian Per Posting</td>
+              </tr>                                             
+            </table> 
+
+            <table style="width: 70%;">
+              <tr style="font-size: 9px;">
+                  <td>Option</td>
+                  <td>:</td>
+                  <td><span t-esc="data['option']"/></td>
+              </tr>   
+              <tr style="font-size: 9px;">
+                  <td>Tanggal</td>
+                  <td>:</td>
+                  <td><span t-esc="data['start_date']"/> s/d <span t-esc="data['end_date']"/></td>
+              </tr>
+              <tr style="font-size: 9px;">
+                  <td>No.Rekening</td>
+                  <td>:</td>
+                  <td><span t-esc="test(data)"/> - <span t-esc="account(data)"/></td>
+                  <td></td>
+                  <td>Saldo Awal Tanggal </td>
+                  <td>:</td>
+                  <td><span t-esc="formatLang(saldo_awal(data), digits=2)"/></td>
+              </tr>
+              <tr style="font-size: 9px;">
+                  <td>No.Sun</td>
+                  <td>:</td>
+                  <td><span t-esc="sap(data)"/></td>
+                  <td></td>
+                  <td>Mutasi Debit </td>
+                  <td>:</td>
+                  <td><span t-esc="formatLang(total_saldo(data), digits=2)"/></td>
+              </tr>
+               <tr style="font-size: 9px;">
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>Mutasi Credit </td>
+                  <td>:</td>
+                  <td><span t-esc="formatLang(total_credit(data), digits=2)"/></td>
+              </tr>
+               <tr style="font-size: 9px;">
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>Saldo Akhir Tanggal </td>
+                  <td>:</td>
+                  <td><span t-esc="formatLang(saldo_akhir_tanggal(data), digits=2)"/></td>
+              </tr>
+              </table>                                                      
+            </div>   
+        </div>
+    </t>
+
+     <t t-call="report.html_container">
+        <t t-foreach="docs" t-as="o">
+  
+                <div class="page">
+                 <style type="text/css">
+                         h1   {font-size: 3; font-weight:bold;text-decoration:underline;}
+                         table#t01 {text-align: left;width: 50%; border-left: 0px solid black; border-right: 0px solid black;}
+
+                         table#t02 {text-align: left;width: 20%; border-left: 0px solid black; border-right: 0px solid black;}
+                         
+                  </style>
+
+                    
+                    <div class="oe_structure"/>
+                    <div class="row"> </div>
+                    <table class="table table-condensed">
+                        <thead>
+                           <tr style="border-bottom: 1px solid black; font-size: 8px; background-color:yellow; text-align: center;">
+                                <th width="2.00%">No</th>
+                                <th width="10.00%">Tgl Konf</th>
+                                <th width="8.00%">Status</th>
+                                <th width="12.00%">No Mutasi</th>
+                                <th width="8.00%">Partner</th>
+                                <th width="8.00%">Keterangan</th>
+                                <th width="8.00%">Debet</th>
+                                <th width="10.00%">Credit</th>
+                                <th width="10.00%">Saldo</th>
+                                <th width="10.00%">Posting</th>
+                                <th width="13.00%">Jam</th>
+                          </tr>
+                          
+                        </thead>                       
+                        
+                         <tbody>
+                            <tr t-foreach="looping(data)" style="page-break-inside: avoid !important; font-size: 7px;" t-as="line">
+                                <td><span t-esc="no_urut()"/></td>
+                                <td><span t-esc="line['tgl_konf']"/></td>
+                                <td><span t-esc="line['state']"/></td>
+                                <td><span t-esc="line['move_line_name']"/></td>
+                                <td><span t-esc="line['partner_name']"/></td>
+                                <td><span t-esc="line['keterangan']"/></td>
+                                <td><span t-esc="formatLang(line['debit'], digits=2)"/></td>
+                                <td><span t-esc="formatLang(line['credit'], digits=2)"/></td>
+                                <td><span t-esc="formatLang(line['saldo_awala'], digits=2)"/></td>
+                                <td><span t-esc="line['user_name']"/></td>
+                                <td><span t-esc="line['jam']"/></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid black; font-size: 8px; background-color:yellow; text-align: center;">
+                                  <th width="2.00%"></th>
+                                  <th width="8.00%"></th>
+                                  <th width="8.00%"></th>
+                                  <th width="8.00%"></th>
+                                  <th width="8.00%"></th>
+                                  <th width="22.00%">Total Per Tanggal</th>
+                                  <th width="8.00%"><span t-esc="formatLang(total_saldo(data), digits=2)"/></th>
+                                  <th width="10.00%"><span t-esc="formatLang(total_credit(data), digits=2)"/></th>
+                                  <th width="10.00%"></th>
+                                  <th width="14.00%"></th>
+                                  <th width="13.00%"></th>
+                                 
+                            </tr> 
+                        </tbody>  
+
+                        <tfoot>
+                        </tfoot>                                                                      
+                    </table> 
+                     <table style="width: 25%;">
+                          <tr style="font-size: 10px;">
+                              <td><span t-esc="tgl()"/></td>
+                              <td><span t-esc="usr()"/></td>
+                          </tr>                                             
+                        </table>     
+                    <h1></h1>
+                    <h1></h1>
+                    <div class="oe_structure" >
+                        <table style="width: 70%;">
+                          <tr style="font-size: 10px;">
+                              <td align="center">OPERATOR</td>
+                              <td align="center">DIPERIKSA</td>
+                              <td align="center">DIPERIKSA2</td>
+                              <td align="center">DICEK ULANG</td>
+                              <td align="center">DISETUJUI</td>
+                          </tr>  
+                           <tr style="font-size: 10px;">
+                              <td align="center">Bag.Komputer</td>
+                              <td align="center">Bag. Arsip</td>
+                              <td align="center">Kep. Kasir</td>
+                              <td align="center">Petugas Kas</td>
+                              <td align="center">Pimpinan</td>
+                          </tr> 
+                          <tr>
+                              <td><h1></h1></td>
+                              <td><h1></h1></td>
+                              <td><h1></h1></td>
+                          </tr>  
+                          <tr>
+                              <td><h1></h1></td>
+                              <td><h1></h1></td>
+                              <td><h1></h1></td>
+                          </tr>
+                           <tr style="font-size: 10px;">
+                              <td align="center">(...................)</td>
+                              <td align="center">(...................)</td>
+                              <td align="center">(...................)</td>
+                              <td align="center">(...................)</td>
+                              <td align="center">(...................)</td>
+                          </tr>                                             
+                        </table>  
+                    </div>
+             </div>
+        </t>
+    </t>
+</template>
+</data>
+</openerp>

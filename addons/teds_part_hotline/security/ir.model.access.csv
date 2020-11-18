@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_teds_part_hotline,teds_part_hotline,model_teds_part_hotline,,1,0,0,0
+access_teds_part_hotline_detail,teds_part_hotline_detail,model_teds_part_hotline_detail,,1,0,0,0
+access_teds_part_hotline_available,teds_part_hotline_available,model_teds_part_hotline_available,,1,0,0,0
+access_teds_part_hotline_alokasi_dp,teds_part_hotline_alokasi_dp,model_teds_part_hotline_alokasi_dp,,1,0,0,0
+access_teds_part_hotline_cancel,teds_part_hotline_cancel,model_teds_part_hotline_cancel,,1,0,0,0
+

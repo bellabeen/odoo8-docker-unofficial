@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">        
+        <record id="mt_lot_state_stnk_mohon_stnk" model="mail.message.subtype">
+            <field name="name">State STNK Mohon Faktur</field>
+            <field name="default" eval="False"/>
+            <field name="res_model">stock.production.lot</field>
+        </record>     
+        <record id="mt_lot_state_paid" model="mail.message.subtype">
+            <field name="name">Lot Paid</field>
+            <field name="default" eval="False"/>
+            <field name="res_model">stock.production.lot</field>
+        </record>              
+    </data>
+</openerp>        

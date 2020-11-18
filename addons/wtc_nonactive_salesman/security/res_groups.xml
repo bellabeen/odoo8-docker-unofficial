@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">     
+        
+<!-- Report Cash -->    
+    
+        <record id="group_wtc_nonactive_salesman_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Nonactive Salesman Read</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_nonactive_salesman_menu'))]"/>  
+        </record> 
+                
+        <record id="access_nonactive_salesman_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_nonactive_salesman"/>
+            <field name="name">Nonactive Salesman read</field> 
+            <field name="group_id" ref="group_wtc_nonactive_salesman_read"/>  
+            <field name="perm_read">1</field> 
+        </record>
+
+        <record id="group_wtc_nonactive_salesman_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Nonactive Salesman Update</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_nonactive_salesman_menu'))]"/>  
+            <field name="implied_ids" eval="[(4, ref('group_wtc_nonactive_salesman_read'))]"/>                              
+        </record>
+        
+        <record id="access_wtc_nonactive_salesman_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_nonactive_salesman"/>
+            <field name="name">Nonactive Salesman update</field> 
+            <field name="group_id" ref="group_wtc_nonactive_salesman_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>
+        
+        <record id="group_wtc_nonactive_salesman_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Nonactive Salesman Delete</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_nonactive_salesman_menu'))]"/>   
+            <field name="implied_ids" eval="[(4, ref('group_wtc_nonactive_salesman_read'))]"/>                              
+        </record>
+        
+        <record id="access_wtc_nonactive_salesman_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_nonactive_salesman"/>
+            <field name="name">Nonactive Salesman delete</field> 
+            <field name="group_id" ref="group_wtc_nonactive_salesman_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>   
+        
+        <record id="access_nonactive_salesman_line_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_nonactive_salesman_line"/>
+            <field name="name">Nonactive Salesman Line read</field> 
+            <field name="group_id" ref="group_wtc_nonactive_salesman_read"/>  
+            <field name="perm_read">1</field> 
+        </record>    
+        
+        <record id="access_nonactive_salesman_line_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_nonactive_salesman_line"/>
+            <field name="name">Nonactive Salesman Line update</field> 
+            <field name="group_id" ref="group_wtc_nonactive_salesman_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>    
+        
+        <record id="access_nonactive_salesman_line_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_nonactive_salesman_line"/>
+            <field name="name">Nonactive Salesman Line delete</field> 
+            <field name="group_id" ref="group_wtc_nonactive_salesman_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>  
+        
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+            <field name="implied_ids" eval="[(4,ref('group_wtc_nonactive_salesman_read')),
+                                            (4,ref('group_wtc_nonactive_salesman_update')),
+                                            (4,ref('group_wtc_nonactive_salesman_delete')),
+                                            ]"/> 
+        </record>                                                                
+    </data>
+</openerp>

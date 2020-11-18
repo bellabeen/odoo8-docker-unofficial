@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data> 
+
+       <!-- RML REPORT
+       <report  
+            id="report_work_order" string="Work Order WO" 
+            model="wtc.work.order" 
+            name="rml.work.order" 
+            rml="wtc_work_order/report/wtc_report_work_order.rml" 
+            auto="False" menu="False"/>   
+       
+       <report  
+            id="report_work_order_picking" string="Work Order Picking" 
+            model="wtc.work.order" 
+            name="rml.work.order.picking" 
+            rml="wtc_work_order/report/wtc_report_work_order_picking.rml" 
+            auto="False" menu="False"/>  
+            
+       <report  
+            id="report_work_order_invoice" string="Work Order Invoice" 
+            model="wtc.work.order.invoice" 
+            name="rml.work.order.invoice" 
+            rml="wtc_work_order/report/wtc_work_order_invoice_report.rml" 
+            auto="False" menu="False"/> 
+
+            AKHIR RML -->
+
+
+        <!--  <report 
+            id="action_report_wo" 
+            string="test" 
+            model="wtc.work.order" 
+            report_type="qweb-pdf" 
+            name="wtc_work_order.report_wo" 
+            file="wtc_work_order.report_wo" 
+	    	menu="False"/>  -->
+	   	
+	    	
+	    <report 
+            string="WIP" 
+            id="action_WIP" 
+            model="wtc.work.order" 
+            report_type="qweb-pdf"
+            name="wtc_work_order.wtc_work_order_wip_report" 
+            file="wtc_work_order.wtc_work_order_wip_report" 
+            menu="False"/>
+        
+	   <!-- QWEB REPORT -->
+        <report 
+            string="Work Order WO" 
+            id="report_work_order"
+            model="wtc.work.order"
+            report_type="qweb-pdf"
+            name="wtc_work_order.wtc_report_work_order_wo_report" 
+            file="wtc_work_order.wtc_report_work_order_wo_report" 
+            menu="False"/>	
+
+        <report 
+            string="Work Order Picking" 
+            id="report_work_order_picking"
+            model="wtc.work.order"
+            report_type="qweb-pdf"
+            name="wtc_work_order.wtc_report_work_order_picking" 
+            file="wtc_work_order.wtc_report_work_order_picking" 
+            menu="False"/>
+
+        <report 
+            string="Work Order Invoice" 
+            id="report_work_order_invoice"
+            model="wtc.work.order"
+            report_type="qweb-pdf"
+            name="wtc_work_order.wtc_work_order_invoice_report" 
+            file="wtc_work_order.wtc_work_order_invoice_report" 
+            menu="False"/>   
+                    	     
+        <!-- AKHIR QWEB REPORT -->       
+    </data>
+</openerp>

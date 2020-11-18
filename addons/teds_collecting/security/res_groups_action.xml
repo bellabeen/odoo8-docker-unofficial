@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+		<record id="teds_collecting_cancel_group_confirm" model="res.groups">
+			<field name="category_id" ref="wtc_branch.tdm_role" />
+			<field name="name">TEDS Collecting Cancel Confirm</field>
+			<field name="menu_access" eval="[(4, ref('teds_collecting_cancel_menu_action'))]" />
+		</record>
+
+		<record id="teds_collecting_cancel_group_cancel_approval" model="res.groups">
+			<field name="category_id" ref="wtc_branch.tdm_role" />
+			<field name="name">TEDS Collecting Cancel Cancel Approval</field>
+			<field name="menu_access" eval="[(4, ref('teds_collecting_cancel_menu_action'))]" />
+		</record>
+	</data>
+</openerp>

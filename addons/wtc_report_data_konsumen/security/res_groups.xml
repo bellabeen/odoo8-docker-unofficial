@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">  	
+    	
+<!-- Report Data Konsumen -->	
+	
+        <record id="group_wtc_report_data_konsumen_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Report Data Konsumen Read</field> 
+            <field name="menu_access" eval="[(4,ref('laporan_data_konsumen_menu')),
+											]"/>  
+        </record> 
+
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[(4,ref('group_wtc_report_data_konsumen_read')),
+											]"/> 
+		</record>                                                                                                    
+    </data>
+</openerp>

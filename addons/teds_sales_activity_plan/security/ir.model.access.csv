@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_master_ring_all,master.ring.user,model_master_ring,,1,1,1,1
+access_master_activity_type_all,master.activity.type.user,model_master_act_type,,1,1,1,1
+access_ring_kecamatan_all,ring.kecamatan.user,model_ring_kecamatan,,1,1,1,1
+access_ring_kecamatan_line_all,ring.kecamatan.line.user,model_ring_kecamatan_line,,1,1,1,1
+access_titik_keramaian_all,titik.keramaian.user,model_titik_keramaian,,1,1,1,1
+access_sales_activity_plan_all,sales.plan.user,model_sales_plan,,1,1,1,1
+access_sales_activity_plan_line_all,sales.plan.line.user,model_sales_plan_line,,1,1,1,1
+access_sales_activity_result_all,sales.result.user,model_sales_result,,1,1,1,1
+access_sales_activity_result_line_all,sales.result.line.user,model_sales_result_line,,1,1,1,1

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    
+<!-- Customers -->
+		
+        <record id="group_res_partner_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Customers Read</field>
+            <field name="menu_access" eval="[
+            								(4, ref('wtc_res_partner_cddb.wtc_partner_customer_submenu')),
+            								]"/>
+        </record>
+        
+        <record id="access_res_partner_read" model="ir.model.access">
+            <field name="model_id" ref="model_res_partner"/>
+            <field name="name">res_partner read</field>
+            <field name="group_id" ref="group_res_partner_read"/>
+            <field name="perm_read">1</field>
+        </record>
+		
+        <record id="access_wtc_cddb_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cddb"/>
+            <field name="name">wtc_cddb read</field>
+            <field name="group_id" ref="group_res_partner_read"/>  
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_wtc_kartu_keluarga_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_kartu_keluarga"/>
+            <field name="name">wtc_kartu_keluarga read</field>
+            <field name="group_id" ref="group_res_partner_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="group_res_partner_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Customers Update</field>
+            <field name="menu_access" eval="[
+            								(4, ref('wtc_res_partner_cddb.wtc_partner_customer_submenu')),
+            								]"/>
+			<field name="implied_ids" eval="[(4, ref('group_res_partner_read'))]"/>
+        </record>
+        
+        <record id="access_res_partner_update" model="ir.model.access">
+            <field name="model_id" ref="model_res_partner"/>
+            <field name="name">res_partner update</field> 
+            <field name="group_id" ref="group_res_partner_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+        
+        <record id="access_res_partner_update_property" model="ir.model.access">
+            <field name="model_id" ref="base.model_ir_property"/>
+            <field name="name">res_partner_property update</field> 
+            <field name="group_id" ref="group_res_partner_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>
+                
+        <record id="access_wtc_cddb_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cddb"/>
+            <field name="name">wtc_cddb update</field> 
+            <field name="group_id" ref="group_res_partner_update"/>  
+            <field name="perm_create">1</field>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_wtc_kartu_keluarga_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_kartu_keluarga"/>
+            <field name="name">wtc_kartu_keluarga update</field>
+            <field name="group_id" ref="group_res_partner_update"/>
+            <field name="perm_create">1</field>
+            <field name="perm_write">1</field>
+        </record>
+		
+        <record id="group_res_partner_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Customers Delete</field> 
+            <field name="menu_access" eval="[
+            								(4, ref('wtc_res_partner_cddb.wtc_partner_customer_submenu')),
+            								]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_res_partner_read'))]"/>            	            	
+        </record>
+        
+		<record id="access_res_partner_delete" model="ir.model.access">
+            <field name="model_id" ref="model_res_partner"/>
+            <field name="name">res_partner delete</field>
+            <field name="group_id" ref="group_res_partner_delete"/>
+            <field name="perm_unlink">1</field>
+        </record>
+        
+        <record id="access_wtc_cddb_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cddb"/>
+            <field name="name">wtc_cddb delete</field>
+            <field name="group_id" ref="group_res_partner_delete"/>
+            <field name="perm_unlink">1</field>
+        </record>
+        
+<!-- Supplier -->
+		
+        <record id="group_res_partner_supplier_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Supplier Read</field>
+            <field name="menu_access" eval="[
+            								(4, ref('wtc_res_partner_cddb.menu_supplier_for_ga')),
+            								]"/>
+        </record>
+   
+        <record id="access_res_partner_supplier_read" model="ir.model.access">
+            <field name="model_id" ref="model_res_partner"/>
+            <field name="name">res_partner_supplier read</field>
+            <field name="group_id" ref="group_res_partner_supplier_read"/>
+            <field name="perm_read">1</field>
+        </record>
+		
+        <record id="access_wtc_cddb_supplier_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cddb"/>
+            <field name="name">wtc_cddb_supplier read</field>
+            <field name="group_id" ref="group_res_partner_supplier_read"/>  
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_wtc_kartu_keluarga_supplier_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_kartu_keluarga"/>
+            <field name="name">wtc_kartu_keluarga_supplier_ read</field>
+            <field name="group_id" ref="group_res_partner_supplier_read"/>
+            <field name="perm_read">1</field>
+        </record>
+                
+        <record id="group_res_partner_supplier_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Supplier Update</field>
+            <field name="menu_access" eval="[
+            								(4, ref('wtc_res_partner_cddb.menu_supplier_for_ga')),
+            								]"/>
+			<field name="implied_ids" eval="[(4, ref('group_res_partner_supplier_read'))]"/>
+        </record>
+        
+        <record id="access_res_partner_supplier_update" model="ir.model.access">
+            <field name="model_id" ref="model_res_partner"/>
+            <field name="name">res_partner_supplier update</field> 
+            <field name="group_id" ref="group_res_partner_supplier_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+        
+        <record id="access_res_partner_update_supplier_property" model="ir.model.access">
+            <field name="model_id" ref="base.model_ir_property"/>
+            <field name="name">res_partner_property_supplier update</field> 
+            <field name="group_id" ref="group_res_partner_supplier_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>
+                
+        <record id="access_wtc_cddb_supplier_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cddb"/>
+            <field name="name">wtc_cddb_supplier update</field> 
+            <field name="group_id" ref="group_res_partner_supplier_update"/>  
+            <field name="perm_create">1</field>
+            <field name="perm_write">1</field>
+        </record>
+                        
+        <record id="group_res_partner_supplier_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Supplier Delete</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_res_partner_cddb.menu_supplier_for_ga'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_res_partner_supplier_read'))]"/>            	            	
+        </record>
+        
+		<record id="access_res_partner_supplier_delete" model="ir.model.access">
+            <field name="model_id" ref="model_res_partner"/>
+            <field name="name">res_partner_supplier delete</field>
+            <field name="group_id" ref="group_res_partner_supplier_delete"/>
+            <field name="perm_unlink">1</field>
+        </record>
+        
+        <record id="access_wtc_cddb_supplier_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cddb"/>
+            <field name="name">wtc_cddb_supplier delete</field>
+            <field name="group_id" ref="group_res_partner_supplier_delete"/>
+            <field name="perm_unlink">1</field>
+        </record>
+                
+<!-- Finance Company -->
+		
+        <record id="group_res_partner_read_fincoy" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Finance Company Read</field>
+            <field name="menu_access" eval="[
+            								(4, ref('wtc_res_partner_cddb.wtc_partner_finco_submenu'))
+            								]"/>
+        </record>
+        
+        <record id="access_res_partner_read_fincoy" model="ir.model.access">
+            <field name="model_id" ref="model_res_partner"/>
+            <field name="name">res_partner_fincoy read</field>
+            <field name="group_id" ref="group_res_partner_read_fincoy"/>
+            <field name="perm_read">1</field>
+        </record>
+		
+        <record id="access_wtc_cddb_read_fincoy" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cddb"/>
+            <field name="name">wtc_cddb_fincoy read</field>
+            <field name="group_id" ref="group_res_partner_read_fincoy"/>  
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_wtc_kartu_keluarga_read_fincoy" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_kartu_keluarga"/>
+            <field name="name">wtc_kartu_keluarga_fincoy read</field>
+            <field name="group_id" ref="group_res_partner_read_fincoy"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="group_res_partner_update_fincoy" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Finance Company Update</field>
+            <field name="menu_access" eval="[
+            								(4, ref('wtc_res_partner_cddb.wtc_partner_finco_submenu'))
+            								]"/>
+			<field name="implied_ids" eval="[(4, ref('group_res_partner_read_fincoy'))]"/>
+        </record>
+        
+        <record id="access_res_partner_update_fincoy_property" model="ir.model.access">
+            <field name="model_id" ref="base.model_ir_property"/>
+            <field name="name">res_partner_fincoy_property update</field> 
+            <field name="group_id" ref="group_res_partner_update_fincoy"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>
+                
+        <record id="access_res_partner_update_fincoy" model="ir.model.access">
+            <field name="model_id" ref="model_res_partner"/>
+            <field name="name">res_partner_fincoy update</field> 
+            <field name="group_id" ref="group_res_partner_update_fincoy"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+        
+        <record id="access_wtc_cddb_update_fincoy" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cddb"/>
+            <field name="name">wtc_cddb_fincoy update</field> 
+            <field name="group_id" ref="group_res_partner_update_fincoy"/>  
+            <field name="perm_create">1</field>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_wtc_kartu_keluarga_update_fincoy" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_kartu_keluarga"/>
+            <field name="name">wtc_kartu_keluarga update_fincoy</field>
+            <field name="group_id" ref="group_res_partner_update_fincoy"/>
+            <field name="perm_create">1</field>
+            <field name="perm_write">1</field>
+        </record>
+		
+        <record id="group_res_partner_delete_fincoy" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Finance Company Delete</field> 
+            <field name="menu_access" eval="[
+            								(4, ref('wtc_res_partner_cddb.wtc_partner_finco_submenu'))
+            								]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_res_partner_read_fincoy'))]"/>            	            	
+        </record>
+        
+		<record id="access_res_partner_delete_fincoy" model="ir.model.access">
+            <field name="model_id" ref="model_res_partner"/>
+            <field name="name">res_partner_fincoy delete</field>
+            <field name="group_id" ref="group_res_partner_delete_fincoy"/>
+            <field name="perm_unlink">1</field>
+        </record>
+        
+        <record id="access_wtc_cddb_delete_fincoy" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cddb"/>
+            <field name="name">wtc_cddb_fincoy delete</field>
+            <field name="group_id" ref="group_res_partner_delete_fincoy"/>
+            <field name="perm_unlink">1</field>
+        </record>
+                
+<!-- Questionnaire -->	
+	
+        <record id="group_wtc_questionnaire_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Questionnaire Read</field> 
+            <field name="menu_access" eval="[(4, ref('questionnaire_submenu'))]"/>  
+        </record> 
+        
+        <record id="access_wtc_questionnaire_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_questionnaire"/>
+            <field name="name">wtc_questionnaire read</field> 
+            <field name="group_id" ref="group_wtc_questionnaire_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+                        
+        <record id="group_wtc_questionnaire_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Questionnaire Update</field> 
+            <field name="menu_access" eval="[(4, ref('questionnaire_submenu'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_wtc_questionnaire_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_wtc_questionnaire_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_questionnaire"/>
+            <field name="name">wtc_questionnaire update</field> 
+            <field name="group_id" ref="group_wtc_questionnaire_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>    
+        
+        <record id="group_wtc_questionnaire_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Questionnaire Delete</field> 
+            <field name="menu_access" eval="[(4, ref('questionnaire_submenu'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_wtc_questionnaire_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_wtc_questionnaire_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_questionnaire"/>
+            <field name="name">wtc_questionnaire delete</field> 
+            <field name="group_id" ref="group_wtc_questionnaire_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>
+        
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[(4,ref('group_res_partner_read')),
+											(4,ref('group_res_partner_update')),
+											(4,ref('group_res_partner_delete')),
+											(4,ref('group_res_partner_read_fincoy')),
+											(4,ref('group_res_partner_update_fincoy')),
+											(4,ref('group_res_partner_delete_fincoy')),			
+											(4,ref('group_wtc_questionnaire_read')),
+											(4,ref('group_wtc_questionnaire_update')),			
+											]"/> 
+		</record>   
+    </data>
+</openerp>

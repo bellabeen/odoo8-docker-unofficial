@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    
+<!-- Calls for Bids -->
+		
+        <record id="group_purchase_requisition_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Calls for Bids Read</field>
+            <field name="menu_access" eval="[
+            								(4, ref('menu_purchase_requisition_pro_mgt_1')),
+            								(4, ref('menu_purchase_requisition_pro_mgt_2')),           	            
+            								]"/>
+        </record>
+        
+        <record id="access_purchase_requisiton_read" model="ir.model.access">
+            <field name="model_id" ref="model_purchase_requisition"/>
+            <field name="name">purchase_requisition read</field>
+            <field name="group_id" ref="group_purchase_requisition_read"/>
+            <field name="perm_read">1</field>
+        </record>
+		
+        <record id="access_purchase_requisiton_read_purchase_order" model="ir.model.access">
+            <field name="model_id" ref="purchase.model_purchase_order"/>
+            <field name="name">purchase_requisition_po read</field>
+            <field name="group_id" ref="group_purchase_requisition_read"/>
+            <field name="perm_read">1</field>
+        </record>
+                
+        <record id="access_purchase_requisition_line_read" model="ir.model.access">
+            <field name="model_id" ref="model_purchase_requisition_line"/>
+            <field name="name">purchase_requisition_line read</field>
+            <field name="group_id" ref="group_purchase_requisition_read"/>  
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_purchase_requisition_approval_line_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">purchase_requisition_approval_line read</field>
+            <field name="group_id" ref="group_purchase_requisition_read"/>  
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="group_purchase_requisition_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Calls for Bids Update</field>
+            <field name="menu_access" eval="[
+            								(4, ref('menu_purchase_requisition_pro_mgt_1')),
+            								(4, ref('menu_purchase_requisition_pro_mgt_2')),
+            								]"/>
+			<field name="implied_ids" eval="[(4, ref('group_purchase_requisition_read'))]"/>
+        </record>
+        
+        <record id="access_purchase_requisition_update" model="ir.model.access">
+            <field name="model_id" ref="model_purchase_requisition"/>
+            <field name="name">purchase_requisition update</field> 
+            <field name="group_id" ref="group_purchase_requisition_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+        
+        <record id="access_purchase_requisition_line_update" model="ir.model.access">
+            <field name="model_id" ref="model_purchase_requisition_line"/>
+            <field name="name">purchase_requisition_line update</field> 
+            <field name="group_id" ref="group_purchase_requisition_update"/>  
+            <field name="perm_create">1</field>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_purchase_requisition_approval_line_update" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">purchase_requisition_approval_line update</field>
+            <field name="group_id" ref="group_purchase_requisition_update"/>
+            <field name="perm_create">1</field>
+            <field name="perm_write">1</field>
+        </record>
+		
+        <record id="group_purchase_requisition_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Calls for Bids Delete</field> 
+            <field name="menu_access" eval="[
+            								(4, ref('menu_purchase_requisition_pro_mgt_1')),
+            								(4, ref('menu_purchase_requisition_pro_mgt_2')) 
+            								]"/>
+			<field name="implied_ids" eval="[(4, ref('group_purchase_requisition_read'))]"/>            	            	
+        </record>
+        
+		<record id="access_purchase_requisition_delete" model="ir.model.access">
+            <field name="model_id" ref="model_purchase_requisition"/>
+            <field name="name">purchase_requisition delete</field>
+            <field name="group_id" ref="group_purchase_requisition_delete"/>
+            <field name="perm_unlink">1</field>
+        </record>
+        
+        <record id="access_purchase_requisition_line_delete" model="ir.model.access">
+            <field name="model_id" ref="model_purchase_requisition_line"/>
+            <field name="name">purchase_requisition_line delete</field>
+            <field name="group_id" ref="group_purchase_requisition_delete"/>
+            <field name="perm_unlink">1</field>
+        </record>
+        
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[(4,ref('group_purchase_requisition_read')),
+											(4,ref('group_purchase_requisition_update')),
+											(4,ref('group_purchase_requisition_delete')),
+
+											]"/> 
+		</record>  
+		
+        <record id="access_approval_portal_wtc_purchase_requisition_read" model="ir.model.access">
+            <field name="model_id" ref="purchase_requisition.model_purchase_requisition"/>
+            <field name="name">approval_portal_model_purchase_requisition read</field> 
+            <field name="group_id" ref="wtc_approval.group_approval_portal_read"/>  
+            <field name="perm_read">1</field> 
+        </record>		
+        
+    </data>
+</openerp>

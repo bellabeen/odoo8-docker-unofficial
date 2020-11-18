@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+    <record id="view_wtc_report_lbb_wizard" model="ir.ui.view">
+		<field name="name">Laporan LBB</field>
+		<field name="model">wtc.report.lbb.wizard</field>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+	        <form string="Laporan LBB">
+	        	<group col="4" colspan="4" attrs="{'invisible':[('state_x','=','get')]}">
+	        		<field name="options"/>
+	        		<field name="branch_id" options="{'no_show':True,'no_create':True,'no_open':True}" attrs="{'invisible':[('options','=','detil_prestasi')],'required':[('options','!=','detil_prestasi')]}" />
+	        		<label for="start_date" string="Date"/>
+          			<div>
+	   					<field name="start_date" class="oe_inline"/> - <field name="end_date" class="oe_inline"/>
+	   				</div>
+          		</group>
+		        <notebook colspan="5" attrs="{'invisible':[('state_x','=','get')]}">
+		            <page string="Branchs" attrs="{'invisible':[('options','!=','detil_prestasi')]}"> 
+		               <field name="branch_ids" colspan="4" nolabel="1"/>
+		            </page>                          
+		        </notebook>
+	          	
+                <field invisible="1" name="state_x"/>                
+                <newline/>    
+                <group col="4" fill="0" attrs="{'invisible':[('state_x','!=','get')]}">
+                    <separator colspan="4" string="Excel Report Generated. Click link below to download ..." attrs="{'invisible':[('state_x','=','choose')]}"/>
+                    <field name="name" invisible="1" width="100" attrs="{'invisible':[('state_x','=','choose')]}"/>
+                    <field name="data_x" nolabel="1" readonly="0" width="100" filename="name" attrs="{'invisible':[('state_x','=','choose')]}"/>
+                </group>
+                <footer>
+                    <button name="excel_report" attrs="{'invisible':[('state_x','=','get')]}" string="Export Report" type="object" class="oe_highlight"/>
+                    <label string="or  . " attrs="{'invisible':[('state_x','=','get')]}" />
+                    <button string="Cancel" attrs="{'invisible':[('state_x','=','get')]}" class="oe_link" special="cancel" />
+                </footer>
+	          	
+	        </form>
+    	</field>
+    </record>
+
+    <record id="action_wtc_report_lbb_wizard" model="ir.actions.act_window">
+		<field name="name">Laporan LBB</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">wtc.report.lbb.wizard</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">form</field>
+		<field name="view_id" ref="view_wtc_report_lbb_wizard"/>
+		<field name="target">new</field>
+    </record>
+
+
+ <menuitem id="menu_showroom_wtc_report_lbb"  parent="wtc_dealer_menu.workshop_report_menu" sequence="13"  action="action_wtc_report_lbb_wizard"/>	
+	 
+	</data>
+</openerp>

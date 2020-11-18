@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="wkf_dealer_sale" model="workflow">
+            <field name="name">dealer.sale.order.basic</field>
+            <field name="osv">dealer.sale.order</field>
+            <field name="on_create">True</field>
+        </record>
+
+        <!-- Activity -->
+        <record id="act_draft" model="workflow.activity">
+            <field name="wkf_id" ref="wkf_dealer_sale"/>
+            <field name="flow_start">True</field>
+            <field name="name">draft</field>
+        </record>
+        
+        <record id="act_rfa" model="workflow.activity">
+			<field name="wkf_id" ref="wkf_dealer_sale"/>
+			<field name="name">rfa</field>
+			<field name="kind">function</field>
+			<field name="action">wkf_request_approval()</field>
+		</record>
+		
+		<record id="act_is_approved" model="workflow.activity">
+			<field name="wkf_id" ref="wkf_dealer_sale"/>
+			<field name="name">is_approved</field>
+			<field name="split_mode">OR</field>
+			<field name="kind">function</field>
+			<field name="action">wkf_approval()</field>
+		</record>
+		
+		<record id="act_waiting_for_approval" model="workflow.activity">
+			<field name="wkf_id" ref="wkf_dealer_sale"/>
+			<field name="name">waiting_for_approval</field>
+			<field name="kind">function</field>
+			<field name="action">write({'state':'waiting_for_approval'})</field>
+		</record>
+	
+		<record id="act_approved" model="workflow.activity">
+			<field name="wkf_id" ref="wkf_dealer_sale"/>
+			<field name="name">approved</field>
+			<field name="kind">dummy</field>
+		</record>
+        
+        <record id="act_confirm" model="workflow.activity">
+            <field name="wkf_id" ref="wkf_dealer_sale"/>
+            <field name="name">Confirmed</field>
+        </record>
+        
+         <record id="act_router" model="workflow.activity">
+            <field name="wkf_id" ref="wkf_dealer_sale"/>
+            <field name="name">router</field>
+            <field name="split_mode">OR</field>
+        </record>
+        
+        <record id="act_picking_router" model="workflow.activity">
+            <field name="wkf_id" ref="wkf_dealer_sale"/>
+            <field name="name">picking_router</field>
+            <field name="split_mode">OR</field>
+        </record>
+        
+        <record id="act_wait_picking" model="workflow.activity">
+            <field name="wkf_id" ref="wkf_dealer_sale"/>
+            <field name="name">waiting_for_picking</field>
+        </record>
+        
+         <record id="act_invoice_dp" model="workflow.activity">
+            <field name="wkf_id" ref="wkf_dealer_sale"/>
+            <field name="name">invoice_dp_create</field>
+            <field name="kind">subflow</field>
+            <field name="subflow_id" search="[('osv','=','account.invoice')]"/>
+            <field name="action">action_invoice_dp_create()</field>
+        </record>
+        
+         <record id="act_invoice" model="workflow.activity">
+            <field name="wkf_id" ref="wkf_dealer_sale"/>
+            <field name="name">invoice_create</field>
+            <field name="kind">subflow</field>
+            <field name="subflow_id" search="[('osv','=','account.invoice')]"/>
+            <field name="action">action_invoice_create()</field>
+         </record>
+        
+         <record id="act_do" model="workflow.activity">
+            <field name="wkf_id" ref="wkf_dealer_sale"/>
+            <field name="name">do_create</field>
+            <field name="kind">function</field>
+            <field name="action">action_create_do()</field>
+        </record>
+        <record id="act_do_end" model="workflow.activity">
+            <field name="wkf_id" ref="wkf_dealer_sale"/>
+            <field name="name">Picking Done</field>
+            <field name="kind">dummy</field>
+        </record>
+        <record id="act_invoice_paid" model="workflow.activity">
+            <field name="wkf_id" ref="wkf_dealer_sale"/>
+            <field name="name">Paid</field>
+            <field name="kind">function</field>
+            <field name="action">action_paid()</field>
+            <field name="join_mode">XOR</field>
+        </record>
+        <record id="act_paid_delivered" model="workflow.activity">
+            <field name="wkf_id" ref="wkf_dealer_sale"/>
+            <field name="name">paid_delivered</field>
+            <field name="join_mode">AND</field>
+            <field name="action">is_so_done()</field>
+            <field name="kind">function</field>
+            <field name="join_mode">XOR</field>
+        </record>
+        <record id="act_done" model="workflow.activity">
+            <field name="wkf_id" ref="wkf_dealer_sale"/>
+            <field name="name">done</field>
+            <field name="action">wkf_dealer_sale_order_done()</field>
+            <field name="kind">function</field>
+            <field name="flow_stop">True</field>
+        </record>
+        <record id="act_cancel" model="workflow.activity">
+            <field name="wkf_id" ref="wkf_dealer_sale"/>
+            <field name="name">cancel</field>
+            <field name="kind">function</field>
+            <field name="flow_stop">True</field>
+            <field name="action">wkf_action_cancel()</field>
+            <field name="join_mode">XOR</field>
+        </record>
+        <record id="act_set_to_draft" model="workflow.activity">
+			<field name="wkf_id" ref="wkf_dealer_sale"/>
+			<field name="name">set_to_draft</field>
+			<field name="kind">function</field>
+			<field name="action">wkf_set_to_draft()</field>
+		</record>
+ 		<record id="act_set_to_draft_cancel" model="workflow.activity">
+			<field name="wkf_id" ref="wkf_dealer_sale"/>
+			<field name="name">set_to_draft</field>
+			<field name="kind">function</field>
+			<field name="action">wkf_set_to_draft_cancel()</field>
+		</record>
+		<record id="act_cancel_approval" model="workflow.activity">
+			<field name="wkf_id" ref="wkf_dealer_sale"/>
+			<field name="name">cancel_approval_dso</field>
+			<field name="kind">function</field>
+			<field name="action">wkf_cancel_approval_dso()</field>
+		</record>       
+      <!--   <record id="act_wait_invoice" model="workflow.activity">
+            <field name="wkf_id" ref="wkf_sale"/>
+            <field name="name">wait_invoice</field>
+        </record> -->
+     
+        <!-- Transistion -->
+
+      
+       <!--  <record id="trans_draft_to_rfa" model="workflow.transition">
+			<field name="act_from" ref="act_draft"/>
+		   <field name="act_to" ref="act_confirm"/>
+            <field name="signal">order_confirm</field>
+		</record>  -->
+		
+		<record id="trans_draft_to_rfa" model="workflow.transition">
+			<field name="act_from" ref="act_draft"/>
+		    <field name="act_to" ref="act_rfa"/>
+		    <field name="signal">approval_request</field> 
+		</record> 
+ 		<record id="trans_rfa_is_approved" model="workflow.transition">
+			<field name="act_from" ref="act_rfa"/>
+			<field name="act_to" ref="act_waiting_for_approval"/>
+		</record>
+		
+		<record id="trans_is_approved_approved" model="workflow.transition">
+			<field name="act_from" ref="act_is_approved"/>
+			<field name="act_to" ref="act_approved"/>
+			<field name="condition">has_approved()</field>
+		</record>
+		
+		<record id="trans_is_approved_waiting_for_approval" model="workflow.transition">
+			<field name="act_from" ref="act_is_approved"/>
+			<field name="act_to" ref="act_waiting_for_approval"/>
+			<field name="condition">(not has_approved()) and (not has_rejected())</field>
+		</record>
+		
+		<record id="trans_waiting_for_approval_set_to_draft" model="workflow.transition">
+			<field name="act_from" ref="act_waiting_for_approval"/>
+			<field name="act_to" ref="act_set_to_draft"/>
+			<field name="signal">approval_reject</field>
+		</record>
+		
+		<record id="trans_set_to_draft_draft" model="workflow.transition">
+			<field name="act_from" ref="act_set_to_draft"/>
+			<field name="act_to" ref="act_draft"/>
+		</record>
+		
+		<record id="trans_waiting_for_approval_is_approved" model="workflow.transition">
+			<field name="act_from" ref="act_waiting_for_approval"/>
+			<field name="act_to" ref="act_is_approved"/>
+			<field name="signal">approval_approve</field>
+		</record>
+			
+		<record id="trans_approved_confirmed" model="workflow.transition">
+			<field name="act_from" ref="act_approved"/>
+			<field name="act_to" ref="act_confirm"/>
+            <field name="signal">order_confirm</field>
+		</record> 
+        
+        <record id="trans_confirm_router" model="workflow.transition">
+            <field name="act_from" ref="act_confirm"/>
+            <field name="act_to" ref="act_router"/>
+            
+        </record>
+        <record id="trans_invoice_dp_create" model="workflow.transition">
+            <field name="act_from" ref="act_router"/>
+            <field name="act_to" ref="act_invoice_dp"/>
+            <field name="condition">credit()</field>
+        </record>
+        <record id="trans_invoice_create" model="workflow.transition">
+            <field name="act_from" ref="act_router"/>
+            <field name="act_to" ref="act_invoice"/>
+        </record>
+        <record id="trans_router_picking_router" model="workflow.transition">
+            <field name="act_from" ref="act_router"/>
+            <field name="act_to" ref="act_picking_router"/>
+        </record>
+         <record id="trans_do_create" model="workflow.transition">
+            <field name="act_from" ref="act_picking_router"/>
+            <field name="act_to" ref="act_do"/>
+            <field name="condition">cod()</field>
+        </record>
+        <record id="trans_router_wait_picking" model="workflow.transition">
+            <field name="act_from" ref="act_picking_router"/>
+            <field name="act_to" ref="act_wait_picking"/>
+            <field name="condition">not cod()</field>
+        </record>
+        <record id="trans_wait_picking_do_create" model="workflow.transition">
+            <field name="act_from" ref="act_wait_picking"/>
+            <field name="act_to" ref="act_do"/>
+            <field name="signal">has_been_paid</field>
+        </record>
+        <record id="trans_do_end" model="workflow.transition">
+            <field name="act_from" ref="act_do"/>
+            <field name="act_to" ref="act_do_end"/>
+           <field name="signal">picking_done</field>
+        </record>
+        <record id="trans_invoice_paid" model="workflow.transition">
+            <field name="act_from" ref="act_invoice"/>
+            <field name="act_to" ref="act_invoice_paid"/>
+            <!-- <field name="condition">not credit() and paid()</field> -->
+            <field name="signal">subflow.paid</field>
+        </record>
+        
+         <record id="trans_invoice_dp_paid" model="workflow.transition">
+            <field name="act_from" ref="act_invoice_dp"/>
+            <field name="act_to" ref="act_invoice_paid"/>
+           <!--  <field name="condition">dp_paid()</field> -->
+            <field name="signal">subflow.dp_paid</field>
+        </record>
+        <record id="trans_do_end_to_paid_delivered" model="workflow.transition">
+            <field name="act_from" ref="act_do_end"/>
+            <field name="act_to" ref="act_paid_delivered"/>
+        </record>
+        <record id="trans_paid_to_paid_delivered" model="workflow.transition">
+            <field name="act_from" ref="act_invoice_paid"/>
+            <field name="act_to" ref="act_paid_delivered"/>
+        </record>
+        <record id="trans_paid_delivered_done" model="workflow.transition">
+            <field name="act_from" ref="act_paid_delivered"/>
+            <field name="act_to" ref="act_done"/>
+            <field name="signal">action_done</field>
+        </record>
+        <record id="trans_wait_picking_cancel" model="workflow.transition">
+            <field name="act_from" ref="act_wait_picking"/>
+            <field name="act_to" ref="act_cancel"/>
+            <field name="signal">sale_cancel</field>
+        </record>
+        <record id="trans_do_create_cancel" model="workflow.transition">
+            <field name="act_from" ref="act_do"/>
+            <field name="act_to" ref="act_cancel"/>
+            <field name="signal">sale_cancel</field>
+        </record>
+        <record id="trans_paid_delivered_cancel" model="workflow.transition">
+            <field name="act_from" ref="act_paid_delivered"/>
+            <field name="act_to" ref="act_cancel"/>
+            <field name="signal">sale_cancel</field>
+        </record>
+        <record id="trans_done_cancel" model="workflow.transition">
+            <field name="act_from" ref="act_done"/>
+            <field name="act_to" ref="act_cancel"/>
+            <field name="signal">sale_cancel</field>
+        </record>
+		<record id="trans_waiting_for_approval_draft" model="workflow.transition">
+			<field name="act_from" ref="act_waiting_for_approval"/>
+			<field name="act_to" ref="act_set_to_draft_cancel"/>
+			<field name="signal">approval_cancel</field>
+		</record>
+		<record id="trans_set_to_draft_cancel_to_draft" model="workflow.transition">
+			<field name="act_from" ref="act_set_to_draft_cancel"/>
+			<field name="act_to" ref="act_draft"/>
+		</record> 
+		<record id="trans_approved_cancel_approval" model="workflow.transition">
+			<field name="act_from" ref="act_approved"/>
+			<field name="act_to" ref="act_cancel_approval"/>
+			<field name="signal">approval_cancel_dso</field>
+		</record> 
+		<record id="trans_cancel_approval_draft" model="workflow.transition">
+			<field name="act_from" ref="act_cancel_approval"/>
+			<field name="act_to" ref="act_draft"/>
+		</record>      
+       <!-- Split Delivery Order -->
+     
+       
+        
+        <!-- Transition Delivery Order -->
+		
+        
+    </data>
+</openerp>

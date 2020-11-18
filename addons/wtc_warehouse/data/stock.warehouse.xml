@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+		
+		<record id="wh_branch_dsr" model="stock.warehouse">
+            <field name="name">Cabang Riau</field>
+            <field name="code">DSR</field>
+            <field name="branch_id" ref="wtc_branch.branch_dsr"/>
+        </record>
+        
+        <record id="wh_branch_djj" model="stock.warehouse">
+            <field name="name">Cabang Jambi</field>
+            <field name="code">DJJ</field>
+            <field name="branch_id" ref="wtc_branch.branch_djj"/>
+        </record>
+    
+        <record id="wh_branch_djb" model="stock.warehouse">
+            <field name="name">Cabang Bangko</field>
+            <field name="code">DJB</field>
+            <field name="branch_id" ref="wtc_branch.branch_djb"/>
+        </record>
+    
+        <record id="wh_branch_djs" model="stock.warehouse">
+            <field name="name">Cabang Muara Sabak</field>
+            <field name="code">DJS</field>
+            <field name="branch_id" ref="wtc_branch.branch_djs"/>
+        </record>
+    
+        <record id="wh_branch_djm" model="stock.warehouse">
+            <field name="name">Cabang Merlung</field>
+            <field name="code">DJM</field>
+            <field name="branch_id" ref="wtc_branch.branch_djm"/>
+        </record>
+    
+        <record id="wh_branch_dju" model="stock.warehouse">
+            <field name="name">Cabang Muarabungo</field>
+            <field name="code">DJU</field>
+            <field name="branch_id" ref="wtc_branch.branch_dju"/>
+        </record>
+    
+        <record id="wh_branch_dsm" model="stock.warehouse">
+            <field name="name">Cabang Martapura</field>
+            <field name="code">DSM</field>
+            <field name="branch_id" ref="wtc_branch.branch_dsm"/>
+        </record>
+    
+        <record id="wh_branch_dsg" model="stock.warehouse">
+            <field name="name">Cabang Gelumbang</field>
+            <field name="code">DSG</field>
+            <field name="branch_id" ref="wtc_branch.branch_dsg"/>
+        </record>
+    
+        <record id="wh_branch_dsb" model="stock.warehouse">
+            <field name="name">Cabang Pangkalan Balai</field>
+            <field name="code">DSB</field>
+            <field name="branch_id" ref="wtc_branch.branch_dsb"/>
+        </record>
+    
+        <record id="wh_branch_dsp" model="stock.warehouse">
+            <field name="name">Cabang Palembang</field>
+            <field name="code">DSP</field>
+            <field name="branch_id" ref="wtc_branch.branch_dsp"/>
+        </record>
+    
+        <record id="wh_branch_dsk" model="stock.warehouse">
+            <field name="name">Cabang Kayu Agung</field>
+            <field name="code">DSK</field>
+            <field name="branch_id" ref="wtc_branch.branch_dsk"/>
+        </record>
+    
+        <record id="wh_branch_dup" model="stock.warehouse">
+            <field name="name">Cabang Putri Hijau</field>
+            <field name="code">DUP</field>
+            <field name="branch_id" ref="wtc_branch.branch_dup"/>
+        </record>
+    
+        <record id="wh_branch_duk" model="stock.warehouse">
+            <field name="name">Cabang Kepahyang</field>
+            <field name="code">DUK</field>
+            <field name="branch_id" ref="wtc_branch.branch_duk"/>
+        </record>
+    
+        <record id="wh_branch_dle" model="stock.warehouse">
+            <field name="name">Cabang Way Sekampung</field>
+            <field name="code">DLE</field>
+            <field name="branch_id" ref="wtc_branch.branch_dle"/>
+        </record>
+    
+        <record id="wh_branch_dlp" model="stock.warehouse">
+            <field name="name">Cabang Pahoman</field>
+            <field name="code">DLP</field>
+            <field name="branch_id" ref="wtc_branch.branch_dlp"/>
+        </record>
+    
+        <record id="wh_branch_dlm" model="stock.warehouse">
+            <field name="name">Cabang Simpang Pematang</field>
+            <field name="code">DLM</field>
+            <field name="branch_id" ref="wtc_branch.branch_dlm"/>
+        </record>
+    
+        <record id="wh_branch_dlh" model="stock.warehouse">
+            <field name="name">Cabang Seputih Mataram</field>
+            <field name="code">DLH</field>
+            <field name="branch_id" ref="wtc_branch.branch_dlh"/>
+        </record>
+    
+        <record id="wh_branch_dlx" model="stock.warehouse">
+            <field name="name">Cabang Kalianda</field>
+            <field name="code">DLX</field>
+            <field name="branch_id" ref="wtc_branch.branch_dlx"/>
+        </record>
+    
+        <record id="wh_branch_dll" model="stock.warehouse">
+            <field name="name">Cabang Kemiling</field>
+            <field name="code">DLL</field>
+            <field name="branch_id" ref="wtc_branch.branch_dll"/>
+        </record>
+    
+        <record id="wh_branch_dld" model="stock.warehouse">
+            <field name="name">Cabang Tulang Bawang Barat</field>
+            <field name="code">DLD</field>
+            <field name="branch_id" ref="wtc_branch.branch_dld"/>
+        </record>
+    
+        <record id="wh_branch_dlf" model="stock.warehouse">
+            <field name="name">Cabang Trimurjo</field>
+            <field name="code">DLF</field>
+            <field name="branch_id" ref="wtc_branch.branch_dlf"/>
+        </record>
+    
+        <record id="wh_branch_dlv" model="stock.warehouse">
+            <field name="name">Cabang Purbolinggo</field>
+            <field name="code">DLV</field>
+            <field name="branch_id" ref="wtc_branch.branch_dlv"/>
+        </record>
+    
+        <record id="wh_branch_dlq" model="stock.warehouse">
+            <field name="name">Cabang Tirtayasa</field>
+            <field name="code">DLQ</field>
+            <field name="branch_id" ref="wtc_branch.branch_dlq"/>
+        </record>
+    
+        <record id="wh_branch_dlc" model="stock.warehouse">
+            <field name="name">Cabang Rawajitu</field>
+            <field name="code">DLC</field>
+            <field name="branch_id" ref="wtc_branch.branch_dlc"/>
+        </record>
+    
+        <record id="wh_branch_dly" model="stock.warehouse">
+            <field name="name">Cabang Yos Sudarso</field>
+            <field name="code">DLY</field>
+            <field name="branch_id" ref="wtc_branch.branch_dly"/>
+        </record>
+    
+        <record id="wh_branch_dlw" model="stock.warehouse">
+            <field name="name">Cabang Way Kanan</field>
+            <field name="code">DLW</field>
+            <field name="branch_id" ref="wtc_branch.branch_dlw"/>
+        </record>
+    
+        <record id="wh_branch_dlu" model="stock.warehouse">
+            <field name="name">Cabang Kota Bumi</field>
+            <field name="code">DLU</field>
+            <field name="branch_id" ref="wtc_branch.branch_dlu"/>
+        </record>
+    
+        <record id="wh_branch_dlt" model="stock.warehouse">
+            <field name="name">Cabang Tulang Bawang</field>
+            <field name="code">DLT</field>
+            <field name="branch_id" ref="wtc_branch.branch_dlt"/>
+        </record>
+    
+        <record id="wh_branch_dls" model="stock.warehouse">
+            <field name="name">Cabang Sidomulyo</field>
+            <field name="code">DLS</field>
+            <field name="branch_id" ref="wtc_branch.branch_dls"/>
+        </record>
+    
+        <record id="wh_branch_dlo" model="stock.warehouse">
+            <field name="name">Cabang Kota Gajah</field>
+            <field name="code">DLO</field>
+            <field name="branch_id" ref="wtc_branch.branch_dlo"/>
+        </record>
+    
+        <record id="wh_branch_dln" model="stock.warehouse">
+            <field name="name">Cabang Kota Agung</field>
+            <field name="code">DLN</field>
+            <field name="branch_id" ref="wtc_branch.branch_dln"/>
+        </record>
+    
+        <record id="wh_branch_dlk" model="stock.warehouse">
+            <field name="name">Cabang Krui</field>
+            <field name="code">DLK</field>
+            <field name="branch_id" ref="wtc_branch.branch_dlk"/>
+        </record>
+    
+        <record id="wh_branch_dlj" model="stock.warehouse">
+            <field name="name">Cabang Way Jepara</field>
+            <field name="code">DLJ</field>
+            <field name="branch_id" ref="wtc_branch.branch_dlj"/>
+        </record>
+    
+        <record id="wh_branch_dli" model="stock.warehouse">
+            <field name="name">Cabang Tanjung Bintang</field>
+            <field name="code">DLI</field>
+            <field name="branch_id" ref="wtc_branch.branch_dli"/>
+        </record>
+    
+        <record id="wh_branch_dlg" model="stock.warehouse">
+            <field name="name">Cabang Gading Rejo</field>
+            <field name="code">DLG</field>
+            <field name="branch_id" ref="wtc_branch.branch_dlg"/>
+        </record>
+    
+        <record id="wh_branch_dlb" model="stock.warehouse">
+            <field name="name">Cabang Bakauheni</field>
+            <field name="code">DLB</field>
+            <field name="branch_id" ref="wtc_branch.branch_dlb"/>
+        </record>
+    
+        <record id="wh_branch_dla" model="stock.warehouse">
+            <field name="name">Cabang Antasari</field>
+            <field name="code">DLA</field>
+            <field name="branch_id" ref="wtc_branch.branch_dla"/>
+        </record>
+    
+        <record id="wh_branch_dlr" model="stock.warehouse">
+            <field name="name">Cabang Raden Intan</field>
+            <field name="code">DLR</field>
+            <field name="branch_id" ref="wtc_branch.branch_dlr"/>
+        </record>
+    
+        <record id="wh_branch_mml" model="stock.warehouse">
+            <field name="name">MD Lampung</field>
+            <field name="code">MML</field>
+            <field name="branch_id" ref="wtc_branch.branch_mml"/>
+        </record>
+    
+        <record id="wh_branch_dbl" model="stock.warehouse">
+            <field name="name">Cabang Belitung</field>
+            <field name="code">DBL</field>
+            <field name="branch_id" ref="wtc_branch.branch_dbl"/>
+        </record>
+    
+        <record id="wh_branch_dbk" model="stock.warehouse">
+            <field name="name">Cabang Kelapa</field>
+            <field name="code">DBK</field>
+            <field name="branch_id" ref="wtc_branch.branch_dbk"/>
+        </record>
+    
+        <record id="wh_branch_dbb" model="stock.warehouse">
+            <field name="name">Cabang Bangka</field>
+            <field name="code">DBB</field>
+            <field name="branch_id" ref="wtc_branch.branch_dbb"/>
+        </record>
+    
+        <record id="wh_branch_dbs" model="stock.warehouse">
+            <field name="name">Cabang Sungai Liat</field>
+            <field name="code">DBS</field>
+            <field name="branch_id" ref="wtc_branch.branch_dbs"/>
+        </record>
+    
+        <record id="wh_branch_dbt" model="stock.warehouse">
+            <field name="name">Cabang Toboali</field>
+            <field name="code">DBT</field>
+            <field name="branch_id" ref="wtc_branch.branch_dbt"/>
+        </record>
+    
+        <record id="wh_branch_dds" model="stock.warehouse">
+            <field name="name">Cabang Saharjo</field>
+            <field name="code">DDS</field>
+            <field name="branch_id" ref="wtc_branch.branch_dds"/>
+        </record>
+    
+        <record id="wh_branch_ddc" model="stock.warehouse">
+            <field name="name">Cabang Cimareme</field>
+            <field name="code">DDC</field>
+            <field name="branch_id" ref="wtc_branch.branch_ddc"/>
+        </record>
+    
+        <record id="wh_branch_ddb" model="stock.warehouse">
+            <field name="name">Cabang Bekasi</field>
+            <field name="code">DDB</field>
+            <field name="branch_id" ref="wtc_branch.branch_ddb"/>
+        </record>
+    
+        <record id="wh_branch_dda" model="stock.warehouse">
+            <field name="name">Cabang Caman</field>
+            <field name="code">DDA</field>
+            <field name="branch_id" ref="wtc_branch.branch_dda"/>
+        </record>
+    
+        <record id="wh_branch_ddd" model="stock.warehouse">
+            <field name="name">Cabang Depok</field>
+            <field name="code">DDD</field>
+            <field name="branch_id" ref="wtc_branch.branch_ddd"/>
+        </record>
+    
+        <record id="wh_branch_dde" model="stock.warehouse">
+            <field name="name">Cabang Temanggung</field>
+            <field name="code">DDE</field>
+            <field name="branch_id" ref="wtc_branch.branch_dde"/>
+        </record>
+    
+        <record id="wh_branch_ddg" model="stock.warehouse">
+            <field name="name">Cabang Godean</field>
+            <field name="code">DDG</field>
+            <field name="branch_id" ref="wtc_branch.branch_ddg"/>
+        </record>
+    
+        <record id="wh_branch_ddm" model="stock.warehouse">
+            <field name="name">Cabang Mojosari</field>
+            <field name="code">DDM</field>
+            <field name="branch_id" ref="wtc_branch.branch_ddm"/>
+        </record>
+    
+        <record id="wh_branch_ddj" model="stock.warehouse">
+            <field name="name">Cabang Jombang</field>
+            <field name="code">DDJ</field>
+            <field name="branch_id" ref="wtc_branch.branch_ddj"/>
+        </record>
+    
+        <record id="wh_branch_ddt" model="stock.warehouse">
+            <field name="name">Cabang Tabanan</field>
+            <field name="code">DDT</field>
+            <field name="branch_id" ref="wtc_branch.branch_ddt"/>
+        </record>
+    
+        <record id="wh_branch_ddi" model="stock.warehouse">
+            <field name="name">Cabang Bima</field>
+            <field name="code">DDI</field>
+            <field name="branch_id" ref="wtc_branch.branch_ddi"/>
+        </record>
+    
+        <record id="wh_branch_dxk" model="stock.warehouse">
+            <field name="name">Cabang Ketapang</field>
+            <field name="code">DXK</field>
+            <field name="branch_id" ref="wtc_branch.branch_dxk"/>
+        </record>
+    
+        <record id="wh_branch_dxt" model="stock.warehouse">
+            <field name="name">Cabang Tenggarong</field>
+            <field name="code">DXT</field>
+            <field name="branch_id" ref="wtc_branch.branch_dxt"/>
+        </record>
+    
+        <record id="wh_branch_dxs" model="stock.warehouse">
+            <field name="name">Cabang Samarinda</field>
+            <field name="code">DXS</field>
+            <field name="branch_id" ref="wtc_branch.branch_dxs"/>
+        </record>
+    
+        <record id="wh_branch_dxg" model="stock.warehouse">
+            <field name="name">Cabang Tanah Grogot</field>
+            <field name="code">DXG</field>
+            <field name="branch_id" ref="wtc_branch.branch_dxg"/>
+        </record>
+    
+        <record id="wh_branch_dxb" model="stock.warehouse">
+            <field name="name">Cabang Balikpapan</field>
+            <field name="code">DXB</field>
+            <field name="branch_id" ref="wtc_branch.branch_dxb"/>
+        </record>
+    
+        <record id="wh_branch_dxn" model="stock.warehouse">
+            <field name="name">Cabang Nanga Pinoh</field>
+            <field name="code">DXN</field>
+            <field name="branch_id" ref="wtc_branch.branch_dxn"/>
+        </record>
+    
+        <record id="wh_branch_dwt" model="stock.warehouse">
+            <field name="name">Cabang Tuminting</field>
+            <field name="code">DWT</field>
+            <field name="branch_id" ref="wtc_branch.branch_dwt"/>
+        </record>
+    
+        <record id="wh_branch_dwr" model="stock.warehouse">
+            <field name="name">Cabang Pare-Pare</field>
+            <field name="code">DWR</field>
+            <field name="branch_id" ref="wtc_branch.branch_dwr"/>
+        </record>
+    
+        <record id="wh_branch_dwp" model="stock.warehouse">
+            <field name="name">Cabang Pinrang</field>
+            <field name="code">DWP</field>
+            <field name="branch_id" ref="wtc_branch.branch_dwp"/>
+        </record>
+    
+        <record id="wh_branch_dwo" model="stock.warehouse">
+            <field name="name">Cabang Palopo</field>
+            <field name="code">DWO</field>
+            <field name="branch_id" ref="wtc_branch.branch_dwo"/>
+        </record>
+    
+        <record id="wh_branch_dwk" model="stock.warehouse">
+            <field name="name">Cabang Kendari</field>
+            <field name="code">DWK</field>
+            <field name="branch_id" ref="wtc_branch.branch_dwk"/>
+        </record>
+    
+        <record id="wh_branch_dws" model="stock.warehouse">
+            <field name="name">Cabang Sengkang</field>
+            <field name="code">DWS</field>
+            <field name="branch_id" ref="wtc_branch.branch_dws"/>
+        </record>
+    
+        <record id="wh_branch_dwg" model="stock.warehouse">
+            <field name="name">Cabang Pangkep</field>
+            <field name="code">DWG</field>
+            <field name="branch_id" ref="wtc_branch.branch_dwg"/>
+        </record>
+    
+        <record id="wh_branch_dwm" model="stock.warehouse">
+            <field name="name">Cabang Tomoni</field>
+            <field name="code">DWM</field>
+            <field name="branch_id" ref="wtc_branch.branch_dwm"/>
+        </record>
+    
+        <record id="wh_branch_dwn" model="stock.warehouse">
+            <field name="name">Cabang Gorontalo</field>
+            <field name="code">DWN</field>
+            <field name="branch_id" ref="wtc_branch.branch_dwn"/>
+        </record>
+    
+        <record id="wh_branch_ddu" model="stock.warehouse">
+            <field name="name">Cabang Sukabumi</field>
+            <field name="code">DDU</field>
+            <field name="branch_id" ref="wtc_branch.branch_ddu"/>
+        </record>
+		
+	</data>
+</openerp>

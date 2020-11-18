@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		
+		<record model="ir.ui.view" id="wtc_branch_on_purchase_requisition_form_view">
+            <field name="name">wtc.branch.purchase.requisition.form</field>
+            <field name="model">purchase.requisition</field>
+            <field name="inherit_id" ref="purchase_requisition.view_purchase_requisition_form"/>
+            <field name="arch" type="xml">
+		    	<xpath expr="/form/sheet/group" position="before">
+		    		<group>
+		    			<group>
+			            	<field name="branch_id" required="True" attrs="{'readonly': [('state','not in',('draft'))]}"/>
+			            </group>
+			            <group>
+							<field name="division" required="True" attrs="{'readonly': [('state','not in',('draft'))]}"/>
+						</group>
+					</group>		            
+		    	</xpath>
+           	</field>
+      	</record>
+
+		<record id="wtc_purchase_requisition_form_view" model="ir.ui.view">
+            <field name="name">wtc_purchase_requisition_form_view</field>
+            <field name="model">purchase.requisition</field>
+            <field name="inherit_id" ref="purchase_requisition.view_purchase_requisition_form"/>
+            <field name="arch" type="xml">
+	            <data>
+	            	
+					<xpath expr="//button[@string='Request a Quotation']" position="attributes">
+		                <attribute name="attrs">{'invisible': ['|', ('line_ids','=',[]),('state', 'in', ('draft' ,'open','done','request_approval'))]}</attribute>
+		            </xpath>
+		            <xpath expr="//button[@name='open_rfq']" position="attributes">
+		                <attribute name="attrs">{'invisible': [('state', 'in', ('draft','request_approval'))]}</attribute>
+		            </xpath>
+	            	<xpath expr="//field[@name='purchase_ids']/tree" position="attributes">
+		                <attribute name="create">false</attribute>
+		            </xpath>
+	                <xpath expr="//field[@name='multiple_rfq_per_supplier']" position="after">
+	                	<field name="department_id" attrs="{'readonly': [('state','not in',('draft'))]}"/>
+                	</xpath>
+	                <xpath expr="//field[@name='date_end']" position="after">
+	                	<field name="date" readonly="1"/>
+	                </xpath>
+            		<xpath expr="//button[@name='cancel_requisition']" position="after">
+	        			<button name="%(report_purchase_requisition)d" string="Print" states="in_progress" type="action"/>
+	        		</xpath>
+	        		<xpath expr="//field[@name='product_id']" position="replace">
+						<field name="categ_id" on_change="category_change(categ_id,parent.branch_id,parent.division)" domain="[('name','=',parent.division)]" options="{'no_open':True,'no_create':True}"/>
+	                    <field name="product_id" on_change="onchange_product_id(product_id,product_uom_id,parent.account_analytic_id,account_analytic_id,parent.schedule_date,schedule_date)" domain="[('categ_id','=',categ_id)]"/>
+					</xpath>
+					
+					<field name="origin" position="attributes">
+						<attribute name="attrs">{'readonly': [('state','not in',('draft'))]}</attribute>
+					</field>
+					
+            	</data>
+        	</field>
+   		</record>
+   		
+   		<record model="ir.ui.view" id="wtc_purchase_requisition_partner_form_view">
+            <field name="name">wtc.purchase.requisition.partner.form</field>
+            <field name="model">purchase.requisition.partner</field>
+            <field name="inherit_id" ref="purchase_requisition.view_purchase_requisition_partner"/>
+            <field name="arch" type="xml">
+		    	<field name="partner_id" position="replace">
+	            	<group col="4">
+	            		<field name="partner_id" context="{'default_supplier': 1, 'default_customer': 0}" options="{'no_open':True,'no_create':True}"/>
+		    			<field name="purchase_order_type_id" options="{'no_open':True,'no_create_edit':True}" domain="[('category','=',division)]" on_change="purchase_order_type_id_change(purchase_order_type_id)" />
+			            <field name="end_date"/>
+			            <field name="start_date"/>
+			            <field name="division" on_change="onchange_division(division)" invisible="1"/>
+			    	</group>
+			    </field>
+           	</field>
+      	</record>
+      	
+		<record id="view_wtc_purchase_requisition" model="ir.ui.view">
+            <field name="name">wtc.purchase.requisition.search.view</field>
+            <field name="model">purchase.requisition</field>
+            <field name="inherit_id" ref="purchase_requisition.view_purchase_requisition_filter"/>
+            <field name="arch" type="xml">
+            	<field name="name" position='after'>
+            		<field name='branch_id'/>
+                    <field name="division"/> 
+            	</field>
+            </field>
+        </record>    
+        
+    <record model="ir.actions.act_window" id="action_purchase_requisition_showroom">
+        <field name="name">Calls for Bids</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">purchase.requisition</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{"search_default_user_id":uid}</field>
+        <field name="domain">[('division','=','Unit')]</field>
+        <field name="search_view_id" ref="purchase_requisition.view_purchase_requisition_filter"/>
+        <field name="help" type="html">
+          <p class="oe_view_nocontent_create">
+            Click to start a new Call for Bids process. 
+          </p><p>
+            A Call for Bids is a procedure for generating competing offers from
+            different bidders. In the call for bids, you can record the
+            products you need to buy and generate the creation of RfQs to
+            suppliers. Once the bids have been registered, you can review and
+            compare them and you can validate some and cancel others.
+          </p>
+        </field>
+    </record>
+            
+    <record model="ir.actions.act_window" id="action_purchase_requisition_workshop">
+        <field name="name">Calls for Bids</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">purchase.requisition</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{"search_default_user_id":uid}</field>
+        <field name="domain">[('division','=','Sparepart')]</field>
+        <field name="search_view_id" ref="purchase_requisition.view_purchase_requisition_filter"/>
+        <field name="help" type="html">
+          <p class="oe_view_nocontent_create">
+            Click to start a new Call for Bids process. 
+          </p><p>
+            A Call for Bids is a procedure for generating competing offers from
+            different bidders. In the call for bids, you can record the
+            products you need to buy and generate the creation of RfQs to
+            suppliers. Once the bids have been registered, you can review and
+            compare them and you can validate some and cancel others.
+          </p>
+        </field>
+    </record>
+        		
+      	<menuitem id="menu_purchase_requisition_pro_mgt_1" sequence="1"
+        parent="wtc_dealer_menu.showroom_purchase_menu"
+        action="action_purchase_requisition_showroom"/>
+
+      	<menuitem id="menu_purchase_requisition_pro_mgt_2" sequence="1"
+        parent="wtc_dealer_menu.workshop_purchase_menu"
+        action="action_purchase_requisition_workshop"/>        	      	
+ 	</data>
+</openerp>
+       		

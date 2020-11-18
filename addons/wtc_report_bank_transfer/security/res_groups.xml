@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    
+<!-- Laporan Workshop -->
+		
+        <record id="group_wtc_report_bank_transfer_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Laporan Bank Transfer Read</field>
+            <field name="menu_access" eval="[
+            								(4, ref('menu_bank_transfer_report')),
+            								]"/>
+        </record>
+
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[(4,ref('group_wtc_report_bank_transfer_read')),
+											]"/>
+		</record>
+    </data>
+</openerp>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    	<!-- <record id="l10n_id_honda.chart_111250001DDS" model="account.account">
+    		<field name="code">111250001DDS</field>
+    		<field name="parent_id" ref="l10n_id_honda.chart11125000"/>
+    		<field name="name">EDC BCA - DDS</field>
+    		<field name="type">receivable</field>
+    		<field name="user_type" ref="account.data_account_type_receivable" />
+    		<field name="active">1</field>
+    		<field name="reconcile">1</field>
+    		<field name="branch_id" ref="wtc_branch.branch_dds" />
+    	</record>
+    	<record id="l10n_id_honda.chart_111250001DDA" model="account.account">
+    		<field name="code">111250001DDA</field>
+    		<field name="parent_id" ref="l10n_id_honda.chart11125000"/>
+    		<field name="name">EDC BCA - DDA</field>
+    		<field name="type">receivable</field>
+    		<field name="user_type" ref="account.data_account_type_receivable" />
+    		<field name="active">1</field>
+    		<field name="reconcile">1</field>
+    		<field name="branch_id" ref="wtc_branch.branch_dda" />
+    	</record>
+    	<record id="l10n_id_honda.chart_111250001DLR" model="account.account">
+    		<field name="code">111250001DLR</field>
+    		<field name="parent_id" ref="l10n_id_honda.chart11125000"/>
+    		<field name="name">EDC Mandiri - DDA</field>
+    		<field name="type">receivable</field>
+    		<field name="user_type" ref="account.data_account_type_receivable" />
+    		<field name="active">1</field>
+    		<field name="reconcile">1</field>
+    		<field name="branch_id" ref="wtc_branch.branch_dlr" />
+    	</record> -->
+
+    	<record id="sequence_journal_edc_dds" model="ir.sequence">
+    		<field name="active">1</field>
+    		<field name="implementation">no_gap</field>
+    		<field name="name">Journal EDC DDS</field>
+    		<field name="number_next">1</field>
+    		<field name="number_next_actual">1</field>
+    		<field name="padding">5</field>
+    		<field name="prefix">EDC/DDS/%(y)s/%(month)s/</field>
+    	</record>
+    	<record id="sequence_journal_edc_dda" model="ir.sequence">
+    		<field name="active">1</field>
+    		<field name="implementation">no_gap</field>
+    		<field name="name">Journal EDC DDA</field>
+    		<field name="number_next">1</field>
+    		<field name="number_next_actual">1</field>
+    		<field name="padding">5</field>
+    		<field name="prefix">EDC/DDA/%(y)s/%(month)s/</field>
+    	</record>
+    	<record id="sequence_journal_edc_dlr" model="ir.sequence">
+    		<field name="active">1</field>
+    		<field name="implementation">no_gap</field>
+    		<field name="name">Journal EDC DLR</field>
+    		<field name="number_next">1</field>
+    		<field name="number_next_actual">1</field>
+    		<field name="padding">5</field>
+    		<field name="prefix">EDC/DLR/%(y)s/%(month)s/</field>
+    	</record>
+
+    	<record id="journal_edc_dds" model="account.journal">
+    		<field name="branch_id" ref="wtc_branch.branch_dds"/>
+    		<field name="code">EDCDDS</field>
+    		<field name="type">bank</field>
+    		<field name="name">EDC BCA - Saharjo</field>
+    		<field name="default_credit_account_id" ref="l10n_id_honda.chart_11125000DDS"/>
+    		<field name="default_debit_account_id" ref="l10n_id_honda.chart_11125000DDS"/>
+    		<field name="sequence_id" ref="sequence_journal_edc_dds" />
+    		<field name="cash_control">0</field>
+    		<field name="partner_id" ref="bank_bca"/>
+    	</record>
+    	<record id="journal_edc_dda" model="account.journal">
+    		<field name="branch_id" ref="wtc_branch.branch_dda"/>
+    		<field name="code">EDCDDA</field>
+    		<field name="type">bank</field>
+    		<field name="name">EDC BCA - Caman</field>
+    		<field name="default_credit_account_id" ref="l10n_id_honda.chart_11125000DDA"/>
+    		<field name="default_debit_account_id" ref="l10n_id_honda.chart_11125000DDA"/>
+    		<field name="sequence_id" ref="sequence_journal_edc_dda" />
+    		<field name="cash_control">0</field>
+    		<field name="partner_id" ref="bank_bca"/>
+    	</record>
+    	<record id="journal_edc_dlr" model="account.journal">
+    		<field name="branch_id" ref="wtc_branch.branch_dlr"/>
+    		<field name="code">EDCDLR</field>
+    		<field name="type">bank</field>
+    		<field name="name">EDC Mandiri - Raden Intan</field>
+    		<field name="default_credit_account_id" ref="l10n_id_honda.chart_11125000DLR"/>
+    		<field name="default_debit_account_id" ref="l10n_id_honda.chart_11125000DLR"/>
+    		<field name="sequence_id" ref="sequence_journal_edc_dlr" />
+    		<field name="cash_control">0</field>
+    		<field name="partner_id" ref="bank_mandiri"/>
+    	</record>
+    </data>
+</openerp>

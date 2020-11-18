@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+		<record id="view_teds_part_hotline_monitoring_wizard" model="ir.ui.view">
+	        <field name="name">teds.part.hotline.monitoring.wizard</field>
+	        <field name="model">teds.part.hotline.monitoring.wizard</field>
+	        <field name="type">form</field>
+	        <field name="arch" type="xml">
+	            <form string="Monitoring Hotline">
+	            	<header>
+	            		<h1>Monitoring Hotline</h1><p></p>
+	            	</header>
+            		<div class="col-xm-12">
+            			<label for="branch_ids" string="Branch"/>
+            			<div>
+							<field name="branch_ids" options="{'no_create':True,'no_open':True}" required="1" widget="many2many_tags" style="width:50%"/>
+						</div>
+						<label for="options" string="Options"/>
+            			<div>
+ 		           			<field name="options" required="1" style="width:50%"/>
+ 		           		</div>
+	                    <label for="start_date" string="Periode" attrs="	{'invisible':[('options','!=','periode')]}"/>
+						<div>
+							<field name="start_date" class="oe_inline" attrs="{'invisible':[('options','!=','periode')],'required':[('options','=','periode')]}"/> 
+							<label string="-" attrs="{'invisible':[('options','!=','periode')]}"/> 
+							<field name="end_date" class="oe_inline" attrs="{'invisible':[('options','!=','periode')],'required':[('options','=','periode')]}"/>
+						</div>
+						<label for="no_hotline" string="No Hotline" attrs="{'invisible':[('options','!=','hotline')]}"/>
+            			<div>
+                			<field name="no_hotline" attrs="{'invisible':[('options','!=','hotline')],'required':[('options','=','hotline')]}" style="width:50%"/>
+                		</div>
+                    	<button name="action_search" type="object" string="Search" class="btn btn-default"/>
+					</div>
+                    <field name="is_report" invisible="1"/>
+                    <hr/>
+                    
+                    <field name="create_date" invisible="1"/>
+                    <group attrs="{'invisible':['|',('create_date','=',False),('is_report','!=',False)]}">
+                    	<label string="Data tidak ada !"/>
+                    </group>
+            		<group attrs="{'invisible':[('is_report','=',False)]}">
+            			<field name="detail_ids" nolabel="1" readonly="1">
+            				<tree>
+            					<field name="name"/>
+                                <field name="tgl_hotline"/>
+								<field name="lot_id" options="{'no_open':True,'no_create':True}"/>
+								<field name="chassis_no"/>
+								<field name="no_pol"/>
+								<field name="customer_id" options="{'no_open':True,'no_create':True}"/>
+								<field name="pembawa"/>
+								<field name="no_telp"/>
+								<field name="is_po"/>
+                                <field name="tgl_po"/>
+                                <field name="umur"/>
+								<field name="is_wo"/>
+        					</tree>
+        					<form>
+        						<sheet>
+        							<group>
+        								<group>
+        									<field name="name"/>
+                                            <field name="tgl_hotline"/>
+        									<field name="lot_id" options="{'no_open':True,'no_create':True}"/>
+        									<field name="chassis_no"/>
+        									<field name="no_pol"/>
+        								</group>
+        								<group>
+        									<field name="customer_id" options="{'no_open':True,'no_create':True}"/>
+        									<field name="pembawa"/>
+        									<field name="no_telp"/>
+        								</group>
+        								<group>
+        									<field name="is_po"/>
+                                            <field name="tgl_po"/>
+                                            <field name="umur"/>
+        									<field name="is_wo"/>
+        								</group>
+        							</group>
+        							<notebook>
+        								<page string="Detail">
+        									<field name="line_ids" editable="top">
+        										<tree>
+                                                    <field name="product_id"/>
+                                                    <field name="name"/>
+                                                    <field name="qty" sum="Total"/>
+                                                    <field name="qty_po" sum="Total"/>
+                                                    <field name="qty_wo" sum="Total"/>
+                                                    <field name="no_po"/>
+                                                    <field name="no_wo"/>
+                                                </tree>
+                                                <form>
+                                                    <sheet>
+                                                        <group>
+                											<field name="product_id" options="{'no_open':True,'no_create':True}"/>
+                											<field name="name"/>
+                											<field name="qty"/>
+                											<field name="qty_po"/>
+                											<field name="qty_wo"/>
+                                                            <field name="no_po"/>
+                                                            <field name="no_wo"/>
+                                                        </group>
+                                                    </sheet>
+        										</form>
+        									</field>
+        								</page>
+                                        <page string="Alokasi DP">
+                                            <field name="dp_ids">
+                                                <tree>
+                                                    <field name="name"/>
+                                                    <field name="amount_alokasi" sum="Total"/>
+                                                </tree>
+                                                <form>
+                                                    <sheet>
+                                                        <group>
+                                                            <field name="name"/>
+                                                            <field name="amount_alokasi"/>
+                                                        </group>
+                                                    </sheet>
+                                                </form>
+                                            </field>
+                                        </page>
+        							</notebook>
+        						</sheet>
+        					</form>
+            			</field>
+            		</group>
+	            </form>
+	        </field>
+	    </record>
+
+	    <record id="actions_teds_part_hotline_monitoring_wizard" model="ir.actions.act_window">
+	        <field name="name">Part Hotline Monitoring</field>
+	        <field name="type">ir.actions.act_window</field>
+	        <field name="res_model">teds.part.hotline.monitoring.wizard</field>
+	        <field name="view_type">form</field>
+	        <field name="view_mode">form</field>
+	        <field name="target">inline</field>
+	    </record>
+
+		<menuitem id="teds_part_hotline_monitoring_menuitem"  parent="wtc_dealer_menu.workshop_sales_menu" sequence="51" action="actions_teds_part_hotline_monitoring_wizard"/> 
+	     
+    </data>
+</openerp>

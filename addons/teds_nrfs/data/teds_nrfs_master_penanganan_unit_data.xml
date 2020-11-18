@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="nrfs_penanganan_unit_tanpa_part" model="teds.nrfs.master.penanganan.unit">
+            <field name="code">HS2001</field>
+	    	<field name="name">Diperbaiki langsung oleh mekanik (tanpa melakukan pergantian part)</field>
+            <field name="master_type">vendor</field>
+        </record>
+        <record id="nrfs_penanganan_unit_part_ready" model="teds.nrfs.master.penanganan.unit">
+            <field name="code">HS2002</field>
+	    	<field name="name">Diperbaiki dengan sparepart ready</field>
+            <field name="master_type">vendor</field>
+        </record>
+        <record id="nrfs_penanganan_unit_part_pesan_biasa" model="teds.nrfs.master.penanganan.unit">
+            <field name="code">HS2003</field>
+	    	<field name="name">Diperbaiki dengan sparepart pesan (Jalur Biasa)</field>
+            <field name="master_type">vendor</field>
+        </record>
+        <record id="nrfs_penanganan_unit_part_pesan_urgent" model="teds.nrfs.master.penanganan.unit">
+            <field name="code">HS2004</field>
+	    	<field name="name">Diperbaiki dengan sparepart pesan (PO Urgent)</field>
+            <field name="master_type">md</field>
+        </record>
+        <record id="nrfs_penanganan_unit_rubbing" model="teds.nrfs.master.penanganan.unit">
+            <field name="code">HS2005</field>
+	    	<field name="name">Rubbing</field>
+            <field name="master_type">vendor</field>
+        </record>
+        <record id="nrfs_penanganan_unit_repainting_vendor" model="teds.nrfs.master.penanganan.unit">
+            <field name="code">HS2006</field>
+	    	<field name="name">Repainting ke vendor</field>
+            <field name="master_type">vendor</field>
+        </record>
+        <record id="nrfs_penanganan_unit_repainting_gudang" model="teds.nrfs.master.penanganan.unit">
+            <field name="code">HS2007</field>
+	    	<field name="name">Repainting ke gudang</field>
+            <field name="master_type">vendor</field>
+        </record>
+        <record id="nrfs_penanganan_unit_others" model="teds.nrfs.master.penanganan.unit">
+            <field name="code">HS2008</field>
+	    	<field name="name">Lain-lain</field>
+            <field name="master_type">vendor</field>
+        </record>
+    </data>
+</openerp>

@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+		<record id="view_teds_sales_activity_approved_operation_tree" model="ir.ui.view">
+			<field name="name">teds.sales.activity.approved.operation.tree</field>
+			<field name="model">teds.sales.plan.activity</field>
+			<field name="priority">30</field>
+			<field name="arch" type="xml">
+				<tree create='false' edit='false' delete='false'>
+					<field name="branch_id"/>
+					<field name="name"/>
+					<field name="bulan"/>
+					<field name="tahun"/>
+				</tree>
+			</field>
+		</record>
+		
+		<record id="view_teds_sales_activity_approved_operation_form" model="ir.ui.view">
+			<field name="name">teds.sales.activity.approved.operation.form</field>
+			<field name="model">teds.sales.plan.activity</field>
+			<field name="priority">30</field>
+			<field name="arch" type="xml">
+				<form create="false" delete="false">
+					<header>
+						<button name="action_confirm_operation" string="Confirm" type="object" class="oe_highlight" confirm="Proses confirm akan dijalankan dan status approve tidak bisa dicancel lagi !"/>
+						<field name="state" invisible="1"/>
+					</header>
+					<div class="oe_title">
+						<h1>
+							<field name="name" attrs="{'invisible':[('name','=',False)]}" readonly="1"/>
+						</h1>
+					</div>
+					<group>
+						<field name="branch_id" options="{'no_open':True,'no_create':True}" readonly="1" attrs="{'readonly':[('name','!=',False)]}"/>
+						<label for="bulan" string="Periode"/>
+                        <div>
+                            <field name="bulan" readonly="1" class="oe_inline" attrs="{'readonly':[('state','!=','draft')]}"/> 
+                            <field name="tahun" readonly="1" class="oe_inline" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        </div>
+					 	<field name="total_biaya_btl"/>
+					 	<field name="jml_data_confirm" invisible="1"/>
+					</group>
+					<notebook>
+						<page string="Detail">
+							<field name="activity_line_confirm_ids" nolabel="1">
+								<tree create="false" delete="false" editable="top">
+									<field name="jaringan_penjualan" readonly="1"/>
+									<field name="name" readonly="1"/>
+									<field name="act_type_id" options="{'no_open':True,'no_create':True}" readonly="1"/>
+									<field name="titik_keramaian_id" options="{'no_open':True,'no_create':True}" readonly="1"/>
+									<field name="kecamatan_id" options="{'no_open':True,'no_create':True}" readonly="1"/>
+									<field name="start_date" readonly="1"/>
+									<field name="end_date" readonly="1"/>
+									<field name="target_unit" readonly="1"/>
+									<field name="target_customer" readonly="1"/>
+									<field name="total_biaya" readonly="1"/>
+									<field name="status_operation" required="1"/>
+									<field name="reason_reject_operation" attrs="{'readonly':[('status_operation','!=','reject')],'required':[('status_operation','=','reject')]}"/>
+									<button name="action_view_detail_activity" string="View" type="object"/>
+								</tree>
+							</field>
+						</page>
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"/>
+									<field name="create_date" readonly="1"/>
+									<field name="approved_am_uid" readonly="1" attrs="{'invisible':[('approved_am_uid','=',False)]}"/>
+									<field name="approved_am_date" readonly="1" attrs="{'invisible':[('approved_am_date','=',False)]}"/>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"/>
+									<field name="write_date" readonly="1"/>
+									<field name="approved_operation_uid" readonly="1" attrs="{'invisible':[('approved_operation_uid','=',False)]}"/>
+									<field name="approved_aoperation_date" readonly="1" attrs="{'invisible':[('approved_aoperation_date','=',False)]}"/>
+								</group>
+							</group>
+						</page>	
+					</notebook>
+				</form>
+			</field>
+		</record>
+
+      	<record id="action_teds_sales_activity_approved_operation" model="ir.actions.server">
+            <field name="name">Persetujuan BTL</field>
+            <field name="model_id" ref="teds_sales_activity_plan_btl.model_teds_sales_plan_activity"/>
+            <field name="code">
+                action = env['teds.sales.plan.activity'].action_spa_approve_operation_tree()
+            </field>
+        </record>
+
+    	<menuitem id="teds_sales_activity_approved_operation_menu" action="action_teds_sales_activity_approved_operation" parent="teds_sales_activity_btl_menu" sequence="05"/>
+	</data>
+</openerp>

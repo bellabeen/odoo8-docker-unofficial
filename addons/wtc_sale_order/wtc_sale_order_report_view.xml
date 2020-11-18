@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>    
+       <report  
+            id="sale_order_report" string="Sale Order" 
+            model="sale.order" 
+            name="rml.sale.order" 
+            rml="wtc_sale_order/report/wtc_sale_order_report.rml" 
+            auto="False" menu="False"/>  
+	   			     
+               
+    </data>
+</openerp>

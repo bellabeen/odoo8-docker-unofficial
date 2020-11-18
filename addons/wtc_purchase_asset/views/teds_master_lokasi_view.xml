@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+        <record id="view_teds_master_lokasi_asset_tree" model="ir.ui.view" >
+            <field name="name">teds.master.lokasi.asset.tree</field>
+            <field name="model">teds.master.lokasi.asset</field>
+            <field name="arch" type="xml">
+            	<tree editable="bottom">
+            		<field name="name" required="1"/>
+                    <field name="active"/>
+            	</tree>
+            </field>
+        </record>
+
+        <record id="action_teds_master_lokasi_asset" model="ir.actions.act_window">
+            <field name="name">Master Asset Lokasi</field>
+            <field name="res_model">teds.master.lokasi.asset</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="teds_master_lokasi_asset_menuitem" parent="wtc_dealer_menu.ga_configuration_menu" sequence="50" action="action_teds_master_lokasi_asset"/>
+    </data>
+</openerp>
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+        <record id="view_teds_purchase_order_hotline_form" model="ir.ui.view" >
+            <field name="name">teds.purchase.order.hotline.form</field>
+            <field name="model">purchase.order</field>
+            <field name="inherit_id" ref="wtc_purchase_order.wtc_branch_on_purchase_order_form_view"/>
+            <field name="arch" type="xml">
+        		<field name="purchase_order_type_id" position="after">
+        			<field name="type_value" invisible="1"/>
+        			<field name="part_hotline_id" attrs="{'invisible':['|',('type_value','!=','HOTLINE'),('division','!=','Sparepart')],'required':[('type_value','=','HOTLINE'),('division','=','Sparepart'),('date_order','>=','2019-10-07 00:00:00')],'readonly':[('state','!=','draft')]}" domain="[('branch_id','=',branch_id),('state','=','approved'),('status_po','=','draft')]" options="{'no_open':True,'no_create':True}"/>
+        		</field>
+                <xpath expr="//field[@name='purchase_order_type_id']" position="attributes">
+                    <attribute name="options">{'no_open':True,'no_create':True}</attribute>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

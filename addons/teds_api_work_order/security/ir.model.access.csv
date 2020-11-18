@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_teds_api_master_bundling,teds_api_master_bundling,model_teds_api_master_bundling,,1,0,0,0
+access_teds_api_master_bundling_line,teds_api_master_bundling_line,model_teds_api_master_bundling_line,,1,0,0,0

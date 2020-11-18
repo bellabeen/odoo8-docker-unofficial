@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>  
+
+       <report  
+            id="report_other_receivable" string="Other Receivable" 
+            model="account.voucher" 
+            name="rml.other.receivable" 
+            rml="wtc_account_voucher/report/wtc_other_receivable_report.rml" 
+            auto="False" menu="False"/>  
+            
+        <report  
+            id="report_payments_request" string="Payments Request" 
+            model="account.voucher" 
+            name="rml.payments.request" 
+            rml="wtc_account_voucher/report/wtc_payments_request_report.rml" 
+            auto="False" menu="False"/>  
+            
+       <report  
+            id="kwitansi" string="kwitansi" 
+            model="account.voucher" 
+            name="rml.kwitansi" 
+            rml="wtc_account_voucher/report/kwitansi.rml" 
+            auto="False" menu="False"/>
+             
+        <report  
+            id="supplier_payment_report" string="supplier_payment" 
+            model="account.voucher" 
+            name="rml.supplier.payment" 
+            rml="wtc_account_voucher/report/wtc_supplier_payment_report.rml" 
+            auto="False" menu="False"/>   
+            	
+       <report  
+            id="kwitansi_new" string="kwitansi" 
+            model="wtc.account.voucher" 
+            name="rml.wtc.kwitansi" 
+            rml="wtc_account_voucher/report/wtc_kwitansi.rml" 
+            auto="False" menu="False"/>
+                
+        <!-- <report  
+            id="wtc_supplier_payment_report" string="supplier_payment" 
+            model="wtc.account.voucher" 
+            name="rml.wtc.supplier.payment" 
+            rml="wtc_account_voucher/report/wtc_supplier_payment_report_new.rml" 
+            auto="False" menu="False"/>  -->
+
+        <report 
+            string="Supplier Payment" 
+            id="wtc_supplier_payment_report"
+            model="wtc.account.voucher" 
+            report_type="qweb-pdf"
+            name="wtc_account_voucher.wtc_supplier_payment_report_new" 
+            file="wtc_account_voucher.wtc_supplier_payment_report_new" 
+            menu="False"/>
+            	            	   	          
+    </data>
+</openerp>

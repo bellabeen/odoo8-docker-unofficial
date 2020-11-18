@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    
+        <record id="bank_bca" model="res.bank">
+            <field name="name">BCA</field>
+            <field name="bic">BCA</field>   
+        </record>
+    
+        <record id="bank_mandiri" model="res.bank">
+            <field name="name">MANDIRI</field>
+            <field name="bic">MANDIRI</field>   
+        </record>
+    
+        <record id="bank_danamon" model="res.bank">
+            <field name="name">DANAMON</field>
+            <field name="bic">DANAMON</field>   
+        </record>
+    
+        <record id="bank_bni" model="res.bank">
+            <field name="name">BNI</field>
+            <field name="bic">BNI</field>   
+        </record>
+    
+        <record id="bank_ocbc_nisp" model="res.bank">
+            <field name="name">OCBC - NISP</field>
+            <field name="bic">OCBC_NISP</field>   
+        </record>
+    
+        <record id="bank_permata" model="res.bank">
+            <field name="name">PERMATA</field>
+            <field name="bic">PERMATA</field>   
+        </record>
+    
+        <record id="bank_bri" model="res.bank">
+            <field name="name">BRI</field>
+            <field name="bic">BRI</field>   
+        </record>
+    
+        <record id="bank_bank_mizuho" model="res.bank">
+            <field name="name">BANK MIZUHO</field>
+            <field name="bic">BANK_MIZUHO</field>   
+        </record>
+    
+        <record id="bank_syariah_mandiri" model="res.bank">
+            <field name="name">SYARIAH MANDIRI</field>
+            <field name="bic">SYARIAH_MANDIRI</field>   
+        </record>
+    
+        <record id="bank_bank_of_tokyo" model="res.bank">
+            <field name="name">BANK OF TOKYO</field>
+            <field name="bic">BANK_OF_TOKYO</field>   
+        </record>
+    
+        <record id="bank_bank_lampung" model="res.bank">
+            <field name="name">Bank Lampung</field>
+            <field name="bic">BANK_LAMPUNG</field>   
+        </record>
+    
+        <record id="bank_bank_bengkulu" model="res.bank">
+            <field name="name">BANK BENGKULU</field>
+            <field name="bic">BANK_BENGKULU</field>   
+        </record>
+
+    </data>
+</openerp>
+            

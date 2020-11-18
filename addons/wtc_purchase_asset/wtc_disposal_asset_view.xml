@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data> 
+    	
+		<record model="ir.ui.view" id="wtc_disposal_asset_tree_view">
+		    <field name="name">wtc.disposal.asset.tree.view</field>
+		    <field name="model">wtc.disposal.asset</field>
+		    <field name="arch" type="xml">
+		        <tree string="List Disposal Asset">
+		        	<field name="name"/>
+		            <field name="branch_id"/>
+					<field name="division"/>            		            			            	
+		            <field name="date"/>
+		            <field name="type"/>
+		            <field name="partner_id"/>
+		            <field name='state'/>            
+		        </tree>
+		     </field>
+		</record>
+		    	
+		<record model="ir.ui.view" id="wtc_disposal_asset_form_view">
+		    <field name="name">wtc.disposal.asset.form.view</field>
+		    <field name="model">wtc.disposal.asset</field>
+		    <field name="arch" type="xml">		       	        	
+				<form>
+					<header>
+						<button name="confirm_disposal" groups='wtc_purchase_asset.group_disposal_asset_confirm' type="object" string='Confirm' states='approved' class="oe_highlight"/>						
+						<button name="request_approval" groups='wtc_purchase_asset.group_disposal_asset_rfa' states="draft" string="RFA" type="object" class="oe_highlight"/>
+						<button name="approve_approval" states="waiting_for_approval" string="Approve" type="object" class="oe_highlight" groups='wtc_purchase_asset.group_disposal_asset_approved'/>
+						<button name="%(wtc_approval.wtc_approval_reject_wizard_action)d" attrs="{'invisible': [('state','!=','waiting_for_approval')]}" 
+								 string="Reject" type="action" context="{'model_name':'wtc.disposal.asset','update_value':{'approval_state':'r','state':'draft'}}"/>
+						<button name="%(wtc_approval.wtc_approval_cancel_wizard_action)d" attrs="{'invisible': [('state','!=','waiting_for_approval')]}" 
+							    string="Cancel Approval" type="action" context="{'model_name':'wtc.disposal.asset','update_value':{'approval_state':'b','state':'draft'}}"/>																		
+						<button name="%(wtc_approval.wtc_cancel_approval_wizard)d" groups='wtc_purchase_asset.group_disposal_asset_cancel_app' states="approved" string="Cancel Approval" type="action"  
+								context="{'model_name':'wtc.disposal.asset','update_value':{'approval_state':'b','state':'draft'}}"/>
+
+						<button name="action_print_form" string="Print" type="object"/>
+						<field name="state" widget="statusbar" statusbar_visible="draft,waiting_for_approval,confirm"/>	
+	           		</header>
+					<sheet>  
+	        			<div class="oe_title">
+			        		<h2>
+				                <label string="Disposal Asset"/>    			
+				 				<field name="name" class="oe_inline" readonly='1'/>
+			 				</h2>
+	 					</div>			        							        	 
+						<group col="2" colspan="2">   
+							<group>
+								<field name="branch_id" options="{'no_create': True,'no_open': True}" attrs="{'readonly': ['|',('state','!=','draft'),('name','!=',False)]}" />
+							</group>  
+							<group>
+								<field name="division" attrs="{'readonly': [('state','!=','draft')]}" />																
+							</group>
+							<group>
+								<field name="type" required='1' attrs="{'readonly': [('state','!=','draft')]}" />																																
+								<field name="partner_id" attrs="{'required': [('type','=','sold')],'invisible': [('type','=','scrap')],'readonly': [('state','!=','draft')]}" options="{'no_create': True,'no_open': True}" />
+								<field name="payment_term_id" required='1' attrs="{'readonly': [('state','!=','draft')]}" options="{'no_create': True,'no_open': True}" />
+																	
+							</group> 
+							<group>
+								<field name="date" readonly="1"/>
+								<field name="approval_state" readonly='1'/>
+																	
+							</group>        														
+						</group>
+	                    <notebook colspan="5">
+	                        <page string="Disposal Detail">
+	                        	<field name="disposal_line_sold_ids" nolabel="1" widget="one2many_list" attrs="{'readonly': [('state','!=','draft')],'invisible':[('type','!=','sold')]}">
+	                        		<tree editable="bottom">
+		                            	<field name='branch_id' options="{'no_create': True,'no_open': True}" invisible='1'/>
+						                <field name="asset_id" required="1" options="{'no_create': True,'no_open': True}"/>
+										<field name="category_id" readonly="1"/>             
+						                <field name="amount" required="1" string="Harga Jual"/>
+						                <field name="tax_id" widget="many2many_tags" options="{'no_open':True,'no_create':True}" required="1"/>
+						                <field name="amount_subtotal" />
+						            </tree>
+	                        	</field>
+	                        	<group class="oe_subtotal_footer oe_right" attrs="{'invisible':[('type','!=','sold')]}">
+									<field name="amount_untaxed" readonly='1' widget='monetary'/>
+									<field name="amount_tax" readonly='1' widget='monetary'/>
+									<field name="amount_total" readonly='1' widget='monetary'/>
+								</group>
+								<div class="oe_clear"/> 
+
+								<field name="disposal_line_scrap_ids" nolabel="1" widget="one2many_list" attrs="{'readonly': [('state','!=','draft')],'invisible':[('type','!=','scrap')]}">
+									<tree editable="bottom">
+										<field name='branch_id' options="{'no_create': True,'no_open': True}" invisible='1'/>
+						                <field name="asset_id" required="1" options="{'no_create': True,'no_open': True}"/>
+										<field name="category_id" readonly="1"/>             
+						                <field name="amount" required="1" string="Harga Beli"/>
+						                <field name="nilai_penyusutan" readonly="1"/>
+										<field name="akumulasi_penyusutan" readonly="1"/>
+										<field name="nilai_buku" readonly="1"/>
+									</tree>
+								</field>                            
+	                        </page>
+	                        <page string="Alokasi HL" attrs="{'invisible':[('type','!=','sold')]}">
+	                        	<field name="hl_ids" nolabel="1" widget="one2many_list" attrs="{'readonly':[('state','!=','draft')]}">
+	                        		<tree editable="bottom">
+	                        			<field name="hl_id"  options="{'no_open':True,'no_create': True}" domain="[('branch_id','=',parent.branch_id),('division','=',parent.division),('partner_id','=',parent.partner_id),('credit','>',0),('reconcile_id','=',False)]" required="1"/>
+	                        			<field name="amount_hl_original" invisible="1"/>
+										<field name="amount_hl_balance" invisible="1"/>
+										<field name="amount_hl_original_show" readonly="1"/>
+										<field name="amount_hl_balance_show" readonly="1"/>
+										<field name="amount_hl_allocation" required="1"/>
+	                        		</tree>
+	                        	</field>
+	                        </page>
+					 		<page string='Faktur Pajak' attrs="{'invisible': [('amount_tax','=',0)]}"  >
+					 			<group>
+					 				<field name='pajak_gabungan'></field>
+					 				<field name='faktur_pajak_id' readonly='1'></field>
+					 			</group>
+					 		</page>		                        
+	                        <page string="Journal Items" attrs="{'invisible': [('state','in',('draft','approved','waiting_for_approval'))]}">
+	                        	<field name="move_ids" readonly="1">
+	                               <tree string="Journal Items">
+	                                   <field name="move_id"/>
+	                                   <field name="branch_id"/>
+	                                   <field name="ref"/>
+	                                   <field name="date"/>
+	                                   <field name="date_maturity"/>
+	                                   <field name="partner_id"/>
+	                                   <field name="account_id"/>
+	                                   <field name="name"/>
+	                                   <field name="debit"/>
+	                                   <field name="credit"/>
+	                                   <field name="state"/>
+	                                   <field name="reconcile_id"/>
+	                               </tree>
+	                            </field>	                            
+	                        </page>  
+							<page string="Approval">
+								<field name="approval_ids">
+									<tree string="Approval" editable="bottom" create="false" edit="false" delete="false" >
+										<field name="group_id" />
+										<field name="branch_id"/>
+										<field name="division"/>
+										<field name="limit"/>
+										<field name="sts"/>
+										<field name="reason"/>
+										<field name="pelaksana_id"/>
+										<field name="tanggal"/>
+									</tree>
+								</field>
+							</page> 	                        
+							<page string="Audit Trail">
+								<group>
+									<group>
+										<field name="create_uid" readonly="1"></field>
+										<field name="create_date" readonly="1"></field>
+										<field name="confirm_uid" readonly="1"></field>
+										<field name="confirm_date" readonly="1"></field>										
+									</group>
+									<group>							
+										<field name="write_uid" readonly="1"></field>
+										<field name="write_date" readonly="1"></field>
+										
+									</group>
+								</group>
+							</page>	                                              
+	                    </notebook>							   		                																
+					</sheet>
+				</form>	
+		    </field>
+		</record>
+		
+ 		<record id="view_wtc_disposal_asset" model="ir.ui.view">
+            <field name="name">journalmemorial.list.select</field>
+            <field name="model">wtc.disposal.asset</field>
+            <field name="arch" type="xml">
+                <search string="Search Disposal Asset">
+                    <field name="name" string="Reference"/>
+                    <field name="branch_id"/> 
+                    <field name='division'/>
+                    <filter name="Outstanding" string="Outstanding" domain="[('state','in',('draft','waiting_for_approval'))]"/>
+                </search>
+            </field>
+        </record>		
+		<record model="ir.actions.act_window" id="disposal_asset_action">
+		    <field name="name">Disposal Asset</field>
+		    <field name="res_model">wtc.disposal.asset</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		    <field name="search_view_id" ref="view_wtc_disposal_asset"/>
+		    <field name="context">{"search_default_Outstanding":1}</field>		
+		</record>
+
+		<!-- Print Form -->
+		<report 
+            string="Print Form Disposal Asset" 
+            id="action_teds_disposal_asset_print_form" 
+            model="wtc.disposal.asset" 
+            report_type="qweb-pdf"
+            name="wtc_purchase_asset.teds_disposal_asset_print_form_pdf" 
+            file="wtc_purchase_asset.teds_disposal_asset_print_form_pdf" 
+            menu="False"/>
+					
+		<menuitem id="wtc_disposal_asset_submenu" name="Disposal Asset" parent="wtc_dealer_menu.ga_purchase_menu"  action="disposal_asset_action" sequence="99"/> 		
+        	        		
+	</data>
+</openerp>
+															

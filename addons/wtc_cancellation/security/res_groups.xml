@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    
+<!-- Dealer Sales Order Cancel -->
+		
+        <record id="group_dealer_sales_order_cancel_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Dealer Sales Order Cancel Read</field>
+            <field name="menu_access" eval="[
+				(4, ref('dealer_sales_order_cancel_menu')),
+				]"/>
+        </record>
+        
+        <record id="access_dealer_sales_order_cancel_read" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_sales_order_cancel"/>
+            <field name="name">dealer_sales_order_cancel read</field>
+            <field name="group_id" ref="group_dealer_sales_order_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_dealer_sales_order_cancel_approval_line_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">dealer_sales_order_cancel_approval_line read</field>
+            <field name="group_id" ref="group_dealer_sales_order_cancel_read"/>  
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_dealer_sales_order_cancel_dso_read" model="ir.model.access">
+            <field name="model_id" ref="dealer_sale_order.model_dealer_sale_order"/>
+            <field name="name">dealer_sales_order_cancel_dso read</field>
+            <field name="group_id" ref="group_dealer_sales_order_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_dealer_sales_order_cancel_dso_line_read" model="ir.model.access">
+            <field name="model_id" ref="dealer_sale_order.model_dealer_sale_order_line"/>
+            <field name="name">dealer_sales_order_cancel_dso_line read</field>
+            <field name="group_id" ref="group_dealer_sales_order_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_dealer_sales_order_cancel_account_invoice_read" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice"/>
+            <field name="name">dealer_sales_order_cancel_account_invoice read</field>
+            <field name="group_id" ref="group_dealer_sales_order_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_dealer_sales_order_cancel_account_invoice_line_read" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice_line"/>
+            <field name="name">dealer_sales_order_cancel_account_invoice_line read</field>
+            <field name="group_id" ref="group_dealer_sales_order_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_dealer_sales_order_cancel_stock_picking_read" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_picking"/>
+            <field name="name">dealer_sales_order_cancel_stock_picking read</field>
+            <field name="group_id" ref="group_dealer_sales_order_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_dealer_sales_order_cancel_stock_move_read" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_move"/>
+            <field name="name">dealer_sales_order_cancel_stock_move read</field>
+            <field name="group_id" ref="group_dealer_sales_order_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="group_dealer_sales_order_cancel_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Dealer Sales Order Cancel Update</field>
+            <field name="menu_access" eval="[
+				(4, ref('dealer_sales_order_cancel_menu')),
+				]"/>
+			<field name="implied_ids" eval="[(4, ref('group_dealer_sales_order_cancel_read'))]"/>
+        </record>
+        
+        <record id="access_dealer_sales_order_cancel_update" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_sales_order_cancel"/>
+            <field name="name">dealer_sales_order_cancel update</field> 
+            <field name="group_id" ref="group_dealer_sales_order_cancel_update"/>  
+            <field name="perm_create">1</field>
+            <field name="perm_write">1</field>
+        </record>
+		
+        <record id="group_dealer_sales_order_cancel_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Dealer Sales Order Cancel Delete</field> 
+            <field name="menu_access" eval="[
+				(4, ref('dealer_sales_order_cancel_menu')),
+				]"/>
+			<field name="implied_ids" eval="[(4, ref('group_dealer_sales_order_cancel_read'))]"/>            	            	
+        </record>
+        
+		<record id="access_dealer_sales_order_cancel_delete" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_sales_order_cancel"/>
+            <field name="name">dealer_sales_order_cancel delete</field>
+            <field name="group_id" ref="group_dealer_sales_order_cancel_delete"/>
+            <field name="perm_unlink">1</field>
+        </record>
+        
+<!-- Payment Cancel -->
+		
+        <record id="group_payment_cancel_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Payment Cancel Read</field>
+            <field name="menu_access" eval="[
+				(4, ref('payment_cancel_menu')),
+				]"/>
+        </record>
+        
+        <record id="access_payment_cancel_read" model="ir.model.access">
+            <field name="model_id" ref="model_payment_cancel"/>
+            <field name="name">payment_cancel read</field>
+            <field name="group_id" ref="group_payment_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_payment_cancel_approval_line_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">payment_cancel_approval_line read</field>
+            <field name="group_id" ref="group_payment_cancel_read"/>  
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_payment_cancel_account_voucher_read" model="ir.model.access">
+            <field name="model_id" ref="account_voucher.model_account_voucher"/>
+            <field name="name">payment_cancel_account_voucher read</field>
+            <field name="group_id" ref="group_payment_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_payment_cancel_account_voucher_line_read" model="ir.model.access">
+            <field name="model_id" ref="account_voucher.model_account_voucher"/>
+            <field name="name">payment_cancel_account_voucher_line read</field>
+            <field name="group_id" ref="group_payment_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_payment_cancel_account_move_read" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move"/>
+            <field name="name">payment_cancel_account_move read</field>
+            <field name="group_id" ref="group_payment_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_payment_cancel_account_move_line_read" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move_line"/>
+            <field name="name">payment_cancel_account_move_line read</field>
+            <field name="group_id" ref="group_payment_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_payment_cancel_account_move_reconcile_read" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move_reconcile"/>
+            <field name="name">payment_cancel_account_move_reconcile read</field>
+            <field name="group_id" ref="group_payment_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="group_payment_cancel_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Payment Cancel Update</field>
+            <field name="menu_access" eval="[
+				(4, ref('payment_cancel_menu')),
+				]"/>
+			<field name="implied_ids" eval="[(4, ref('group_payment_cancel_read'))]"/>
+        </record>
+        
+        <record id="access_payment_cancel_update" model="ir.model.access">
+            <field name="model_id" ref="model_payment_cancel"/>
+            <field name="name">payment_cancel update</field> 
+            <field name="group_id" ref="group_payment_cancel_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>
+		
+        <record id="group_payment_cancel_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Payment Cancel Delete</field> 
+            <field name="menu_access" eval="[
+				(4, ref('payment_cancel_menu')),
+				]"/>
+			<field name="implied_ids" eval="[(4, ref('group_payment_cancel_read'))]"/>            	            	
+        </record>
+        
+		<record id="access_payment_cancel_delete" model="ir.model.access">
+            <field name="model_id" ref="model_payment_cancel"/>
+            <field name="name">payment_cancel delete</field>
+            <field name="group_id" ref="group_payment_cancel_delete"/>
+            <field name="perm_unlink">1</field>
+        </record>
+        
+
+        <record id="group_dealer_sales_order_cancel_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Dealer Sales Order Cancel Read</field>
+            <field name="menu_access" eval="[
+				(4, ref('dealer_sales_order_cancel_menu')),
+				]"/>
+        </record>
+        
+        <record id="access_dealer_sales_order_cancel_read" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_sales_order_cancel"/>
+            <field name="name">dealer_sales_order_cancel read</field>
+            <field name="group_id" ref="group_dealer_sales_order_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_dealer_sales_order_cancel_approval_line_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">dealer_sales_order_cancel_approval_line read</field>
+            <field name="group_id" ref="group_dealer_sales_order_cancel_read"/>  
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_dealer_sales_order_cancel_dso_read" model="ir.model.access">
+            <field name="model_id" ref="dealer_sale_order.model_dealer_sale_order"/>
+            <field name="name">dealer_sales_order_cancel_dso read</field>
+            <field name="group_id" ref="group_dealer_sales_order_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_dealer_sales_order_cancel_dso_line_read" model="ir.model.access">
+            <field name="model_id" ref="dealer_sale_order.model_dealer_sale_order_line"/>
+            <field name="name">dealer_sales_order_cancel_dso_line read</field>
+            <field name="group_id" ref="group_dealer_sales_order_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_dealer_sales_order_cancel_account_invoice_read" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice"/>
+            <field name="name">dealer_sales_order_cancel_account_invoice read</field>
+            <field name="group_id" ref="group_dealer_sales_order_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_dealer_sales_order_cancel_account_invoice_line_read" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice_line"/>
+            <field name="name">dealer_sales_order_cancel_account_invoice_line read</field>
+            <field name="group_id" ref="group_dealer_sales_order_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_dealer_sales_order_cancel_stock_picking_read" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_picking"/>
+            <field name="name">dealer_sales_order_cancel_stock_picking read</field>
+            <field name="group_id" ref="group_dealer_sales_order_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_dealer_sales_order_cancel_stock_move_read" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_move"/>
+            <field name="name">dealer_sales_order_cancel_stock_move read</field>
+            <field name="group_id" ref="group_dealer_sales_order_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="group_dealer_sales_order_cancel_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Dealer Sales Order Cancel Update</field>
+            <field name="menu_access" eval="[
+				(4, ref('dealer_sales_order_cancel_menu')),
+				]"/>
+			<field name="implied_ids" eval="[(4, ref('group_dealer_sales_order_cancel_read'))]"/>
+        </record>
+        
+        <record id="access_dealer_sales_order_cancel_update" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_sales_order_cancel"/>
+            <field name="name">dealer_sales_order_cancel update</field> 
+            <field name="group_id" ref="group_dealer_sales_order_cancel_update"/>  
+            <field name="perm_create">1</field>
+            <field name="perm_write">1</field>
+        </record>
+		
+        <record id="group_dealer_sales_order_cancel_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Dealer Sales Order Cancel Delete</field> 
+            <field name="menu_access" eval="[
+				(4, ref('dealer_sales_order_cancel_menu')),
+				]"/>
+			<field name="implied_ids" eval="[(4, ref('group_dealer_sales_order_cancel_read'))]"/>            	            	
+        </record>
+        
+		<record id="access_dealer_sales_order_cancel_delete" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_sales_order_cancel"/>
+            <field name="name">dealer_sales_order_cancel delete</field>
+            <field name="group_id" ref="group_dealer_sales_order_cancel_delete"/>
+            <field name="perm_unlink">1</field>
+        </record>
+        
+        
+<!-- MD Sales Order Cancel -->
+		
+        <record id="group_sale_order_cancel_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Sale Order Cancel Read</field>
+            <field name="menu_access" eval="[
+				(4, ref('sale_order_cancel_menu')),
+				]"/>
+        </record>
+        
+        <record id="access_sale_order_cancel_read" model="ir.model.access">
+            <field name="model_id" ref="model_sale_order_cancel"/>
+            <field name="name">sale_order_cancel read</field>
+            <field name="group_id" ref="group_sale_order_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_sale_order_cancel_approval_line_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">sale_order_cancel_approval_line read</field>
+            <field name="group_id" ref="group_sale_order_cancel_read"/>  
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_sale_order_cancel_read" model="ir.model.access">
+            <field name="model_id" ref="dealer_sale_order.model_dealer_sale_order"/>
+            <field name="name">sale_order_cancel read</field>
+            <field name="group_id" ref="group_sale_order_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_sale_order_cancel_dso_line_read" model="ir.model.access">
+            <field name="model_id" ref="dealer_sale_order.model_dealer_sale_order_line"/>
+            <field name="name">sale_order_cancel_line read</field>
+            <field name="group_id" ref="group_sale_order_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_sale_order_cancel_account_invoice_read" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice"/>
+            <field name="name">sale_order_cancel_account_invoice read</field>
+            <field name="group_id" ref="group_sale_order_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_sale_order_cancel_account_invoice_line_read" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice_line"/>
+            <field name="name">sale_order_cancel_account_invoice_line read</field>
+            <field name="group_id" ref="group_sale_order_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_sale_order_cancel_stock_picking_read" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_picking"/>
+            <field name="name">sale_order_cancel_stock_picking read</field>
+            <field name="group_id" ref="group_sale_order_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_sale_order_cancel_stock_move_read" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_move"/>
+            <field name="name">sale_order_cancel_stock_move read</field>
+            <field name="group_id" ref="group_sale_order_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="group_sale_order_cancel_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Sale Order Cancel Update</field>
+            <field name="menu_access" eval="[
+				(4, ref('sale_order_cancel_menu')),
+				]"/>
+			<field name="implied_ids" eval="[(4, ref('group_sale_order_cancel_read'))]"/>
+        </record>
+        
+        <record id="access_sale_order_cancel_update" model="ir.model.access">
+            <field name="model_id" ref="model_sale_order_cancel"/>
+            <field name="name">sale_order_cancel update</field> 
+            <field name="group_id" ref="group_sale_order_cancel_update"/>  
+            <field name="perm_create">1</field>
+            <field name="perm_write">1</field>
+        </record>
+		
+        <record id="group_sale_order_cancel_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Sale Order Cancel Delete</field> 
+            <field name="menu_access" eval="[
+				(4, ref('sale_order_cancel_menu')),
+				]"/>
+			<field name="implied_ids" eval="[(4, ref('group_sale_order_cancel_read'))]"/>            	            	
+        </record>
+        
+		<record id="access_sale_order_cancel_delete" model="ir.model.access">
+            <field name="model_id" ref="model_sale_order_cancel"/>
+            <field name="name">sale_order_cancel delete</field>
+            <field name="group_id" ref="group_sale_order_cancel_delete"/>
+            <field name="perm_unlink">1</field>
+        </record>
+        
+<!-- Mutation Order Cancel -->
+		
+        <record id="group_mutation_order_cancel_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Mutation Order Cancel Read</field>
+            <field name="menu_access" eval="[
+				(4, ref('mutation_order_cancel_menu')),
+				]"/>
+        </record>
+        
+        <record id="access_mutation_order_cancel_read" model="ir.model.access">
+            <field name="model_id" ref="model_mutation_order_cancel"/>
+            <field name="name">mutation_order_cancel read</field>
+            <field name="group_id" ref="group_mutation_order_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_mutation_order_cancel_approval_line_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">mutation_order_cancel_approval_line read</field>
+            <field name="group_id" ref="group_mutation_order_cancel_read"/>  
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_mutation_order_cancel_mo_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_stock_mutation.model_wtc_mutation_order"/>
+            <field name="name">mutation_order_cancel_mo read</field>
+            <field name="group_id" ref="group_mutation_order_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_mutation_order_cancel_mo_line_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_stock_mutation.model_wtc_mutation_order_line"/>
+            <field name="name">mutation_order_cancel_mo_line read</field>
+            <field name="group_id" ref="group_mutation_order_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_mutation_order_cancel_stock_picking_read" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_picking"/>
+            <field name="name">mutation_order_cancel_stock_picking read</field>
+            <field name="group_id" ref="group_mutation_order_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_mutation_order_cancel_stock_move_read" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_move"/>
+            <field name="name">mutation_order_cancel_stock_move read</field>
+            <field name="group_id" ref="group_mutation_order_cancel_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="group_mutation_order_cancel_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Mutation Order Cancel Update</field>
+            <field name="menu_access" eval="[
+				(4, ref('mutation_order_cancel_menu')),
+				]"/>
+			<field name="implied_ids" eval="[(4, ref('group_mutation_order_cancel_read'))]"/>
+        </record>
+        
+        <record id="access_mutation_order_cancel_update" model="ir.model.access">
+            <field name="model_id" ref="model_mutation_order_cancel"/>
+            <field name="name">mutation_order_cancel update</field> 
+            <field name="group_id" ref="group_mutation_order_cancel_update"/>  
+            <field name="perm_create">1</field>
+            <field name="perm_write">1</field>
+        </record>
+		
+        <record id="group_mutation_order_cancel_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Mutation Order Cancel Delete</field> 
+            <field name="menu_access" eval="[
+				(4, ref('mutation_order_cancel_menu')),
+				]"/>
+			<field name="implied_ids" eval="[(4, ref('group_mutation_order_cancel_read'))]"/>            	            	
+        </record>
+        
+		<record id="access_mutation_order_cancel_delete" model="ir.model.access">
+            <field name="model_id" ref="model_mutation_order_cancel"/>
+            <field name="name">mutation_order_cancel delete</field>
+            <field name="group_id" ref="group_mutation_order_cancel_delete"/>
+            <field name="perm_unlink">1</field>
+        </record>
+        
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[(4,ref('group_dealer_sales_order_cancel_read')),
+				(4,ref('group_dealer_sales_order_cancel_update')),
+				(4,ref('group_dealer_sales_order_cancel_delete')),
+				(4,ref('group_payment_cancel_read')),
+				(4,ref('group_payment_cancel_update')),
+				(4,ref('group_payment_cancel_delete')),
+
+				(4,ref('group_sale_order_cancel_read')),
+				(4,ref('group_sale_order_cancel_update')),
+				(4,ref('group_sale_order_cancel_delete')),
+				(4,ref('group_mutation_order_cancel_read')),
+				(4,ref('group_mutation_order_cancel_update')),
+				(4,ref('group_mutation_order_cancel_delete')),
+				]"/>
+		</record>
+		
+    </data>
+</openerp>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+	
+		<record model="ir.ui.view" id="wtc_stock_packing_out_ws_umum_form_view">
+		    <field name="name">wtc.stock.packing.out.ws.umum.form</field>
+		    <field name="model">wtc.stock.packing</field>
+		    <field name="arch" type="xml">
+		    	
+		    	<form string="Stock Packing" create="false">
+		    		<header>
+		    			<button name="post" string="Post" type="object" class="oe_highlight" attrs="{'invisible':[('state','!=','draft')]}" groups="wtc_stock.group_stock_packing_post"/>
+		    			<button name="action_cancel" states="draft" string="Cancel" type="object" confirm="Apa anda yakin ingin membatalkan transaksi ini ?" groups="wtc_stock.group_stock_packing_cancel"/>
+		    			<button name="renew_available_and_reserved" string="Renew Stock" type="object" class="oe_highlight" attrs="{'invisible':['|',('state','!=','draft'),'&amp;',('is_reverse','=',False),('rel_code','in',['incoming','interbranch_in'])]}" groups="wtc_stock.group_stock_packing_renew_stock"/>
+		    			<button name="print_wizard" states="posted" string="Print" type="object"  class="oe_highlight" groups="wtc_stock.group_stock_packing_print_wizard"/>
+		    			<button name="%(print_serial_number)d" string="Print Serial Number" type="action" class="oe_highlight"  groups="wtc_stock.group_stock_packing_print_lot" attrs="{'invisible':['|','|','|','|',('state','in',['posted','cancelled']),('is_reverse','!=',False),('rel_code','in',['incoming','interbranch_in']),('rel_division','in',['Sparepart','Umum']),('rel_branch_type','=','DL')]}"/>
+		    			
+		    			<field name="state" widget="statusbar" statusbar_visible="draft,posted" statusbar_colors='{"draft":"red","posted":"blue"}'/>
+		    		</header>
+		    		<sheet>
+		    			<div class="oe_title">
+		       				<h1>
+					            <label string="Stock Packing"/>
+					 			<field name="name" class="oe_inline" readonly="1"/>
+		    			    </h1>
+	                    </div>
+			    		<group col="4">
+				            <field name="rel_branch_id" readonly="1"/>
+				            <field name="rel_division" readonly="1"/>
+				            <field name="picking_id" readonly="1"/>
+				            <field name="rel_picking_type_id" readonly="1"/>
+							<field name="date" readonly="1"/>
+				            <field name="branch_sender_id" readonly="1" attrs="{'invisible':[('rel_code','!=','interbranch_in')]}"/>
+			    			<field name="rel_source_location_id" invisible="1"/>
+			    			<field name="rel_destination_location_id" invisible="1"/>
+			    			<field name="rel_code" invisible="1"/>
+			    			<field name="rel_branch_type" invisible="1"/>
+			    			<field name="rel_origin" readonly="1"/>
+			    			<field name="rel_partner_id" readonly="1"/>
+			    			<field name="nrfs_location" attrs="{'readonly':[('state','!=','draft')]}" domain="[('usage','=','nrfs'),('branch_id','=',rel_branch_id)]" options="{'no_open':True,'no_create':True}"/>
+			    			<field name="expedition_id" attrs="{'readonly':[('state','!=','draft')], 'required':[('rel_code','=','incoming'), ('rel_branch_type','=','MD'), ('is_reverse','=',False)]}" domain="[('forwarder','=',True)]" options="{'no_open':True,'no_create':True}"/>
+			    			<field name="plat_number_id" attrs="{'readonly':[('state','!=','draft')]}" domain="[('partner_id','=',expedition_id)]" options="{'no_open':True,'no_create':True}"/>
+			    			<field name="driver_id" attrs="{'readonly':[('state','!=','draft')]}" domain="[('partner_id','=',expedition_id)]" options="{'no_open':True,'no_create':True}"/>
+			    			<field name="is_reverse" invisible="1"/>
+						</group>
+						<notebook>
+							<!-- 4 outgoing-sparepart-dealer, outgoing-umum-dealer, interbranch_out-sparepart-dealer, interbranch_out-umum-dealer, interbranch_in-sparepart-dealer, interbranch_in-umum-dealer,
+							outgoing-sparepart-maindealer, outgoing-umum-maindealer, interbranch_out-sparepart-maindealer, interbranch_out-umum-maindealer, interbranch_in-sparepart-maindealer, interbranch_in-umum-maindealer -->
+							<page string="Packing Line">
+		                        <field colspan="4" name="packing_line" nolabel="1" widget="one2many_list" attrs="{'readonly':[('state','!=','draft')]}">
+		                            <tree string="Request Line" editable="bottom">
+						                <field name="rel_division" invisible="1"/>
+						                <field name="rel_code" invisible="1"/>
+						                <field name="rel_branch_type" invisible="1"/>
+						                <field name="product_id" domain="[('id','=',0)]" required="1" options="{'no_open':True,'no_create':True}"/>
+						                <field name="rel_source_location_id" invisible="1"/>
+						                <field name="rel_destination_location_id" invisible="1"/>
+						                <field name="source_location_id" options="{'no_open':True,'no_create':True}" domain="[('id','child_of',rel_source_location_id),('usage','!=','view')]"/>
+			    						<field name="destination_location_id" options="{'no_open':True,'no_create':True}" domain="[('id','child_of',rel_destination_location_id),('usage','!=','view'), ('maximum_qty', '!=', 0), ('end_date','&gt;=',context_today().strftime('%%Y-%%m-%%d')), ('start_date','&lt;=',context_today().strftime('%%Y-%%m-%%d'))]"/>
+						                <field name="quantity" required="1" sum="Total Qty"/>
+						                <field name="seharusnya" invisible="1"/>
+						                <field name="rel_seharusnya" readonly="1"/>
+						                <field name="current_reserved" invisible="1"/>
+						                <field name="rel_current_reserved" readonly="1"/>
+						                <field name="stock_available" invisible="1"/>
+						                <field name="rel_stock_available" readonly="1"/>
+		                            </tree>
+		                        </field>
+							</page>
+							<page string="Audit Trail">
+								<group>
+									<group>
+										<field name="create_uid" readonly="1"></field>
+										<field name="create_date" readonly="1"></field>
+									</group>
+									<group>							
+										<field name="write_uid" readonly="1"></field>
+										<field name="write_date" readonly="1"></field>
+									</group>
+								</group>
+							</page>
+						</notebook>
+		    		</sheet>
+		    	</form>
+		    	
+			</field>
+		</record>
+		
+		
+	</data>
+</openerp>

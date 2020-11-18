@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+		<record id="view_teds_petty_cash_type_tree" model="ir.ui.view">
+            <field name="name">teds.petty.cash.type.tree</field>
+            <field name="model">wtc.payments.request.type</field>
+            <field name="arch" type="xml">
+                <tree string="Petty Cash Type">
+                	<field name="name"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record id="view_teds_petty_cash_type_form" model="ir.ui.view">
+            <field name="name">teds.petty.cash.type.form</field>
+            <field name="model">wtc.payments.request.type</field>
+            <field name="arch" type="xml">
+                <form string="Petty Cash Type">
+                	<separator string="Petty Cash Type"/>
+	                    <group>
+							<field name="name" required="1"/>
+							<field name="type" invisible="1"/>
+							<field name="active"/>
+		                 </group>
+
+		            <notebook>
+		            	<page string="Detail Type">
+		            		<field name="payment_request_type_ids" editable="top">
+		            			<tree editable="bottom">
+		            				<field name="name" required="1"/>
+		            				<field name="account_id" options="{'no_open':True,'no_create':True}" required="1"/>
+		            			</tree>
+		            		</field>
+		            	</page>
+		            	<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>	
+		            </notebook>			                 
+        		</form>
+     		</field>
+    	</record>
+    	
+    	<record id="action_teds_petty_cash_type" model="ir.actions.act_window" >
+		    <field name="name">Petty Cash Type</field>
+		    <field name="res_model">wtc.payments.request.type</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		    <field name="domain">[('type','=','PCO')]</field>
+            <field name="context">{'default_type':'PCO'}</field>
+		</record>
+
+		 <record id="action_teds_petty_cash_type_tree" model="ir.actions.act_window.view">
+            <field eval="1" name="sequence"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_teds_petty_cash_type_tree"/>
+            <field name="act_window_id" ref="action_teds_petty_cash_type"/>
+        </record>    
+
+        <record id="action_teds_petty_cash_type_form" model="ir.actions.act_window.view">
+            <field eval="2" name="sequence"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_teds_petty_cash_type_form"/>
+            <field name="act_window_id" ref="action_teds_petty_cash_type"/>
+        </record>     
+
+        <menuitem id="teds_petty_cash_type_menuitem" parent="wtc_dealer_menu.backoffice_configuration_menu" action="action_teds_petty_cash_type" sequence="21"/>
+
+	</data>
+</openerp>

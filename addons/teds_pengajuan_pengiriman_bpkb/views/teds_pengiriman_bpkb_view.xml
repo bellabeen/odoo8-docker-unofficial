@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="view_teds_pengiriman_bpkb_proses_form" model="ir.ui.view">
+            <field name="name">teds.pengiriman.proses.form</field>
+            <field name="model">teds.pengiriman.bpkb</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="pengiriman_by" required="1"/>
+                            <field name="no_resi" attrs="{'invisible':[('pengiriman_by','!=','SAP')],'required':[('pengiriman_by','=','SAP')]}"/>
+                            <field name="nama_kurir" attrs="{'invisible':[('pengiriman_by','!=','Cabang')],'required':[('pengiriman_by','=','Cabang')]}"/>
+                        </group>
+                        <footer>
+                            <button name="action_proses_bpkb_form" string="Submit" type="object" class="oe_highlight"/>
+                            <button string="Cancel" class="oe_link" special="cancel"/>
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <record id="view_teds_pengiriman_bpkb_tree" model="ir.ui.view">
+            <field name="name">teds.pengiriman.bpkb.tree</field>
+            <field name="model">teds.pengiriman.bpkb</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="branch_id"/>
+                    <field name="source_location_id"/>
+                    <field name="destination_location_id"/>
+                    <field name="date"/>
+                    <field name="pengiriman_by"/>
+                    <field name="state"/>
+                </tree>    
+            </field>
+        </record>
+        <record id="view_teds_pengiriman_bpkb_form" model="ir.ui.view">
+            <field name="name">teds.pengiriman.bpkb.form</field>
+            <field name="model">teds.pengiriman.bpkb</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="action_on_proses" states="draft" string="On Process" type="object" groups="teds_pengajuan_pengiriman_bpkb.group_button_on_process_pengiriman_bpkb" class="oe_highlight"/>
+                        <button name="action_proses" states="on_prosess" string="Process" type="object" groups="teds_pengajuan_pengiriman_bpkb.group_button_process_pengiriman_bpkb" class="oe_highlight"/>
+                        <button name="action_received" states="processed" string=" Receive" type="object" groups="teds_pengajuan_pengiriman_bpkb.group_button_received_pengiriman_bpkb" class="oe_highlight"/>
+                        <button name="action_penerimaan_bpkb_print" states="done" string="Print" type="object" class="oe_highlight"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,on_prosess,processed,done" />
+                    </header>
+                    <sheet>
+                        <div class="oe_title">                      
+                            <h1>
+                                <field name="name" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="branch_id" options="{'no_open':True,'no_create':True}" required="1" attrs="{'readonly':[('create_date','!=',False)]}"/>
+                                <field name="source_location_id" options="{'no_open':True,'no_create':True}" required="1" attrs="{'readonly':[('state','!=','draft')]}" domain="[('branch_id','=',branch_id)]"/>
+                                <field name="destination_location_id" options="{'no_open':True,'no_create':True}" required="1" attrs="{'readonly':[('state','!=','draft')]}" domain="[('branch_id','=',branch_id)]"/>
+                                <field name="pengiriman_by" readonly="1" attrs="{'invisible':[('pengiriman_by','=',False)]}"/>
+                                <field name="no_resi"  readonly="1" attrs="{'invisible':[('no_resi','=',False)]}"/>
+                                <field name="nama_kurir" readonly="1" attrs="{'invisible':[('nama_kurir','=',False)]}"/>
+                            </group>
+                            <group>
+                                <field name="date" readonly="1"/>
+                                <field name="division" required="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+                                <field name="mutasi_id" readonly="1" attrs="{'invisible':[('mutasi_id','=',False)]}" options="{'no_open':True,'no_create':True}"/>
+                                <field name="create_date" invisible="1"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Detail">
+                                <field name="detail_ids" attrs="{'readonly':[('state','!=','draft')]}">
+                                    <tree editable="top" nolabel="1">
+                                        <field name="lot_id" required="1" options="{'no_open':True,'no_create':True}"/>
+                                        <field name="customer_bpkb_id" readonly="1" options="{'no_open':True,'no_create':True}"/>
+                                        <field name="no_bpkb" readonly="1"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Audit Trail">
+                                <group>
+                                    <group>
+                                        <field name="create_uid" readonly="1"/>
+                                        <field name="create_date" readonly="1"/>
+                                        <field name="proses_uid" attrs="{'invisible':[('proses_uid','=',False)]}"/>
+                                        <field name="proses_date" attrs="{'invisible':[('proses_date','=',False)]}"/>
+                                        <field name="sending_uid" attrs="{'invisible':[('sending_uid','=',False)]}"/>
+                                        <field name="sending_by" attrs="{'invisible':[('sending_by','=',False)]}"/>
+                                    </group>
+                                    <group>
+                                        <field name="write_uid" readonly="1"/>
+                                        <field name="write_date" readonly="1"/>
+                                        <field name="receipt_uid" attrs="{'invisible':[('receipt_uid','=',False)]}"/>
+                                        <field name="receipt_date" attrs="{'invisible':[('receipt_date','=',False)]}"/>
+                                    </group>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>    
+            </field>
+        </record>
+
+        <record id="teds_pengiriman_bpkb_filter" model="ir.ui.view">
+            <field name="name">teds.pengiriman.bpkb.filter</field>
+            <field name="model">teds.pengiriman.bpkb</field>
+            <field name="arch" type="xml">
+                <search string="Search">
+                    <field name='branch_id'/>
+                    <field name="name"/>
+                    <field name="mutasi_id"/>
+                    <field name='source_location_id'/>
+                    <field name="destination_location_id"/>  
+                    <filter string="Draft" name="state_draft" domain="[('state','=','draft')]" />
+                    <filter string="On Process" name="state_on_proses" domain="[('state','=','on_prosess')]" />
+                    <filter string="Processed" name="state_processed" domain="[('state','=','processed')]"/>
+                    <filter string="Done" name="state_done" domain="[('state','=','done')]"/>
+
+                    <group expand="1" string="Group By">
+                        <filter string="Branch" context="{'group_by':'branch_id'}"/>
+                        <filter string="Pengiriman By" context="{'group_by':'pengiriman_by'}"/>
+                    </group>     
+                </search>
+            </field>
+        </record>     
+        
+        <record model="ir.actions.act_window" id="action_teds_pengiriman_bpkb">
+            <field name="name">Request BPKB</field>
+            <field name="res_model">teds.pengiriman.bpkb</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="teds_pengiriman_bpkb_menuitem" parent="wtc_dealer_menu.stnk_bpkb_proses_stnk_menu"  action="action_teds_pengiriman_bpkb" sequence="200"/>
+
+        <report 
+            string="Print" 
+            id="action_teds_pengiriman_bpkb_print" 
+            model="teds.pengiriman.bpkb" 
+            report_type="qweb-pdf"
+            name="teds_pengajuan_pengiriman_bpkb.teds_penerimaan_bpkb_print" 
+            file="teds_pengajuan_pengiriman_bpkb.teds_penerimaan_bpkb_print" 
+            menu="False"/>
+
+    </data>
+</openerp>

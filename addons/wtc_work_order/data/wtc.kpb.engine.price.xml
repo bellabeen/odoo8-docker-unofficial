@@ -1,0 +1,2416 @@
+<openerp>
+<data noupdate="1">
+
+<record id="JBK1_A_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBK1_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBK1_A_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBK1_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBK1_A_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBK1_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBK1_A_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBK1_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">25000</field>
+</record>
+
+    
+    
+<record id="JBK2_A_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBK2_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBK2_A_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBK2_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBK2_A_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBK2_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBK2_A_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBK2_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">250000</field>
+</record>
+
+    
+    
+<record id="JBJ1_A_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBJ1_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBJ1_A_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBJ1_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBJ1_A_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBJ1_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBJ1_A_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBJ1_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">250000</field>
+</record>
+
+    
+    
+<record id="JBK3_A_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBK3_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBK3_A_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBK3_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBK3_A_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBK3_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBK3_A_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBK3_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">250000</field>
+</record>
+
+    
+    
+<record id="JBE3_A_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBE3_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBE3_A_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBE3_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBE3_A_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBE3_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBE3_A_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBE3_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">250000</field>
+</record>
+
+    
+    
+<record id="JBE2_A_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBE2_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBE2_A_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBE2_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBE2_A_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBE2_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBE2_A_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBE2_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">250000</field>
+</record>
+
+    
+    
+<record id="JBE1_A_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBE1_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBE1_A_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBE1_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBE1_A_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBE1_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBE1_A_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBE1_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">250000</field>
+</record>
+
+    
+    
+<record id="JBC3_A_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBC3_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBC3_A_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBC3_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBC3_A_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBC3_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBC3_A_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBC3_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">250000</field>
+</record>
+
+    
+    
+<record id="JBC2_A_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBC2_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBC2_A_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBC2_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBC2_A_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBC2_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBC2_A_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBC2_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">250000</field>
+</record>
+
+    
+    
+<record id="JBC1_A_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBC1_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBC1_A_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBC1_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBC1_A_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBC1_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBC1_A_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBC1_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">250000</field>
+</record>
+
+    
+    
+<record id="JBH1_A_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBH1_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBH1_A_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBH1_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBH1_A_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBH1_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBH1_A_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBH1_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">250000</field>
+</record>
+
+    
+    
+<record id="JBB1_A_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBB1_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBB1_A_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBB1_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBB1_A_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBB1_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBB1_A_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBB1_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">250000</field>
+</record>
+
+    
+    
+<record id="JBB2_A_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBB2_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBB2_A_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBB2_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBB2_A_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBB2_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBB2_A_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBB2_A"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">250000</field>
+</record>
+
+    
+    
+<record id="JBN1_B_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBN1_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBN1_B_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBN1_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBN1_B_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBN1_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBN1_B_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBN1_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">23500</field>
+</record>
+
+    
+    
+<record id="JBP1_B_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBP1_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBP1_B_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBP1_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBP1_B_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBP1_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBP1_B_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBP1_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">23500</field>
+</record>
+
+    
+    
+<record id="JBM1_B_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBM1_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBM1_B_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBM1_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBM1_B_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBM1_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBM1_B_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBM1_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">23500</field>
+</record>
+
+    
+    
+<record id="JB81_B_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JB81_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JB81_B_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JB81_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JB81_B_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JB81_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JB81_B_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JB81_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">23500</field>
+</record>
+
+    
+    
+<record id="JB01_B_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JB01_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JB01_B_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JB01_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JB01_B_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JB01_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JB01_B_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JB01_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">23500</field>
+</record>
+
+    
+    
+<record id="JBL1_B_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBL1_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBL1_B_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBL1_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBL1_B_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBL1_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBL1_B_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBL1_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">23500</field>
+</record>
+
+    
+    
+<record id="JBG1_B_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBG1_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBG1_B_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBG1_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBG1_B_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBG1_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBG1_B_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBG1_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">23500</field>
+</record>
+
+    
+    
+<record id="JBF1_B_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBF1_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBF1_B_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBF1_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBF1_B_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBF1_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBF1_B_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBF1_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">23500</field>
+</record>
+
+    
+    
+<record id="JB91_B_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JB91_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JB91_B_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JB91_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JB91_B_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JB91_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JB91_B_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JB91_B"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">23500</field>
+</record>
+
+    
+    
+<record id="KC31_C_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KC31_C"/>
+  <field name="jasa">20000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="KC31_C_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KC31_C"/>
+  <field name="jasa">20000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="KC31_C_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KC31_C"/>
+  <field name="jasa">20000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="KC31_C_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KC31_C"/>
+  <field name="jasa">20000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">25500</field>
+</record>
+
+    
+    
+<record id="KC61_C_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KC61_C"/>
+  <field name="jasa">20000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="KC61_C_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KC61_C"/>
+  <field name="jasa">20000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="KC61_C_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KC61_C"/>
+  <field name="jasa">20000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="KC61_C_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KC61_C"/>
+  <field name="jasa">20000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">25500</field>
+</record>
+
+    
+    
+<record id="KC21_C_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KC21_C"/>
+  <field name="jasa">20000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="KC21_C_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KC21_C"/>
+  <field name="jasa">20000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="KC21_C_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KC21_C"/>
+  <field name="jasa">20000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="KC21_C_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KC21_C"/>
+  <field name="jasa">20000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">25500</field>
+</record>
+
+    
+    
+<record id="KC41_C_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KC41_C"/>
+  <field name="jasa">20000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="KC41_C_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KC41_C"/>
+  <field name="jasa">20000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="KC41_C_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KC41_C"/>
+  <field name="jasa">20000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="KC41_C_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KC41_C"/>
+  <field name="jasa">20000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">25500</field>
+</record>
+
+    
+    
+<record id="JBA1_C_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBA1_C"/>
+  <field name="jasa">20000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBA1_C_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBA1_C"/>
+  <field name="jasa">20000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBA1_C_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBA1_C"/>
+  <field name="jasa">20000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBA1_C_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBA1_C"/>
+  <field name="jasa">20000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">25500</field>
+</record>
+
+    
+    
+<record id="JFH1_D_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFH1_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFH1_D_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFH1_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFH1_D_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFH1_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFH1_D_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFH1_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">27500</field>
+</record>
+
+    
+    
+<record id="JFK1_D_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFK1_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFK1_D_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFK1_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFK1_D_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFK1_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFK1_D_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFK1_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">27500</field>
+</record>
+
+    
+    
+<record id="JFF1_D_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFF1_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFF1_D_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFF1_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFF1_D_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFF1_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFF1_D_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFF1_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">27500</field>
+</record>
+
+    
+    
+<record id="JF61_D_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF61_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JF61_D_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF61_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JF61_D_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF61_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JF61_D_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF61_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">27500</field>
+</record>
+
+    
+    
+<record id="JFC1_D_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFC1_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFC1_D_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFC1_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFC1_D_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFC1_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFC1_D_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFC1_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">27500</field>
+</record>
+
+    
+    
+<record id="JFL1_D_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFL1_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFL1_D_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFL1_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFL1_D_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFL1_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFL1_D_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFL1_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">27500</field>
+</record>
+
+    
+    
+<record id="JF51_D_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF51_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JF51_D_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF51_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JF51_D_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF51_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JF51_D_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF51_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">27500</field>
+</record>
+
+    
+    
+<record id="JF02_D_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF02_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JF02_D_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF02_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JF02_D_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF02_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JF02_D_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF02_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">27500</field>
+</record>
+
+    
+    
+<record id="JF12_D_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF12_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JF12_D_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF12_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JF12_D_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF12_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JF12_D_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF12_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">27500</field>
+</record>
+
+    
+    
+<record id="JF31_D_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF31_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JF31_D_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF31_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JF31_D_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF31_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JF31_D_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF31_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">27500</field>
+</record>
+
+    
+    
+<record id="JF41_D_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF41_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JF41_D_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF41_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JF41_D_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF41_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JF41_D_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF41_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">27500</field>
+</record>
+
+    
+    
+<record id="JF71_D_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF71_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JF71_D_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF71_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JF71_D_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF71_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JF71_D_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF71_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">27500</field>
+</record>
+
+    
+    
+<record id="JF81_D_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF81_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JF81_D_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF81_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JF81_D_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF81_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JF81_D_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF81_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">27500</field>
+</record>
+
+    
+    
+<record id="JF91_D_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF91_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JF91_D_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF91_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JF91_D_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF91_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JF91_D_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF91_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">27500</field>
+</record>
+
+    
+    
+<record id="JFA1_D_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFA1_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFA1_D_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFA1_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFA1_D_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFA1_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFA1_D_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFA1_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">27500</field>
+</record>
+
+    
+    
+<record id="JFB1_D_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFB1_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFB1_D_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFB1_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFB1_D_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFB1_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFB1_D_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFB1_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">27500</field>
+</record>
+
+    
+    
+<record id="JFJ1_D_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFJ1_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFJ1_D_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFJ1_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFJ1_D_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFJ1_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFJ1_D_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFJ1_D"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">27500</field>
+</record>
+
+    
+    
+<record id="KC17_E_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KC17_E"/>
+  <field name="jasa">22000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="KC17_E_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KC17_E"/>
+  <field name="jasa">22000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="KC17_E_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KC17_E"/>
+  <field name="jasa">22000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="KC17_E_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KC17_E"/>
+  <field name="jasa">22000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">25500</field>
+</record>
+
+    
+    
+<record id="MC22_E_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="MC22_E"/>
+  <field name="jasa">22000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="MC22_E_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="MC22_E"/>
+  <field name="jasa">22000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="MC22_E_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="MC22_E"/>
+  <field name="jasa">22000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="MC22_E_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="MC22_E"/>
+  <field name="jasa">22000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">25500</field>
+</record>
+
+    
+    
+<record id="MC23_E_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="MC23_E"/>
+  <field name="jasa">22000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="MC23_E_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="MC23_E"/>
+  <field name="jasa">22000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="MC23_E_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="MC23_E"/>
+  <field name="jasa">22000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="MC23_E_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="MC23_E"/>
+  <field name="jasa">22000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">25500</field>
+</record>
+
+    
+    
+<record id="JF28_F_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF28_F"/>
+  <field name="jasa">36000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JF28_F_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF28_F"/>
+  <field name="jasa">36000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JF28_F_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF28_F"/>
+  <field name="jasa">36000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JF28_F_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JF28_F"/>
+  <field name="jasa">36000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">27500</field>
+</record>
+
+    
+    
+<record id="JBD1_G_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBD1_G"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBD1_G_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBD1_G"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBD1_G_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBD1_G"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JBD1_G_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JBD1_G"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">25500</field>
+</record>
+
+    
+    
+<record id="MC41_H_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="MC41_H"/>
+  <field name="jasa">33000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="MC41_H_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="MC41_H"/>
+  <field name="jasa">36400</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="MC41_H_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="MC41_H"/>
+  <field name="jasa">13400</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="MC41_H_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="MC41_H"/>
+  <field name="jasa">4400000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">59000</field>
+</record>
+
+    
+    
+<record id="KF12_J_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KF12_J"/>
+  <field name="jasa">49200</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="KF12_J_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KF12_J"/>
+  <field name="jasa">61200</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="KF12_J_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KF12_J"/>
+  <field name="jasa">46000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="KF12_J_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KF12_J"/>
+  <field name="jasa">3880000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">29000</field>
+</record>
+
+    
+    
+<record id="JFS1_K_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFS1_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFS1_K_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFS1_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFS1_K_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFS1_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFS1_K_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFS1_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">27500</field>
+</record>
+
+    
+    
+<record id="JFP2_K_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFP2_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFP2_K_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFP2_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFP2_K_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFP2_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFP2_K_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFP2_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">27500</field>
+</record>
+
+    
+    
+<record id="JFR1_K_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFR1_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFR1_K_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFR1_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFR1_K_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFR1_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFR1_K_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFR1_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">27500</field>
+</record>
+
+    
+    
+<record id="JFP1_K_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFP1_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFP1_K_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFP1_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFP1_K_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFP1_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFP1_K_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFP1_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">27500</field>
+</record>
+
+    
+    
+<record id="JFS2_K_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFS2_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFS2_K_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFS2_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFS2_K_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFS2_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFS2_K_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFS2_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">27500</field>
+</record>
+
+    
+    
+<record id="JFN1_K_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFN1_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFN1_K_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFN1_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFN1_K_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFN1_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFN1_K_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFN1_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">27500</field>
+</record>
+
+    
+    
+<record id="JFM2_K_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFM2_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFM2_K_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFM2_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFM2_K_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFM2_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFM2_K_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFM2_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">27500</field>
+</record>
+
+    
+    
+<record id="JFM1_K_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFM1_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFM1_K_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFM1_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFM1_K_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFM1_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFM1_K_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFM1_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">27500</field>
+</record>
+
+    
+    
+<record id="JFT1_K_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFT1_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFT1_K_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFT1_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFT1_K_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFT1_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFT1_K_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFT1_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">27500</field>
+</record>
+
+    
+    
+<record id="JFD2_K_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFD2_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFD2_K_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFD2_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFD2_K_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFD2_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFD2_K_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFD2_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">27500</field>
+</record>
+
+    
+    
+<record id="JFE1_K_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFE1_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFE1_K_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFE1_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFE1_K_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFE1_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFE1_K_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFE1_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">27500</field>
+</record>
+
+    
+    
+<record id="JFD1_K_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFD1_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFD1_K_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFD1_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFD1_K_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFD1_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFD1_K_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFD1_K"/>
+  <field name="jasa">18000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">27500</field>
+</record>
+
+    
+    
+<record id="KC51_M_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KC51_M"/>
+  <field name="jasa">20000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="KC51_M_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KC51_M"/>
+  <field name="jasa">20000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="KC51_M_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KC51_M"/>
+  <field name="jasa">20000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="KC51_M_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KC51_M"/>
+  <field name="jasa">20000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">25500</field>
+</record>
+
+    
+    
+<record id="KC52_M_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KC52_M"/>
+  <field name="jasa">20000</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="KC52_M_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KC52_M"/>
+  <field name="jasa">20000</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="KC52_M_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KC52_M"/>
+  <field name="jasa">20000</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="KC52_M_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KC52_M"/>
+  <field name="jasa">20000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">25500</field>
+</record>
+
+    
+    
+<record id="JFG1_N_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFG1_N"/>
+  <field name="jasa">18800</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFG1_N_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFG1_N"/>
+  <field name="jasa">18800</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFG1_N_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFG1_N"/>
+  <field name="jasa">18800</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="JFG1_N_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="JFG1_N"/>
+  <field name="jasa">18800</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">27500</field>
+</record>
+
+    
+    
+<record id="KC71_O_4" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KC71_O"/>
+  <field name="jasa">41400</field>
+  <field name="kpb_ke">4</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="KC71_O_3" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KC71_O"/>
+  <field name="jasa">32400</field>
+  <field name="kpb_ke">3</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="KC71_O_2" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KC71_O"/>
+  <field name="jasa">26900</field>
+  <field name="kpb_ke">2</field>
+  <field name="oli"></field>
+</record>
+
+    
+    
+<record id="KC71_O_1" model="wtc.kpb.engine.price">
+  <field name="kategori_id" ref="KC71_O"/>
+  <field name="jasa">1210000</field>
+  <field name="kpb_ke">1</field>
+  <field name="oli">35125</field>
+</record>
+
+    
+</data>
+</openerp>

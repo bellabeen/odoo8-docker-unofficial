@@ -1,0 +1,75 @@
+id,code,description,branch_ids:id
+area_dbb,DBB,Cabang Bangka,branch_dbb
+area_dbk,DBK,Cabang Kelapa,branch_dbk
+area_dbl,DBL,Cabang Belitung,branch_dbl
+area_dbs,DBS,Cabang Sungai Liat,branch_dbs
+area_dbt,DBT,Cabang Toboali,branch_dbt
+area_dda,DDA,Cabang Caman,branch_dda
+area_ddb,DDB,Cabang Bekasi,branch_ddb
+area_ddc,DDC,Cabang Cimareme,branch_ddc
+area_ddd,DDD,Cabang Depok,branch_ddd
+area_dde,DDE,Cabang Temanggung,branch_dde
+area_ddg,DDG,Cabang Godean,branch_ddg
+area_ddi,DDI,Cabang Bima,branch_ddi
+area_ddj,DDJ,Cabang Jombang,branch_ddj
+area_ddm,DDM,Cabang Mojosari,branch_ddm
+area_dds,DDS,Cabang Saharjo,branch_dds
+area_ddt,DDT,Cabang Tabanan,branch_ddt
+area_ddu,DDU,Cabang Sukabumi,branch_ddu
+area_djb,DJB,Cabang Bangko,branch_djb
+area_djj,DJJ,Cabang Jambi,branch_djj
+area_djm,DJM,Cabang Merlung,branch_djm
+area_djs,DJS,Cabang Muara Sabak,branch_djs
+area_dju,DJU,Cabang Muarabungo,branch_dju
+area_dla,DLA,Cabang Antasari,branch_dla
+area_dlb,DLB,Cabang Bakauheni,branch_dlb
+area_dlc,DLC,Cabang Rawajitu,branch_dlc
+area_dld,DLD,Cabang Tulang Bawang Barat,branch_dld
+area_dle,DLE,Cabang Way Sekampung,branch_dle
+area_dlf,DLF,Cabang Trimurjo,branch_dlf
+area_dlg,DLG,Cabang Gading Rejo,branch_dlg
+area_dlh,DLH,Cabang Seputih Mataram,branch_dlh
+area_dli,DLI,Cabang Tanjung Bintang,branch_dli
+area_dlj,DLJ,Cabang Way Jepara,branch_dlj
+area_dlk,DLK,Cabang Krui,branch_dlk
+area_dll,DLL,Cabang Kemiling,branch_dll
+area_dlm,DLM,Cabang Simpang Pematang,branch_dlm
+area_dln,DLN,Cabang Kota Agung,branch_dln
+area_dlo,DLO,Cabang Kota Gajah,branch_dlo
+area_dlp,DLP,Cabang Pahoman,branch_dlp
+area_dlq,DLQ,Cabang Tirtayasa,branch_dlq
+area_dlr,DLR,Cabang Raden Intan,branch_dlr
+area_dls,DLS,Cabang Sidomulyo,branch_dls
+area_dlt,DLT,Cabang Tulang Bawang,branch_dlt
+area_dlu,DLU,Cabang Kota Bumi,branch_dlu
+area_dlv,DLV,Cabang Purbolinggo,branch_dlv
+area_dlw,DLW,Cabang Way Kanan,branch_dlw
+area_dlx,DLX,Cabang Kalianda,branch_dlx
+area_dly,DLY,Cabang Yos Sudarso,branch_dly
+area_dsb,DSB,Cabang Pangkalan Balai,branch_dsb
+area_dsg,DSG,Cabang Gelumbang,branch_dsg
+area_dsk,DSK,Cabang Kayu Agung,branch_dsk
+area_dsm,DSM,Cabang Martapura,branch_dsm
+area_dsp,DSP,Cabang Palembang,branch_dsp
+area_dsr,DSR,Cabang Riau,branch_dsr
+area_duk,DUK,Cabang Kepahyang,branch_duk
+area_dup,DUP,Cabang Putri Hijau,branch_dup
+area_dwg,DWG,Cabang Pangkep,branch_dwg
+area_dwk,DWK,Cabang Kendari,branch_dwk
+area_dwm,DWM,Cabang Tomoni,branch_dwm
+area_dwn,DWN,Cabang Gorontalo,branch_dwn
+area_dwo,DWO,Cabang Palopo,branch_dwo
+area_dwp,DWP,Cabang Pinrang,branch_dwp
+area_dwr,DWR,Cabang Pare-Pare,branch_dwr
+area_dws,DWS,Cabang Sengkang,branch_dws
+area_dwt,DWT,Cabang Tuminting,branch_dwt
+area_dxb,DXB,Cabang Balikpapan,branch_dxb
+area_dxg,DXG,Cabang Tanah Grogot,branch_dxg
+area_dxk,DXK,Cabang Ketapang,branch_dxk
+area_dxn,DXN,Cabang Nanga Pinoh,branch_dxn
+area_dxs,DXS,Cabang Samarinda,branch_dxs
+area_dxt,DXT,Cabang Tenggarong,branch_dxt
+area_dlz,DLZ,Cabang Pematang Pasir,branch_dlz
+area_hho,HHO,Head Office,branch_hho
+area_hhp,HHP,Head Office Property,branch_hhp
+area_mml,MML,MD Lampung,branch_mml

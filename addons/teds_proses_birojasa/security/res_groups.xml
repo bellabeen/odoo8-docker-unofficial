@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+	<!-- teds_proses_birojasa_tracking -->	
+		<record id="group_teds_proses_birojasa_tracking_read" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">TEDS Proses Biro Jasa Tracking</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_proses_birojasa_tracking_menu'))]"/>  
+		</record>
+	
+	<!-- Buttons Groups -->
+		<record id="group_button_confirm_doc_ho" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">TEDS Confirm Document HO</field> 
+            <field name="implied_ids" eval="[(4, ref('group_teds_proses_birojasa_tracking_read'))]"/>
+		</record>
+		
+		<record id="group_button_confirm_doc_pajak" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">TEDS Confirm Document Pajak</field> 
+            <field name="implied_ids" eval="[(4, ref('group_teds_proses_birojasa_tracking_read'))]"/>		
+        </record>
+		
+		<record id="group_button_confirm_doc_finace" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">TEDS Confirm Document Finance</field> 
+            <field name="implied_ids" eval="[(4, ref('group_teds_proses_birojasa_tracking_read'))]"/>		
+    	</record>
+
+	</data>
+</openerp>

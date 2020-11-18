@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    
+    
+        <record id="group_wtc_report_stock_distribution_wizard_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Laporan Order Fulfillment Read</field>
+            <field name="menu_access" eval="[
+            								(4, ref('menu_report_order_fulfillment_wizard')),
+            								]"/>
+        </record>
+        
+        
+        <record id="group_wtc_report_stock_distribution_wizard_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Laporan Order Fulfillment Update</field>
+            <field name="menu_access" eval="[
+            								(4, ref('menu_report_order_fulfillment_wizard')),
+            								]"/>
+			<field name="implied_ids" eval="[(4, ref('group_wtc_report_stock_distribution_wizard_read'))]"/>
+        </record>
+        
+        
+        <record id="group_report_stock_distribution_showroom_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Report Stock Distribution Showroom Read</field> 
+            <field name="menu_access" eval="[(4, ref('menu_report_stock_distribution_showroom'))]"/>  
+        </record> 
+
+        <record id="group_report_stock_distribution_workshop_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Report Stock Distribution Workshop Read</field> 
+            <field name="menu_access" eval="[(4, ref('menu_report_stock_distribution_workshop'))]"/>  
+        </record> 
+
+        <record id="access_wtc_report_stock_distribution_showroom" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_report_stock_distribution"/>
+            <field name="name">wtc_report_stock_distribution read</field>
+            <field name="group_id" ref="group_report_stock_distribution_showroom_read"/>
+            <field name="perm_read">1</field>
+            <field name="perm_write">1</field>
+            <field name="perm_create">1</field>
+            <field name="perm_unlink">1</field>
+        </record>
+
+        <record id="access_wtc_report_stock_distribution_workshop" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_report_stock_distribution"/>
+            <field name="name">wtc_report_stock_distribution read</field>
+            <field name="group_id" ref="group_report_stock_distribution_workshop_read"/>
+            <field name="perm_read">1</field>
+            <field name="perm_write">1</field>
+            <field name="perm_create">1</field>
+            <field name="perm_unlink">1</field>
+        </record>
+
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[(4,ref('group_report_stock_distribution_showroom_read')),
+                                             (4,ref('group_report_stock_distribution_workshop_read')),
+                                             (4,ref('group_wtc_report_stock_distribution_wizard_read')),
+											 (4,ref('group_wtc_report_stock_distribution_wizard_update')),
+											]"/> 
+		</record>
+    </data>
+</openerp>

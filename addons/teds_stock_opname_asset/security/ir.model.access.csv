@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_teds_stock_opname_asset,teds_stock_opname_asset,model_teds_stock_opname_asset,,1,0,0,0
+access_teds_stock_opname_asset_line,teds_stock_opname_asset_line,model_teds_stock_opname_asset_line,,1,0,0,0
+access_teds_stock_opname_asset_other,teds_stock_opname_asset_other,model_teds_stock_opname_asset_other,,1,0,0,0
+access_teds_stock_opname_asset_pic,teds_stock_opname_asset_pic,model_teds_stock_opname_asset_pic,,1,0,0,0
+

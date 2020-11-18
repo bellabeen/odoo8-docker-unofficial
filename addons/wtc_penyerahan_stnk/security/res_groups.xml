@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">  	   
+      
+<!-- Penyerahan STNK -->	
+	
+        <record id="group_penyerahan_stnk_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Penyerahan STNK Read</field> 
+            <field name="menu_access" eval="[(4, ref('penyerahan_stnk_submenu'))]"/>  
+        </record> 
+        
+        <record id="access_penyerahan_stnk_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penyerahan_stnk"/>
+            <field name="name">penyerahan_stnk read</field> 
+            <field name="group_id" ref="group_penyerahan_stnk_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+
+        <record id="access_penyerahan_stnk_line_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penyerahan_stnk_line"/>
+            <field name="name">penyerahan_stnk_line read</field> 
+            <field name="group_id" ref="group_penyerahan_stnk_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+                        
+        <record id="group_penyerahan_stnk_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Penyerahan STNK Update</field> 
+            <field name="menu_access" eval="[(4, ref('penyerahan_stnk_submenu'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_penyerahan_stnk_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_penyerahan_stnk_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penyerahan_stnk"/>
+            <field name="name">penyerahan_stnk update</field> 
+            <field name="group_id" ref="group_penyerahan_stnk_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+        
+        <record id="access_penyerahan_stnk_line_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penyerahan_stnk_line"/>
+            <field name="name">penyerahan_stnk_line update</field> 
+            <field name="group_id" ref="group_penyerahan_stnk_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>                   
+
+        <record id="group_penyerahan_stnk_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Penyerahan STNK Delete</field> 
+            <field name="menu_access" eval="[(4, ref('penyerahan_stnk_submenu'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_penyerahan_stnk_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_penyerahan_stnk_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penyerahan_stnk"/>
+            <field name="name">penyerahan_stnk delete</field> 
+            <field name="group_id" ref="group_penyerahan_stnk_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>      
+        
+        <record id="access_penyerahan_stnk_line_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penyerahan_stnk_line"/>
+            <field name="name">penyerahan_stnk_line delete</field> 
+            <field name="group_id" ref="group_penyerahan_stnk_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>   
+        
+<!-- Penyerahan BPKB -->	
+	
+        <record id="group_penyerahan_bpkb_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Penyerahan BPKB Read</field> 
+            <field name="menu_access" eval="[(4, ref('penyerahan_bpkb_submenu'))]"/>  
+        </record> 
+        
+        <record id="access_penyerahan_bpkb_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penyerahan_bpkb"/>
+            <field name="name">penyerahan_bpkb read</field> 
+            <field name="group_id" ref="group_penyerahan_bpkb_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+
+        <record id="access_penyerahan_bpkb_line_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penyerahan_bpkb_line"/>
+            <field name="name">penyerahan_bpkb_line read</field> 
+            <field name="group_id" ref="group_penyerahan_bpkb_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+                        
+        <record id="group_penyerahan_bpkb_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Penyerahan BPKB Update</field> 
+            <field name="menu_access" eval="[(4, ref('penyerahan_bpkb_submenu'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_penyerahan_bpkb_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_penyerahan_bpkb_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penyerahan_bpkb"/>
+            <field name="name">penyerahan_bpkb update</field> 
+            <field name="group_id" ref="group_penyerahan_bpkb_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+        
+        <record id="access_penyerahan_bpkb_line_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penyerahan_bpkb_line"/>
+            <field name="name">penyerahan_bpkb_line update</field> 
+            <field name="group_id" ref="group_penyerahan_bpkb_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>                   
+
+        <record id="group_penyerahan_bpkb_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Penyerahan BPKB Delete</field> 
+            <field name="menu_access" eval="[(4, ref('penyerahan_bpkb_submenu'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_penyerahan_bpkb_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_penyerahan_bpkb_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penyerahan_bpkb"/>
+            <field name="name">penyerahan_bpkb delete</field> 
+            <field name="group_id" ref="group_penyerahan_bpkb_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>      
+        
+        <record id="access_penyerahan_bpkb_line_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penyerahan_bpkb_line"/>
+            <field name="name">penyerahan_bpkb_line delete</field> 
+            <field name="group_id" ref="group_penyerahan_bpkb_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>
+        
+        <!-- Penyerahan BPKB Cancel-->	
+	
+        <record id="group_wtc_cancel_penyerahan_bpkb_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Cancel Penyerahan BPKB Read</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_cancel_penyerahan_bpkb_menu'))]"/>  
+        </record> 
+        
+        <record id="access_wtc_cancel_penyerahan_bpkb_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cancel_penyerahan_bpkb"/>
+            <field name="name">cancel_penyerahan_bpkb read</field> 
+            <field name="group_id" ref="group_wtc_cancel_penyerahan_bpkb_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+
+        <record id="group_wtc_cancel_penyerahan_bpkb_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Cancel Penyerahan BPKB Update</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_cancel_penyerahan_bpkb_menu'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_wtc_cancel_penyerahan_bpkb_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_wtc_cancel_penyerahan_bpkb_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cancel_penyerahan_bpkb"/>
+            <field name="name">cancel_penyerahan_bpkb update</field> 
+            <field name="group_id" ref="group_wtc_cancel_penyerahan_bpkb_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+        
+        <record id="group_wtc_cancel_penyerahan_bpkb_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Cancel Penyerahan BPKB Delete</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_cancel_penyerahan_bpkb_menu'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_wtc_cancel_penyerahan_bpkb_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_wtc_cancel_penyerahan_bpkb_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cancel_penyerahan_bpkb"/>
+            <field name="name">wtc_cancel_penyerahan_bpkb delete</field> 
+            <field name="group_id" ref="group_wtc_cancel_penyerahan_bpkb_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>     
+
+
+        <!-- Penyerahan STNK Cancel-->  
+    
+        <record id="group_wtc_cancel_penyerahan_stnk_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Cancel Penyerahan STNK Read</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_cancel_penyerahan_stnk_menu'))]"/>  
+        </record> 
+        
+        <record id="access_wtc_cancel_penyerahan_stnk_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cancel_penyerahan_stnk"/>
+            <field name="name">cancel_penyerahan_stnk read</field> 
+            <field name="group_id" ref="group_wtc_cancel_penyerahan_stnk_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+
+        <record id="group_wtc_cancel_penyerahan_stnk_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Cancel Penyerahan STNK Update</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_cancel_penyerahan_stnk_menu'))]"/>  
+            <field name="implied_ids" eval="[(4, ref('group_wtc_cancel_penyerahan_stnk_read'))]"/>                              
+        </record>
+                        
+        <record id="access_wtc_cancel_penyerahan_stnk_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cancel_penyerahan_stnk"/>
+            <field name="name">cancel_penyerahan_stnk update</field> 
+            <field name="group_id" ref="group_wtc_cancel_penyerahan_stnk_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+        
+        <record id="group_wtc_cancel_penyerahan_stnk_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Cancel Penyerahan STNK Delete</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_cancel_penyerahan_stnk_menu'))]"/>  
+            <field name="implied_ids" eval="[(4, ref('group_wtc_cancel_penyerahan_stnk_read'))]"/>                              
+        </record>
+                        
+        <record id="access_wtc_cancel_penyerahan_stnk_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cancel_penyerahan_stnk"/>
+            <field name="name">wtc_cancel_penyerahan_stnk delete</field> 
+            <field name="group_id" ref="group_wtc_cancel_penyerahan_stnk_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>   
+        
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[(4,ref('group_penyerahan_stnk_read')),
+											(4,ref('group_penyerahan_stnk_update')),
+											(4,ref('group_penyerahan_stnk_delete')),
+											(4,ref('group_penyerahan_bpkb_read')),
+											(4,ref('group_penyerahan_bpkb_update')),
+											(4,ref('group_penyerahan_bpkb_delete')),
+											(4,ref('group_wtc_cancel_penyerahan_bpkb_update')),
+											(4,ref('group_wtc_cancel_penyerahan_bpkb_delete')),
+                                            (4,ref('group_wtc_cancel_penyerahan_stnk_update')),
+                                            (4,ref('group_wtc_cancel_penyerahan_stnk_delete')),
+
+											]"/> 
+		</record>                                                                        
+    </data>
+</openerp>

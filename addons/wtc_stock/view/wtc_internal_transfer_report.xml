@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+<template id="wtc_internal_transfer_report">
+    <style type="text/css">
+             h1   {font-size: 16; font-weight:bold; font-family: Arial;}
+             table#t01 {text-align: left;width: 100%; border-left: 1px solid black; border-right: 1px solid black;  border-bottom: 1px solid black; border-top: 1px solid black;}
+ 
+             table#t02 {text-align: left;width: 20%; border-left: 0px solid black; border-right: 0px solid black; font-family: Arial;}
+             span#s01 {font-size: 12; font-family: Arial;}
+             
+             tr#tr01 {font-size: 12px; border-bottom: 1px solid black; border-left: 1px solid black; border-right: 1px solid black; border-top: 1px solid black; font-family: Arial;}
+
+             td#td01 {border-left: 1px solid black; border-right: 1px solid black; border-top: 1px solid black; border-bottom: 1px solid black; font-family: Arial;} 
+             td#td02 {border-left: 1px solid black; border-right: 1px solid black; border-top: 1px solid black; border-bottom: 1px solid black; font-family: Arial; font-size: 12px;} 
+
+             th#th01 {border-left: 1px solid black; border-right: 1px solid black; border-top: 1px solid black; border-bottom: 1px solid black; font-size: 11; font-family: Arial; text-align: Center;} 
+             
+      </style>
+    <t t-call="report.html_container">
+        <t t-foreach="docs" t-as="o">
+  
+                <div class="page">
+                    <div class="oe_structure"/>
+                    <div class="row"> 
+                    </div>
+                    <table width="100%" style="font-family: Agency FB; font-size: 12px; ">
+                        <tr>
+                            <td width="60.00%">
+                                <h1><span id="s01" t-field="o.branch_id.company_id.name"></span> <span id="s01" t-field="o.branch_id.name"></span></h1>
+                                <span id="s01" t-field="o.branch_id.street"></span> - 
+                                <span id="s01" t-field="o.branch_id.state_id.name"></span>
+                            </td>
+                            <td width="40.00%">
+                                <h1>MUTASI ANTAR LOKASI</h1>
+                                No : <span id="s01" t-field="o.name"></span> 
+                            </td>
+                        </tr>
+                    </table>
+                    <table width="100%" style="border-collapse: collapse; border: 1px solid black; font-size: 12px; font-family: Arial;" cellpadding="5">
+                        <tr>
+                            <td width="20.00%">&#160; Tanggal</td>
+                            <td>:</td>
+                            <td><span id="s01" t-field="o.date"></span></td>
+                        </tr>
+                        <tr>
+                            <td width="20.00%">&#160; Lokasi Asal</td>
+                            <td>:</td>
+                            <td><span id="s01" t-field="o.internal_location_id.name"></span></td>
+
+                        </tr>
+                        <tr>
+                            <td width="20.00%">&#160; Lokasi Tujuan</td>
+                            <td>:</td>
+                            <td><span id="s01" t-field="o.internal_location_dest_id.name"></span></td>
+                        </tr>
+                    </table>
+                    <table id="t01"  style="font-size: 12px; font-family: Matchbook;">
+                        <thead>
+                           <tr id="tr01" height="20" style="background-color:yellow; font-size: 12px; font-family: Arial;">
+			                    <th id="th01" width="5.00%">  No         </th>
+			                    <th id="th01" width="8.00%"> Type       </th>
+			                    <th id="th01" width="26.00%"> Description</th>
+			                    <th id="th01" width="20.00%"> Warna      </th>
+                                <th id="th01" width="18.00%"> No. Mesin </th>
+			                    <th id="th01" width="18.00%"> No. Rangka </th>
+                                <th id="th01" width="5.00%">  Jml.       </th>
+		                  </tr>
+                        </thead> 
+
+                        <tbody>
+                            <tr id="tr01" t-foreach="o.move_lines" t-as="k"  height="30%">
+                                <td id="td02" style="text-align: Center"><span t-esc="no_urut()"/></td>
+                                <td id="td02" height="20"><span t-field="k.product_id.name"/></td>
+                                <td id="td02" height="20"><span t-field="k.product_id.description"/></td>
+                                <td id="td02" height="20"><span t-field="k.product_id.attribute_value_ids.name"/></td>
+                                <td id="td02" height="20"><span t-field="k.restrict_lot_id.name"/></td>
+                                <td id="td02" height="20"><span t-field="k.restrict_lot_id.chassis_no"/></td> 
+                                <td id="td02" height="20"><span t-field="k.product_uom_qty"/></td> 
+                            </tr>
+                        </tbody>
+                     <tfoot>
+                    </tfoot> 
+                    </table>
+                   
+                   <div class="oe_structure" > 
+                         <table style="width: 30%;">
+                            <tr>
+                                <td width="5.00%"><h1></h1></td>
+                                <td style="font-size: 12;">Administrator</td>
+                            </tr> 
+                            <tr>
+                                <td width="5.00%"><h1></h1></td>
+                                <td><h1></h1></td>
+                            </tr>  
+                            <tr>
+                                <td width="5.00%"><h1></h1></td>
+                                <td><h1></h1></td>
+                            </tr>
+                            <tr>
+                                <td width="5.00%"><h1></h1></td>
+                                <td>_______________________</td>
+                            </tr> 
+                            <tr>
+                                <td><h1></h1></td>
+                                <td style="font-size: 12;"> <span t-esc="usr()"/>,<span t-esc="tgl()"/></td>
+                            </tr>                                            
+                            <tr>
+                                <td width="5.00%"><h1></h1></td>
+                                <td style="font-size: 12;">Cetakan Ke : <span t-esc="jumlah_cetakan()"/></td>
+                            </tr> 
+                        </table> 
+                    </div>
+                </div>
+        </t>
+    </t>
+</template>
+</data>
+</openerp>

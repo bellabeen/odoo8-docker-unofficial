@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    
+<!-- Report Workshop WIP-->
+
+        <record id="group_wtc_report_workshop_wip_wizard" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Report Workshop WIP</field>
+            <field name="menu_access" eval="[
+            								(4, ref('wtc_wo_wip_report_menu')),
+            								]"/>
+        </record>
+        
+        <record id="access_wtc_report_wo_wip" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_wo_wip_report"/>
+            <field name="name">report_wo_wip</field>
+            <field name="group_id" ref="group_wtc_report_workshop_wip_wizard"/>
+            <field name="perm_read">1</field>
+            <field name="perm_write">1</field>
+            <field name="perm_create">1</field>
+            <field name="perm_unlink">1</field>
+        </record>
+                
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[(4,ref('group_wtc_report_workshop_wip_wizard'))
+											]"/>
+		</record>
+    </data>
+</openerp>

@@ -1,0 +1,869 @@
+<openerp>
+	<data noupdate="1">
+		<record id="warna_ABP" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_ABP" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_bo')])]" />
+		</record>
+		<record id="warna_AF2" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_AF2" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_bv')])]" />
+		</record>
+		<record id="warna_AKJ" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_AKJ" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_rd'),ref('attribute_value_bl'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_AL4" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_AL4" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_rd')])]" />
+		</record>
+		<record id="warna_AL5" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_AL5" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_rd'),ref('attribute_value_br'),ref('attribute_value_bl'),ref('attribute_value_bb')])]" />
+		</record>
+		<record id="warna_AU5" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_AU5" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_rd'),ref('attribute_value_br'),ref('attribute_value_bg')])]" />
+		</record>
+		<record id="warna_BD0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_BD0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_br')])]" />
+		</record>
+		<record id="warna_BD1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_BD1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_br'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_BE2" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_BE2" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_hs'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_BF0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_BF0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_su'),ref('attribute_value_bb')])]" />
+		</record>
+		<record id="warna_BF1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_BF1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_BF2" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_BF2" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_sh'),ref('attribute_value_pm'),ref('attribute_value_bv'),ref('attribute_value_br'),ref('attribute_value_bl'),ref('attribute_value_sv')])]" />
+		</record>
+		<record id="warna_BF3" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_BF3" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_sb'),ref('attribute_value_sh'),ref('attribute_value_be'),ref('attribute_value_br')])]" />
+		</record>
+		<record id="warna_BM1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_BM1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_hs'),ref('attribute_value_hm'),ref('attribute_value_bl'),ref('attribute_value_bg')])]" />
+		</record>
+		<record id="warna_BP0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_BP0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_hm'),ref('attribute_value_bk'),ref('attribute_value_ls')])]" />
+		</record>
+		<record id="warna_BR0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_BR0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_pm'),ref('attribute_value_pb'),ref('attribute_value_bs'),ref('attribute_value_br'),ref('attribute_value_hs')])]" />
+		</record>
+		<record id="warna_BR1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_BR1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_hs'),ref('attribute_value_hb'),ref('attribute_value_hm'),ref('attribute_value_br'),ref('attribute_value_bg')])]" />
+		</record>
+		<record id="warna_BS0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_BS0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_bm'),ref('attribute_value_hp'),ref('attribute_value_hm')])]" />
+		</record>
+		<record id="warna_BS1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_BS1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_hb'),ref('attribute_value_hm'),ref('attribute_value_ho')])]" />
+		</record>
+		<record id="warna_BU0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_BU0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_bs'),ref('attribute_value_br'),ref('attribute_value_bl')])]" />
+		</record>
+		<record id="warna_BV0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_BV0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_hs'),ref('attribute_value_hb'),ref('attribute_value_br'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_BV1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_BV1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_mp'),ref('attribute_value_br'),ref('attribute_value_bp')])]" />
+		</record>
+		<record id="warna_BV2" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_BV2" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_hs'),ref('attribute_value_ho'),ref('attribute_value_hm'),ref('attribute_value_hh'),ref('attribute_value_hb'),ref('attribute_value_xs'),ref('attribute_value_xh'),ref('attribute_value_xb'),ref('attribute_value_xo'),ref('attribute_value_xm'),ref('attribute_value_wh')])]" />
+		</record>
+		<record id="warna_BV3" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_BV3" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_bl'),ref('attribute_value_xs'),ref('attribute_value_xo'),ref('attribute_value_xm'),ref('attribute_value_xh'),ref('attribute_value_xb'),ref('attribute_value_hs'),ref('attribute_value_ho'),ref('attribute_value_hm'),ref('attribute_value_hh'),ref('attribute_value_hb')])]" />
+		</record>
+		<record id="warna_BW0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_BW0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_hm'),ref('attribute_value_hb'),ref('attribute_value_hs'),ref('attribute_value_br'),ref('attribute_value_bk'),ref('attribute_value_bb')])]" />
+		</record>
+		<record id="warna_BW1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_BW1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_oh'),ref('attribute_value_by'),ref('attribute_value_ms'),ref('attribute_value_ls'),ref('attribute_value_br')])]" />
+		</record>
+		<record id="warna_BX0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_BX0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_bo'),ref('attribute_value_bb')])]" />
+		</record>
+		<record id="warna_BX1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_BX1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_hm'),ref('attribute_value_ha')])]" />
+		</record>
+		<record id="warna_BY0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_BY0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_pa'),ref('attribute_value_bp'),ref('attribute_value_op')])]" />
+		</record>
+		<record id="warna_BY1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_BY1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_hb'),ref('attribute_value_hs'),ref('attribute_value_ho')])]" />
+		</record>
+		<record id="warna_CA0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CA0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_pb'),ref('attribute_value_pm'),ref('attribute_value_sv'),ref('attribute_value_sx'),ref('attribute_value_bl')])]" />
+		</record>
+		<record id="warna_CA1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CA1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_sv'),ref('attribute_value_bl'),ref('attribute_value_sx'),ref('attribute_value_pm'),ref('attribute_value_pb')])]" />
+		</record>
+		<record id="warna_CAA" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CAA" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_hb'),ref('attribute_value_hm'),ref('attribute_value_ho'),ref('attribute_value_hp')])]" />
+		</record>
+		<record id="warna_CB0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CB0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_xe'),ref('attribute_value_xm'),ref('attribute_value_hs'),ref('attribute_value_hb'),ref('attribute_value_hm'),ref('attribute_value_hd'),ref('attribute_value_hc')])]" />
+		</record>
+		<record id="warna_CB1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CB1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_bl'),ref('attribute_value_rd'),ref('attribute_value_bk'),ref('attribute_value_wg'),ref('attribute_value_wp'),ref('attribute_value_nk')])]" />
+		</record>
+		<record id="warna_CC0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CC0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_hm'),ref('attribute_value_hp'),ref('attribute_value_hb'),ref('attribute_value_he'),ref('attribute_value_hh')])]" />
+		</record>
+		<record id="warna_CC1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CC1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_wg'),ref('attribute_value_wp'),ref('attribute_value_nk'),ref('attribute_value_bl'),ref('attribute_value_rd'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_CC2" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CC2" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_pp'),ref('attribute_value_ph'),ref('attribute_value_mh'),ref('attribute_value_bk'),ref('attribute_value_99')])]" />
+		</record>
+		<record id="warna_CD0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CD0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_am'),ref('attribute_value_hz'),ref('attribute_value_hy')])]" />
+		</record>
+		<record id="warna_CE0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CE0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_95'),ref('attribute_value_os'),ref('attribute_value_as'),ref('attribute_value_bp'),ref('attribute_value_ma'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_CE1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CE1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_99'),ref('attribute_value_wh'),ref('attribute_value_yl'),ref('attribute_value_bl'),ref('attribute_value_rd'),ref('attribute_value_sv'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_CF0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CF0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_wh'),ref('attribute_value_bl'),ref('attribute_value_yl'),ref('attribute_value_rd'),ref('attribute_value_sv'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_CF1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CF1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_99'),ref('attribute_value_wh'),ref('attribute_value_yl'),ref('attribute_value_bl'),ref('attribute_value_rd'),ref('attribute_value_sv'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_CG0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CG0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_hk'),ref('attribute_value_hb'),ref('attribute_value_hm'),ref('attribute_value_hp'),ref('attribute_value_hs'),ref('attribute_value_99'),ref('attribute_value_bl')])]" />
+		</record>
+		<record id="warna_CG1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CG1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_kh'),ref('attribute_value_mh'),ref('attribute_value_ph'),ref('attribute_value_ah'),ref('attribute_value_bq'),ref('attribute_value_bl')])]" />
+		</record>
+		<record id="warna_CG2" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CG2" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_96'),ref('attribute_value_bg'),ref('attribute_value_bb'),ref('attribute_value_br'),ref('attribute_value_or')])]" />
+		</record>
+		<record id="warna_CG3" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CG3" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_99'),ref('attribute_value_or'),ref('attribute_value_bg'),ref('attribute_value_bb'),ref('attribute_value_br')])]" />
+		</record>
+		<record id="warna_CG5" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CG5" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_bs'),ref('attribute_value_br'),ref('attribute_value_bb')])]" />
+		</record>
+		<record id="warna_CH0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CH0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_hr'),ref('attribute_value_hk'),ref('attribute_value_hu'),ref('attribute_value_hm'),ref('attribute_value_hp'),ref('attribute_value_be'),ref('attribute_value_bl'),ref('attribute_value_99'),ref('attribute_value_bq')])]" />
+		</record>
+		<record id="warna_CH1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CH1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_hl'),ref('attribute_value_hj'),ref('attribute_value_hz'),ref('attribute_value_hg'),ref('attribute_value_be'),ref('attribute_value_96')])]" />
+		</record>
+		<record id="warna_CH2" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CH2" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_pj'),ref('attribute_value_sb'),ref('attribute_value_pm'),ref('attribute_value_br'),ref('attribute_value_96')])]" />
+		</record>
+		<record id="warna_CH3" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CH3" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_99'),ref('attribute_value_vh'),ref('attribute_value_mh'),ref('attribute_value_ha'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_CJ0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CJ0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_ms'),ref('attribute_value_hs'),ref('attribute_value_hf'),ref('attribute_value_cp'),ref('attribute_value_bl'),ref('attribute_value_99')])]" />
+		</record>
+		<record id="warna_CJ1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CJ1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_ar'),ref('attribute_value_hb'),ref('attribute_value_ac'),ref('attribute_value_bk'),ref('attribute_value_96')])]" />
+		</record>
+		<record id="warna_CJ2" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CJ2" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_vs'),ref('attribute_value_mh'),ref('attribute_value_ha')])]" />
+		</record>
+		<record id="warna_CK0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CK0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_sk'),ref('attribute_value_sm'),ref('attribute_value_hs'),ref('attribute_value_bk'),ref('attribute_value_or')])]" />
+		</record>
+		<record id="warna_CL0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CL0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_dk'),ref('attribute_value_ag'),ref('attribute_value_99'),ref('attribute_value_wh'),ref('attribute_value_gd'),ref('attribute_value_rd'),ref('attribute_value_sv'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_CL1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CL1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_vs'),ref('attribute_value_mh'),ref('attribute_value_bk'),ref('attribute_value_99')])]" />
+		</record>
+		<record id="warna_CM0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CM0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_99'),ref('attribute_value_pk'),ref('attribute_value_or'),ref('attribute_value_rd'),ref('attribute_value_bl'),ref('attribute_value_wh'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_CM1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CM1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_rd'),ref('attribute_value_pk'),ref('attribute_value_bl'),ref('attribute_value_wh'),ref('attribute_value_99'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_CN0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CN0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_99'),ref('attribute_value_bp'),ref('attribute_value_ps'),ref('attribute_value_ks'),ref('attribute_value_ls'),ref('attribute_value_ms'),ref('attribute_value_hs')])]" />
+		</record>
+		<record id="warna_CN1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CN1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_ph'),ref('attribute_value_mp'),ref('attribute_value_hm'),ref('attribute_value_99')])]" />
+		</record>
+		<record id="warna_CNA" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CNA" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_or'),ref('attribute_value_uo'),ref('attribute_value_99')])]" />
+		</record>
+		<record id="warna_CNB" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CNB" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_oh'),ref('attribute_value_99')])]" />
+		</record>
+		<record id="warna_CP0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CP0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_99'),ref('attribute_value_bs'),ref('attribute_value_bb'),ref('attribute_value_br'),ref('attribute_value_96')])]" />
+		</record>
+		<record id="warna_CP1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CP1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_98'),ref('attribute_value_bs'),ref('attribute_value_bb'),ref('attribute_value_99'),ref('attribute_value_br'),ref('attribute_value_96'),ref('attribute_value_95')])]" />
+		</record>
+		<record id="warna_CR0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CR0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_96'),ref('attribute_value_gr'),ref('attribute_value_sv'),ref('attribute_value_rd'),ref('attribute_value_bk'),ref('attribute_value_99'),ref('attribute_value_93')])]" />
+		</record>
+		<record id="warna_CR1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CR1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_99'),ref('attribute_value_ah'),ref('attribute_value_sh'),ref('attribute_value_mh'),ref('attribute_value_bk'),ref('attribute_value_95')])]" />
+		</record>
+		<record id="warna_CRA" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CRA" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_bz'),ref('attribute_value_ms'),ref('attribute_value_hs'),ref('attribute_value_99')])]" />
+		</record>
+		<record id="warna_CRB" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CRB" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_cs'),ref('attribute_value_99'),ref('attribute_value_hs'),ref('attribute_value_ms')])]" />
+		</record>
+		<record id="warna_CT0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CT0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_vs'),ref('attribute_value_ms'),ref('attribute_value_sb'),ref('attribute_value_99'),ref('attribute_value_pm'),ref('attribute_value_hs')])]" />
+		</record>
+		<record id="warna_CV0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CV0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_99'),ref('attribute_value_pk'),ref('attribute_value_rd'),ref('attribute_value_bl'),ref('attribute_value_wh'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_CV1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CV1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_pk'),ref('attribute_value_rd'),ref('attribute_value_bl'),ref('attribute_value_wh'),ref('attribute_value_bk'),ref('attribute_value_99')])]" />
+		</record>
+		<record id="warna_CX0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CX0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_99'),ref('attribute_value_pk'),ref('attribute_value_rd'),ref('attribute_value_bl'),ref('attribute_value_wh'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_CX1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CX1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_pk'),ref('attribute_value_rd'),ref('attribute_value_bl'),ref('attribute_value_wh'),ref('attribute_value_bk'),ref('attribute_value_99')])]" />
+		</record>
+		<record id="warna_CY0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CY0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_vs'),ref('attribute_value_ms'),ref('attribute_value_hs'),ref('attribute_value_99')])]" />
+		</record>
+		<record id="warna_CZ0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CZ0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_95'),ref('attribute_value_99'),ref('attribute_value_pe'),ref('attribute_value_vp'),ref('attribute_value_pp')])]" />
+		</record>
+		<record id="warna_CZ1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_CZ1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_99'),ref('attribute_value_hm'),ref('attribute_value_bp'),ref('attribute_value_mp'),ref('attribute_value_pf'),ref('attribute_value_vp'),ref('attribute_value_pe')])]" />
+		</record>
+		<record id="warna_DA0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DA0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_bb'),ref('attribute_value_br')])]" />
+		</record>
+		<record id="warna_DA1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DA1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_bx'),ref('attribute_value_rs'),ref('attribute_value_br'),ref('attribute_value_bs'),ref('attribute_value_bt')])]" />
+		</record>
+		<record id="warna_DA2" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DA2" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_yl'),ref('attribute_value_bl'),ref('attribute_value_rd'),ref('attribute_value_bk'),ref('attribute_value_95')])]" />
+		</record>
+		<record id="warna_DB0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DB0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_bs'),ref('attribute_value_hm'),ref('attribute_value_hb'),ref('attribute_value_br')])]" />
+		</record>
+		<record id="warna_DB1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DB1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_bx'),ref('attribute_value_rs'),ref('attribute_value_br'),ref('attribute_value_bs')])]" />
+		</record>
+		<record id="warna_DB2" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DB2" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_yl'),ref('attribute_value_bl'),ref('attribute_value_rd'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_DBA" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DBA" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_yl'),ref('attribute_value_bl')])]" />
+		</record>
+		<record id="warna_DC0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DC0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_br'),ref('attribute_value_bx'),ref('attribute_value_bb')])]" />
+		</record>
+		<record id="warna_DD0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DD0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_rd'),ref('attribute_value_sv'),ref('attribute_value_bl'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_DD1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DD1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_bx'),ref('attribute_value_rs'),ref('attribute_value_gs'),ref('attribute_value_be'),ref('attribute_value_br'),ref('attribute_value_bs'),ref('attribute_value_99'),ref('attribute_value_92')])]" />
+		</record>
+		<record id="warna_DD2" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DD2" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_wh'),ref('attribute_value_ms'),ref('attribute_value_hs'),ref('attribute_value_as'),ref('attribute_value_99')])]" />
+		</record>
+		<record id="warna_DDA" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DDA" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_rd'),ref('attribute_value_gr'),ref('attribute_value_bk'),ref('attribute_value_99')])]" />
+		</record>
+		<record id="warna_DDB" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DDB" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_wh'),ref('attribute_value_vo'),ref('attribute_value_rd'),ref('attribute_value_bk'),ref('attribute_value_95')])]" />
+		</record>
+		<record id="warna_DE0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DE0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_99'),ref('attribute_value_sa'),ref('attribute_value_ma'),ref('attribute_value_ha')])]" />
+		</record>
+		<record id="warna_DE1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DE1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_mh'),ref('attribute_value_bk'),ref('attribute_value_ag'),ref('attribute_value_95'),ref('attribute_value_00')])]" />
+		</record>
+		<record id="warna_DF0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DF0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_ua'),ref('attribute_value_sa'),ref('attribute_value_ma'),ref('attribute_value_ha'),ref('attribute_value_99')])]" />
+		</record>
+		<record id="warna_DF1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DF1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_st'),ref('attribute_value_ph'),ref('attribute_value_mh'),ref('attribute_value_bk'),ref('attribute_value_bh'),ref('attribute_value_ag'),ref('attribute_value_00')])]" />
+		</record>
+		<record id="warna_DG0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DG0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_sv'),ref('attribute_value_rd'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_DH0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DH0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_sv'),ref('attribute_value_rd'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_DJ0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DJ0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_pm'),ref('attribute_value_00'),ref('attribute_value_rd'),ref('attribute_value_bk'),ref('attribute_value_99')])]" />
+		</record>
+		<record id="warna_DJ1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DJ1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_rd'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_DJA" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DJA" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_oh')])]" />
+		</record>
+		<record id="warna_DJB" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DJB" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_op')])]" />
+		</record>
+		<record id="warna_DJC" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DJC" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_pm')])]" />
+		</record>
+		<record id="warna_DK0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DK0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_wr'),ref('attribute_value_wl'),ref('attribute_value_rd'),ref('attribute_value_bk'),ref('attribute_value_00')])]" />
+		</record>
+		<record id="warna_DK1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DK1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_wr'),ref('attribute_value_wl'),ref('attribute_value_rd'),ref('attribute_value_pm'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_DK2" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DK2" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_mp'),ref('attribute_value_hp')])]" />
+		</record>
+		<record id="warna_DL0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DL0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_ph'),ref('attribute_value_mh'),ref('attribute_value_bk'),ref('attribute_value_bh'),ref('attribute_value_00')])]" />
+		</record>
+		<record id="warna_DM0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DM0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_rd'),ref('attribute_value_gr'),ref('attribute_value_bl'),ref('attribute_value_bk'),ref('attribute_value_00')])]" />
+		</record>
+		<record id="warna_DM1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DM1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_wh'),ref('attribute_value_sv'),ref('attribute_value_rd'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_DN0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DN0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_rd'),ref('attribute_value_gr'),ref('attribute_value_bl'),ref('attribute_value_bk'),ref('attribute_value_ag'),ref('attribute_value_00'),ref('attribute_value_99')])]" />
+		</record>
+		<record id="warna_DN1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DN1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_96'),ref('attribute_value_91'),ref('attribute_value_wh'),ref('attribute_value_rd'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_DP0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DP0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_rd'),ref('attribute_value_bk'),ref('attribute_value_00')])]" />
+		</record>
+		<record id="warna_DPA" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DPA" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_po')])]" />
+		</record>
+		<record id="warna_DPB" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DPB" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_pd')])]" />
+		</record>
+		<record id="warna_DR0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DR0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_rd')])]" />
+		</record>
+		<record id="warna_DRA" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DRA" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_pd')])]" />
+		</record>
+		<record id="warna_DRB" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DRB" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_po')])]" />
+		</record>
+		<record id="warna_DS0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DS0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_rd')])]" />
+		</record>
+		<record id="warna_DSA" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DSA" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_pd')])]" />
+		</record>
+		<record id="warna_DSB" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DSB" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_po')])]" />
+		</record>
+		<record id="warna_DT0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_DT0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_wh'),ref('attribute_value_rd'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_FA0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_FA0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_wh'),ref('attribute_value_sv'),ref('attribute_value_gd'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_FC0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_FC0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_99'),ref('attribute_value_pv'),ref('attribute_value_bh'),ref('attribute_value_mh'),ref('attribute_value_hs')])]" />
+		</record>
+		<record id="warna_FC1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_FC1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_ph'),ref('attribute_value_gh'),ref('attribute_value_mh'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_FD0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_FD0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_99'),ref('attribute_value_ps'),ref('attribute_value_vs'),ref('attribute_value_hm')])]" />
+		</record>
+		<record id="warna_FD1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_FD1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_pm'),ref('attribute_value_vs'),ref('attribute_value_hm')])]" />
+		</record>
+		<record id="warna_FE0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_FE0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_99'),ref('attribute_value_pr'),ref('attribute_value_ps'),ref('attribute_value_ms'),ref('attribute_value_hs')])]" />
+		</record>
+		<record id="warna_FE1" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_FE1" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_hs'),ref('attribute_value_ms'),ref('attribute_value_pb'),ref('attribute_value_pf'),ref('attribute_value_pj')])]" />
+		</record>
+		<record id="warna_FE2" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_FE2" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_ph'),ref('attribute_value_mh'),ref('attribute_value_bp'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_FF0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_FF0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_99'),ref('attribute_value_bg'),ref('attribute_value_bs'),ref('attribute_value_br'),ref('attribute_value_bb')])]" />
+		</record>
+		<record id="warna_FF2" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_FF2" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_or'),ref('attribute_value_br'),ref('attribute_value_bg'),ref('attribute_value_bb')])]" />
+		</record>
+		<record id="warna_FG0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_FG0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_95'),ref('attribute_value_99'),ref('attribute_value_hm'),ref('attribute_value_hb'),ref('attribute_value_ha'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_FG2" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_FG2" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_or'),ref('attribute_value_hm'),ref('attribute_value_hh'),ref('attribute_value_hb'),ref('attribute_value_bk'),ref('attribute_value_95')])]" />
+		</record>
+		<record id="warna_FH0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_FH0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_99'),ref('attribute_value_hm'),ref('attribute_value_hb'),ref('attribute_value_ha'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_FH2" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_FH2" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_hm'),ref('attribute_value_hh'),ref('attribute_value_hb'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_FJ0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_FJ0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_99'),ref('attribute_value_gh'),ref('attribute_value_ph'),ref('attribute_value_bh'),ref('attribute_value_mh'),ref('attribute_value_br')])]" />
+		</record>
+		<record id="warna_FK0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_FK0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_99'),ref('attribute_value_gh'),ref('attribute_value_ph'),ref('attribute_value_bh'),ref('attribute_value_mh'),ref('attribute_value_br')])]" />
+		</record>
+		<record id="warna_FL0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_FL0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_99'),ref('attribute_value_00'),ref('attribute_value_pj'),ref('attribute_value_sa'),ref('attribute_value_sb'),ref('attribute_value_pm')])]" />
+		</record>
+		<record id="warna_FM2" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_FM2" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_mh'),ref('attribute_value_ch'),ref('attribute_value_br')])]" />
+		</record>
+		<record id="warna_FM3" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_FM3" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_bv'),ref('attribute_value_br'),ref('attribute_value_bb'),ref('attribute_value_00')])]" />
+		</record>
+		<record id="warna_FN0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_FN0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_mk'),ref('attribute_value_kc'),ref('attribute_value_hw'),ref('attribute_value_bc'),ref('attribute_value_00')])]" />
+		</record>
+		<record id="warna_FP0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_FP0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_99'),ref('attribute_value_ht'),ref('attribute_value_bz'),ref('attribute_value_ms'),ref('attribute_value_hm'),ref('attribute_value_hs'),ref('attribute_value_00')])]" />
+		</record>
+		<record id="warna_FPA" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_FPA" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_99'),ref('attribute_value_oh'),ref('attribute_value_00')])]" />
+		</record>
+		<record id="warna_FR2" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_FR2" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_ph'),ref('attribute_value_mh'),ref('attribute_value_br'),ref('attribute_value_00')])]" />
+		</record>
+		<record id="warna_FV0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_FV0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_wh'),ref('attribute_value_rd'),ref('attribute_value_bk'),ref('attribute_value_00')])]" />
+		</record>
+		<record id="warna_FY0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_FY0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_wh'),ref('attribute_value_rd'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_GB0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_GB0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_br'),ref('attribute_value_bg'),ref('attribute_value_bb'),ref('attribute_value_00')])]" />
+		</record>
+		<record id="warna_GC0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_GC0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_mh'),ref('attribute_value_gh'),ref('attribute_value_bk'),ref('attribute_value_bh'),ref('attribute_value_00')])]" />
+		</record>
+		<record id="warna_GD0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_GD0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_mh'),ref('attribute_value_gh'),ref('attribute_value_bk'),ref('attribute_value_bh'),ref('attribute_value_00')])]" />
+		</record>
+		<record id="warna_GE0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_GE0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_mh'),ref('attribute_value_bk'),ref('attribute_value_bh'),ref('attribute_value_00')])]" />
+		</record>
+		<record id="warna_GF0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_GF0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_ph'),ref('attribute_value_mh'),ref('attribute_value_bk'),ref('attribute_value_bh'),ref('attribute_value_00')])]" />
+		</record>
+		<record id="warna_GG0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_GG0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_pm'),ref('attribute_value_hm'),ref('attribute_value_00')])]" />
+		</record>
+		<record id="warna_GH0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_GH0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_pm'),ref('attribute_value_hm'),ref('attribute_value_00')])]" />
+		</record>
+		<record id="warna_GHA" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_GHA" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_oh'),ref('attribute_value_00')])]" />
+		</record>
+		<record id="warna_GJ0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_GJ0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_wl'),ref('attribute_value_00'),ref('attribute_value_br'),ref('attribute_value_bl'),ref('attribute_value_rd'),ref('attribute_value_wr')])]" />
+		</record>
+		<record id="warna_GK0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_GK0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_ws'),ref('attribute_value_wl'),ref('attribute_value_bk'),ref('attribute_value_00'),ref('attribute_value_rd'),ref('attribute_value_wr')])]" />
+		</record>
+		<record id="warna_GL0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_GL0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_ws'),ref('attribute_value_bw'),ref('attribute_value_bk'),ref('attribute_value_00'),ref('attribute_value_bl'),ref('attribute_value_rd')])]" />
+		</record>
+		<record id="warna_GM0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_GM0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_wl'),ref('attribute_value_rd'),ref('attribute_value_br'),ref('attribute_value_99')])]" />
+		</record>
+		<record id="warna_GN0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_GN0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_wl'),ref('attribute_value_br'),ref('attribute_value_rd'),ref('attribute_value_99'),ref('attribute_value_wr')])]" />
+		</record>
+		<record id="warna_GNA" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_GNA" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_op'),ref('attribute_value_by'),ref('attribute_value_99')])]" />
+		</record>
+		<record id="warna_GP0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_GP0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_wl'),ref('attribute_value_br'),ref('attribute_value_rd'),ref('attribute_value_99'),ref('attribute_value_wr')])]" />
+		</record>
+		<record id="warna_GPA" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_GPA" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_op'),ref('attribute_value_by'),ref('attribute_value_99')])]" />
+		</record>
+		<record id="warna_GR0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_GR0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_bc'),ref('attribute_value_mk'),ref('attribute_value_kc'),ref('attribute_value_hw'),ref('attribute_value_99'),ref('attribute_value_00')])]" />
+		</record>
+		<record id="warna_GRA" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_GRA" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_cr'),ref('attribute_value_ob'),ref('attribute_value_mh'),ref('attribute_value_bc'),ref('attribute_value_hm'),ref('attribute_value_99'),ref('attribute_value_00')])]" />
+		</record>
+		<record id="warna_GS0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_GS0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_pm'),ref('attribute_value_pb'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_GT0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_GT0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_pb'),ref('attribute_value_pm'),ref('attribute_value_rd'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_GV0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_GV0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_pb'),ref('attribute_value_rd'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_GW0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_GW0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_bk'),ref('attribute_value_wh')])]" />
+		</record>
+		<record id="warna_GX0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_GX0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_wh'),ref('attribute_value_bk'),ref('attribute_value_rd')])]" />
+		</record>
+		<record id="warna_GY0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_GY0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_bl'),ref('attribute_value_wh'),ref('attribute_value_rd'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_GZ0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_GZ0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_wh'),ref('attribute_value_rd'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_GZA" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_GZA" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_wh'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_HA0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_HA0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_wh'),ref('attribute_value_bk')])]" />
+		</record>
+		<record id="warna_HB0" model="product.attribute.line">
+			<field name="product_tmpl_id" ref="temp_HB0" />
+			<field name="attribute_id" ref="attribute_warna" />
+			<field name="value_ids" eval="[(6,0,[ref('attribute_value_wh'),ref('attribute_value_rd'),ref('attribute_value_bk')])]" />
+		</record>
+	</data>
+</openerp>

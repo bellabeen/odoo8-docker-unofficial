@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+        <record id="view_teds_work_order_error_form" model="ir.ui.view">
+            <field name="name">teds.work.order.error.form</field>
+            <field name="model">wtc.work.order</field>
+            <field name="inherit_id" ref="wtc_work_order.view_wtc_work_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@class='oe_title']" position="after">
+                    <field name="is_error_wo" invisible="1"/>
+                    <div class="oe_inline oe_right oe_button_box" name="button_box">
+                        <button name="action_error_detail" type="object" class="oe_stat_button" icon="fa-list-ul" string="Log Error" attrs="{'invisible':[('is_error_wo','=',False)]}"/>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+	</data>
+</openerp>

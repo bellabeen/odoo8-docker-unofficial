@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data> 
+    	 <record id="account_voucher_custom_form" model="ir.ui.view">
+            <field name="name">account.voucher.custom.form</field>
+            <field name="model">account.voucher</field>
+            <field name="inherit_id" ref="account_voucher.view_vendor_receipt_form"/>
+            <field name="arch" type="xml">
+            	<field name="journal_id" position="replace"></field>
+            	<field name="amount" position="after">
+            		<field name="journal_id" domain="[('type','in',['bank','cash','edc']),('branch_id','=',branch_id)]"
+                                widget="selection"
+                                on_change="onchange_journal(journal_id, line_cr_ids, False, partner_id, date, amount, type, company_id, context)"
+                                string="Payment Method"/>
+          			<field name="journal_type" invisible="1"/>  		
+            	</field>	
+				<xpath expr="//page[@string='Payment Information']" position="after">
+					<page string="EDC" attrs="{'invisible':[('journal_type','!=','edc')]}">
+						<group>
+							<field name="card_no" attrs="{'required':[('journal_type','=','edc')],'readonly':[('state','!=','draft')]}"/>
+							<field name="card_name" attrs="{'required':[('journal_type','=','edc')],'readonly':[('state','!=','draft')]}"/>
+							<field name="approval_code" attrs="{'required':[('journal_type','=','edc')],'readonly':[('state','!=','draft')]}"/>
+							<field name="percentage" attrs="{'readonly':[('state','!=','draft')]}"/>
+							<field name="amount_edc" attrs="{'required':[('journal_type','=','edc')]}"/>						
+						</group>	
+					</page>						
+				</xpath>
+            </field>
+        </record>
+    	 <record id="account_journal_custom_form" model="ir.ui.view">
+            <field name="name">account.journal.custom.form</field>
+            <field name="model">account.journal</field>
+            <field name="inherit_id" ref="account.view_account_journal_form"/>
+            <field name="arch" type="xml">
+            	<field name="type" position="replace"/>
+            	<field name="code" position="after">
+            		<field name="type"/>
+            	</field>	
+            	
+				<field name="default_credit_account_id" position="after">
+					<field name="partner_id" attrs="{'required':[('type','=','edc')]}"/>
+				</field>					
+            </field>
+        </record>   
+         
+    	 <record id="account_voucher_dialog_custom_form" model="ir.ui.view">
+            <field name="name">account.voucher.dialog.custom.form</field>
+            <field name="model">account.voucher</field>
+            <field name="inherit_id" ref="account_voucher.view_vendor_receipt_dialog_form"/>
+            <field name="arch" type="xml">
+            	<field name="journal_id" position="replace"></field>
+            	<field name="amount" position="after">
+            		<field name="journal_id" domain="[('type','in',['bank', 'cash', 'edc']),('branch_id','=',branch_id)]"
+                                widget="selection"
+                                on_change="onchange_journal(journal_id, line_cr_ids, False, partner_id, date, amount, type, company_id, context)"
+                                string="Payment Method"/>
+          			<field name="journal_type" invisible="1"/>  		
+            	</field>	
+				<xpath expr="/form/notebook" position="before">
+					<notebook attrs="{'invisible':[('journal_type','!=','edc')]}">
+						<page string="EDC" >
+							<group>
+								<field name="card_no" attrs="{'required':[('journal_type','=','edc')],'readonly':[('state','!=','draft')]}"/>
+								<field name="card_name" attrs="{'required':[('journal_type','=','edc')],'readonly':[('state','!=','draft')]}"/>
+								<field name="approval_code" attrs="{'required':[('journal_type','=','edc')],'readonly':[('state','!=','draft')]}"/>
+								<field name="percentage" attrs="{'readonly':[('state','!=','draft')]}"/>
+								<field name="amount_edc" attrs="{'required':[('journal_type','=','edc')]}"/>						
+							</group>	
+						</page>		
+					</notebook>				
+				</xpath>
+            </field>
+        </record>        
+            
+	</data>
+</openerp>
+															

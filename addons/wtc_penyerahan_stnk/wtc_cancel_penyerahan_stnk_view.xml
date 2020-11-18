@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    
+    <!-- Penyerahan STNK Cancellation -->
+    	
+    	<record model="ir.ui.view" id="wtc_cancel_penyerahan_stnk_tree_view">
+            <field name="name">wtc.cancel.penyerahan.stnk.tree</field>
+            <field name="model">wtc.cancel.penyerahan.stnk</field>
+            <field name="arch" type="xml">
+                <tree string="Penyerahan STNK Cancel">
+                	<field name="name"/>
+                    <field name="branch_id"/>
+                    <field name="division"/>
+                	<field name="penyerahan_stnk_id"/>
+                    <field name="date"/>
+                    <field name="state"/>
+				</tree>
+			</field>
+        </record>
+        
+        <record id="view_wtc_cancel_penyerahan_stnk_search" model="ir.ui.view">
+            <field name="name">wtc.cancel.penyerahan.stnk.search</field>
+            <field name="model">wtc.cancel.penyerahan.stnk</field>
+            <field name="arch" type="xml">
+                <search string="Search Penyerahan STNK Cancel">
+                    <field name="name"/>
+                    <field name='branch_id'/>
+                    <field name='division'/>
+                    <field name='penyerahan_stnk_id'/>
+                    <field name='date'/>
+                    <field name='state'/>
+                    <group expand="0" string="Group By">
+                        <filter string="Branch" icon="terp-go-month" domain="[]" context="{'group_by':'branch_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="wtc_cancel_penyerahan_stnk_form_view">
+            <field name="name">wtc.cancel.penyerahan.stnk.form</field>
+            <field name="model">wtc.cancel.penyerahan.stnk</field>
+            <field name="arch" type="xml">
+                
+                <form string="Penyerahan STNK Cancel">
+                    <header>
+                        <button name="request_approval" string="RFA" states="draft" type="object" class="oe_highlight" groups="wtc_penyerahan_stnk.group_wtc_cancel_penyerahan_stnk_update"/>
+                        <button name="approve" string="Approve" states="waiting_for_approval" type="object" class="oe_highlight"/>
+                        <button name="%(wtc_approval.wtc_approval_reject_wizard_action)d" attrs="{'invisible': [('state','!=','waiting_for_approval')]}" string="Reject" type="action" context="{'model_name':'wtc.cancel.penyerahan.stnk','update_value':{'approval_state':'r','state':'draft'}}"/>
+                        <button name="confirm" string="Confirm" states="approved" type="object" class="oe_highlight" groups="wtc_penyerahan_stnk.group_wtc_cancel_penyerahan_stnk_update"/>
+                        <button name="%(wtc_approval.wtc_approval_cancel_wizard_action)d" attrs="{'invisible': [('state','!=','waiting_for_approval')]}" string="Cancel Approval" type="action" context="{'model_name':'wtc.cancel.penyerahan.stnk','update_value':{'approval_state':'b','state':'draft'}}" groups="wtc_penyerahan_stnk.group_wtc_cancel_penyerahan_stnk_update"/>
+                        <button name="action_print_form" string="Print Form" type="object" states="waiting_for_approval"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,waiting_for_approval,approved,confirmed"/>
+                    </header>
+                    <sheet>
+                    	<div class="oe_title">                      
+		       				<h1>
+					 			<field name="name" class="oe_inline" readonly="1"/>	
+		    			    </h1>
+	                    </div>
+                    	<group col="4">
+                            <field name="branch_id" options="{'no_create':True,'no_open':True}" required="True" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="division" required="True" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="penyerahan_stnk_id" required="True" options="{'no_create':True,'no_open':True}" domain="[('state','=','posted'),('branch_id','=',branch_id),('division','=',division)]" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="lokasi_stnk_id" options="{'no_create':True,'no_open':True}" required="True" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="approval_state"/>
+                            <field name="date" readonly="True"/>
+                            <field name="reason" attrs="{'readonly':[('state','!=','draft')]}" required="1"/>
+
+                        </group>
+                        <notebook>
+                        	<page string="Approval">
+								<field name="approval_ids">
+									<tree string="Approval" editable="bottom" create="false" edit="false" delete="false" >
+										<field name="group_id"/>
+										<field name="branch_id"/>
+										<field name="division"/>
+										<field name="limit"/>
+										<field name="sts"/>
+										<field name="reason"/>
+										<field name="pelaksana_id"/>
+										<field name="tanggal"/>
+									</tree>
+								</field>
+							</page>
+							<page string="Audit Trail">
+								<group>
+									<group>
+										<field name="create_uid" readonly="1"></field>
+										<field name="create_date" readonly="1"></field>
+										<field name="confirm_uid" readonly="1"></field>
+										<field name="confirm_date" readonly="1"></field>
+									</group>
+									<group>
+										<field name="write_uid" readonly="1"></field>
+										<field name="write_date" readonly="1"></field>
+									</group>
+								</group>
+							</page>
+                        </notebook>
+                    </sheet>
+                </form>
+                
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window" id="wtc_cancel_penyerahan_stnk_action">
+            <field name="name">Cancel Penyerahan STNK</field>
+            <field name="res_model">wtc.cancel.penyerahan.stnk</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{}</field>
+            <field name="domain">[]</field>
+        </record>
+        
+        <record id="wtc_cancel_penyerahan_stnk_action_tree" model="ir.actions.act_window.view">
+            <field eval="1" name="sequence"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="wtc_cancel_penyerahan_stnk_tree_view"/>
+            <field name="act_window_id" ref="wtc_cancel_penyerahan_stnk_action"/>
+        </record>
+        
+        <record id="wtc_disbursement_cancel_action_form" model="ir.actions.act_window.view">
+            <field eval="2" name="sequence"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="wtc_cancel_penyerahan_stnk_form_view"/>
+            <field name="act_window_id" ref="wtc_cancel_penyerahan_stnk_action"/>
+        </record>
+        
+        <menuitem action="wtc_cancel_penyerahan_stnk_action" id="wtc_cancel_penyerahan_stnk_menu" parent="wtc_dealer_menu.stnk_bpkb_proses_stnk_menu" sequence="50"/>
+	</data>
+</openerp>

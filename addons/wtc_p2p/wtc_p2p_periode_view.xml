@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    	
+        <record id="view_wtc_p2p_periode_tree" model="ir.ui.view">
+            <field name="name">wtc.p2p.periode.line.tree</field>
+            <field name="model">wtc.p2p.periode</field>
+            <field eval="1" name="priority"/>
+            <field name="arch" type="xml">
+                <tree string="P2P Periode" create="true" editable="top">
+                    <field name="name" required="1" placeholder="Contoh : 201505" />
+                    <field name="start_date" required="1"/>
+                    <field name="end_date" required="1"/>
+                    <field name="periode_start_date" required="1"/>
+                    <field name="periode_end_date" required="1"/>                    
+                </tree>
+            </field>
+        </record>    	
+ 
+		<record model="ir.ui.view" id="wtc_p2p_periode_form_view">
+		    <field name="name">wtc.p2p.periode.form</field>
+		    <field name="model">wtc.p2p.periode</field>
+		    <field name="arch" type="xml">
+		        <form string="P2P Periode">	        	
+		        	<sheet>
+			        	<div class="oe_title">
+			        		<h2>
+				                <label string="P2P Periode"/>    			
+			 				</h2>
+			        	</div>       
+						<group>   
+							<group colspan="2">
+								<field name="name" required="1" placeholder="Contoh : 201505" />
+							</group>            
+	                    	<group>
+                    			<field name="start_date" required="1" />                  			
+                    			<field name="end_date" required="1" ></field>
+							</group>  
+	                    	<group>
+                    			<field name="periode_start_date" required="1" />                  			
+                    			<field name="periode_end_date" required="1" ></field>
+							</group> 							
+						</group>	
+						
+						<notebook colspan="5">
+							<page string="Audit Trail">
+								<group>
+									<group>
+										<field name="create_uid" readonly="1"></field>
+										<field name="create_date" readonly="1"></field>
+									</group>
+									<group>							
+										<field name="write_uid" readonly="1"></field>
+										<field name="write_date" readonly="1"></field>
+									</group>
+								</group>
+							</page>			                    
+		                </notebook>				
+		           </sheet>
+		        </form>
+		    </field>
+		</record>
+
+ 		<record id="view_wtc_p2p_periode_filter" model="ir.ui.view">
+            <field name="name">p2p.config.list.select</field>
+            <field name="model">wtc.p2p.periode</field>
+            <field name="arch" type="xml">
+                <search string="Search P2P Periode">
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>		
+		<record model="ir.actions.act_window" id="wtc_p2p_periode_action">
+		    <field name="name">P2P Periode</field>
+		    <field name="res_model">wtc.p2p.periode</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		    <field name="search_view_id" ref="view_wtc_p2p_periode_filter"/>
+		</record>
+					
+		<menuitem id="p2p_periode_submenu" name="P2P Periode" parent="wtc_dealer_menu.p2p_configuration_menu"  action="wtc_p2p_periode_action" sequence="30"/>    	
+    </data>
+</openerp>
+    

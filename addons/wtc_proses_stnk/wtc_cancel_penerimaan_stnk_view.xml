@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data> 
+		<record model="ir.ui.view" id="wtc_cancel_penerimaan_stnk_form_view">
+		    <field name="name">wtc.cancel.penerimaan.stnk.form</field>
+		    <field name="model">wtc.cancel.penerimaan.stnk</field>
+		    <field name="arch" type="xml">
+		        <form string="Cancel Penerimaan STNK">
+					<header>
+							<button name="wtc_cancel_penerimaan_stnk" states='draft' groups="wtc_proses_stnk.group_wtc_cancel_penerimaan_stnk_post" type="object" string="Post" class="oe_highlight"/>		
+							<field name="state" widget="statusbar" statusbar_visible="draft,post" statusbar_colors='{"draft":"red","posy":"blue"}'/>	
+	           		</header>	
+	           		<sheet>	        	
+				        	<div class="oe_title">
+				        		<h2>
+					                <label string="Cancel Penerimaan STNK"/>    			
+					 				<field name="name" class="oe_inline" readonly='1'/>
+				 				</h2>
+				        	</div>	
+				        	<group>	
+				        		<group>
+				            		<field name="penerimaan_stnk_id" required='1' options="{'no_create': True,'no_open': True}" attrs="{'readonly': [('state','!=','draft')]}"/>
+		                        </group>
+			            	</group>
+			            	<notebook>
+			            		<page string='Engine Line'>
+				            	<field colspan="4" name="cancel_line" required='1' nolabel="1" widget="one2many_list" attrs="{'readonly': [('state','!=','draft')]}">
+		                            <tree string="" editable="top">
+						                <field name="name" options="{'no_create': True,'no_open': True}" on_change="onchange_engine(name)" string="Engine No"/>
+										<field name="chassis_no" readonly='1'/>
+		                            </tree>
+		                        </field>			            		
+			            		</page>
+			            		<page string="Audit Trail">
+									<group>
+										<group>
+											<field name="create_uid" readonly="1"></field>
+											<field name="create_date" readonly="1"></field>
+											<field name="confirm_uid" readonly="1"></field>
+											<field name="confirm_date" readonly="1"></field>
+										</group>
+										<group>							
+											<field name="write_uid" readonly="1"></field>
+											<field name="write_date" readonly="1"></field>
+										</group>
+									</group>
+								</page>
+			            	</notebook>				            	
+		            </sheet>	
+		        </form>
+		    </field>
+		</record>
+
+		<record id="view_cancel_penerimaan_stnk_filter" model="ir.ui.view">
+            <field name="name">cancel.penerimaan.stnk.filter</field>
+            <field name="model">wtc.cancel.penerimaan.stnk</field>
+            <field name="arch" type="xml">
+                <search string="Search">
+                    <field name="name"/>
+                    <field name="penerimaan_stnk_id"/>
+                    <filter name="draft" string="Draft" domain="[('state','=','draft')]"/>
+                    <filter name="post" string="Posted" domain="[('state','=','post')]"/>
+                </search>
+            </field>
+        </record>
+			
+		<record model="ir.ui.view" id="cancel_penerimaan_stnk_tree_view">
+		    <field name="name">cancel.penerimaan.stnk.tree</field>
+		    <field name="model">wtc.cancel.penerimaan.stnk</field>
+		    <field name="arch" type="xml">
+		        <tree string="List Cancel Penerimaan STNK">
+		        	<field name="name"/>
+		            <field name="penerimaan_stnk_id"/>
+					<field name="state"/>		            	            
+		        </tree>
+		     </field>
+		</record>
+				
+		<record model="ir.actions.act_window" id="wtc_cancel_penerimaan_stnk_wizard_action">
+		    <field name="name">Cancel Penerimaan STNK</field>
+		    <field name="res_model">wtc.cancel.penerimaan.stnk</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		</record>
+				    	
+		<menuitem id="cancel_penerimaan_stnk_submenu" name="Cancel Penerimaan STNK" parent="wtc_dealer_menu.stnk_bpkb_proses_stnk_menu"  action="wtc_cancel_penerimaan_stnk_wizard_action" sequence="31"/> 				  
+	</data>
+</openerp>
+							
+			

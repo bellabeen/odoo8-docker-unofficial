@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record id="view_teds_so_dg_bakso_wizard" model="ir.ui.view">
+			<field name="name">teds.so.dg.bakso.wizard</field>
+			<field name="model">teds.stock.opname.dg.bakso.wizard</field>
+			<field name="arch" type="xml">
+				<form string="Berita Acara SO">
+					<sheet>
+						<group>
+							<field name="opname_id" readonly="1" options="{'no_open':True,'no_create':True}"/>
+							<field name="note_bakso"/>
+						</group>
+						<footer>
+		                    <button name="action_submit_bakso" string="Print" type="object" class="oe_highlight" />
+		                    <button string="Close" class="oe_link" special="cancel" />
+		                </footer>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<record id="view_teds_stock_opname_direct_gift_tree" model="ir.ui.view">
+			<field name="name">teds.stock.opname.direct.gift.tree</field>
+			<field name="model">teds.stock.opname.direct.gift</field>
+			<field name="arch" type="xml">
+				<tree string="Stock Opname Direct Gift">
+					<field name="name"/>
+					<field name="branch_id"/>
+					<field name="date"/>
+					<field name="generate_date"/>
+					<field name="state"/>
+				</tree>
+			</field>
+		</record>
+		
+		<record id="view_teds_stock_opname_direct_gift_form" model="ir.ui.view">
+			<field name="name">teds.stock.opname.direct.gift.form</field>
+			<field name="model">teds.stock.opname.direct.gift</field>
+			<field name="arch" type="xml">
+				<form string="Stock Opname BPKB">
+					<header>
+	                	<button name="action_generate_stock" attrs="{'invisible':['|',('create_date','=',False),('generate_date','!=',False)]}" string="Generate Stock" class="oe_highlight" type="object" groups="teds_stock_opname_direct_gift.group_teds_so_dg_generate_stock_button"/>
+
+	                	<button name="action_post" attrs="{'invisible':['|',('state','!=','draft'),('generate_date','=',False)]}" string="Post" class="oe_highlight" type="object" confirm="Harap pastikan kembali data direct gift tidak tercatat sistem ! Untuk Direct Gift yang tidak tercatat dalam sistem wajib diisi pada kolom Direct Gift Tidak Tercatat Sistem !!!" groups="teds_stock_opname_direct_gift.group_teds_so_dg_posted_button"/>
+
+	                	<button name="action_print_validasi" states="posted" string="Print Validasi" class="oe_highlight" type="object"/>
+
+	                	<button name="action_bakso" states="posted" string="Berita Acara SO" type="object"/>
+
+	                	<button name="action_download_excel" type="object" string="Download Excel" states="posted"/>
+	                	<field name="state" widget="statusbar" statusbar_visible="draft,posted"/>
+	                </header>
+					<div class="oe_title">                      
+							<h1>
+							<field name="name" readonly="1"/>
+						</h1>
+					</div>
+					<group>
+						<group>
+							<field name="branch_id" options="{'no_open':True,'no_create':True}" attrs="{'readonly':[('create_date','!=',False)]}" required="1"/>
+							<field name="create_date" invisible="1"/>
+							<field name="staff_bbn" required="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+							<field name="adh" required="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+							<field name="soh" required="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+						</group>
+						<group>
+							<field name="date" readonly="1"/>
+							<field name="division" required="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+							<field name="generate_date" readonly="1" attrs="{'invisible':[('generate_date','=',False)]}"/>
+						</group>
+					</group>
+					<notebook>
+						<page string="DG Stock">
+							<field name="detail_ids" nolabel="1" attrs="{'readonly':[('state','!=','draft')]}">
+								<tree create="false" delete="false" editable="top">
+									<field name="product_id" options="{'no_open':True,'no_create':True}" readonly="1"/>
+									<field name="name" readonly="1"/>
+									<field name="aging" readonly="1"/>
+									<field name="harga_satuan" readonly="1"/>
+									<field name="qty" readonly="1" sum="Total"/>
+									<field name="amount" readonly="1" sum="Total"/>
+									<field name="qty_fisik_baik" required="1" sum="Total"/>
+									<field name="qty_fisik_rusak" required="1" sum="Total"/>
+									<field name="qty_fisik_total" readonly="1" sum="Total"/>
+									<field name="amount_total" readonly="1" sum="Total"/>
+									<field name="selisih_qty" readonly="1" sum="Total"/>
+									<field name="selisih_amount" readonly="1" sum="Total"/>
+									<field name="saldo_log_book" required="1" sum="Total"/>
+								</tree>
+							</field>
+						</page>
+						<page string="DG Tidak Tercatat Sistem">
+							<field name="other_dg_ids" attrs="{'readonly':[('state','!=','draft')]}">
+								<tree editable="top">
+									<field name="nama_product" required="1"/>
+									<field name="qty_fisik_baik" required="1" sum="Total"/>
+									<field name="qty_fisik_rusak" required="1" sum="Total"/>
+									<field name="qty_fisik_total" readonly="1" sum="Total"/>
+									<field name="saldo_log_book" required="1" sum="Total"/>
+								</tree>
+							</field>
+						</page>
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"/>
+									<field name="create_date" readonly="1"/>
+									<field name="post_uid" readonly="1" attrs="{'invisible':[('post_uid','=',False)]}"/>
+									<field name="post_date" readonly="1" attrs="{'invisible':[('post_date','=',False)]}"/>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>		          
+					</notebook>
+				</form>
+			</field>
+		</record>
+		
+		<record id="action_teds_stock_opname_direct_gift" model="ir.actions.act_window">
+        	<field name="name">Direct Gift</field>
+			<field name="res_model">teds.stock.opname.direct.gift</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<!-- Print Validasi -->
+		<report 
+            string="Print Validasi SO DG" 
+            id="action_teds_stock_opname_dg_print_validasi" 
+            model="teds.stock.opname.direct.gift" 
+            report_type="qweb-pdf"
+            name="teds_stock_opname_direct_gift.teds_stock_opname_dg_print_validasi" 
+            file="teds_stock_opname_direct_gift.teds_stock_opname_dg_print_validasi" 
+            menu="False"/>
+		
+		<!-- Print Bakso -->
+		<report 
+            string="Print Bakso DG" 
+            id="action_teds_stock_opname_dg_print_bakso" 
+            model="teds.stock.opname.dg.bakso.wizard" 
+            report_type="qweb-pdf"
+            name="teds_stock_opname_direct_gift.teds_stock_opname_dg_print_bakso" 
+            file="teds_stock_opname_direct_gift.teds_stock_opname_dg_print_bakso" 
+            menu="False"/>
+
+		<menuitem id="teds_stock_opname_direct_gift_menuitem" action="action_teds_stock_opname_direct_gift" parent="teds_stock_opname.stock_opname_sub_menu" sequence="3"/>
+
+	</data>
+</openerp>

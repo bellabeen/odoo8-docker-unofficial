@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<!-- views and menus -->
+		<record id="teds_collecting_cancel_view_tree" model="ir.ui.view">
+			<field name="name">Collecting AR/AP</field>
+			<field name="model">teds.collecting.cancel</field>
+			<field name="arch" type="xml">
+				<tree string="Collecting AR/AP Cancel" default_order="date desc">
+					<field name="name"/>
+					<field name="division"/>
+					<field name="date"/>
+					<field name="state"/>
+				</tree>
+			</field>
+		</record>
+
+		<record id="teds_collecting_cancel_view_form" model="ir.ui.view">
+			<field name="name">Collecting AR/AP Cancel</field>
+			<field name="model">teds.collecting.cancel</field>
+			<field name="arch" type="xml">
+				<form string="Collecting AR/AP Cancel">
+					<header>
+						<button string="RFA" name="action_request_approval" type="object" states="draft" class="oe_highlight" />
+						<button string="Approve" name="action_approve" type="object" states="waiting_for_approval" class="oe_highlight" />
+						<button string="Reject" name="%(wtc_approval.wtc_approval_reject_wizard_action)d" type="action" attrs="{'invisible': [('state','!=','waiting_for_approval')]}" context="{'model_name':'teds.collecting.cancel','update_value':{'approval_state':'r','state':'draft'}}" />
+						<button string="Confirm" name="action_confirm" type="object" states="approved" class="oe_highlight" groups="teds_collecting.teds_collecting_cancel_group_confirm" />
+						<button string="Cancel Approval" attrs="{'invisible': [('state','!=','waiting_for_approval')]}" name="%(wtc_approval.wtc_approval_cancel_wizard_action)d" type="action" context="{'model_name':'teds.collecting.cancel','update_value':{'approval_state':'b','state':'draft'}}" groups="teds_collecting.teds_collecting_cancel_group_cancel_approval" />
+						<field name="state" widget="statusbar" statusbar_visible="draft,confirm" />
+					</header>
+					<sheet>
+						<div class="oe_title">
+							<h2>
+								<field name="name" class="oe_inline" />
+							</h2>
+						</div>
+						<group col="4" colspan="4">
+							<field name="branch_id" options="{'no_create': True,'no_open': True}" attrs="{'readonly': ['|',('state','!=','draft'),('name','!=',False)]}"/>
+							<field name="division" attrs="{'readonly': [('state','!=','draft')]}" />
+							<field name="collecting_id" options="{'no_create': True,'no_open': True}" attrs="{'readonly': [('state','!=','draft')]}" />
+							<field name="date" readonly="1"/>
+							<field name="approval_state" readonly="1" />
+							<field name="reason" />
+						</group>
+						<notebook>
+							<page string="Approval">
+								<field name="approval_ids">
+									<tree string="Approval" editable="bottom" create="false" edit="false" delete="false" >
+										<field name="group_id"/>
+										<field name="branch_id"/>
+										<field name="division"/>
+										<field name="limit"/>
+										<field name="sts"/>
+										<field name="reason"/>
+										<field name="pelaksana_id"/>
+										<field name="tanggal"/>
+									</tree>
+								</field>
+							</page>
+							<page string="Audit Trail">
+								<group>
+									<field name="create_uid" readonly="1"/>
+									<field name="create_date" readonly="1"/>
+									<field name="write_uid" readonly="1"/>
+									<field name="write_date" readonly="1"/>
+									<field name="confirm_uid" readonly="1"/>
+									<field name="confirm_date" readonly="1"/>
+								</group>
+							</page>
+						</notebook>
+					</sheet>
+					<div class="oe_chatter">
+					</div>
+				</form>
+			</field>
+		</record>
+
+		<!-- actions -->
+		<record id="teds_collecting_cancel_action" model="ir.actions.act_window">
+			<field name="name">Collecting AR/AP Cancel</field>
+			<field name="res_model">teds.collecting.cancel</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		
+		<menuitem
+			id="teds_collecting_cancel_menu_action"
+			name="Collecting AR/AP Cancel"
+			parent="wtc_dealer_menu.backoffice_nontrade_menu"
+			action="teds_collecting_cancel_action"
+			sequence="81"
+		/>
+	</data>
+</openerp>

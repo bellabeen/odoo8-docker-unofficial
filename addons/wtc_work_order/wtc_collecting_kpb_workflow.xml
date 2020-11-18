@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    
+    <!-- ##### Object ##### -->
+		<record id="wkf_collecting" model="workflow">
+		    <field name="name">wtc.collecting.kpb</field>
+		    <field name="osv">wtc.collecting.kpb</field>
+		    <field name="on_create">True</field>
+		</record>
+		
+		
+		<record id="act_co_draft" model="workflow.activity">
+		    <field name="wkf_id" ref="wkf_collecting"/>
+		    <field name="flow_start">True</field>
+		    <field name="name">draft</field>
+		</record>
+
+		<record id="act_co_invoice" model="workflow.activity">
+            <field name="wkf_id" ref="wkf_collecting"/>
+            <field name="name">invoice</field>
+            <field name="kind">subflow</field>
+            <field name="subflow_id" search="[('osv','=','account.invoice')]"/>
+            <field name="action">invoice_create()</field>
+        </record>
+        
+        <record id="act_co_invoice_done" model="workflow.activity">
+            <field name="wkf_id" ref="wkf_collecting"/>
+            <field name="name">invoice_done</field>
+            <field name="action">invoice_done()</field>
+            <field name="kind">function</field>
+        </record>
+        
+        <record id="act_co_except_invoice" model="workflow.activity">
+            <field name="wkf_id" ref="wkf_collecting"/>
+            <field name="name">except_invoice</field>
+            <field name="kind">function</field>
+            <field name="action">write({'state':'except_invoice'})</field>
+        </record>
+        
+        <record id="act_co_done" model="workflow.activity">
+		    <field name="wkf_id" ref="wkf_collecting"/>
+		    <field name="flow_start">True</field>
+		    <field name="name">done</field>
+		</record>
+        
+        
+        
+        
+		
+		
+		
+		
+		
+		<record id="trans_co_draft_to_act_co_invoice" model="workflow.transition">
+			    <field name="act_from" ref="act_co_draft"/>
+			    <field name="act_to" ref="act_co_invoice"/>
+			    <field name="signal">invoice_create</field>
+		</record>
+		
+
+		<record id="trans_co_act_invoice_to_act_co_invoice_done" model="workflow.transition">
+		       <field name="act_from" ref="act_co_invoice"/>
+		       <field name="act_to" ref="act_co_invoice_done"/>
+		       <field name="signal">subflow.paid</field>
+		</record>
+		
+		<record id="trans_co_invoice_except_invoice" model="workflow.transition">
+            <field name="act_from" ref="act_co_invoice"/>
+            <field name="act_to" ref="act_co_except_invoice"/>
+            <field name="signal">subflow.cancel</field>
+        </record>
+        
+        <record id="trans_co_except_invoice_invoice_done" model="workflow.transition">
+            <field name="act_from" ref="act_co_except_invoice"/>
+            <field name="act_to" ref="act_co_invoice_done"/>
+            <field name="signal">invoice_ok</field>
+        </record>
+        
+        <record id="trans_co_invoice_done_to_act_done" model="workflow.transition">
+            <field name="act_from" ref="act_co_invoice_done"/>
+            <field name="act_to" ref="act_co_done"/>
+        </record>
+    
+    
+
+    </data>
+</openerp>

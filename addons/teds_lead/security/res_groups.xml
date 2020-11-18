@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+	<!-- teds_lead -->	
+		<record id="group_teds_lead_read" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Teds Buku Tamu Read</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_lead_menuitem'))]"/>  
+		</record>
+
+		<record id="access_teds_lead_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_lead"/>
+      		<field name="name">teds_lead read</field> 
+      		<field name="group_id" ref="group_teds_lead_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="access_teds_lead_activity_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_lead_activity"/>
+      		<field name="name">teds_lead_activity read</field> 
+      		<field name="group_id" ref="group_teds_lead_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="group_teds_lead_update" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Buku Tamu Update</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_lead_menuitem'))]"/>  
+		</record>
+
+		<record id="access_teds_lead_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_lead"/>
+      		<field name="name">teds_lead update</field> 
+      		<field name="group_id" ref="group_teds_lead_update"/>  
+      		<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field>
+		</record>
+
+		<record id="access_teds_lead_activity_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_lead_activity"/>
+      		<field name="name">teds_lead_activity update</field> 
+      		<field name="group_id" ref="group_teds_lead_update"/>  
+      		<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field>
+		</record>
+		
+		<record id="group_teds_lead_delete" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Buku Tamu Delete</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_lead_menuitem'))]"/>  
+		</record>
+
+		<record id="access_teds_lead_delete" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_lead"/>
+      		<field name="name">teds_lead delete</field> 
+      		<field name="group_id" ref="group_teds_lead_delete"/>  
+      		<field name="perm_unlink">1</field> 
+		</record>
+		
+		<record id="access_teds_lead_activity_delete" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_lead_activity"/>
+      		<field name="name">teds_lead_activity delete</field> 
+      		<field name="group_id" ref="group_teds_lead_delete"/>  
+      		<field name="perm_unlink">1</field> 
+		</record>
+
+	<!-- teds_lead_stage -->
+		<record id="group_teds_lead_stage_read" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Teds Buku Tamu Stage Read</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_lead_stage_menuitem'))]"/>  
+		</record>
+
+		<record id="access_teds_lead_stage_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_lead_stage"/>
+      		<field name="name">teds_lead_stage read</field> 
+      		<field name="group_id" ref="group_teds_lead_stage_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="group_teds_lead_stage_update" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Buku Tamu Stage Update</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_lead_stage_menuitem'))]"/>  
+		</record>
+
+		<record id="access_teds_lead_stage_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_lead_stage"/>
+      		<field name="name">teds_lead_stage update</field> 
+      		<field name="group_id" ref="group_teds_lead_stage_update"/>  
+      		<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field>
+		</record>
+
+		<record id="group_teds_lead_stage_delete" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Buku Tamu Stage Delete</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_lead_stage_menuitem'))]"/>  
+		</record>
+
+		<record id="access_teds_lead_stage_delete" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_lead_stage"/>
+      		<field name="name">teds_lead_stage delete</field> 
+      		<field name="group_id" ref="group_teds_lead_stage_delete"/>  
+      		<field name="perm_unlink">1</field> 
+		</record>
+
+	<!-- teds_master_result_lead_activity -->
+		<record id="group_teds_master_result_lead_activity_read" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Teds Buku Tamu Result Activity Read</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_master_lead_activity_menuitem'))]"/>  
+		</record>
+
+		<record id="access_teds_master_result_lead_activity_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_master_result_lead_activity"/>
+      		<field name="name">teds_master_result_lead_activity read</field> 
+      		<field name="group_id" ref="group_teds_master_result_lead_activity_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="group_teds_master_result_lead_activity_update" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Buku Tamu Result Activity Update</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_master_lead_activity_menuitem'))]"/>  
+		</record>
+
+		<record id="access_teds_master_result_lead_activity_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_master_result_lead_activity"/>
+      		<field name="name">teds_master_result_lead_activity update</field> 
+      		<field name="group_id" ref="group_teds_master_result_lead_activity_update"/>  
+      		<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field>
+		</record>
+
+		<record id="group_teds_master_result_lead_activity_delete" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Buku Tamu Result Activity Delete</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_master_lead_activity_menuitem'))]"/>  
+		</record>
+
+		<record id="access_teds_master_result_lead_activity_delete" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_master_result_lead_activity"/>
+      		<field name="name">teds_master_result_lead_activity delete</field> 
+      		<field name="group_id" ref="group_teds_master_result_lead_activity_delete"/>  
+      		<field name="perm_unlink">1</field> 
+		</record>
+	
+		<!-- Laporan Buku Tamu -->
+		<record id="group_teds_lead_report_wizard" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Laporan Buku Tamu Wizard</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_lead_report_wizard_menu'))]"/>  
+		</record>
+		
+		<record id="wtc_branch.group_sys_admin" model="res.groups">
+            <field name="implied_ids" eval="[
+                (4,ref('group_teds_lead_read')),
+                (4,ref('group_teds_lead_update')),
+                (4,ref('group_teds_lead_delete')),
+                (4,ref('group_teds_lead_stage_read')),
+                (4,ref('group_teds_lead_stage_update')),
+                (4,ref('group_teds_lead_stage_delete')),
+                (4,ref('group_teds_master_result_lead_activity_read')),
+                (4,ref('group_teds_master_result_lead_activity_update')),
+                (4,ref('group_teds_master_result_lead_activity_delete')),
+            ]"/> 
+            </record> 
+	</data>
+</openerp>

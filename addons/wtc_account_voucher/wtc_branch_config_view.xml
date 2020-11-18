@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+		<record id="wtc_advance_payment_branch_config_view" model="ir.ui.view">
+            <field name="name">wtc.branch.config.advance.paymentview</field>
+            <field name="model">wtc.branch.config</field>
+            <field name="inherit_id" ref="wtc_branch.wtc_branch_config_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/sheet/group" position="after">
+                  
+                   		<group string="Payment Request">
+                   			<field name="wtc_payment_request_account_id"/>
+                   		</group>
+                   		<group string="Other Receivable">
+                   			<field name="wtc_other_receivable_account_id"/>
+                   		</group>
+                   		<group string="Pembulatan">
+                			<field name="wtc_account_voucher_pembulatan_account_id"/>
+                			<field name="nilai_pembulatan"/>
+                   		</group>
+                 </xpath>
+            </field>
+        </record>
+</data>
+</openerp>

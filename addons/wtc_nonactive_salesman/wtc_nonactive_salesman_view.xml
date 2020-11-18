@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+	
+	<record model='ir.ui.view' id='wtc_nonactive_salesman_tree_view'>
+		<field name='name'>wtc.nonactive.salesman.tree</field>
+		<field name='model'>wtc.nonactive.salesman</field>
+		<field name='arch' type='xml'>
+			<tree string='Non Active Salesman'>
+				<field name='branch_id'/>
+				<field name='cut_off'/>
+				<field name="create_date"/>
+				<field name='state'/>
+			</tree>
+		</field>
+	</record>
+	
+    <record id="wtc_nonactive_salesman_search" model="ir.ui.view">
+        <field name="name">wtc.nonactive.salesman.search</field>
+        <field name="model">wtc.nonactive.salesman</field>
+        <field name="arch" type="xml">
+            <search string="Search Nonactive Salesman">
+                <field name='branch_id'/>            
+                <field name='create_date'/>
+                <field name='state'/>
+                <filter string="Draft" name="state_draft" domain="[('state','=','draft')]" />
+                <filter string="Confirmed" name="state_confirmed" domain="[('state','=','confirm')]" />           
+                <group expand="0" string="Group By">
+                    <filter string="Branch" icon="terp-go-month" domain="[]" context="{'group_by':'branch_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>      
+
+	<record model='ir.ui.view' id='wtc_nonactive_salesman_form_view'>
+		<field name='name'>wtc.nonactive.salesman.form</field>
+		<field name='model'>wtc.nonactive.salesman</field>
+		<field name='arch' type='xml'>
+			<form string="Nonactive Salesman">
+				<header>
+					<button name="get_detail" type="object" string="Get Detail" attrs="{'invisible':[('state','=','confirm')]}" />
+	                <button name="nonactive_confirm" type="object" state="draft" string="Confirm" icon="gtk-apply" attrs="{'invisible':[('state','=','confirm')]}"/>
+	                <field name="state" widget="statusbar" statusbar_visible="draft,confirm" statusbar_colors='{"draft":"red","done":"blue"}'/>
+	            </header>
+				<group col='4'>
+					<field name='branch_id' options="{'no_open':True,'no_create':True}" attrs="{'readonly':[('state','=','confirm')]}"/>
+					<field name='job_title' options="{'no_open':True,'no_create':True}" attrs="{'readonly':[('state','=','confirm')]}"/>
+					<field name='cut_off' attrs="{'readonly':[('state','=','confirm')]}"/>
+				</group>
+                <notebook colspan="5">
+                    <page string="List of Salesman" attrs="{'invisible': [('state','=','confirm')]}">
+                        <field name="user_ids" colspan="4" nolabel="1" widget="one2many_list">
+                        	<tree>
+                        		<field name="name"/>
+                        		<field name="login"/>
+                        		<field name="area_id"/>
+                        		<field name="login_date"/>
+                        	</tree>
+                        </field>
+                    </page>
+                	<page string='Nonactive Confirm' attrs="{'invisible': [('state','!=','confirm')]}">
+						<field name="nonactive_line_ids" nolabel="1" widget="one2many_list" options="{'no_create': True,'no_open':True}" attrs="{'readonly':[('state','=','confirm')]}">
+							<tree>
+								<field name='user_id'/>
+								<field name='sales_force'/>
+								<field name='tgl_masuk'/>
+								<field name='date_order'/>
+								<field name='threshold'/>
+								<field name='tgl_confirm'/>
+							</tree>
+						</field>
+					</page>
+                    <page string="Audit Trail">
+                        <group>
+                            <group>
+                                <field name="create_uid" readonly="1"></field>
+                                <field name="create_date" readonly="1"></field>                 
+                            </group>
+                            <group>
+                                <field name="write_uid" readonly="1"></field>
+                                <field name="write_date" readonly="1"></field>
+                            </group>
+                        </group>
+                    </page>
+                </notebook>
+			</form>
+		</field>
+	</record>
+	
+	<record model='ir.actions.act_window' id='nonactive_salesman_action'>
+		<field name='name'>Non Active Salesman</field>
+		<field name='res_model'>wtc.nonactive.salesman</field>
+		<field name='view_type'>form</field>
+		<field name='view_mode'>tree,form</field>
+	</record>
+	
+	<menuitem name='Non Active Salesman' id='wtc_nonactive_salesman_menu' parent='wtc_dealer_menu.ma_sales_menu' action='nonactive_salesman_action' sequence="5"/> 
+	
+	</data>
+</openerp>

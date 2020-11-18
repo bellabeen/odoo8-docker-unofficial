@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+	<!-- teds_master_mekanik_mitra -->	
+		<record id="group_teds_master_mekanik_mitra_read" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Master Mekanik Mitra Read</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_master_mekanik_mitra_menuitem'))]"/>  
+		</record>
+
+		<record id="access_teds_master_mekanik_mitra_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_master_mekanik_mitra"/>
+      		<field name="name">teds_master_mekanik_mitra read</field> 
+      		<field name="group_id" ref="group_teds_master_mekanik_mitra_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+
+		<record id="access_teds_mekanik_mitra_histrory_absensi_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_mekanik_mitra_histrory_absensi"/>
+      		<field name="name">teds_mekanik_mitra_histrory_absensi read</field> 
+      		<field name="group_id" ref="group_teds_master_mekanik_mitra_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="group_teds_master_mekanik_mitra_update" model="res.groups">
+    		<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Master Mekanik Mitra Update</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_master_mekanik_mitra_menuitem'))]"/>
+	      	<field name="implied_ids" eval="[(4, ref('group_teds_master_mekanik_mitra_read'))]"/>  
+		</record>
+		
+		<record id="access_teds_master_mekanik_mitra_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_master_mekanik_mitra"/>
+      		<field name="name">teds_master_mekanik_mitra update</field> 
+      		<field name="group_id" ref="group_teds_master_mekanik_mitra_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+		
+		<record id="access_teds_mekanik_mitra_histrory_absensi_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_mekanik_mitra_histrory_absensi"/>
+      		<field name="name">teds_mekanik_mitra_histrory_absensi update</field> 
+      		<field name="group_id" ref="group_teds_master_mekanik_mitra_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+		
+		<record id="group_teds_master_mekanik_mitra_delete" model="res.groups">
+    		<field name="category_id" ref="wtc_branch.tdm_role"/>
+      		<field name="name">Master Mekanik Mitra Delete</field> 
+      		<field name="menu_access" eval="[(4, ref('teds_master_mekanik_mitra_menuitem'))]"/>
+      		<field name="implied_ids" eval="[(4, ref('group_teds_master_mekanik_mitra_read'))]"/>  
+		</record>
+		
+		<record id="access_teds_master_mekanik_mitra_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_master_mekanik_mitra"/>
+      		<field name="name">teds_master_mekanik_mitra delete</field> 
+      		<field name="group_id" ref="group_teds_master_mekanik_mitra_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+		
+		<record id="access_teds_mekanik_mitra_histrory_absensi_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_mekanik_mitra_histrory_absensi"/>
+      		<field name="name">teds_mekanik_mitra_histrory_absensi delete</field> 
+      		<field name="group_id" ref="group_teds_master_mekanik_mitra_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+		
+	<!-- teds_matrix_mekanik_mitra -->	
+		<record id="group_teds_matrix_mekanik_mitra_read" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Master Matrix Mitra Read</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_matrix_mekanik_mitra_menuitem'))]"/>  
+		</record>
+
+		<record id="access_teds_matrix_mekanik_mitra_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_matrix_mekanik_mitra"/>
+      		<field name="name">teds_matrix_mekanik_mitra read</field> 
+      		<field name="group_id" ref="group_teds_matrix_mekanik_mitra_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="access_teds_matrix_mekanik_mitra_detail_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_matrix_mekanik_mitra_detail"/>
+      		<field name="name">teds_matrix_mekanik_mitra_detail read</field> 
+      		<field name="group_id" ref="group_teds_matrix_mekanik_mitra_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="group_teds_matrix_mekanik_mitra_update" model="res.groups">
+    		<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Matrix Mekanik Mitra Update</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_matrix_mekanik_mitra_menuitem'))]"/>
+	      	<field name="implied_ids" eval="[(4, ref('group_teds_matrix_mekanik_mitra_read'))]"/>  
+		</record>
+		
+		<record id="access_teds_matrix_mekanik_mitra_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_matrix_mekanik_mitra"/>
+      		<field name="name">teds_matrix_mekanik_mitra update</field> 
+      		<field name="group_id" ref="group_teds_matrix_mekanik_mitra_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+		
+		<record id="access_teds_matrix_mekanik_mitra_detail_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_matrix_mekanik_mitra_detail"/>
+      		<field name="name">teds_matrix_mekanik_mitra_detail update</field> 
+      		<field name="group_id" ref="group_teds_matrix_mekanik_mitra_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+		
+		<record id="group_teds_matrix_mekanik_mitra_delete" model="res.groups">
+    		<field name="category_id" ref="wtc_branch.tdm_role"/>
+      		<field name="name">Matrix Mekanik Mitra Delete</field> 
+      		<field name="menu_access" eval="[(4, ref('teds_matrix_mekanik_mitra_menuitem'))]"/>
+      		<field name="implied_ids" eval="[(4, ref('group_teds_matrix_mekanik_mitra_read'))]"/>  
+		</record>
+		
+		<record id="access_teds_matrix_mekanik_mitra_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_matrix_mekanik_mitra"/>
+      		<field name="name">teds_matrix_mekanik_mitra delete</field> 
+      		<field name="group_id" ref="group_teds_matrix_mekanik_mitra_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+		
+		<record id="access_teds_matrix_mekanik_mitra_detail_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_matrix_mekanik_mitra_detail"/>
+      		<field name="name">teds_matrix_mekanik_mitra_detail delete</field> 
+      		<field name="group_id" ref="group_teds_matrix_mekanik_mitra_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+
+
+	<!-- teds_report_mekanik_mitra_wizard -->	
+		<record id="group_teds_report_mekanik_mitra_wizard" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Report Mekanik Mitra Wizard</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_report_mekanik_mitra_wizard_menuitem'))]"/>  
+		</record>
+
+	<!-- view_teds_mekanik_mitra_absensi_wizard -->	
+		<record id="group_teds_mekanik_mitra_absensi_wizard" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Absensi Import Mekanik Mitra Wizard</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_mekanik_mitra_absensi_wizard_menuitem'))]"/>  
+		</record>
+
+	<!-- SYS ADMIN -->
+	 	<record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[
+				(4,ref('group_teds_master_mekanik_mitra_read')),
+				(4,ref('group_teds_master_mekanik_mitra_update')),
+				(4,ref('group_teds_master_mekanik_mitra_delete')),
+				(4,ref('group_teds_matrix_mekanik_mitra_read')),
+				(4,ref('group_teds_matrix_mekanik_mitra_update')),
+				(4,ref('group_teds_matrix_mekanik_mitra_delete')),
+				(4,ref('group_teds_report_mekanik_mitra_wizard')),
+				(4,ref('group_teds_mekanik_mitra_absensi_wizard')),
+			]"/> 
+		</record>
+	</data>
+</openerp>

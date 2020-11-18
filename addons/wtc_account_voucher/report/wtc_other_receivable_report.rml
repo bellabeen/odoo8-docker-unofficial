@@ -1,0 +1,246 @@
+<!DOCTYPE document SYSTEM "rml.dtd">
+<document filename="example_11.pdf">
+<template pageSize="(20cm, 29.7cm)" showBoundary="0" title="Other Receivable"  allowSplitting="20">
+<pageTemplate id="Layout1" >
+	<!-- three frames are defined here: -->
+	<frame id="frame_header" x1="0.0" y1="26.2cm" width="20cm" height="3cm"/>
+	<frame id="frame_content" x1="0.0" y1="15.5cm" width="20cm" height="10.7cm"/>
+	
+
+</pageTemplate>
+</template>
+<stylesheet>
+ <!-- Mendefiniskan Style Tabel -->
+    <blockTableStyle id="Table_No_Line">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <blockLeftPadding length="0.5mm"/>
+	  <blockRightPadding length="0.5mm"/>
+	  <blockTopPadding length="0.5mm"/>
+    </blockTableStyle>
+    
+     <!-- Mendefiniskan Style Tabel -->
+    <blockTableStyle id="Table_No_Line_Right">
+      <blockAlignment value="RIGHT"/>
+      <blockValign value="TOP"/>
+      <blockLeftPadding length="0.5mm"/>
+	  <blockRightPadding length="0.5mm"/>
+	  <blockTopPadding length="0.5mm"/>
+    </blockTableStyle>
+ 
+     
+    <blockTableStyle id="Table_Line">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <blockLeftPadding length="0.5mm"/>
+	  <blockRightPadding length="0.5mm"/>
+	  <blockTopPadding length="0.5mm"/>
+        <!-- Kolom ke-1 -->
+        <!-- atas --><lineStyle kind="LINEABOVE" colorName="#000000" start="0,0" stop="0,0"/>
+        <!-- kanan --><lineStyle kind="LINEBEFORE" colorName="#000000" start="1,-1" stop="1,-1"/>
+        <!-- bawah --><lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+        <!-- kiri --><lineStyle kind="LINEBEFORE" colorName="#000000" start="0,0" stop="0,0"/>
+        <!-- Kolom ke-2 -->
+        <!-- atas --><lineStyle kind="LINEABOVE" colorName="#000000" start="1,0" stop="1,0"/>
+        <!-- kanan --><lineStyle kind="LINEBEFORE" colorName="#000000" start="2,-1" stop="2,-1"/>
+        <!-- bawah --><lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+        <!-- kiri --><lineStyle kind="LINEBEFORE" colorName="#000000" start="1,0" stop="1,0"/>
+        <!-- Kolom ke-3 -->
+        <!-- atas --><lineStyle kind="LINEABOVE" colorName="#000000" start="2,0" stop="2,0"/>
+        <!-- kanan --><lineStyle kind="LINEBEFORE" colorName="#000000" start="3,-1" stop="3,-1"/>
+        <!-- bawah --><lineStyle kind="LINEBELOW" colorName="#000000" start="2,-1" stop="2,-1"/>
+        <!-- kiri --><lineStyle kind="LINEBEFORE" colorName="#000000" start="2,0" stop="2,0"/>
+        <!-- Kolom ke-4 -->
+        <!-- atas --><lineStyle kind="LINEABOVE" colorName="#000000" start="3,0" stop="3,0"/>
+        <!-- kanan --><lineStyle kind="LINEBEFORE" colorName="#000000" start="4,-1" stop="4,-1"/>
+        <!-- bawah --><lineStyle kind="LINEBELOW" colorName="#000000" start="3,-1" stop="3,-1"/>
+        <!-- kiri --><lineStyle kind="LINEBEFORE" colorName="#000000" start="3,0" stop="3,0"/>
+        <!-- Kolom ke-5 -->
+        <!-- atas --><lineStyle kind="LINEABOVE" colorName="#000000" start="4,0" stop="4,0"/>
+        <!-- kanan --><lineStyle kind="LINEBEFORE" colorName="#000000" start="5,-1" stop="5,-1"/>
+        <!-- bawah --><lineStyle kind="LINEBELOW" colorName="#000000" start="4,-1" stop="4,-1"/>
+        <!-- kiri --><lineStyle kind="LINEBEFORE" colorName="#000000" start="4,0" stop="4,0"/>
+        <!-- Kolom ke-6 -->
+        <!-- atas --><lineStyle kind="LINEABOVE" colorName="#000000" start="5,0" stop="5,0"/>
+        <!-- kanan --><lineStyle kind="LINEBEFORE" colorName="#000000" start="6,-1" stop="6,-1"/>
+        <!-- bawah --><lineStyle kind="LINEBELOW" colorName="#000000" start="5,-1" stop="5,-1"/>
+        <!-- kiri --><lineStyle kind="LINEBEFORE" colorName="#000000" start="5,0" stop="5,0"/>
+
+    </blockTableStyle>
+     
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+
+    <paraStyle name="terp_header_besar" fontName="Helvetica-Bold" fontSize="12.0" leading="16" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_header_kecil" fontName="Helvetica" fontSize="11.0" leading="0.3cm" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_enter_tanda_tangan"  leading="1cm"/>
+    <paraStyle name="terp_isi_table" fontName="Helvetica" fontSize="11.0" leading="0.3cm" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+   	<paraStyle name="terp_isi_table_right" fontName="Helvetica" fontSize="11.0" leading="0.3cm" alignment="RIGHT" spaceBefore="0.0" spaceAfter="0.0"/>
+   	<paraStyle name="terp_isi_table_line" fontName="Helvetica" fontSize="11.0" leading="0.5cm" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    
+</stylesheet>
+
+<story>
+
+	<para style="header">[[repeatIn(objects, 'p')]] </para>
+	
+	
+	<blockTable colWidths="11.5cm,7cm" style="Table_Line">
+   		<tr>
+   			<td>
+   				<para style="terp_header_besar">[[p.branch_id.company_id.name]] [[ p.branch_id.name]]</para>
+   				<blockTable colWidths="13cm" style="Table_No_Line">
+	      	   		<tr>
+	      	   			<td><para style="terp_header_kecil">[[ p.branch_id.street]] </para></td>
+	      	   		</tr>
+	      	   		<tr>
+	      	   			<td><para style="terp_header_kecil"> </para></td>
+	      	   		</tr>
+	      	   		<tr>
+	      	   			<td><para style="terp_header_kecil">[[ p.branch_id.state_id.name]] </para></td>
+	      	   		</tr>
+				</blockTable>
+   			</td>
+   			<td>
+   			<para style="terp_header_besar">PIUTANG LAIN-LAIN</para>
+   			<blockTable colWidths="2cm,0.5cm,4.3cm" style="Table_No_Line">
+	      	   		<tr>
+	      	   			<td><para style="terp_header_kecil">No </para></td>
+	      	   			<td><para style="terp_header_kecil">: </para></td>
+	      	   			<td><para style="terp_header_kecil">[[ p.number]] </para></td>
+	      	   		</tr>
+	      	   		<tr>
+	      	   			<td><para style="terp_header_kecil">Tanggal </para></td>
+	      	   			<td><para style="terp_header_kecil">: </para></td>
+	      	   			<td><para style="terp_header_kecil">[[formatLang( p.date,date=True)]] </para></td>
+	      	   		</tr>
+				</blockTable>
+   			
+   			</td>
+   		</tr>
+	</blockTable> 
+
+
+
+<nextFrame name="frame_content"/>
+		<blockTable colWidths="18.5cm" style="Table_Line">
+			<tr>
+  	   			<td>
+  	   				 <blockTable colWidths="3cm,0.5cm,15cm" style="Table_No_Line">
+			      	   		<tr>
+			      	   			<td><para style="terp_isi_table">Tanggal </para></td>
+			      	   			<td><para style="terp_isi_table">: </para></td>
+			      	   			<td><para style="terp_isi_table">[[formatLang(p.date, date=True)]]</para></td>
+			      	   		</tr>
+			      	   		<tr>
+			      	   			<td><para style="terp_isi_table">Tanggal Jtp </para></td>
+			      	   			<td><para style="terp_isi_table">: </para></td>
+			      	   			<td><para style="terp_isi_table">--- </para></td>
+			      	   		</tr>
+			      	   		<tr>
+			      	   			<td><para style="terp_isi_table">Pelanggan </para></td>
+			      	   			<td><para style="terp_isi_table">: </para></td>
+			      	   			<td><para style="terp_isi_table">[[ p.partner_id.name]] </para></td>
+			      	   		</tr>
+			      	   		<tr>
+			      	   			<td><para style="terp_isi_table"> </para></td>
+			      	   			<td><para style="terp_isi_table"> </para></td>
+			      	   			<td><para style="terp_isi_table">[[ p.partner_id.street]] </para></td>
+			      	   		</tr>
+			      	   		<tr>
+			      	   			<td><para style="terp_isi_table"> </para></td>
+			      	   			<td><para style="terp_isi_table"> </para></td>
+			      	   			<td><para style="terp_isi_table">[[ p.partner_id.state_id.name]] </para></td>
+			      	   		</tr>
+			      	   </blockTable>
+  	   			</td>
+			</tr>
+
+		</blockTable>
+		<blockTable colWidths="1cm,6cm,6.5cm,5cm" style="Table_Line">
+  	   		<tr>
+  	   			<td><para style="terp_isi_table_line">No. </para></td>
+  	   			<td><para style="terp_isi_table_line">No Rekening</para></td>
+  	   			<td><para style="terp_isi_table_line">Keterangan</para></td>
+  	   			<td><para style="terp_isi_table_line">Jumlah Harga</para></td>
+  	   		</tr>
+		</blockTable>
+		<section>
+      	<para style="terp_default">[[ repeatIn(p.line_cr_ids, 'x') ]]</para>
+		<blockTable colWidths="1cm,6cm,6.5cm,5cm" style="Table_Line">
+  	   		<tr>
+  	   			<td><para style="terp_isi_table_right"> [[no_urut()]]</para></td>
+  	   			<td><para style="terp_isi_table_line">[[ x.account_id.name]]</para></td>
+  	   			<td><para style="terp_isi_table_line">[[ x.name]]</para></td>
+  	   			<td><para style="terp_isi_table_right">[[ formatLang(x.amount, digits=0)]] </para></td>
+  	   		</tr>
+		</blockTable>
+		</section>	
+		<blockTable colWidths="7cm,6.5cm,5cm" style="Table_Line">
+  	   		<tr>
+  	   			<td>
+  	   				<para style="terp_enter_tanda_tangan"><font color="white">1</font></para>
+  	   				<blockTable colWidths="6.5cm" style="Table_No_Line">
+			      	   		<tr>
+			      	   			<td><para style="terp_isi_table">[[user.name]] [[waktu_local()]]</para></td>
+			      	   		</tr>
+			      	  </blockTable>
+  	   			
+  	   			
+  	   			</td>
+  	   			<td>	
+  	   				
+  	   				<blockTable colWidths="5cm,1.5cm" style="Table_No_Line">
+			      	   		<tr>
+			      	   			<td><para style="terp_isi_table">DPP </para></td>
+			      	   			<td><para style="terp_isi_table_right"> </para></td>
+			      	   		</tr>
+			      	   		<tr>
+			      	   			<td><para style="terp_isi_table">PPN  </para></td>
+			      	   			<td><para style="terp_isi_table_right"></para></td>
+			      	   		</tr>
+			      	   		<tr>
+			      	   			<td><para style="terp_isi_table">PPh </para></td>
+			      	   			<td><para style="terp_isi_table_right"> </para></td>
+			      	   		</tr>
+			      	   		<tr>
+			      	   			<td><para style="terp_isi_table">Total </para></td>
+			      	   			<td><para style="terp_isi_table_right"> </para></td>
+			      	   		</tr>
+			      	  </blockTable>
+  	   			
+  	   			</td>
+  	   			<td>
+  	   				<blockTable colWidths="5cm" style="Table_No_Line">
+			      	   		<tr>
+			      	   			<td><para style="terp_isi_table_right">[[ formatLang(p.amount, digits=0)]] </para></td>
+			      	   		</tr>
+			      	   		<tr>
+			      	   			<td><para style="terp_isi_table_right"> [[formatLang(p.tax_amount, digits=0)]]</para></td>
+			      	   		</tr>
+			      	   		<tr>
+			      	   		<tr>
+			      	   			<td><para style="terp_isi_table_right"> </para></td>
+			      	   		</tr>
+			      	   			<td><para style="terp_isi_table_right">0 </para></td>
+			      	   		</tr>
+			      	   		<tr>
+			      	   			<td><para style="terp_isi_table_right">[[formatLang(p.amount-p.tax_amount, digits=0)]] </para></td>
+			      	   		</tr>
+			      	  </blockTable>
+  	   			</td>
+  	   		</tr>
+		</blockTable>
+		<blockTable colWidths="18.5cm" style="Table_No_Line">
+  	   		<tr>
+  	   			<td><para style="terp_isi_table">## [[terbilang(p.amount-p.tax_amount)]] ## </para></td>
+  	   		</tr>
+		 </blockTable>
+	
+
+
+
+	
+</story>
+</document>

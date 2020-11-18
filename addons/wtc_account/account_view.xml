@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_account_account_branch_form" model="ir.ui.view">
+            <field name="name">account.account.form.branch</field>
+            <field name="model">account.account</field>
+            <field name="inherit_id" ref="account.view_account_form"/>
+            <field name="arch" type="xml">
+                <field name="active" position="after">
+                    <field name="branch_id"/>
+                </field>
+            	<xpath expr="//field[@name='note']" position="after">
+            		<notebook>
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>
+					</notebook>
+				</xpath>                
+            </field>        
+        </record>
+        <record id="view_account_account_payment_term_form" model="ir.ui.view">
+            <field name="name">wtc.account.payment.term</field>
+            <field name="model">account.payment.term</field>
+            <field name="inherit_id" ref="account.view_payment_term_form"/>
+            <field name="arch" type="xml">
+            	<xpath expr="//form" position="inside">
+            		<notebook>
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>
+					</notebook>
+				</xpath>                
+            </field>        
+        </record>
+        <record id="view_account_account_fiscalyear_form" model="ir.ui.view">
+            <field name="name">wtc.account.fiscalyear</field>
+            <field name="model">account.fiscalyear</field>
+            <field name="inherit_id" ref="account.view_account_fiscalyear_form"/>
+            <field name="arch" type="xml">
+            	<xpath expr="//form" position="inside">
+            		<notebook>
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>
+					</notebook>
+				</xpath>                
+            </field>        
+        </record>
+        <record id="view_account_period_form" model="ir.ui.view">
+            <field name="name">wtc.account.period</field>
+            <field name="model">account.period</field>
+            <field name="inherit_id" ref="account.view_account_period_form"/>
+            <field name="arch" type="xml">
+            	<xpath expr="//sheet" position="inside">
+            		<notebook>
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>
+					</notebook>
+				</xpath>                
+            </field>        
+        </record>                
+        <record id="view_account_account_branch_list" model="ir.ui.view">
+            <field name="name">account.account.list.branch</field>
+            <field name="model">account.account</field>
+            <field name="inherit_id" ref="account.view_account_list"/>
+            <field name="arch" type="xml">
+                <field name="debit" position="replace"/>
+                <field name="credit" position="replace"/>
+                <field name="balance" position="replace"/>
+            </field>
+        </record>
+        
+        <record id="view_account_account_template" model="ir.ui.view">
+            <field name="name">account.account.template</field>
+            <field name="model">account.account.template</field>
+            <field name="inherit_id" ref="account.view_account_template_form"/>
+            <field name="arch" type="xml">
+				<xpath expr="//form" position="inside">
+					<notebook>
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>
+					</notebook>
+				</xpath>
+            </field>
+        </record>
+        <record id="view_account_fiscal_position_template" model="ir.ui.view">
+            <field name="name">wtc.account.fiscal.position.template</field>
+            <field name="model">account.fiscal.position.template</field>
+            <field name="inherit_id" ref="account.view_account_position_template_form"/>
+            <field name="arch" type="xml">
+				<xpath expr="//form" position="inside">
+					<notebook>
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>
+					</notebook>
+				</xpath>
+            </field>
+        </record> 
+        <record id="view_account_tax_code" model="ir.ui.view">
+            <field name="name">wtc.account.tax.code</field>
+            <field name="model">account.tax.code</field>
+            <field name="inherit_id" ref="account.view_tax_code_form"/>
+            <field name="arch" type="xml">
+				<xpath expr="//form" position="inside">
+					<notebook>
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>
+					</notebook>
+				</xpath>
+            </field>
+        </record> 
+        <record id="view_account_tax_code_template" model="ir.ui.view">
+            <field name="name">wtc.account.tax.code.template</field>
+            <field name="model">account.tax.code.template</field>
+            <field name="inherit_id" ref="account.view_tax_code_template_form"/>
+            <field name="arch" type="xml">
+				<xpath expr="//form" position="inside">
+					<notebook>
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>
+					</notebook>
+				</xpath>
+            </field>
+        </record>  
+        <record id="view_account_tax_template" model="ir.ui.view">
+            <field name="name">wtc.account.tax.template</field>
+            <field name="model">account.tax.template</field>
+            <field name="inherit_id" ref="account.view_account_tax_template_form"/>
+            <field name="arch" type="xml">
+				<xpath expr="//form" position="inside">
+					<notebook>
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>
+					</notebook>
+				</xpath>
+            </field>
+        </record> 
+        <record id="view_account_tax2" model="ir.ui.view">
+            <field name="name">wtc.account.tax</field>
+            <field name="model">account.tax</field>
+            <field name="inherit_id" ref="account.view_tax_form"/>
+            <field name="arch" type="xml">
+				<xpath expr="//page[@string='Special Computation']" position="after">
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>
+				</xpath>
+            </field>
+        </record>
+        <record id="view_account_fiscal_position" model="ir.ui.view">
+            <field name="name">wtc.account.fiscal.position</field>
+            <field name="model">account.fiscal.position</field>
+            <field name="inherit_id" ref="account.view_account_position_form"/>
+            <field name="arch" type="xml">
+				<xpath expr="//form" position="inside">
+					<notebook>
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>
+					</notebook>
+				</xpath>
+            </field>
+        </record>                                              
+        <record model="ir.ui.view" id="wtc_branch_on_customer_invoice_form_view">
+            <field name="name">wtc.branch.customer.invoice.form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="arch" type="xml">
+            	<button name="invoice_cancel" position="replace"/>           	
+            	<button name="action_cancel_draft" position="before">
+                    <button name="invoice_cancel" states="draft,proforma2,open" string="Cancel Invoice" groups="base.group_no_one" confirm="Apa anda yakin ingin membatalkan transaksi ini ?"/>
+            	</button>
+            	<button name="%(account.action_account_invoice_refund)d" position="attributes">
+            		<attribute name="invisible">1</attribute>
+            	</button>
+                <xpath expr="/form/sheet/group" position="before">
+                    <group>
+                        <group>
+                            <field name="branch_id" required='1' attrs="{'readonly': [('state','!=','draft')]}"/>
+                        </group>
+                        <group>
+                            <field name="division" required='1' attrs="{'readonly': [('state','!=','draft')]}"/>
+                        </group>
+                    </group>                    
+                </xpath>
+            	<field name="date_invoice" position="replace"/>
+            	<xpath expr="//field[@name='journal_id']" position="before">
+            		<field name="date_invoice" readonly='1'/>
+            		<field name="document_date" required='1' attrs="{'readonly': [('state','!=','draft')]}" on_change='onchange_document_date(document_date,payment_term)'/>            	
+            	</xpath>
+            	
+                <xpath expr="/form/sheet/group/group/field[@name='partner_id']" position="after">
+                	<field name="qq_id" attrs="{'invisible':[('tipe','=','customer')]}"/>
+                	<!-- <field name="lot_id" attrs="{'invisible':[('tipe','!=','bbn')]}"/> -->
+                	<field name="tipe" invisible="1"/>
+                </xpath>
+                
+				<xpath expr="//page[@string='Payments']" position="after">
+					<page string="Audit Trail">
+						<group>
+							<group>
+								<field name="create_uid" readonly="1"></field>
+								<field name="create_date" readonly="1"></field>
+								<field name="confirm_uid" readonly="1"></field>
+								<field name="confirm_date" readonly="1"></field>
+							</group>
+							<group>							
+								<field name="write_uid" readonly="1"></field>
+								<field name="write_date" readonly="1"></field>
+								<field name="cancel_uid" readonly="1"></field>
+								<field name="cancel_date" readonly="1"></field>
+							</group>
+						</group>
+					</page>
+				</xpath>                
+             </field>
+        </record>
+
+        <record model="ir.ui.view" id="wtc_branch_on_supplier_invoice_form_view">
+            <field name="name">wtc.branch.supplier.invoice.form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_supplier_form"/>
+            <field name="arch" type="xml">
+            	<button name="invoice_cancel" position="replace"/>           	
+            	<button name="action_cancel_draft" position="before">
+                    <button name="invoice_cancel" states="draft,proforma2" string="Cancel Invoice" groups="account.group_account_invoice" confirm="Apa anda yakin ingin membatalkan transaksi ini ?"/>       		     		
+            	</button>
+            	<field name="date_invoice" position="replace"/>
+            	<field name="payment_term" position="replace"/>
+            	<xpath expr="//field[@name='date_due']" position="before">
+            		<field name="date_invoice" readonly='1'/>
+            		<field name="document_date" required='1' attrs="{'readonly': [('state','!=','draft')]}" on_change='onchange_document_date(document_date,payment_term)'/>
+            	
+            	</xpath>	
+            	<xpath expr="//field[@name='user_id']" position="after">
+            		<field name="payment_term" attrs="{'readonly': [('state','!=','draft')]}" options="{'no_create': True}" on_change='onchange_document_date(document_date,payment_term)'/>
+            	</xpath>
+            	<xpath expr="/form/sheet/group" position="before">
+                    <group>
+                        <group>
+                            <field name="branch_id" required='1' attrs="{'readonly': [('state','!=','draft')]}"/>
+                        </group>
+                        <group>
+                            <field name="division" required='1' attrs="{'readonly': [('state','!=','draft')]}"/>
+                        </group>
+                    </group>                    
+                </xpath>
+                
+		        <field name="supplier_invoice_number" position="attributes">
+		        	<attribute name="required">True</attribute>
+		        </field>
+		        
+		        <field name="fiscal_position" position="attributes">
+		        	<attribute name="invisible">1</attribute>
+		        </field>
+		        
+		        <field name="period_id" position="attributes">
+		        	<attribute name="invisible">1</attribute>
+		        </field>
+		        
+		        <field name="date_due" position="attributes">
+		        	<attribute name="readonly">1</attribute>
+		        </field>
+		        
+		        <field name="account_id" position="attributes">
+		        	<attribute name="readonly">1</attribute>
+		        </field>
+		        
+		        <field name="journal_id" position="attributes">
+		        	<attribute name="readonly">1</attribute>
+		        </field>
+		        
+		        <field name="reference" position="attributes">
+		        	<attribute name="attrs">{'readonly':[('state','!=','draft')]}</attribute>
+		        </field>
+		        
+		        <field name="payment_term" position="replace"/>
+		        <field name="document_date" position="after">
+		        	<field name="payment_term" options="{'no_create': True}" on_change="onchange_document_date(document_date,payment_term)" attrs="{'readonly': [('state','!=','draft')]}"/>
+		        </field>
+            	
+                <xpath expr="/form/sheet/group/group/field[@name='partner_id']" position="after">
+                	<field name="tipe" invisible="1"/>
+                	<field name="qq_id" attrs="{'invisible':[('tipe','!=','bbn')]}"/>
+                	<field name="lot_id" attrs="{'invisible':[('tipe','!=','bbn')]}"/>
+                </xpath>
+		    	<field name="invoice_line" position="replace"></field>
+			    <xpath expr="/form/sheet/notebook/page/group" position="before">
+                    <field context="{'partner_id': partner_id, 'price_type': context.get('price_type') or False, 'type': type}" name="invoice_line">
+                        <tree string="Invoice lines" editable="bottom">
+                            <field name="sequence" widget="handle" />
+							<field name="branch_id" readonly='1'/>
+							<field name="division" readonly='1'/>                               
+                            <field name="product_id"
+                                on_change="product_id_change(product_id, uos_id, quantity, name, parent.type, parent.partner_id, parent.fiscal_position, price_unit, parent.currency_id, parent.company_id, context)"/>
+                            <field name="name"/>
+                            <field name="company_id" invisible="1"/>
+                            <field name="account_id" groups="account.group_account_user"
+                                domain="[('company_id', '=', parent.company_id), ('journal_id', '=', parent.journal_id), ('type', '=', 'other')]"
+                                on_change="onchange_account_id(product_id, parent.partner_id, parent.type, parent.fiscal_position,account_id)"/>
+                            <field name="account_analytic_id" groups="analytic.group_analytic_accounting"
+                                domain="[('type','!=','view'), ('company_id', '=', parent.company_id), ('state','not in',('close','cancelled'))]"/>
+                            <field name="quantity"/>
+                            <field name="uos_id" groups="product.group_uom"
+                                on_change="uos_id_change(product_id, uos_id, quantity, name, parent.type, parent.partner_id, parent.fiscal_position, price_unit, parent.currency_id, parent.company_id, context)"/>
+                            <field name="price_unit"/>
+                            <field name="discount" groups="sale.group_discount_per_so_line"/>
+                            <field name="invoice_line_tax_id" widget="many2many_tags" context="{'type':parent.type}"
+                                domain="[('parent_id','=',False),('company_id', '=', parent.company_id)]"/>
+                            <field name="price_subtotal"/>
+                            <field name='ref_asset_id'/>
+                        </tree>
+                    </field>
+	        	</xpath>
+		                            
+				<xpath expr="//page[@string='Payments']" position="after">
+					<page string="Faktur Pajak" attrs="{'invisible': [('amount_tax','=',0)]}">
+						<group>
+							<field name="pajak_gabungan"/>
+							<field name="no_faktur_pajak" on_change="faktur_pajak_change(no_faktur_pajak)" attrs="{'required': [('pajak_gabungan','=',False),('amount_tax','!=',0)]}"/>
+							<field name="tgl_faktur_pajak" attrs="{'required': [('pajak_gabungan','=',False),('amount_tax','!=',0)]}"/>
+						</group>
+					</page>
+					<page string="Audit Trail">
+						<group>
+							<group>
+								<field name="create_uid" readonly="1"></field>
+								<field name="create_date" readonly="1"></field>
+								<field name="confirm_uid" readonly="1"></field>
+								<field name="confirm_date" readonly="1"></field>
+							</group>
+							<group>							
+								<field name="write_uid" readonly="1"></field>
+								<field name="write_date" readonly="1"></field>
+								<field name="cancel_uid" readonly="1"></field>
+								<field name="cancel_date" readonly="1"></field>
+							</group>
+						</group>
+					</page>
+				</xpath>                
+             </field>
+        </record>
+        
+        <record id="view_account_financial_report_add" model="ir.ui.view">
+            <field name="name">account.financial.report</field>
+            <field name="model">account.financial.report</field>
+            <field name="inherit_id" ref="account.view_account_financial_report_form"/>
+            <field name="arch" type="xml">
+            	<xpath expr="//form" position="inside">
+            		<notebook>
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>
+					</notebook>
+				</xpath> 
+            </field>
+        </record>   
+		<record id="view_wtc_customer_invoice" model="ir.ui.view">
+            <field name="name">wtc.customer.invoice.search.view</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.view_account_invoice_filter"/>
+            <field name="arch" type="xml">
+            	<field name="number" position='after'>
+            		<field name='branch_id'/>
+                    <field name="division"/>                  	                    	
+            	</field>
+            </field>
+        </record>        
+        <record id="view_account_account_type_add" model="ir.ui.view">
+            <field name="name">account.account.type</field>
+            <field name="model">account.account.type</field>
+            <field name="inherit_id" ref="account.view_account_type_form"/>
+            <field name="arch" type="xml">
+            	<xpath expr="//form" position="inside">
+            		<notebook>
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>
+					</notebook>
+				</xpath> 
+            </field>
+        </record>
+
+        <record id="view_account_analytic_account_add" model="ir.ui.view">
+            <field name="name">account.analytic.account</field>
+            <field name="model">account.analytic.account</field>
+            <field name="inherit_id" ref="analytic.view_account_analytic_account_form"/>
+            <field name="arch" type="xml">
+            	<xpath expr="//notebook/page" position="after">
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>
+				</xpath> 
+            </field>
+        </record>
+
+        <record id="view_account_chart_template_add" model="ir.ui.view">
+            <field name="name">account.chart.template</field>
+            <field name="model">account.chart.template</field>
+            <field name="inherit_id" ref="account.view_account_chart_template_form"/>
+            <field name="arch" type="xml">
+            	<xpath expr="//form" position="inside">
+            		<notebook>
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>
+					</notebook>
+				</xpath> 
+            </field>
+        </record>
+                                                                   
+	</data>
+</openerp>

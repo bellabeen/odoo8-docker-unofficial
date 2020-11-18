@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="teds_nrfs_vendor_rule" model="ir.rule">
+            <field name="name">teds.nrfs.vendor partner rule</field>
+            <field name="model_id" ref="model_teds_nrfs"/>
+            <field name="domain_force">[('branch_partner_id','in',[b.partner_id.id for b in user.area_id.branch_ids])]</field>
+            <field name="groups" eval="[(4, ref('teds_nrfs_vendor_group_read'))]"/>
+        </record>
+    </data>
+</openerp>

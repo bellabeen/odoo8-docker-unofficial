@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data> 
+		
+		<record model="ir.ui.view" id="proses_birojasa_tree_view">
+		    <field name="name">proses.birojasa.tree</field>
+		    <field name="model">wtc.proses.birojasa</field>
+		    <field name="arch" type="xml">
+		        <tree string="List Tagihan Biro Jasa">
+		        	<field name="name"/>
+		            <field name="branch_id"/>
+					<field name="division"/>		            
+		            <field name="partner_id"/>	
+		            <field name="tanggal"/>	
+		            <field name="no_dok"/>
+		            <field name="total_approval_koreksi"/>  
+		            <field name="state"/>	            
+		        </tree>
+		     </field>
+		</record>
+ 
+		<record model="ir.ui.view" id="proses_birojasa_form_view">
+		    <field name="name">proses.birojasa.form</field>
+		    <field name="model">wtc.proses.birojasa</field>
+		    <field name="arch" type="xml">
+		        <form string="Form Tagihan Biro Jasa">
+				<header>                    
+						<button name="%(report_proses_birojasa)d" states="approved,done" type="action" string="Print" class="oe_highlight"  icon="gtk-print"/>
+						<button name="view_invoice" string="View Invoice" type="object" states="approved,done" class="oe_highlight" />
+					    <button name="birojasa_confirm" groups='wtc_proses_stnk.group_wtc_tagihan_birojasa_confirm' states="confirmed" string="Confirm Pengurusan" type="workflow" class="oe_highlight"/>
+						<button name="wkf_action_cancel" states="draft" groups='wtc_proses_stnk.group_wtc_proses_birojasa_cancel' string="Cancel" type="object" confirm="Apa anda yakin ingin membatalkan transaksi ini ?"/>						
+<!--						<button name="wkf_set_to_draft" string="Set to Draft" type="object" states="done"/-->
+						<field name="state" widget="statusbar" statusbar_visible="draft,approved,done" statusbar_colors='{"draft":"red","approved":"done"}'/>	
+           		</header>		        	
+		        	<sheet>
+			        	<div class="oe_title">
+			        		<h2>
+				                <label string="Tagihan Biro Jasa"/>    			
+				 				<field name="name" class="oe_inline"/>
+			 				</h2>
+			        	</div>       
+						<group col="2" colspan="2">   
+							<group>
+								<field name="branch_id" options="{'no_create': True,'no_open': True}"  on_change="birojasa_change(branch_id,partner_id)" required="1" attrs="{'readonly': ['|',('state','!=','draft'),('name','!=',False)]}"  />
+
+							</group>            
+						    <group>
+	                    		<field name="division" attrs="{'readonly': [('state','!=','draft')]}" required="1"/>
+	                    	</group> 
+	                    	<group>
+	                    		<field name="partner_id" required="1" options="{'no_create': True,'no_open': True}" attrs="{'readonly': [('state','!=','draft')]}"  />
+	                    		<field name="type" attrs="{'readonly': [('state','!=','draft')]}"  required="1"/>                    											
+	                    		<field name="description" attrs="{'readonly': [('state','!=','draft')]}"/>								
+								<field name="no_dok" attrs="{'readonly': [('state','!=','draft')]}"/>
+								<field name="document_copy" attrs="{'readonly':[('state','!=','draft')]}"/>
+								<field name="tax_id" options="{'no_create': True,'no_open': True}" attrs="{'readonly': [('state','!=','draft')]}"/>
+							</group>
+	                    	<group>
+	                    		<field name="tanggal" readonly="1"/>	
+	                    		<field name="tgl_dok" required='1' attrs="{'readonly': [('state','!=','draft')]}"/>
+	                    		<field name="total_approval_koreksi" widget='monetary' options="{'currency_field': 'currency_id'}"/>
+	                        	<field name="is_cancelled"/>                       		
+	                    				                    		 
+	                    	</group>
+						</group>
+	                    <notebook colspan="5">
+	                        <page string="Engine line">
+	                            <field colspan="4" name="proses_birojasa_line" nolabel="1" widget="one2many_list" attrs="{'readonly': [('state','!=','draft')]}">
+	                                <tree string="" editable="bottom">
+						                <field name="name" on_change="onchange_engine(name,parent.branch_id,parent.partner_id,parent.type,parent.tax_id)" options="{'no_create': True,'no_open': True}" required="1"/>
+						                <field name="product_id" options="{'no_open':True,'no_create':True}"/>
+						                <field name="customer_stnk"/>
+										<field name="type" invisible="1"/>						                
+										<field name="no_notice_copy" on_change="onchange_notice(no_notice_copy,tgl_notice_copy,parent.document_copy)" attrs="{'required': ['|',('tgl_notice_copy','!=',False),('type','=','reg')]}"/>						                
+										<field name="tgl_notice_copy" on_change="onchange_notice(no_notice_copy,tgl_notice_copy,parent.document_copy)" attrs="{'required': [('no_notice_copy','!=',False)]}"/>					                
+										<field name="no_notice" invisible="1" />			
+										<field name="tgl_notice" invisible="1"/>
+						                <field name="total_jasa" sum="Total Jasa"/>			
+						                <field name="total_estimasi" invisible="1" on_change="onchange_price(total_estimasi)"/>		
+										<field name="total_estimasi_fake" sum="Total Estimasi" readonly="1"/>  
+						                <field name="pajak_progressive" invisible="1"/> 
+						                <field name="pajak_progressive_show" readonly="1" sum="Total Pajak Progressive"/>
+						                <!--attrs="{'invisible': [('pajak_progressive_branch','=',False)]}"/> attrs="{'readonly': [('pajak_progressive_branch','=',False)]}" /> -->
+						                <field name="total_tagihan" sum="Total Tagihan" required="1"/>	
+						                <field name="tax_id" invisible="1" widget="many2many_tags" domain="[('parent_id','=',False),('type_tax_use','&lt;&gt;','sale')]"/>	
+						                <field name="koreksi" sum="Total Koreksi"/>
+						                <field name="pajak_progressive_branch" invisible="1"/>
+						                												                       																		                
+	                                </tree>
+	                            </field>
+	                            
+								<group class="oe_subtotal_footer oe_right">
+									<field name="amount_untaxed" widget='monetary' options="{'currency_field': 'currency_id'}" invisible="1"/>
+									<field name="total_estimasi" widget='monetary' options="{'currency_field': 'currency_id'}"/>																				
+									<field name="total_koreksi" widget='monetary' options="{'currency_field': 'currency_id'}"/>	
+									<field name="ppn_jasa" widget='monetary' string="Ppn Jasa" options="{'currency_field': 'currency_id'}"/>	
+									<field name="total_progressive" widget='monetary' options="{'currency_field': 'currency_id'}" string="Total Progresif"/>											
+									<field name="amount_tax" widget='monetary' options="{'currency_field': 'currency_id'}" invisible="1"/>
+										<div class="oe_subtotal_footer_seperator oe_inline">
+											<label for="amount_total"/>
+											<button name="button_dummy"
+									        states="draft" string="(update)" type="object" class="oe_edit_only oe_link"/>
+										</div>
+									<field name="amount_total" string="Total Tagihan" nolabel="1" class="oe_subtotal_footer_separator" widget='monetary' options="{'currency_field': 'currency_id'}"/>
+								</group>
+                             
+								<div class="oe_clear"/>
+                            	<field name="note" class="oe_inline" placeholder="Note..."/>
+	                        </page>
+	                        <page string="Invoicing">
+								<group>
+									<field name="invoice_method"/>	 
+	                        		<field name="invoiced"/>
+								</group>
+							</page>	                        
+	                    </notebook>						
+		           </sheet>
+		        </form>
+		    </field>
+		</record>
+ 		<record id="view_proses_birojasa_filter" model="ir.ui.view">
+            <field name="name">proses.birojasa.list.select</field>
+            <field name="model">wtc.proses.birojasa</field>
+            <field name="arch" type="xml">
+                <search string="Search Penerimaan Faktur">
+                    <field name="name" string="Reference"/>
+                    <field name="branch_id"/> 
+                    <field name="engine_no"/> 
+                    <field name="customer_stnk"/> 
+                    <field name="tanggal"/>
+                    <field name="partner_id" string="Biro Jasa"/> 
+                    <filter name="draft" string="Draft" domain="[('state','=','draft')]"/>
+					<filter name="wfa" string="Waiting for Approval" domain="[('state','=','waiting_for_approval')]"/>                    
+                    <filter name="post" string="Posted" domain="[('state','=','posted')]"/>
+                    <group expand="0" string="Group By">
+                        <filter string="Branch" icon="terp-partner" domain="[]" context="{'group_by':'branch_id'}"/>
+                        <filter string="Tanggal" icon="terp-go-month" domain="[]" context="{'group_by':'tanggal'}"/>                    
+                    </group>
+                </search>
+            </field>
+        </record> 
+		<record model="ir.actions.act_window" id="proses_birojasa_action">
+		    <field name="name">Pengurusan Biro Jasa</field>
+		    <field name="res_model">wtc.proses.birojasa</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		    <field name="search_view_id" ref="view_proses_birojasa_filter"/>
+			<field name="context">{"search_default_draft":1,"search_default_wfa":1}</field>		    
+		    			    
+		</record>				
+		<menuitem id="proses_birojasa_submenu" name="Tagihan Biro Jasa" parent="wtc_dealer_menu.stnk_bpkb_proses_stnk_menu"  action="proses_birojasa_action" sequence="19"/> 				  
+	</data>
+</openerp>
+															

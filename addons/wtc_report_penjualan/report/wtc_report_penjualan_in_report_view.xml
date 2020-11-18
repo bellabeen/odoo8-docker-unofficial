@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="view_wtc_report_penjualan_report_graph">
+            <field name="name">wtc.report.penjualan.report.graph</field>
+            <field name="model">wtc.report.penjualan.report</field>
+            <field name="arch" type="xml">
+                <graph string="Sale Order" type="pivot">
+                	<field name="branch_id" type="row"/>
+					<field name="date" interval="month" type="col"/>
+					<field name="discount_po" type="measure"/>
+					<field name="ps_dealer" type="measure"/>
+					<field name="ps_ahm" type="measure"/>
+					<field name="ps_md" type="measure"/>
+					<field name="ps_finco" type="measure"/>
+					<field name="ps_total" type="measure"/>
+					<field name="disc_reg" type="measure"/>
+					<field name="disc_quo" type="measure"/>
+					
+					<field name="disc_total" type="measure"/>
+					<field name="price_subtotal" type="measure"/>
+					<field name="force_cogs" type="measure"/>
+					<field name="piutang_dp" type="measure"/>
+					<field name="piutang" type="measure"/>
+					<field name="gp_unit" type="measure"/>
+					<field name="price_bbn" type="measure"/>
+					<field name="price_bbn_beli" type="measure"/>
+					
+					<field name="gp_bbn" type="measure"/>
+					<field name="gp_total" type="measure"/>
+					<field name="amount_hutang_komisi" type="measure"/>
+					<field name="dpp_insentif_finco" type="measure"/>
+					<field name="beban_cabang" type="measure"/>
+
+					
+					
+					
+                </graph>
+            </field>
+        </record>
+    
+    <record id="filter_branch_wtc_report_penjualan_report" model="ir.filters">
+        <field name="name">By Branch</field>
+        <field name="model_id">wtc.report.penjualan.report</field>
+        <field name="user_id" eval="False"/>
+        <field name="context">{'group_by': ['branch_id']}</field>
+    </record>
+    
+    <record id="filter_salesteam_wtc_report_penjualan_report" model="ir.filters">
+        <field name="name">By Salesteam</field>
+        <field name="model_id">wtc.report.penjualan.report</field>
+        <field name="user_id" eval="False"/>
+        <field name="context">{'group_by': ['date:month', 'section_id']}</field>
+    </record>
+    
+    <record id="filter_wtc_report_penjualan_report" model="ir.filters">
+        <field name="name">By Salespersons</field>
+        <field name="model_id">wtc.report.penjualan.report</field>
+        <field name="user_id" eval="False"/>
+        <field name="context">{'group_by': ['date:month', 'user_id']}</field>
+    </record>
+    
+    <record id="filter_product_wtc_report_penjualan_report" model="ir.filters">
+        <field name="name">By Product</field>
+        <field name="model_id">wtc.report.penjualan.report</field>
+        <field name="user_id" eval="False"/>
+        <field name="context">{'group_by': ['date:month', 'product_id']}</field>
+    </record>
+    
+    <record id="filter_categ_wtc_report_penjualan_report" model="ir.filters">
+        <field name="name">By Category</field>
+        <field name="model_id">wtc.report.penjualan.report</field>
+        <field name="user_id" eval="False"/>
+        <field name="context">{'group_by': ['date:month', 'categ_id']}</field>
+    </record>
+    
+    
+     <record id="view_wtc_report_penjualan_report_search" model="ir.ui.view">
+        <field name="name">wtc.report.penjualan.report.search</field>
+        <field name="model">wtc.report.penjualan.report</field>
+        <field name="arch" type="xml">
+            <search string="Laporan Penjualan">
+                <field name="date"/>
+                <filter string="This Year" name="year" invisible="1" domain="[('date','&lt;=', time.strftime('%%Y-12-31')),('date','&gt;=',time.strftime('%%Y-01-01'))]"/>
+                <filter name="Quotations" domain="[('state','in',('draft','waiting_for_approval','approved'))]"/>
+                <filter name="Sales" string="Sales" domain="[('state','not in',('draft','waiting_for_approval','approved'))]"/>
+                <filter name="Cash" string="Cash" domain="[('finco_id','=',False)]"/>
+                <filter name="Credit" string="Credit" domain="[('finco_id','!=',False)]"/>
+                <separator/>
+                <filter string="My Sales" help="My Sales" domain="[('user_id','=',uid)]"/>
+                <field name="partner_id"/>
+                <field name="product_id"/>
+                <field name="user_id"/>
+                <group expand="0" string="Extended Filters">
+                    <field name="categ_id"/>
+                </group>
+                <group expand="1" string="Group By">
+                    <filter string="Salesperson" name="User" context="{'group_by':'user_id'}"/>
+                    <filter string="Sales Team" context="{'group_by':'section_id'}" groups="base.group_multi_salesteams"/>
+                    <filter string="Customer" name="Customer" context="{'group_by':'partner_id'}"/>
+                    <filter string="Finco" name="Finco" context="{'group_by':'finco_id'}"/>
+                    <filter string="Category of Product" name="Category" context="{'group_by':'categ_id'}"/>
+                    <filter string="Status" context="{'group_by':'state'}"/>
+                    <separator/>
+                    <filter string="Order Month" context="{'group_by':'date:month'}" help="Ordered date of the sales order"/>
+                </group>
+            </search>
+        </field>
+    </record>
+    
+
+    <record id="action_wtc_report_penjualan_report" model="ir.actions.act_window">
+        <field name="name">Penjualan</field>
+        <field name="res_model">wtc.report.penjualan.report</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">graph</field>
+        <field name="view_id" ref="view_wtc_report_penjualan_report_graph"></field>
+        <field name="search_view_id" ref="view_wtc_report_penjualan_report_search"/>
+        <field name="context">{'search_default_orders': 1, 'group_by_no_leaf':1,'group_by':[]}</field>
+        
+    </record>
+    
+    <menuitem action="action_wtc_report_penjualan_report" id="menu_wtc_report_penjualan_report" parent="base.next_id_64" sequence="12"/>
+
+  
+    </data>
+</openerp>

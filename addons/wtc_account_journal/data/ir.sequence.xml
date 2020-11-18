@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+
+    
+        <record id="sequnce_journal_kas_dsr" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DSR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DSR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_djj" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DJJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DJJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_djb" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DJB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DJB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_djs" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DJS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DJS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_djm" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DJM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DJM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dju" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DJU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DJU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dsm" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DSM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DSM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dsg" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DSG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DSG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dsb" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DSB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DSB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dsp" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DSP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DSP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dsk" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DSK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DSK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dup" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DUP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DUP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_duk" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DUK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DUK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dle" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DLE</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DLE/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dlp" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DLP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DLP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dlm" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DLM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DLM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dlh" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DLH</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DLH/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dlx" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DLX</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DLX/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dll" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DLL</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DLL/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dld" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DLD</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DLD/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dlf" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DLF</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DLF/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dlv" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DLV</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DLV/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dlq" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DLQ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DLQ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dlc" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DLC</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DLC/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dly" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DLY</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DLY/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dlw" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DLW</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DLW/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dlu" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DLU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DLU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dlt" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DLT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DLT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dls" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DLS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DLS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dlo" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DLO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DLO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dln" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DLN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DLN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dlk" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DLK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DLK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dlj" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DLJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DLJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dli" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DLI</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DLI/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dlg" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DLG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DLG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dlb" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DLB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DLB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dla" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DLA</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DLA/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dlr" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DLR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DLR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_hho" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas HHO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/HHO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_mml" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas MML</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/MML/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dbl" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DBL</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DBL/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dbk" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DBK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DBK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dbb" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DBB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DBB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dbs" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DBS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DBS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dbt" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DBT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DBT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dds" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DDS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DDS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_ddc" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DDC</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DDC/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_ddb" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DDB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DDB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dda" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DDA</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DDA/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_ddd" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DDD</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DDD/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dde" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DDE</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DDE/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_ddg" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DDG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DDG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_ddm" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DDM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DDM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_ddj" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DDJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DDJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_ddt" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DDT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DDT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_ddi" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DDI</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DDI/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dxk" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DXK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DXK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dxt" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DXT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DXT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dxs" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DXS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DXS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dxg" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DXG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DXG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dxb" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DXB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DXB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dxn" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DXN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DXN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dwt" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DWT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DWT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dwr" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DWR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DWR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dwp" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DWP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DWP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dwo" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DWO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DWO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dwk" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DWK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DWK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dws" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DWS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DWS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dwg" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DWG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DWG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dwm" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DWM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DWM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_dwn" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DWN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DWN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_kas_ddu" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Kas DDU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">KS/DDU/%(y)s/%(month)s/</field> 
+        </record>
+    </data>
+</openerp>
+                

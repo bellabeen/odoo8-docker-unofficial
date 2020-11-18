@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_wtc_incentive_finco_line_all,wtc_incentive_finco_line all,model_wtc_incentive_finco_line,,1,1,1,1
+access_wtc_incentive_finco_line_detail_all,wtc_incentive_finco_line_detail all,model_wtc_incentive_finco_line_detail,,1,1,1,1
+access_wtc_request_payment_term_all,wtc_request_payment_term all,model_wtc_request_payment_term,,1,1,1,1
+access_wtc_driver_line_all,wtc_driver_line_all,model_wtc_driver_line,,1,1,1,1
+access_wtc_plat_number_line_all,wtc_plat_number_line_all,model_wtc_plat_number_line,,1,1,1,1

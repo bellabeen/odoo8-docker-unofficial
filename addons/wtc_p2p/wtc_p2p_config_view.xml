@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    	
+        <record id="view_p2p_config_tree" model="ir.ui.view">
+            <field name="name">wtc.p2p.config.line.tree</field>
+            <field name="model">wtc.p2p.config</field>
+            <field eval="1" name="priority"/>
+            <field name="arch" type="xml">
+                <tree string="P2P Configuration" create="true" editable="top">
+                	<field name="supplier_id" required="1" options='{"no_create": True,"no_open":True}'/>               	
+                    <field name="tentative_1" required="1"/>
+                    <field name="tentative_2" required="1"/>
+                </tree>
+            </field>
+        </record>    	
+ 
+		<record model="ir.ui.view" id="p2p_config_form_view">
+		    <field name="name">wtc.p2p.config.form</field>
+		    <field name="model">wtc.p2p.config</field>
+		    <field name="arch" type="xml">
+		        <form string="P2P Configuration">	        	
+		        	<sheet>
+			        	<div class="oe_title">
+			        		<h2>
+				                <label string="P2P Configuration"/>    			
+			 				</h2>
+			        	</div>       
+						<group>   
+							<group colspan="2">
+								<field name="supplier_id" required="1" options="{'no_create': True,'no_open': True}"  />
+							</group>            
+	                    	<group>
+							    <field name="tentative_1" required="1" />								    	
+								<field name="tentative_2" required="1" />
+							</group>  
+						</group>	
+						
+						<notebook colspan="5">
+							<page string="Audit Trail">
+								<group>
+									<group>
+										<field name="create_uid" readonly="1"></field>
+										<field name="create_date" readonly="1"></field>
+									</group>
+									<group>							
+										<field name="write_uid" readonly="1"></field>
+										<field name="write_date" readonly="1"></field>
+									</group>
+								</group>
+							</page>			                    
+		                </notebook>				
+		           </sheet>
+		        </form>
+		    </field>
+		</record>
+
+ 		<record id="view_p2p_config_filter" model="ir.ui.view">
+            <field name="name">p2p.config.list.select</field>
+            <field name="model">wtc.p2p.config</field>
+            <field name="arch" type="xml">
+                <search string="Search P2P Config">
+                    <field name="supplier_id"/> 
+                    <group expand="0" string="Group By">
+                        <filter string="Tentative 1" context="{'group_by':'tentative_1'}"/>
+                        <filter string="Tentative 2" context="{'group_by':'tentative_2'}"/>                    
+                    </group>
+                </search>
+            </field>
+        </record>		
+		<record model="ir.actions.act_window" id="p2p_config_action">
+		    <field name="name">P2P Config</field>
+		    <field name="res_model">wtc.p2p.config</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		    <field name="search_view_id" ref="view_p2p_config_filter"/>
+		</record>
+					
+		<menuitem id="p2p_submenu" name="P2P Config" parent="wtc_dealer_menu.p2p_configuration_menu"  action="p2p_config_action" sequence="10"/>    	
+    </data>
+</openerp>
+    

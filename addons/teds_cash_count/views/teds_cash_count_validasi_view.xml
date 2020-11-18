@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record id="view_teds_cash_count_validasi_tree" model="ir.ui.view">
+			<field name="name">teds.cash.count.validasi.tree</field>
+			<field name="model">teds.cash.count.validasi</field>
+			<field name="arch" type="xml">
+				<tree editable="bottom">
+					<field name="name"/>
+					<field name="type"/>
+					<field name="note"/>
+				</tree>
+			</field>
+		</record>
+		
+		<record id="action_teds_cash_count_validasi" model="ir.actions.act_window">
+        	<field name="name">Cash Count Validasi</field>
+			<field name="res_model">teds.cash.count.validasi</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree</field>
+		</record>
+		
+		<menuitem id="teds_cash_count_validasi_menuitem" action="action_teds_cash_count_validasi" parent="wtc_dealer_menu.backoffice_configuration_menu" sequence="30"/>
+	</data>
+</openerp>

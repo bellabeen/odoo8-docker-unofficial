@@ -1,0 +1,23 @@
+<openerp>
+<data noupdate="1">
+	<record id="A" model="wtc.workshop.category">
+	  <field name="name">A</field>
+	</record>
+
+	<record id="B" model="wtc.workshop.category">
+	  <field name="name">B</field>
+	</record>
+	    
+	    
+	<record id="C" model="wtc.workshop.category">
+	  <field name="name">C</field>
+	</record>
+	    
+	    
+	<record id="D" model="wtc.workshop.category">
+	  <field name="name">D</field>
+	</record>
+	
+</data>
+</openerp>
+    

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+    <record id="view_dealer_sale_order__analysis_graph" model="ir.ui.view">
+         <field name="name">dealer.sale.order.analysis.graph</field>
+         <field name="model">dealer.sale.order.analysis</field>
+         <field name="arch" type="xml">
+             <graph string="Sales Analysis" type="pivot" stacked="True">
+                 <field name="branch_id" type="row"/>
+                 <field name="date_order" interval="month" type="col"/>
+                  <field name="product_qty" type="measure"/>
+                 <field name="amount_total" type="measure"/>
+             </graph>
+         </field>
+    </record>
+
+    <!-- Custom reports (aka filters) -->
+     <record id="filter_dealer_sale_order_analysis_branch" model="ir.filters">
+        <field name="name">By Branch</field>
+        <field name="model_id">dealer.sale.order.analysis</field>
+        <field name="user_id" eval="False"/>
+        <field name="context">{'group_by': ['branch_id']}</field>
+    </record>
+    <record id="filter_dealer_sale_order_analysis_sales_funnel" model="ir.filters">
+        <field name="name">Sales Funnel</field>
+        <field name="model_id">dealer.sale.order.analysis</field>
+        <field name="domain">['&amp;', ('date_order','&lt;=', time.strftime('%%Y-12-31')), '&amp;', ('date_order','&gt;=',time.strftime('%%Y-01-01')), '|', ('state','in',('draft','waiting_for_approval','approved')), ('state','not in',('draft','waiting_for_approval','approved'))]</field>
+        <field name="user_id" eval="False"/>
+        <field name="context">{'group_by': ['state'], 'measures': ['amount_total']}</field>
+    </record>
+    <record id="filter_dealer_sale_order_analysis_salespersons" model="ir.filters">
+        <field name="name">By Salespersons</field>
+        <field name="model_id">dealer.sale.order.analysis</field>
+        <field name="user_id" eval="False"/>
+        <field name="context">{'group_by': ['date_order:month', 'user_id']}</field>
+    </record>
+    <record id="filter_dealer_sale_order_analysis_salesteam" model="ir.filters">
+        <field name="name">By Salesteam</field>
+        <field name="model_id">dealer.sale.order.analysis</field>
+        <field name="user_id" eval="False"/>
+        <field name="context">{'group_by': ['date_order:month', 'section_id']}</field>
+    </record>
+    <record id="filter_dealer_sale_order_analysis_product" model="ir.filters">
+        <field name="name">By Product</field>
+        <field name="model_id">dealer.sale.order.analysis</field>
+        <field name="user_id" eval="False"/>
+        <field name="context">{'group_by': ['date_order:month', 'product_id']}</field>
+    </record>
+
+    <record id="view_dealer_sale_order_analysis_search" model="ir.ui.view">
+        <field name="name">dealer.sale.order.analysis.search</field>
+        <field name="model">dealer.sale.order.analysis</field>
+        <field name="arch" type="xml">
+            <search string="Dealer Sales Order Analysis">
+                <field name="date_order"/>
+                <field name="date_confirm"/>
+                <filter string="This Year" name="year" invisible="1" domain="[('date_order','&lt;=', time.strftime('%%Y-12-31')),('date_order','&gt;=',time.strftime('%%Y-01-01'))]"/>
+                <filter name="Quotations" domain="[('state','in',('draft','waiting_for_approval','approved'))]"/>
+                <filter name="Sales" string="Sales" domain="[('state','not in',('draft','waiting_for_approval','approved'))]"/>
+                <filter name="Cash" string="Cash" domain="[('finco_id','=',False)]"/>
+                <filter name="Credit" string="Credit" domain="[('finco_id','!=',False)]"/>
+                <separator/>
+                <filter string="My Sales" help="My Sales" domain="[('user_id','=',uid)]"/>
+                <field name="partner_id"/>
+                <field name="product_id"/>
+                <field name="user_id"/>
+                <group expand="0" string="Extended Filters">
+                    <field name="categ_id"/>
+                </group>
+                <group expand="1" string="Group By">
+                    <filter string="Salesperson" name="User" context="{'group_by':'user_id'}"/>
+                    <filter string="Sales Team" context="{'group_by':'section_id'}" groups="base.group_multi_salesteams"/>
+                    <filter string="Customer" name="Customer" context="{'group_by':'partner_id'}"/>
+                    <filter string="Finco" name="Finco" context="{'group_by':'finco_id'}"/>
+                    <filter string="Category of Product" name="Category" context="{'group_by':'categ_id'}"/>
+                    <filter string="Status" context="{'group_by':'state'}"/>
+                    <separator/>
+                    <filter string="Order Month" context="{'group_by':'date_order:month'}" help="Ordered date of the sales order"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_dealer_sale_order_analysis_all" model="ir.actions.act_window">
+        <field name="name">Dealer Sales Order Analysis</field>
+        <field name="res_model">dealer.sale.order.analysis</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">graph</field>
+        <field name="search_view_id" ref="view_dealer_sale_order_analysis_search"/>
+        <field name="view_id" ref="view_dealer_sale_order__analysis_graph"/>
+        <field name="context">{'search_default_Sales':1, 'group_by_no_leaf':1,'group_by':[]}</field>
+        <field name="help">This report performs analysis on your quotations and sales orders. Analysis check your sales revenues and sort it by different group criteria (salesman, partner, product, etc.) Use this report to perform analysis on sales not having invoiced yet. If you want to analyse your turnover, you should use the Invoice Analysis report in the Accounting application.</field>
+    </record>
+
+    <menuitem action="action_dealer_sale_order_analysis_all" id="menu_report_product_all" parent="base.next_id_64" sequence="11"/>
+
+</data>
+</openerp>

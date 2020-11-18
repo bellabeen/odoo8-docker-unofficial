@@ -1,0 +1,1446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+	
+		<record id="product_extras_tools_TSUPRA_125" model="product.product">
+            <field name="name">TSUPRA 125</field>
+            <field name="default_code">TSUPRA 125</field>
+            <field name="categ_id" ref="categ_extras_tools"/>
+            <field name="description">TSUPRA 125</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_tools_TREVO" model="product.product">
+            <field name="name">TREVO</field>
+            <field name="default_code">TREVO</field>
+            <field name="categ_id" ref="categ_extras_tools"/>
+            <field name="description">TREVO</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_tools_TVARIO" model="product.product">
+            <field name="name">TVARIO</field>
+            <field name="default_code">TVARIO</field>
+            <field name="categ_id" ref="categ_extras_tools"/>
+            <field name="description">TVARIO</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_tools_TBEAT" model="product.product">
+            <field name="name">TBEAT</field>
+            <field name="default_code">TBEAT</field>
+            <field name="categ_id" ref="categ_extras_tools"/>
+            <field name="description">TBEAT</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_tools_TTIGER" model="product.product">
+            <field name="name">TTIGER</field>
+            <field name="default_code">TTIGER</field>
+            <field name="categ_id" ref="categ_extras_tools"/>
+            <field name="description">TTIGER</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_tools_TMEGA_PRO" model="product.product">
+            <field name="name">TMEGA PRO</field>
+            <field name="default_code">TMEGA PRO</field>
+            <field name="categ_id" ref="categ_extras_tools"/>
+            <field name="description">TMEGA PRO</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_tools_TCBR_250" model="product.product">
+            <field name="name">TCBR 250</field>
+            <field name="default_code">TCBR 250</field>
+            <field name="categ_id" ref="categ_extras_tools"/>
+            <field name="description">TCBR 250</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_tools_TCBR_150" model="product.product">
+            <field name="name">TCBR 150</field>
+            <field name="default_code">TCBR 150</field>
+            <field name="categ_id" ref="categ_extras_tools"/>
+            <field name="description">TCBR 150</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_tools_TSPACY" model="product.product">
+            <field name="name">TSPACY</field>
+            <field name="default_code">TSPACY</field>
+            <field name="categ_id" ref="categ_extras_tools"/>
+            <field name="description">TSPACY</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_tools_TSUPRA_HELM_IN" model="product.product">
+            <field name="name">TSUPRA HELM IN</field>
+            <field name="default_code">TSUPRA HELM IN</field>
+            <field name="categ_id" ref="categ_extras_tools"/>
+            <field name="description">TSUPRA HELM IN</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_tools_TOOL_PCX" model="product.product">
+            <field name="name">TOOL-PCX</field>
+            <field name="default_code">TOOL-PCX</field>
+            <field name="categ_id" ref="categ_extras_tools"/>
+            <field name="description">TOOL-PCX</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_tools_TCB150R" model="product.product">
+            <field name="name">TCB150R</field>
+            <field name="default_code">TCB150R</field>
+            <field name="categ_id" ref="categ_extras_tools"/>
+            <field name="description">TCB150R</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_tools_TVERZA" model="product.product">
+            <field name="name">TVERZA</field>
+            <field name="default_code">TVERZA</field>
+            <field name="categ_id" ref="categ_extras_tools"/>
+            <field name="description">TVERZA</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_tools_TREVO_F1" model="product.product">
+            <field name="name">TREVO F1</field>
+            <field name="default_code">TREVO F1</field>
+            <field name="categ_id" ref="categ_extras_tools"/>
+            <field name="description">TREVO F1</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_tools_TSUPRA_125_F1" model="product.product">
+            <field name="name">TSUPRA 125 F1</field>
+            <field name="default_code">TSUPRA 125 F1</field>
+            <field name="categ_id" ref="categ_extras_tools"/>
+            <field name="description">TSUPRA 125 F1</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_spion_SNF_100_T" model="product.product">
+            <field name="name">SNF 100-T</field>
+            <field name="default_code">SNF 100-T</field>
+            <field name="categ_id" ref="categ_extras_spion"/>
+            <field name="description">SNF 100-T</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_spion_SNF110_SP" model="product.product">
+            <field name="name">SNF110 SP</field>
+            <field name="default_code">SNF110 SP</field>
+            <field name="categ_id" ref="categ_extras_spion"/>
+            <field name="description">SNF110 SP</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_spion_SNC110" model="product.product">
+            <field name="name">SNC110</field>
+            <field name="default_code">SNC110</field>
+            <field name="categ_id" ref="categ_extras_spion"/>
+            <field name="description">SNC110</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_spion_SATL_110" model="product.product">
+            <field name="name">SATL-110</field>
+            <field name="default_code">SATL-110</field>
+            <field name="categ_id" ref="categ_extras_spion"/>
+            <field name="description">SATL-110</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_spion_SKYT" model="product.product">
+            <field name="name">SKYT</field>
+            <field name="default_code">SKYT</field>
+            <field name="categ_id" ref="categ_extras_spion"/>
+            <field name="description">SKYT</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_spion_SGLS" model="product.product">
+            <field name="name">SGLS</field>
+            <field name="default_code">SGLS</field>
+            <field name="categ_id" ref="categ_extras_spion"/>
+            <field name="description">SGLS</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_spion_SCBR_250" model="product.product">
+            <field name="name">SCBR 250</field>
+            <field name="default_code">SCBR 250</field>
+            <field name="categ_id" ref="categ_extras_spion"/>
+            <field name="description">SCBR 250</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_spion_SCBR_150" model="product.product">
+            <field name="name">SCBR 150</field>
+            <field name="default_code">SCBR 150</field>
+            <field name="categ_id" ref="categ_extras_spion"/>
+            <field name="description">SCBR 150</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_spion_SKZLG" model="product.product">
+            <field name="name">SKZLG</field>
+            <field name="default_code">SKZLG</field>
+            <field name="categ_id" ref="categ_extras_spion"/>
+            <field name="description">SKZLG</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_spion_SKZRA" model="product.product">
+            <field name="name">SKZRA</field>
+            <field name="default_code">SKZRA</field>
+            <field name="categ_id" ref="categ_extras_spion"/>
+            <field name="description">SKZRA</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_spion_BKMR_PCX" model="product.product">
+            <field name="name">BKMR-PCX</field>
+            <field name="default_code">BKMR-PCX</field>
+            <field name="categ_id" ref="categ_extras_spion"/>
+            <field name="description">BKMR-PCX</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_spion_SK25A" model="product.product">
+            <field name="name">SK25A</field>
+            <field name="default_code">SK25A</field>
+            <field name="categ_id" ref="categ_extras_spion"/>
+            <field name="description">SK25A</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_spion_SK18A" model="product.product">
+            <field name="name">SK18A</field>
+            <field name="default_code">SK18A</field>
+            <field name="categ_id" ref="categ_extras_spion"/>
+            <field name="description">SK18A</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_spion_SK16G" model="product.product">
+            <field name="name">SK16G</field>
+            <field name="default_code">SK16G</field>
+            <field name="categ_id" ref="categ_extras_spion"/>
+            <field name="description">SK16G</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_spion_SK03S" model="product.product">
+            <field name="name">SK03S</field>
+            <field name="default_code">SK03S</field>
+            <field name="categ_id" ref="categ_extras_spion"/>
+            <field name="description">SK03S</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_spion_SK03_Supra_f1" model="product.product">
+            <field name="name">SK03 Supra f1</field>
+            <field name="default_code">SK03 Supra f1</field>
+            <field name="categ_id" ref="categ_extras_spion"/>
+            <field name="description">SK03 Supra f1</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_spion_K61A" model="product.product">
+            <field name="name">K61A</field>
+            <field name="default_code">K61A</field>
+            <field name="categ_id" ref="categ_extras_spion"/>
+            <field name="description">K61A</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_service_BSSUPRA_X_125" model="product.product">
+            <field name="name">BSSUPRA X 125</field>
+            <field name="default_code">BSSUPRA X 125</field>
+            <field name="categ_id" ref="categ_extras_buku_service"/>
+            <field name="description">BSSUPRA X 125</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_service_BSBLADE" model="product.product">
+            <field name="name">BSBLADE</field>
+            <field name="default_code">BSBLADE</field>
+            <field name="categ_id" ref="categ_extras_buku_service"/>
+            <field name="description">BSBLADE</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_service_BSREVO_110" model="product.product">
+            <field name="name">BSREVO 110</field>
+            <field name="default_code">BSREVO 110</field>
+            <field name="categ_id" ref="categ_extras_buku_service"/>
+            <field name="description">BSREVO 110</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_service_BSVARIO" model="product.product">
+            <field name="name">BSVARIO</field>
+            <field name="default_code">BSVARIO</field>
+            <field name="categ_id" ref="categ_extras_buku_service"/>
+            <field name="description">BSVARIO</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_service_BSBEAT" model="product.product">
+            <field name="name">BSBEAT</field>
+            <field name="default_code">BSBEAT</field>
+            <field name="categ_id" ref="categ_extras_buku_service"/>
+            <field name="description">BSBEAT</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_service_BSSCOOPY" model="product.product">
+            <field name="name">BSSCOOPY</field>
+            <field name="default_code">BSSCOOPY</field>
+            <field name="categ_id" ref="categ_extras_buku_service"/>
+            <field name="description">BSSCOOPY</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_service_BSTIGER" model="product.product">
+            <field name="name">BSTIGER</field>
+            <field name="default_code">BSTIGER</field>
+            <field name="categ_id" ref="categ_extras_buku_service"/>
+            <field name="description">BSTIGER</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_service_BSMEGA_PRO" model="product.product">
+            <field name="name">BSMEGA PRO</field>
+            <field name="default_code">BSMEGA PRO</field>
+            <field name="categ_id" ref="categ_extras_buku_service"/>
+            <field name="description">BSMEGA PRO</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_service_BSCBR_250" model="product.product">
+            <field name="name">BSCBR 250</field>
+            <field name="default_code">BSCBR 250</field>
+            <field name="categ_id" ref="categ_extras_buku_service"/>
+            <field name="description">BSCBR 250</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_service_BSCBR_150" model="product.product">
+            <field name="name">BSCBR 150</field>
+            <field name="default_code">BSCBR 150</field>
+            <field name="categ_id" ref="categ_extras_buku_service"/>
+            <field name="description">BSCBR 150</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_service_BSSPACY" model="product.product">
+            <field name="name">BSSPACY</field>
+            <field name="default_code">BSSPACY</field>
+            <field name="categ_id" ref="categ_extras_buku_service"/>
+            <field name="description">BSSPACY</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_service_BSHISUPRA_X_125_HELM_IN" model="product.product">
+            <field name="name">BSHISUPRA X 125 HELM IN</field>
+            <field name="default_code">BSHISUPRA X 125 HELM IN</field>
+            <field name="categ_id" ref="categ_extras_buku_service"/>
+            <field name="description">BSHISUPRA X 125 HELM IN</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_service_BSFISUPRA_X_125_INJECTION" model="product.product">
+            <field name="name">BSFISUPRA X 125 INJECTION</field>
+            <field name="default_code">BSFISUPRA X 125 INJECTION</field>
+            <field name="categ_id" ref="categ_extras_buku_service"/>
+            <field name="description">BSFISUPRA X 125 INJECTION</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_service_BSFISPACY_HELM_IN_INJECTION" model="product.product">
+            <field name="name">BSFISPACY HELM IN INJECTION</field>
+            <field name="default_code">BSFISPACY HELM IN INJECTION</field>
+            <field name="categ_id" ref="categ_extras_buku_service"/>
+            <field name="description">BSFISPACY HELM IN INJECTION</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_service_BSFIVARIO_125" model="product.product">
+            <field name="name">BSFIVARIO 125</field>
+            <field name="default_code">BSFIVARIO 125</field>
+            <field name="categ_id" ref="categ_extras_buku_service"/>
+            <field name="description">BSFIVARIO 125</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_service_BSPCX" model="product.product">
+            <field name="name">BSPCX</field>
+            <field name="default_code">BSPCX</field>
+            <field name="categ_id" ref="categ_extras_buku_service"/>
+            <field name="description">BSPCX</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_service_BSFIBEAT" model="product.product">
+            <field name="name">BSFIBEAT</field>
+            <field name="default_code">BSFIBEAT</field>
+            <field name="categ_id" ref="categ_extras_buku_service"/>
+            <field name="description">BSFIBEAT</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_service_BSCB150R" model="product.product">
+            <field name="name">BSCB150R</field>
+            <field name="default_code">BSCB150R</field>
+            <field name="categ_id" ref="categ_extras_buku_service"/>
+            <field name="description">BSCB150R</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_service_BSVerza" model="product.product">
+            <field name="name">BSVerza</field>
+            <field name="default_code">BSVerza</field>
+            <field name="categ_id" ref="categ_extras_buku_service"/>
+            <field name="description">BSVerza</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_service_BSFISCOOPY" model="product.product">
+            <field name="name">BSFISCOOPY</field>
+            <field name="default_code">BSFISCOOPY</field>
+            <field name="categ_id" ref="categ_extras_buku_service"/>
+            <field name="description">BSFISCOOPY</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_service_BSREVO_110_F1" model="product.product">
+            <field name="name">BSREVO 110 F1</field>
+            <field name="default_code">BSREVO 110 F1</field>
+            <field name="categ_id" ref="categ_extras_buku_service"/>
+            <field name="description">BSREVO 110 F1</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_service_BSMEGA_PRO_F1" model="product.product">
+            <field name="name">BSMEGA PRO F1</field>
+            <field name="default_code">BSMEGA PRO F1</field>
+            <field name="categ_id" ref="categ_extras_buku_service"/>
+            <field name="description">BSMEGA PRO F1</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_service_BSSUPRA_X_125_F1" model="product.product">
+            <field name="name">BSSUPRA X 125 F1</field>
+            <field name="default_code">BSSUPRA X 125 F1</field>
+            <field name="categ_id" ref="categ_extras_buku_service"/>
+            <field name="description">BSSUPRA X 125 F1</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_service_BSBLADEF1" model="product.product">
+            <field name="name">BSBLADEF1</field>
+            <field name="default_code">BSBLADEF1</field>
+            <field name="categ_id" ref="categ_extras_buku_service"/>
+            <field name="description">BSBLADEF1</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_service_BSFIVARIO_110F1" model="product.product">
+            <field name="name">BSFIVARIO 110F1</field>
+            <field name="default_code">BSFIVARIO 110F1</field>
+            <field name="categ_id" ref="categ_extras_buku_service"/>
+            <field name="description">BSFIVARIO 110F1</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_service_BSFIBEAT_POP" model="product.product">
+            <field name="name">BSFIBEAT POP</field>
+            <field name="default_code">BSFIBEAT POP</field>
+            <field name="categ_id" ref="categ_extras_buku_service"/>
+            <field name="description">BSFIBEAT POP</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_service_BSFIVARIO_150" model="product.product">
+            <field name="name">BSFIVARIO 150</field>
+            <field name="default_code">BSFIVARIO 150</field>
+            <field name="categ_id" ref="categ_extras_buku_service"/>
+            <field name="description">BSFIVARIO 150</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_battery_ACCU KERING 4V" model="product.product">
+            <field name="name">ACCU KERING 4V</field>
+            <field name="default_code">ACCU KERING 4V</field>
+            <field name="categ_id" ref="categ_extras_battery"/>
+            <field name="description">ACCU KERING 4V</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_battery_ACCU_BASAH" model="product.product">
+            <field name="name">ACCU BASAH</field>
+            <field name="default_code">ACCU BASAH</field>
+            <field name="categ_id" ref="categ_extras_battery"/>
+            <field name="description">ACCU BASAH</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_battery_ACCU_CBR_PCX" model="product.product">
+            <field name="name">ACCU CBR-PCX</field>
+            <field name="default_code">ACCU CBR-PCX</field>
+            <field name="categ_id" ref="categ_extras_battery"/>
+            <field name="description">ACCU CBR-PCX</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_battery_ACCU_KERING_6V" model="product.product">
+            <field name="name">ACCU KERING 6V</field>
+            <field name="default_code">ACCU KERING 6V</field>
+            <field name="categ_id" ref="categ_extras_battery"/>
+            <field name="description">ACCU KERING 6V</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_helm_TRX_3" model="product.product">
+            <field name="name">TRX 3</field>
+            <field name="default_code">TRX 3</field>
+            <field name="categ_id" ref="categ_extras_helm"/>
+            <field name="description">TRX 3</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_helm_TRX_S" model="product.product">
+            <field name="name">TRX S</field>
+            <field name="default_code">TRX S</field>
+            <field name="categ_id" ref="categ_extras_helm"/>
+            <field name="description">TRX S</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_helm_TRX_R" model="product.product">
+            <field name="name">TRX R</field>
+            <field name="default_code">TRX R</field>
+            <field name="categ_id" ref="categ_extras_helm"/>
+            <field name="description">TRX R</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_helm_TRCBR" model="product.product">
+            <field name="name">TRCBR</field>
+            <field name="default_code">TRCBR</field>
+            <field name="categ_id" ref="categ_extras_helm"/>
+            <field name="description">TRCBR</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_helm_HELM_PCX" model="product.product">
+            <field name="name">HELM-PCX</field>
+            <field name="default_code">HELM-PCX</field>
+            <field name="categ_id" ref="categ_extras_helm"/>
+            <field name="description">HELM-PCX</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_manual_BMSUPRA_X_125" model="product.product">
+            <field name="name">BMSUPRA X 125</field>
+            <field name="default_code">BMSUPRA X 125</field>
+            <field name="categ_id" ref="categ_extras_buku_manual"/>
+            <field name="description">BMSUPRA X 125</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_manual_BMBLADE" model="product.product">
+            <field name="name">BMBLADE</field>
+            <field name="default_code">BMBLADE</field>
+            <field name="categ_id" ref="categ_extras_buku_manual"/>
+            <field name="description">BMBLADE</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_manual_BMREVO_110" model="product.product">
+            <field name="name">BMREVO 110</field>
+            <field name="default_code">BMREVO 110</field>
+            <field name="categ_id" ref="categ_extras_buku_manual"/>
+            <field name="description">BMREVO 110</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_manual_BMVARIO" model="product.product">
+            <field name="name">BMVARIO</field>
+            <field name="default_code">BMVARIO</field>
+            <field name="categ_id" ref="categ_extras_buku_manual"/>
+            <field name="description">BMVARIO</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_manual_BMBEAT" model="product.product">
+            <field name="name">BMBEAT</field>
+            <field name="default_code">BMBEAT</field>
+            <field name="categ_id" ref="categ_extras_buku_manual"/>
+            <field name="description">BMBEAT</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_manual_BMSCOOPY" model="product.product">
+            <field name="name">BMSCOOPY</field>
+            <field name="default_code">BMSCOOPY</field>
+            <field name="categ_id" ref="categ_extras_buku_manual"/>
+            <field name="description">BMSCOOPY</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_manual_BMTIGER" model="product.product">
+            <field name="name">BMTIGER</field>
+            <field name="default_code">BMTIGER</field>
+            <field name="categ_id" ref="categ_extras_buku_manual"/>
+            <field name="description">BMTIGER</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_manual_BMMEGA_PRO" model="product.product">
+            <field name="name">BMMEGA PRO</field>
+            <field name="default_code">BMMEGA PRO</field>
+            <field name="categ_id" ref="categ_extras_buku_manual"/>
+            <field name="description">BMMEGA PRO</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_manual_BMCBR_250" model="product.product">
+            <field name="name">BMCBR 250</field>
+            <field name="default_code">BMCBR 250</field>
+            <field name="categ_id" ref="categ_extras_buku_manual"/>
+            <field name="description">BMCBR 250</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_manual_BMCBR_150" model="product.product">
+            <field name="name">BMCBR 150</field>
+            <field name="default_code">BMCBR 150</field>
+            <field name="categ_id" ref="categ_extras_buku_manual"/>
+            <field name="description">BMCBR 150</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_manual_BMSPACY" model="product.product">
+            <field name="name">BMSPACY</field>
+            <field name="default_code">BMSPACY</field>
+            <field name="categ_id" ref="categ_extras_buku_manual"/>
+            <field name="description">BMSPACY</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_manual_BMHISUPRA_X_125_HELM_IN" model="product.product">
+            <field name="name">BMHISUPRA X 125 HELM IN</field>
+            <field name="default_code">BMHISUPRA X 125 HELM IN</field>
+            <field name="categ_id" ref="categ_extras_buku_manual"/>
+            <field name="description">BMHISUPRA X 125 HELM IN</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_manual_BMFISUPRA_X_125_INJECTION" model="product.product">
+            <field name="name">BMFISUPRA X 125 INJECTION</field>
+            <field name="default_code">BMFISUPRA X 125 INJECTION</field>
+            <field name="categ_id" ref="categ_extras_buku_manual"/>
+            <field name="description">BMFISUPRA X 125 INJECTION</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_manual_BMFISPACY_HELM_IN_INJECTION" model="product.product">
+            <field name="name">BMFISPACY HELM IN INJECTION</field>
+            <field name="default_code">BMFISPACY HELM IN INJECTION</field>
+            <field name="categ_id" ref="categ_extras_buku_manual"/>
+            <field name="description">BMFISPACY HELM IN INJECTION</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_manual_BMFIVARIO_125" model="product.product">
+            <field name="name">BMFIVARIO 125</field>
+            <field name="default_code">BMFIVARIO 125</field>
+            <field name="categ_id" ref="categ_extras_buku_manual"/>
+            <field name="description">BMFIVARIO 125</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_manual_BMPCX" model="product.product">
+            <field name="name">BMPCX</field>
+            <field name="default_code">BMPCX</field>
+            <field name="categ_id" ref="categ_extras_buku_manual"/>
+            <field name="description">BMPCX</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_manual_BMFIBEAT" model="product.product">
+            <field name="name">BMFIBEAT</field>
+            <field name="default_code">BMFIBEAT</field>
+            <field name="categ_id" ref="categ_extras_buku_manual"/>
+            <field name="description">BMFIBEAT</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_manual_BMCB150R" model="product.product">
+            <field name="name">BMCB150R</field>
+            <field name="default_code">BMCB150R</field>
+            <field name="categ_id" ref="categ_extras_buku_manual"/>
+            <field name="description">BMCB150R</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_manual_BMVerza" model="product.product">
+            <field name="name">BMVerza</field>
+            <field name="default_code">BMVerza</field>
+            <field name="categ_id" ref="categ_extras_buku_manual"/>
+            <field name="description">BMVerza</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_manual_BMFISCOOPY" model="product.product">
+            <field name="name">BMFISCOOPY</field>
+            <field name="default_code">BMFISCOOPY</field>
+            <field name="categ_id" ref="categ_extras_buku_manual"/>
+            <field name="description">BMFISCOOPY</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_manual_BMREVO_110_F1" model="product.product">
+            <field name="name">BMREVO 110 F1</field>
+            <field name="default_code">BMREVO 110 F1</field>
+            <field name="categ_id" ref="categ_extras_buku_manual"/>
+            <field name="description">BMREVO 110 F1</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_manual_BFREVO_110_F1" model="product.product">
+            <field name="name">BFREVO 110 F1</field>
+            <field name="default_code">BFREVO 110 F1</field>
+            <field name="categ_id" ref="categ_extras_buku_manual"/>
+            <field name="description">BFREVO 110 F1</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_manual_BMMEGA_PRO_F1" model="product.product">
+            <field name="name">BMMEGA PRO F1</field>
+            <field name="default_code">BMMEGA PRO F1</field>
+            <field name="categ_id" ref="categ_extras_buku_manual"/>
+            <field name="description">BMMEGA PRO F1</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_manual_BMSUPRA_X_125_F1" model="product.product">
+            <field name="name">BMSUPRA X 125 F1</field>
+            <field name="default_code">BMSUPRA X 125 F1</field>
+            <field name="categ_id" ref="categ_extras_buku_manual"/>
+            <field name="description">BMSUPRA X 125 F1</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_manual_BMBLADEF1" model="product.product">
+            <field name="name">BMBLADEF1</field>
+            <field name="default_code">BMBLADEF1</field>
+            <field name="categ_id" ref="categ_extras_buku_manual"/>
+            <field name="description">BMBLADEF1</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_manual_BMFIVARIO_110F1" model="product.product">
+            <field name="name">BMFIVARIO 110F1</field>
+            <field name="default_code">BMFIVARIO 110F1</field>
+            <field name="categ_id" ref="categ_extras_buku_manual"/>
+            <field name="description">BMFIVARIO 110F1</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_manual_BMFIBEAT_POP" model="product.product">
+            <field name="name">BMFIBEAT POP</field>
+            <field name="default_code">BMFIBEAT POP</field>
+            <field name="categ_id" ref="categ_extras_buku_manual"/>
+            <field name="description">BMFIBEAT POP</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+    
+        <record id="product_extras_buku_manual_BMFIVARIO_150" model="product.product">
+            <field name="name">BMFIVARIO 150</field>
+            <field name="default_code">BMFIVARIO 150</field>
+            <field name="categ_id" ref="categ_extras_buku_manual"/>
+            <field name="description">BMFIVARIO 150</field>
+            <field name="type">product</field>
+            <field name="cost_method">standard</field>
+            <field name="valuation">real_time</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="sale_ok">False</field>
+            <field name="purchase_ok">False</field>
+            <field name="active">True</field>
+        </record>
+	
+	</data>
+</openerp>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    	<record id="wtc_stock_production_permohonan_form_view" model="ir.ui.view">
+            <field name="name">wtc.stock.production.permohonan.form.view</field>
+            <field name="model">stock.production.lot</field>
+            <field name="inherit_id" ref="stock.view_production_lot_form"/>
+            <field name="arch" type="xml">
+				<field name ="tgl_terima" position="after">
+					<field name="proses_stnk_id" readonly="1"/>
+					<field name="tgl_proses_stnk" readonly="1"/>								
+					<field name="penerimaan_notice_id" readonly="1"/>
+					<field name="tgl_terima_notice" readonly="1"/>	
+					<field name="penerimaan_stnk_id" readonly="1"/>	
+				    <field name="tgl_terima_stnk" readonly="1"/>
+					<field name="penerimaan_no_polisi_id" readonly="1"/>	
+					<field name="tgl_terima_no_polisi" readonly="1"/>
+					<field name="lokasi_stnk_id" readonly="1"/>				
+					<field name="penerimaan_bpkb_id" readonly="1"/>
+					<field name="tgl_terima_bpkb" readonly="1"/>
+					<field name="lokasi_bpkb_id" readonly="1"/>
+					<field name="no_urut_bpkb" readonly="1"/>	
+					<field name="proses_biro_jasa_id"/>					
+					<field name="tgl_proses_birojasa" readonly="1"/>	
+					<field name="no_notice_copy" readonly="1"/>
+					<field name="tgl_notice_copy" readonly="1"/>	
+					<field name="inv_pajak_progressive_id" readonly="1"/>
+				</field>		
+				
+			
+            </field>
+        </record>
+        
+	</data>
+</openerp>

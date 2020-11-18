@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    		<record id="wtc_account_filter_or_detail1" model="wtc.account.filter">
+			<field name="name">other_receivable_detail</field>
+			<field name="prefix">216299</field>
+		</record>
+    
+    	<record id="wtc_account_filter_or_header" model="wtc.account.filter">
+			<field name="name">other_receivable_header</field>
+			<field name="prefix">113199</field>
+			<field name="type">receivable</field>
+		</record>
+		<record id="wtc_account_filter_or_detail2" model="wtc.account.filter">
+			<field name="name">other_receivable_detail</field>
+			<field name="prefix">799199</field>
+		</record>
+		<record id="wtc_account_filter_or_detail3" model="wtc.account.filter">
+			<field name="name">other_receivable_detail</field>
+			<field name="prefix">6</field>
+		</record>
+		<record id="wtc_account_filter_payments_request" model="wtc.account.filter">
+			<field name="name">payments_request</field>
+			<field name="prefix">799199</field>
+		</record>
+				<!-- <record id="wtc_account_filter_petty_cash" model="wtc.account.filter">
+			<field name="name">petty_cash</field>
+			<field name="prefix">6</field>
+		</record>
+		<record id="wtc_account_filter_advance_payment" model="wtc.account.filter">
+			<field name="name">advance_payment</field>
+			<field name="prefix">799199</field>
+		</record> -->
+    </data>
+</openerp>
+ 

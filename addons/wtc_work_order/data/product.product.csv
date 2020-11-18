@@ -1,0 +1,164 @@
+id,name,default_code,description,categ_id,uom_id,uom_po_id,sale_ok,purchase_ok,type,warranty,sale_delay
+service_51001,51001,Ganti Steering Stem,Ganti Steering Stem,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51002,51002,Ganti Front Fork,Ganti Front Fork,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51003,51003,Ganti Pipe Fr.Frok,Ganti Pipe Fr.Frok,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51004,51004,Ganti Cover Handle Fr./Rr.,Ganti Cover Handle Fr./Rr.,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51005,51005,Ganti Head Light,Ganti Head Light,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51006,51006,Ganti Cono Race,Ganti Cono Race,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51007,51007,Ganti Fr.Brake Pad Set,Ganti Fr.Brake Pad Set,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51008,51008,Ganti Fr.Brake Caliper,Ganti Fr.Brake Caliper,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51009,51009,Ganti Brake Shoe,Ganti Brake Shoe,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51010,51010,Ganti Disc. Fr. Wheel,Ganti Disc. Fr. Wheel,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51011,51011,Ganti Tire,Ganti Tire,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51012,51012,Ganti Flange/sprocket Final,Ganti Flange/sprocket Final,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51013,51013,Ganti Fuel Tank,Ganti Fuel Tank,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51014,51014,Ganti Fuel Unit,Ganti Fuel Unit,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51015,51015,Ganti Rear Fender,Ganti Rear Fender,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51016,51016,Ganti Front Fender,Ganti Front Fender,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51017,51017,Ganti Frame Body,Ganti Frame Body,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51018,51018,Ganti Main Stand,Ganti Main Stand,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51019,51019,Ganti RR Cushion,Ganti RR Cushion,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51020,51020,Ganti Gear Speedometer/Panel,Ganti Gear Speedometer/Panel,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51021,51021,Ganti Kabel Speedometer,Ganti Kabel Speedometer,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51022,51022,Ganti Sleeve Axie/Sprocket Driven,Ganti Sleeve Axie/Sprocket Driven,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51023,51023,Ganti Muffler,Ganti Muffler,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51024,51024,Ganti Cylinder Head,Ganti Cylinder Head,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51025,51025,Ganti Cylinder Comp (include Piston & Ring),Ganti Cylinder Comp (include Piston & Ring),CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51026,51026,Ganti Cam Shaft,Ganti Cam Shaft,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51027,51027,Ganti Cam Chain,Ganti Cam Chain,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51028,51028,Ganti Clutch,Ganti Clutch,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51029,51029,Ganti Stating Motor/Oil Seal,Ganti Stating Motor/Oil Seal,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51030,51030,Ganti Oli Pump Assy,Ganti Oli Pump Assy,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51031,51031,Ganti Crankshaft Comp,Ganti Crankshaft Comp,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51032,51032,Ganti Flywheel Comp,Ganti Flywheel Comp,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51033,51033,"Ganti Face Assy, Driven","Ganti Face Assy, Driven",CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51034,51034,"Ganti Crankcase Comp,R","Ganti Crankcase Comp,R",CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51035,51035,"Ganti Lifter Assy,Tens","Ganti Lifter Assy,Tens",CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51036,51036,Ganti Motor Assy Starter,Ganti Motor Assy Starter,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51037,51037,"Ganti Pump Assy,Water","Ganti Pump Assy,Water",CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51038,51038,Ganti Swicth Assy Winker,Ganti Swicth Assy Winker,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51039,51039,Ganti Speedometer/meter assy,Ganti Speedometer/meter assy,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51040,51040,Ganti Swicth lighting,Ganti Swicth lighting,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51041,51041,Ganti Wire Hamess,Ganti Wire Hamess,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51042,51042,Ganti Key Set,Ganti Key Set,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51043,51043,Ganti Stator Comp,Ganti Stator Comp,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51044,51044,Ganti Switch Fr.Stop,Ganti Switch Fr.Stop,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51045,51045,Ganti CDI,Ganti CDI,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51046,51046,Ganti Coil,Ganti Coil,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51047,51047,Ganti Rectifier,Ganti Rectifier,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_51048,51048,Ganti Relay Winker,Ganti Relay Winker,CLA,Unit(s),Unit(s),True,False,service,7,0
+service_41001,41001,CENTER BODY BERAT,CENTER BODY BERAT,HR,Unit(s),Unit(s),True,False,service,7,0
+service_41002,41002,CENTER BODY RINGAN,CENTER BODY RINGAN,HR,Unit(s),Unit(s),True,False,service,7,0
+service_41003,41003,CENTER BODY SEDANG,CENTER BODY SEDANG,HR,Unit(s),Unit(s),True,False,service,7,0
+service_41004,41004,CENTRE SOCK DEPAN,CENTRE SOCK DEPAN,HR,Unit(s),Unit(s),True,False,service,7,0
+service_41005,41005,CENTER KUPU-KUPU BERAT,CENTER KUPU-KUPU BERAT,HR,Unit(s),Unit(s),True,False,service,7,0
+service_41006,41006,CENTER KUPU-KUPU RINGAN,CENTER KUPU-KUPU RINGAN,HR,Unit(s),Unit(s),True,False,service,7,0
+service_41007,41007,SRVICE PASANG STANG SEHER,SRVICE PASANG STANG SEHER,HR,Unit(s),Unit(s),True,False,service,7,0
+service_41008,41008,OVER HOUL,OVER HOUL,HR,Unit(s),Unit(s),True,False,service,7,0
+service_41009,41009,SERVICE GANTI FRAME BODY,SERVICE GANTI FRAME BODY,HR,Unit(s),Unit(s),True,False,service,7,0
+service_11000,11000,KPB1,KPB1,KPB1,Unit(s),Unit(s),True,False,service,7,0
+service_12000,12000,KPB2,KPB2,KPB2,Unit(s),Unit(s),True,False,service,7,0
+service_13000,13000,KPB3,KPB3,KPB3,Unit(s),Unit(s),True,False,service,7,0
+service_14000,14000,KPB4,KPB4,KPB4,Unit(s),Unit(s),True,False,service,7,0
+service_31001,31001,SERVICE PRODO REM TROMOL DEPAN,SERVICE PRODO REM TROMOL DEPAN,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31002,31002,SERVICE PRODO REM TROMOL BELAKANG,SERVICE PRODO REM TROMOL BELAKANG,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31003,31003,SERVICE PRODO REM CAKRAM DEPAN,SERVICE PRODO REM CAKRAM DEPAN,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31004,31004,SERVICE PRODO REM CAKRAM BELAKANG,SERVICE PRODO REM CAKRAM BELAKANG,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31005,31005,SERVICE BAN DALAM BELAKANG,SERVICE BAN DALAM BELAKANG,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31006,31006,SERVICE BAN DALAM DEPAN,SERVICE BAN DALAM DEPAN,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31007,31007,SERVICE BAN LUAR BELAKANG,SERVICE BAN LUAR BELAKANG,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31008,31008,SERVICE BAN LUAR DEPAN,SERVICE BAN LUAR DEPAN,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31009,31009,GANTI GEARSET,GANTI GEARSET,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31010,31010,SERVICE KARET TROMOL,SERVICE KARET TROMOL,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31011,31011,SERVICE ACCU,SERVICE ACCU,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31012,31012,SERVICE BOKLAM/LAMPU,SERVICE BOKLAM/LAMPU,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31013,31013,SERVICE PASANG KABEL,SERVICE PASANG KABEL,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31014,31014,SERVICE KABEL BODY BERAT,SERVICE KABEL BODY BERAT,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31015,31015,SERVICE KABEL BODY SEDANG,SERVICE KABEL BODY SEDANG,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31016,31016,SERVICE KABEL BODY RINGAN,SERVICE KABEL BODY RINGAN,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31017,31017,SERVICE KABEL CUK,SERVICE KABEL CUK,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31018,31018,SERVICE KABEL GAS,SERVICE KABEL GAS,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31019,31019,SERVICE KABEL KM,SERVICE KABEL KM,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31020,31020,SERVICE KABEL KOPLING,SERVICE KABEL KOPLING,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31021,31021,SERVICE KABEL REM CAKRAM,SERVICE KABEL REM CAKRAM,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31022,31022,SERVICE KABEL REM TROMOL,SERVICE KABEL REM TROMOL,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31023,31023,SERVICE KABEL RPM,SERVICE KABEL RPM,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31024,31024,SERVICE KABEL  SPEEDO METER,SERVICE KABEL  SPEEDO METER,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31025,31025,SERVICE ASS SOCK DEPAN,SERVICE ASS SOCK DEPAN,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31026,31026,SERVICE PRESS VELG BELAKANG,SERVICE PRESS VELG BELAKANG,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31027,31027,SERVICE PRESS VELG DEPAN,SERVICE PRESS VELG DEPAN,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31028,31028,SERVICE PRESS STANG SEHER,SERVICE PRESS STANG SEHER,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31029,31029,SRVICE JARI-JARI VELG BELAKANG,SRVICE JARI-JARI VELG BELAKANG,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31030,31030,SEVICE JARI-JARI VELG DEPAN,SEVICE JARI-JARI VELG DEPAN,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31031,31031,SERVICE KEYSEET,SERVICE KEYSEET,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31032,31032,SERVICE LOCKOMSEET,SERVICE LOCKOMSEET,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31033,31033,SERVICE FRONT FENDER,SERVICE FRONT FENDER,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31034,31034,SERVICE REAR FENDER,SERVICE REAR FENDER,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31035,31035,SERVICE COVER LAMPU DEPAN,SERVICE COVER LAMPU DEPAN,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31036,31036,SERVICE COVER BODY,SERVICE COVER BODY,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31037,31037,SERVICE PASANG STRIPING,SERVICE PASANG STRIPING,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31038,31038,SERVICE PASANG TROMOL,SERVICE PASANG TROMOL,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31039,31039,SERVICE PASANG KNALPOT,SERVICE PASANG KNALPOT,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31040,31040,SERVICE GANTI SENTRIK/RANTAI KETENG,SERVICE GANTI SENTRIK/RANTAI KETENG,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31041,31041,SERVICE STANG KEMUDI,SERVICE STANG KEMUDI,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31042,31042,SERVICE HORN/KLAKSON,SERVICE HORN/KLAKSON,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31043,31043,SERVICE SPEEDOMETER,SERVICE SPEEDOMETER,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31044,31044,SERVICE COMSTER,SERVICE COMSTER,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31045,31045,SEMI OVER HOUL,SEMI OVER HOUL,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31046,31046,SERVICE GANTI OLI SOCK,SERVICE GANTI OLI SOCK,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31047,31047,SERVICE KABEL,SERVICE KABEL,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31048,31048,SERVICE KURAS TANKI,SERVICE KURAS TANKI,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31049,31049,SERVICE PASANG SWING ARM,SERVICE PASANG SWING ARM,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31050,31050,SERVICE BOS SWING ARM,SERVICE BOS SWING ARM,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31051,31051,SERVICE HEAD LIGHT,SERVICE HEAD LIGHT,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31052,31052,SERVICE KURAS AIR RADIATOR,SERVICE KURAS AIR RADIATOR,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31053,31053,SERVICE BREAK OIL/OLI REM,SERVICE BREAK OIL/OLI REM,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31054,31054,SERVICE PASANG GEAR BOX,SERVICE PASANG GEAR BOX,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31055,31055,SERVICE BEARING,SERVICE BEARING,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31056,31056,SERVICE GANTI TANGKI,SERVICE GANTI TANGKI,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31057,31057,SERVICE GANTI SOCK DEPAN,SERVICE GANTI SOCK DEPAN,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31058,31058,SERVICE GANTI SOCK BELAKANG,SERVICE GANTI SOCK BELAKANG,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31059,31059,SERVICE PASANG SPEEDO METER,SERVICE PASANG SPEEDO METER,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31060,31060,SERVICE PASANG V BELT,SERVICE PASANG V BELT,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31061,31061,SERVIS BERSIH CVT,SERVIS BERSIH CVT,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31062,31062,SERVIS PASANG KOMSTER,SERVIS PASANG KOMSTER,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31063,31063,SERVIS BERSIH CVT,SERVIS BERSIH CVT,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31064,31064,SERVIS LEAMER,SERVIS LEAMER,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31065,31065,SERVIS SEKIR KLEP,SERVIS SEKIR KLEP,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31066,31066,SERVIS BODY GETAR,SERVIS BODY GETAR,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31067,31067,SERVIS PSNG COVER MUFLER,SERVIS PSNG COVER MUFLER,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31068,31068,SERVIS GANTI ROLLER,SERVIS GANTI ROLLER,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31069,31069,SERVIS GANTI BUSI,SERVIS GANTI BUSI,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31070,31070,SERVIS PSNG BOHLAM STOP,SERVIS PSNG BOHLAM STOP,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31071,31071,SERVICE KURAS TANKI,SERVICE KURAS TANKI,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31072,31072,SERVICE CARBURATOR CLEANER,SERVICE CARBURATOR CLEANER,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31073,31073,SERVICE INJECTOR CLEANER,SERVICE INJECTOR CLEANER,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31074,31074,SERVICE KARBU+INJECTOR CLEANER,SERVICE KARBU+INJECTOR CLEANER,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31075,31075,SERVIS PSNG SIL MAGNET,SERVIS PSNG SIL MAGNET,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31076,31076,JASA PASANG 1,JASA PASANG 1,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31077,31077,JASA PASANG 2,JASA PASANG 2,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31078,31078,JASA PASANG 3,JASA PASANG 3,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31079,31079,JASA PASANG 4,JASA PASANG 4,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31080,31080,JASA PASANG 5,JASA PASANG 5,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31081,31081,JASA PASANG 6,JASA PASANG 6,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31082,31082,JASA PASANG 7,JASA PASANG 7,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31083,31083,JASA PASANG 8,JASA PASANG 8,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31084,31084,JASA PASANG 9,JASA PASANG 9,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31085,31085,JASA PASANG 10,JASA PASANG 10,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31086,31086,JASA PASANG 11,JASA PASANG 11,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31087,31087,JASA PASANG 12,JASA PASANG 12,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31088,31088,JASA PASANG 13,JASA PASANG 13,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31089,31089,JASA PASANG 14,JASA PASANG 14,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31090,31090,JASA PASANG 15,JASA PASANG 15,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31091,31091,JASA PASANG 16,JASA PASANG 16,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31092,31092,JASA PASANG 17,JASA PASANG 17,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31093,31093,JASA PASANG 18,JASA PASANG 18,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31094,31094,JASA PASANG 19,JASA PASANG 19,LR,Unit(s),Unit(s),True,False,service,7,0
+service_31095,31095,JASA PASANG 20,JASA PASANG 20,LR,Unit(s),Unit(s),True,False,service,7,0
+service_23001,23001,SERVICE PAKET 1,SERVICE PAKET 1,CS,Unit(s),Unit(s),True,False,service,7,0
+service_22001,22001,SERVICE PAKET 2,SERVICE PAKET 2,LS,Unit(s),Unit(s),True,False,service,7,0
+service_22002,22002,SERVICE PAKET 3,SERVICE PAKET 3,LS,Unit(s),Unit(s),True,False,service,7,0
+service_21000,21000,SERVIS GANTI OLI,SERVIS GANTI OLI,OR+,Unit(s),Unit(s),True,False,service,7,0
+service_23002,23002,DISKON PAKET 1,DISKON PAKET 1,CS,Unit(s),Unit(s),True,False,service,7,0
+service_22003,22003,DISKON PAKET 2,DISKON PAKET 2,LS,Unit(s),Unit(s),True,False,service,7,0
+service_22004,22004,DISKON PAKET 3,DISKON PAKET 3,LS,Unit(s),Unit(s),True,False,service,7,0

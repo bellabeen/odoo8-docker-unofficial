@@ -1,0 +1,12 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_wtc_branch_all,wtc_branch all,model_wtc_branch,,1,1,1,1
+access_wtc_area_all,wtc_area all,model_wtc_area,,1,1,1,1
+access_wtc_branch_config_all,wtc_branch_config all,model_wtc_branch_config,,1,1,1,1
+access_wtc_harga_bbn_all,wtc_harga_bbn all,model_wtc_harga_bbn,,1,1,1,1
+access_wtc_harga_bbn_line_all,wtc_harga_bbn_line all,model_wtc_harga_bbn_line,,1,1,1,1
+access_wtc_harga_bbn_line_detail_all,wtc_harga_bbn_line_detail all,model_wtc_harga_bbn_line_detail,,1,1,1,1
+access_wtc_harga_birojasa_all,wtc_harga_birojasa all,model_wtc_harga_birojasa,,1,1,1,1
+access_wtc_harga_ekspedisi_all,wtc_harga_ekspedisi_all,model_wtc_harga_ekspedisi,,1,1,1,1
+access_wtc_pricelist_expedition_all,wtc_pricelist_expedition_all,model_wtc_pricelist_expedition,,1,1,1,1
+access_wtc_pricelist_expedition_line_all,wtc_pricelist_expedition_line_all,model_wtc_pricelist_expedition_line,,1,1,1,1
+access_wtc_pricelist_expedition_line_detail_all,wtc_pricelist_expedition_line_detail_all,model_wtc_pricelist_expedition_line_detail,,1,1,1,1

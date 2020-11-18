@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        
+        <record id="sequnce_journal_journal_memorial" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Memorial</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">JM/%(y)s/%(month)s/</field> 
+        </record>
+    </data>
+</openerp>
+                    

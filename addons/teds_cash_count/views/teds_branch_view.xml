@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>  
+		<record id="view_teds_branch_cash_count_form" model="ir.ui.view">
+			<field name="name">teds.branch.cash.count.form</field>
+			<field name="model">wtc.branch</field>
+			<field name="inherit_id" ref="wtc_branch.wtc_branch_form_view"/>
+			<field name="arch" type="xml">
+				<field name="pajak_progressive" position="after">
+					<field name="adh_id" options="{'no_create':True,'no_open':True}"/>
+					<field name="admin_pos_id" options="{'no_create':True,'no_open':True}"/>
+					<field name="kasir_id" options="{'no_create':True,'no_open':True}"/>
+					<field name="plafon_petty_cash_sr"/>
+					<field name="plafon_petty_cash_ws"/>
+					<field name="plafon_petty_cash_atl_btl"/>
+				</field>
+			</field>
+		</record>
+	</data>
+</openerp>

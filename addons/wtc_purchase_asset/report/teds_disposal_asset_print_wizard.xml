@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+<template id="teds_disposal_asset_print_form_pdf">
+    <t t-call="report.html_container">
+        <t t-foreach="docs" t-as="o">
+            <div class="page">
+                <div class="oe_structure"/>
+                <div class="row">
+                	<table style="border-collapse: collapse; border: 1px solid black; width:100%;font-size:11px;">
+                        <tr style="border: 1px solid black">
+                        	<td width="5%" style="padding-top:10px; padding-left:20px; padding-bottom:10px">
+                    		    <img src="/wtc_branch/static/src/img/logo.png" width="44%" height="26%"/><br/>
+                    		    <b style="font-size:12px;text-align:center">Tunas Group</b>
+                        	</td>
+                            <td style="padding-right:15px;">
+                                <div style="text-align:center;padding-right:80px; font-size:12px;">
+                                    <h3>Form Dispossal Asset</h3>
+                                    <b><span t-esc="o.name"/></b>
+                                </div>
+                        		<div style="text-align:right;">
+                        			<b><u>General Affair Departement</u></b>
+                        		</div>
+                            </td>
+                        </tr> 
+                        <tr>
+	                        <td colspan="2">
+	                        	<table width="100%">
+	                        		<tr>
+	                        			<th style="padding-top:10px;padding-left:10px">
+	                        				PT Tunas Dwipa Matra<br/>
+	                        				<span t-esc="o.branch_id.name"/><br/>
+	                        				<span t-esc="o.branch_id.street"/>
+	                        			</th>
+	                        			<th style="text-align:right;padding-right:10px">
+	                        				Tanggal : <span t-esc="o.date"/>
+	                        			</th>
+	                        		</tr>
+	                        		<tr>
+	                        			<th colspan="2" style="padding-top:10px;padding-left:10px;padding-bottom:10px">Type : <span t-esc="o.type"/></th>
+	                        		</tr>
+	                        	</table>
+	                        </td>
+                        </tr>
+                        <tr>
+                        	<td colspan="2" style="padding-left:20px; padding-right:20px">
+	                        	<table class="table table-bordered">
+	                        		<t t-if="o.type == 'sold'">
+		                        		<tr>
+		                        			<th>No</th>
+		                        			<th>
+		                        				No. Inventaris<br/>
+		                        				<span style="font-style: italic">Fixed Asset No.</span>
+		                        			</th>
+		                        			<th>
+		                        				Keterangan<br/>
+		                        				<span style="font-style: italic">Description</span>
+		                        			</th>
+		                        			<th>
+		                        				Jumlah<br/>
+		                        				<span style="font-style: italic">Quantity</span>
+		                        			</th>
+		                        			<th>
+		                        				Harga Beli<br/>
+		                        				<span style="font-style: italic">Cost</span>
+		                        			</th>
+		                        			<th>
+		                        				Nilai Buku<br/>
+		                        				<span style="font-style: italic">NBV</span>
+		                        			</th>
+		                        			<th>
+		                        				Harga Jual<br/>
+		                        				<span style="font-style: italic">Selling Price</span>
+		                        			</th>
+		                        			<th>
+		                        				Keterangan lainnya<br/>
+		                        				<span style="font-style: italic">Other Desc.</span>
+		                        			</th>
+		                        		</tr>
+		                        		<tr t-foreach="o.disposal_line" t-as="line">
+		                        			<td><span t-esc="no_urut()"/></td>
+		                        			<td><span t-esc="line.asset_id.code"/></td>
+		                        			<td><span t-esc="line.asset_id.name"/></td>
+		                        			<td>1</td>
+		                        			<td><span t-esc="'{0:,.2f}'.format(line.nilai_asset)"/></td>
+		                        			<td><span t-esc="'{0:,.2f}'.format(line.nilai_buku)"/></td>
+		                        			<td><span t-esc="'{0:,.2f}'.format(line.amount)"/></td>
+		                        			<td></td>
+		                        		</tr>
+		                        	</t>
+		                        	<t t-if="o.type == 'scrap'">
+		                        		<tr>
+		                        			<th>No</th>
+		                        			<th>
+		                        				No. Inventaris<br/>
+		                        				<span style="font-style: italic">Fixed Asset No.</span>
+		                        			</th>
+		                        			<th>
+		                        				Keterangan<br/>
+		                        				<span style="font-style: italic">Description</span>
+		                        			</th>
+		                        			<th>
+		                        				Jumlah<br/>
+		                        				<span style="font-style: italic">Quantity</span>
+		                        			</th>
+		                        			<th>
+		                        				Harga Beli<br/>
+		                        				<span style="font-style: italic">Cost</span>
+		                        			</th>
+		                        			<th>
+		                        				Penyusutan / Bln<br/>
+		                        			</th>
+		                        			<th>
+		                        				Akumulasi Penyusutan<br/>
+		                        			</th>
+		                        			<th>
+		                        				Nilai Buku<br/>
+		                        				<span style="font-style: italic">Selling Price</span>
+		                        			</th>
+		                        			<th>
+		                        				Keterangan lainnya<br/>
+		                        				<span style="font-style: italic">Other Desc.</span>
+		                        			</th>
+		                        		</tr>
+		                        		<tr t-foreach="o.disposal_line" t-as="line">
+		                        			<td><span t-esc="no_urut()"/></td>
+		                        			<td><span t-esc="line.asset_id.code"/></td>
+		                        			<td><span t-esc="line.asset_id.name"/></td>
+		                        			<td>1</td>
+		                        			<td><span t-esc="'{0:,.2f}'.format(line.amount)"/></td>
+		                        			<td><span t-esc="'{0:,.2f}'.format(line.nilai_penyusutan)"/></td>
+		                        			<td><span t-esc="'{0:,.2f}'.format(line.akumulasi_penyusutan)"/></td>
+		                        			<td><span t-esc="'{0:,.2f}'.format(line.nilai_buku)"/></td>
+		                        			<td></td>
+		                        		</tr>
+		                        	</t>
+	                        	</table>
+	                        </td>
+                        </tr>
+                        <tr>
+                        	<td colspan="2">
+                        		<div style="padding-left:15px; padding-right:15px">
+	                        		<table class="table table-bordered">
+				                    	<tr>
+				                    		<th colspan="2" style="text-align:center;">Pemohon</th>
+				                    		<th colspan="5" style="text-align:center;">Mengetahui</th>
+				                    		<th colspan="2" style="text-align:center;">Disetujui</th>
+				                    	</tr>
+				                    	<tr height="70px">
+				                    		<td></td>
+				                    		<td></td>
+				                    		<td></td>
+				                    		<td></td>                    		
+				                    		<td></td>
+				                    		<td></td>
+				                    		<td></td>
+				                    		<td></td>
+				                    		<td></td>
+				                    	</tr>
+				                    	<tr>
+				                    		<th style="text-align:center;">(ADH)</th>
+				                    		<th style="text-align:center;">(SOH)</th>
+				                    		<th style="text-align:center;">(AM)</th>
+				                    		<th style="text-align:center;">(Adm	Mgr)</th>
+				                    		<th style="text-align:center;">(GM)</th>
+				                    		<th style="text-align:center;">(COO)</th>
+				                    		<th style="text-align:center;">(Fixed Asset Dept)</th>
+				                    		<th style="text-align:center;">(Dir. GA)</th>
+				                    		<th style="text-align:center;">(Dir. Ops)</th>
+				                    	</tr>
+				                    </table>
+				                </div>
+                        	</td>
+                        </tr>
+                        <tr style="font-style:italic;">
+                        	<td colspan="2" style="padding-left:20px;padding-bottom:30px">
+                        		<b><u>Note : </u></b><br/>
+								- Untuk type SOLD, lampirkan penawaran &amp; identitas calon pembeli, foto asset, estimasi harga pasar (internet), dan penawaran dari leasing<br/>
+								- Untuk tipe SCRAP, lampirkan foto asset<br/>
+								- Untuk penjualan Lelang lampirkan Rekap Barang &amp; Vendor Lelang
+                        	</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </t>
+    </t>
+</template>
+</data>
+</openerp>

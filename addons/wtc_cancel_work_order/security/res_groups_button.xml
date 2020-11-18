@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+	
+		<!-- Work Order Cancel RFA -->
+
+		<record id="group_work_order_cancel_rfa" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Work Order Cancel RFA</field>
+            <field name="implied_ids" eval="[(4, ref('group_work_order_cancel_read'))]"/>
+        </record>
+        
+        <record id="access_work_order_cancel_approval_line_rfa_update" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">work_order_cancel_approval_line_rfa update</field>
+            <field name="group_id" ref="group_work_order_cancel_rfa"/>
+            <field name="perm_create">1</field>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <!-- Work Order Cancel Cancel Approval -->
+		
+		<record id="group_work_order_cancel_cancel_approval" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Work Order Cancel Cancel Approval</field>
+            <field name="implied_ids" eval="[(4, ref('group_work_order_cancel_read'))]"/>
+        </record>
+        
+        <record id="access_work_order_cancel_app_line_cancel_app_update" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">work_order_cancel_app_line_cancel_app update</field>
+            <field name="group_id" ref="group_work_order_cancel_cancel_approval"/>
+            <field name="perm_write">1</field>
+        </record>
+		
+		<!-- Work Order Cancel Confirm -->
+		
+		<record id="group_work_order_cancel_confirm" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Work Order Cancel Confirm</field>
+            <field name="implied_ids" eval="[(4, ref('group_work_order_cancel_read'))]"/>
+        </record>
+        
+        <record id="access_work_order_cancel_confirm" model="ir.model.access">
+            <field name="model_id" ref="model_work_order_cancel"/>
+            <field name="name">work_order_cancel_confirm update</field>
+            <field name="group_id" ref="group_work_order_cancel_confirm"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_work_order_cancel_confirm" model="ir.model.access">
+            <field name="model_id" ref="wtc_work_order.model_wtc_work_order_line"/>
+            <field name="name">work_order_line_cancel_confirm_wo update</field>
+            <field name="group_id" ref="group_work_order_cancel_confirm"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_work_order_cancel_confirm_wo_line" model="ir.model.access">
+            <field name="model_id" ref="wtc_work_order.model_wtc_work_order_line"/>
+            <field name="name">work_order_cancel_confirm_wo_line update</field>
+            <field name="group_id" ref="group_work_order_cancel_confirm"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_work_order_cancel_confirm_account_invoice" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice"/>
+            <field name="name">work_order_cancel_confirm_account_invoice update</field>
+            <field name="group_id" ref="group_work_order_cancel_confirm"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_work_order_cancel_confirm_account_invoice_line" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice_line"/>
+            <field name="name">work_order_cancel_confirm_account_invoice_line update</field>
+            <field name="group_id" ref="group_work_order_cancel_confirm"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_work_order_cancel_confirm_stock_picking" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_picking"/>
+            <field name="name">work_order_cancel_confirm_stock_picking update</field>
+            <field name="group_id" ref="group_work_order_cancel_confirm"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_work_order_cancel_confirm_stock_move" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_move"/>
+            <field name="name">work_order_cancel_confirm_stock_move update</field>
+            <field name="group_id" ref="group_work_order_cancel_confirm"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_work_order_cancel_confirm_account_move" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move"/>
+            <field name="name">work_order_cancel_confirm_account_move update</field>
+            <field name="group_id" ref="group_work_order_cancel_confirm"/>
+            <field name="perm_create">1</field>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_work_order_cancel_confirm_account_move_line" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move_line"/>
+            <field name="name">work_order_cancel_confirm_account_move_line update</field>
+            <field name="group_id" ref="group_work_order_cancel_confirm"/>
+            <field name="perm_create">1</field>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_work_order_cancel_confirm_account_move_reconcile" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move_reconcile"/>
+            <field name="name">work_order_cancel_confirm_account_move_reconcile update</field>
+            <field name="group_id" ref="group_work_order_cancel_confirm"/>
+            <field name="perm_create">1</field>
+            <field name="perm_write">1</field>
+        </record>
+            
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[(4,ref('group_work_order_cancel_rfa')),
+				(4,ref('group_work_order_cancel_cancel_approval')),
+				(4,ref('group_work_order_cancel_confirm')),
+				]">
+			</field>
+		</record>
+	
+	</data>
+</openerp>

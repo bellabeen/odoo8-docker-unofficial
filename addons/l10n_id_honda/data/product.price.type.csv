@@ -1,0 +1,3 @@
+id,currency_id:id
+product.standard_price,base.IDR
+product.list_price,base.IDR

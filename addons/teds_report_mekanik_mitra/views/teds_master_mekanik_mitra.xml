@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+	    <record id="view_teds_master_mekanik_mitra_tree" model="ir.ui.view">
+			<field name="name">teds.master.mekanik.mitra.tree</field>
+			<field name="model">teds.master.mekanik.mitra</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="branch_id"/>
+					<field name="mekanik_id"/>
+					<field name="perjanjian_ke"/>
+					<field name="start_date"/>
+					<field name="end_date"/>
+					<field name="bank"/>
+					<field name="no_rekening"/>
+					<field name="surat_perjanjian"/>
+					<field name="absen_finger"/>
+				</tree>
+			</field>
+		</record>
+		
+		<record id="view_teds_master_mekanik_mitra_form" model="ir.ui.view">
+			<field name="name">teds.master.mekanik.mitra.form</field>
+			<field name="model">teds.master.mekanik.mitra</field>
+			<field name="arch" type="xml">
+				<form>
+					<sheet>
+						<group>
+							<group>
+								<field name="branch_id" required="1" options="{'no_open':True,'no_create':True}"/>
+								<field name="mekanik_id" required="1" options="{'no_open':True,'no_create':True}" domain="[('branch_id','=',branch_id),('job_id.sales_force','=','mechanic')]"/>
+								<field name="perjanjian_ke" required="1"/>
+								<field name="start_date" required="1"/>
+								<field name="end_date" required="1"/>
+								<field name="keterangan"/>
+							</group>
+							<group>
+								<field name="bank" required="1"/>
+								<field name="bank_name" attrs="{'invisible':[('bank','!=','other')],'required':[('bank','=','other')]}"/>
+								<field name="no_rekening" required="1"/>
+								<field name="nama_rekening"/>
+								<field name="surat_perjanjian" required="1"/>
+								<field name="absen_finger" required="1"/>
+							</group>
+						</group>
+					 	<notebook>
+					 		<page string="History Absensi">
+					 			<field name="histrory_absensi_ids">
+					 				<tree editable="top">
+					 					<field name="bulan" required="1"/>
+										<field name="tahun" required="1"/>
+										<field name="jumlah" required="1"/>
+					 				</tree>
+					 			</field>
+					 		</page>
+							<page string="Audit Trail">
+								<group>
+									<group>
+										<field name="create_uid" readonly="1"></field>
+										<field name="create_date" readonly="1"></field>
+									</group>
+									<group>							
+										<field name="write_uid" readonly="1"></field>
+										<field name="write_date" readonly="1"></field>
+									</group>
+								</group>
+							</page>		                 
+			            </notebook>	
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<record id="teds_master_mekanik_mitra_filter" model="ir.ui.view">
+            <field name="name">teds.master.mekanik.mitra.filter</field>
+            <field name="model">teds.master.mekanik.mitra</field>
+            <field name="arch" type="xml">
+                <search string="Search">
+                    <field name="mekanik_id"/>
+                    <field name="branch_id"/>
+                    <field name='no_rekening'/>
+                    <field name='bank_name'/>  
+                    <filter string="Belum Surat Perjanjian" name="surat_perjanjian_belum" domain="[('surat_perjanjian','=','Belum')]" />
+                    <filter string="Proses Surat Perjanjian" name="surat_perjanjian_proses" domain="[('surat_perjanjian','=','Proses')]" />
+                    <filter string="OK Surat Perjanjian" name="surat_perjanjian_ok" domain="[('surat_perjanjian','=','OK')]" />                    
+                    <filter string="BCA" name="bank_bca" domain="[('bank','=','BCA')]" />
+                    <filter string="Mandiri" name="bank_mandiri" domain="[('bank','=','Mandiri')]" />
+                    <filter string="BRI" name="bank_bri" domain="[('bank','=','BRI')]" />
+                    <filter string="Other" name="bank_other" domain="[('bank','=','other')]" />
+
+                    <group expand="1" string="Group By">
+                        <filter string="Branch" context="{'group_by':'branch_id'}"/>
+                    </group>     
+                </search>
+            </field>
+        </record>     
+
+
+		<record model="ir.actions.act_window" id="action_teds_master_mekanik_mitra">
+		    <field name="name">Mekanik Mitra</field>
+		    <field name="res_model">teds.master.mekanik.mitra</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		</record>
+	    
+
+	    <menuitem id="teds_mekanik_mitra_submenu" parent="wtc_dealer_menu.workshop_configuration_menu" sequence="50" name="Mekanik Mitra"/> 
+	    <menuitem id="teds_master_mekanik_mitra_menuitem" parent="teds_mekanik_mitra_submenu" sequence="1" action="action_teds_master_mekanik_mitra"/> 
+	</data>
+</openerp>

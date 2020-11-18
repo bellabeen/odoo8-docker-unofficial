@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    	<record id="wtc_request_payment_term_form_view" model="ir.ui.view">
+            <field name="name">wtc.request.payment.term.form</field>
+            <field name="model">wtc.request.payment.term</field>
+            <field name="arch" type="xml">
+                <form string="">     
+					<header>
+		        		<field name="state" widget="statusbar" statusbar_visible="draft,waiting_for_approval,approved" statusbar_colors='{"draft":"red","approved":"blue"}'/>												
+					</header>                	                         
+				<sheet>
+	        			<div class="oe_title">
+			        		<h2>
+				                <label string="Request Payment Term"/>    			
+				 				<field name="name" class="oe_inline" readonly="1"/>
+			 				</h2>
+	 					</div>					
+                    <group>
+						<group>
+							<field name="branch_id" options="{'no_create': True,'no_open': True}" attrs="{'readonly': ['|',('state','!=','draft'),('name','!=',False)]}" />
+						</group>  
+						<group>
+							<field name="division" attrs="{'readonly': [('state','!=','draft')]}" />																
+						</group>                    	
+						<group>
+							<field name="partner_id" attrs="{'readonly': [('state','!=','draft')]}"/>
+							<field name="current_payment_term_show_id" attrs="{'invisible': [('state','!=','draft')]}"/>
+							<field name="current_payment_term_id" attrs="{'readonly': [('state','!=','draft')],'invisible':[('state','=','draft')]}"/>
+							<field name="new_payment_term_id" attrs="{'readonly': [('state','!=','draft')]}"/>					
+														
+						</group>
+						<group>
+							<field name="date" readonly="1"/>
+														
+						</group>
+		            </group>	            
+		          </sheet>		 
+                </form>
+            </field>
+        </record>
+
+        <record id="wtc_request_payment_term_tree_view" model="ir.ui.view">
+            <field name="name">wtc.request.payment.term.tree</field>
+            <field name="model">wtc.request.payment.term</field>
+            <field name="arch" type="xml">
+				<tree>
+					<field name="branch_id"/>
+					<field name="division"/>
+					<field name="date"/>
+					<field name="partner_id"/>
+					<field name="current_payment_term_id"/>
+					<field name="new_payment_term_id"/>
+					<field name="state"/>
+				</tree>
+            </field>
+        </record>
+
+ 		<record id="wtc_request_payment_term_filter" model="ir.ui.view">
+            <field name="name">wtc.request.payment.term.list.select</field>
+            <field name="model">wtc.request.payment.term</field>
+            <field name="arch" type="xml">
+                <search string="Search wtc_request_payment_term">
+                    <field name="partner_id"/>
+                    <field name='branch_id'/>
+					<field name='division'/>                    
+                </search>
+            </field>
+        </record>        
+                        
+        <record model="ir.actions.act_window" id="request_payment_term_action">
+		    <field name="res_model">wtc.request.payment.term</field>
+		    <field name="name">Request Payment Term</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		    <field name="search_view_id" ref="wtc_request_payment_term_filter"/>
+		</record>
+		
+		<menuitem id="payment_request_submenu" name="Request Payment Term" parent="wtc_dealer_menu.showroom_sales_menu" sequence="1" action="request_payment_term_action"/>
+        
+	</data>
+</openerp>

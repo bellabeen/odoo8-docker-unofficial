@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">  	
+    	
+<!-- Outstanding Permohonan Faktur -->	
+	
+        <record id="group_outstanding_permohonan_faktur_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Outstanding Permohonan Faktur Read</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_outstanding_claim_kpb_submenu'))]"/>  
+        </record> 
+        
+        <record id="access_outstanding_permohonan_faktur_read" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">outstanding_permohonan_faktur read</field> 
+            <field name="group_id" ref="group_outstanding_permohonan_faktur_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+                                
+        <record id="group_outstanding_permohonan_faktur_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Outstanding Permohonan Faktur Update</field> 
+            <field name="menu_access" eval="[(4, ref('wtc_outstanding_claim_kpb_submenu'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_outstanding_permohonan_faktur_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_outstanding_permohonan_faktur_update" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">outstanding_permohonan_faktur update</field> 
+            <field name="group_id" ref="group_outstanding_permohonan_faktur_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>   
+        
+<!-- Permohonan Faktur -->	
+	
+        <record id="group_permohonan_faktur_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Permohonan Faktur Read</field> 
+            <field name="menu_access" eval="[(4, ref('permohonan_faktur_submenu'))]"/>  
+        </record> 
+        
+        <record id="access_permohonan_faktur_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_permohonan_faktur"/>
+            <field name="name">permohonan_faktur read</field> 
+            <field name="group_id" ref="group_permohonan_faktur_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+
+        <record id="access_permohonan_faktur_line_read" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">permohonan_faktur_line read</field> 
+            <field name="group_id" ref="group_permohonan_faktur_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+
+        <record id="access_permohonan_faktur_approval_line_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">permohonan_faktur_approval_line read</field> 
+            <field name="group_id" ref="group_permohonan_faktur_read"/>  
+            <field name="perm_read">1</field> 
+        </record>
+                                
+        <record id="group_permohonan_faktur_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Permohonan Faktur Update</field> 
+            <field name="menu_access" eval="[(4, ref('permohonan_faktur_submenu'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_permohonan_faktur_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_permohonan_faktur_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_permohonan_faktur"/>
+            <field name="name">permohonan_faktur update</field> 
+            <field name="group_id" ref="group_permohonan_faktur_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+        
+        <record id="access_permohonan_faktur_line_update" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">permohonan_faktur_line update</field> 
+            <field name="group_id" ref="group_permohonan_faktur_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>                   
+
+        <record id="access_permohonan_faktur_approval_line_update" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">permohonan_faktur_approval_line update</field> 
+            <field name="group_id" ref="group_permohonan_faktur_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record> 
+        
+        <record id="group_permohonan_faktur_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Permohonan Faktur Delete</field> 
+            <field name="menu_access" eval="[(4, ref('permohonan_faktur_submenu'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_permohonan_faktur_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_permohonan_faktur_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_permohonan_faktur"/>
+            <field name="name">permohonan_faktur delete</field> 
+            <field name="group_id" ref="group_permohonan_faktur_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>      
+        
+        <record id="access_permohonan_faktur_line_delete" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">permohonan_faktur_line delete</field> 
+            <field name="group_id" ref="group_permohonan_faktur_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record> 
+        
+<!-- Penerimaan Faktur -->	
+	
+        <record id="group_penerimaan_faktur_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Penerimaan Faktur Read</field> 
+            <field name="menu_access" eval="[(4, ref('penerimaan_faktur_submenu'))]"/>  
+        </record> 
+        
+        <record id="access_penerimaan_faktur_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penerimaan_faktur"/>
+            <field name="name">penerimaan_faktur read</field> 
+            <field name="group_id" ref="group_penerimaan_faktur_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+
+        <record id="access_penerimaan_faktur_line_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penerimaan_faktur_line"/>
+            <field name="name">penerimaan_faktur_line read</field> 
+            <field name="group_id" ref="group_penerimaan_faktur_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+                        
+        <record id="group_penerimaan_faktur_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Penerimaan Faktur Update</field> 
+            <field name="menu_access" eval="[(4, ref('penerimaan_faktur_submenu'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_penerimaan_faktur_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_penerimaan_faktur_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penerimaan_faktur"/>
+            <field name="name">penerimaan_faktur update</field> 
+            <field name="group_id" ref="group_penerimaan_faktur_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+        
+        <record id="access_penerimaan_faktur_line_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penerimaan_faktur_line"/>
+            <field name="name">penerimaan_faktur_line update</field> 
+            <field name="group_id" ref="group_penerimaan_faktur_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>                   
+
+        <record id="group_penerimaan_faktur_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Penerimaan Faktur Delete</field> 
+            <field name="menu_access" eval="[(4, ref('penerimaan_faktur_submenu'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_penerimaan_faktur_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_penerimaan_faktur_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penerimaan_faktur"/>
+            <field name="name">penerimaan_faktur delete</field> 
+            <field name="group_id" ref="group_penerimaan_faktur_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>      
+        
+        <record id="access_penerimaan_faktur_line_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penerimaan_faktur_line"/>
+            <field name="name">penerimaan_faktur_line delete</field> 
+            <field name="group_id" ref="group_penerimaan_faktur_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>  
+        
+<!-- Penyerahan Faktur Off The Road -->	
+	
+        <record id="group_penyerahan_faktur_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Penyerahan Faktur Off The Road Read</field> 
+            <field name="menu_access" eval="[(4, ref('penyerahan_faktur_submenu'))]"/>  
+        </record> 
+        
+        <record id="access_penyerahan_faktur_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penyerahan_faktur"/>
+            <field name="name">penyerahan_faktur read</field> 
+            <field name="group_id" ref="group_penyerahan_faktur_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+
+        <record id="access_penyerahan_faktur_line_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penyerahan_faktur_line"/>
+            <field name="name">penyerahan_faktur_line read</field> 
+            <field name="group_id" ref="group_penyerahan_faktur_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+                        
+        <record id="group_penyerahan_faktur_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Penyerahan Faktur Off The Road Update</field> 
+            <field name="menu_access" eval="[(4, ref('penyerahan_faktur_submenu'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_penyerahan_faktur_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_penyerahan_faktur_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penyerahan_faktur"/>
+            <field name="name">penyerahan_faktur update</field> 
+            <field name="group_id" ref="group_penyerahan_faktur_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+        
+        <record id="access_penyerahan_faktur_line_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penyerahan_faktur_line"/>
+            <field name="name">penyerahan_faktur_line update</field> 
+            <field name="group_id" ref="group_penyerahan_faktur_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>                   
+
+        <record id="group_penyerahan_faktur_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Penyerahan Faktur Off The Road Delete</field> 
+            <field name="menu_access" eval="[(4, ref('penyerahan_faktur_submenu'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_penyerahan_faktur_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_penyerahan_faktur_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penyerahan_faktur"/>
+            <field name="name">penyerahan_faktur delete</field> 
+            <field name="group_id" ref="group_penyerahan_faktur_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>      
+        
+        <record id="access_penyerahan_faktur_line_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penyerahan_faktur_line"/>
+            <field name="name">penyerahan_faktur_line delete</field> 
+            <field name="group_id" ref="group_penyerahan_faktur_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record> 
+                
+<!-- Cancel Permohonan Faktur -->	
+	
+        <record id="group_cancel_permohonan_faktur_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Cancel Permohonan Faktur Read</field> 
+            <field name="menu_access" eval="[(4, ref('cancel_permohonan_faktur_submenu'))]"/>  
+        </record> 
+        
+        <record id="access_cancel_permohonan_faktur_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cancel_permohonan_faktur"/>
+            <field name="name">cancel_permohonan_faktur read</field> 
+            <field name="group_id" ref="group_cancel_permohonan_faktur_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+
+        <record id="access_cancel_permohonan_faktur_line_read" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">cancel_permohonan_faktur_line read</field> 
+            <field name="group_id" ref="group_cancel_permohonan_faktur_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+
+                                
+        <record id="group_cancel_permohonan_faktur_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Cancel Permohonan Faktur Update</field> 
+            <field name="menu_access" eval="[(4, ref('cancel_permohonan_faktur_submenu'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_cancel_permohonan_faktur_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_cancel_permohonan_faktur_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cancel_permohonan_faktur"/>
+            <field name="name">cancel_permohonan_faktur update</field> 
+            <field name="group_id" ref="group_cancel_permohonan_faktur_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+        
+        <record id="access_cancel_permohonan_faktur_line_update" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">cancel_permohonan_faktur_line update</field> 
+            <field name="group_id" ref="group_cancel_permohonan_faktur_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>                   
+        
+        <record id="group_cancel_permohonan_faktur_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Cancel Permohonan Faktur Delete</field> 
+            <field name="menu_access" eval="[(4, ref('cancel_permohonan_faktur_submenu'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_cancel_permohonan_faktur_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_cancel_permohonan_faktur_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cancel_permohonan_faktur"/>
+            <field name="name">cancel_permohonan_faktur delete</field> 
+            <field name="group_id" ref="group_cancel_permohonan_faktur_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>      
+        
+        <record id="access_cancel_permohonan_faktur_line_delete" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">cancel_permohonan_faktur_line delete</field> 
+            <field name="group_id" ref="group_cancel_permohonan_faktur_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record> 
+                
+<!-- Cancel Permohonan Faktur -->	
+	
+        <record id="group_cancel_penerimaan_faktur_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Cancel Penerimaan Faktur Read</field> 
+            <field name="menu_access" eval="[(4, ref('cancel_penerimaan_faktur_submenu'))]"/>  
+        </record> 
+        
+        <record id="access_cancel_penerimaan_faktur_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cancel_penerimaan_faktur"/>
+            <field name="name">cancel_penerimaan_faktur read</field> 
+            <field name="group_id" ref="group_cancel_penerimaan_faktur_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+
+        <record id="access_cancel_penerimaan_faktur_line_read" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">cancel_penerimaan_faktur_line read</field> 
+            <field name="group_id" ref="group_cancel_penerimaan_faktur_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+
+                                
+        <record id="group_cancel_penerimaan_faktur_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Cancel Penerimaan Faktur Update</field> 
+            <field name="menu_access" eval="[(4, ref('cancel_penerimaan_faktur_submenu'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_cancel_penerimaan_faktur_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_cancel_penerimaan_faktur_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cancel_penerimaan_faktur"/>
+            <field name="name">cancel_penerimaan_faktur update</field> 
+            <field name="group_id" ref="group_cancel_penerimaan_faktur_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+        
+        <record id="access_cancel_penerimaan_faktur_line_update" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">cancel_penerimaan_faktur_line update</field> 
+            <field name="group_id" ref="group_cancel_penerimaan_faktur_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>                   
+        
+        <record id="group_cancel_penerimaan_faktur_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Cancel Penerimaan Faktur Delete</field> 
+            <field name="menu_access" eval="[(4, ref('cancel_penerimaan_faktur_submenu'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_cancel_penerimaan_faktur_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_cancel_penerimaan_faktur_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cancel_penerimaan_faktur"/>
+            <field name="name">cancel_penerimaan_faktur delete</field> 
+            <field name="group_id" ref="group_cancel_penerimaan_faktur_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>      
+        
+        <record id="access_cancel_penerimaan_faktur_line_delete" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">cancel_penerimaan_faktur_line delete</field> 
+            <field name="group_id" ref="group_cancel_penerimaan_faktur_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>
+                
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[(4,ref('group_outstanding_permohonan_faktur_read')),
+											(4,ref('group_outstanding_permohonan_faktur_update')),
+											(4,ref('group_permohonan_faktur_read')),
+											(4,ref('group_permohonan_faktur_update')),
+											(4,ref('group_permohonan_faktur_delete')),
+											(4,ref('group_penerimaan_faktur_read')),
+											(4,ref('group_penerimaan_faktur_update')),
+											(4,ref('group_penerimaan_faktur_delete')),
+											(4,ref('group_penyerahan_faktur_read')),
+											(4,ref('group_penyerahan_faktur_update')),
+											(4,ref('group_penyerahan_faktur_delete')),
+											(4,ref('group_report_stnk_bpkb_read')),
+											(4,ref('group_report_stnk_bpkb_update')),
+											(4,ref('group_cancel_penerimaan_faktur_read')),
+											(4,ref('group_cancel_penerimaan_faktur_update')),
+											(4,ref('group_cancel_penerimaan_faktur_delete')),
+											(4,ref('group_cancel_permohonan_faktur_read')),
+											(4,ref('group_cancel_permohonan_faktur_update')),
+											(4,ref('group_cancel_permohonan_faktur_delete')),				
+											]"/> 
+		</record>                                                                                                                                                                        
+    </data>
+</openerp>

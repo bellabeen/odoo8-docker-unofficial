@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+<!-- Master Activity Budget -->
+        <record id="group_teds_config_files_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">TEDS Config Files Read</field>
+            <field name="menu_access" eval="[(4, ref('teds_config_files_menu'))]"/>
+        </record>        
+        <record id="access_teds_config_files_read" model="ir.model.access">
+            <field name="model_id" ref="model_teds_config_files"/>
+            <field name="name">teds_config_files read</field>
+            <field name="group_id" ref="group_teds_config_files_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="group_teds_config_files_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">TEDS Config Files Update</field>
+            <field name="menu_access" eval="[(4, ref('teds_config_files_menu'))]"/>
+			<field name="implied_ids" eval="[(4, ref('group_teds_config_files_read'))]"/>
+        </record>
+        <record id="access_teds_config_files_update" model="ir.model.access">
+            <field name="model_id" ref="model_teds_config_files"/>
+            <field name="name">teds_config_files update</field>
+            <field name="group_id" ref="group_teds_config_files_update"/>
+            <field name="perm_create">1</field>
+            <field name="perm_write">1</field>
+        </record>
+		
+        <record id="group_teds_config_files_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">TEDS Config Files Delete</field> 
+            <field name="menu_access" eval="[(4, ref('teds_config_files_menu'))]"/>
+			<field name="implied_ids" eval="[(4, ref('group_teds_config_files_read'))]"/>
+        </record>        
+		<record id="access_teds_config_files_delete" model="ir.model.access">
+            <field name="model_id" ref="model_teds_config_files"/>
+            <field name="name">teds_config_files delete</field>
+            <field name="group_id" ref="group_teds_config_files_delete"/>
+            <field name="perm_unlink">1</field>
+        </record>
+    
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[
+                (4,ref('group_teds_config_files_read')),	
+				(4,ref('group_teds_config_files_update')),	
+				(4,ref('group_teds_config_files_delete')),
+			]"/> 
+		</record>
+    </data>
+</openerp>

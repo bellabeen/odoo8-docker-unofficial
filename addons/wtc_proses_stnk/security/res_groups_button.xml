@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+                
+<!-- Proses STNK Post -->
+		
+        <record id="group_wtc_proses_sntk_post" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">ProsPenerimaanK Post</field>
+            <field name="implied_ids" eval="[(4, ref('group_proses_stnk_read'))]"/>
+        </record>
+                   
+        <record id="access_wtc_proses_sntk_post_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_proses_stnk"/>
+            <field name="name">proses_sntk_post write</field> 
+            <field name="group_id" ref="group_wtc_proses_sntk_post"/>  
+            <field name="perm_write">1</field> 
+        </record>
+           
+        <record id="access_wtc_proses_sntk_line_lot_write" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">proses_sntk_stock_lot write</field> 
+            <field name="group_id" ref="group_wtc_proses_sntk_post"/>  
+            <field name="perm_write">1</field> 
+            <field name="perm_read">1</field> 
+        </record>     
+        
+<!-- Proses STNK Cancel -->
+		
+        <record id="group_wtc_proses_sntk_cancel" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Proses STNK Cancel</field>
+            <field name="implied_ids" eval="[(4, ref('group_proses_stnk_read'))]"/>
+        </record>
+             
+        <record id="access_wtc_proses_sntk_cancel_button_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_proses_stnk"/>
+            <field name="name">proses_sntk_cancel write</field> 
+            <field name="group_id" ref="group_wtc_proses_sntk_cancel"/>  
+            <field name="perm_write">1</field> 
+        </record> 
+        
+        <record id="access_wtc_proses_sntk_cancel_button_write_lot" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">proses_sntk_cancel_lot write</field> 
+            <field name="group_id" ref="group_wtc_proses_sntk_cancel"/>  
+            <field name="perm_write">1</field> 
+        </record> 
+
+<!-- Tagihan Biro Jasa RFA -->
+		
+        <record id="group_wtc_proses_birojasa_rfa" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Tagihan Biro Jasa RFA</field>
+            <field name="implied_ids" eval="[(4, ref('group_tagihan_birojasa_read'))]"/>
+        </record>
+          
+        <record id="access_wtc_proses_birojasa_rfa" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">wtc_permohonan_faktur_rfa_approval_line read</field>
+            <field name="group_id" ref="group_wtc_proses_birojasa_rfa"/>
+            <field name="perm_create">1</field>
+        </record>
+               
+        <record id="access_wtc_proses_birojasa_rfa_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_proses_birojasa"/>
+            <field name="name">wtc_proses_birojasa_rfa write</field>
+            <field name="group_id" ref="group_wtc_proses_birojasa_rfa"/>
+            <field name="perm_write">1</field>
+        </record>
+                
+<!-- Tagihan Biro Jasa Cancel Approval -->
+		
+        <record id="group_wtc_proses_birojasa_cancel_approval" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Tagihan Biro Jasa Cancel Approval</field>
+            <field name="implied_ids" eval="[(4, ref('group_tagihan_birojasa_read'))]"/>
+        </record>
+          
+        <record id="access_wtc_tagihan_birojasa_cancel_approval_write" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">wtc_tagihan_birojasa_cancel_approval_line write</field>
+            <field name="group_id" ref="group_wtc_proses_birojasa_cancel_approval"/>
+            <field name="perm_write">1</field>
+        </record>
+                
+        <record id="access_wtc_tagihan_birojasa_cancel_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_proses_birojasa"/>
+            <field name="name">wtc_tagihan_birojasa_cancel write</field>
+            <field name="group_id" ref="group_wtc_proses_birojasa_cancel_approval"/>
+            <field name="perm_write">1</field>
+        </record>        
+                
+<!-- Tagihan Biro Jasa Cancel -->
+		
+        <record id="group_wtc_proses_birojasa_cancel" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Tagihan Biro Jasa Cancel</field>
+            <field name="implied_ids" eval="[(4, ref('group_tagihan_birojasa_read'))]"/>
+        </record>
+             
+        <record id="access_wtc_proses_birojasa_cancel_button_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_proses_birojasa"/>
+            <field name="name">proses_birojasa_cancel write</field> 
+            <field name="group_id" ref="group_wtc_proses_birojasa_cancel"/>  
+            <field name="perm_write">1</field> 
+        </record> 
+        
+        <record id="access_wtc_proses_birojasa_cancel_button_write_lot" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">proses_sntk_cancel_lot write</field> 
+            <field name="group_id" ref="group_wtc_proses_birojasa_cancel"/>  
+            <field name="perm_write">1</field> 
+        </record>
+                
+<!-- Tagihan Biro Jasa Cancel After Approval -->
+		
+        <record id="group_cancel_approval_bj" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Tagihan Biro Jasa Cancel After Approve</field>
+            <field name="implied_ids" eval="[(4, ref('group_tagihan_birojasa_read'))]"/>
+        </record>
+             
+        <record id="access_wtc_proses_birojasa_cancel_after_approve_button_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_proses_birojasa"/>
+            <field name="name">proses_birojasa_cancel_approve write</field> 
+            <field name="group_id" ref="group_cancel_approval_bj"/>  
+            <field name="perm_write">1</field> 
+        </record> 
+        
+        <record id="access_wtc_proses_birojasa_cancel_button_write_approval" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">proses_sntk_cancel_approval_approve write</field> 
+            <field name="group_id" ref="group_cancel_approval_bj"/>  
+            <field name="perm_write">1</field> 
+            <field name="perm_create">1</field> 
+        </record>
+                
+                
+<!-- Tagihan Biro Jasa Cancel -->
+		
+        <record id="group_wtc_proses_birojasa_cancel" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Tagihan Biro Jasa Cancel</field>
+            <field name="implied_ids" eval="[(4, ref('group_tagihan_birojasa_read'))]"/>
+        </record>
+             
+        <record id="access_wtc_proses_birojasa_cancel_button_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_proses_birojasa"/>
+            <field name="name">proses_birojasa_cancel write</field> 
+            <field name="group_id" ref="group_wtc_proses_birojasa_cancel"/>  
+            <field name="perm_write">1</field> 
+        </record> 
+        
+        <record id="access_wtc_proses_birojasa_cancel_button_write_lot" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">proses_sntk_cancel_lot write</field> 
+            <field name="group_id" ref="group_wtc_proses_birojasa_cancel"/>  
+            <field name="perm_write">1</field> 
+        </record>
+              
+<!-- Tagihan Biro Jasa Approve -->
+		
+        <record id="group_wtc_proses_birojasa_approve" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Tagihan Biro Jasa Approve Approval</field>
+            <field name="implied_ids" eval="[(4, ref('group_tagihan_birojasa_read'))]"/>
+        </record>
+             
+        <record id="access_wtc_proses_birojasa_approve_approval_button_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_proses_birojasa"/>
+            <field name="name">proses_birojasa_approve_approval write</field> 
+            <field name="group_id" ref="group_wtc_proses_birojasa_approve"/>  
+            <field name="perm_write">1</field> 
+        </record> 
+        
+        <record id="access_wtc_proses_birojasa_approve_button_write_lot" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">proses_sntk_approve_lot write</field> 
+            <field name="group_id" ref="group_wtc_proses_birojasa_approve"/>  
+            <field name="perm_write">1</field>
+            <field name="perm_read">1</field> 
+        </record>
+             
+        <record id="access_wtc_proses_birojasa_approve_account_move" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move"/>
+            <field name="name">wtc_proses_birojasa_approve_account_move update</field> 
+            <field name="group_id" ref="group_wtc_proses_birojasa_approve"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field>
+        </record> 
+          
+        <record id="access_wtc_proses_birojasa_approve_account_move_reconcile" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move_reconcile"/>
+            <field name="name">wtc_proses_birojasa_approve_account_move_reconcile update</field> 
+            <field name="group_id" ref="group_wtc_proses_birojasa_approve"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field>
+            <field name="perm_read">1</field>
+        </record> 
+                
+        <record id="access_wtc_proses_birojasa_approve_sale_order" model="ir.model.access">
+            <field name="model_id" ref="sale.model_sale_order"/>
+            <field name="name">wtc_proses_birojasa_approve_sale_order update</field> 
+            <field name="group_id" ref="group_wtc_proses_birojasa_approve"/>  
+            <field name="perm_read">1</field>
+        </record> 
+                
+        <record id="access_wtc_proses_birojasa_approve_account_move_line" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move_line"/>
+            <field name="name">wtc_proses_birojasas_approve_account_move_line update</field> 
+            <field name="group_id" ref="group_wtc_proses_birojasa_approve"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field>
+        </record>  
+        
+        <record id="access_wtc_proses_birojasa_approve_account_invoice" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice"/>
+            <field name="name">wtc_proses_birojasa_approve_account_invoice update</field> 
+            <field name="group_id" ref="group_wtc_proses_birojasa_approve"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field>
+            <field name="perm_read">1</field> 
+        </record>  
+                
+        <record id="access_wtc_proses_birojasa_approve_account_invoice_line" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice_line"/>
+            <field name="name">wtc_proses_birojasa_approve_account_invoice_line update</field> 
+            <field name="group_id" ref="group_wtc_proses_birojasa_approve"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field>
+            <field name="perm_read">1</field> 
+        </record>
+                
+        <record id="access_wtc_proses_birojasa_approve_account_invoice_tax" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice_tax"/>
+            <field name="name">wtc_proses_birojasa_approve_account_invoice_tax update</field> 
+            <field name="group_id" ref="group_wtc_proses_birojasa_approve"/>  
+            <field name="perm_read">1</field> 
+        </record>
+        
+<!-- Tagihan Birojasa Confirm -->
+		
+        <record id="group_wtc_tagihan_birojasa_confirm" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Tagihan Biro Jasa Confirm</field>
+            <field name="implied_ids" eval="[(4, ref('group_wtc_proses_birojasa_approve'))]"/>
+        </record>
+        
+<!-- Penerimaan STNK Post -->
+		
+        <record id="group_wtc_penerimaan_sntk_post" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Penerimaan STNK Post</field>
+            <field name="implied_ids" eval="[(4, ref('group_penerimaan_stnk_read'))]"/>
+        </record>
+                   
+        <record id="access_wtc_penerimaan_sntk_post_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penerimaan_stnk"/>
+            <field name="name">proses_penerimaan_post write</field> 
+            <field name="group_id" ref="group_wtc_penerimaan_sntk_post"/>  
+            <field name="perm_write">1</field> 
+        </record>
+           
+        <record id="access_wtc_penerimaan_sntk_line_lot_write" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">penerimaan_sntk_stock_lot write</field> 
+            <field name="group_id" ref="group_wtc_penerimaan_sntk_post"/>  
+            <field name="perm_write">1</field> 
+            <field name="perm_read">1</field> 
+        </record> 
+                
+<!-- Penerimaan STNK Cancel -->
+		
+        <record id="group_wtc_penerimaan_stnk_cancel" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Penerimaan STNK Cancel</field>
+            <field name="implied_ids" eval="[(4, ref('group_penerimaan_stnk_read'))]"/>
+        </record>
+             
+        <record id="access_wtc_penerimaan_stnk_button_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penerimaan_stnk"/>
+            <field name="name">penerimaan_sntk_cancel write</field> 
+            <field name="group_id" ref="group_wtc_penerimaan_stnk_cancel"/>  
+            <field name="perm_write">1</field> 
+        </record> 
+        
+        <record id="access_wtc_penerimaan_sntk_cancel_button_write_lot" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">penerimaan_sntk_cancel_lot write</field> 
+            <field name="group_id" ref="group_wtc_penerimaan_stnk_cancel"/>  
+            <field name="perm_write">1</field> 
+        </record>
+                
+<!-- Penerimaan BPKB Post -->
+		
+        <record id="group_wtc_penerimaan_bpkb_post" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Penerimaan BPKB Post</field>
+            <field name="implied_ids" eval="[(4, ref('group_penerimaan_bpkb_read'))]"/>
+        </record>
+                   
+        <record id="access_wtc_penerimaan_bpkb_post_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penerimaan_bpkb"/>
+            <field name="name">proses_penerimaan_bpkb_post write</field> 
+            <field name="group_id" ref="group_wtc_penerimaan_bpkb_post"/>  
+            <field name="perm_write">1</field> 
+        </record>
+           
+        <record id="access_wtc_penerimaan_bpkb_line_lot_write" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">penerimaan_bpkb_stock_lot write</field> 
+            <field name="group_id" ref="group_wtc_penerimaan_bpkb_post"/>  
+            <field name="perm_write">1</field> 
+            <field name="perm_read">1</field> 
+        </record> 
+                
+<!-- Penerimaan BPKB Cancel -->
+		
+        <record id="group_wtc_penerimaan_bpkb_cancel" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Penerimaan BPKB Cancel</field>
+            <field name="implied_ids" eval="[(4, ref('group_penerimaan_bpkb_read'))]"/>
+        </record>
+             
+        <record id="access_wtc_penerimaan_bpkb_button_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_penerimaan_bpkb"/>
+            <field name="name">penerimaan_bpkb_cancel write</field> 
+            <field name="group_id" ref="group_wtc_penerimaan_bpkb_cancel"/>  
+            <field name="perm_write">1</field> 
+        </record> 
+        
+        <record id="access_wtc_penerimaan_bpkb_cancel_button_write_lot" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">penerimaan_bpkb_cancel_lot write</field> 
+            <field name="group_id" ref="group_wtc_penerimaan_bpkb_cancel"/>  
+            <field name="perm_write">1</field> 
+        </record>
+                
+<!-- Mutasi STNK Post -->
+		
+        <record id="group_wtc_mutasi_sntk_post" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Mutasi STNK Post</field>
+            <field name="implied_ids" eval="[(4, ref('group_mutasi_stnk_read'))]"/>
+        </record>
+                   
+        <record id="access_wtc_mutasi_sntk_post_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_mutasi_stnk"/>
+            <field name="name">mutasi_stnk_post write</field> 
+            <field name="group_id" ref="group_wtc_mutasi_sntk_post"/>  
+            <field name="perm_write">1</field> 
+        </record>
+           
+        <record id="access_wtc_mutasi_sntk_line_lot_write" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">mutasi_sntk_stock_lot write</field> 
+            <field name="group_id" ref="group_wtc_mutasi_sntk_post"/>  
+            <field name="perm_write">1</field> 
+            <field name="perm_read">1</field> 
+        </record> 
+                
+<!-- Mutasi BPKB Post -->
+		
+        <record id="group_wtc_mutasi_bpkb_post" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Mutasi BPKB Post</field>
+            <field name="implied_ids" eval="[(4, ref('group_mutasi_bpkb_read'))]"/>
+        </record>
+                   
+        <record id="access_wtc_mutasi_bpkb_post_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_mutasi_bpkb"/>
+            <field name="name">mutasi_bpkb_post write</field> 
+            <field name="group_id" ref="group_wtc_mutasi_bpkb_post"/>  
+            <field name="perm_write">1</field> 
+        </record>
+           
+        <record id="access_wtc_mutasi_bpkb_line_lot_write" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">mutasi_bpkb_stock_lot write</field> 
+            <field name="group_id" ref="group_wtc_mutasi_bpkb_post"/>  
+            <field name="perm_write">1</field> 
+            <field name="perm_read">1</field> 
+        </record> 
+        
+<!-- Cancel Proses STNK Post -->
+		
+        <record id="group_wtc_cancel_proses_stnk_post" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Cancel Proses STNK Post</field>
+        </record>
+                   
+        <record id="access_wtc_cancel_proses_stnk_post_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cancel_proses_stnk"/>
+            <field name="name">cancel_proses_stnk_post write</field> 
+            <field name="group_id" ref="group_wtc_cancel_proses_stnk_post"/>  
+            <field name="perm_write">1</field> 
+        </record>
+           
+        <record id="access_wtc_cancel_proses_stnk_line_lot_write" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">cancel_proses_stnk_post_stock write</field> 
+            <field name="group_id" ref="group_wtc_cancel_proses_stnk_post"/>  
+            <field name="perm_write">1</field> 
+            <field name="perm_read">1</field> 
+        </record>       
+        
+<!-- Cancel Penerimaan STNK Post -->
+		
+        <record id="group_wtc_cancel_penerimaan_stnk_post" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Cancel Penerimaan STNK Post</field>
+        </record>
+                   
+        <record id="access_wtc_cancel_penerimaan_stnk_post_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cancel_penerimaan_stnk"/>
+            <field name="name">cancel_penerimaan_stnk_post write</field> 
+            <field name="group_id" ref="group_wtc_cancel_penerimaan_stnk_post"/>  
+            <field name="perm_write">1</field> 
+        </record>
+           
+        <record id="access_wtc_cancel_penerimaan_stnk_line_lot_write" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">cancel_penerimaan_stnk_post_stock write</field> 
+            <field name="group_id" ref="group_wtc_cancel_penerimaan_stnk_post"/>  
+            <field name="perm_write">1</field> 
+            <field name="perm_read">1</field> 
+        </record>  
+        
+<!-- Cancel Penerimaan BPKB Post -->
+		
+        <record id="group_wtc_cancel_penerimaan_bpkb_post" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Cancel Penerimaan BPKB Post</field>
+        </record>
+                   
+        <record id="access_wtc_cancel_penerimaan_bpkb_post_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_cancel_penerimaan_bpkb"/>
+            <field name="name">cancel_penerimaan_bpkb_post write</field> 
+            <field name="group_id" ref="group_wtc_cancel_penerimaan_bpkb_post"/>  
+            <field name="perm_write">1</field> 
+        </record>
+           
+        <record id="access_wtc_cancel_penerimaan_bpkb_line_lot_write" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">cancel_penerimaan_bpkb_post_stock write</field> 
+            <field name="group_id" ref="group_wtc_cancel_penerimaan_bpkb_post"/>  
+            <field name="perm_write">1</field> 
+            <field name="perm_read">1</field> 
+        </record>
+                                   
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[
+											(4,ref('group_wtc_proses_sntk_post')),
+											(4,ref('group_wtc_proses_sntk_cancel')),
+											(4,ref('group_wtc_proses_birojasa_rfa')),
+											(4,ref('group_wtc_proses_birojasa_cancel_approval')),
+											(4,ref('group_wtc_proses_birojasa_cancel')),
+											(4,ref('group_wtc_proses_birojasa_approve')),
+											(4,ref('group_wtc_penerimaan_sntk_post')),
+											(4,ref('group_wtc_penerimaan_stnk_cancel')),
+											(4,ref('group_wtc_penerimaan_bpkb_post')),
+											(4,ref('group_wtc_penerimaan_bpkb_cancel')),
+											(4,ref('group_wtc_mutasi_sntk_post')),
+											(4,ref('group_wtc_mutasi_bpkb_post')),
+											(4,ref('group_wtc_cancel_proses_stnk_post')),
+											(4,ref('group_wtc_cancel_penerimaan_stnk_post')),
+											(4,ref('group_wtc_cancel_penerimaan_bpkb_post')),
+						
+											]"/> 
+		</record>                         
+    </data>
+</openerp>

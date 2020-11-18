@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_teds_master_mekanik_mitra,teds_master_mekanik_mitra,model_teds_master_mekanik_mitra,,1,0,0,0
+access_teds_mekanik_mitra_histrory_absensi,teds_mekanik_mitra_histrory_absensi,model_teds_mekanik_mitra_histrory_absensi,,1,0,0,0
+access_teds_matrix_mekanik_mitra,teds_matrix_mekanik_mitra,model_teds_matrix_mekanik_mitra,,1,0,0,0
+access_teds_matrix_mekanik_mitra_detail,teds_matrix_mekanik_mitra_detail,model_teds_matrix_mekanik_mitra_detail,,1,0,0,0
+
+

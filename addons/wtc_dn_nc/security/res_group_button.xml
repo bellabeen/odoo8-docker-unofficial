@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+		<record id="group_wtc_dn_nc_payment_request_confirm" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Confirm DN NC Payment Request</field>
+            <field name="implied_ids" eval="[(4, ref('wtc_account_voucher.group_payment_request_read'))]"/>
+        </record>
+        
+        <record id="access_wtc_dn_nc_payment_request_confirm_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_dn_nc.model_wtc_dn_nc"/>
+            <field name="name">wtc_dn_nc_payment_request_confirm read</field>
+            <field name="group_id" ref="group_wtc_dn_nc_payment_request_confirm"/>
+            <field name="perm_write">1</field>
+        </record>
+    </data>
+</openerp>

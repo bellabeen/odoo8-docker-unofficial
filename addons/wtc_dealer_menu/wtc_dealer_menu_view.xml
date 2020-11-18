@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data> 
+		<menuitem id="wtc_dealer_top_menu" name="Dealer" sequence="40"></menuitem>	
+		<menuitem id="wtc_dealer_configuration_menu_sub" name="Configuration" parent="wtc_dealer_top_menu" sequence="40" /> 
+		<menuitem id="permohonan_faktur_stnk_menu" name="Permohonan Faktur" parent="wtc_dealer_top_menu" sequence="20"/>
+		
+		<!--TOP MENU-->
+			<menuitem id="showroom_top_menu" name="Showroom" sequence="15"></menuitem>
+			<menuitem id="p2p_top_menu" name="P2P" sequence="16"></menuitem>
+			<menuitem id="stnk_bpkb_top_menu" name="STNK BPKB" sequence="17"></menuitem>
+			<menuitem id="workshop_top_menu" name="Workshop" sequence="18"></menuitem>
+			<menuitem id="marketing_top_menu" name="Marketing" sequence="19"></menuitem>
+			<menuitem id="backoffice_top_menu" name="Back Office" sequence="20"></menuitem>
+			<menuitem id="general_affair_top_menu" name="General Affair" sequence="21"></menuitem>
+			<menuitem id="master_top_menu" name="Master" sequence="22"></menuitem>
+			<menuitem id="setting_top_menu" name="TDM Setting" sequence="23"></menuitem>
+		
+		<!--Header-->
+			<!-- Showroom -->		
+			<menuitem id="showroom_purchase_menu" name="Purchase" parent="showroom_top_menu" sequence="10"></menuitem>
+			<menuitem id="showroom_mutasi_menu" name="Mutasi" parent="showroom_top_menu" sequence="20"></menuitem>
+			<menuitem id="showroom_sales_menu" name="Sales" parent="showroom_top_menu" sequence="30"></menuitem>
+			<menuitem id="showroom_report_menu" name="Report" parent="showroom_top_menu" sequence="40"></menuitem>
+			<menuitem id="showroom_configuration_menu" name="Configuration" parent="showroom_top_menu" sequence="50"></menuitem>
+		
+			<!-- STNK BPKB -->		
+			<menuitem id="stnk_bpkb_permohonan_faktur_menu" parent="stnk_bpkb_top_menu" name="Permohonan Faktur" sequence="10"></menuitem>
+			<menuitem id="stnk_bpkb_pengurusan_stnk_bpkb_menu" parent="stnk_bpkb_top_menu" name="Pengurusan Off The Road" sequence="35"></menuitem>		
+			<menuitem id="stnk_bpkb_proses_stnk_menu" parent="stnk_bpkb_top_menu" name="Proses STNK" sequence="30"></menuitem>
+			<menuitem id="stnk_bpkb_mutasi_menu" parent="stnk_bpkb_top_menu" name="Mutasi" sequence="40"></menuitem>		
+			<menuitem id="stnk_bpkb_report_menu" parent="stnk_bpkb_top_menu" name="Report" sequence="50"></menuitem>		
+			<menuitem id="stnk_bpkb_configuration_menu" parent="stnk_bpkb_top_menu" name="Configuration" sequence="60"></menuitem>		
+						
+			<!-- Workshop -->		
+			<menuitem id="workshop_purchase_menu" parent="workshop_top_menu" name="Purchase" sequence="10"></menuitem>
+			<menuitem id="workshop_mutasi_menu" parent="workshop_top_menu" name="Mutasi" sequence="20"></menuitem>		
+			<menuitem id="workshop_sales_menu" parent="workshop_top_menu" name="Sales" sequence="30"></menuitem>
+			<menuitem id="workshop_collecting_menu" parent="workshop_top_menu" name="Collecting" sequence="40"></menuitem>		
+			<menuitem id="workshop_report_menu" parent="workshop_top_menu" name="Report" sequence="50"></menuitem>	
+			<menuitem id="workshop_configuration_menu" parent="workshop_top_menu" name="Configuration" sequence="60"></menuitem>	
+
+			<!-- MARKETING -->
+			<menuitem id="sales_activity_menu" parent="marketing_top_menu" name="Sales Activity" sequence="10"></menuitem>		
+
+			<!-- BACK OFFICE -->
+			<menuitem id="backoffice_bankandcash_menu" parent="backoffice_top_menu" name="Bank and Cash" sequence="10"></menuitem>
+			<menuitem id="backoffice_nontrade_menu" parent="backoffice_top_menu" name="Non Trade" sequence="20"></menuitem>
+			<menuitem id="backoffice_configuration_menu" parent="backoffice_top_menu" name="Configuration" sequence="50"></menuitem>
+			<menuitem id="backoffice_tax_menu" parent="backoffice_top_menu" name="Tax" sequence="30"></menuitem>
+			<menuitem id="backoffice_report_menu" parent="backoffice_top_menu" name="Report" sequence="40"></menuitem>	
+
+			<!-- P2P -->
+			<menuitem id="p2p_purchase_menu" parent="p2p_top_menu" name="Purchase" sequence="10"></menuitem>
+			<menuitem id="p2p_sales_menu" parent="p2p_top_menu" name="Sales" sequence="20"></menuitem>
+			<menuitem id="p2p_configuration_menu" parent="p2p_top_menu" name="Configuration" sequence="30"></menuitem>
+
+			<!-- GENERAL -->
+			<menuitem id="ga_purchase_menu" parent="general_affair_top_menu" name="Purchase" sequence="10"></menuitem>
+			<menuitem id="ga_asset_menu" parent="general_affair_top_menu" name="Asset" sequence="20"></menuitem>
+			<menuitem id="ga_prepaid_menu" parent="general_affair_top_menu" name="Prepaid" sequence="30"></menuitem>		
+			<menuitem id="ga_configuration_menu" parent="general_affair_top_menu" name="Configuration" sequence="40"></menuitem>
+			
+			<!-- Master -->
+			<menuitem id="ma_sales_menu" parent="master_top_menu" name="Sales" sequence="10"></menuitem>
+			<menuitem id="ma_local_menu" parent="master_top_menu" name="Localization" sequence="50"></menuitem>
+			<menuitem id="ma_bank_menu" parent="master_top_menu" name="Bank" sequence="20"></menuitem>
+			<menuitem id="ma_pricelist_menu" parent="master_top_menu" name="Pricelist" sequence="30"></menuitem>
+			<menuitem id="ma_purchase_menu" parent="master_top_menu" name="Purchase" sequence="40"></menuitem>
+			<menuitem id="ma_products_menu" parent="master_top_menu" name="Products" sequence="50"></menuitem>
+			<menuitem id="ma_warehouse_menu" parent="master_top_menu" name="Warehouse" sequence="60"></menuitem>
+			<menuitem id="ma_traceability_menu" parent="master_top_menu" name="Traceability" sequence="70"></menuitem>
+
+			<!-- TDM SETTING -->
+			<menuitem id="ma_approval_menu" parent="setting_top_menu" name="Approval" sequence="10"></menuitem>
+			<menuitem id="ma_branches_menu" parent="setting_top_menu" name="Branches And Area" sequence="20"></menuitem>
+			<menuitem id="ma_b2b_menu" parent="setting_top_menu" name="B2B" sequence="30"></menuitem>
+																		
+											
+	</data>
+</openerp>	
+															

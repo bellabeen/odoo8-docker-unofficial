@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data> 
+        <record id="wtc_cddb_form" model="ir.ui.view">
+            <field name="name">wtc.cddb.form</field>
+            <field name="model">wtc.cddb</field>
+            <field name="arch" type="xml">
+				<form string="Form CDDB">
+				 	<sheet>
+				 		<div class="oe_title">
+			        		<h2>
+				                <label string="Form CDDB"/>    			
+			 				</h2>
+			        	</div> 
+				 		<group>
+				 			<group>
+				 				<field name="name" on_change="get_customer(parent.name,parent.default_code,
+				 					parent.no_ktp,parent.birthday,parent.street_tab,parent.street2_tab,parent.rt_tab
+				 					,parent.rw_tab,parent.state_tab_id,parent.city_tab_id,parent.kecamatan_tab_id,
+				 					parent.kecamatan_tab,parent.zip_tab_id,parent.kelurahan_tab,parent.phone,parent.mobile)" required="1"></field>
+				 				<field name="cddb_code" invisible="1"/>
+								<field name="default_code" invisible="1"/>				 				
+								<label for="address" string="Address"/>
+		    					<div>
+	                             <field name="street" placeholder="Street..." required="1"/>
+	                                <div>
+	                                	<field name="street2" placeholder="Street" style="width: 50%%"/>
+	                                	<field name="rt" on_change="change_rtrw(rt,rw)" placeholder="RT" style="width: 25%%" required="1"/>
+										<field name="rw" on_change="change_rtrw(rt,rw)" placeholder="RW" style="width: 25%%" required="1"/>
+										<field name="state_id" required="1" class="oe_no_button" placeholder="Province" style="width: 50%%" options="{'no_create': True,'no_open': True}"/>
+										<field name="city_id" required="1" placeholder="City" style="width: 50%%" options="{'no_create': True,'no_open': True}"/>
+										<field name="kecamatan_id" required="1" placeholder="Kecamatan" style="width: 50%%" on_change="_onchange_kecamatan(kecamatan_id)" options="{'no_create': True,'no_open': True}"/>
+										<field name="kecamatan" placeholder="Kecamatan" style="width: 50%%" />						
+										<field name="zip_id" required="1" placeholder="ZIP" style="width: 50%%" on_change="_onchange_zip(zip_id)" options="{'no_create': True,'no_open': True}"/>                               	
+	                                    <field name="kelurahan" required="1" class="oe_no_button" placeholder="Kelurahan" style="width: 50%%"/>
+	                                </div>                              
+		                          </div>
+								<field name="no_ktp" required="1" on_change="onchange_punctuation(no_ktp,penanggung_jawab)"/>
+							 	<field name="birtdate" required="1"/>																	
+						 	</group>
+						 	<group>
+						 		<field name="kode_customer" on_change="get_domain(kode_customer,no_hp,name)" required="1"/>																	 							
+								<field name="penanggung_jawab" on_change="onchange_punctuation(no_ktp,penanggung_jawab)" attrs="{'required': ['|',('kode_customer','=','G'),('kode_customer','=','J')]}"/>									
+						 		<field name="no_hp" attrs="{'required': ['|',('kode_customer','=','G'),('kode_customer','=','J')]}" on_change="change_nomor(no_hp,no_telp)"/>
+						 		<field name="no_telp" on_change="change_nomor(no_hp,no_telp)"/>	
+						 		<field name="dpt_dihubungi" widget="radio" required="1"/>
+						 		<field name="status_hp_id" required="1" options="{'no_create': True,'no_open': True}" attrs="{'invisible': [('kode_customer','=',False)]}"/>
+						 		<field name="status_rumah_id" required="1" options="{'no_create': True,'no_open': True}" attrs="{'invisible': [('kode_customer','=',False)]}"/>
+								<field name="jenis_kelamin_id" required="1" options="{'no_create': True,'no_open': True}" attrs="{'invisible': [('kode_customer','=',False)]}"/>			
+									
+								</group>
+							<group>	
+								<field name="agama_id" required="1" options="{'no_create': True,'no_open': True}" attrs="{'invisible': [('kode_customer','=',False)]}"/>
+								<field name="pendidikan_id" required="1" options="{'no_create': True,'no_open': True}" attrs="{'invisible': [('kode_customer','=',False)]}"/>
+								<field name="pekerjaan_id" required="1" options="{'no_create': True,'no_open': True}" attrs="{'invisible': [('kode_customer','=',False)]}"/>
+								<field name="pengeluaran_id" required="1" options="{'no_create': True,'no_open': True}" attrs="{'invisible': [('kode_customer','=',False)]}"/>																			
+							</group>
+							<group>
+								<field name="jenismotor_id" required="1" options="{'no_create': True,'no_open': True}" attrs="{'invisible': [('kode_customer','=',False)]}" on_change="onchange_jenis(jenismotor_id,kode_customer)"/>
+								<field name="merkmotor_id" required="1" options="{'no_create': True,'no_open': True}" attrs="{'invisible': [('kode_customer','=',False)]}"/>
+								<field name="penggunaan_id" required="1" options="{'no_create': True,'no_open': True}" attrs="{'invisible': [('kode_customer','=',False)]}"/>
+								<field name="pengguna_id" required="1" options="{'no_create': True,'no_open': True}" attrs="{'invisible': [('kode_customer','=',False)]}"/>	
+							</group>	
+							<group>
+								<field name="program" widget="radio"/>
+								<field name="id_program"/>
+							</group>
+							<group>
+								<field name="suku"/>
+								<field name="pin_bbm"/>
+								<field name="hobi" required="1" options="{'no_create': True,'no_open': True}" attrs="{'invisible': [('kode_customer','=',False)]}"/>
+							</group>
+							<group>
+								<field name="facebook"/>
+								<field name="instagram"/>
+								<field name="twitter"/>
+								<field name="path"/>
+								<field name="youtube"/>
+							</group>	
+							<group>
+								<field name="jabatan"/>
+								<field name="no_wa"/>
+								<field name="gol_darah" required="1" options="{'no_create': True,'no_open': True}" attrs="{'invisible': [('kode_customer','=',False)]}"/>/>
+							</group>			
+				 		</group>
+				 		<notebook>
+				 			<page string="Kartu Keluarga">
+					 			<field name="kartukeluarga_ids">
+									<tree string="Kartu Keluarga" editable="bottom">
+										<field name="name"/>
+										<field name="nik"/>
+										<field name="tgl_lahir"/>
+										<field name="hub"/>						
+									</tree>
+								</field>	
+				 			</page>
+				 		</notebook>
+				 	</sheet>	
+				</form>	
+			</field>
+        </record>
+	</data>
+</openerp>
+															

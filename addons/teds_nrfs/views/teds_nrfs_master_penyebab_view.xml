@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    	<record id="teds_nrfs_master_penyebab_view_tree" model="ir.ui.view">
+            <field name="name">teds.nrfs.master.penyebab.tree</field>
+            <field name="model">teds.nrfs.master.penyebab</field>
+            <field name="arch" type="xml">
+                <tree string="Master Penyebab NRFS" editable="top">
+                	<field name="code" required="1" />
+                    <field name="name" required="1" />
+                </tree>
+            </field>
+        </record>
+        <record id="teds_nrfs_master_penyebab_action" model="ir.actions.act_window">
+            <field name="name">Master Penyebab NRFS</field>
+            <field name="res_model">teds.nrfs.master.penyebab</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree</field>
+        </record>
+        <menuitem id="teds_nrfs_master_penyebab_menu"
+            action="teds_nrfs_master_penyebab_action"
+            parent="teds_nrfs.teds_nrfs_config_menu"
+            sequence="2"
+        />
+    </data>
+</openerp>

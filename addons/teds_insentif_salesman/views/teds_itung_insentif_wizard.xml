@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+		<record id="view_teds_hitung_insentif_sales_wizard" model="ir.ui.view">
+	        <field name="name">teds.hitung.insentif.sales.wizard</field>
+	        <field name="model">teds.insentif.salesman.wizard</field>
+	        <field name="type">form</field>
+	        <field name="arch" type="xml">
+	            <form string="Hitung Insentif">
+	            	<header>
+	            		<p><h1>Hitung Insentif</h1></p>
+	            	</header>
+                    <group>
+                        <group>
+                            <field name="branch_id" options="{'no_open':True,'no_create':True}" required="1"/>
+                            <field name="employee_id" options="{'no_open':True,'no_create':True}" required="1"/>
+                        </group>
+                        <group>
+                            <label for="start_date" string="Date"/>
+                            <div>
+                                <field name="start_date" required="1" class="oe_inline"/> - <field name="end_date" required="1" class="oe_inline"/>
+                            </div>
+                            <field name="job_name"/>
+                        </group>
+                    </group>
+                    <button name="action_hitung_insentif" type="object" string="Hitung" class="btn btn-default"/>
+                    <newline/> 
+                    <field name="is_report" invisible="1"/>
+                    <group string="Hasil Perhitungan" attrs="{'invisible':[('is_report','=',False)]}">
+                        <group>
+                            <field name="unit_cash" readonly="1"/>
+                            <field name="unit_credit" readonly="1"/>
+                            <field name="total_unit" readonly="1"/>
+                            <field name="unit_ar_cash" readonly="1"/>
+                            <field name="unit_ar_credit" readonly="1"/>
+                            <field name="reward" readonly="1"/>
+                            <field name="mediator_cash" readonly="1"/>
+                            <field name="total_unit_mediator" readonly="1"/>
+                            <field name="jml_bawahan" readonly="1"/>
+                            <field name="produktivitas" readonly="1"/>
+                        </group>
+                        <group>
+                            <field name="rupiah_unit_cash" readonly="1"/>
+                            <field name="rupiah_unit_credit" readonly="1"/>
+                            <field name="rupiah_total_unit" readonly="1"/>
+                            <field name="rupiah_unit_ar_cash" readonly="1"/>
+                            <field name="rupiah_unit_ar_credit" readonly="1"/>
+                            <field name="rupiah_reward" readonly="1"/>
+                            <field name="mediator_credit" readonly="1"/>
+                            <field name="rupiah_persen_credit" readonly="1"/>
+                            <field name="rupiah_persen_mediator" readonly="1"/>
+                            <field name="rupiah_persen_absensi" readonly="1"/>
+                            <field name="jml_insentif" readonly="1"/>
+                        </group>
+                    </group>
+                    <div class="col-xm-6" align="right" attrs="{'invisible':[('is_report','=',False)]}">
+                        <h2>
+                            <label string="Insentif Diterima"/><br/>
+                            <label string="Rp"/> 
+                            <field name="jml_insentif" readonly="1" widget='monetary' class="oe_inline"/>  
+                        </h2>
+                    </div>
+                </form>
+            </field>
+	    </record>
+
+	    <record id="actions_teds_hitung_insentif_sales_wizard" model="ir.actions.act_window">
+	        <field name="name">Hitung Insentif</field>
+	        <field name="type">ir.actions.act_window</field>
+	        <field name="res_model">teds.insentif.salesman.wizard</field>
+	        <field name="view_type">form</field>
+	        <field name="view_mode">form</field>
+	        <field name="target">inline</field>
+	    </record>
+
+		<menuitem id="teds_hitung_insentif_sales_wizard_menuitem"  parent="wtc_dealer_menu.showroom_sales_menu" sequence="0" action="actions_teds_hitung_insentif_sales_wizard"/> 
+	     
+    </data>
+</openerp>

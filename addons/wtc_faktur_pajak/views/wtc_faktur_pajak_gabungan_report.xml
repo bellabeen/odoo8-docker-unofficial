@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+<template id="wtc_faktur_pajak_gabungan_report">
+    <style type="text/css">
+         h1   {font-size: 13; font-weight:bold; text-align: center; }
+         table#t01 {text-align: left;width: 100%; border-left: 0px solid black; border-right: 0px solid black;}
+
+         table#t02 {text-align: left;width: 40%; solid black; solid black;  border: 1px;}    
+
+         table#t03 {text-align:  border-left: 1px solid black; border-right: 1px solid black; border-top: 1px solid black; border-bottom: 1px solid black;} 
+
+         td#td01 {border-left: 1px solid black; border-right: 1px solid black; border-top: 1px solid black; border-bottom: 1px solid black;} 
+         td#td02 {border-left: 1px solid black; border-right: 1px solid black; border-top: 0px solid black; border-bottom: 1px solid black;} 
+         td#td03 {border-left: 1px solid black; border-right: 1px solid black; border-top: 1px solid black; border-bottom: 0px solid black;}  
+
+         tr#tr01 {font-size: 10; height: 10%; border-left: 1px solid black; border-right: 1px solid black; border-top: 1px solid black; border-bottom: 1px solid black;} 
+         tr#tr02 {font-size: 10; height: 10%; border-left: 1px solid black; border-right: 1px solid black; border-top: 0px solid black; border-bottom: 1px solid black;} 
+         tr#tr03 {font-size: 10; height: 10%; border-left: 1px solid black; border-right: 1px solid black; border-top: 1px solid black; border-bottom: 0px solid black;}    
+    </style>
+
+
+    <t t-name="report.external_layout_header">
+    <div class="header">
+        <div class="row">
+        <table>
+          <tr style="font-size: 10px;">
+              <td width="42.00%"></td>
+              <td width="8.00%">Lembar ke 1 :</td>
+              <td width="30.00%">Untuk Pembeli BKP/Penerima JKP sebgaai bukti Pajak Masukan</td>
+          </tr>
+           <tr style="font-size: 10px;">
+              <td width="42.00%"></td>
+              <td width="8.00%">Lembar ke 2 :</td>
+              <td width="30.00%">Untuk Pembeli BKP/Penerima JKP sebgaai bukti Pajak Masukan</td>
+          </tr>
+        </table>                             
+        </div>   
+    </div>
+</t>
+
+    <t t-call="report.html_container">
+        <t t-foreach="docs" t-as="o">
+                <div class="page">
+                    <div class="oe_structure"/>
+                    <div class="row" >
+                <h1>FAKTUR PAJAK GABUNGAN</h1>
+                <table width="100%" id="t03">
+
+                  <tr id="tr01">
+                  <td colspan="3">
+                    <table width="100%" height="18">
+                    <tr>
+                    <td>&#160; Kode dan Nomor Seri Faktur Pajak : 010.<span t-field="o.faktur_pajak_id"></span></td>
+                    </tr>
+                    </table>
+                  </td>
+                  </tr>
+
+                  <tr id="tr01">
+                  <td colspan="3">
+                    <table width="100%" height="18">
+                    <tr>
+                    <td>&#160; Pengusaha Kena Pajak</td>
+                    </tr>
+                    </table>
+                  </td>
+                  </tr>
+
+                  <tr id="tr01" height="35">
+                  <td colspan="3" height="35">
+                    <table width="80%" height="35">
+                    <tr>
+                    <td width="8">&#160; Nama</td>
+                    <td width="8">:</td>
+                    <td><span t-field="o.branch_id.company_id"></span></td>    
+                    </tr>
+                    <tr>
+                    <td>&#160; Alamat</td>
+                    <td>:</td>
+                    <td><span t-field="o.branch_id.street"></span></td>        
+                    </tr>
+                    <tr>
+                    <td>&#160; NPWP</td>
+                    <td>:</td>
+                    <td><span t-field="o.branch_id.npwp"></span></td>
+                    </tr>
+                    <tr>
+                    <td>&#160;</td>
+                    <td>&#160;</td>
+                    <td>&#160;</td>
+                    </tr>
+                    </table>
+                  </td>
+                  </tr>
+
+                  <tr id="tr01">
+                  <td colspan="3">
+                    <table width="100%" height="18">
+                    <tr>
+                    <td>&#160; Pembeli barang Kena Pajak/Penerima Jasa Kena Pajak</td>
+                    </tr>
+                    </table>
+                  </td>
+                  </tr>
+
+                  <tr id="tr01" height="35">
+                  <td colspan="3" height="35">
+                    <table width="80%" height="35">
+                    <tr>
+                    <td width="8">&#160; Nama</td>
+                    <td width="8">:</td>
+                    <td><span t-field="o.customer_id.name"></span></td>    
+                    </tr>
+                    <tr>
+                    <td>&#160; Alamat</td>
+                    <td>:</td>
+                    <td><span t-field="o.customer_id.street"></span></td>        
+                    </tr>
+                    <tr>
+                    <td>&#160; NPWP</td>
+                    <td>:</td>
+                    <td></td>
+                    </tr>
+                    <tr>
+                    <td>&#160;</td>
+                    <td>&#160;</td>
+                    <td>&#160;</td>
+                    </tr>
+                    </table>
+                  </td>
+                  </tr>
+
+                  <tr id="tr01"  height="20" style="background-color:yellow;">
+                  <td id="td01" widht="5%">&#160; No</td>
+                  <td id="td01">&#160; Nama Barang Kena Pajak/ Jasa Kena Pajak</td>
+                  <td id="td01">&#160; Harga Jual/Penggantian/Uang Muka/Termin ( Rp)</td>
+                  </tr>
+
+                  <tr id="tr03"  height="18">
+                  <td id="td03" style="text-align: center;"><span t-esc="no_urut()"/></td>
+                  <td id="td03">&#160; <span t-esc="get_default(data)"/></td>
+                  <td id="td03" style="text-align: right;"><span t-esc="formatLang(get_total_amount(), digits=2)"/></td>
+                  </tr>
+
+                  <tr id="tr02"  height="18">
+                  <td id="td02">&#160;</td>
+                  <td id="td02">&#160;</td>
+                  <td id="td02">&#160;</td>
+                  </tr>
+
+
+                  <tr id="tr01">
+                  <td height="18" colspan="2" id="td01">&#160; Harga Jual/Penggantian/Uang Muka/Termin **)</td>
+                  <td style="text-align: right;"><span t-esc="formatLang(get_total_amount(), digits=2)"/></td>
+                  </tr>
+
+                  <tr id="tr01">
+                  <td height="18" colspan="2" id="td01">&#160; Dikurangi Potongan Harga</td>
+                  <td id="td01" style="text-align: right;">0</td>
+                  </tr>
+
+                  <tr id="tr01">
+                  <td height="18" colspan="2" id="td01">&#160; Dikurangi Uang Muka yang telah diterima</td>
+                  <td id="td01" style="text-align: right;">0</td>
+                  </tr>
+
+                  <tr id="tr01">
+                  <td height="18" colspan="2" id="td01">&#160; Dasar Pengenaan Pajak</td>
+                  <td id="td01" style="text-align: right;"><span t-esc="formatLang(get_untaxed_amount(), digits=2)"/></td>
+                  </tr>
+
+                  <tr id="tr01">
+                  <td height="18" colspan="2" id="td01">&#160; PPN = 10% x Dasar Pengenaan Pajak</td>
+                  <td id="td01" style="text-align: right;"><span t-esc="formatLang(get_tax_amount(), digits=2)"/></td>
+                  </tr>
+
+                  <tr id="tr01">
+                  <td colspan="3">
+                    <table width="100%" height="39">
+                    <tr>
+                    <td colspan="3">&#160; Pajak Penjualan Atas barang mewah</td>
+                    </tr>
+                    <tr>
+                    <td colspan="3">&#160;</td>
+                    </tr>
+                    <tr>
+                    <td>
+                    <table width="60%" style="border-left: 1px solid black; border-right: 1px solid black; border-top: 1px solid black; border-bottom: 1px solid black;">
+                    <tr id="tr01">
+                    <td id="td01" height="18" style="text-align: center;">Tarif</td>
+                    <td id="td01" height="18" style="text-align: center;">PPnBM</td>
+                    <td id="td01" height="18" style="text-align: center;">DPP</td>
+                    </tr>
+                    <tr>
+                    <td id="td01" height="18" style="text-align: right;">&#160; ..........................%</td>
+                    <td id="td01" height="18" style="text-align: right;">&#160; Rp.........................</td>
+                    <td id="td01" height="18" style="text-align: right;">&#160; Rp.........................</td>
+                    </tr>
+                    <tr>
+                    <td id="td01" height="18" style="text-align: right;">&#160; ..........................%</td>
+                    <td id="td01" height="18" style="text-align: right;">&#160; Rp.........................</td>
+                    <td id="td01" height="18" style="text-align: right;">&#160; Rp.........................</td>
+                    </tr>
+                    <tr>
+                    <td id="td01" height="18" style="text-align: right;">&#160; ..........................%</td>
+                    <td id="td01" height="18" style="text-align: right;">&#160; Rp.........................</td>
+                    <td id="td01" height="18" style="text-align: right;">&#160; Rp.........................</td>
+                    </tr>
+                    <tr>
+                    <td id="td01" height="18" style="text-align: right;">&#160; ..........................%</td>
+                    <td id="td01" height="18" style="text-align: right;">&#160; Rp.........................</td>
+                    <td id="td01" height="18" style="text-align: right;">&#160; Rp.........................</td>
+                    </tr>
+                    <tr>
+                    <td id="td01" colspan="2">&#160; Jumlah</td>
+                    <td id="td01" height="18" style="text-align: right;">&#160; Rp.........................</td>
+                    </tr>
+                    </table>
+                </td>
+
+                <td width="20%">&#160;</td>
+                <td>
+                    <table width="100%">
+                    <tr>
+                    <td colspan="2">&#160;</td>
+                    </tr>
+                    <tr>
+                    <td colspan="2">&#160;</td>
+                    </tr>
+                    <tr>
+                    <td style="text-align: center;">BANDAR LAMPUNG,</td>
+                    <td>&#160; tgl <span t-esc="tgl()"/></td>
+                    </tr>
+                    <tr>
+                    <td colspan="2" height="18">&#160;</td>
+                    </tr>
+                    <tr>
+                    <td colspan="2" height="18">&#160;</td>
+                    </tr>
+                    <tr>
+                    <td colspan="2" height="18">&#160;</td>
+                    </tr>
+                    <tr>
+                    <td>&#160;</td>
+                    <td style="text-align: center;">_________________</td>
+                    </tr>
+                    <tr>
+                    <td style="text-align: center;">Nama</td>
+                    <td style="text-align: center;">YULIANTI BUNAJATI</td>
+                    </tr>
+                    </table>
+                  </td>
+                 </tr>
+                </table>
+                </td>
+                </tr>
+              </table>
+            </div>  
+
+            <h1></h1>
+            <div class="row"></div>              
+            <div class="oe_structure"/>
+            </div>
+        </t>
+    </t>
+</template>
+</data>
+</openerp>

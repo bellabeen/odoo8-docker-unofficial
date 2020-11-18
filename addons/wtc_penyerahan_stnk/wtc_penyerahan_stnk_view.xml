@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data> 
+		
+		<record model="ir.ui.view" id="penyerahan_stnk_tree_view">
+		    <field name="name">penyerahan.stnk.tree</field>
+		    <field name="model">wtc.penyerahan.stnk</field>
+		    <field name="arch" type="xml">
+		        <tree string="List Penyerahan STNK">
+		        	<field name="name"/>
+		            <field name="branch_id"/>
+					<field name="division"/>		            
+		            <field name="partner_id"/>	
+		            <field name="penerima"/>	
+		            <field name="tanggal"/>	  
+		            <field name="state"/>	            
+		        </tree>
+		     </field>
+		</record>
+ 
+		<record model="ir.ui.view" id="penyerahan_stnk_form_view">
+		    <field name="name">penyerahan.stnk.form</field>
+		    <field name="model">wtc.penyerahan.stnk</field>
+		    <field name="arch" type="xml">
+		        <form string="Form Penyerahan STNK">
+				<header>
+						<button name="post_penyerahan" groups='wtc_penyerahan_stnk.group_wtc_penyerahan_sntk_post' type="object" states="draft" string="Post" class="oe_highlight"/>
+						<button name="%(report_penyerahan_stnk)d" attrs="{'invisible': [('state','!=','posted')]}"  string="Print" type="action" class="oe_highlight"/> 		
+						<field name="state" widget="statusbar" statusbar_visible="draft,posted" statusbar_colors='{"draft":"red","approved":"blue"}'/>	
+           		</header>		        	
+		        	<sheet>
+			        	<div class="oe_title">
+			        		<h2>
+				                <label string="Penyerahan STNK"/>    			
+				 				<field name="name" class="oe_inline"/>
+			 				</h2>
+			        	</div>       
+						<group col="2" colspan="2">   
+							<group>
+								<field name="branch_id" options="{'no_create': True,'no_open': True}" attrs="{'readonly': ['|',('state','!=','draft'),('name','!=',False)]}" />
+							</group>            
+						    <group>
+	                    		<field name="division" required="1" attrs="{'readonly': ['|',('penyerahan_line','&lt;&gt;',[]), ('state','!=','draft')]}" />
+	                    	</group>
+	                    	<group>
+							    <field name="partner_id" options="{'no_create': True,'no_open': True}" attrs="{'readonly': [('state','!=','draft')]}" on_change="onchange_partner(partner_id)"/>	
+	                    			                    		
+								<field name="keterangan" attrs="{'readonly': [('state','!=','draft')]}"/>						               
+							    		                    	
+							</group>
+				            <group>  
+							    <field name="penerima" required="1" options="{'no_create': True,'no_open': True}" attrs="{'readonly': [('state','!=','draft')]}" />					         					            	
+								<field name="tanggal" required="1" readonly="1"/>						               
+								            	
+							</group>   
+						</group>	
+						
+						<notebook colspan="5">
+		                    <page string="Engine line">
+		                        <field colspan="4" name="penyerahan_line" nolabel="1" widget="one2many_list" attrs="{'readonly': [('state','!=','draft')]}">
+		                            <tree string="" editable="bottom">
+						                <field name="name" required="1" options="{'no_create': True,'no_open': True}" on_change="onchange_engine(name,parent.branch_id,parent.division,parent.partner_id,parent.penerima)"/>
+						                <field name="customer_stnk"/>
+						                <field name="no_notice" attrs="{'required':[('tgl_ambil_notice','!=',False)]}"/>
+						                <field name="no_stnk" attrs="{'required':[('tgl_ambil_stnk','!=',False)]}"/>	
+						                <field name="no_polisi" attrs="{'required':[('tgl_ambil_polisi','!=',False)]}"/>	
+						                <field name="tgl_ambil_notice"/>														                
+						                <field name="tgl_ambil_stnk"/>
+						                <field name="tgl_ambil_polisi"/>			                
+						             </tree>
+		                        </field>
+		                    </page>
+							<page string="Audit Trail">
+								<group>
+									<group>
+										<field name="create_uid" readonly="1"></field>
+										<field name="create_date" readonly="1"></field>
+										<field name="confirm_uid" readonly="1"></field>
+										<field name="confirm_date" readonly="1"></field>
+									</group>
+									<group>							
+										<field name="write_uid" readonly="1"></field>
+										<field name="write_date" readonly="1"></field>
+										<field name="cancel_uid" readonly="1"></field>
+										<field name="cancel_date" readonly="1"></field>
+									</group>
+								</group>
+							</page>			                    
+		                </notebook>				
+		           </sheet>
+		        </form>
+		    </field>
+		</record>
+
+ 		<record id="view_penyerahan_stnk_filter" model="ir.ui.view">
+            <field name="name">penyerahan.stnk.list.select</field>
+            <field name="model">wtc.penyerahan.stnk</field>
+            <field name="arch" type="xml">
+                <search string="Search Penyerahan STNK">
+                    <field name="name" string="Reference"/>
+                    <field name="branch_id"/> 
+                    <field name="engine_no"/> 
+                    <field name="customer_stnk"/> 
+                    <field name="no_stnk"/>
+                    <filter name="draft" string="Draft" domain="[('state','=','draft')]"/>
+                    <filter name="post" string="Posted" domain="[('state','=','posted')]"/>
+                    <group expand="0" string="Group By">
+                        <filter string="Branch" icon="terp-partner" domain="[]" context="{'group_by':'branch_id'}"/>
+                        <filter string="Tanggal" icon="terp-go-month" domain="[]" context="{'group_by':'tanggal'}"/>                    
+                    </group>
+                </search>
+            </field>
+        </record>		
+		<record model="ir.actions.act_window" id="penyerahan_stnk_action">
+		    <field name="name">Penyerahan STNK</field>
+		    <field name="res_model">wtc.penyerahan.stnk</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		    <field name="search_view_id" ref="view_penyerahan_stnk_filter"/>
+			<field name="context">{"search_default_draft":1}</field>		    
+		    			</record>
+					
+		<menuitem id="penyerahan_stnk_submenu" name="Penyerahan STNK" parent="wtc_dealer_menu.stnk_bpkb_proses_stnk_menu"  action="penyerahan_stnk_action" sequence="50"/> 				  
+	</data>
+</openerp>
+															

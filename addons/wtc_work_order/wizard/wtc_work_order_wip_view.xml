@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+    <!--   Product Price List -->
+
+        <record id="view_work_order_wip" model="ir.ui.view">
+              <field name="name">WIP</field>
+              <field name="model">work_order.wip</field>
+              <field name="arch" type="xml">
+                <form string="Price List">
+                    <group coslpan="4" col="4">
+                      <field name="branch_id" required="1" options="{'no_open':True,'no_create':True}"/>
+                    </group>
+
+                    <footer>
+                        <button name="print_report" string="Print"  type="object" class="oe_highlight"  />
+                        or
+                        <button string="Cancel" class="oe_link" special="cancel" />
+                    </footer>
+                </form>
+              </field>
+        </record>
+
+       <act_window id="action_product_price_list"
+            key2="client_print_multi"
+            name="test"
+            res_model="work_order.wip"
+            src_model="wtc.work.order"
+            view_mode="form" target="new" view_type="form" /> 
+
+</data>
+</openerp>

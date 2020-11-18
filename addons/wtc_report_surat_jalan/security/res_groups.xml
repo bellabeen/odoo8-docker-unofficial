@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">  	
+    	
+<!-- Laporan Surat Jalan -->	
+	
+        <record id="group_laporan_surat_jalan_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Laporan Surat Jalan</field> 
+            <field name="menu_access" eval="[(4, ref('laporan_surat_jalan_menu'))]"/>  
+        </record> 
+   
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[(4,ref('group_laporan_surat_jalan_read')),
+											]"/> 
+		</record>                                                                                           
+    </data>
+</openerp>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    	<record id="view_teds_laporan_cash_count_wizard" model="ir.ui.view">
+            <field name="name">teds.laporan.cash.count.wizard</field>
+            <field name="model">teds.laporan.cash.count.wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                	<sheet>
+                		<group attrs="{'invisible':[('state_x','=','get')]}">
+                            <field name="date" required="1" style="width:30%%"/>
+                		</group>
+                        <notebook colspan="5" attrs="{'invisible':[('state_x','=','get')]}"> 
+                            <page string="Branches">
+                                <field name="branch_ids" colspan="4" nolabel="1"/>
+                            </page>
+                        </notebook>
+                 		<field invisible="1" name="state_x"/>                
+		                <newline/>    
+		                <group col="4" fill="0" attrs="{'invisible':[('state_x','!=','get')]}">
+		                    <separator colspan="4" string="Excel Report Generated. Click link below to download ..." attrs="{'invisible':[('state_x','=','choose')]}"/>
+		                    <field name="name" invisible="1" width="100" attrs="{'invisible':[('state_x','=','choose')]}"/>
+		                    <field name="data_x" nolabel="1" readonly="0" width="100" filename="name" attrs="{'invisible':[('state_x','=','choose')]}"/>
+		                </group>
+                		<footer>
+			                <button name="action_export" attrs="{'invisible':[('state_x','=','get')]}" string="Export Report" type="object" class="oe_highlight"/>
+			                <label string="or  . " attrs="{'invisible':[('state_x','=','get')]}" />
+			                <button string="Cancel" attrs="{'invisible':[('state_x','=','get')]}" class="oe_link" special="cancel" />
+			            </footer>
+                	</sheet>
+                </form>
+            </field>
+        </record>  
+
+        <record id="action_teds_laporan_cash_count_wizard" model="ir.actions.act_window">
+            <field name="name">Laporan Cash Count</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">teds.laporan.cash.count.wizard</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+	    </record>
+
+	    <menuitem id="teds_laporan_cash_count_wizard_menu"  parent="wtc_dealer_menu.backoffice_report_menu" sequence="40"  action="action_teds_laporan_cash_count_wizard"/> 
+    </data>
+</openerp>

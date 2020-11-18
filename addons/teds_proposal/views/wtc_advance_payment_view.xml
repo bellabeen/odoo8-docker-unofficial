@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>     
+        <record id="view_wtc_advance_payment_form_inherited" model="ir.ui.view">
+            <field name="name">wtc.advance.payment.form.inherited</field>
+            <field name="model">wtc.advance.payment</field>
+            <field name="inherit_id" ref="wtc_advance_payment.view_wtc_advance_payment_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//group[@col='4']" position="replace">
+                    <group>
+                        <group>
+                            <field name="branch_id" options="{'no_create': True,'no_open':True}" attrs="{'readonly': [('name','!=',False)]}" />
+                            <field name="date" readonly="1" />
+                            <field name="user_id" options="{'no_create': True,'no_open':True}" attrs="{'readonly': [('state','!=','draft')]}" />
+                            <field name="user_balance" />
+                            <field name="description" attrs="{'readonly': ['|',('state','!=','draft'),('proposal_id','!=',False)]}" />
+                        </group>
+                        <group>
+                            <field name="division" attrs="{'readonly': [('state','!=','draft')]}" />
+                            <field name="date_due" required="1" attrs="{'readonly': [('state','!=','draft')]}"/>
+                            <field name="employee_id" invisible="1" />
+                            <field name="payment_method" domain="[('type','in',['bank', 'cash']),('branch_id','=',branch_id)]" attrs="{'readonly': [('state','!=','draft')]}" options="{'no_create': True,'no_open':True}" />
+                            <field name="no_rekening_tujuan" attrs="{'readonly': [('state','not in',('draft','waiting_for_approval'))]}"/>
+                            <field name="amount" attrs="{'readonly': ['|',('state','!=','draft'),('proposal_id','!=',False)]}" />
+                            <field name="is_payment" readonly="1"/>
+                            <field name="payment_klik_uid" readonly="1" attrs="{'invisible':[('payment_klik_uid','=',False)]}" options="{'no_open':True,'no_create':True}"/>
+                            <field name="payment_klik_date" readonly="1" attrs="{'invisible':[('payment_klik_date','=',False)]}"/>
+                        </group>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_wtc_approval_avp_form_inherited" model="ir.ui.view">
+            <field name="name">wtc.approval.avp.form.inherited</field>
+            <field name="model">wtc.advance.payment</field>
+            <field name="inherit_id" ref="wtc_advance_payment.wtc_approval_avp_form_view" />
+            <field name="arch" type="xml">
+                <button name="approval_request" position="after">
+                    <button name="update_proposal_limit" type="object" string="Update Limit" attrs="{'invisible': ['|',('name','=',False),'|',('proposal_id','=',False),'&amp;',('proposal_id','!=',False),'|',('state','!=','draft'),('name','=',False)]}" />
+                </button>
+                <field name="approval_state" position="replace" />
+                <field name="description" position="before">
+                    <field name="proposal_id" attrs="{'readonly': [('name','!=',False)]}" options="{'no_create': True,'no_open':True}" />
+                </field>
+                <field name="amount" position="after">
+                    <field name="amount_limit" readonly="1" />
+                    <field name="proposal_state" attrs="{'invisible': [('proposal_state','=',False)]}" />
+                    <field name="approval_state" />
+                </field>
+                <xpath expr="//notebook/page[1]" position="before">
+                    <page string="Detail Proposal" attrs="{'invisible': [('proposal_id','=',False)], 'readonly': [('state','!=','draft')]}">
+                        <field name="proposal_item_ids" nolabel="1" attrs="{'readonly': [('state','!=','draft')]}">
+                            <tree editable="top">
+                                <field name="proposal_line_id" required="1" options="{'no_create': True, 'no_open': True}" domain="[('proposal_id','=',parent.proposal_id),('jenis_pembayaran','=','C')]" /> <!--  -->
+                                <field name="amount_total" />
+                            </tree>
+                        </field>
+                        <group>
+                            <group class="oe_subtotal_footer oe_right">
+                                <field name="amount_total" readonly="1" class="oe_subtotal_footer_separator" />
+                            </group>
+                        </group>
+                    </page>                
+                </xpath>
+            </field>
+        </record>
+        <record id="view_advance_payment_search_inherited" model="ir.ui.view">
+            <field name="name">wtc.advance.payment.search.inherited</field>
+            <field name="model">wtc.advance.payment</field>
+            <field name="inherit_id" ref="wtc_advance_payment.view_advance_payment_search" />
+            <field name="arch" type="xml">
+                <field name="branch_id" position="after">
+                    <field name="proposal_id" />
+                </field>
+            </field>
+        </record>
+
+    <!-- Inherit action untuk menggunakan fitur readonly_by_pass -->
+        <record id="wtc_advance_payment.wtc_advance_payment" model="ir.actions.act_window">
+            <field name="name">Advance Payment</field>
+		    <field name="res_model">wtc.advance.payment</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		    <field name="search_view_id" ref="view_advance_payment_search_inherited"/>
+            <field name="context">{'readonly_by_pass': 1}</field>
+        </record>
+    </data>
+</openerp>

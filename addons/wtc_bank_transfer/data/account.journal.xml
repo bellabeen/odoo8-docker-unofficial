@@ -1,0 +1,2179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    
+        <record id="journal_bank_bca_2213006240" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_hho"/>
+            <field name="code">BK01HHO</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 2213006240 - HHO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500HHO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500HHO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_hho"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0230900001" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_mml"/>
+            <field name="code">BK01MML</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0230900001 - MML</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500MML"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500MML"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_mml"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0230688168" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlr"/>
+            <field name="code">BK01DLR</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0230688168 - DLR</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DLR"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DLR"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlr"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0230688362" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dly"/>
+            <field name="code">BK01DLY</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0230688362 - DLY</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DLY"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DLY"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dly"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_1683028553" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dds"/>
+            <field name="code">BK01DDS</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 1683028553 - DDS</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DDS"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DDS"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dds"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0410651599" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dbb"/>
+            <field name="code">BK01DBB</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0410651599 - DBB</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DBB"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DBB"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dbb"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_2783004810" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddc"/>
+            <field name="code">BK01DDC</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 2783004810 - DDC</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DDC"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DDC"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_ddc"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0230688265" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dla"/>
+            <field name="code">BK01DLA</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0230688265 - DLA</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DLA"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DLA"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dla"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0230904006" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dls"/>
+            <field name="code">BK01DLS</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0230904006 - DLS</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DLS"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DLS"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dls"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0230925500" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlo"/>
+            <field name="code">BK01DLO</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0230925500 - DLO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DLO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DLO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlo"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_2213029134" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddb"/>
+            <field name="code">BK01DDB</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 2213029134 - DDB</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DDB"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DDB"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_ddb"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0230927111" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dsp"/>
+            <field name="code">BK01DSP</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0230927111 - DSP</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DSP"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DSP"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dsp"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_6140158800" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddm"/>
+            <field name="code">BK01DDM</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 6140158800 - DDM</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DDM"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DDM"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_ddm"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0230928100" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dsb"/>
+            <field name="code">BK01DSB</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0230928100 - DSB</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DSB"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DSB"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dsb"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_7930161700" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dwo"/>
+            <field name="code">BK01DWO</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 7930161700 - DWO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DWO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DWO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dwo"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_4560686086" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddg"/>
+            <field name="code">BK01DDG</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 4560686086 - DDG</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DDG"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DDG"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_ddg"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_2213041231" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dwr"/>
+            <field name="code">BK01DWR</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 2213041231 - DWR</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DWR"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DWR"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dwr"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_7910302153" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dwk"/>
+            <field name="code">BK01DWK</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 7910302153 - DWK</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DWK"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DWK"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dwk"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0230705666" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlu"/>
+            <field name="code">BK01DLU</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0230705666 - DLU</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DLU"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DLU"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlu"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0230898006" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlj"/>
+            <field name="code">BK01DLJ</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0230898006 - DLJ</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DLJ"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DLJ"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlj"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_1890260990" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_duk"/>
+            <field name="code">BK01DUK</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 1890260990 - DUK</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DUK"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DUK"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_duk"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0230877009" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dup"/>
+            <field name="code">BK01DUP</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0230877009 - DUP</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DUP"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DUP"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dup"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_1911499989" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dxb"/>
+            <field name="code">BK01DXB</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 1911499989 - DXB</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DXB"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DXB"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dxb"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0230894400" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dxs"/>
+            <field name="code">BK01DXS</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0230894400 - DXS</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DXS"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DXS"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dxs"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0230895007" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dxt"/>
+            <field name="code">BK01DXT</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0230895007 - DXT</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DXT"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DXT"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dxt"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0341600064" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dsr"/>
+            <field name="code">BK01DSR</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0341600064 - DSR</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DSR"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DSR"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dsr"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0230938822" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dli"/>
+            <field name="code">BK01DLI</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0230938822 - DLI</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DLI"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DLI"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dli"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0230881600" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddt"/>
+            <field name="code">BK01DDT</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0230881600 - DDT</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DDT"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DDT"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_ddt"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0230915300" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_djj"/>
+            <field name="code">BK01DJJ</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0230915300 - DJJ</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DJJ"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DJJ"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_djj"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0231089500" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dll"/>
+            <field name="code">BK01DLL</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0231089500 - DLL</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DLL"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DLL"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dll"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0261886188" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dwt"/>
+            <field name="code">BK01DWT</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0261886188 - DWT</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DWT"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DWT"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dwt"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0230977577" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dsk"/>
+            <field name="code">BK01DSK</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0230977577 - DSK</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DSK"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DSK"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dsk"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0230989991" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlm"/>
+            <field name="code">BK01DLM</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0230989991 - DLM</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DLM"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DLM"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlm"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_1550190300" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dde"/>
+            <field name="code">BK01DDE</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 1550190300 - DDE</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DDE"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DDE"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dde"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_2217003373" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dsm"/>
+            <field name="code">BK01DSM</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 2217003373 - DSM</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DSM"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DSM"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dsm"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0230979995" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dws"/>
+            <field name="code">BK01DWS</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0230979995 - DWS</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DWS"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DWS"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dws"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0230688966" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlp"/>
+            <field name="code">BK01DLP</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0230688966 - DLP</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DLP"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DLP"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlp"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0231091555" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dxk"/>
+            <field name="code">BK01DXK</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0231091555 - DXK</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DXK"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DXK"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dxk"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_221-3030604" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dda"/>
+            <field name="code">BK01DDA</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 221-3030604 - DDA</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DDA"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DDA"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dda"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_2212132048" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddu"/>
+            <field name="code">BK01DDU</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 2212132048 - DDU</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DDU"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DDU"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_ddu"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_2213048180" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlq"/>
+            <field name="code">BK01DLQ</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 2213048180 - DLQ</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DLQ"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DLQ"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlq"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_mandiri_0700004707993" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_hho"/>
+            <field name="code">BK02HHO</field>
+            <field name="type">bank</field>   
+            <field name="name">MANDIRI 070.000.470799.3 - HHO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120600HHO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120600HHO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_hho"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_mandiri_1140098888897" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlr"/>
+            <field name="code">BK02DLR</field>
+            <field name="type">bank</field>   
+            <field name="name">MANDIRI 114.009.88888.97 - DLR</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120600DLR"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120600DLR"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlr"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_danamon_008226110" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_hho"/>
+            <field name="code">BK03HHO</field>
+            <field name="type">bank</field>   
+            <field name="name">DANAMON 008226110 - HHO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120700HHO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120700HHO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_hho"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_danamon_0048330716" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dwp"/>
+            <field name="code">BK01DWP</field>
+            <field name="type">bank</field>   
+            <field name="name">DANAMON 0048330716 - DWP</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120700DWP"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120700DWP"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dwp"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_danamon_0059843243" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dxg"/>
+            <field name="code">BK01DXG</field>
+            <field name="type">bank</field>   
+            <field name="name">DANAMON 0059843243 - DXG</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120700DXG"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120700DXG"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dxg"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_danamon_0058647132" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dxt"/>
+            <field name="code">BK02DXT</field>
+            <field name="type">bank</field>   
+            <field name="name">DANAMON 0058647132 - DXT</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120700DXT"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120700DXT"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dxt"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bni_6669996675" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_hho"/>
+            <field name="code">BK04HHO</field>
+            <field name="type">bank</field>   
+            <field name="name">BNI 6669996675 - HHO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11121200HHO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11121200HHO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_hho"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bni_0122135225" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_hho"/>
+            <field name="code">BK05HHO</field>
+            <field name="type">bank</field>   
+            <field name="name">BNI 0122135225 - HHO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11121201HHO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11121201HHO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_hho"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bni_0142464450" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlt"/>
+            <field name="code">BK01DLT</field>
+            <field name="type">bank</field>   
+            <field name="name">BNI 0142464450 - DLT</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11121200DLT"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11121200DLT"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlt"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bni_0261878352" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dxn"/>
+            <field name="code">BK01DXN</field>
+            <field name="type">bank</field>   
+            <field name="name">BNI 0261878352 - DXN</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_1112120DXN"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_1112120DXN"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dxn"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_ocbc - nisp_510010001436" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_hho"/>
+            <field name="code">BK06HHO</field>
+            <field name="type">bank</field>   
+            <field name="name">OCBC - NISP 510010001436 - HHO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11121300HHO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11121300HHO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_hho"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_permata_0701209087" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_mml"/>
+            <field name="code">BK02MML</field>
+            <field name="type">bank</field>   
+            <field name="name">PERMATA 0701209087 - MML</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11121800MML"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11121800MML"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_mml"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_permata_0701878019" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_hho"/>
+            <field name="code">BK07HHO</field>
+            <field name="type">bank</field>   
+            <field name="name">PERMATA 0701878019 - HHO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11121700HHO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11121700HHO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_hho"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0230954003" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_hho"/>
+            <field name="code">BK08HHO</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0230954003 - HHO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122400HHO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122400HHO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_hho"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0230670005" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_mml"/>
+            <field name="code">BK03MML</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0230670005 - MML</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122400MML"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122400MML"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_mml"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0230903000" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dly"/>
+            <field name="code">BK02DLY</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0230903000 - DLY</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122400DLY"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122400DLY"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dly"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_5750052489" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dds"/>
+            <field name="code">BK02DDS</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 5750052489 - DDS</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122400DDS"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122400DDS"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dds"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0410839199" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dbb"/>
+            <field name="code">BK02DBB</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0410839199 - DBB</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122400DBB"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122400DBB"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dbb"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_1393005711" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddc"/>
+            <field name="code">BK02DDC</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 1393005711 - DDC</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122400DDC"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122400DDC"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_ddc"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0230859400" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dla"/>
+            <field name="code">BK02DLA</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0230859400 - DLA</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122400DLA"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122400DLA"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dla"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_7390610666" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddb"/>
+            <field name="code">BK02DDB</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 7390610666 - DDB</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122400DDB"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122400DDB"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_ddb"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_6140211123" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddm"/>
+            <field name="code">BK02DDM</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 6140211123 - DDM</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122400DDM"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122400DDM"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_ddm"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_8055032200" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dsb"/>
+            <field name="code">BK02DSB</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 8055032200 - DSB</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122400DSB"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122400DSB"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dsb"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_7930213700" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dwo"/>
+            <field name="code">BK02DWO</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 7930213700 - DWO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122400DWO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122400DWO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dwo"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_4564848494" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddg"/>
+            <field name="code">BK02DDG</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 4564848494 - DDG</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122400DDG"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122400DDG"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_ddg"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_8460163553" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dwr"/>
+            <field name="code">BK02DWR</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 8460163553 - DWR</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122400DWR"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122400DWR"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dwr"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_7910313121" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dwk"/>
+            <field name="code">BK02DWK</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 7910313121 - DWK</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122400DWK"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122400DWK"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dwk"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_8110315105" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlu"/>
+            <field name="code">BK02DLU</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 8110315105 - DLU</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122400DLU"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122400DLU"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlu"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_1890322227" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_duk"/>
+            <field name="code">BK02DUK</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 1890322227 - DUK</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122400DUK"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122400DUK"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_duk"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_1911754466" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dxb"/>
+            <field name="code">BK02DXB</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 1911754466 - DXB</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122400DXB"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122400DXB"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dxb"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0341867770" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dsr"/>
+            <field name="code">BK02DSR</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0341867770 - DSR</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122400DSR"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122400DSR"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dsr"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_2940336611" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dli"/>
+            <field name="code">BK02DLI</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 2940336611 - DLI</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122400DLI"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122400DLI"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dli"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_7870177776" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_djj"/>
+            <field name="code">BK02DJJ</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 7870177776 - DJJ</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122400DJJ"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122400DJJ"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_djj"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0261886277" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dwt"/>
+            <field name="code">BK02DWT</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0261886277 - DWT</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122400DWT"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122400DWT"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dwt"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_1550191900" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dde"/>
+            <field name="code">BK02DDE</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 1550191900 - DDE</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122400DDE"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122400DDE"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dde"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_2570474866" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dsm"/>
+            <field name="code">BK02DSM</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 2570474866 - DSM</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122400DSM"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122400DSM"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dsm"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bni_0122135225" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dxn"/>
+            <field name="code">BK02DXN</field>
+            <field name="type">bank</field>   
+            <field name="name">BNI 0122135225 - DXN</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11121200DXN"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11121200DXN"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dxn"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_0230858900" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlp"/>
+            <field name="code">BK02DLP</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 0230858900 - DLP</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122400DLP"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122400DLP"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlp"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_8955061990" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dxk"/>
+            <field name="code">BK02DXK</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 8955061990 - DXK</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122400DXK"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122400DXK"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dxk"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_7510485500" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dda"/>
+            <field name="code">BK02DDA</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 7510485500 - DDA</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122400DDA"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122400DDA"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dda"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_2212132145" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddd"/>
+            <field name="code">BK01DDD</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 2212132145 - DDD</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11120500DDD"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11120500DDD"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_ddd"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_danamon_23821424" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_hho"/>
+            <field name="code">BK09HHO</field>
+            <field name="type">bank</field>   
+            <field name="name">DANAMON 23821424 - HHO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122800HHO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122800HHO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_hho"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_danamon_0097270953" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dwp"/>
+            <field name="code">BK02DWP</field>
+            <field name="type">bank</field>   
+            <field name="name">DANAMON 0097270953 - DWP</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122800DWP"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122800DWP"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dwp"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_danamon_0096556626" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dxg"/>
+            <field name="code">BK02DXG</field>
+            <field name="type">bank</field>   
+            <field name="name">DANAMON 0096556626 - DXG</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122800DXG"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122800DXG"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dxg"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_danamon_0095408712" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dxt"/>
+            <field name="code">BK03DXT</field>
+            <field name="type">bank</field>   
+            <field name="name">DANAMON 0095408712 - DXT</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122800DXT"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122800DXT"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dxt"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_009801000710309" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_hho"/>
+            <field name="code">BK10HHO</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0098.01.000710.30.9 - HHO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900HHO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900HHO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_hho"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_034101000635306" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_hho"/>
+            <field name="code">BK11HHO</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0341.01.000635.30.6 - HHO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122901HHO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122901HHO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_hho"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_009801001720307" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_mml"/>
+            <field name="code">BK04MML</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0098.01.001720.30.7 - MML</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900MML"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900MML"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_mml"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_009801000975307" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dls"/>
+            <field name="code">BK02DLS</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0098.01.000975.30.7 - DLS</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DLS"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DLS"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dls"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_009801000976303" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlo"/>
+            <field name="code">BK02DLO</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0098.01.000976.30.3 - DLO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DLO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DLO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlo"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_009801001015304" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlb"/>
+            <field name="code">BK01DLB</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0098.01.001015.30.4 - DLB</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DLB"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DLB"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlb"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_013101000287308" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dbl"/>
+            <field name="code">BK01DBL</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0131.01.000287.30.8  - DBL</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DBL"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DBL"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dbl"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_034201000276300" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dsp"/>
+            <field name="code">BK02DSP</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0342.01.000276.30.0 - DSP</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DSP"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DSP"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dsp"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_006301000873302" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dbk"/>
+            <field name="code">BK01DBK</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0063.01.000873.30.2 - DBK</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DBK"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DBK"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dbk"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_110001000027304" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dsb"/>
+            <field name="code">BK03DSB</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 1100.01.000027.30.4 - DSB</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DSB"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DSB"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dsb"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_00980100101630 0" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlg"/>
+            <field name="code">BK01DLG</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0098.01.001016.30 0 - DLG</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DLG"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DLG"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlg"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_009801001014308" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlj"/>
+            <field name="code">BK02DLJ</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0098.01.001014.30.8 - DLJ</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DLJ"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DLJ"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlj"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_009801001066305" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlk"/>
+            <field name="code">BK01DLK</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0098.01.001066.30.5 - DLK</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DLK"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DLK"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlk"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_034101000778308" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_duk"/>
+            <field name="code">BK03DUK</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0341.01.000778.30.8 - DUK</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DUK"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DUK"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_duk"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_034101000859308" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dup"/>
+            <field name="code">BK02DUP</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0341.01.000859.30.8 - DUP</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DUP"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DUP"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dup"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_008201001324308" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dxs"/>
+            <field name="code">BK02DXS</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0082.01.001324.30.8 - DXS</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DXS"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DXS"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dxs"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_009801001124307" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dli"/>
+            <field name="code">BK03DLI</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0098.01.001124.30.7 - DLI</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DLI"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DLI"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dli"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_009801001265307" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlw"/>
+            <field name="code">BK01DLW</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0098.01.001265.30.7 - DLW</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DLW"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DLW"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlw"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_057001000022300" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddt"/>
+            <field name="code">BK02DDT</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0570.01.000022.30.0 - DDT</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DDT"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DDT"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_ddt"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_034101000767307" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dbt"/>
+            <field name="code">BK01DBT</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0341.01.000767.30.7 - DBT</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DBT"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DBT"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dbt"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_027501001126307" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_djb"/>
+            <field name="code">BK01DJB</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0275.01.001126.30.7 - DJB</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DJB"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DJB"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_djb"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_009801001465305" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dln"/>
+            <field name="code">BK01DLN</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0098.01.001465.30.5 - DLN</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DLN"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DLN"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dln"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_032401000396306" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dbs"/>
+            <field name="code">BK01DBS</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0324.01.000396.30.6 - DBS</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DBS"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DBS"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dbs"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_003001000874307" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dsk"/>
+            <field name="code">BK02DSK</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0030.01.000874.30.7 - DSK</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DSK"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DSK"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dsk"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_009801001681309" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlm"/>
+            <field name="code">BK02DLM</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0098.01.001681.30.9 - DLM</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DLM"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DLM"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlm"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_009801001797304" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dle"/>
+            <field name="code">BK01DLE</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0098.01.001797.30.4 - DLE</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DLE"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DLE"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dle"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_009801001799306" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlh"/>
+            <field name="code">BK01DLH</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0098.01.001799.30.6 - DLH</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DLH"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DLH"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlh"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_034101000763303" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dsm"/>
+            <field name="code">BK03DSM</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0341.01.000763.30.3 - DSM</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DSM"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DSM"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dsm"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_019501000580302" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dws"/>
+            <field name="code">BK02DWS</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0195.01.000580.30.2 - DWS</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DWS"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DWS"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dws"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_022301000510306" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dwg"/>
+            <field name="code">BK01DWG</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0223.01.000510.30.6 - DWG</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DWG"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DWG"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dwg"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_034101000765305" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_djs"/>
+            <field name="code">BK01DJS</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0341.01.000765.30.5 - DJS</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DJS"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DJS"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_djs"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_034101000769309" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dsg"/>
+            <field name="code">BK01DSG</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0341.01.000769.30.9 - DSG</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DSG"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DSG"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dsg"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_034101000766301" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlx"/>
+            <field name="code">BK01DLX</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0341.01.000766.30.1 - DLX</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DLX"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DLX"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlx"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_034101000764309" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddi"/>
+            <field name="code">BK01DDI</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0341.01.000764.30.9 - DDI</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DDI"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DDI"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_ddi"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_034101000768303" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_djm"/>
+            <field name="code">BK01DJM</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0341.01.000768.30.3 - DJM</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DJM"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DJM"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_djm"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_034101000793308" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dld"/>
+            <field name="code">BK01DLD</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0341.01.000793.30.8 - DLD</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DLD"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DLD"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dld"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_034101000906309" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlf"/>
+            <field name="code">BK01DLF</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0341.01.000906.30.9 - DLF</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DLF"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DLF"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlf"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_034101000967305" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddj"/>
+            <field name="code">BK01DDJ</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0341.01.000967.30.5 - DDJ</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DDJ"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DDJ"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_ddj"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_034101001107306" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddu"/>
+            <field name="code">BK02DDU</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0341.01.0011.0730.6 - DDU</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DDU"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DDU"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_ddu"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_034101001092307" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dwn"/>
+            <field name="code">BK01DWN</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0341.01.001092.30.7 - DWN</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DWN"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DWN"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dwn"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_034101001109308" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlv"/>
+            <field name="code">BK01DLV</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0341.01.001109.30.8 - DLV</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DLV"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DLV"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlv"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_034101001106300" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddd"/>
+            <field name="code">BK02DDD</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0341.01.001106.30.0 - DDD</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DDD"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DDD"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_ddd"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_034101001108302" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dju"/>
+            <field name="code">BK01DJU</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0341.01.001108.30.2 - DJU</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DJU"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DJU"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dju"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri_034101001129308" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dwm"/>
+            <field name="code">BK01DWM</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI 0341.01.001129.30.8 - DWM</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11122900DWM"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11122900DWM"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dwm"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bank mizuho_3073630151" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_hho"/>
+            <field name="code">BK12HHO</field>
+            <field name="type">bank</field>   
+            <field name="name">BANK MIZUHO 3073630151 - HHO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11123600HHO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11123600HHO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_hho"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_2213039911" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_hho"/>
+            <field name="code">BK13HHO</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 2213039911 - HHO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11123700HHO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11123700HHO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_hho"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca_2213070959" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_mml"/>
+            <field name="code">BK05MML</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA 2213070959 - MML</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11123700MML"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11123700MML"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_mml"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_syariah mandiri_7007054429" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_hho"/>
+            <field name="code">BK14HHO</field>
+            <field name="type">bank</field>   
+            <field name="name">SYARIAH MANDIRI 7007054429 - HHO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11124800HHO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11124800HHO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_hho"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bank of tokyo _665-000769" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_hho"/>
+            <field name="code">BK15HHO</field>
+            <field name="type">bank</field>   
+            <field name="name">BANK OF TOKYO  665-000769 - HHO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11125300HHO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11125300HHO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_hho"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca df_0840538877" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_hho"/>
+            <field name="code">BK16HHO</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA DF 0840538877 - HHO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127200HHO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127200HHO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_hho"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca df_0840759822" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_hho"/>
+            <field name="code">BK17HHO</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA DF 0840759822 - HHO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127201HHO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127201HHO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_hho"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca df_0840760022" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_hho"/>
+            <field name="code">BK18HHO</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA DF 0840760022 - HHO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127202HHO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127202HHO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_hho"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca df_0840759938" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_hho"/>
+            <field name="code">BK19HHO</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA DF 0840759938 - HHO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127203HHO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127203HHO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_hho"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca df_0840759946" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_hho"/>
+            <field name="code">BK20HHO</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA DF 0840759946 - HHO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127204HHO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127204HHO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_hho"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca df_0840516369" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_hho"/>
+            <field name="code">BK21HHO</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA DF 0840516369 - HHO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127205HHO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127205HHO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_hho"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca df_0410910977" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_hho"/>
+            <field name="code">BK22HHO</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA DF 0410910977 - HHO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127206HHO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127206HHO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_hho"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca df_0845156005" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_hho"/>
+            <field name="code">BK23HHO</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA DF 0845156005 - HHO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127207HHO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127207HHO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_hho"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca df_0845220269" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_hho"/>
+            <field name="code">BK24HHO</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA DF 0845220269 - HHO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127208HHO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127208HHO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_hho"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca df_0262072779" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_hho"/>
+            <field name="code">BK25HHO</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA DF 0262072779 - HHO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127209HHO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127209HHO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_hho"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca df_3463258224" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_hho"/>
+            <field name="code">BK26HHO</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA DF 3463258224 - HHO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127210HHO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127210HHO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_hho"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca df_3463258844" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_hho"/>
+            <field name="code">BK27HHO</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA DF 3463258844 - HHO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127211HHO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127211HHO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_hho"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca df_1683476688" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_hho"/>
+            <field name="code">BK28HHO</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA DF 1683476688 - HHO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127212HHO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127212HHO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_hho"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bca df_0840667227" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_mml"/>
+            <field name="code">BK06MML</field>
+            <field name="type">bank</field>   
+            <field name="name">BCA DF 0840667227 - MML</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127200MML"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127200MML"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_mml"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bank lampung_3800002055433" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlr"/>
+            <field name="code">BK03DLR</field>
+            <field name="type">bank</field>   
+            <field name="name">Bank Lampung 38.0000.2055.433 - DLR</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11129900DLR"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11129900DLR"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlr"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bank bengkulu_4040107000141" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dup"/>
+            <field name="code">BK03DUP</field>
+            <field name="type">bank</field>   
+            <field name="name">BANK BENGKULU 4040.107.000.141 - DUP</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11129900DUP"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11129900DUP"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dup"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri out_009801001362303" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dls"/>
+            <field name="code">BK03DLS</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI Out 0098.01.001362.30.3 - DLS</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127100DLS"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127100DLS"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dls"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri out_009801001376302" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlo"/>
+            <field name="code">BK03DLO</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI Out 0098.01.001376.30.2 - DLO</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127100DLO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127100DLO"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlo"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri out_009801001372308" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlb"/>
+            <field name="code">BK02DLB</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI Out 0098.01.001372.30.8 - DLB</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127100DLB"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127100DLB"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlb"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri out_013101000496305" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dbl"/>
+            <field name="code">BK02DBL</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI Out 0131.01.000496.30.5 - DBL</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127100DBL"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127100DBL"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dbl"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri out_034201000502303" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dsp"/>
+            <field name="code">BK03DSP</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI Out 0342.01.000502.30.3 - DSP</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127100DSP"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127100DSP"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dsp"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri out_006301000874308" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dbk"/>
+            <field name="code">BK02DBK</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI Out 0063.01.000874.30.8 - DBK</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127100DBK"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127100DBK"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dbk"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri out_009801001363309" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlg"/>
+            <field name="code">BK02DLG</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI Out 0098.01.001363.30.9 - DLG</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127100DLG"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127100DLG"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlg"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri out_009801001373304" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlj"/>
+            <field name="code">BK03DLJ</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI Out 0098.01.001373.30.4 - DLJ</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127100DLJ"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127100DLJ"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlj"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri out_0167270024" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlt"/>
+            <field name="code">BK02DLT</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI Out 0167270024 - DLT</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127100DLT"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127100DLT"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlt"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri out_009801000171302" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlk"/>
+            <field name="code">BK02DLK</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI Out 0098.01.000171.30.2 - DLK</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127100DLK"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127100DLK"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlk"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri out_008201001721306" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dxs"/>
+            <field name="code">BK03DXS</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI Out 0082.01.001721.30.6 - DXS</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127100DXS"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127100DXS"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dxs"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri out_009801001464309" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlw"/>
+            <field name="code">BK02DLW</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI Out 0098.01.001464.30.9 - DLW</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127100DLW"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127100DLW"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlw"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri out_057001000021304" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddt"/>
+            <field name="code">BK03DDT</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI Out 0570.01.000021.30.4 - DDT</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127100DDT"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127100DDT"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_ddt"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri out_027501001127303" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_djb"/>
+            <field name="code">BK02DJB</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI Out 0275.01.001127.30.3 - DJB</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127100DJB"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127100DJB"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_djb"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri out_009801001466301" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dln"/>
+            <field name="code">BK02DLN</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI Out 0098.01.001466.30.1 - DLN</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127100DLN"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127100DLN"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dln"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri out_032401000395300" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dbs"/>
+            <field name="code">BK02DBS</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI Out 0324.01.000395.30.0 - DBS</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127100DBS"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127100DBS"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dbs"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri out_003001017006505" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dsk"/>
+            <field name="code">BK03DSK</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI Out 0030.01.017006.50.5 - DSK</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127100DSK"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127100DSK"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dsk"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri out_009801001680303" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlm"/>
+            <field name="code">BK03DLM</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI Out 0098.01.001680.30.3 - DLM</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127100DLM"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127100DLM"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlm"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri out_009801001798300" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dle"/>
+            <field name="code">BK02DLE</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI Out 0098.01.001798.30.0 - DLE</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127100DLE"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127100DLE"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dle"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri out_009801001800301" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlh"/>
+            <field name="code">BK02DLH</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI Out 0098.01.001800.30.1 - DLH</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127100DLH"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127100DLH"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlh"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri out_019501000576303" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dws"/>
+            <field name="code">BK03DWS</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI Out 0195.01.000576.30.3 - DWS</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127100DWS"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127100DWS"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dws"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri out_022301000511302" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dwg"/>
+            <field name="code">BK02DWG</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI Out 0223.01.000511.30.2 - DWG</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127100DWG"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127100DWG"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dwg"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri out_710401000032307" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_djs"/>
+            <field name="code">BK02DJS</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI Out 7104.01.000032.30.7 - DJS</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127100DJS"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127100DJS"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_djs"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri out_009801001884305" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dsg"/>
+            <field name="code">BK02DSG</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI Out 0098.01.001884.30.5 - DSG</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127100DSG"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127100DSG"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dsg"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri out_009801001851302" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlx"/>
+            <field name="code">BK02DLX</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI Out 0098.01.001851.30.2 - DLX</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127100DLX"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127100DLX"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlx"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri out_007901000553307" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddi"/>
+            <field name="code">BK02DDI</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI Out 0079.01.000553.30.7 - DDI</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127100DDI"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127100DDI"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_ddi"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri out_009801001850306" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_djm"/>
+            <field name="code">BK02DJM</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI Out 0098.01.001850.30.6 - DJM</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127100DJM"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127100DJM"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_djm"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri out_009801001932302" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dld"/>
+            <field name="code">BK02DLD</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI Out 0098.01.001932.30.2 - DLD</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127100DLD"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127100DLD"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dld"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri out_013001001031308" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlf"/>
+            <field name="code">BK02DLF</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI Out 0130.01.001031.30.8 - DLF</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127100DLF"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127100DLF"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_dlf"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_bank_bri out_058501000116306" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddj"/>
+            <field name="code">BK02DDJ</field>
+            <field name="type">bank</field>   
+            <field name="name">BRI Out 0585.01.000116.30.6 - DDJ</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_11127100DDJ"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_11127100DDJ"/>   
+                        
+            <field name="sequence_id" ref="sequnce_journal_bank_ddj"/>   
+            <field name="cash_control">1</field> 
+        </record>
+
+    </data>
+</openerp>
+            

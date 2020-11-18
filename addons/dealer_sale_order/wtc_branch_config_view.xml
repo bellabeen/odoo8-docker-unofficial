@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+		<record id="dealer_so_branch_config_view" model="ir.ui.view">
+            <field name="name">wtc.branch.config.dealer.so.view</field>
+            <field name="model">wtc.branch.config</field>
+            <field name="inherit_id" ref="wtc_branch.wtc_branch_config_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/sheet/group" position="after">
+                  
+                   		<group string="Dealer Sale Order">
+                   			<field name="dealer_so_journal_pelunasan_id" domain="[('type','=','sale')]"/>
+                   			<field name="dealer_so_journal_dp_id" domain="[('type','=','sale')]"/>
+                   			<field name="dealer_so_account_potongan_langsung_id"/>
+                   			<field name="dealer_so_account_potongan_subsidi_id"/>
+                   			<field name="dealer_so_journal_psmd_id" domain="[('type','=','sale')]"/>
+                   			<field name="dealer_so_journal_psfinco_id" domain="[('type','=','sale')]"/>
+                   			<field name="dealer_so_journal_bbnbeli_id" domain="[('type','=','purchase')]"/>
+                   			<field name="dealer_so_journal_insentive_finco_id" domain="[('type','=','sale')]"/>
+                   			<field name="dealer_so_account_bbn_jual_id"/>
+                   			<field name="dealer_so_journal_bbmd_id" domain="[('type','=','sale')]"/>
+                   			<field name="dealer_so_journal_bbfinco_id" domain="[('type','=','sale')]"/>
+                   			<field name="dealer_so_journal_hc_id" domain="[('type','=','purchase')]"/>
+                   			<field name="dealer_so_account_sisa_subsidi_id"/>
+                   			<field name="dealer_so_journal_hl_id"/>
+                        <field name="dealer_so_journal_accrue_ekspedisi_id" options="{'no_open':True,'no_create':True}"/>
+                        <field name="dealer_so_journal_accrue_proses_bbn_id" options="{'no_open':True,'no_create':True}"/>
+                   		</group>
+                   
+                </xpath>
+            </field>
+        </record>
+
+    <!-- Branch -->
+        <record id="view_teds_branch_accrual_dso_form" model="ir.ui.view">
+            <field name="name">teds.branch.accrual.dso.form</field>
+            <field name="model">wtc.branch</field>
+            <field name="inherit_id" ref="wtc_branch.wtc_branch_form_view"/>
+            <field name="arch" type="xml">
+                <field name="pajak_progressive" position="after">
+                    <field name="accrue_ekspedisi"/>
+                    <field name="accrue_proses_bbn"/>
+                </field>
+            </field>
+        </record>
+</data>
+</openerp>

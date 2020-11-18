@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+		<report 
+            string="Print Disbursement Cancel" 
+            id="action_teds_disbursement_cancel_print_pdf" 
+            model="wtc.cancel.disbursement" 
+            report_type="qweb-pdf"
+            name="wtc_edc.teds_disbursement_cancel_print_pdf" 
+            file="wtc_edc.teds_disbursement_cancel_print_pdf" 
+            menu="False"/>
+    </data>
+</openerp>

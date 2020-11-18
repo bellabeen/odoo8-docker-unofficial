@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+<template id="teds_proses_birojasa_tracking_print">
+    <t t-call="report.html_container">
+        <t t-foreach="docs" t-as="o">
+            <div class="page">
+                <div class="oe_structure"/>
+                    <div class="row"> 
+                    </div>
+                    <div class="col-xs-12">
+                        <table class="table table-bordered">
+                            <tr>
+                                <td>
+                                    <table style="font-size:12px; width:100%; line-height:200%; padding:20px">
+                                        <tr>
+                                            <th>PT.TUNAS DWIPA MATRA</th>
+                                            <th>Proses Birojasa Tracking</th>
+                                        </tr>
+                                    </table>
+                                    <hr/>
+                                    <table style="font-size:10px; width:100%; line-height:200%; padding:20px">
+                                        <tr>
+                                            <t t-if="o.options == 'No PRBJ'">
+                                                <th>No PRBJ: <span t-esc="o.name"/></th>
+                                            </t>
+                                            <t t-if="o.options == 'Periode'">
+                                                <th>Periode: <span t-esc="o.start_date"/> - <span t-esc="o.end_date"/></th>
+                                            </t>
+                                        </tr>
+                                    </table>
+                                    <br/>
+                                    <table class="table table-bordered" style="font-size:10px">
+                                        <tr>
+                                            <th>Branch</th>
+                                            <th>Birojasa</th>
+                                            <th>No PRBJ</th>
+                                            <th>Tgl PRBJ</th>
+                                            <th>Tgl TJP</th>
+                                            <th>Tgl Dokumen</th>
+                                            <th>Tgl Confirm</th>
+                                            <th>L-T Cabang</th>
+                                            <th>Tgl Terima Doc HO</th>
+                                            <th>L-T HO</th>
+                                            <th>Tgl Terima Doc Pajak</th>
+                                            <th>L-T Pajak</th>
+                                            <th>Tgl Terima Doc Finance</th>
+                                            <th>L-T Finance</th>
+                                            <th>Total</th>
+                                            <th>State</th>
+                                            <th>Keterangan</th>
+                                        </tr>
+                                        <tr t-foreach="o.detail_ids" style="page-break-inside: avoid !important;" t-as="detail">
+                                            <td><span t-esc="detail.branch_id.name"/></td>
+                                            <td><span t-esc="detail.birojasa_id.name"/></td>
+                                            <td><span t-esc="detail.name"/></td>
+                                            <td><span t-esc="detail.date"/></td>
+                                            <td><span t-esc="detail.tgl_jtp"/></td>
+                                            <td><span t-esc="detail.tanggal_dokumen"/></td>
+                                            <td><span t-esc="detail.tgl_confirm"/></td>
+                                            <td><span t-esc="detail.leadtime_cabang"/></td>
+                                            <td><span t-esc="detail.tgl_terima_document_ho"/></td>
+                                            <td><span t-esc="detail.leadtime_ho"/></td>
+                                            <td><span t-esc="detail.tgl_terima_document_pajak"/></td>
+                                            <td><span t-esc="detail.leadtime_pajak"/></td>
+                                            <td><span t-esc="detail.tgl_terima_document_finance"/></td>
+                                            <td><span t-esc="detail.leadtime_finance"/></td>
+                                            <td><span t-esc="'{0:,.2f}'.format(detail.total)"/></td>
+                                            <td><span t-esc="detail.state"/></td>
+                                            <td><span t-esc="detail.keterangan"/></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="6"><span t-esc="usr()"/>, <span t-esc="tgl()"/></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                <div class="oe_structure"/>
+            </div>
+        </t>
+    </t>
+</template>
+</data>
+</openerp>

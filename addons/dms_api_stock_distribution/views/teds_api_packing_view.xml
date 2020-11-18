@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <!-- BUTTON FORM -->
+		<record id="view_teds_api_button_stock_packing_form" model="ir.ui.view">
+            <field name="name">teds.api.button.stock.packing.form</field>
+            <field name="model">teds.api.button</field>
+            <field name="inherit_id" ref="teds_api_configuration.view_teds_api_button_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/header[@name='header_button']" position="inside">
+                    <!-- Kirim Qty Approved Distribution -->
+                    <button name="api_stock_distribution_qty_approved" type="object" string="Auto Kirim SD Qty Approved"/>
+                    <!-- Kirim Reject Distribution -->
+                    <button name="api_reject_stock_distribution" type="object" string="Auto Kirim SD Reject"/>
+                    <!-- Kirim Stock Packing Ke DMS Sparepart -->
+                    <button name="api_dms_stock_picking_to_hoki_sparepart" type="object" string="Auto Kirim SJ Sparepart"/>
+                    <!-- Kirim Stock Packing Ke DMS Unit -->
+                    <button name="api_dms_stock_picking_to_hoki_unit" type="object" string="Auto Kirim SJ Unit"/>
+                    <!-- Kirim Stock Picking Booking -->
+                    <button name="api_dms_stock_picking_booking" type="object" string="Auto Kirim Picking Booking"/>
+                    <!-- Kirim Stock Packing WHI Penerimaan Cabang -->
+                    <!-- <button name="api_dms_stock_picking_whi" type="object" string="Auto Packing WHI"/> -->
+                </xpath>
+            </field>
+        </record>
+                
+        <record id="view_dms_stock_distribution_form_view" model="ir.ui.view">
+            <field name="name">dms.api.button.stock.distribution.form.view</field>
+            <field name="model">wtc.stock.distribution</field>
+            <field name="inherit_id" ref="wtc_stock_mutation.wtc_stock_distribution_form_view"/>
+            <field name="arch" type="xml">
+                <field name="description" position = "after">
+                    <field name="dms_po_name" readonly="1"/>
+                </field>
+
+            </field>
+        </record>
+
+        <record id="view_dms_stock_distribution_form_tree" model="ir.ui.view">
+            <field name="name">dms.api.button.stock.distribution.tree.view</field>
+            <field name="model">wtc.stock.distribution</field>
+            <field name="inherit_id" ref="wtc_stock_mutation.wtc_stock_distribution_tree_view"/>
+            <field name="arch" type="xml">
+                <field name="branch_id" position = "before">
+                    <field name="dms_po_name"/>
+                </field>
+
+            </field>
+        </record>
+
+         <record id="view_dms_stock_distribution_search" model="ir.ui.view">
+            <field name="name">dms.stock.distribution.search</field>
+            <field name="model">wtc.stock.distribution</field>
+            <field name="inherit_id" ref="wtc_stock_mutation.view_stock_distribution_search"/>
+            <field name="arch" type="xml">
+                <field name="request_id" position = "after">
+                    <field name="dms_po_name" readonly="1"/>
+                </field>
+
+            </field>
+        </record>
+
+
+</data>
+</openerp>

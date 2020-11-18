@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+	<!-- teds_act_type_sumber_penjualan -->	
+		<record id="group_teds_act_type_sumber_penjualan_read" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Act Type Sumber Penjualan Read</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_act_type_sumber_penjualan_menuitem'))]"/>  
+		</record>
+
+		<record id="access_teds_act_type_sumber_penjualan_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_act_type_sumber_penjualan"/>
+      		<field name="name">teds_act_type_sumber_penjualan read</field> 
+      		<field name="group_id" ref="group_teds_act_type_sumber_penjualan_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="group_teds_act_type_sumber_penjualan_update" model="res.groups">
+    		<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Act Type Sumber Penjualan Update</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_act_type_sumber_penjualan_menuitem'))]"/>
+	      	<field name="implied_ids" eval="[(4, ref('group_teds_act_type_sumber_penjualan_read'))]"/>  
+		</record>
+		
+		<record id="access_teds_act_type_sumber_penjualan_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_act_type_sumber_penjualan"/>
+      		<field name="name">teds_act_type_sumber_penjualan update</field> 
+      		<field name="group_id" ref="group_teds_act_type_sumber_penjualan_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+		
+		<record id="group_teds_act_type_sumber_penjualan_delete" model="res.groups">
+    		<field name="category_id" ref="wtc_branch.tdm_role"/>
+      		<field name="name">Act Type Sumber Penjualan Delete</field> 
+      		<field name="menu_access" eval="[(4, ref('teds_act_type_sumber_penjualan_menuitem'))]"/>
+      		<field name="implied_ids" eval="[(4, ref('group_teds_act_type_sumber_penjualan_read'))]"/>  
+		</record>
+		
+		<record id="access_teds_act_type_sumber_penjualan_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_act_type_sumber_penjualan"/>
+      		<field name="name">teds_act_type_sumber_penjualan delete</field> 
+      		<field name="group_id" ref="group_teds_act_type_sumber_penjualan_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+	
+	<!-- teds_sales_plan_activity -->	
+		<record id="group_teds_sales_plan_activity_read" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Sales Plan Activity BTL Read</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_sales_plan_activity_menuitem'))]"/>  
+		</record>
+
+		<record id="access_teds_sales_plan_activity_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_sales_plan_activity"/>
+      		<field name="name">teds_sales_plan_activity read</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="access_teds_sales_plan_activity_line_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_sales_plan_activity_line"/>
+      		<field name="name">teds_sales_plan_activity_line read</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="access_teds_teds_activity_detail_biaya_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_activity_detail_biaya"/>
+      		<field name="name">teds_teds_activity_detail_biaya read</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="access_teds_sales_plan_history_location_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_sales_plan_history_location"/>
+      		<field name="name">teds_sales_plan_history_location read</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="access_teds_history_location_detail_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_history_location_detail"/>
+      		<field name="name">teds_history_location_detail read</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+
+		<record id="group_teds_sales_plan_activity_update" model="res.groups">
+    		<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Sales Plan Activity BTL Update</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_sales_plan_activity_menuitem'))]"/>
+	      	<field name="implied_ids" eval="[(4, ref('group_teds_sales_plan_activity_read'))]"/>  
+		</record>
+		
+		<record id="access_teds_sales_plan_activity_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_sales_plan_activity"/>
+      		<field name="name">teds_sales_plan_activity update</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+		
+		<record id="access_teds_sales_plan_activity_line_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_sales_plan_activity_line"/>
+      		<field name="name">teds_sales_plan_activity_line update</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+		
+		<record id="access_teds_teds_activity_detail_biaya_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_activity_detail_biaya"/>
+      		<field name="name">teds_teds_activity_detail_biaya update</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+		
+		<record id="access_teds_sales_plan_history_location_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_sales_plan_history_location"/>
+      		<field name="name">teds_sales_plan_history_location update</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+
+		<record id="access_teds_history_location_detail_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_history_location_detail"/>
+      		<field name="name">teds_history_location_detail update</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+
+		
+		<record id="group_teds_sales_plan_activity_delete" model="res.groups">
+    		<field name="category_id" ref="wtc_branch.tdm_role"/>
+      		<field name="name">Sales Plan Activity BTL Delete</field> 
+      		<field name="menu_access" eval="[(4, ref('teds_sales_plan_activity_menuitem'))]"/>
+      		<field name="implied_ids" eval="[(4, ref('group_teds_sales_plan_activity_read'))]"/>  
+		</record>
+		
+		<record id="access_teds_sales_plan_activity_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_sales_plan_activity"/>
+      		<field name="name">teds_sales_plan_activity delete</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+
+		<record id="access_teds_sales_plan_activity_line_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_sales_plan_activity_line"/>
+      		<field name="name">teds_sales_plan_activity_line delete</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+
+		<record id="access_teds_teds_activity_detail_biaya_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_activity_detail_biaya"/>
+      		<field name="name">teds_sales_plan_activity_line delete</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+
+		<record id="access_teds_sales_plan_history_location_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_sales_plan_history_location"/>
+      		<field name="name">teds_sales_plan_history_location delete</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+
+		<record id="access_teds_history_location_detail_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_history_location_detail"/>
+      		<field name="name">teds_history_location_detail delete</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+
+	<!-- teds_sales_plan_activity_approved_am -->	
+		<record id="group_teds_sales_plan_activity_am_read" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Sales Plan Activity AM Read</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_sales_activity_approved_menu'))]"/>  
+		</record>
+
+		<record id="access_teds_sales_plan_activity_am_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_sales_plan_activity"/>
+      		<field name="name">teds_sales_plan_activity_am read</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_am_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="access_teds_sales_plan_activity_line_am_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_sales_plan_activity_line"/>
+      		<field name="name">teds_sales_plan_activity_line_am read</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_am_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="access_teds_teds_activity_detail_biaya_am_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_activity_detail_biaya"/>
+      		<field name="name">teds_teds_activity_detail_biaya_am read</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_am_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="access_teds_sales_plan_history_location_am_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_sales_plan_history_location"/>
+      		<field name="name">teds_sales_plan_history_location_am read</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_am_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="access_teds_history_location_detail_am_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_history_location_detail"/>
+      		<field name="name">teds_history_location_detail_am read</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_am_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+
+		<record id="group_teds_sales_plan_activity_am_update" model="res.groups">
+    		<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Sales Plan Activity AM Update</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_sales_activity_approved_menu'))]"/>
+	      	<field name="implied_ids" eval="[(4, ref('group_teds_sales_plan_activity_am_read'))]"/>  
+		</record>
+		
+		<record id="access_teds_sales_plan_activity_am_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_sales_plan_activity"/>
+      		<field name="name">teds_sales_plan_activity_am update</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_am_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+		
+		<record id="access_teds_sales_plan_activity_line_am_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_sales_plan_activity_line"/>
+      		<field name="name">teds_sales_plan_activity_line_am update</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_am_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+		
+		<record id="access_teds_teds_activity_detail_biaya_am_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_activity_detail_biaya"/>
+      		<field name="name">teds_teds_activity_detail_biaya_am update</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_am_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+		
+		<record id="access_teds_sales_plan_history_location_am_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_sales_plan_history_location"/>
+      		<field name="name">teds_sales_plan_history_location_am update</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_am_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+
+		<record id="access_teds_history_location_detail_am_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_history_location_detail"/>
+      		<field name="name">teds_history_location_detail_am update</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_am_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+
+		
+		<record id="group_teds_sales_plan_activity_am_delete" model="res.groups">
+    		<field name="category_id" ref="wtc_branch.tdm_role"/>
+      		<field name="name">Sales Plan Activity AM Delete</field> 
+      		<field name="menu_access" eval="[(4, ref('teds_sales_activity_approved_menu'))]"/>
+      		<field name="implied_ids" eval="[(4, ref('group_teds_sales_plan_activity_am_read'))]"/>  
+		</record>
+		
+		<record id="access_teds_sales_plan_activity_am_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_sales_plan_activity"/>
+      		<field name="name">teds_sales_plan_activity_am delete</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_am_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+
+		<record id="access_teds_sales_plan_activity_line_am_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_sales_plan_activity_line"/>
+      		<field name="name">teds_sales_plan_activity_line_am delete</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_am_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+
+		<record id="access_teds_teds_activity_detail_biaya_am_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_activity_detail_biaya"/>
+      		<field name="name">teds_sales_plan_activity_line_am delete</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_am_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+
+		<record id="access_teds_sales_plan_history_location_am_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_sales_plan_history_location"/>
+      		<field name="name">teds_sales_plan_history_location_am delete</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_am_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+
+		<record id="access_teds_history_location_detail_am_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_history_location_detail"/>
+      		<field name="name">teds_history_location_detail_am delete</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_am_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+	
+	<!-- teds_sales_plan_activity_approved -->	
+		<record id="group_teds_sales_plan_activity_approved_read" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Review BTL Read</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_sales_plan_activity_approved_menuitem'))]"/>  
+		</record>
+
+		<record id="access_teds_sales_plan_activity_approved_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_sales_plan_activity_line"/>
+      		<field name="name">teds_sales_plan_activity_approved_line read</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_approved_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="access_teds_sales_plan_activity_approved_biaya_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_activity_detail_biaya"/>
+      		<field name="name">teds_sales_plan_activity_approved_biaya read</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_approved_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="access_teds_sales_plan_approved_history_location_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_sales_plan_history_location"/>
+      		<field name="name">teds_sales_plan_approved_history_location read</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_approved_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="access_teds_history_location_detail_approved_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_history_location_detail"/>
+      		<field name="name">teds_history_location_detail_approved read</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_approved_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+				
+
+		<record id="group_teds_sales_plan_activity_approved_update" model="res.groups">
+    		<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Review BTL Update</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_sales_plan_activity_approved_menuitem'))]"/>
+	      	<field name="implied_ids" eval="[(4, ref('group_teds_sales_plan_activity_approved_read'))]"/>  
+		</record>
+		
+		<record id="access_teds_sales_plan_activity_approved_line_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_sales_plan_activity_line"/>
+      		<field name="name">teds_sales_plan_activity_approved_line update</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_approved_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+		
+		<record id="access_teds_sales_plan_activity_approved_biaya_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_activity_detail_biaya"/>
+      		<field name="name">teds_sales_plan_activity_approved_biaya update</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_approved_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+		
+		<record id="access_teds_sales_plan_approved_history_location_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_sales_plan_history_location"/>
+      		<field name="name">teds_sales_plan_approved_history_location update</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_approved_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+		
+		<record id="access_teds_history_location_detail_approved_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_history_location_detail"/>
+      		<field name="name">teds_history_location_detail_approved update</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_approved_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+
+		
+		<record id="group_teds_sales_plan_activity_approved_delete" model="res.groups">
+    		<field name="category_id" ref="wtc_branch.tdm_role"/>
+      		<field name="name">Review BTL Delete</field> 
+      		<field name="menu_access" eval="[(4, ref('teds_sales_plan_activity_approved_menuitem'))]"/>
+      		<field name="implied_ids" eval="[(4, ref('group_teds_sales_plan_activity_approved_read'))]"/>  
+		</record>
+		
+		<record id="access_teds_sales_plan_activity_approved_line_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_sales_plan_activity_line"/>
+      		<field name="name">teds_sales_plan_activity_approved_line delete</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_approved_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+
+		<record id="access_teds_sales_plan_activity_approved_biaya_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_activity_detail_biaya"/>
+      		<field name="name">teds_sales_plan_activity_approved_line delete</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_approved_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+
+		<record id="access_teds_sales_plan_approved_history_location_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_sales_plan_history_location"/>
+      		<field name="name">teds_sales_plan_approved_history_location delete</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_approved_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+
+		<record id="access_teds_history_location_detail_approved_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_history_location_detail"/>
+      		<field name="name">teds_history_location_detail_approved delete</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_approved_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+
+	<!-- teds_sales_plan_activity_approved_operation -->	
+		<record id="group_teds_sales_plan_activity_operation_read" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Sales Plan Activity Operation Read</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_sales_activity_approved_operation_menu'))]"/>  
+		</record>
+
+		<record id="access_teds_sales_plan_activity_opration_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_sales_plan_activity"/>
+      		<field name="name">teds_sales_plan_activity_opration read</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_operation_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="access_teds_sales_plan_activity_line_opration_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_sales_plan_activity_line"/>
+      		<field name="name">teds_sales_plan_activity_line_opration read</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_operation_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="access_teds_teds_activity_detail_biaya_opration_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_activity_detail_biaya"/>
+      		<field name="name">teds_teds_activity_detail_biaya_opration read</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_operation_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="access_teds_sales_plan_history_location_opration_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_sales_plan_history_location"/>
+      		<field name="name">teds_sales_plan_history_location_opration read</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_operation_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="access_teds_history_location_detail_opration_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_history_location_detail"/>
+      		<field name="name">teds_history_location_detail_opration read</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_operation_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+
+		<record id="group_teds_sales_plan_activity_operation_update" model="res.groups">
+    		<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Sales Plan Activity Operation Update</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_sales_activity_approved_operation_menu'))]"/>
+	      	<field name="implied_ids" eval="[(4, ref('group_teds_sales_plan_activity_operation_read'))]"/>  
+		</record>
+		
+		<record id="access_teds_sales_plan_activity_opration_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_sales_plan_activity"/>
+      		<field name="name">teds_sales_plan_activity_opration update</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_operation_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+		
+		<record id="access_teds_sales_plan_activity_line_opration_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_sales_plan_activity_line"/>
+      		<field name="name">teds_sales_plan_activity_line_opration update</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_operation_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+		
+		<record id="access_teds_teds_activity_detail_biaya_opration_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_activity_detail_biaya"/>
+      		<field name="name">teds_teds_activity_detail_biaya_opration update</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_operation_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+		
+		<record id="access_teds_sales_plan_history_location_opration_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_sales_plan_history_location"/>
+      		<field name="name">teds_sales_plan_history_location_opration update</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_operation_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+
+		<record id="access_teds_history_location_detail_opration_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_history_location_detail"/>
+      		<field name="name">teds_history_location_detail_opration update</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_operation_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+
+		
+		<record id="group_teds_sales_plan_activity_operation_delete" model="res.groups">
+    		<field name="category_id" ref="wtc_branch.tdm_role"/>
+      		<field name="name">Sales Plan Activity Operation Delete</field> 
+      		<field name="menu_access" eval="[(4, ref('teds_sales_activity_approved_operation_menu'))]"/>
+      		<field name="implied_ids" eval="[(4, ref('group_teds_sales_plan_activity_operation_read'))]"/>  
+		</record>
+		
+		<record id="access_teds_sales_plan_activity_opration_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_sales_plan_activity"/>
+      		<field name="name">teds_sales_plan_activity_opration delete</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_operation_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+
+		<record id="access_teds_sales_plan_activity_line_opration_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_sales_plan_activity_line"/>
+      		<field name="name">teds_sales_plan_activity_line_opration delete</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_operation_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+
+		<record id="access_teds_teds_activity_detail_biaya_opration_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_activity_detail_biaya"/>
+      		<field name="name">teds_sales_plan_activity_line_opration delete</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_operation_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+
+		<record id="access_teds_sales_plan_history_location_opration_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_sales_plan_history_location"/>
+      		<field name="name">teds_sales_plan_history_location_opration delete</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_operation_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+
+		<record id="access_teds_history_location_detail_opration_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_history_location_detail"/>
+      		<field name="name">teds_history_location_detail_opration delete</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_operation_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+
+	<!-- teds_sales_result_activity -->	
+		<record id="group_teds_sales_result_activity_read" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Sales Result Plan BTL Activity Read</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_sales_result_activity_menuitem'))]"/>  
+		</record>
+
+		<record id="access_teds_sales_result_activity_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_sales_plan_activity"/>
+      		<field name="name">teds_sales_result_activity read</field> 
+      		<field name="group_id" ref="group_teds_sales_result_activity_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="access_teds_sales_result_activity_line_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_sales_plan_activity_line"/>
+      		<field name="name">teds_sales_result_activity_line read</field> 
+      		<field name="group_id" ref="group_teds_sales_result_activity_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="access_teds_sales_result_activity_biaya_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_activity_detail_biaya"/>
+      		<field name="name">teds_sales_result_activity_biaya read</field> 
+      		<field name="group_id" ref="group_teds_sales_result_activity_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="access_teds_sales_result_activity_history_location_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_sales_plan_history_location"/>
+      		<field name="name">teds_sales_result_activity_history_location read</field> 
+      		<field name="group_id" ref="group_teds_sales_result_activity_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="access_teds_history_location_detail_result_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_history_location_detail"/>
+      		<field name="name">teds_history_location_detail_result read</field> 
+      		<field name="group_id" ref="group_teds_sales_result_activity_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+				
+
+		<record id="group_teds_sales_result_activity_update" model="res.groups">
+    		<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Sales Result Plan BTL Update</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_sales_result_activity_menuitem'))]"/>
+	      	<field name="implied_ids" eval="[(4, ref('group_teds_sales_result_activity_read'))]"/>  
+		</record>
+		
+		<record id="access_teds_sales_result_activity_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_sales_plan_activity"/>
+      		<field name="name">teds_sales_result_activity update</field> 
+      		<field name="group_id" ref="group_teds_sales_result_activity_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+		
+		<record id="access_teds_sales_result_activity_line_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_sales_plan_activity_line"/>
+      		<field name="name">teds_sales_result_activity_line update</field> 
+      		<field name="group_id" ref="group_teds_sales_result_activity_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+		
+		<record id="access_teds_sales_result_activity_biaya_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_activity_detail_biaya"/>
+      		<field name="name">teds_sales_result_activity_biaya update</field> 
+      		<field name="group_id" ref="group_teds_sales_result_activity_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+		
+		<record id="access_teds_sales_result_activity_history_location_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_sales_plan_history_location"/>
+      		<field name="name">teds_sales_result_activity_history_location update</field> 
+      		<field name="group_id" ref="group_teds_sales_result_activity_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+		
+		<record id="access_teds_history_location_detail_result_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_history_location_detail"/>
+      		<field name="name">teds_history_location_detail_result update</field> 
+      		<field name="group_id" ref="group_teds_sales_result_activity_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+
+		
+		<record id="group_teds_sales_result_activity_delete" model="res.groups">
+    		<field name="category_id" ref="wtc_branch.tdm_role"/>
+      		<field name="name">Sales Result Plan BTL Delete</field> 
+      		<field name="menu_access" eval="[(4, ref('teds_sales_result_activity_menuitem'))]"/>
+      		<field name="implied_ids" eval="[(4, ref('group_teds_sales_result_activity_read'))]"/>  
+		</record>
+		
+		<record id="access_teds_sales_result_activity_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_sales_plan_activity"/>
+      		<field name="name">teds_sales_result_activity delete</field> 
+      		<field name="group_id" ref="group_teds_sales_result_activity_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+		
+		<record id="access_teds_sales_result_activity_line_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_sales_plan_activity_line"/>
+      		<field name="name">teds_sales_result_activity_line delete</field> 
+      		<field name="group_id" ref="group_teds_sales_result_activity_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+
+		<record id="access_teds_sales_result_biaya_line_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_activity_detail_biaya"/>
+      		<field name="name">teds_sales_result_biaya_line delete</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+
+		<record id="access_teds_sales_plan_activity_history_location_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_sales_plan_history_location"/>
+      		<field name="name">teds_sales_plan_activity_history_location delete</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+
+		<record id="access_teds_history_location_detail_result_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_history_location_detail"/>
+      		<field name="name">teds_history_location_detail_result delete</field> 
+      		<field name="group_id" ref="group_teds_sales_plan_activity_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+
+
+	<!-- teds_sales_plan_activity_reject -->	
+		<record id="group_teds_spa_status_reject_read" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Activity Plan Reject BTL Read</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_spa_status_reject_menuitem'))]"/>  
+		</record>
+
+		<record id="access_teds_spa_status_reject_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_sales_plan_activity_line"/>
+      		<field name="name">teds_spa_status_reject read</field> 
+      		<field name="group_id" ref="group_teds_spa_status_reject_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="access_teds_spa_status_reject_biaya_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_activity_detail_biaya"/>
+      		<field name="name">teds_spa_status_reject_biaya read</field> 
+      		<field name="group_id" ref="group_teds_spa_status_reject_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="access_teds_spa_status_reject_history_location_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_sales_plan_history_location"/>
+      		<field name="name">teds_spa_status_reject_history_location read</field> 
+      		<field name="group_id" ref="group_teds_spa_status_reject_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+		
+		<record id="access_teds_spa_status_reject_history_detail_read" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_history_location_detail"/>
+      		<field name="name">teds_spa_status_reject_history_detail read</field> 
+      		<field name="group_id" ref="group_teds_spa_status_reject_read"/>  
+      		<field name="perm_read">1</field> 
+		</record>
+				
+
+		<record id="group_teds_spa_status_reject_update" model="res.groups">
+    		<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Activity Plan Reject BTL Update</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_spa_status_reject_menuitem'))]"/>
+	      	<field name="implied_ids" eval="[(4, ref('group_teds_spa_status_reject_read'))]"/>  
+		</record>
+		
+		<record id="access_teds_spa_status_reject_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_sales_plan_activity_line"/>
+      		<field name="name">teds_spa_status_reject update</field> 
+      		<field name="group_id" ref="group_teds_spa_status_reject_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+		
+		<record id="access_teds_spa_status_reject_biaya_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_activity_detail_biaya"/>
+      		<field name="name">teds_spa_status_reject_biaya update</field> 
+      		<field name="group_id" ref="group_teds_spa_status_reject_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+		
+		<record id="access_teds_spa_status_reject_history_location_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_sales_plan_history_location"/>
+      		<field name="name">teds_spa_status_reject_history_location update</field> 
+      		<field name="group_id" ref="group_teds_spa_status_reject_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+		
+		<record id="access_teds_spa_status_reject_history_detail_update" model="ir.model.access">
+    		<field name="model_id" ref="model_teds_history_location_detail"/>
+      		<field name="name">teds_spa_status_reject_history_detail update</field> 
+      		<field name="group_id" ref="group_teds_spa_status_reject_update"/>  
+			<field name="perm_create">1</field> 
+      		<field name="perm_write">1</field> 
+		</record>
+
+		
+		<record id="group_teds_spa_status_reject_delete" model="res.groups">
+    		<field name="category_id" ref="wtc_branch.tdm_role"/>
+      		<field name="name">Activity Plan Reject BTL Delete</field> 
+      		<field name="menu_access" eval="[(4, ref('teds_spa_status_reject_menuitem'))]"/>
+      		<field name="implied_ids" eval="[(4, ref('group_teds_spa_status_reject_read'))]"/>  
+		</record>
+		
+		<record id="access_teds_spa_status_reject_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_sales_plan_activity_line"/>
+      		<field name="name">teds_spa_status_reject delete</field> 
+      		<field name="group_id" ref="group_teds_spa_status_reject_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+
+		<record id="access_teds_spa_status_reject_biaya_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_activity_detail_biaya"/>
+      		<field name="name">teds_spa_status_reject_biaya delete</field> 
+      		<field name="group_id" ref="group_teds_spa_status_reject_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+
+		<record id="access_teds_spa_status_reject_history_location_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_sales_plan_history_location"/>
+      		<field name="name">teds_spa_status_reject_history_location delete</field> 
+      		<field name="group_id" ref="group_teds_spa_status_reject_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+
+		<record id="access_teds_spa_status_reject_detail_history_delete" model="ir.model.access">
+			<field name="model_id" ref="model_teds_history_location_detail"/>
+      		<field name="name">teds_spa_status_reject_detail_history delete</field> 
+      		<field name="group_id" ref="group_teds_spa_status_reject_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+
+	<!-- teds_sales_activity_report_wizard_menuitem -->
+		<record id="group_teds_sales_activity_report_wizard" model="res.groups">
+    		<field name="category_id" ref="wtc_branch.tdm_role"/>
+      		<field name="name">Sales Activity Report Wizard</field> 
+      		<field name="menu_access" eval="[(4, ref('teds_sales_activity_report_wizard_menuitem'))]"/>
+		</record>
+	
+	<!-- teds_sales_activity_report_wizard_menuitem -->
+		<record id="group_teds_sales_activity_ansuransi_report_wizard" model="res.groups">
+    		<field name="category_id" ref="wtc_branch.tdm_role"/>
+      		<field name="name">Sales Activity Ansuransi Report Wizard</field> 
+      		<field name="menu_access" eval="[(4, ref('teds_sales_activity_ansuransi_report_wizard_menuitem'))]"/>
+		</record>
+		
+	<!-- SYS ADMIN -->
+	 	<record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[
+				(4,ref('group_teds_act_type_sumber_penjualan_read')),
+				(4,ref('group_teds_act_type_sumber_penjualan_update')),
+				(4,ref('group_teds_act_type_sumber_penjualan_delete')),
+
+				(4,ref('group_teds_sales_plan_activity_read')),
+				(4,ref('group_teds_sales_plan_activity_update')),
+				(4,ref('group_teds_sales_plan_activity_delete')),
+
+				(4,ref('group_teds_sales_plan_activity_approved_read')),
+				(4,ref('group_teds_sales_plan_activity_approved_update')),
+				(4,ref('group_teds_sales_plan_activity_approved_delete')),
+
+				(4,ref('group_teds_sales_plan_activity_am_read')),
+				(4,ref('group_teds_sales_plan_activity_am_update')),
+				(4,ref('group_teds_sales_plan_activity_am_delete')),
+
+				(4,ref('group_teds_sales_plan_activity_operation_read')),
+				(4,ref('group_teds_sales_plan_activity_operation_update')),
+				(4,ref('group_teds_sales_plan_activity_operation_delete')),
+
+				(4,ref('group_teds_sales_result_activity_read')),
+				(4,ref('group_teds_sales_result_activity_update')),
+				(4,ref('group_teds_sales_result_activity_delete')),
+
+				(4,ref('group_teds_sales_activity_report_wizard')),
+				(4,ref('group_teds_sales_activity_ansuransi_report_wizard')),
+
+			]"/> 
+		</record>
+	</data>
+</openerp>

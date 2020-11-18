@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="view_wtc_unit_bundling_tree" model="ir.ui.view">
+            <field name="name">wtc.unit.bundling.tree</field>
+            <field name="model">wtc.unit.bundling</field>
+            <field name="arch" type="xml">
+                <tree string="Unit Bundling">
+	                <field name="name"/>
+	                <field name="branch_id"/>
+	                <field name="date"/>
+	                <field name="state"/>
+                </tree>
+            </field>
+        </record>	
+
+        <record id="view_wtc_unit_bundling_form" model="ir.ui.view">
+            <field name="name">wtc.unit.bundling.form</field>
+            <field name="model">wtc.unit.bundling</field>
+            <field name="arch" type="xml">
+                <form string="Unit Bundling">
+                <header>
+                	<button name="confirm" states="approved" string="Confirm" type="object" class="oe_highlight" groups="wtc_unit_bundling.group_wtc_unit_bundling_confirm"/>
+                	<button name="wkf_request_approval" states="draft" string="RFA" type="object" class="oe_highlight" groups="wtc_unit_bundling.group_wtc_unit_bundling_rfa"/>
+                	<button name="wkf_approval" states="waiting_for_approval" string="Approve" type="object" class="oe_highlight" groups="wtc_unit_bundling.group_wtc_unit_bundling_approve"/>
+					<button name="%(wtc_approval.wtc_approval_reject_wizard_action)d" states="waiting_for_approval" string="Reject" type="action" context="{'model_name':'wtc.unit.bundling','update_value':{'approval_state':'r','state':'draft'}}"/>
+					<button name="%(wtc_approval.wtc_approval_cancel_wizard_action)d" states="waiting_for_approval" string="Cancel Approval" type="action" context="{'model_name':'wtc.unit.bundling','update_value':{'approval_state':'b','state':'draft'}}" groups="wtc_unit_bundling.group_wtc_unit_bundling_cancel_approval"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,waiting_for_approval,approved,done" statusbar_colors='{"confirm":"blue","cancel":"red"}'/>	
+                </header>
+               
+				<sheet>
+                    <div class="oe_title">                      
+	       				<h1>
+				            <label string="Unit Bundling"/>
+				 			<field name="name"  readonly="1"/>	
+    			        </h1>
+                    </div>
+                    <group col="2" colspan="2">
+                    	<group>
+                    		<field name="branch_id" options="{'no_show':True,'no_create':True,'no_open':True}" attrs="{'readonly': [('name','!=',False)]}" />
+                    	</group>
+                    	<group>
+                    		<field name="division" options="{'no_create': True,'no_open':True}" attrs="{'readonly': [('state','not in','draft')]}" />
+                    	</group>
+                    	<group >
+                    		<field name="product_id_from" options="{'no_create': True,'no_open':True}" attrs="{'readonly': [('state','not in','draft')]}" /> 
+                            <field name="date"/>
+
+                    	</group>
+                    	<group>
+                    		<field name="product_id_to" options="{'no_create': True,'no_open':True}" attrs="{'readonly': [('state','not in','draft')]}" />
+                    		<field name="description" attrs="{'readonly': [('state','!=','draft')]}"/>
+		                </group>
+		            </group>
+                    <notebook colspan="5">
+                        <page string="Bundling lines">
+                                <field colspan="4" name="bundling_line" attrs="{'readonly': [('state','not in','draft')]}" nolabel="1" widget="one2many_list">
+	                                <tree string=""  editable="top" >
+						                <field name="lot_id" options="{'no_create': True,'no_open':True}"/>
+						                <field name="chassis_number" options="{'no_create': True,'no_open':True}"/>
+						                <field name="product_id" options="{'no_create': True,'no_open':True}"/>
+						                <field name="location_id" options="{'no_create': True,'no_open':True}"/>
+						                <field name="freight_cost" options="{'no_create': True,'no_open':True}"/>
+						                 <field name="hpp" options="{'no_create': True,'no_open':True}"/>
+	                                </tree>
+								</field>
+								<group class="oe_subtotal_footer oe_right">
+			                     	<div class="oe_subtotal_footer_seperator oe_inline">
+										<label for="amount_total"/>
+									</div>
+			                     	<field name="amount_total" nolabel="1" class="oe_subtotal_footer_separator" widget='monetary'/>
+								</group>
+								<div class="oe_clear"/>
+                        </page>
+                        <page string="Approval">
+						<field name="approval_ids">
+							<tree string="Approval" editable="bottom" create="false" edit="false" delete="false" >
+								<field name="group_id" />
+								<field name="branch_id"/>
+								<field name="division"/>
+								<field name="limit"/>
+								<field name="sts"/>
+								<field name="reason"/>
+								<field name="pelaksana_id"/>
+								<field name="tanggal"/>
+							</tree>
+						</field>
+					</page>	
+                    <page string="Audit Trail">
+								<group>
+									<group>
+										<field name="create_uid" readonly="1"></field>
+										<field name="create_date" readonly="1"></field>
+										<field name="confirm_uid" readonly="1"></field>
+										<field name="confirm_date" readonly="1"></field>
+									</group>
+									<group>							
+										<field name="write_uid" readonly="1"></field>
+										<field name="write_date" readonly="1"></field>
+										<field name="cancel_uid" readonly="1"></field>
+										<field name="cancel_date" readonly="1"></field>
+									</group>
+								</group>
+							</page>	 
+                        
+                    </notebook>
+                </sheet> 
+                </form>
+            </field>
+        </record>
+        
+        
+        <record model="ir.actions.act_window" id="wtc_unit_bundling_action">
+		    <field name="name">Unit Bundling</field>
+		    <field name="res_model">wtc.unit.bundling</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+
+		</record>
+
+			<menuitem action="wtc_unit_bundling_action" id="menu_unit_bundling" parent="wtc_dealer_menu.showroom_sales_menu" sequence="4" />
+	
+	</data>
+</openerp>

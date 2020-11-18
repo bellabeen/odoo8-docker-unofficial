@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+<template id="teds_stock_opname_aksesoris_unit_print_bakso">
+    <t t-call="report.html_container">
+        <t t-foreach="docs" t-as="o">
+                <div class="page">
+                    <div class="oe_structure"/>
+                        <div class="row"> 
+                        </div>
+                        <table class="table table-bordered" style="font-size:11px">
+                            <tr>
+                               <td style="text-align:center"><b>BERITA ACARA STOCK OPNAME AKSESORIS</b></td>
+                            </tr>
+                            <tr>
+                                <th>No Refrensi: <span t-esc="name(data)"/></th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table class="table" style="font-size:10px">
+                                        <tr>
+                                            <th>Branch</th>
+                                            <th>: <span t-esc="branch(data)"/></th>
+                                            <th>Jam Mulai</th>
+                                            <th>: <span t-esc="jam_mulai(data)"/></th>
+                                        </tr>
+                                        <tr>
+                                            <th>Division</th>
+                                            <th>: <span t-esc="division(data)"/></th>
+                                            <th>Jam Selesai</th> 
+                                            <th>: <span t-esc="jam_selesai(data)"/></th>
+                                        </tr>
+                                        <tr>
+                                            <th>Tanggal SO</th>
+                                            <th colspan="3">: <span t-esc="tgl_so(data)"/></th>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4">
+                                                Hasil Stock Opname hari ini sebagai berikut: <br/>
+                                                <table width="100%" style="font-size:9px">
+                                                    <tr>
+                                                        <td width="50%">
+                                                            <table class="table table-bordered" style="font-size:9px">
+                                                                <tr>
+                                                                    <td colspan="4">Total Secara Sistem : <span t-esc="total_unit(data)"/></td>
+                                                                    <td colspan="4">Total Secara Fisik : <span t-esc="total_fisik(data)"/></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>Product Aksesoris</th>
+                                                                    <th>Good</th>
+                                                                    <th>Not Good</th>
+                                                                    <th>Total Fisik</th>
+                                                                    <th>Total Sistem</th>
+                                                                    <th>(+/- NG dr SO lalu)</th>
+                                                                    <th>Selisih</th>
+                                                                    <th>Selisih SO Lalu</th>
+                                                                </tr>
+                                                                <tr t-foreach="detail_ids(data)" t-as="detail">
+                                                                    <td><span t-esc="detail['category']"/></td>
+                                                                    <td><span t-esc="detail['qty_good']"/></td>
+                                                                    <td><span t-esc="detail['qty_not_good']"/></td>
+                                                                    <td><span t-esc="detail['total']"/></td>
+                                                                    <td><span t-esc="detail['total_unit']"/></td>
+                                                                    <td><span t-esc="detail['last_not_good']"/></td>
+                                                                    <td><span t-esc="detail['selisih']"/></td>
+                                                                    <td><span t-esc="detail['selisih_so_lalu']"/></td>                                           
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr height="5px">
+                                                        <th><u>PERNYATAAN</u></th>
+                                                    </tr>
+                                                    <tr height="10px">
+                                                        <td>                                            
+                                                            Proses stock opname ini telah berjalan dengan baik dan hasil ini telah dinyatakan sah untuk diakui dan telah didukung oleh dokumen yang seharusnya dilampirkan.
+                                                        </td>
+                                                    </tr>
+                                                    <tr height="20px">
+                                                        <td>
+                                                            <table class="table table-bordered" style="font-size:9px">
+                                                                <tr>
+                                                                    <td><span t-esc="note_bakso(data)"/></td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center">
+                                                            <table class="table table-bordered" style="font-size:9px">
+                                                                <tr>
+                                                                    <td colspan="3" align="center"><b>PERSON IN CHARGE YANG BERTUGAS</b></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="center">PIC SO</td>
+                                                                    <td colspan="2" align="center">MENGETAHUI</td>
+                                                                </tr>
+                                                                <tr height="80px">
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><span t-esc="adh(data)"/> <br/> <b>ADH</b></td>
+                                                                    <td><span t-esc="staff_bbn(data)"/> <br/> <b>PDI</b></td>
+                                                                    <td><span t-esc="soh(data)"/> <br/> <b>SOH</b></td>
+                                                                </tr>
+                                                        <!--         <tr>
+                                                                    <td>ADH</td>
+                                                                    <td>PDI</td>
+                                                                    <td>SOH</td>  
+                                                                </tr> -->
+                                                                <tr>
+                                                                    <td colspan="3">
+                                                                        <span t-esc="data['user']"/>, <span t-esc="data['date']"/>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>  
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    <div class="oe_structure"/>
+                </div>
+        </t>
+    </t>
+</template>
+</data>
+</openerp>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+		<!-- MASTER RING -->	
+		<record id="group_master_ring_read" model="res.groups">
+    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+      <field name="name">Master Ring Read</field> 
+      <field name="menu_access" eval="[(4, ref('menu_master_ring'))]"/>  
+		</record>
+		<record id="access_master_ring_read" model="ir.model.access">
+    	<field name="model_id" ref="model_master_ring"/>
+      <field name="name">master_ring read</field> 
+      <field name="group_id" ref="group_master_ring_read"/>  
+      <field name="perm_read">1</field> 
+		</record>
+		
+		<record id="group_master_ring_update" model="res.groups">
+    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+      <field name="name">Master Ring Update</field> 
+      <field name="menu_access" eval="[(4, ref('menu_master_ring'))]"/>
+      <field name="implied_ids" eval="[(4, ref('group_master_ring_read'))]"/>  
+		</record>
+		<record id="access_master_ring_update" model="ir.model.access">
+    	<field name="model_id" ref="model_master_ring"/>
+      <field name="name">master_ring update</field> 
+      <field name="group_id" ref="group_master_ring_update"/>  
+			<field name="perm_create">1</field> 
+      <field name="perm_write">1</field> 
+		</record>
+		
+		<record id="group_master_ring_delete" model="res.groups">
+    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+      <field name="name">Master Ring Delete</field> 
+      <field name="menu_access" eval="[(4, ref('menu_master_ring'))]"/>
+      <field name="implied_ids" eval="[(4, ref('group_master_ring_read'))]"/>  
+		</record>
+		<record id="access_master_ring_delete" model="ir.model.access">
+    	<field name="model_id" ref="model_master_ring"/>
+      <field name="name">master_ring delete</field> 
+      <field name="group_id" ref="group_master_ring_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+		
+		
+		<!-- MASTER ACTIVITY TYPE -->	
+		<record id="group_master_activity_type_read" model="res.groups">
+    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+      <field name="name">Master Activity Type Read</field> 
+      <field name="menu_access" eval="[(4, ref('menu_master_activity_type'))]"/>  
+		</record>
+		<record id="access_master_activity_type_read" model="ir.model.access">
+    	<field name="model_id" ref="model_master_act_type"/>
+      <field name="name">master_activity_type read</field> 
+      <field name="group_id" ref="group_master_activity_type_read"/>  
+      <field name="perm_read">1</field> 
+		</record>
+		
+		<record id="group_master_activity_type_update" model="res.groups">
+    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+      <field name="name">Master Activity Type Update</field> 
+      <field name="menu_access" eval="[(4, ref('menu_master_activity_type'))]"/>
+      <field name="implied_ids" eval="[(4, ref('group_master_activity_type_read'))]"/>  
+		</record>
+		<record id="access_master_activity_type_update" model="ir.model.access">
+    	<field name="model_id" ref="model_master_act_type"/>
+      <field name="name">master_activity_type update</field> 
+      <field name="group_id" ref="group_master_activity_type_update"/>  
+			<field name="perm_create">1</field> 
+      <field name="perm_write">1</field> 
+		</record>
+		
+		<record id="group_master_activity_type_delete" model="res.groups">
+    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+      <field name="name">Master Activity Type Delete</field> 
+      <field name="menu_access" eval="[(4, ref('menu_master_activity_type'))]"/>
+      <field name="implied_ids" eval="[(4, ref('group_master_activity_type_read'))]"/>  
+		</record>
+		<record id="access_master_activity_type_delete" model="ir.model.access">
+    	<field name="model_id" ref="model_master_act_type"/>
+      <field name="name">master_activity_type delete</field> 
+      <field name="group_id" ref="group_master_activity_type_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+		
+		
+		<!-- RING KECAMATAN -->	
+		<record id="group_ring_kecamatan_read" model="res.groups">
+    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+      <field name="name">Ring Kecamatan Read</field> 
+      <field name="menu_access" eval="[(4, ref('menu_ring_kecamatan'))]"/>  
+		</record>
+		<record id="access_ring_kecamatan_read" model="ir.model.access">
+    	<field name="model_id" ref="model_ring_kecamatan"/>
+      <field name="name">ring_kecamatan read</field> 
+      <field name="group_id" ref="group_ring_kecamatan_read"/>  
+      <field name="perm_read">1</field> 
+		</record>
+		<record id="access_ring_kecamatan_line_read" model="ir.model.access">
+    	<field name="model_id" ref="model_ring_kecamatan_line"/>
+      <field name="name">ring_kecamatan_line read</field> 
+      <field name="group_id" ref="group_ring_kecamatan_read"/>  
+      <field name="perm_read">1</field> 
+		</record>
+		
+		<record id="group_ring_kecamatan_update" model="res.groups">
+    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+      <field name="name">Ring Kecamatan Update</field> 
+      <field name="menu_access" eval="[(4, ref('menu_ring_kecamatan'))]"/>
+      <field name="implied_ids" eval="[(4, ref('group_ring_kecamatan_read'))]"/>  
+		</record>
+		<record id="access_ring_kecamatan_update" model="ir.model.access">
+    	<field name="model_id" ref="model_ring_kecamatan"/>
+      <field name="name">ring_kecamatan update</field> 
+      <field name="group_id" ref="group_ring_kecamatan_update"/>  
+			<field name="perm_create">1</field> 
+      <field name="perm_write">1</field> 
+		</record>
+		<record id="access_ring_kecamatan_line_update" model="ir.model.access">
+    	<field name="model_id" ref="model_ring_kecamatan_line"/>
+      <field name="name">ring_kecamatan_line update</field> 
+      <field name="group_id" ref="group_ring_kecamatan_update"/>  
+			<field name="perm_create">1</field> 
+      <field name="perm_write">1</field> 
+		</record>
+		
+		<record id="group_ring_kecamatan_delete" model="res.groups">
+    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+      <field name="name">Ring Kecamatan Delete</field> 
+      <field name="menu_access" eval="[(4, ref('menu_ring_kecamatan'))]"/>
+      <field name="implied_ids" eval="[(4, ref('group_ring_kecamatan_read'))]"/>  
+		</record>
+		<record id="access_ring_kecamatan_delete" model="ir.model.access">
+    	<field name="model_id" ref="model_ring_kecamatan"/>
+      <field name="name">ring_kecamatan_delete</field> 
+      <field name="group_id" ref="group_ring_kecamatan_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+		<record id="access_ring_kecamatan_line_delete" model="ir.model.access">
+    	<field name="model_id" ref="model_ring_kecamatan_line"/>
+      <field name="name">ring_kecamatan_line delete</field> 
+      <field name="group_id" ref="group_ring_kecamatan_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+		
+		
+		<!-- TITIK KERAMAIAN -->	
+		<record id="group_titik_keramaian_read" model="res.groups">
+    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+      <field name="name">Titik Keramaian Read</field> 
+      <field name="menu_access" eval="[(4, ref('menu_titik_keramaian'))]"/>  
+		</record>
+		<record id="access_titik_keramaian_read" model="ir.model.access">
+    	<field name="model_id" ref="model_titik_keramaian"/>
+      <field name="name">titik_keramaian read</field> 
+      <field name="group_id" ref="group_titik_keramaian_read"/>  
+      <field name="perm_read">1</field> 
+		</record>
+		
+		<record id="group_titik_keramaian_update" model="res.groups">
+    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+      <field name="name">Titik Keramaian Update</field> 
+      <field name="menu_access" eval="[(4, ref('menu_titik_keramaian'))]"/>
+      <field name="implied_ids" eval="[(4, ref('group_titik_keramaian_read'))]"/>  
+		</record>
+		<record id="access_titik_keramaian_update" model="ir.model.access">
+    	<field name="model_id" ref="model_titik_keramaian"/>
+      <field name="name">titik_keramaian update</field> 
+      <field name="group_id" ref="group_titik_keramaian_update"/>  
+			<field name="perm_create">1</field> 
+      <field name="perm_write">1</field> 
+		</record>
+		
+		<record id="group_titik_keramaian_delete" model="res.groups">
+    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+      <field name="name">Titik Keramaian Delete</field> 
+      <field name="menu_access" eval="[(4, ref('menu_titik_keramaian'))]"/>
+      <field name="implied_ids" eval="[(4, ref('group_titik_keramaian_read'))]"/>  
+		</record>
+		<record id="access_titik_keramaian_delete" model="ir.model.access">
+    	<field name="model_id" ref="model_titik_keramaian"/>
+      <field name="name">titik_keramaian delete</field> 
+      <field name="group_id" ref="group_titik_keramaian_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+		
+		
+		<!-- SALES ACTIVITY PLAN -->	
+		<record id="group_sales_plan_read" model="res.groups">
+    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+      <field name="name">Sales Activity Plan Read</field> 
+      <field name="menu_access" eval="[(4, ref('menu_sales_plan'))]"/>  
+		</record>
+		<record id="access_sales_plan_read" model="ir.model.access">
+    	<field name="model_id" ref="model_sales_plan"/>
+      <field name="name">sales_plan read</field> 
+      <field name="group_id" ref="group_sales_plan_read"/>  
+      <field name="perm_read">1</field> 
+		</record>
+		<record id="access_sales_plan_line_read" model="ir.model.access">
+    	<field name="model_id" ref="model_sales_plan_line"/>
+      <field name="name">sales_plan_line read</field> 
+      <field name="group_id" ref="group_sales_plan_read"/>  
+      <field name="perm_read">1</field> 
+		</record>
+		
+		<record id="group_sales_plan_update" model="res.groups">
+    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+      <field name="name">Sales Activity Plan Update</field> 
+      <field name="menu_access" eval="[(4, ref('menu_sales_plan'))]"/>
+      <field name="implied_ids" eval="[(4, ref('group_sales_plan_read'))]"/>  
+		</record>
+		<record id="access_sales_plan_update" model="ir.model.access">
+    	<field name="model_id" ref="model_sales_plan"/>
+      <field name="name">sales_plan update</field> 
+      <field name="group_id" ref="group_sales_plan_update"/>  
+			<field name="perm_create">1</field> 
+      <field name="perm_write">1</field> 
+		</record>
+		<record id="access_sales_plan_line_update" model="ir.model.access">
+    	<field name="model_id" ref="model_sales_plan_line"/>
+      <field name="name">sales_plan_line update</field> 
+      <field name="group_id" ref="group_sales_plan_update"/>  
+			<field name="perm_create">1</field> 
+      <field name="perm_write">1</field> 
+		</record>
+		
+		<record id="group_sales_plan_delete" model="res.groups">
+    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+      <field name="name">Sales Activity Plan Delete</field> 
+      <field name="menu_access" eval="[(4, ref('menu_sales_plan'))]"/>
+      <field name="implied_ids" eval="[(4, ref('group_sales_plan_read'))]"/>  
+		</record>
+		<record id="access_sales_plan_delete" model="ir.model.access">
+    	<field name="model_id" ref="model_sales_plan"/>
+      <field name="name">sales_plan_delete</field> 
+      <field name="group_id" ref="group_sales_plan_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+		<record id="access_sales_plan_line_delete" model="ir.model.access">
+    	<field name="model_id" ref="model_sales_plan_line"/>
+      <field name="name">sales_plan_line delete</field> 
+      <field name="group_id" ref="group_sales_plan_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+		
+		
+		<!-- SALES ACTIVITY RESULT -->	
+		<record id="group_sales_result_read" model="res.groups">
+    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+      <field name="name">Sales Activity Result Read</field> 
+      <field name="menu_access" eval="[(4, ref('menu_sales_result'))]"/>  
+		</record>
+		<record id="access_sales_result_read" model="ir.model.access">
+    	<field name="model_id" ref="model_sales_result"/>
+      <field name="name">sales_result read</field> 
+      <field name="group_id" ref="group_sales_result_read"/>  
+      <field name="perm_read">1</field> 
+		</record>
+		<record id="access_sales_result_line_read" model="ir.model.access">
+    	<field name="model_id" ref="model_sales_result_line"/>
+      <field name="name">sales_result_line read</field> 
+      <field name="group_id" ref="group_sales_result_read"/>  
+      <field name="perm_read">1</field> 
+		</record>
+		
+		<record id="group_sales_result_update" model="res.groups">
+    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+      <field name="name">Sales Activity Result Update</field> 
+      <field name="menu_access" eval="[(4, ref('menu_sales_result'))]"/>
+      <field name="implied_ids" eval="[(4, ref('group_sales_result_read'))]"/>  
+		</record>
+		<record id="access_sales_result_update" model="ir.model.access">
+    	<field name="model_id" ref="model_sales_result"/>
+      <field name="name">sales_result update</field> 
+      <field name="group_id" ref="group_sales_result_update"/>  
+			<field name="perm_create">1</field> 
+      <field name="perm_write">1</field> 
+		</record>
+		<record id="access_sales_result_line_update" model="ir.model.access">
+    	<field name="model_id" ref="model_sales_result_line"/>
+      <field name="name">sales_result_line update</field> 
+      <field name="group_id" ref="group_sales_result_update"/>  
+			<field name="perm_create">1</field> 
+      <field name="perm_write">1</field> 
+		</record>
+		
+		<record id="group_sales_result_delete" model="res.groups">
+    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+      <field name="name">Sales Activity Result Delete</field> 
+      <field name="menu_access" eval="[(4, ref('menu_sales_result'))]"/>
+      <field name="implied_ids" eval="[(4, ref('group_sales_result_read'))]"/>  
+		</record>
+		<record id="access_sales_result_delete" model="ir.model.access">
+    	<field name="model_id" ref="model_sales_result"/>
+      <field name="name">sales_result_delete</field> 
+      <field name="group_id" ref="group_sales_result_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+		<record id="access_sales_result_line_delete" model="ir.model.access">
+    	<field name="model_id" ref="model_sales_result_line"/>
+      <field name="name">sales_result_line delete</field> 
+      <field name="group_id" ref="group_sales_result_delete"/>  
+			<field name="perm_unlink">1</field>
+		</record>
+	</data>
+</openerp>

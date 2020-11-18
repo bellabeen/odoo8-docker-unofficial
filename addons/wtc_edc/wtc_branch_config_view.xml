@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data> 
+		<record model="ir.ui.view" id="wtc_branch_config_disbursement_form_view">
+		    <field name="name">wtc.branch.config.disbursement.form.view</field>
+		    <field name="model">wtc.branch.config</field>
+		    <field name="inherit_id" ref="wtc_branch.wtc_branch_config_form_view"/>
+		    <field name="arch" type="xml">		       	        		
+                <xpath expr="/form/sheet/group" position="after">                  
+					<group string="Disbursement EDC" col="2">						
+						<field name="disburesement_pl_account_id"/>
+						<field name="disbursement_cancel_journal_id"/>
+					</group>                  
+                </xpath>				
+		    </field>
+		</record>
+	</data>
+</openerp>
+															

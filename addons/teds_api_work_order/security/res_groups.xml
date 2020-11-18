@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">  	
+    	
+<!-- Teds Api Work Order Read --> 
+        <record id="group_dms_api_service_order_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">DMS API Service Order Read</field>   
+        </record>
+
+<!-- TEDS API Master Partner Bundling  -->
+        <record id="group_teds_api_master_partner_bundling_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">TEDS API Master Partner Bundling Read</field>
+            <field name="menu_access" eval="[(4, ref('teds_api_master_partner_bundling_menuitem'))]"/>  
+        </record>
+        <record id="access_teds_api_master_partner_bundling_read" model="ir.model.access">
+			<field name="model_id" ref="model_teds_api_master_partner_bundling" />
+			<field name="name">teds_api_master_partner_bundling read</field>
+			<field name="group_id" ref="group_teds_api_master_partner_bundling_read" />
+			<field name="perm_read">1</field>
+		</record>
+        <record id="access_teds_api_master_partner_bundling_line_read" model="ir.model.access">
+			<field name="model_id" ref="model_teds_api_master_partner_bundling_line" />
+			<field name="name">teds_api_master_partner_bundling_line read</field>
+			<field name="group_id" ref="group_teds_api_master_partner_bundling_read" />
+			<field name="perm_read">1</field>
+		</record>
+
+        <record id="group_teds_api_master_partner_bundling_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">TEDS API Master Partner Bundling Update</field>
+			<field name="implied_ids" eval="[(4, ref('group_teds_api_master_partner_bundling_read'))]" />
+        </record>
+        <record id="access_teds_api_master_partner_bundling_update" model="ir.model.access">
+			<field name="model_id" ref="model_teds_api_master_partner_bundling" />
+			<field name="name">teds_api_master_partner_bundling update</field>
+			<field name="group_id" ref="group_teds_api_master_partner_bundling_update" />
+			<field name="perm_create">1</field>
+			<field name="perm_write">1</field>
+		</record>
+        <record id="access_teds_api_master_partner_bundling_line_update" model="ir.model.access">
+			<field name="model_id" ref="model_teds_api_master_partner_bundling_line" />
+			<field name="name">teds_api_master_partner_bundling_line update</field>
+			<field name="group_id" ref="group_teds_api_master_partner_bundling_update" />
+			<field name="perm_create">1</field>
+			<field name="perm_write">1</field>
+		</record>
+
+        <record id="group_teds_api_master_partner_bundling_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">TEDS API Master Partner Bundling Delete</field>
+			<field name="implied_ids" eval="[(4, ref('group_teds_api_master_partner_bundling_read'))]" />
+        </record>
+        <record id="access_teds_api_master_partner_bundling_update" model="ir.model.access">
+			<field name="model_id" ref="model_teds_api_master_partner_bundling" />
+			<field name="name">teds_api_master_partner_bundling update</field>
+			<field name="group_id" ref="group_teds_api_master_partner_bundling_update" />
+			<field name="perm_unlink">1</field>
+		</record>
+        <record id="access_teds_api_master_partner_bundling_line_update" model="ir.model.access">
+			<field name="model_id" ref="model_teds_api_master_partner_bundling_line" />
+			<field name="name">teds_api_master_partner_bundling_line update</field>
+			<field name="group_id" ref="group_teds_api_master_partner_bundling_update" />
+			<field name="perm_unlink">1</field>
+		</record>
+
+<!-- TEDS Error B2B WO Report  -->
+        <record id="group_teds_api_log_work_order_report_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">TEDS Laporan Error B2B WO Read</field>
+            <field name="menu_access" eval="[(4, ref('menu_teds_api_log_work_order_report'))]"/>  
+        </record>
+        <record id="access_teds_api_log_work_order_report_read" model="ir.model.access">
+			<field name="model_id" ref="model_teds_api_log_work_order_report" />
+			<field name="name">teds_api_log_work_order_report read</field>
+			<field name="group_id" ref="group_teds_api_log_work_order_report_read" />
+			<field name="perm_read">1</field>
+		</record>
+
+        <record id="group_teds_api_log_work_order_report_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">TEDS Laporan Error B2B WO Update</field>
+			<field name="implied_ids" eval="[(4, ref('group_teds_api_log_work_order_report_read'))]" />
+        </record>
+        <record id="access_teds_api_log_work_order_report_update" model="ir.model.access">
+			<field name="model_id" ref="model_teds_api_log_work_order_report" />
+			<field name="name">teds_api_log_work_order_report update</field>
+			<field name="group_id" ref="group_teds_api_log_work_order_report_update" />
+			<field name="perm_create">1</field>
+			<field name="perm_write">1</field>
+		</record>
+
+        <record id="group_teds_api_log_work_order_report_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">TEDS Laporan Error B2B WO Delete</field>
+			<field name="implied_ids" eval="[(4, ref('group_teds_api_log_work_order_report_read'))]" />
+        </record>
+        <record id="access_teds_api_log_work_order_report_update" model="ir.model.access">
+			<field name="model_id" ref="model_teds_api_log_work_order_report" />
+			<field name="name">teds_api_log_work_order_report update</field>
+			<field name="group_id" ref="group_teds_api_log_work_order_report_delete" />
+			<field name="perm_unlink">1</field>
+		</record>
+
+    </data>
+</openerp>

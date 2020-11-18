@@ -1,0 +1,143 @@
+"id","code","name","parent_id/id","smcus_laba_rugi","smcus_zhr_report","smcus_zhr_cash_flow/id"
+"__export__.account_account_1","0","PT. Total Inpro Multitech",,"False","N/A",
+"__export__.account_account_2","1","Balance Sheet","__export__.account_account_1","False","N/A",
+"__export__.account_account_11","11","AKTIVA LANCAR","__export__.account_account_2","False","Neraca (Harta Lancar)",
+"__export__.account_account_1101","1101","KAS & BANK","__export__.account_account_11","False","Neraca (Harta Lancar)",
+"__export__.account_account_110101","110101","KAS KECIL KANTOR","__export__.account_account_1101","False","Neraca (Harta Lancar)","smcus_account_report_zhr.5"
+"__export__.account_account_110102","110102","BANK CITIBANK (IDR)","__export__.account_account_1101","False","Neraca (Harta Lancar)","smcus_account_report_zhr.5"
+"__export__.account_account_110103","110103","BANK CITIBANK (USD)","__export__.account_account_1101","False","Neraca (Harta Lancar)","smcus_account_report_zhr.5"
+"__export__.account_account_110104","110104","CASH IDR","__export__.account_account_1101","False","Neraca (Harta Lancar)","smcus_account_report_zhr.5"
+"__export__.account_account_110105","110105","BANK PERMATA (IDR)","__export__.account_account_1101","False","Neraca (Harta Lancar)","smcus_account_report_zhr.5"
+"__export__.account_account_110107","110106","BANK PERMATA (USD )","__export__.account_account_1101","False","Neraca (Harta Lancar)","smcus_account_report_zhr.5"
+"__export__.account_account_1347","110107","CASH USD","__export__.account_account_1101","False","Neraca (Harta Lancar)","smcus_account_report_zhr.5"
+"__export__.account_account_1102","1102","PIUTANG DAGANG","__export__.account_account_11","False","Neraca (Harta Lancar)",
+"__export__.account_account_110202","110201","PIUTANG DAGANG  BARANG LOKAL","__export__.account_account_1102","False","Neraca (Harta Lancar)","smcus_account_report_zhr.6"
+"__export__.account_account_110203","110202","PIUTANG DAGANG EXPORT","__export__.account_account_1102","False","Neraca (Harta Lancar)","smcus_account_report_zhr.6"
+"__export__.account_account_1103","1103","PIUTANG LAIN-LAIN","__export__.account_account_11","False","Neraca (Harta Lancar)",
+"__export__.account_account_110301","110301","PIUTANG DIREKSI & STAFF","__export__.account_account_1103","False","Neraca (Harta Lancar)","smcus_account_report_zhr.6"
+"__export__.account_account_110302","110302","PIUTANG DIREKSI KANTOR","__export__.account_account_1103","False","Neraca (Harta Lancar)","smcus_account_report_zhr.6"
+"__export__.account_account_110303","110303","PIUTANG STAFF KANTOR","__export__.account_account_1103","False","Neraca (Harta Lancar)","smcus_account_report_zhr.6"
+"__export__.account_account_110304","110304","PIUTANG LAIN-LAIN","__export__.account_account_1103","False","Neraca (Harta Lancar)","smcus_account_report_zhr.6"
+"__export__.account_account_1104","1104","PERSEDIAAN","__export__.account_account_11","False","Neraca (Harta Lancar)",
+"__export__.account_account_110401","110401","PERSEDIAAN IT","__export__.account_account_1104","False","Neraca (Harta Lancar)","smcus_account_report_zhr.7"
+"__export__.account_account_110402","110402","PERSEDIAAN SOFTWARE","__export__.account_account_1104","False","Neraca (Harta Lancar)","smcus_account_report_zhr.7"
+"__export__.account_account_110403","110403","PERSEDIAAN LAIN-LAIN","__export__.account_account_1104","False","Neraca (Harta Lancar)","smcus_account_report_zhr.7"
+"__export__.account_account_1306","110404","PERSEDIAAN ELEKTRIKAL","__export__.account_account_1104","False","Neraca (Harta Lancar)","smcus_account_report_zhr.7"
+"__export__.account_account_1314","110405","PERSEDIAAN AUTOMATION","__export__.account_account_1104","False","Neraca (Harta Lancar)","smcus_account_report_zhr.7"
+"__export__.account_account_1105","1105","UANG MUKA PEMBELIAN","__export__.account_account_11","False","Neraca (Harta Lancar)",
+"__export__.account_account_110501","110501","UANG MUKA PEMBELIAN LOKAL","__export__.account_account_1105","False","Neraca (Harta Lancar)","smcus_account_report_zhr.8"
+"__export__.account_account_110502","110502","UANG MUKA PEMBELIAN IMPOR","__export__.account_account_1105","False","Neraca (Harta Lancar)","smcus_account_report_zhr.8"
+"__export__.account_account_1319","110503","UANG MUKA PEMBELIAN JASA","__export__.account_account_1105","False","Neraca (Harta Lancar)","smcus_account_report_zhr.8"
+"__export__.account_account_1107","1107","PAJAK DIBAYAR DIMUKA","__export__.account_account_11","False","Neraca (Harta Lancar)",
+"__export__.account_account_110701","110701","PPN MASUKAN","__export__.account_account_1107","False","Neraca (Harta Lancar)","smcus_account_report_zhr.8"
+"__export__.account_account_110702","110702","PIUTANG PPn MASUKAN","__export__.account_account_1107","False","Neraca (Harta Lancar)","smcus_account_report_zhr.8"
+"__export__.account_account_110703","110703","PPh PASAL 21","__export__.account_account_1107","False","Neraca (Harta Lancar)","smcus_account_report_zhr.8"
+"__export__.account_account_110705","110705","PPh PASAL 23","__export__.account_account_1107","False","Neraca (Harta Lancar)","smcus_account_report_zhr.8"
+"__export__.account_account_110707","110707","PPh PASAL 25/29","__export__.account_account_1107","False","Neraca (Harta Lancar)","smcus_account_report_zhr.8"
+"__export__.account_account_110708","110708","PPh FINAL","__export__.account_account_1107","False","Neraca (Harta Lancar)","smcus_account_report_zhr.8"
+"__export__.account_account_12","12","AKTIVA TETAP","__export__.account_account_2","False","N/A",
+"__export__.account_account_1201","1201","PERALATAN KANTOR","__export__.account_account_12","False","Neraca (Harta Tetap)",
+"__export__.account_account_120101","120101","PERALATAN KANTOR FURNITURE","__export__.account_account_1201","False","Neraca (Harta Tetap)","smcus_account_report_zhr.1"
+"__export__.account_account_120102","120102","PERALATAN KANTOR ELEKTRIKAL","__export__.account_account_1201","False","Neraca (Harta Tetap)","smcus_account_report_zhr.1"
+"__export__.account_account_120103","120103","PERALATAN KANTOR ATK","__export__.account_account_1201","False","Neraca (Harta Tetap)","smcus_account_report_zhr.1"
+"__export__.account_account_1322","120104","PERALATAN KANTOR IT","__export__.account_account_1201","False","Neraca (Harta Tetap)","smcus_account_report_zhr.1"
+"__export__.account_account_1202","1202","AKUMULASI PENYUSUTAN","__export__.account_account_12","False","Neraca (Harta Tetap)",
+"__export__.account_account_120201","120201","AKUMULASI PENYUSUTAN PERALATAN KANTOR FURNITURE","__export__.account_account_1202","False","Neraca (Harta Tetap)","smcus_account_report_zhr.1"
+"__export__.account_account_120202","120202","AKUMULASI PENYUSUTAN PERALATAN KANTOR ELEKTRIKAL","__export__.account_account_1202","False","Neraca (Harta Tetap)","smcus_account_report_zhr.1"
+"__export__.account_account_120203","120203","AKUMULASI PENYUSUTAN PERALATAN KANTOR ATK","__export__.account_account_1202","False","Neraca (Harta Tetap)","smcus_account_report_zhr.1"
+"__export__.account_account_1323","120204","AKUMULASI PENYUSUTAN PERALATAN KANTOR IT","__export__.account_account_1202","False","Neraca (Harta Tetap)","smcus_account_report_zhr.1"
+"__export__.account_account_13","13","AKTIVA","__export__.account_account_2","False","Neraca (Harta Tetap)",
+"__export__.account_account_1301","1301","AKTIVA LAIN-LAIN","__export__.account_account_13","False","Neraca (Harta Lainnya)",
+"__export__.account_account_130101","130101","BIAYA PRA OPERASI","__export__.account_account_1301","False","Neraca (Harta Lainnya)","smcus_account_report_zhr.2"
+"__export__.account_account_130201","130102","AKUMULASI AMORTISASI BIAYA PRA OPERASI","__export__.account_account_1301","False","Neraca (Harta Lainnya)","smcus_account_report_zhr.2"
+"__export__.account_account_130203","130103","UANG JAMINAN SEWA GUNA USAHA","__export__.account_account_1301","False","Neraca (Harta Lainnya)","smcus_account_report_zhr.2"
+"__export__.account_account_21","21","HUTANG LANCAR","__export__.account_account_2","False","Neraca (Hutang Lancar)",
+"__export__.account_account_2101","2101","HUTANG DAGANG","__export__.account_account_21","False","Neraca (Hutang Lancar)",
+"__export__.account_account_210101","210101","HUTANG DAGANG LOKAL ","__export__.account_account_2101","False","Neraca (Hutang Lancar)","smcus_account_report_zhr.6"
+"__export__.account_account_210102","210102","HUTANG DAGANG IMPOR","__export__.account_account_2101","False","Neraca (Hutang Lancar)","smcus_account_report_zhr.6"
+"__export__.account_account_1320","210103","HUTANG DAGANG JASA","__export__.account_account_2101","False","Neraca (Hutang Lancar)","smcus_account_report_zhr.6"
+"__export__.account_account_21020","2102","HUTANG BANK","__export__.account_account_21","False","Neraca (Hutang Lancar)",
+"__export__.account_account_210201","210201","HUTANG BANK DANAMON","__export__.account_account_21020","False","Neraca (Hutang Lancar)","smcus_account_report_zhr.6"
+"__export__.account_account_2103","2103","HUTANG LAIN-LAIN","__export__.account_account_21","False","Neraca (Hutang Lancar)",
+"__export__.account_account_2104","2104","HUTANG PAJAK","__export__.account_account_21","False","Neraca (Hutang Lancar)",
+"__export__.account_account_210401","210401","HUTANG PPN KELUARAN","__export__.account_account_2104","False","Neraca (Hutang Lancar)","smcus_account_report_zhr.6"
+"__export__.account_account_210402","210402","HUTANG PPH PSL 21","__export__.account_account_2104","False","Neraca (Hutang Lancar)","smcus_account_report_zhr.6"
+"__export__.account_account_210403","210403","HUTANG PPH PSL 22","__export__.account_account_2104","False","Neraca (Hutang Lancar)","smcus_account_report_zhr.6"
+"__export__.account_account_210404","210404","HUTANG PPH PSL 23","__export__.account_account_2104","False","Neraca (Hutang Lancar)","smcus_account_report_zhr.6"
+"__export__.account_account_210405","210405","HUTANG PPH PSL 25/29","__export__.account_account_2104","False","Neraca (Hutang Lancar)","smcus_account_report_zhr.6"
+"__export__.account_account_210406","210406","HUTANG PPH PSL 26","__export__.account_account_2104","False","Neraca (Hutang Lancar)","smcus_account_report_zhr.6"
+"__export__.account_account_210407","210407","HUTANG PPN MASUKAN","__export__.account_account_2104","False","Neraca (Hutang Lancar)","smcus_account_report_zhr.6"
+"__export__.account_account_210408","210408","HUTANG PBB (PAJAK BUMI & BANGUNAN)","__export__.account_account_2104","False","Neraca (Hutang Lancar)","smcus_account_report_zhr.6"
+"__export__.account_account_210409","210409","HUTANG PAJAK LAINNYA","__export__.account_account_2104","False","Neraca (Hutang Lancar)","smcus_account_report_zhr.6"
+"__export__.account_account_210410","210410","HUTANG PPH, PPN","__export__.account_account_2104","False","Neraca (Hutang Lancar)","smcus_account_report_zhr.6"
+"__export__.account_account_2106","2105","PENDAPATAN DITERIMA DIMUKA","__export__.account_account_21","False","Neraca (Hutang Lancar)",
+"__export__.account_account_1324","210501","UANG MUKA DITERIMA","__export__.account_account_2106","False","Neraca (Hutang Lancar)","smcus_account_report_zhr.6"
+"__export__.account_account_31","31","MODAL","__export__.account_account_2","False","Neraca (Modal dan Laba Ditahan)",
+"__export__.account_account_3101","3101","MODAL SAHAM","__export__.account_account_31","False","Neraca (Modal dan Laba Ditahan)",
+"__export__.account_account_310101","310101","MODAL SAHAM WT","__export__.account_account_3101","False","Neraca (Modal dan Laba Ditahan)","smcus_account_report_zhr.3"
+"__export__.account_account_32","32","LABA RUGI","__export__.account_account_2","False","Neraca (Modal dan Laba Ditahan)",
+"__export__.account_account_3201","3201","LABA / RUGI","__export__.account_account_32","False","Neraca (Modal dan Laba Ditahan)",
+"__export__.account_account_320101","320101","LABA / RUGI TAHUN LALU","__export__.account_account_3201","False","Neraca (Modal dan Laba Ditahan)","smcus_account_report_zhr.3"
+"__export__.account_account_320102","320102","LABA / RUGI TAHUN BERJALAN","__export__.account_account_3201","TRUE","Neraca (Modal dan Laba Ditahan)","smcus_account_report_zhr.3"
+"__export__.account_account_17","2","Profit and Loss","__export__.account_account_1","False","N/A",
+"__export__.account_account_41","41","PENJUALAN DAN PENDAPATAN","__export__.account_account_17","False","N/A",
+"__export__.account_account_4101","4101","PENJUALAN LOKAL","__export__.account_account_41","False","Laba Rugi (Pendapatan)",
+"__export__.account_account_410101","410101","PENJUALAN LOKAL  (ELEKTRIKAL)","__export__.account_account_4101","False","Laba Rugi (Pendapatan)","smcus_account_report_zhr.12"
+"__export__.account_account_410102","410102","PENJUALAN LOKAL  (AUTOMATION)","__export__.account_account_4101","False","Laba Rugi (Pendapatan)","smcus_account_report_zhr.12"
+"__export__.account_account_1699","410103","PENJUALAN LOKAL (IT)","__export__.account_account_4101","False","Laba Rugi (Pendapatan)","smcus_account_report_zhr.12"
+"__export__.account_account_1312","410104","PENJUALAN LOKAL JASA","__export__.account_account_4101","False","Laba Rugi (Pendapatan)","smcus_account_report_zhr.12"
+"__export__.account_account_1316","410105","POTONGAN PENJUALAN ","__export__.account_account_4101","False","Laba Rugi (Pendapatan)","smcus_account_report_zhr.12"
+"__export__.account_account_51","51","HARGA POKOK PENJUALAN","__export__.account_account_17","False","Laba Rugi (Biaya atas Pendapatan)",
+"__export__.account_account_5101","5101","HARGA POKOK PENJUALAN LOKAL","__export__.account_account_51","False","Laba Rugi (Biaya atas Pendapatan)",
+"__export__.account_account_510101","510101","BIAYA PERAKITAN","__export__.account_account_5101","False","Laba Rugi (Biaya atas Pendapatan)","smcus_account_report_zhr.13"
+"__export__.account_account_510102","510102","BIAYA PEMBELIAN BARANG IT","__export__.account_account_5101","False","Laba Rugi (Biaya atas Pendapatan)","smcus_account_report_zhr.13"
+"__export__.account_account_510103","510103","BIAYA PEMBELIAN BARANG JADI LAINNYA","__export__.account_account_5101","False","Laba Rugi (Biaya atas Pendapatan)","smcus_account_report_zhr.13"
+"__export__.account_account_1305","510104","BIAYA PEMBELIAN BARANG Elektrikal","__export__.account_account_5101","False","Laba Rugi (Biaya atas Pendapatan)","smcus_account_report_zhr.13"
+"__export__.account_account_1315","510105","BIAYA PEMBELIAN BARANG AUTOMATION","__export__.account_account_5101","False","Laba Rugi (Biaya atas Pendapatan)","smcus_account_report_zhr.13"
+"__export__.account_account_610104","510106","BIAYA ASURANSI PENJUALAN","__export__.account_account_5101","False","Laba Rugi (Biaya atas Pendapatan)","smcus_account_report_zhr.13"
+"__export__.account_account_610106","510107","BIAYA KLAIM MUTU","__export__.account_account_5101","False","Laba Rugi (Biaya atas Pendapatan)","smcus_account_report_zhr.13"
+"__export__.account_account_610210","510108","BIAYA PERAWATAN PERALATAN UMUM","__export__.account_account_5101","False","Laba Rugi (Biaya atas Pendapatan)","smcus_account_report_zhr.13"
+"__export__.account_account_1325","510109","BIAYA SUBCONTRACTOR","__export__.account_account_5101","False","Laba Rugi (Biaya atas Pendapatan)","smcus_account_report_zhr.13"
+"__export__.account_account_1327","510110","BIAYA IMPOR","__export__.account_account_5101","False","Laba Rugi (Biaya atas Pendapatan)","smcus_account_report_zhr.13"
+"__export__.account_account_1328","510111","BIAYA SEWA PERALATAN","__export__.account_account_5101","False","Laba Rugi (Biaya atas Pendapatan)","smcus_account_report_zhr.13"
+"__export__.account_account_1329","510112","BIAYA PENGANGKUTAN & PENGIRIMAN","__export__.account_account_5101","False","Laba Rugi (Biaya atas Pendapatan)","smcus_account_report_zhr.13"
+"__export__.account_account_1330","510113","BIAYA POTONGAN PEMBELIAN","__export__.account_account_5101","False","Laba Rugi (Biaya atas Pendapatan)","smcus_account_report_zhr.13"
+"__export__.account_account_1331","510114","BIAYA PEMBELIAN","__export__.account_account_5101","False","Laba Rugi (Biaya atas Pendapatan)","smcus_account_report_zhr.13"
+"__export__.account_account_61","61","BIAYA USAHA","__export__.account_account_17","False","Laba Rugi (Pengeluaran Operasional)",
+"__export__.account_account_6101","6101","BIAYA PENJUALAN","__export__.account_account_61","False","Laba Rugi (Pengeluaran Operasional)",
+"__export__.account_account_610101","610101","BIAYA PERJALANAN DINAS","__export__.account_account_6101","False","Laba Rugi (Pengeluaran Operasional)","smcus_account_report_zhr.14"
+"__export__.account_account_610102","610102","BIAYA AGENSI","__export__.account_account_6101","False","Laba Rugi (Pengeluaran Operasional)","smcus_account_report_zhr.14"
+"__export__.account_account_610103","610103","BIAYA ADMINISTRASI BANK","__export__.account_account_6101","False","Laba Rugi (Pengeluaran Operasional)","smcus_account_report_zhr.14"
+"__export__.account_account_610105","610104","BIAYA PEMASARAN","__export__.account_account_6101","False","Laba Rugi (Pengeluaran Operasional)","smcus_account_report_zhr.14"
+"__export__.account_account_6102","6102","BIAYA GAJI","__export__.account_account_61","False","Laba Rugi (Pengeluaran Operasional)",
+"__export__.account_account_610201","610201","GAJI KARYAWAN","__export__.account_account_6102","False","Laba Rugi (Pengeluaran Operasional)","smcus_account_report_zhr.14"
+"__export__.account_account_610202","610202","TUNJANGAN PAJAK PPH 21 KARYAWAN","__export__.account_account_6102","False","Laba Rugi (Pengeluaran Operasional)","smcus_account_report_zhr.14"
+"__export__.account_account_610203","610203","TUNJANGAN KARYAWAN","__export__.account_account_6102","False","Laba Rugi (Pengeluaran Operasional)","smcus_account_report_zhr.14"
+"__export__.account_account_610207","610204","BIAYA ASURANSI","__export__.account_account_6102","False","Laba Rugi (Pengeluaran Operasional)","smcus_account_report_zhr.14"
+"__export__.account_account_6103","6103","BIAYA PENYUSUTAN AKTIVA TETAP","__export__.account_account_61","False","Laba Rugi (Pengeluaran Operasional)","smcus_account_report_zhr.14"
+"__export__.account_account_610301","610301","BIAYA PENYUSUTAN PERALATAN KANTOR FURNITURE","__export__.account_account_6103","False","Laba Rugi (Pengeluaran Operasional)","smcus_account_report_zhr.14"
+"__export__.account_account_610302","610302","BIAYA PENYUSUTAN PERALATAN KANTOR ELEKTRIKAL","__export__.account_account_6103","False","Laba Rugi (Pengeluaran Operasional)","smcus_account_report_zhr.14"
+"__export__.account_account_610303","610303","BIAYA PENYUSUTAN PERALATAN KANTOR ATK","__export__.account_account_6103","False","Laba Rugi (Pengeluaran Operasional)","smcus_account_report_zhr.14"
+"__export__.account_account_1332","610304","BIAYA PENYUSUTAN PERALATAN KANTOR IT","__export__.account_account_6103","False","Laba Rugi (Pengeluaran Operasional)","smcus_account_report_zhr.14"
+"__export__.account_account_1333","6104","BIAYA OPERASIONAL","__export__.account_account_61","False","Laba Rugi (Pengeluaran Operasional)",
+"__export__.account_account_1334","610401","BIAYA TELEPON, FAX & INTERNET","__export__.account_account_1333","False","Laba Rugi (Pengeluaran Operasional)","smcus_account_report_zhr.14"
+"__export__.account_account_1335","610402","BIAYA PERAWATAN PERLATAN KANTOR","__export__.account_account_1333","False","Laba Rugi (Pengeluaran Operasional)","smcus_account_report_zhr.14"
+"__export__.account_account_1336","610403","BIAYA PEMELIHARAAN BANGUNAN KANTOR","__export__.account_account_1333","False","Laba Rugi (Pengeluaran Operasional)","smcus_account_report_zhr.14"
+"__export__.account_account_1337","610404","BIAYA PERAWATAN KENDARAAN","__export__.account_account_1333","False","Laba Rugi (Pengeluaran Operasional)","smcus_account_report_zhr.14"
+"__export__.account_account_1338","610405","BIAYA SEWA KANTOR","__export__.account_account_1333","False","Laba Rugi (Pengeluaran Operasional)","smcus_account_report_zhr.14"
+"__export__.account_account_1339","610406","BIAYA LISTRIK KANTOR","__export__.account_account_1333","False","Laba Rugi (Pengeluaran Operasional)","smcus_account_report_zhr.14"
+"__export__.account_account_1340","610407","BIAYA PAM KANTOR","__export__.account_account_1333","False","Laba Rugi (Pengeluaran Operasional)","smcus_account_report_zhr.14"
+"__export__.account_account_1341","610408","PAJAK BUMI & BANGUNAN","__export__.account_account_1333","False","Laba Rugi (Pengeluaran Operasional)","smcus_account_report_zhr.14"
+"__export__.account_account_1342","6105","BIAYA LAIN - LAIN","__export__.account_account_61","False","Laba Rugi (Pengeluaran Lain)",
+"__export__.account_account_1343","610501","RUGI PENJUALAN AKTIVA TETAP","__export__.account_account_1342","False","Laba Rugi (Pengeluaran Lain)","smcus_account_report_zhr.16"
+"__export__.account_account_1344","610502","BUNGA PINJAMAN BANK","__export__.account_account_1342","False","Laba Rugi (Pengeluaran Lain)","smcus_account_report_zhr.16"
+"__export__.account_account_1345","610503","BIAYA SELISIH KURS","__export__.account_account_1342","False","Laba Rugi (Pengeluaran Lain)","smcus_account_report_zhr.16"
+"__export__.account_account_1346","610504","BIAYA PAJAK YANG DIBAYAR PERUSAHAAN","__export__.account_account_1342","False","Laba Rugi (Pengeluaran Lain)","smcus_account_report_zhr.16"
+"__export__.account_account_71","71","PENDAPATAN DILUAR USAHA","__export__.account_account_17","False","N/A",
+"__export__.account_account_7101","7101","PENDAPATAN LAIN-LAIN","__export__.account_account_71","False","Laba Rugi (Pendapatan Lain)",
+"__export__.account_account_710101","710101","PENDAPATAN JASA GIRO","__export__.account_account_7101","False","Laba Rugi (Pendapatan Lain)","smcus_account_report_zhr.15"
+"__export__.account_account_710102","710102","PENDAPATAN SEWA","__export__.account_account_7101","False","Laba Rugi (Pendapatan Lain)","smcus_account_report_zhr.15"
+"__export__.account_account_710103","710103","BUNGA DEPOSITO","__export__.account_account_7101","False","Laba Rugi (Pendapatan Lain)","smcus_account_report_zhr.15"
+"__export__.account_account_710104","710104","LABA PENJUALAN AKTIVA TETAP","__export__.account_account_7101","False","Laba Rugi (Pendapatan Lain)","smcus_account_report_zhr.15"
+"__export__.account_account_710105","710105","PENDAPATAN SELISIH KURS","__export__.account_account_7101","False","Laba Rugi (Pendapatan Lain)","smcus_account_report_zhr.15"
+"__export__.account_account_710106","710106","PENDAPATAN LAIN-LAIN","__export__.account_account_7101","False","Laba Rugi (Pendapatan Lain)","smcus_account_report_zhr.15"

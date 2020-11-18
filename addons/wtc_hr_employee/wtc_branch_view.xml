@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+		<record model="ir.ui.view" id="wtc_hr_branch_form_view">
+		    <field name="name">wtc.branch.form.view</field>
+		    <field name="model">wtc.branch</field>
+		    <field name="inherit_id" ref="wtc_branch.wtc_branch_form_view"/>
+		    <field name="arch" type="xml">
+				<label for="address" position="before">
+					<field name="area_id" attrs="{'no_create':1,'no_open':1}"/>
+				</label>
+		     </field>
+		</record>
+	</data>
+</openerp>

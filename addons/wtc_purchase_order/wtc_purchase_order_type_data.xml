@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <!--
+    Purchase Order type
+    -->
+        <record id="purchase_order_type_unit_fix" model="wtc.purchase.order.type">
+            <field name="category">Unit</field>
+            <field name="name">Fix</field>
+            <field name="date_start">next_month</field>
+            <field name="date_end">end_of_next_month</field>
+        </record>
+
+        <record id="purchase_order_type_unit_add" model="wtc.purchase.order.type">
+            <field name="category">Unit</field>
+            <field name="name">Additional</field>
+            <field name="date_start">now</field>
+            <field name="date_end">end_of_month</field>
+        </record>
+
+        <record id="purchase_order_type_unit_wl" model="wtc.purchase.order.type">
+            <field name="category">Unit</field>
+            <field name="name">Waiting List</field>
+            <field name="date_start">now</field>
+            <field name="date_end">end_of_next_2_months</field>
+        </record>
+
+        <record id="purchase_order_type_part_fix" model="wtc.purchase.order.type">
+            <field name="category">Sparepart</field>
+            <field name="name">Fix</field>
+            <field name="date_start">next_2_months</field>
+            <field name="date_end">end_of_next_2_months</field>
+        </record>
+
+        <record id="purchase_order_type_part_add" model="wtc.purchase.order.type">
+            <field name="category">Sparepart</field>
+            <field name="name">Additional</field>
+            <field name="date_start">now</field>
+            <field name="date_end">end_of_month</field>
+        </record>
+
+        <record id="purchase_order_type_part_rec" model="wtc.purchase.order.type">
+            <field name="category">Sparepart</field>
+            <field name="name">Recommended</field>
+            <field name="date_start">now</field>
+            <field name="date_end">end_of_month</field>
+        </record>
+
+        <record id="purchase_order_type_part_hl" model="wtc.purchase.order.type">
+            <field name="category">Sparepart</field>
+            <field name="name">Hotline</field>
+            <field name="date_start">now</field>
+            <field name="date_end">end_of_month</field>
+        </record>
+
+        <record id="purchase_order_type_umum_reg" model="wtc.purchase.order.type">
+            <field name="category">Umum</field>
+            <field name="name">Regular</field>
+            <field name="date_start">now</field>
+            <field name="date_end">end_of_month</field>
+        </record>
+    </data>
+</openerp>

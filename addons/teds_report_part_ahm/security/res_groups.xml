@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+		<record id="group_teds_report_pembelian_part_ahm_menuitem" model="res.groups">
+	    	<field name="category_id" ref="wtc_branch.tdm_role"/>
+	      	<field name="name">Laporan Report Pembalian Part AHM Wizard</field> 
+	      	<field name="menu_access" eval="[(4, ref('teds_report_pembelian_part_ahm_menuitem'))]"/>
+		</record>
+
+		<record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[
+				(4,ref('group_teds_report_pembelian_part_ahm_menuitem')),
+			]"/> 
+		</record>
+	</data>
+</openerp>

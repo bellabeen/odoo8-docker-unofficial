@@ -1,0 +1,3606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    
+        <record id="sequnce_journal_wo_reg_dsr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DSR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DSR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_djj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DJJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DJJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_djb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DJB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DJB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_djs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DJS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DJS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_djm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DJM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DJM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dju" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DJU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DJU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dsm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DSM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DSM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dsg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DSG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DSG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dsb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DSB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DSB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dsp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DSP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DSP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dsk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DSK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DSK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dup" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DUP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DUP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_duk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DUK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DUK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dle" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DLE</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DLE/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dlp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DLP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DLP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dlm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DLM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DLM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dlh" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DLH</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DLH/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dlx" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DLX</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DLX/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dll" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DLL</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DLL/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dld" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DLD</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DLD/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dlf" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DLF</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DLF/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dlv" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DLV</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DLV/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dlq" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DLQ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DLQ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dlc" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DLC</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DLC/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dly" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DLY</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DLY/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dlw" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DLW</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DLW/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dlu" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DLU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DLU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dlt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DLT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DLT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dls" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DLS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DLS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dlo" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DLO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DLO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dln" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DLN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DLN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dlk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DLK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DLK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dlj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DLJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DLJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dli" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DLI</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DLI/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dlg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DLG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DLG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dlb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DLB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DLB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dla" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DLA</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DLA/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dlr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DLR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DLR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_hho" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler HHO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/HHO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_mml" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler MML</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/MML/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dbl" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DBL</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DBL/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dbk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DBK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DBK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dbb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DBB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DBB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dbs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DBS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DBS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dbt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DBT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DBT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dds" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DDS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DDS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_ddc" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DDC</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DDC/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_ddb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DDB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DDB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dda" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DDA</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DDA/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_ddd" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DDD</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DDD/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dde" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DDE</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DDE/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_ddg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DDG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DDG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_ddm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DDM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DDM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_ddj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DDJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DDJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_ddt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DDT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DDT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_ddi" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DDI</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DDI/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dxk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DXK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DXK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dxt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DXT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DXT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dxs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DXS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DXS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dxg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DXG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DXG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dxb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DXB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DXB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dxn" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DXN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DXN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dwt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DWT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DWT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dwr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DWR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DWR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dwp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DWP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DWP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dwo" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DWO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DWO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dwk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DWK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DWK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dws" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DWS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DWS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dwg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DWG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DWG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dwm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DWM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DWM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_dwn" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DWN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DWN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_reg_ddu" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Reguler DDU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOR/DDU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dsr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DSR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DSR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_djj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DJJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DJJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_djb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DJB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DJB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_djs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DJS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DJS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_djm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DJM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DJM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dju" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DJU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DJU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dsm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DSM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DSM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dsg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DSG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DSG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dsb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DSB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DSB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dsp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DSP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DSP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dsk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DSK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DSK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dup" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DUP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DUP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_duk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DUK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DUK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dle" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DLE</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DLE/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dlp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DLP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DLP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dlm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DLM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DLM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dlh" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DLH</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DLH/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dlx" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DLX</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DLX/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dll" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DLL</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DLL/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dld" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DLD</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DLD/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dlf" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DLF</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DLF/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dlv" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DLV</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DLV/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dlq" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DLQ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DLQ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dlc" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DLC</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DLC/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dly" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DLY</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DLY/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dlw" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DLW</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DLW/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dlu" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DLU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DLU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dlt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DLT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DLT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dls" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DLS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DLS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dlo" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DLO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DLO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dln" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DLN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DLN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dlk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DLK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DLK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dlj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DLJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DLJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dli" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DLI</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DLI/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dlg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DLG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DLG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dlb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DLB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DLB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dla" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DLA</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DLA/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dlr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DLR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DLR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_hho" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB HHO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/HHO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_mml" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB MML</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/MML/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dbl" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DBL</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DBL/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dbk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DBK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DBK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dbb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DBB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DBB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dbs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DBS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DBS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dbt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DBT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DBT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dds" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DDS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DDS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_ddc" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DDC</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DDC/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_ddb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DDB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DDB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dda" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DDA</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DDA/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_ddd" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DDD</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DDD/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dde" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DDE</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DDE/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_ddg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DDG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DDG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_ddm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DDM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DDM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_ddj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DDJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DDJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_ddt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DDT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DDT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_ddi" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DDI</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DDI/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dxk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DXK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DXK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dxt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DXT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DXT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dxs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DXS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DXS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dxg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DXG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DXG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dxb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DXB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DXB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dxn" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DXN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DXN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dwt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DWT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DWT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dwr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DWR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DWR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dwp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DWP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DWP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dwo" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DWO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DWO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dwk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DWK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DWK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dws" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DWS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DWS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dwg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DWG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DWG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dwm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DWM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DWM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_dwn" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DWN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DWN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_kpb_ddu" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO KPB DDU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOK/DDU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dsr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DSR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DSR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_djj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DJJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DJJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_djb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DJB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DJB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_djs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DJS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DJS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_djm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DJM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DJM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dju" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DJU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DJU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dsm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DSM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DSM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dsg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DSG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DSG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dsb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DSB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DSB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dsp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DSP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DSP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dsk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DSK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DSK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dup" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DUP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DUP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_duk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DUK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DUK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dle" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DLE</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DLE/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dlp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DLP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DLP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dlm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DLM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DLM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dlh" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DLH</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DLH/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dlx" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DLX</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DLX/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dll" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DLL</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DLL/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dld" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DLD</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DLD/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dlf" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DLF</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DLF/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dlv" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DLV</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DLV/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dlq" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DLQ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DLQ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dlc" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DLC</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DLC/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dly" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DLY</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DLY/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dlw" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DLW</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DLW/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dlu" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DLU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DLU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dlt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DLT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DLT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dls" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DLS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DLS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dlo" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DLO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DLO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dln" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DLN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DLN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dlk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DLK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DLK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dlj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DLJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DLJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dli" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DLI</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DLI/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dlg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DLG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DLG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dlb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DLB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DLB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dla" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DLA</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DLA/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dlr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DLR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DLR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_hho" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR HHO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/HHO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_mml" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR MML</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/MML/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dbl" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DBL</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DBL/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dbk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DBK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DBK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dbb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DBB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DBB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dbs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DBS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DBS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dbt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DBT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DBT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dds" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DDS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DDS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_ddc" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DDC</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DDC/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_ddb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DDB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DDB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dda" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DDA</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DDA/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_ddd" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DDD</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DDD/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dde" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DDE</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DDE/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_ddg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DDG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DDG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_ddm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DDM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DDM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_ddj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DDJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DDJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_ddt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DDT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DDT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_ddi" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DDI</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DDI/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dxk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DXK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DXK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dxt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DXT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DXT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dxs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DXS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DXS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dxg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DXG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DXG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dxb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DXB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DXB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dxn" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DXN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DXN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dwt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DWT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DWT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dwr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DWR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DWR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dwp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DWP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DWP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dwo" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DWO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DWO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dwk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DWK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DWK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dws" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DWS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DWS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dwg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DWG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DWG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dwm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DWM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DWM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_dwn" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DWN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DWN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_jr_ddu" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO JR DDU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOJ/DDU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dsr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DSR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DSR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_djj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DJJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DJJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_djb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DJB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DJB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_djs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DJS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DJS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_djm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DJM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DJM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dju" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DJU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DJU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dsm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DSM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DSM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dsg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DSG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DSG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dsb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DSB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DSB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dsp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DSP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DSP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dsk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DSK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DSK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dup" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DUP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DUP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_duk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DUK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DUK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dle" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DLE</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DLE/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dlp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DLP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DLP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dlm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DLM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DLM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dlh" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DLH</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DLH/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dlx" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DLX</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DLX/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dll" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DLL</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DLL/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dld" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DLD</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DLD/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dlf" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DLF</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DLF/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dlv" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DLV</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DLV/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dlq" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DLQ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DLQ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dlc" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DLC</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DLC/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dly" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DLY</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DLY/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dlw" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DLW</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DLW/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dlu" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DLU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DLU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dlt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DLT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DLT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dls" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DLS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DLS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dlo" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DLO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DLO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dln" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DLN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DLN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dlk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DLK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DLK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dlj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DLJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DLJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dli" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DLI</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DLI/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dlg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DLG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DLG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dlb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DLB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DLB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dla" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DLA</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DLA/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dlr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DLR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DLR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_hho" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim HHO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/HHO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_mml" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim MML</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/MML/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dbl" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DBL</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DBL/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dbk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DBK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DBK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dbb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DBB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DBB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dbs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DBS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DBS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dbt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DBT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DBT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dds" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DDS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DDS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_ddc" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DDC</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DDC/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_ddb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DDB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DDB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dda" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DDA</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DDA/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_ddd" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DDD</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DDD/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dde" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DDE</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DDE/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_ddg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DDG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DDG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_ddm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DDM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DDM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_ddj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DDJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DDJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_ddt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DDT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DDT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_ddi" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DDI</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DDI/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dxk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DXK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DXK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dxt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DXT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DXT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dxs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DXS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DXS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dxg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DXG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DXG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dxb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DXB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DXB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dxn" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DXN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DXN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dwt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DWT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DWT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dwr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DWR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DWR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dwp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DWP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DWP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dwo" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DWO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DWO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dwk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DWK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DWK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dws" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DWS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DWS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dwg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DWG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DWG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dwm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DWM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DWM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_dwn" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DWN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DWN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_wo_claim_ddu" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal WO Claim DDU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">WOC/DDU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dsr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DSR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DSR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_djj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DJJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DJJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_djb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DJB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DJB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_djs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DJS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DJS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_djm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DJM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DJM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dju" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DJU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DJU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dsm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DSM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DSM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dsg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DSG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DSG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dsb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DSB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DSB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dsp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DSP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DSP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dsk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DSK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DSK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dup" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DUP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DUP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_duk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DUK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DUK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dle" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DLE</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DLE/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dlp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DLP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DLP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dlm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DLM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DLM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dlh" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DLH</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DLH/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dlx" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DLX</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DLX/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dll" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DLL</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DLL/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dld" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DLD</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DLD/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dlf" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DLF</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DLF/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dlv" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DLV</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DLV/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dlq" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DLQ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DLQ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dlc" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DLC</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DLC/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dly" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DLY</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DLY/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dlw" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DLW</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DLW/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dlu" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DLU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DLU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dlt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DLT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DLT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dls" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DLS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DLS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dlo" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DLO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DLO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dln" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DLN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DLN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dlk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DLK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DLK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dlj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DLJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DLJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dli" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DLI</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DLI/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dlg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DLG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DLG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dlb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DLB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DLB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dla" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DLA</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DLA/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dlr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DLR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DLR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_hho" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB HHO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/HHO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_mml" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB MML</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/MML/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dbl" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DBL</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DBL/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dbk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DBK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DBK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dbb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DBB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DBB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dbs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DBS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DBS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dbt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DBT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DBT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dds" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DDS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DDS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_ddc" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DDC</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DDC/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_ddb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DDB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DDB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dda" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DDA</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DDA/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_ddd" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DDD</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DDD/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dde" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DDE</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DDE/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_ddg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DDG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DDG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_ddm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DDM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DDM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_ddj" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DDJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DDJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_ddt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DDT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DDT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_ddi" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DDI</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DDI/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dxk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DXK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DXK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dxt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DXT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DXT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dxs" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DXS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DXS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dxg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DXG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DXG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dxb" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DXB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DXB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dxn" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DXN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DXN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dwt" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DWT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DWT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dwr" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DWR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DWR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dwp" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DWP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DWP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dwo" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DWO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DWO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dwk" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DWK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DWK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dws" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DWS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DWS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dwg" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DWG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DWG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dwm" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DWM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DWM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_dwn" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DWN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DWN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_collecting_kpb_ddu" model="ir.sequence">
+            <field name="active">True</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Collecting KPB DDU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">CK/DDU/%(y)s/%(month)s/</field> 
+        </record>
+
+    </data>
+</openerp>    

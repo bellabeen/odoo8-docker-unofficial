@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>     
+    	<!-- Supplier Invoice -->
+        <record id="view_invoice_supplier_custom" model="ir.ui.view">
+            <field name="name">account.invoice.custom.supplier.pay</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account_voucher.view_invoice_supplier"/>
+            <field name="arch" type="xml">
+            	<button name="invoice_pay_customer" position="replace"/>
+                <xpath expr="//button[@name='invoice_open'][last()]" position="after">
+                    <button name="invoice_pay_customer" type="object" string="Pay" states="open" class="oe_highlight" invisible="1" groups="base.group_user"/>
+                </xpath>
+            </field>
+        </record>    
+        	 	
+    	<!--Supplier Payments -->	  
+		<record id="wtc_rules_approval_account_voucher" model="ir.ui.view">
+			<field name="name">account_voucher_approval_form</field>
+			<field name="model">account.voucher</field>
+			<field name="inherit_id" ref="account_voucher.view_vendor_payment_form"/>
+			<field name="arch" type="xml">
+				<button name="action_cancel_draft" position="replace"/>
+				<button name="cancel_voucher" position="replace"/>           	
+            	<button name="proforma_voucher" position="after">
+            		<button name='confirm_payment' groups='wtc_account_voucher.group_wtc_account_voucher_supplier_confirm_after_approval' class="oe_highlight" states='approved' type='workflow' string='Confirm'></button>
+                	<button name="cancel_voucher" groups='wtc_account_voucher.group_wtc_account_voucher_cancel_voucher' string="Cancel Voucher" states="draft,proforma"  invisible="context.get('line_type', False)" confirm="Apa anda yakin ingin membatalkan transaksi ini ?"/>
+            		<button name="%(supplier_payment_report)d"  states="waiting_for_approval,posted" type="action" string="Print" class="oe_highlight"  icon="gtk-print"/>
+            	</button>		
+				<button name="proforma_voucher" position="replace">
+						<button name="action_cancel_draft" invisible='1'/>
+						<button name="approval_request" groups='wtc_account_voucher.group_wtc_account_voucher_supplier_rfa' states="draft" string="RFA" type="workflow" class="oe_highlight"/>	
+						<button name="approval_approve" states="waiting_for_approval" string="Approve" type="workflow" class="oe_highlight"/>
+						<button name="%(wtc_approval.wtc_approval_reject_wizard_action)d" states="waiting_for_approval" string="Reject" type="action" context="{'model_name':'account.voucher','next_workflow':'approval_reject'}"/>
+						<button name="%(wtc_approval.wtc_approval_cancel_wizard_action)d" states="waiting_for_approval" groups='wtc_account_voucher.group_wtc_account_voucher_cancel_supplier_approval' string="Cancel Approval" type="action" context="{'model_name':'account.voucher','next_workflow':'approval_cancel'}"/>
+						<button name="%(wtc_approval.wtc_cancel_approval_wizard)d"  states="approved" string="Cancel Approval" type="action" groups="wtc_account_voucher.group_wtc_supplier_payment_cancel_after_approval" context="{'model_name':'account.voucher','next_workflow':'approval_cancel_av'}"/>	 																
+																									
+				</button> 				
+				<field name="date" position="replace"/>
+		    	<field name='partner_id' position="before">
+		    		<field name='partner_type' on_change='onchange_partner_type(partner_type)' context="{'partner_type':partner_type}" required='1'/>
+		    	</field>					    		
+				<field name="reference" position="before">
+					<field name="date" readonly="1" on_change="onchange_date(date, currency_id, payment_rate_currency_id, amount, company_id, context)"/>
+				</field>
+				<field name="journal_id" position="after">
+					<field name="approval_state"/>
+				</field>
+            	<field name="journal_id" position="attributes">
+            		<attribute name="on_change">onchange_journal_account_voucher(journal_id, line_cr_ids, False, partner_id, date, amount, type, company_id, context)</attribute> 
+            	</field>  				
+		    	<field name="line_dr_ids" position="replace"></field>
+		    	<label for="line_dr_ids" position="replace"/>
+		    	<field name="line_cr_ids" position="replace"></field>
+		    	<label for="line_cr_ids" position="replace"/>	
+		    	<field name="number" position="replace"/>
+		    	<xpath expr="/form/sheet/group" position="before">
+	                 <div class="oe_title">                      
+	       				<h1>
+				 			<field name="number" class="oe_inline" readonly="1"/>	
+    			        </h1>
+                    </div>
+                </xpath>
+                		    			    	
+			    <xpath expr="/form/sheet/notebook/page/group" position="before">
+			    	<label for="line_dr_ids"/>
+                    <field name="line_dr_ids" context="{'journal_id':journal_id, 'partner_id':partner_id, 'branch_id':inter_branch_id, 'division':division}" on_change="onchange_line_ids(line_dr_ids, line_cr_ids, amount, currency_id, type, context)">
+                        <tree string="Credits" editable="bottom" colors="gray:amount==0">
+                            <field name="move_line_id" context="{'journal_id':parent.journal_id, 'partner_id':parent.partner_id, 'branch_id':parent.inter_branch_id, 'division':parent.division}"
+                                on_change="onchange_move_line_id(move_line_id,parent.amount,parent.currency_id,parent.journal_id)"
+                                 domain="[('account_id.type','=','payable'),('credit','!=',0), ('reconcile_id','=', False), ('partner_id','=',parent.partner_id),('branch_id','=',parent.inter_branch_id),('division','=',parent.division)]"
+                                required="1"/>
+                            <field name="name" invisible='1'/>
+                            <field name="account_id"  groups="base.group_no_one" domain="[('type','=','payable')]"/>
+                            <field name="date_original" readonly="1"/>
+                            <field name="date_due" readonly="1"/>
+                            <field name="amount_original" readonly="1"/>
+                            <field name="amount_unreconciled" readonly="1" groups="account.group_account_user"/>
+                            <field name="reconcile" on_change="onchange_reconcile(reconcile, amount, amount_unreconciled, context)"/>
+                            <field name="amount" sum="Total Allocation" on_change="onchange_amount(amount, amount_unreconciled, context)" string="Allocation"/>
+                        </tree>
+                    </field>                    			    	
+                    <label for="line_cr_ids" invisible="context.get('line_type', False)"/>
+                    <field name="line_cr_ids" context="{'journal_id':journal_id, 'type':type, 'partner_id':partner_id, 'branch_id':branch_id,'division':division}" on_change="onchange_line_ids(line_dr_ids, line_cr_ids, amount, currency_id, type, context)">
+                        <tree string="Invoices and outstanding transactions" editable="bottom" colors="gray:amount==0">
+                            <field name="move_line_id" context="{'journal_id':parent.journal_id, 'partner_id':parent.partner_id, 'branch_id':parent.branch_id, 'division':parent.division}"
+                                on_change="onchange_move_line_id(move_line_id,parent.amount,parent.currency_id,parent.journal_id)"
+                               domain="[('account_id.type','=','receivable'),('debit','!=',0), ('reconcile_id','=', False),('partner_id','=',parent.partner_id),('branch_id','=',parent.branch_id),('division','=',parent.division)]"
+                                required="1"
+                                />
+                            <field name="account_id"  groups="base.group_no_one" domain="[('type','=','payable')]"/>
+                            <field name="date_original" readonly="1"/>
+                            <field name="date_due" readonly="1"/>
+                            <field name="name" invisible='1'/>
+                            <field name="amount_original" readonly="1"/>
+                            <field name="amount_unreconciled" readonly="1" groups="account.group_account_user"/>
+                            <field name="reconcile" on_change="onchange_reconcile(reconcile, amount, amount_unreconciled, context)" groups="account.group_account_user"/>
+                            <field name="amount" sum="Total Allocation" on_change="onchange_amount(amount, amount_unreconciled, context)" string="Allocation"/>
+                        </tree>
+                    </field>			    	
+	            </xpath>		    	
+		    	<xpath expr="/form/sheet/group" position="before">
+                    <group>
+                        <group>
+                            <field name="branch_id" options="{'no_open':True,'no_create_edit':True}" attrs="{'readonly': [('state','!=','draft')]}" required="1" on_change="branch_change(branch_id)"/>
+                        </group>
+                        <group>
+                            <field name="division"  on_change="onchange_division(division)" attrs="{'readonly': [('state','!=','draft')]}" required="1"/>
+                            <field name="inter_branch_id" on_change="inter_branch_payment_change(inter_branch_id)" attrs="{'readonly': [('state','!=','draft')]}" string="Bayar Untuk" options="{'no_open':True,'no_create':True}" required="True"/>
+                        </group>
+                    </group>
+                </xpath>					
+					<xpath expr="//page[@string='Journal Items']" position="after">
+						<page string="Approval">
+							<field name="approval_ids">
+								<tree string="Approval" editable="bottom" create="false" edit="false" delete="false" >
+									<field name="group_id" />
+									<field name="branch_id" />
+									<field name="division"/>
+									<field name="limit"/>
+									<field name="sts"/>
+									<field name="reason"/>
+									<field name="pelaksana_id"/>
+									<field name="tanggal"/>
+								</tree>
+							</field>
+						</page>
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+									<field name="confirm_uid" readonly="1"></field>
+									<field name="confirm_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+									<field name="cancel_uid" readonly="1"></field>
+									<field name="cancel_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>
+					</xpath>
+			</field>
+		</record>
+
+		<!-- Payment Request -->
+		<record id="wtc_rules_approval_account_voucher_payment_request" model="ir.ui.view">
+			<field name="name">account_voucher_payment_request_approval_form</field>
+			<field name="model">account.voucher</field>
+			<field name="inherit_id" ref="account_voucher.view_purchase_receipt_form"/>
+			<field name="arch" type="xml">
+            	<label for="number" string="Purchase Receipt" position="replace"> 
+					<label for="number" string="Payment Request" />
+                 </label>		
+                 <button name="action_cancel_draft" position="replace"/>
+				<button name="proforma_voucher" position="replace">
+						<button name='confirm_payment' groups='wtc_account_voucher.group_wtc_account_voucher_payment_request_confirm_after_approval' class="oe_highlight" states='approved' type='workflow' string='Confirm'></button>						
+						<button name="approval_request" states="draft" string="RFA" type="workflow" class="oe_highlight"/>	
+						<button name="approval_approve" states="waiting_for_approval" string="Approve" type="workflow" class="oe_highlight"/>
+						<button name="%(wtc_approval.wtc_approval_reject_wizard_action)d" states="waiting_for_approval" string="Reject" type="action" context="{'model_name':'account.voucher','next_workflow':'approval_reject'}"/>
+						<button name="%(wtc_approval.wtc_approval_cancel_wizard_action)d" states="waiting_for_approval" string="Cancel Approval" type="action" context="{'model_name':'account.voucher','next_workflow':'approval_cancel'}"/>
+						<button name="%(wtc_approval.wtc_cancel_approval_wizard)d"  states="approved" string="Cancel Approval" type="action" groups="wtc_account_voucher.group_wtc_payment_request_cancel_after_approval" context="{'model_name':'account.voucher','next_workflow':'approval_cancel_av'}"/>	 																
+						<button name="action_cancel_draft" invisible='1'/>													
+					</button> 
+	            	<field name="date" position="attributes">
+	            		<attribute name="readonly">1</attribute> 
+	            	</field>					
+	            	<field name="date_due" position="attributes">
+	            		<attribute name="required">1</attribute> 
+	            	</field>					
+					<field name="date_due" position="after">
+						<field name="approval_state"/>
+					</field>
+	            	<field name="tax_id" position="attributes">
+	            		<attribute name="domain" eval="[('price_include','=',False),('type_tax_use','in',('purchase','all')), ('parent_id', '=', False)]"></attribute> 
+	            	</field>					
+					<xpath expr="//page[@string='Journal Items']" position="after">
+						<page string="Faktur Pajak" attrs="{'invisible': [('tax_id','=',False)]}">
+							<group>
+								<field name="pajak_gabungan"/>
+								<field name="no_faktur_pajak" on_change="faktur_pajak_change(no_faktur_pajak)" attrs="{'required': [('pajak_gabungan','=',False),('tax_id','!=',False)]}"/>
+								<field name="tgl_faktur_pajak" attrs="{'required': [('pajak_gabungan','=',False),('tax_id','!=',False)]}"/>
+							</group>
+						</page>						
+						<page string="Approval">
+							<field name="approval_ids">
+								<tree string="Approval" editable="bottom" create="false" edit="false" delete="false" >
+									<field name="group_id" />
+									<field name="branch_id"/>
+									<field name="division"/>
+									<field name="limit"/>
+									<field name="sts"/>
+									<field name="reason"/>
+									<field name="pelaksana_id"/>
+									<field name="tanggal"/>
+								</tree>
+							</field>
+						</page>	
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+									<field name="confirm_uid" readonly="1"></field>
+									<field name="confirm_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+									<field name="cancel_uid" readonly="1"></field>
+									<field name="cancel_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>											
+					</xpath>
+			</field>
+		</record>	
+		<record id="view_account_voucher_search" model="ir.ui.view">
+            <field name="name">account.voucher.list.select</field>
+            <field name="model">account.voucher</field>
+            <field name="inherit_id" ref="wtc_account_voucher.view_voucher_filter_vendor2"/>
+            <field name="arch" type="xml">
+            	<field name="number" position='after'>
+            		<field name='branch_id' options="{'no_open':True,'no_create_edit':True}"/>
+            		<field name='division'/>
+                    <field name="partner_id"/> 
+                    <field name="transaksi"/>              		           		
+            	</field>
+            </field>
+        </record> 	
+		<record id="view_account_voucher_search2" model="ir.ui.view">
+            <field name="name">account.voucher.list.select</field>
+            <field name="model">account.voucher</field>
+            <field name="inherit_id" ref="wtc_account_voucher.view_voucher_filter_sale2"/>
+            <field name="arch" type="xml">
+            	<field name="number" position='after'>
+            		<field name='branch_id' options="{'no_open':True,'no_create_edit':True}"/>
+            		<field name='division'/>
+                    <field name="partner_id"/> 
+            	</field>
+            </field>
+        </record>         	
+        <record id="view_voucher_filter_vendor2" model="ir.ui.view">
+            <field name="name">account.voucher.purchase.select</field>
+            <field name="model">account.voucher</field>
+            <field name="arch" type="xml">
+                <search string="Search Vouchers">
+                    <field name="number" string="Voucher"/>
+                    <field name="date"/>
+                    <filter icon="terp-document-new" string="Draft" domain="[('state','=','draft')]" help="Draft Vouchers"/>
+                    <filter icon="terp-camera_test" string="Posted" domain="[('state','=','posted')]" help="Posted Vouchers"/>
+                    <field name="partner_id" string="Supplier" filter_domain="[('partner_id','child_of',self)]"/>
+                    <field name="journal_id" widget="selection" context="{'journal_id': self, 'set_visible':False}" domain="[('type','in',('purchase','purchase_refund'))]"/> <!-- Keep widget=selection on this field to pass numeric `self` value, which is not the case for regular m2o widgets! -->
+                    <field name="period_id"/>
+                    <group expand="0" string="Group By">
+                        <filter string="Supplier" icon="terp-personal" domain="[]" context="{'group_by':'partner_id'}"/>
+                        <filter string="Journal" icon="terp-folder-orange" domain="[]" context="{'group_by':'journal_id'}"/>
+                        <filter string="Period" icon="terp-go-month" domain="[]" context="{'group_by':'period_id','visible':True}"/>
+                        <filter string="Status" icon="terp-stock_effects-object-colorize" domain="[]" context="{'group_by':'state'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>		
+		<record id="view_payment_request_treeview" model="ir.ui.view">
+            <field name="name">account.voucher.list.select</field>
+            <field name="model">account.voucher</field>
+            <field name="arch" type="xml">
+		        <tree string="List Voucher">
+		        	<field name="number"/>
+		            <field name="date"/>
+					<field name="branch_id"/>	  
+					<field name="inter_branch_id" string="Interbranch"/>	            		            			            	
+		            <field name="division"/> 	
+		            <field name="partner_id"/> 	
+					<field name="journal_id"/>	            		            			            	
+		            <field name="amount"/> 	
+		            <field name="date_due"/> 
+		            <field name="state"/> 		            	            
+		        </tree>
+            </field>
+        </record>          
+        <record id="action_payment_request" model="ir.actions.act_window">
+            <field name="name">Payment Request Old</field>
+            <field name="res_model">account.voucher</field>
+            <field name="view_type">form</field>
+            <field name="domain">[('journal_id.type','in',['purchase','purchase_refund']), ('type','=','purchase')]</field>
+            <field name="context">{'default_type': 'purchase', 'type': 'purchase'}</field>
+            <field name="view_id" eval="False"/>
+            <field name="search_view_id" eval="view_voucher_filter_vendor2"/>
+            <field name="target">current</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to register a purchase receipt. 
+              </p><p>
+                When the purchase receipt is confirmed, you can record the
+                supplier payment related to this purchase receipt.
+              </p>
+            </field>
+        </record>	
+     
+        <record id="action_payment_request_tree" model="ir.actions.act_window.view">
+            <field eval="1" name="sequence"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_payment_request_treeview"/>
+            <field name="act_window_id" ref="action_payment_request"/>
+        </record>
+        <record id="action_payment_request_form" model="ir.actions.act_window.view">
+            <field eval="2" name="sequence"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="account_voucher.view_purchase_receipt_form"/>
+            <field name="act_window_id" ref="action_payment_request"/>
+        </record>        	
+        <menuitem id="menu_action_purchase_receipt5" icon="STOCK_JUSTIFY_FILL" action="action_payment_request" parent="wtc_dealer_menu.backoffice_nontrade_menu" sequence="30"/>	     
+ 	
+      <!-- Customer Payment -->
+		<record id="wtc_rules_approval_customer_payment" model="ir.ui.view">
+			<field name="name">customer_payment_approval_form</field>
+			<field name="model">account.voucher</field>
+			<field name="inherit_id" ref="account_voucher.view_vendor_receipt_form"/>
+			<field name="arch" type="xml">
+					<button name="action_cancel_draft" position="replace"/>      
+					<button name="cancel_voucher" position="replace"/>           	
+	            	<button name="proforma_voucher" position="after">
+						<button name='confirm_payment' groups='wtc_account_voucher.group_wtc_account_voucher_customer_confirm_after_approval' class="oe_highlight" states='approved' type='workflow' string='Confirm'></button>	            		
+                    	<button name="cancel_voucher" string="Cancel Receipt" states="draft,proforma" confirm="Apa anda yakin ingin membatalkan transaksi ini ?"/>
+	            	</button>					
+					<button name="proforma_voucher" position="replace"/>					
+					<button name="cancel_voucher" position="before">
+						<button name="action_cancel_draft" invisible='1'/>
+						<button name="validate_or_rfa" groups='wtc_account_voucher.group_wtc_account_voucher_rfa' string="Validate/RFA" states="draft" class="oe_highlight" type="object"/>
+						<button name="proforma_voucher" groups='wtc_account_voucher.group_wtc_account_voucher_rfa' string="Validate" states="draft" class="oe_highlight" invisible="1"/>										
+						<button name="approval_request" groups='wtc_account_voucher.group_wtc_account_voucher_rfa' states="draft" string="RFA" type="workflow" class="oe_highlight" invisible="1"/>	
+						<button name="approval_approve" groups='wtc_account_voucher.group_wtc_account_voucher_approve_approval' states="waiting_for_approval" string="Approve" type="workflow" class="oe_highlight"/>
+						<button name="%(wtc_approval.wtc_approval_reject_wizard_action)d" states="waiting_for_approval" string="Reject" type="action" context="{'model_name':'account.voucher','next_workflow':'approval_reject'}"/>
+						<button name="%(wtc_approval.wtc_approval_cancel_wizard_action)d" states="waiting_for_approval" groups='wtc_account_voucher.group_wtc_account_voucher_cancel_approval' string="Cancel Approval" type="action" context="{'model_name':'account.voucher','next_workflow':'approval_cancel'}"/>
+						<button name="%(wtc_approval.wtc_cancel_approval_wizard)d"  states="approved" string="Cancel Approval" type="action"  groups="wtc_account_voucher.group_wtc_account_voucher_cancel_after_approval" context="{'model_name':'account.voucher','next_workflow':'approval_cancel_av'}"/>	 																
+																			
+					</button> 
+            	<field name="date" position="attributes">
+            		<attribute name="readonly">1</attribute> 
+            	</field>	
+            	<field name="journal_id" position="attributes">
+            		<attribute name="on_change">onchange_journal_account_voucher(journal_id, line_cr_ids, False, partner_id, date, amount, type, company_id, context)</attribute> 
+            	</field>            									
+					<field name="journal_id" position="after">
+						<field name="approval_state" attrs="{'invisible': [('total_debit','=',0)]}"/>
+						<field name="total_debit" invisible='1'/>
+					</field>					
+					<xpath expr="//page[@string='Journal Items']" position="after">
+						<page string="Approval">
+							<field name="approval_ids">
+								<tree string="Approval" editable="bottom" create="false" edit="false" delete="false" >
+									<field name="group_id" />
+									<field name="branch_id"/>
+									<field name="division"/>
+									<field name="limit"/>
+									<field name="sts"/>
+									<field name="reason"/>
+									<field name="pelaksana_id"/>
+									<field name="tanggal"/>
+								</tree>
+							</field>
+						</page>
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+									<field name="confirm_uid" readonly="1"></field>
+									<field name="confirm_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+									<field name="cancel_uid" readonly="1"></field>
+									<field name="cancel_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>						
+					</xpath>
+			</field>
+		</record>  
+		
+		<record model="ir.actions.act_window" id="account_voucher.action_vendor_receipt">
+		    <field name="name">Customer Payment Old</field>
+		</record>
+		
+		<record model="ir.actions.act_window" id="account_voucher.action_vendor_payment">
+		    <field name="name">Supplier Payment Old</field>
+		</record>
+				
+     </data>
+ </openerp>
+       		
+       		
+	

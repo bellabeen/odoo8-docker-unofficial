@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_wtc_register_kwitansi_all,wtc_register_kwitansi all,model_wtc_register_kwitansi,,1,1,1,1
+access_wtc_register_kwitansi_line_all,wtc_register_kwitansi_line all,model_wtc_register_kwitansi_line,,1,1,1,1

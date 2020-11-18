@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>    
+       <report  
+            id="report_invoice_wo" string="Invoice WO" 
+       		model="account.invoice" 
+       		name="rml.invoice" 
+       		rml="wtc_work_order/report/wtc_invoice_wo_report.rml" 
+       		auto="False" menu="False"/>      
+    </data>
+</openerp>

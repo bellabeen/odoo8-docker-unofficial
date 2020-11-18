@@ -1,0 +1,247 @@
+<!DOCTYPE document SYSTEM "rml.dtd">
+<document filename="example_11.pdf">
+
+
+   
+<template pageSize="(21cm, 29.7cm)" showBoundary="0" title="Payments Request"  allowSplitting="20">
+<pageTemplate id="Layout1">
+<frame id="frame_content" x1="00.0" y1="2cm" width="21cm" height="27.5cm"/>
+   
+   
+</pageTemplate>
+</template>
+<stylesheet>
+ <!-- Mendefiniskan Style Tabel -->
+    <blockTableStyle id="Table_No_Line">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <blockLeftPadding length="0.5mm"/>
+	  <blockRightPadding length="0.5mm"/>
+	  <blockTopPadding length="0.5mm"/>
+    </blockTableStyle>
+    
+     <!-- Mendefiniskan Style Tabel -->
+    <blockTableStyle id="Table_No_Line_Right">
+      <blockAlignment value="RIGHT"/>
+      <blockValign value="TOP"/>
+      <blockLeftPadding length="0.5mm"/>
+	  <blockRightPadding length="0.5mm"/>
+	  <blockTopPadding length="0.5mm"/>
+    </blockTableStyle>
+ 
+     
+    <blockTableStyle id="Table_Line">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <blockLeftPadding length="0.5mm"/>
+	  <blockRightPadding length="0.5mm"/>
+	  <blockTopPadding length="0.5mm"/>
+        <!-- Kolom ke-1 -->
+        <!-- atas --><lineStyle kind="LINEABOVE" colorName="#000000" start="0,0" stop="0,0"/>
+        <!-- kanan --><lineStyle kind="LINEBEFORE" colorName="#000000" start="1,-1" stop="1,-1"/>
+        <!-- bawah --><lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+        <!-- kiri --><lineStyle kind="LINEBEFORE" colorName="#000000" start="0,0" stop="0,0"/>
+        <!-- Kolom ke-2 -->
+        <!-- atas --><lineStyle kind="LINEABOVE" colorName="#000000" start="1,0" stop="1,0"/>
+        <!-- kanan --><lineStyle kind="LINEBEFORE" colorName="#000000" start="2,-1" stop="2,-1"/>
+        <!-- bawah --><lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+        <!-- kiri --><lineStyle kind="LINEBEFORE" colorName="#000000" start="1,0" stop="1,0"/>
+        <!-- Kolom ke-3 -->
+        <!-- atas --><lineStyle kind="LINEABOVE" colorName="#000000" start="2,0" stop="2,0"/>
+        <!-- kanan --><lineStyle kind="LINEBEFORE" colorName="#000000" start="3,-1" stop="3,-1"/>
+        <!-- bawah --><lineStyle kind="LINEBELOW" colorName="#000000" start="2,-1" stop="2,-1"/>
+        <!-- kiri --><lineStyle kind="LINEBEFORE" colorName="#000000" start="2,0" stop="2,0"/>
+        <!-- Kolom ke-4 -->
+        <!-- atas --><lineStyle kind="LINEABOVE" colorName="#000000" start="3,0" stop="3,0"/>
+        <!-- kanan --><lineStyle kind="LINEBEFORE" colorName="#000000" start="4,-1" stop="4,-1"/>
+        <!-- bawah --><lineStyle kind="LINEBELOW" colorName="#000000" start="3,-1" stop="3,-1"/>
+        <!-- kiri --><lineStyle kind="LINEBEFORE" colorName="#000000" start="3,0" stop="3,0"/>
+        <!-- Kolom ke-5 -->
+        <!-- atas --><lineStyle kind="LINEABOVE" colorName="#000000" start="4,0" stop="4,0"/>
+        <!-- kanan --><lineStyle kind="LINEBEFORE" colorName="#000000" start="5,-1" stop="5,-1"/>
+        <!-- bawah --><lineStyle kind="LINEBELOW" colorName="#000000" start="4,-1" stop="4,-1"/>
+        <!-- kiri --><lineStyle kind="LINEBEFORE" colorName="#000000" start="4,0" stop="4,0"/>
+        <!-- Kolom ke-6 -->
+        <!-- atas --><lineStyle kind="LINEABOVE" colorName="#000000" start="5,0" stop="5,0"/>
+        <!-- kanan --><lineStyle kind="LINEBEFORE" colorName="#000000" start="6,-1" stop="6,-1"/>
+        <!-- bawah --><lineStyle kind="LINEBELOW" colorName="#000000" start="5,-1" stop="5,-1"/>
+        <!-- kiri --><lineStyle kind="LINEBEFORE" colorName="#000000" start="5,0" stop="5,0"/>
+
+    </blockTableStyle>
+     
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+
+    <paraStyle name="terp_header_besar" fontName="Helvetica-Bold" fontSize="12.0" leading="16" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_header_kecil" fontName="Helvetica" fontSize="11.0" leading="0.3cm" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_enter_tanda_tangan"  leading="2cm"/>
+    <paraStyle name="terp_enter_1"  leading="1cm"/>
+    <paraStyle name="terp_enter_2"  leading="0.3cm"/>
+    <paraStyle name="terp_isi_table" fontName="Helvetica" fontSize="11.0" leading="0.3cm" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+   	<paraStyle name="terp_isi_table_right" fontName="Helvetica" fontSize="11.0" leading="0.5cm" alignment="RIGHT" spaceBefore="0.0" spaceAfter="0.0"/>
+   	<paraStyle name="terp_isi_table_line" fontName="Helvetica" fontSize="11.0" leading="0.5cm" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_isi_table_line_center" fontName="Helvetica" fontSize="11.0" leading="0.5cm" alignment="CENTER" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_parag" fontName="Helvetica" fontSize="11.0" leading="0.5cm" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+</stylesheet>
+
+<story>
+
+<para style="header">[[repeatIn(objects, 'p')]] <pageCount/></para>
+<section>
+<para style="terp_default">[[ repeatIn(p.dealer_sale_order_line, 'x') ]]</para>
+
+
+	<blockTable colWidths="21cm" style="Table_No_Line">
+		<tr>
+			<td><para style="terp_isi_table_line_center"><b>SURAT PENYATAAN</b></para></td>
+		</tr>
+	</blockTable>
+	
+
+
+
+
+
+	<blockTable colWidths="20cm" style="Table_No_Line">
+		<tr>
+			<td><para style="terp_isi_table_line">Yang bertanda tangan dibawah ini :</para></td>
+		</tr>
+	</blockTable>
+	<para style="terp_enter_2"><font color="white">.</font></para>
+	
+	<blockTable colWidths="4cm,0.5cm,15.5cm" style="Table_No_Line">
+		<tr>
+			<td><para style="terp_isi_table_line">Nama</para></td>
+			<td><para style="terp_isi_table_line">:</para></td>
+			<td><para style="terp_isi_table_line">[[ p.branch_id.pimpinan_id.name]]</para></td>
+		</tr>
+		<tr>
+			<td><para style="terp_isi_table">Jabatan</para></td>
+			<td><para style="terp_isi_table">:</para></td>
+			<td><para style="terp_isi_table">[[ p.branch_id.pimpinan_id.job_id.name]]</para></td>
+		</tr>
+		<tr>
+			<td><para style="terp_isi_table">Alamat</para></td>
+			<td><para style="terp_isi_table">:</para></td>
+			<td><para style="terp_isi_table"></para></td>
+		</tr>
+		<tr>
+			<td><para style="terp_isi_table"></para></td>
+			<td><para style="terp_isi_table"></para></td>
+			<td><para style="terp_isi_table"></para></td>
+		</tr>
+	</blockTable>
+	<para style="terp_enter_2"><font color="white">.</font></para>
+	<blockTable colWidths="20cm" style="Table_No_Line">
+		<tr>
+			<td><para style="terp_isi_table">Dengan ini bertindak untuk dan atas nama [[p.branch_id.company_id.name]] [[ p.branch_id.name]] </para></td>
+		</tr>
+		<tr>
+			<td><para style="terp_isi_table">dengan ini menyatakan bahwa BPKB dan Faktur dengan data : </para></td>
+		</tr>
+	</blockTable>
+	<para style="terp_enter_2"><font color="white">.</font></para>
+	<blockTable colWidths="4cm,0.5cm,15.5cm" style="Table_No_Line">
+		<tr>
+			<td><para style="terp_isi_table">Nama</para></td>
+			<td><para style="terp_isi_table">:</para></td>
+			<td><para style="terp_isi_table">[[ x.partner_stnk_id.name]]</para></td>
+		</tr>
+		<tr>
+			<td><para style="terp_isi_table">Alamat</para></td>
+			<td><para style="terp_isi_table">:</para></td>
+			<td><para style="terp_isi_table">[[ x.partner_stnk_id.street]]</para></td>
+		</tr>
+		<tr>
+			<td><para style="terp_isi_table"></para></td>
+			<td><para style="terp_isi_table">:</para></td>
+			<td><para style="terp_isi_table">[[ p.dealer_sale_order_line.partner_stnk_id.kelurahan]]</para></td>
+		</tr>
+		<tr>
+			<td><para style="terp_isi_table"></para></td>
+			<td><para style="terp_isi_table">:</para></td>
+			<td><para style="terp_isi_table">[[ x.partner_stnk_id.kecamatan]]</para></td>
+		</tr>
+		<tr>
+			<td><para style="terp_isi_table"></para></td>
+			<td><para style="terp_isi_table">:</para></td>
+			<td><para style="terp_isi_table">[[ x.city_id.name]]</para></td>
+		</tr>
+		
+		
+		<tr>
+			<td><para style="terp_isi_table">Jenis Motor</para></td>
+			<td><para style="terp_isi_table">:</para></td>
+			<td><para style="terp_isi_table">[[x.product_id.description]]</para></td>
+		</tr>
+		<tr>
+			<td><para style="terp_isi_table">Tahun</para></td>
+			<td><para style="terp_isi_table">:</para></td>
+			<td><para style="terp_isi_table">[[ x.lot_id.tahun]]</para></td>
+		</tr>
+		<tr>
+			<td><para style="terp_isi_table">Warna</para></td>
+			<td><para style="terp_isi_table">:</para></td>
+			<td><para style="terp_isi_table">[[x.product_id.attribute_value_ids.name]]</para></td>
+		</tr>
+		<tr>
+			<td><para style="terp_isi_table">No Rangka</para></td>
+			<td><para style="terp_isi_table">:</para></td>
+			<td><para style="terp_isi_table">[[ x.lot_id.chassis_no]]</para></td>
+		</tr>
+		<tr>
+			<td><para style="terp_isi_table">No Mesin</para></td>
+			<td><para style="terp_isi_table">:</para></td>
+			<td><para style="terp_isi_table">[[ x.lot_id.name]]</para></td>
+		</tr>
+	</blockTable>
+	<para style="terp_enter_2"><font color="white">.</font></para>
+	<blockTable colWidths="20cm" style="Table_No_Line">
+		<tr>
+			<td>
+			<para style="terp_parag">Sedang dalam proses pengurusan dan akan kami serahkan kepada [[ p.finco_id.name]] dalam waktu 3 bulan dari tanggal surat pernyataan ini dibuat dan akan kami serahkan tanpa syarat apapun.</para>
+			
+			</td>
+		</tr>
+
+	</blockTable>
+	<para style="terp_enter_2"><font color="white">.</font></para>
+	<blockTable colWidths="20cm" style="Table_No_Line">
+		<tr>
+			<td><para style="terp_parag">Demikian surat pernyataan ini kami buat, atas perhatian dan kerjasamanya kami ucapkan terima kasih.</para></td>
+		</tr>
+
+
+	</blockTable>
+	
+	
+	
+
+	<blockTable colWidths="20cm" style="Table_No_Line">
+		<tr>
+			<td><para style="terp_isi_table">[[ p.branch_id.state_id.name]], [[ formatLang(p.date_order, date= True) ]]</para></td>
+		</tr>
+		<tr>
+			<td><para style="terp_isi_table">Hormat kami,</para></td>
+		</tr>
+	</blockTable>
+	<para style="terp_enter_tanda_tangan"><font color="white">.</font></para>
+	
+	<blockTable colWidths="20cm" style="Table_No_Line">
+		<tr>
+			<td><para style="terp_isi_table">[[p.branch_id.pimpinan_id.name]]</para></td>
+		</tr>
+	</blockTable>
+	<blockTable colWidths="10cm,10cm" style="Table_No_Line">
+		<tr>
+			<td><para style="terp_isi_table">Kepala Cabang</para></td>
+			<td><para style="terp_isi_table_right">[[ user.name]] [[waktu_local()]]</para></td>
+		</tr>
+	</blockTable>
+
+
+</section>
+
+</story>
+</document>

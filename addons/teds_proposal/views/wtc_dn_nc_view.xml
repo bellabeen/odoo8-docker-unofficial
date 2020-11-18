@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    <!-- Payment Request Cancel RFA -->
+        <record model="ir.ui.view" id="view_teds_dn_nc_cancel_rfa_form">
+            <field name="name">teds.payment.request.cancel.rfa.form</field>
+            <field name="model">teds.dn.nc.cancel.rfa</field>
+            <field name="arch" type="xml">
+                <form string="Alasan Cancel RFA">
+                    <group>
+                        <field name="dn_nc_id" invisible="1" />
+                        <field name="cancel_rfa_reason" required="1" />
+                    </group>
+                    <footer>
+                        <button name="action_cancel_rfa" string="Cancel RFA" type="object" class="oe_highlight"/>
+                        or
+                        <button string="Discard" class="oe_link" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+    <!-- Payment Request Reject -->
+        <record model="ir.ui.view" id="view_teds_dn_nc_reject_form">
+            <field name="name">teds.payment.request.reject.form</field>
+            <field name="model">teds.dn.nc.reject</field>
+            <field name="arch" type="xml">
+                <form string="Alasan Reject">
+                    <group>
+                        <field name="dn_nc_id" invisible="1" />
+                        <field name="reject_reason" required="1" />
+                    </group>
+                    <footer>
+                        <button name="action_reject" string="Reject" type="object" class="oe_highlight"/>
+                        or
+                        <button string="Discard" class="oe_link" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+    <!-- Payment Request Cancel Approval -->
+        <record model="ir.ui.view" id="view_teds_dn_nc_cancel_approval_form">
+            <field name="name">teds.payment.request.cancel.approval.form</field>
+            <field name="model">teds.dn.nc.cancel.approval</field>
+            <field name="arch" type="xml">
+                <form string="Alasan Cancel Approval">
+                    <group>
+                        <field name="dn_nc_id" invisible="1" />
+                        <field name="cancel_approval_reason" required="1" />
+                    </group>
+                    <footer>
+                        <button name="action_cancel_approval" string="Cancel Approval" type="object" class="oe_highlight"/>
+                        or
+                        <button string="Discard" class="oe_link" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+    <!-- Inherit Payment Request form & search view -->
+        <record id="wtc_payment_request_form_view_inherited" model="ir.ui.view">
+            <field name="name">wtc.payment.request.form.view.inherited</field>
+            <field name="model">wtc.dn.nc</field>
+            <field name="inherit_id" ref="wtc_dn_nc.wtc_payment_request_form_view2" />
+            <field name="arch" type="xml">
+                <button name="request_approval" position="after">
+                    <button name="update_proposal_limit" type="object" string="Update Limit" attrs="{'invisible': ['|',('number','=',False),'|',('proposal_id','=',False),'&amp;',('proposal_id','!=',False),'|',('state','!=','draft'),('number','=',False)]}" />
+                </button>
+                <!-- UPDATE action on button Cancel Approval (RFA) -->
+                <button name="%(wtc_approval.wtc_approval_cancel_wizard_action)d" position="attributes">
+                    <attribute name="name">action_cancel_rfa_form</attribute>
+                    <attribute name="type">object</attribute>
+                    <attribute name="string">Cancel RFA</attribute>
+                    <attribute name="context"></attribute>
+                </button>
+                <!-- UPDATE action on button Reject -->
+                <button name="%(wtc_approval.wtc_approval_reject_wizard_action)d" position="attributes">
+                    <attribute name="name">action_reject_form</attribute>
+                    <attribute name="type">object</attribute>
+                    <attribute name="context"></attribute>
+                </button>
+                <!-- UPDATE action on button Cancel Approval (After approve) -->
+                <button name="%(wtc_approval.wtc_cancel_approval_wizard)d" position="attributes">
+                    <attribute name="name">action_cancel_approval_form</attribute>
+                    <attribute name="type">object</attribute>
+                    <attribute name="string">Cancel Approval</attribute>
+                    <attribute name="context"></attribute>
+                </button>
+                <!-- REMOVE on_change ATTR FROM branch_id -->
+                <field name="branch_id" position="attributes">
+                    <attribute name="on_change" />
+                </field>
+                <field name="name" position="before">
+                    <field name="proposal_id" options="{'no_create': True, 'no_open': True}" attrs="{'readonly': [('number','!=',False)]}" />
+                    <!-- 'required': [('transaksi','=','tidak_rutin')] -->
+                </field>
+                <!-- Memo -->
+                <field name="name" position="after">
+                    <field name="amount_limit" readonly="1" attrs="{'invisible': [('amount_limit','=',False)]}" />
+                    <field name="proposal_state" attrs="{'invisible': [('proposal_state','=',False)]}" />
+                </field>
+                <field name="name" position="attributes">
+                    <attribute name="attrs">{'readonly': [('proposal_id','!=',False)]}</attribute>
+                </field>
+                <!-- Adjust no_document dan tgl_document -->
+                <field name="no_document" position="replace" />
+                <field name="tgl_document" position="before">
+                    <field name="no_document" attrs="{'readonly': [('state','!=','draft')]}"/>
+                </field>
+                <!-- REMOVE on_change ATTR FROM transaksi -->
+                <field name="transaksi" position="attributes">
+                    <attribute name="on_change" />
+                </field>
+                <xpath expr="//field[@name='line_dr_ids']/tree/field[@name='account_id']"  position="after">
+                    <field name="proposal_line_id" options="{'no_create': True, 'no_open': True}" domain="[('proposal_id','=',parent.proposal_id),('supplier_id','=',parent.partner_id),('jenis_pembayaran','=','T')]" />
+                    <!--  -->
+                </xpath>
+                <xpath expr="//field[@name='line_dr_ids']/tree/field[@name='name']"  position="attributes">
+                    <attribute name="attrs">{'readonly': [('proposal_line_id','!=',False)]}</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_payment_request_search_inherited" model="ir.ui.view">
+            <field name="name">wtc.payment.request.search.inherited</field>
+            <field name="model">wtc.dn.nc</field>
+            <field name="inherit_id" ref="wtc_dn_nc.view_wtc_payment_request_filter2" />
+            <field name="arch" type="xml">
+                <field name="partner_id" position="after">
+                    <field name="proposal_id" />
+                </field>
+            </field>
+        </record>
+
+    <!-- Inherit action untuk menggunakan fitur readonly_by_pass -->
+        <record id="wtc_dn_nc.wtc_payment_request_action2" model="ir.actions.act_window">
+            <field name="name">Payment Request</field>
+		    <field name="res_model">wtc.dn.nc</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		    <field name="search_view_id" ref="view_payment_request_search_inherited"/>
+            <field name="domain">[('type','=','NC')]</field>
+            <field name="context">{
+                'type': 'NC',
+                'search_default_state_draft': 1,
+                'search_default_state_wfa': 1,
+                'readonly_by_pass': 1
+            }</field>
+        </record>
+    </data>
+</openerp>

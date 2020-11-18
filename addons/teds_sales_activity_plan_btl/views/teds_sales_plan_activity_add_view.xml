@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+		<record id="view_teds_sales_plan_add_wizard" model="ir.ui.view">
+			<field name="name">teds.sales.plan.add.wizard</field>
+			<field name="model">teds.sales.plan.add.wizard</field>
+			<field name="arch" type="xml">
+				<form>
+					<div class="oe_title">
+						<h1>
+							<field name="sales_plan_id" readonly="1" options="{'no_open':True,'no_create':True}"/>	
+						</h1>
+					</div>
+					<group>
+						<field name="branch_id" options="{'no_open':True,'no_create':True}"/>
+						<label for="bulan" string="Periode"/>
+                        <div>
+                            <field name="bulan" class="oe_inline"/> 
+                            <field name="tahun" class="oe_inline"/>
+                        </div>
+					</group>
+					<notebook>
+						<page string="Detail">
+							<field name="sales_activity_line_ids" nolabel="1">
+								<tree>
+									<field name="jaringan_penjualan"/>
+									<field name="name"/>
+									<field name="act_type_id" options="{'no_open':True,'no_create':True}"/>
+									<field name="titik_keramaian_id" options="{'no_open':True,'no_create':True}"/>
+									<field name="ring_id" options="{'no_open':True,'no_create':True}"/>
+									<field name="kecamatan_id" options="{'no_open':True,'no_create':True}"/>
+									<field name="pic_id" options="{'no_open':True,'no_create':True}"/>
+									<field name="start_date"/>
+									<field name="end_date"/>
+									<field name="target_unit"/>
+									<field name="target_customer"/>
+								</tree>
+								<form>
+									<sheet>
+				                        <group>
+											<group>
+												<field name="state" invisible="1"/>
+												<field name="branch_id" invisible="1"/>
+												<field name="jaringan_penjualan" required="1"/>
+												<field name="act_type_id" options="{'no_open':True,'no_create':True}" required="1"/>
+												<field name="act_type_code" invisible="1"/>
+												<field name="titik_keramaian_id" options="{'no_open':True,'no_create':True}" required="1" domain="[('branch_id','=',branch_id)]"/>
+												<field name="ring_id" options="{'no_open':True,'no_create':True}"/>
+												<field name="is_location"/>
+												<field name="source_pos_location_id" attrs="{'invisible':['|',('is_location','=',False),('jaringan_penjualan','!=','POS')],'required':[('is_location','!=',False),('jaringan_penjualan','=','POS')]}" options="{'no_open':True,'no_create':True}" domain="[
+													('branch_id','=',branch_id),
+													('jenis','=','pos'),
+													('start_date','&lt;=',context_today().strftime('%Y-%m-%d')),
+													('end_date','&gt;=',context_today().strftime('%Y-%m-%d'))
+													]"/>
+												<field name="jenis_pengajuan" attrs="{'invisible':[('is_location','=',False)],'required':[('is_location','!=',False)]}"/>
+												<field name="location_id" options="{'no_open':True,'no_create':True}" domain="[('branch_id','=',branch_id),('usage','=','internal'),('jenis','in',('pameran','channel','canvasing'))]" attrs="{'invisible':['|',('jenis_pengajuan','!=','update'),('is_location','=',False)],'required':[('jenis_pengajuan','=','update')]}"/>
+				                          		<field name="name" attrs="{'invisible':[('jenis_pengajuan','=','update')],'required':[('jenis_pengajuan','=','new')]}"/>
+				                          		<field name="display_unit" attrs="{'invisible':[('is_location','=',False)],'required':[('is_location','!=',False)]}"/>
+												<field name="target_unit" required="1"/>
+												<field name="target_customer" required="1"/>
+				                          	</group>
+				                          	<group>
+												<label for="start_date" string="Periode"/>
+						                        <div>
+						                            <field name="start_date" required="1" placeholder="Start Date" class="oe_inline"/> - 
+						                            <field name="end_date" required="1" placeholder="End Date" class="oe_inline"/>
+						                        </div>
+						                        <field name="pic_id" options="{'no_open':True,'no_create':True}" required="1"/>
+												<field name="nik"/>
+												<field name="job"/>
+												<field name="no_telp" required="1"/>
+												<field name="foto" attrs="{'invisible':[('is_location','=',False)],'required':[('act_type_code','in',('PM','CH','RS'))]}" widget="image" img_height="100" width="100" height="100" filename="filename_foto"/>
+												<field name="filename_foto" invisible="1"/>
+											</group>
+										</group>
+										<group string="Address">
+											<group>
+												<field name="street" attrs="{'required':[('is_location','!=',False)]}"/>
+												<field name="rt" class="oe_inline"/>
+												<field name="rw" class="oe_inline"/>
+											</group>
+											<group>
+												<field name="state_id" options="{'no_open':True,'no_create':True}" readonly="1"/>
+												<field name="city_id" options="{'no_open':True,'no_create':True}" readonly="1"/>
+												<field name="kecamatan_id" options="{'no_open':True,'no_create':True}"/>
+												<field name="kelurahan_id" options="{'no_open':True,'no_create':True}"/>
+											</group>
+										</group>
+										<group string="Biaya">
+											<field name="total_biaya" readonly="1"/>
+											<field name="detail_biaya_ids" string="Detail Biaya">
+												<tree editable="bottom">
+													<field name="name" required="1"/>
+													<field name="finco_id" attrs="{'readonly':[('name','!=','Leasing')],'required':[('name','=','Leasing')]}" options="{'no_open':True,'no_create':True}"/>
+													<field name="tipe" required="1"/>
+													<field name="amount" required="1" sum="Total"/>
+													<field name="is_ppn" readonly="1"/>
+													<field name="subtotal"/>
+												</tree>
+											</field>
+										</group>
+										<notebook>
+											<page string="History Activity">
+												<group>
+													<field name="qty_customer_last" readonly="1"/>
+												</group>
+												<label for="history_location_ids" string="Unit 3 Bulan Terakhir"/>
+												<field name="history_location_ids" nolabel="1" >
+													<tree create='false' edit='false' delete='false'>
+														<field name="name"/>
+														<field name="qty" sum="Total"/>
+													</tree>
+													<form>
+														<shee>
+															<group>
+																<field name="name"/>
+																<field name="qty"/>
+															</group>
+															<notebook>
+																<page string="Detail Pencapaian">
+																	<field name="detail_ids" nolabel="1">
+																		<tree>
+																			<field name="product_id" options="{'no_open':True,'no_create':True}"/>
+																			<field name="categ_id" options="{'no_open':True,'no_create':True}"/>
+																		</tree>
+																		<form>
+																			<sheet>
+																				<group>
+																					<field name="product_id" options="{'no_open':True,'no_create':True}"/>
+																					<field name="categ_id" options="{'no_open':True,'no_create':True}"/>
+																				</group>
+																			</sheet>
+																		</form>
+																	</field>
+																</page>
+															</notebook>
+														</shee>
+													</form>
+												</field>
+											</page>
+										</notebook>
+									</sheet>
+								</form>
+							</field>
+						</page>
+					</notebook>
+					<footer>
+	                    <button name="action_submit" string="Submit" type="object" class="oe_highlight"/>
+	                    <button string="Cancel" class="oe_link" special="cancel"/>
+                </footer>
+				</form>
+			</field>
+		</record>
+	</data>
+</openerp>

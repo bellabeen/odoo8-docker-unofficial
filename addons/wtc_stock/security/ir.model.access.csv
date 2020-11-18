@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_wtc_stock_packing_all,wtc_stock_packing_all,model_wtc_stock_packing,,1,1,1,1
+access_wtc_stock_packing_line_all,wtc_stock_packing_line_all,model_wtc_stock_packing_line,,1,1,1,1
+access_wtc_surat_jalan_all,wtc_surat_jalan_all,model_wtc_surat_jalan,,1,1,1,1
+access_wtc_surat_jalan_line_all,wtc_suart_jalan_line_all,model_wtc_surat_jalan_line,,1,1,1,1

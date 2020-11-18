@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    
+<!-- Faktur Pajak Print-->
+		
+        <record id="group_wtc_faktur_pajak_out_print" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Faktur Pajak Print</field>
+            <field name="implied_ids" eval="[(4, ref('group_faktur_pajak_read'))]"/>
+        </record>     
+
+        <record id="access_wtc_faktur_pajak_out_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak_out"/>
+            <field name="name">wtc_faktur_pajak_out_write</field>
+            <field name="group_id" ref="group_wtc_faktur_pajak_out_print"/>
+            <field name="perm_write">1</field>
+        </record>
+ 
+<!-- Generate Faktur Pajak Post-->
+		
+        <record id="group_wtc_generate_faktur_pajak_post" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Generate Faktur Pajak Post</field>
+            <field name="implied_ids" eval="[(4, ref('group_generate_faktur_pajak_read'))]"/>
+        </record>     
+
+        <record id="access_wtc_generate_faktur_pajak_out_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak_out"/>
+            <field name="name">wtc_faktur_pajak_out_write</field>
+            <field name="group_id" ref="group_wtc_generate_faktur_pajak_post"/>
+            <field name="perm_create">1</field>
+        </record>
+                     
+        <record id="access_wtc_generate_faktur_pajak_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak"/>
+            <field name="name">wtc_faktur_pajak_write</field>
+            <field name="group_id" ref="group_wtc_generate_faktur_pajak_post"/>
+            <field name="perm_write">1</field>
+        </record>
+              
+<!-- ReGenerate Faktur Pajak Post-->
+		
+        <record id="group_wtc_regenerate_faktur_pajak_post" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Regenerate Faktur Pajak Post</field>
+            <field name="implied_ids" eval="[(4, ref('group_regenerate_faktur_pajak_read'))]"/>
+        </record>     
+
+        <record id="access_wtc_regenerate_faktur_pajak_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_regenerate_faktur_pajak_gabungan"/>
+            <field name="name">wtc_regenaret_faktur_pajak_write</field>
+            <field name="group_id" ref="group_wtc_generate_faktur_pajak_post"/>
+            <field name="perm_create">1</field>
+        </record>
+                     
+        <record id="access_wtc_greenerate_faktur_pajak_line_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_regenerate_faktur_pajak_gabungan_line"/>
+            <field name="name">wtc_regeneratefaktur_pajakline__write</field>
+            <field name="group_id" ref="group_wtc_generate_faktur_pajak_post"/>
+            <field name="perm_write">1</field>
+        </record>
+        <record id="access_wtc_regenerate_faktur_pajak_out_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak_out"/>
+            <field name="name">wtc_faktur_pajak_out_write</field>
+            <field name="group_id" ref="group_wtc_generate_faktur_pajak_post"/>
+            <field name="perm_create">1</field>
+        </record>
+                        
+<!-- Faktur Pajak Other Post-->
+		
+        <record id="group_wtc_faktur_pajak_other_post" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Faktur Pajak Others Post</field>
+            <field name="implied_ids" eval="[(4, ref('group_faktur_pajak_other_read'))]"/>
+        </record>     
+
+        <record id="access_wtc_faktur_pajak_other_out_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak_out"/>
+            <field name="name">wtc_faktur_pajak_other_out_write</field>
+            <field name="group_id" ref="group_wtc_faktur_pajak_other_post"/>
+            <field name="perm_write">1</field>
+        </record>
+                     
+        <record id="access_wtc_faktur_pajak_other_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak_other"/>
+            <field name="name">wtc_faktur_pajak_other_write</field>
+            <field name="group_id" ref="group_wtc_faktur_pajak_other_post"/>
+            <field name="perm_write">1</field>
+        </record>
+                
+<!-- Faktur Pajak Gabungan Generate-->
+		
+        <record id="group_wtc_faktur_pajak_gabungan_generate" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Faktur Pajak Gabungan Generate</field>
+            <field name="implied_ids" eval="[(4, ref('group_faktur_pajak_gabungan_read'))]"/>
+        </record>     
+
+        <record id="access_wtc_faktur_pajak_gabungan_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak_gabungan"/>
+            <field name="name">wtc_faktur_pajak_gabungan_write</field>
+            <field name="group_id" ref="group_wtc_faktur_pajak_gabungan_generate"/>
+            <field name="perm_write">1</field>
+        </record>
+                     
+        <record id="access_wtc_faktur_pajak_gabungan_line_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak_gabungan_line"/>
+            <field name="name">wtc_faktur_pajak_gabungan_line_write</field>
+            <field name="group_id" ref="group_wtc_faktur_pajak_gabungan_generate"/>
+            <field name="perm_write">1</field>
+            <field name="perm_create">1</field>
+        </record>
+                   
+        <record id="access_wtc_faktur_pajak_gabungan_so_read" model="ir.model.access">
+            <field name="model_id" ref="dealer_sale_order.model_dealer_sale_order"/>
+            <field name="name">wtc_faktur_pajak_gabungan_so_read</field>
+            <field name="group_id" ref="group_wtc_faktur_pajak_gabungan_generate"/>
+            <field name="perm_read">1</field>
+        </record>
+                
+        <record id="access_wtc_faktur_pajak_gabungan_av_read" model="ir.model.access">
+            <field name="model_id" ref="account_voucher.model_account_voucher"/>
+            <field name="name">wtc_faktur_pajak_gabungan_av_read</field>
+            <field name="group_id" ref="group_wtc_faktur_pajak_gabungan_generate"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_wtc_faktur_pajak_gabungan_wo_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_work_order.model_wtc_work_order"/>
+            <field name="name">wtc_faktur_pajak_gabungan_wo_read</field>
+            <field name="group_id" ref="group_wtc_faktur_pajak_gabungan_generate"/>
+            <field name="perm_read">1</field>
+        </record>        
+<!-- Faktur Pajak Gabungan Confirm-->
+		
+        <record id="group_wtc_faktur_pajak_gabungan_confirm" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Faktur Pajak Gabungan Confirm</field>
+            <field name="implied_ids" eval="[(4, ref('group_faktur_pajak_gabungan_read'))]"/>
+        </record>     
+
+        <record id="access_wtc_faktur_pajak_gabungan_confirm" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak_gabungan"/>
+            <field name="name">wtc_faktur_pajak_gabungan_confirm</field>
+            <field name="group_id" ref="group_wtc_faktur_pajak_gabungan_confirm"/>
+            <field name="perm_write">1</field>
+        </record>
+                     
+        <record id="access_wtc_faktur_pajak_gabungan_line_confirm" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak_gabungan_line"/>
+            <field name="name">wtc_faktur_pajak_gabungan_line_confirm</field>
+            <field name="group_id" ref="group_wtc_faktur_pajak_gabungan_confirm"/>
+            <field name="perm_write">1</field>
+        </record>
+                
+        <record id="access_wtc_faktur_pajak_gabungan_so_confirm" model="ir.model.access">
+            <field name="model_id" ref="dealer_sale_order.model_dealer_sale_order"/>
+            <field name="name">wtc_faktur_pajak_gabungan_so_confirm</field>
+            <field name="group_id" ref="group_wtc_faktur_pajak_gabungan_confirm"/>
+            <field name="perm_write">1</field>
+        </record>
+             
+        <record id="access_wtc_faktur_pajak_gabungan_av_confirm" model="ir.model.access">
+            <field name="model_id" ref="account_voucher.model_account_voucher"/>
+            <field name="name">wtc_faktur_pajak_gabungan_av_confirm</field>
+            <field name="group_id" ref="group_wtc_faktur_pajak_gabungan_confirm"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_wtc_faktur_pajak_gabungan_wo_confirm" model="ir.model.access">
+            <field name="model_id" ref="wtc_work_order.model_wtc_work_order"/>
+            <field name="name">wtc_faktur_pajak_gabungan_wo_confirm</field>
+            <field name="group_id" ref="group_wtc_faktur_pajak_gabungan_confirm"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_wtc_faktur_pajak_gabungan_out_confirm" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_faktur_pajak_out"/>
+            <field name="name">wtc_faktur_pajak_gabungan_pjo_confirm</field>
+            <field name="group_id" ref="group_wtc_faktur_pajak_gabungan_confirm"/>
+            <field name="perm_write">1</field>
+            <field name="perm_create">1</field>
+        </record>
+                
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[(4,ref('group_wtc_faktur_pajak_out_print')),
+											 (4,ref('group_wtc_generate_faktur_pajak_post')),
+											 (4,ref('group_wtc_faktur_pajak_gabungan_generate')),
+											 (4,ref('group_wtc_faktur_pajak_gabungan_confirm')),
+											  (4,ref('group_wtc_regenerate_faktur_pajak_post')),
+				                            ]">
+			</field> 
+		</record>
+		                           
+    </data>
+</openerp>

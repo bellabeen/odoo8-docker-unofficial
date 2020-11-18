@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>    
+       <report  
+            id="report_purchase_order" string="Purchase Order" 
+            model="purchase.order" 
+            name="rml.purchase.order" 
+            rml="wtc_purchase_order/report/wtc_purchase_order_report.rml" 
+            auto="False" menu="False"/>  
+       
+    </data>
+</openerp>

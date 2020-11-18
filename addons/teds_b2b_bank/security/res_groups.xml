@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">     
+        <record id="group_teds_b2b_master_bank_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">B2B Master Bank Read</field> 
+            <field name="menu_access" eval="[(4, ref('teds_b2b_master_bank_menuitem'))]"/>  
+        </record> 
+        
+        <record id="access_teds_b2b_master_bank_read" model="ir.model.access">
+            <field name="model_id" ref="model_teds_b2b_master_bank"/>
+            <field name="name">teds_b2b_master_bank read</field> 
+            <field name="group_id" ref="group_teds_b2b_master_bank_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+
+        <record id="group_teds_b2b_master_bank_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">B2B Master Bank Update</field> 
+            <field name="menu_access" eval="[(4, ref('teds_b2b_master_bank_menuitem'))]"/>   
+            <field name="implied_ids" eval="[(4, ref('group_teds_b2b_master_bank_read'))]"/>                                
+        </record>
+                        
+        <record id="access_teds_b2b_master_bank_update" model="ir.model.access">
+            <field name="model_id" ref="model_teds_b2b_master_bank"/>
+            <field name="name">teds_b2b_master_bank update</field> 
+            <field name="group_id" ref="group_teds_b2b_master_bank_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+
+        <record id="group_teds_b2b_master_bank_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">B2B Master Bank Delete</field> 
+            <field name="menu_access" eval="[(4, ref('teds_b2b_master_bank_menuitem'))]"/>   
+            <field name="implied_ids" eval="[(4, ref('group_teds_b2b_master_bank_read'))]"/>                                
+        </record>
+                        
+        <record id="access_teds_b2b_master_bank_delete" model="ir.model.access">
+            <field name="model_id" ref="model_teds_b2b_master_bank"/>
+            <field name="name">teds_b2b_master_bank delete</field> 
+            <field name="group_id" ref="group_teds_b2b_master_bank_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>  
+
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+            <field name="implied_ids" eval="[
+                (4,ref('group_teds_b2b_master_bank_read')),
+                (4,ref('group_teds_b2b_master_bank_update')),
+                (4,ref('group_teds_b2b_master_bank_delete')),
+            ]" />
+        </record>
+
+    </data>
+</openerp>

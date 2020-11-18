@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    	
+		<record id="report_employee_group_read" model="res.groups">
+			<field name="category_id" ref="wtc_branch.tdm_role" />
+			<field name="name">Report Employee Group Read</field>
+			<field name="menu_access" eval="[(4, ref('menu_employee_report'))]" />
+		</record>
+
+		<record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[
+				(4,ref('report_employee_group_read')),
+				]" />
+		</record>
+    </data>
+</openerp>

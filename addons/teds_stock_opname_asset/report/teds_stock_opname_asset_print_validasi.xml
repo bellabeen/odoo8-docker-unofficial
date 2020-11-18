@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+<template id="teds_stock_opname_asset_print_validasi">
+    <t t-call="report.html_container">
+        <t t-foreach="docs" t-as="o">
+                <div class="page">
+                    <div class="oe_structure"/>
+                        <div class="row"> 
+                        </div>
+                        <div class="col-xs-12">
+                            <table style="font-size:10px; width:100%; line-height:200%" border="1">
+                                <tr>
+                                    <th colspan="4" style="font-size:13px;"><span t-esc="name(data)"/></th>
+                                </tr>
+                                <tr>
+                                    <th width="10%%" style="padding-top:10px">Branch</th>
+                                    <td>: <span t-esc="branch(data)"/></td>
+
+                                    <th>PDI / Kamek / SA</th>
+                                    <td>: <span t-esc="pdi(data)"/></td>
+                                </tr>                                
+                                <tr>
+                                    <th>Tanggal SO</th>
+                                    <td>: <span t-esc="tgl_so(data)"/></td>                                    
+
+                                    <th>SOH</th>
+                                    <td>: <span t-esc="soh(data)"/></td>
+                                </tr>
+                                <tr>                                    
+                                    <th>Generate on</th>
+                                    <td>: <span t-esc="generate_date(data)"/></td>
+                                    
+                                    <th>ADH</th>
+                                    <td>: <span t-esc="adh(data)"/></td>                                
+                                </tr>
+                            </table>
+                            <p style="padding-top:5px"><b>Data Stock asset</b></p>
+                            <table class="table" style="font-size:8px">
+                                <tr>
+                                    <th>No</th>
+                                    <!-- <th>Cabang</th> -->
+                                    <th>Kode Asset</th>
+                                    <th>Nama Asset</th>
+                                    <th>Kategory</th>
+                                    <th>Lokasi Fisik Asset</th>
+                                    <th>PIC Asset</th>
+                                    <th>Konidisi Fisik Asset</th>
+                                    <th>No Engine</th>
+                                    <th>Keterangan</th>
+                                </tr>
+                                <tr t-foreach="detail_ids(data)" t-as="detail">
+                                    <td><span t-esc="no_urut()"/></td>
+                                    <!-- <td><span t-esc="detail['branch_code']"/></td> -->
+                                    <td><span t-esc="detail['kode_asset']"/></td>
+                                    <td><span t-esc="detail['nama_asset']"/></td>
+                                    <td><span t-esc="detail['kategory']"/></td>
+                                    <td><span t-esc="detail['lokasi_fisik_asset']"/></td>
+                                    <td><span t-esc="detail['pic_asset']"/></td>
+                                    <td><span t-esc="detail['kondisi_fisik_asset']"/></td>
+                                    <td><span t-esc="detail['no_mesin']"/></td>
+                                    <td><span t-esc="detail['keterangan']"/></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6"><span t-esc="data['user']"/>, <span t-esc="data['date']"/></td>
+                                </tr>
+                            </table>  
+                            <b style="padding-top:5px">Fisik Tidak Tercatat Sistem</b>
+                            <table class="table" style="font-size:8px;">
+                                <tr>
+                                    <th>No</th>
+                                    <!-- <th>Cabang</th> -->
+                                    <th>Nama Asset</th>
+                                    <th>Lokasi Fisik Asset</th>
+                                    <th>PIC Asset</th>
+                                    <th>Kondisi Fisik Asset</th>
+                                    <th>Nomor Mesin</th>
+                                    <th>Keterangan</th>
+                                </tr>
+                                <tr t-foreach="other_asset_ids(data)" t-as="other">
+                                    <td><span t-esc="no_urut_other()"/></td>
+                                    <!-- <td><span t-esc="other['branch_code']"/></td> -->
+                                    <td><span t-esc="other['nama_asset']"/></td>
+                                    <td><span t-esc="other['lokasi_fisik_asset']"/></td>
+                                    <td><span t-esc="other['pic_asset']"/></td>
+                                    <td><span t-esc="other['kondisi_fisik_asset']"/></td>
+                                    <td><span t-esc="other['no_mesin']"/></td>
+                                    <td><span t-esc="other['keterangan']"/></td>
+                                </tr>
+                            </table>
+                        </div>                
+                        <br/>
+                        <div class="col-xs-12">
+                            <table class="table table-bordered" style="font-size:10px">
+                                <tr>
+                                    <td colspan="2" align="center">PIC SO</td>
+                                    <td align="center">Menyetujui</td>
+                                </tr>
+                                <tr height="80px">
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th><span t-esc="adh(data)"/></th>
+                                    <th><span t-esc="pdi(data)"/></th>
+                                    <th><span t-esc="soh(data)"/></th>
+                                </tr>
+                                <tr>
+                                    <td>ADH</td>
+                                    <td>PDI / Kamek / SA</td>
+                                    <td>SOH</td>  
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                        <span t-esc="data['user']"/>, <span t-esc="data['date']"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>                    
+                    <div class="oe_structure"/>
+                </div>
+        </t>
+    </t>
+</template>
+</data>
+</openerp>

@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_wtc_advance_payment_all,wtc_advance_payment all,model_wtc_advance_payment,,1,1,1,1
+access_wtc_settlement_all,wtc_settlement all,model_wtc_settlement,,1,1,1,1
+access_wtc_settlement_line_all,wtc_settlement_line all,model_wtc_settlement_line,,1,1,1,1

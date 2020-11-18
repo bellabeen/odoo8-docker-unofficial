@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">  	
+    	
+<!-- Report Data Konsumen -->	
+	
+        <record id="group_teds_report_prbj_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Report PRBJ</field> 
+            <field name="menu_access" eval="[(4,ref('teds_report_prbj_menu')),
+											]"/>  
+        </record> 
+
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[(4,ref('group_teds_report_prbj_read')),
+											]"/> 
+		</record>                                                                                                    
+    </data>
+</openerp>

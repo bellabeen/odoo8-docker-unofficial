@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+<template id="wtc_work_order_wip_report">
+    <t t-call="report.html_container">
+        <t t-foreach="docs" t-as="o">
+  
+                <div class="page">
+                    <div class="oe_structure"/>
+                    <div class="row"> 
+                    </div>
+					<h2>WIP</h2>
+                    <table class="table">
+                        <thead>
+                           <tr style="border-bottom: 1px solid black; font-size:11">
+			                    <th>No</th>
+			                    <th>Work Order</th>
+			                    <th>Tanggal Service</th>
+                                <th>No Polisi</th>
+			                    <th>No Engine</th>
+                                <th>Type</th>
+                                <th>Jasa</th>
+                                <th>Part</th>
+                                <th>Qty</th>
+                                <th>Qty Spl</th>
+			                    <th>Status</th>
+			                    <th>State</th>
+                                <th>Fisik Menginap</th>
+                                <th>Keterangan</th>
+		                  </tr>
+                          </thead>                       
+                        <tbody>
+                            <tr t-foreach="lines_a(data['form'])" style="page-break-inside: avoid !important;font-size: 9px;" t-as="line">
+                            	<td><span t-esc="line['no']"/></td>
+                                <td><span t-esc="line['name']"/></td>
+                                <td><span t-esc="line['date']"/></td>
+                                <td><span t-esc="line['no_pol']"/></td>
+                                <td><span t-esc="line['no_engine']"/></td>
+                                <td><span t-esc="line['tipe']"/></td>
+                                <td><span t-esc="line['jasa']"/></td>
+                                <td><span t-esc="line['part']"/></td>
+                                <td><span t-esc="line['product_qty']"/></td>
+                                <td><span t-esc="line['supply_qty']"/></td>
+                                <td><span t-esc="line['state']"/></td>
+                                <td><span t-esc="line['state_wo']"/></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                        </tbody> 
+	           			<tfoot>   
+	           				<tr>
+                                <td style="border:none;font-size: 9px;">Tgl.Tarik</td>
+                                <td style="border:none;font-size: 9px;"><span t-esc="tgl_tarik()"/></td>
+                          </tr>
+                            <tr><td style="border:none" colspan='10'></td></tr>
+	           				<tr><td style="border:none" colspan='10'></td></tr>
+	           				<tr><td style="border:none" colspan='10'></td></tr>
+
+	   						<tr>
+	   							<td style="border:none"></td>
+                                <td width="20.00%" style="border:none;font-size: 10px;" colspan="2">Frondesk<br></br><br></br><br></br><br></br><br></br>-----------------------</td>
+                                <td width="20.00%" style="border:none;font-size: 10px;" colspan="2">Kepala Mekanik<br></br><br></br><br></br><br></br><br></br>-----------------------</td>
+                                <td width="20.00%" style="border:none;font-size: 10px;" colspan="2">Kepala Cabang<br></br><br></br><br></br><br></br><br></br>-----------------------</td>
+                                <td width="20.00%" style="border:none;font-size: 10px;" colspan="2">ADH<br></br><br></br><br></br><br></br><br></br>-----------------------</td>
+                            </tr>                                                           
+                        </tfoot>                                                                      
+                    </table>   
+
+                    <p>Unit Lainnya</p>
+                    <table class="table table-bordered">
+                        <thead>
+                           <tr style="border-bottom: 1px solid black; font-size:11">
+                                <th>No</th>
+                                <th>Work Order</th>
+                                <th>Tanggal Service</th>
+                                <th>No Polisi</th>
+                                <th>No Engine</th>
+                                <th>Type</th>
+                                <th>Jasa</th>
+                                <th>Part</th>
+                                <th>Status</th>
+                                <th>State</th>
+                                <th>Fisik Menginap</th>
+                                <th>Keterangan</th>
+                          </tr>
+                        </thead>                       
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                            
+                        </tbody> 
+                    </table>
+                                      
+                    <div class="oe_structure"/>
+                </div>
+            
+        </t>
+    </t>
+</template>
+</data>
+</openerp>

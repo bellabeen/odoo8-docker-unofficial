@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">    
+        <record id="group_wip_validasi" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">WIP Work Order Validasi</field>
+            <field name="implied_ids" eval="[(4, ref('group_teds_wip_work_order_read'))]"/>
+        </record>  
+        <record id="group_wip_rfa_button" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">WIP Work Order RFA</field>
+            <field name="implied_ids" eval="[(4, ref('group_teds_wip_work_order_read'))]"/>
+        </record>  
+		
+		<record id="group_wip_approved_button" model="res.groups">
+	        <field name="category_id" ref="wtc_branch.tdm_role"/>
+	        <field name="name">WIP Work Order Approved</field>
+	        <field name="implied_ids" eval="[(4, ref('group_teds_wip_work_order_read'))]"/>
+	    </record>  
+		
+		<record id="group_wip_reject_button" model="res.groups">
+	        <field name="category_id" ref="wtc_branch.tdm_role"/>
+	        <field name="name">WIP Work Order Reject</field>
+	        <field name="implied_ids" eval="[(4, ref('group_teds_wip_work_order_read'))]"/>
+	    </record>  
+		
+		<record id="group_wip_confirm_button" model="res.groups">
+	        <field name="category_id" ref="wtc_branch.tdm_role"/>
+	        <field name="name">WIP Work Order Confirm</field>
+	        <field name="implied_ids" eval="[(4, ref('group_teds_wip_work_order_read'))]"/>
+	    </record>  
+
+	    <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[
+				(4,ref('group_wip_confirm_button')),
+				(4,ref('group_wip_reject_button')),
+				(4,ref('group_wip_approved_button')),
+				(4,ref('group_wip_rfa_button')),
+				(4,ref('group_wip_validasi')),
+			]"/> 
+		</record>
+    </data>
+</openerp>

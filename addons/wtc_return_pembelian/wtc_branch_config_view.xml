@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+		<record id="wtc_return_pembelian_branch_config_view" model="ir.ui.view">
+            <field name="name">wtc.branch.config.return.pembelian.view</field>
+            <field name="model">wtc.branch.config</field>
+            <field name="inherit_id" ref="wtc_branch.wtc_branch_config_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/sheet/group" position="after">
+                   		<group string="Return Pembelian">
+                   			<field name="wtc_retur_pembelian_journal_unit_id" domain="[('type','=','sale')]"/>
+                   			<field name="wtc_retur_pembelian_journal_sparepart_id" domain="[('type','=','sale')]"/>
+                   			<field name="wtc_retur_pembelian_account_discount_cash_id"/>
+                   			<field name="wtc_retur_pembelian_account_discount_program_id"/>
+                   			<field name="wtc_retur_pembelian_account_discount_lainnya_id"/>
+                   		</group>
+                   		
+                   		<group string="Return Penjualan">
+                   			<field name="wtc_retur_penjualan_journal_unit_id" domain="[('type','=','sale')]"/>
+                   			<field name="wtc_retur_penjualan_journal_sparepart_id" domain="[('type','=','sale')]"/>
+                   			<field name="wtc_retur_penjualan_account_discount_cash_id"/>
+                   			<field name="wtc_retur_penjualan_account_discount_program_id"/>
+                   			<field name="wtc_retur_penjualan_account_discount_lainnya_id"/>
+                   		</group>
+                   		
+                </xpath>
+            </field>
+        </record>
+</data>
+</openerp>

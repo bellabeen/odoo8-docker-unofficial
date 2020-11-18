@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record id="view_pricelist_config_cabang_form" model="ir.ui.view">
+    		<field name="name">view.pricelist.config.cabang.form</field>            
+    		<field name="model">wtc.branch</field>            
+    		<field name="inherit_id" ref="wtc_branch.wtc_harga_ekspedisi_form_view"/>
+    		<field name="arch" type="xml">
+    			<xpath expr="//page[@string='Ekspedisi']" position="after">
+        			<page string="Pricelist" attrs="{'invisible':[('branch_type','!=','MD')]}">
+						<field name="pricelist_config_ids">
+	                		<tree string="Ekspedisi" editable="bottom">
+	                			<field name="partner_id" required="1" options="{'no_create':True, 'no_open':True}"/>
+	                			<field name="division" required="1"/>
+								<field name="md_pricelist_id" options="{'no_create':True, 'no_open':True}" required="1"/>
+	                		</tree>
+	                	</field>
+					</page>	
+				</xpath>
+    		</field>
+    	</record>
+	</data>
+</openerp>

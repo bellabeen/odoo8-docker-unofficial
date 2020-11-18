@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+<template id="wtc_penerimaan_bpkb_report">
+    <style type="text/css">
+         h1   {font-size: 18; font-weight:bold; text-align: left; }
+         h2   {font-size: 8; font-weight:bold; text-align: left; }
+       
+
+         table#t01 {text-align: left;width: 100%; border-left: 0px solid black; border-right: 0px solid black; border-bottom: 0px solid black; black; border-top: 1px solid black;}
+
+         td#td01 {border-left: 1px solid black; border-right: 0px solid black; border-top: 0px solid black; border-bottom: 0px solid black;} 
+      
+         tr#tr01 {font-size: 10; height: 10%; border-left: 1px solid black; border-right: 1px solid black; border-top: 0px solid black; border-bottom: 0px solid black;} 
+
+         th#th01 {border-left: 1px solid black; border-right: 1px solid black; border-top: 1px solid black; border-bottom: 1px solid black; font-size: 14;}  
+
+         tbody#tbody01 {border-left: 0px solid black; border-right: 0px solid black; border-top: 0px solid black; border-bottom: 1px solid black; font-size: 14;}
+    </style>
+
+
+    <t t-call="report.html_container">
+        <t t-foreach="docs" t-as="o">
+  
+                <div class="page" style="font-family: Ubuntu;">
+                    <div class="oe_structure"/>
+                    <div class="row"></div>
+                    <table width="100%" style="font-size: 14px; ">
+                        <tr width="100.00%">
+                            <td  style="font-family:Helvetica;"><h1 style="font-family: Helvetica;"><span t-field="o.branch_id.name"></span></h1></td>
+                            <td style="font-family: Helvetica;">PENERIMAAN BPKB</td>
+                        </tr>
+                        <tr width="30.00%">
+                            <td><span id="s01" t-field="o.branch_id.name"></span></td>
+                            <td>&#160;</td>
+                        </tr>
+                        <h1>&#160;</h1>
+                        <tr width="50.00%">
+                            <td width="35.00%"><span id="s01" t-field="o.branch_id.street"></span>-<span id="s01" t-field="o.branch_id.state_id.name"></span></td>
+                            <td width="15.00%">No : <span id="s01" t-field="o.name"></span></td>
+                        </tr>
+                    </table>
+                    <h2>&#160;</h2>
+
+                    <table width="100%" style="border-collapse: collapse; border: 1px solid black; font-size: 14px;" cellpadding="5">
+                        <tr>
+                            <td width="18.00%">&#160; Tanggal</td>
+                            <td>:</td>
+                            <td><span id="s01" t-field="o.tgl_terima"></span></td>
+                        </tr>
+                        <tr>
+                            <td width="18.00%">&#160; Biro Jasa</td>
+                            <td>:</td>
+                            <td><span id="s01" t-field="o.partner_id"></span></td>
+
+                        </tr>
+                        <tr>
+                            <td width="18.00%">&#160; Lokasi</td>
+                            <td>:</td>
+                            <td><span id="s01" t-field="o.lokasi_bpkb_id"></span></td>
+                        </tr>
+                        <tr>
+                            <td width="18.00%">&#160;</td>
+                            <td>&#160;</td>
+                            <td>&#160;</td>
+                        </tr>
+                    </table>
+
+                    <table id="t01" style="font-size: 14px;">
+                          <tr style="border-bottom: 1px solid black; font-size: 8px;">
+                          <th id="th01" height="25" width="5.00%"> &#160; No              </th>
+                          <th id="th01" height="25" width="15.00%">&#160; No Mesin        </th>
+                          <th id="th01" height="25" width="17.00%">&#160; No Rangka       </th>
+                          <th id="th01" height="25" width="28.00%">&#160; Atas Nama       </th>
+                          <th id="th01" height="25" width="12.00%">&#160; No BPKB         </th>
+                          <th id="th01" height="25" width="12.00%">&#160; No Plat         </th>
+                          <th id="th01" height="25" width="14.00%">&#160; Tgl BPKB   </th>
+                          </tr>
+
+                          <tbody id="tbody01" style="font-size: 15px;">
+                          <tr id="tr01" t-foreach="o.penerimaan_line" t-as="k">
+                          <td id="td01" style="text-align: Center" height="25"><span t-esc="no_urut()"/></td>
+                          <td id="td01" height="25">&#160;<span style="font-size: 12;" t-field="k.name.name"/></td>
+                          <td id="td01" height="25">&#160;<span style="font-size: 12;" t-field="k.name.chassis_no"/></td>
+                          <td id="td01" height="25">&#160;<span style="font-size: 12;" t-field="k.customer_stnk.name"/></td>
+                          <td id="td01" height="25">&#160;<span style="font-size: 12;" t-field="k.no_bpkb"/></td>
+                          <td id="td01" height="25">&#160;<span style="font-size: 12;" t-field="k.name.no_polisi"/></td>
+                          <td id="td01" height="25">&#160;<span style="font-size: 12;" t-field="k.tgl_bpkb"/></td> 
+                          </tr>
+                          </tbody>
+                    </table>
+                   
+                   <div class="oe_structure" style="font-family: Ubuntu;"> 
+                   <table style="width: 100%; font-size: 14px;">
+                            <tr>
+                                <td width="5.00%"><h1></h1></td>
+                                <td style="font-size: 14;">Dicetak Oleh</td>
+                                <td width="20.00%"><h1></h1></td>
+                                <td style="font-size: 14;">Penerima</td>
+                            </tr> 
+                            <tr>
+                                <td width="5.00%"><h1></h1></td>
+                                <td><h1></h1></td>
+                                <td><h1></h1></td>
+                                <td><h1></h1></td>
+                            </tr>  
+                            <tr>
+                                <td width="5.00%"><h1></h1></td>
+                                <td><h1></h1></td>
+                                <td><h1></h1></td>
+                                <td><h1></h1></td>
+                            </tr>
+                            <tr>
+                                <td width="5.00%"><h1></h1></td>
+                                <td>...................................................</td>
+                                <td width="20.00%"><h1></h1></td>
+                                <td>...................................................</td>
+                            </tr> 
+                            <tr>
+                                <td><h1></h1></td>
+                                <td style="font-size: 14;"> <span t-esc="usr()"/>,<span t-esc="tgl()"/></td>
+                                <td width="20.00%"><h1></h1></td>
+                            </tr>                                            
+                            <tr>
+                                <td width="5.00%"><h1></h1></td>
+                                <td style="font-size: 14;">Lembar ke-1 Pengirim / Lembar ke-2 Penerima</td>
+                            </tr> 
+                        </table> 
+                    </div>
+                </div>
+        </t>
+    </t>
+</template>
+</data>
+</openerp>

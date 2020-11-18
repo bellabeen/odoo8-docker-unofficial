@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+
+		<record id="groups_hr_department" model="res.groups">
+			<field name="category_id" ref="wtc_branch.module_category_tdm"/>
+			<field name="name">HR Department</field>
+		</record>
+
+    </data>
+</openerp>

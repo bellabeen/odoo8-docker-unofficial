@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <menuitem id="showroom_nrfs_menu" name="NRFS" parent="wtc_dealer_menu.showroom_top_menu" sequence="15"></menuitem>
+        <menuitem id="workshop_nrfs_menu" name="NRFS" parent="wtc_dealer_menu.workshop_top_menu" sequence="15"></menuitem>
+    </data>
+</openerp>

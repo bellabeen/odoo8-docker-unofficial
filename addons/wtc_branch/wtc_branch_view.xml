@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		
+		<record model="ir.ui.view" id="wtc_branch_tree_view">
+		    <field name="name">wtc.branch.tree</field>
+		    <field name="model">wtc.branch</field>
+		    <field name="arch" type="xml">
+		        <tree string="List Branch">
+		            <field name="code"/>
+		            <field name="name"/> 
+		            <field name="branch_type"/>
+		        </tree>
+		   	</field>
+		</record>
+		
+		<record model="ir.ui.view" id="wtc_branch_form_view">
+		    <field name="name">wtc.branch.form</field>
+		    <field name="model">wtc.branch</field>
+		    <field name="arch" type="xml">
+		        <form string="Branch" version="7.0">
+		             <group>
+		             	<group>
+							<field name="code"/>
+							<field name="name"/>
+							<field name="company_id" />
+							<field name="doc_code"/>
+							<field name="branch_type"/>
+							<field name="ahm_code"/>
+							<field name="warehouse_id"/>
+							<field name="partner_id"/>
+							<field name="default_supplier_id"/>
+							<field name="default_customer_location"/>
+							<field name="profit_centre" on_change='change_profit_centre(profit_centre)'/>
+							<field name="inter_company_account_id"/>
+							<field name="ahass_code"/>
+						</group>
+						<group >
+							<label for="address" string="Address"/>
+							<div>
+                                <field name="street" placeholder="Street..."/>
+                                <div>
+                                	<field name="street2" placeholder="Street" style="width: 50%%"/>
+                                	<field name="rt" placeholder="RT" style="width: 25%%"/>
+									<field name="rw" placeholder="RW" style="width: 25%%"/>
+									<field name="state_id" class="oe_no_button" placeholder="Province" style="width: 50%%" options="{'no_create': True,'no_open': True}"/>
+									<field name="city_id" placeholder="City" style="width: 50%%" options="{'no_create': True,'no_open': True}"/>
+									<field name="kecamatan_id" placeholder="Kecamatan" style="width: 50%%" options="{'no_create': True,'no_open': True}"/>
+									<field name="kecamatan" placeholder="Kecamatan" style="width: 50%%" />						
+									<field name="zip_code_id" placeholder="ZIP" style="width: 50%%" options="{'no_create': True,'no_open': True}"/>                               	
+                                    <field name="kelurahan" class="oe_no_button" placeholder="Kelurahan" style="width: 50%%"/>
+                                </div>
+                            </div>
+                     		<field name="phone"/>
+							<field name="mobile"/>
+							<field name="fax"/>
+							<field name="email"/>
+							<field name="is_mandatory_spk"/>
+						</group>									 
+						<group col="4" colspan="4">
+							<field name="npwp"/>
+							<field name="pimpinan_id"/>							
+							<field name="no_pkp"/>
+							<field name="manager_id"/>		
+							<field name="tgl_kukuh"/>
+							<field name="general_manager_id"/>	
+							<field name="property_account_payable_id" />
+							<field name="property_account_receivable_id" />
+							<field name="property_account_payable_analytic_id" />
+							<field name="property_account_receivable_analytic_id" />
+							<field name="pricelist_unit_sales_id" />
+							<field name="pricelist_unit_purchase_id" />
+							<field name="pricelist_bbn_hitam_id" />
+							<field name="pricelist_bbn_merah_id" />
+							<field name="pricelist_part_sales_id" />
+							<field name="pricelist_part_purchase_id" />
+							<field name="blind_bonus_beli" attrs="{'invisible':[('branch_type','!=','MD'),('branch_type','!=','DL')]}"/>
+							<field name="blind_bonus_beli_performance" attrs="{'invisible':[('branch_type','!=','MD'),('branch_type','!=','DL')]}"/>
+							<field name="blind_bonus_jual" attrs="{'invisible':[('branch_type','!=','MD')]}"/>
+							<field name="pajak_progressive"/>
+						</group>
+		            </group>
+		        </form>
+		    </field>
+		</record>
+ 		<record id="view_branch2_filter" model="ir.ui.view">
+            <field name="name">wtc.branch.list.select</field>
+            <field name="model">wtc.branch</field>
+            <field name="arch" type="xml">
+                <search string="Search Branch">
+                    <field name="code"/>
+                    <field name="name"/>                   
+                </search>
+            </field>
+        </record>		
+		<record model="ir.actions.act_window" id="wtc_branch_action">
+		    <field name="name">Branch</field>
+		    <field name="res_model">wtc.branch</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		    <field name="search_view_id" ref="view_branch2_filter"/>	
+		</record>
+		
+		<menuitem id="wtc_branch_menuitem" name="Branches" sequence="1" parent="wtc_dealer_menu.ma_branches_menu" action="wtc_branch_action"/>
+	</data>
+</openerp>

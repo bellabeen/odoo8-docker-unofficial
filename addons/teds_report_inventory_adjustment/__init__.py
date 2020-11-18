@@ -1,0 +1,1 @@
+import teds_report_inventory_adjustment

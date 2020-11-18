@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<record id="view_teds_mekanik_mitra_absensi_wizard" model="ir.ui.view">
+			<field name="name">teds.mekanik.mitra.absensi.wizard</field>
+			<field name="model">teds.mekanik.mitra.absensi.wizard</field>
+			<field name="arch" type="xml">
+				<form string="Import Absensi">
+					<group attrs="{'invisible':[('state_x','=','get')]}">
+						<field name="options" required="1"/>
+						<label for="bulan" string="Periode"/> 
+						<div>
+							<field name="bulan" class="oe_inline" placeholder="Bulan" required="1"/> - 
+							<field name="tahun" class="oe_inline" placeholder="Tahun" required="1"/>
+						</div>
+						<field name="file" attrs="{'invisible':[('options','!=','Upload')],'required':[('options','=','Upload')]}"/>
+					</group>
+					<notebook attrs="{'invisible':['|',('state_x','=','get'),('options','!=','Download')]}">
+                        <page string="Dealer" >
+                            <field name="branch_ids" colspan="4" nolabel="1"/>
+                        </page>
+                    </notebook>
+					<field name="state_x" invisible="1"/>
+					<newline/>    
+                	<group col="4" fill="0" attrs="{'invisible':[('state_x','!=','get')]}">
+	                    <separator colspan="4" string="Upload Absensi Success" attrs="{'invisible':[('options','!=','Upload')]}"/>
+
+	                    <separator colspan="4" string="Excel Export Generated. Click link below to download ..." attrs="{'invisible':[('options','!=','Download')]}"/>
+	                    <field name="name" invisible="1"/>
+	                    <field name="data_x" nolabel="1" readonly="0" width="100" filename="name" attrs="{'invisible':[('options','!=','Download')]}"/>
+	                </group> 
+					<footer attrs="{'invisible':[('state_x','=','get')]}">
+	                    <button name="action_submit" string="Submit" type="object" class="oe_highlight"/>
+	                    <button string="Cancel" class="oe_link" special="cancel"/>
+                	</footer>
+				</form>
+			</field>
+		</record>
+
+		<record id="action_teds_mekanik_mitra_absensi_wizard" model="ir.actions.act_window">
+			<field name="name">Absensi Mekanik Mitra</field> 
+			<field name="res_model">teds.mekanik.mitra.absensi.wizard</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form</field>
+			<field name="target">new</field>
+		</record>
+
+	  	<menuitem id="teds_mekanik_mitra_absensi_wizard_menuitem" action="action_teds_mekanik_mitra_absensi_wizard" parent="teds_mekanik_mitra_submenu" sequence="4"/>
+	</data>
+</openerp>

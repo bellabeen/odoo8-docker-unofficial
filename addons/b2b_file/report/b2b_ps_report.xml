@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<record id="view_b2b_file_ps_report_wizard" model="ir.ui.view">
+			<field name="name">b2b.file.ps.report.wizard</field>
+			<field name="model">b2b.file.ps.report.wizard</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Export Sentitems">
+					<group attrs="{'invisible':[('state_x','=','get')]}">
+						<group>
+							<field name="options" required="1"/>
+							<label for="start_date_time" string="Date"/>
+							<div>
+								<field name="start_date_time" class="oe_inline" placeholder="Start Date"/>
+								<field name="end_date_time" class="oe_inline" placeholder="End Date"/>
+							</div>
+						</group>
+						<group>
+							<field name="status"/>
+						</group>
+					</group>
+
+                	<field invisible="1" name="state_x"/>                
+                	<newline/>    
+                	<group col="4" fill="0" attrs="{'invisible':[('state_x','!=','get')]}">
+	                    <separator colspan="4" string="Excel Export Generated. Click link below to download ..." attrs="{'invisible':[('state_x','=','choose')]}"/>
+	                    <field name="name" invisible="1" width="100" attrs="{'invisible':[('state_x','=','choose')]}"/>
+	                    <field name="data_x" nolabel="1" readonly="0" width="100" filename="name" attrs="{'invisible':[('state_x','=','choose')]}"/>
+	                </group> 
+	                <footer>
+	                    <button name="excel_report" string="Export Data" type="object" class="oe_highlight" attrs="{'invisible':[('state_x','=','get')]}"/>
+	                    <label string=" or " attrs="{'invisible':[('state_x','=','get')]}"/>
+	                    <button string="Cancel" special="cancel" class="oe_link" attrs="{'invisible':[('state_x','=','get')]}"/>
+	                </footer>
+				</form>
+			</field>
+		</record>
+
+		<record id="action_b2b_file_ps_report_wizard" model="ir.actions.act_window">
+			<field name="name">Report File PS</field> 
+			<field name="res_model">b2b.file.ps.report.wizard</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form</field>
+			<field name="view_id" ref="view_b2b_file_ps_report_wizard"/>
+			<field name="target">new</field>
+		</record>
+
+		<menuitem id="menu_action_b2b_file_ps_wizard" parent="wtc_dealer_menu.workshop_report_menu" action="action_b2b_file_ps_report_wizard" sequence="106"/>
+	
+
+	</data>
+</openerp>

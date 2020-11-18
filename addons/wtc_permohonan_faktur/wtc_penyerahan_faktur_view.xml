@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data> 
+		
+		<record model="ir.ui.view" id="penyerahan_faktur_tree_view">
+		    <field name="name">penyerahan.faktur.tree</field>
+		    <field name="model">wtc.penyerahan.faktur</field>
+		    <field name="arch" type="xml">
+		        <tree string="List Penyerahan Faktur">
+		        	<field name="name"/>
+		            <field name="branch_id"/>
+					<field name="division"/>		            
+		            <field name="partner_id"/>	
+		            <field name="penerima"/>	
+		            <field name="tanggal"/>	  
+		            <field name="state"/>	            
+		        </tree>
+		     </field>
+		</record>
+ 
+		<record model="ir.ui.view" id="penyerahan_faktur_form_view">
+		    <field name="name">penyerahan.faktur.form</field>
+		    <field name="model">wtc.penyerahan.faktur</field>
+		    <field name="arch" type="xml">
+		        <form string="Form Penyerahan Faktur">
+				<header>
+						<button name="post_penyerahan" groups='wtc_permohonan_faktur.group_wtc_penyerahan_faktur_cancel' type="object" states="draft" string="Post" class="oe_highlight"/>		
+						<field name="state" widget="statusbar" statusbar_visible="draft,posted" statusbar_colors='{"draft":"red","approved":"blue"}'/>	
+           		</header>		        	
+		        	<sheet>
+			        	<div class="oe_title">
+			        		<h2>
+				                <label string="Penyerahan Faktur"/>    			
+				 				<field name="name" class="oe_inline"/>
+			 				</h2>
+			        	</div>       
+						<group col="2" colspan="2">   
+							<group>
+								<field name="branch_id" options="{'no_create': True,'no_open': True}" attrs="{'readonly': ['|',('state','!=','draft'),('name','!=',False)]}" />
+							</group>            
+						    <group>
+	                    		<field name="division" required="1" attrs="{'readonly': ['|',('penyerahan_line','&lt;&gt;',[]), ('state','!=','draft')]}" />
+	                    	</group>
+	                    	<group>
+							    <field name="partner_id" options="{'no_create': True,'no_open': True}" attrs="{'readonly': [('state','!=','draft')]}" on_change="onchange_partner(partner_id)"/>	
+	                    			                    		
+								<field name="keterangan" attrs="{'readonly': [('state','!=','draft')]}"/>						               
+							    		                    	
+							</group>
+				            <group>  
+							    <field name="penerima" required="1" options="{'no_create': True,'no_open': True}" attrs="{'readonly': [('state','!=','draft')]}" />					         					            	
+								<field name="tanggal" required="1" readonly="1"/>						               
+								            	
+							</group>   
+						</group>	
+						
+						<notebook colspan="5">
+		                    <page string="Engine line">
+		                        <field colspan="4" name="penyerahan_line" nolabel="1" widget="one2many_list" attrs="{'readonly': [('state','!=','draft')]}">
+		                            <tree string="" editable="bottom">
+						                <field name="name" options="{'no_create': True,'no_open': True}" on_change="onchange_engine(name,parent.branch_id,parent.division,parent.partner_id,parent.penerima)"/>
+						                <field name="customer_stnk"/>
+						                <field name="tgl_cetak_faktur"/>
+										<field name="faktur_stnk"/>	
+										<field name="tgl_ambil_faktur"/>					                															                       																		                
+						             </tree>
+		                        </field>
+		                    </page>
+							<page string="Audit Trail">
+								<group>
+									<group>
+										<field name="create_uid" readonly="1"></field>
+										<field name="create_date" readonly="1"></field>
+										<field name="confirm_uid" readonly="1"></field>
+										<field name="confirm_date" readonly="1"></field>
+									</group>
+									<group>							
+										<field name="write_uid" readonly="1"></field>
+										<field name="write_date" readonly="1"></field>
+									</group>
+								</group>
+							</page>			                    
+		                </notebook>				
+		           </sheet>
+		        </form>
+		    </field>
+		</record>
+
+ 		<record id="view_penyerahan_faktur_filter" model="ir.ui.view">
+            <field name="name">penyerahan.faktur.list.select</field>
+            <field name="model">wtc.penyerahan.faktur</field>
+            <field name="arch" type="xml">
+                <search string="Search Penyerahan Faktur">
+                    <field name="name" string="Reference"/>
+                    <field name="branch_id"/> 
+                    <field name="engine_no"/> 
+                    <field name="customer_stnk"/> 
+                    <filter name="draft" string="Draft" domain="[('state','=','draft')]"/>
+                    <filter name="post" string="Posted" domain="[('state','=','posted')]"/>
+                    <group expand="0" string="Group By">
+                        <filter string="Branch" icon="terp-partner" domain="[]" context="{'group_by':'branch_id'}"/>
+                        <filter string="Tanggal" icon="terp-go-month" domain="[]" context="{'group_by':'tanggal'}"/>                    
+                    </group>
+                </search>
+            </field>
+        </record>		
+		<record model="ir.actions.act_window" id="penyerahan_faktur_action">
+		    <field name="name">Penyerahan Faktur</field>
+		    <field name="res_model">wtc.penyerahan.faktur</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		    <field name="search_view_id" ref="view_penyerahan_faktur_filter"/>
+			<field name="context">{"search_default_draft":1}</field>		    
+		</record>
+							
+		<menuitem id="penyerahan_faktur_submenu" name="Penyerahan Faktur Off The Road" parent="wtc_dealer_menu.stnk_bpkb_pengurusan_stnk_bpkb_menu"  action="penyerahan_faktur_action" sequence="10"/> 				  
+	</data>
+</openerp>
+															

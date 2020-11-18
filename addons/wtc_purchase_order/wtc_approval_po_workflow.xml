@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		
+		<record id="act_rfa" model="workflow.activity">
+			<field name="wkf_id" ref="purchase.purchase_order"/>
+			<field name="name">rfa</field>
+			<field name="kind">function</field>
+			<field name="action">wkf_request_approval()</field>
+		</record>
+		
+		<record id="act_is_approved" model="workflow.activity">
+			<field name="wkf_id" ref="purchase.purchase_order"/>
+			<field name="name">is_approved</field>
+			<field name="split_mode">OR</field>
+			<field name="kind">function</field>
+			<field name="action">wkf_approval()</field>
+		</record>
+		
+		<record id="act_waiting_for_approval" model="workflow.activity">
+			<field name="wkf_id" ref="purchase.purchase_order"/>
+			<field name="name">waiting_for_approval</field>
+			<field name="kind">function</field>
+			<field name="action">write({'state':'waiting_for_approval'})</field>
+		</record>
+		
+		<record id="act_approved" model="workflow.activity">
+			<field name="wkf_id" ref="purchase.purchase_order"/>
+			<field name="name">approved</field>
+		</record>
+		
+		<record id="act_set_to_draft" model="workflow.activity">
+			<field name="wkf_id" ref="purchase.purchase_order"/>
+			<field name="name">set_to_draft</field>
+			<field name="kind">function</field>
+			<field name="action">wkf_set_to_draft()</field>
+		</record>
+
+		<record id="act_set_to_draft_cancel" model="workflow.activity">
+			<field name="wkf_id" ref="purchase.purchase_order"/>
+			<field name="name">set_to_draft</field>
+			<field name="kind">function</field>
+			<field name="action">wkf_set_to_draft_cancel()</field>
+		</record>
+		
+		<record id="trans_draft_rfa" model="workflow.transition">
+			<field name="act_from" ref="purchase.act_draft"/>
+			<field name="act_to" ref="act_rfa"/>
+			<field name="signal">approval_request</field>
+		</record>
+		
+		<record id="trans_sent_rfa" model="workflow.transition">
+			<field name="act_from" ref="purchase.act_sent"/>
+			<field name="act_to" ref="act_rfa"/>
+			<field name="signal">approval_request</field>
+		</record>
+		
+		<record id="trans_bid_rfa" model="workflow.transition">
+			<field name="act_from" ref="purchase.act_bid"/>
+			<field name="act_to" ref="act_rfa"/>
+			<field name="signal">approval_request</field>
+		</record>
+		
+		<record id="trans_rfa_waiting_for_approval" model="workflow.transition">
+			<field name="act_from" ref="act_rfa"/>
+			<field name="act_to" ref="act_waiting_for_approval"/>
+		</record>
+		
+		<record id="trans_is_approved_approved" model="workflow.transition">
+			<field name="act_from" ref="act_is_approved"/>
+			<field name="act_to" ref="act_approved"/>
+			<field name="condition">has_approved()</field>
+		</record>
+
+		<record id="trans_is_approved_draft" model="workflow.transition">
+			<field name="act_from" ref="act_is_approved"/>
+			<field name="act_to" ref="purchase.act_draft"/>
+			<field name="condition">has_rejected()</field>
+		</record>
+		
+		<record id="trans_is_approved_waiting_for_approval" model="workflow.transition">
+			<field name="act_from" ref="act_is_approved"/>
+			<field name="act_to" ref="act_waiting_for_approval"/>
+			<field name="condition">not has_approved() and not has_rejected()</field>
+		</record>
+		
+		<record id="trans_waiting_for_approval_set_to_draft" model="workflow.transition">
+			<field name="act_from" ref="act_waiting_for_approval"/>
+			<field name="act_to" ref="act_set_to_draft"/>
+			<field name="signal">approval_reject</field>
+		</record>
+		
+		<record id="trans_set_to_draft_draft" model="workflow.transition">
+			<field name="act_from" ref="act_set_to_draft"/>
+			<field name="act_to" ref="purchase.act_draft"/>
+		</record>
+		
+		<record id="trans_waiting_for_approval_is_approved" model="workflow.transition">
+			<field name="act_from" ref="act_waiting_for_approval"/>
+			<field name="act_to" ref="act_is_approved"/>
+			<field name="signal">approval_approve</field>
+		</record>
+
+		<record id="trans_waiting_for_approval_draft" model="workflow.transition">
+			<field name="act_from" ref="act_waiting_for_approval"/>
+			<field name="act_to" ref="act_set_to_draft_cancel"/>
+			<field name="signal">approval_cancel</field>
+		</record>
+		<record id="trans_set_to_draft_cancel_to_draft" model="workflow.transition">
+			<field name="act_from" ref="act_set_to_draft_cancel"/>
+			<field name="act_to" ref="purchase.act_draft"/>
+		</record>
+				
+		<record id="trans_approved_confirmed" model="workflow.transition">
+			<field name="act_from" ref="act_approved"/>
+			<field name="act_to" ref="purchase.act_confirmed"/>
+			<!--field name="signal">purchase_confirm</field-->
+		</record>
+		
+	</data>
+</openerp>

@@ -1,0 +1,1636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    
+        <record id="bank_bca_2213006240" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">2213006240</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_2213006240"/>
+        </record>
+    
+        <record id="bank_bca_0230900001" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0230900001</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0230900001"/>
+        </record>
+    
+        <record id="bank_bca_0230688168" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0230688168</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0230688168"/>
+        </record>
+    
+        <record id="bank_bca_0230688362" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0230688362</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0230688362"/>
+        </record>
+    
+        <record id="bank_bca_1683028553" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">1683028553</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_1683028553"/>
+        </record>
+    
+        <record id="bank_bca_0410651599" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0410651599</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0410651599"/>
+        </record>
+    
+        <record id="bank_bca_2783004810" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">2783004810</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_2783004810"/>
+        </record>
+    
+        <record id="bank_bca_0230688265" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0230688265</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0230688265"/>
+        </record>
+    
+        <record id="bank_bca_0230904006" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0230904006</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0230904006"/>
+        </record>
+    
+        <record id="bank_bca_0230925500" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0230925500</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0230925500"/>
+        </record>
+    
+        <record id="bank_bca_2213029134" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">2213029134</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_2213029134"/>
+        </record>
+    
+        <record id="bank_bca_0230927111" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0230927111</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0230927111"/>
+        </record>
+    
+        <record id="bank_bca_6140158800" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">6140158800</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_6140158800"/>
+        </record>
+    
+        <record id="bank_bca_0230928100" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0230928100</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0230928100"/>
+        </record>
+    
+        <record id="bank_bca_7930161700" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">7930161700</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_7930161700"/>
+        </record>
+    
+        <record id="bank_bca_4560686086" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">4560686086</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_4560686086"/>
+        </record>
+    
+        <record id="bank_bca_2213041231" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">2213041231</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_2213041231"/>
+        </record>
+    
+        <record id="bank_bca_7910302153" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">7910302153</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_7910302153"/>
+        </record>
+    
+        <record id="bank_bca_0230705666" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0230705666</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0230705666"/>
+        </record>
+    
+        <record id="bank_bca_0230898006" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0230898006</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0230898006"/>
+        </record>
+    
+        <record id="bank_bca_1890260990" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">1890260990</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_1890260990"/>
+        </record>
+    
+        <record id="bank_bca_0230877009" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0230877009</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0230877009"/>
+        </record>
+    
+        <record id="bank_bca_1911499989" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">1911499989</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_1911499989"/>
+        </record>
+    
+        <record id="bank_bca_0230894400" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0230894400</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0230894400"/>
+        </record>
+    
+        <record id="bank_bca_0230895007" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0230895007</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0230895007"/>
+        </record>
+    
+        <record id="bank_bca_0341600064" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0341600064</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0341600064"/>
+        </record>
+    
+        <record id="bank_bca_0230938822" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0230938822</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0230938822"/>
+        </record>
+    
+        <record id="bank_bca_0230881600" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0230881600</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0230881600"/>
+        </record>
+    
+        <record id="bank_bca_0230915300" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0230915300</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0230915300"/>
+        </record>
+    
+        <record id="bank_bca_0231089500" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0231089500</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0231089500"/>
+        </record>
+    
+        <record id="bank_bca_0261886188" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0261886188</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0261886188"/>
+        </record>
+    
+        <record id="bank_bca_0230977577" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0230977577</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0230977577"/>
+        </record>
+    
+        <record id="bank_bca_0230989991" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0230989991</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0230989991"/>
+        </record>
+    
+        <record id="bank_bca_1550190300" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">1550190300</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_1550190300"/>
+        </record>
+    
+        <record id="bank_bca_2217003373" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">2217003373</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_2217003373"/>
+        </record>
+    
+        <record id="bank_bca_0230979995" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0230979995</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0230979995"/>
+        </record>
+    
+        <record id="bank_bca_0230688966" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0230688966</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0230688966"/>
+        </record>
+    
+        <record id="bank_bca_0231091555" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0231091555</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0231091555"/>
+        </record>
+    
+        <record id="bank_bca_221-3030604" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">221-3030604</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_221-3030604"/>
+        </record>
+    
+        <record id="bank_bca_2212132048" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">2212132048</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_2212132048"/>
+        </record>
+    
+        <record id="bank_bca_2213048180" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">2213048180</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_2213048180"/>
+        </record>
+    
+        <record id="bank_mandiri_0700004707993" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">070.000.470799.3</field>   
+            <field name="bank" ref="bank_mandiri"/>
+            <field name="bank_name">MANDIRI</field>
+            <field name="bank_bic">MANDIRI</field>
+            <field name="journal_id" ref="journal_bank_mandiri_0700004707993"/>
+        </record>
+    
+        <record id="bank_mandiri_1140098888897" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">114.009.88888.97</field>   
+            <field name="bank" ref="bank_mandiri"/>
+            <field name="bank_name">MANDIRI</field>
+            <field name="bank_bic">MANDIRI</field>
+            <field name="journal_id" ref="journal_bank_mandiri_1140098888897"/>
+        </record>
+    
+        <record id="bank_danamon_008226110" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">008226110</field>   
+            <field name="bank" ref="bank_danamon"/>
+            <field name="bank_name">DANAMON</field>
+            <field name="bank_bic">DANAMON</field>
+            <field name="journal_id" ref="journal_bank_danamon_008226110"/>
+        </record>
+    
+        <record id="bank_danamon_0048330716" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0048330716</field>   
+            <field name="bank" ref="bank_danamon"/>
+            <field name="bank_name">DANAMON</field>
+            <field name="bank_bic">DANAMON</field>
+            <field name="journal_id" ref="journal_bank_danamon_0048330716"/>
+        </record>
+    
+        <record id="bank_danamon_0059843243" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0059843243</field>   
+            <field name="bank" ref="bank_danamon"/>
+            <field name="bank_name">DANAMON</field>
+            <field name="bank_bic">DANAMON</field>
+            <field name="journal_id" ref="journal_bank_danamon_0059843243"/>
+        </record>
+    
+        <record id="bank_danamon_0058647132" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0058647132</field>   
+            <field name="bank" ref="bank_danamon"/>
+            <field name="bank_name">DANAMON</field>
+            <field name="bank_bic">DANAMON</field>
+            <field name="journal_id" ref="journal_bank_danamon_0058647132"/>
+        </record>
+    
+        <record id="bank_bni_6669996675" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">6669996675</field>   
+            <field name="bank" ref="bank_bni"/>
+            <field name="bank_name">BNI</field>
+            <field name="bank_bic">BNI</field>
+            <field name="journal_id" ref="journal_bank_bni_6669996675"/>
+        </record>
+    
+        <record id="bank_bni_0122135225" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0122135225</field>   
+            <field name="bank" ref="bank_bni"/>
+            <field name="bank_name">BNI</field>
+            <field name="bank_bic">BNI</field>
+            <field name="journal_id" ref="journal_bank_bni_0122135225"/>
+        </record>
+    
+        <record id="bank_bni_0142464450" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0142464450</field>   
+            <field name="bank" ref="bank_bni"/>
+            <field name="bank_name">BNI</field>
+            <field name="bank_bic">BNI</field>
+            <field name="journal_id" ref="journal_bank_bni_0142464450"/>
+        </record>
+    
+        <record id="bank_bni_0261878352" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0261878352</field>   
+            <field name="bank" ref="bank_bni"/>
+            <field name="bank_name">BNI</field>
+            <field name="bank_bic">BNI</field>
+            <field name="journal_id" ref="journal_bank_bni_0261878352"/>
+        </record>
+    
+        <record id="bank_ocbc - nisp_510010001436" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">510010001436</field>   
+            <field name="bank" ref="bank_ocbc_nisp"/>
+            <field name="bank_name">OCBC - NISP</field>
+            <field name="bank_bic">OCBC_NISP</field>
+            <field name="journal_id" ref="journal_bank_ocbc - nisp_510010001436"/>
+        </record>
+    
+        <record id="bank_permata_0701209087" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0701209087</field>   
+            <field name="bank" ref="bank_permata"/>
+            <field name="bank_name">PERMATA</field>
+            <field name="bank_bic">PERMATA</field>
+            <field name="journal_id" ref="journal_bank_permata_0701209087"/>
+        </record>
+    
+        <record id="bank_permata_0701878019" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0701878019</field>   
+            <field name="bank" ref="bank_permata"/>
+            <field name="bank_name">PERMATA</field>
+            <field name="bank_bic">PERMATA</field>
+            <field name="journal_id" ref="journal_bank_permata_0701878019"/>
+        </record>
+    
+        <record id="bank_bca_0230954003" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0230954003</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0230954003"/>
+        </record>
+    
+        <record id="bank_bca_0230670005" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0230670005</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0230670005"/>
+        </record>
+    
+        <record id="bank_bca_0230903000" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0230903000</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0230903000"/>
+        </record>
+    
+        <record id="bank_bca_5750052489" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">5750052489</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_5750052489"/>
+        </record>
+    
+        <record id="bank_bca_0410839199" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0410839199</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0410839199"/>
+        </record>
+    
+        <record id="bank_bca_1393005711" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">1393005711</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_1393005711"/>
+        </record>
+    
+        <record id="bank_bca_0230859400" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0230859400</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0230859400"/>
+        </record>
+    
+        <record id="bank_bca_7390610666" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">7390610666</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_7390610666"/>
+        </record>
+    
+        <record id="bank_bca_6140211123" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">6140211123</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_6140211123"/>
+        </record>
+    
+        <record id="bank_bca_8055032200" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">8055032200</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_8055032200"/>
+        </record>
+    
+        <record id="bank_bca_7930213700" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">7930213700</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_7930213700"/>
+        </record>
+    
+        <record id="bank_bca_4564848494" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">4564848494</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_4564848494"/>
+        </record>
+    
+        <record id="bank_bca_8460163553" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">8460163553</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_8460163553"/>
+        </record>
+    
+        <record id="bank_bca_7910313121" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">7910313121</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_7910313121"/>
+        </record>
+    
+        <record id="bank_bca_8110315105" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">8110315105</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_8110315105"/>
+        </record>
+    
+        <record id="bank_bca_1890322227" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">1890322227</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_1890322227"/>
+        </record>
+    
+        <record id="bank_bca_1911754466" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">1911754466</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_1911754466"/>
+        </record>
+    
+        <record id="bank_bca_0341867770" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0341867770</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0341867770"/>
+        </record>
+    
+        <record id="bank_bca_2940336611" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">2940336611</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_2940336611"/>
+        </record>
+    
+        <record id="bank_bca_7870177776" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">7870177776</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_7870177776"/>
+        </record>
+    
+        <record id="bank_bca_0261886277" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0261886277</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0261886277"/>
+        </record>
+    
+        <record id="bank_bca_1550191900" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">1550191900</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_1550191900"/>
+        </record>
+    
+        <record id="bank_bca_2570474866" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">2570474866</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_2570474866"/>
+        </record>
+    
+        <record id="bank_bni_0122135225" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0122135225</field>   
+            <field name="bank" ref="bank_bni"/>
+            <field name="bank_name">BNI</field>
+            <field name="bank_bic">BNI</field>
+            <field name="journal_id" ref="journal_bank_bni_0122135225"/>
+        </record>
+    
+        <record id="bank_bca_0230858900" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0230858900</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_0230858900"/>
+        </record>
+    
+        <record id="bank_bca_8955061990" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">8955061990</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_8955061990"/>
+        </record>
+    
+        <record id="bank_bca_7510485500" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">7510485500</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_7510485500"/>
+        </record>
+    
+        <record id="bank_bca_2212132145" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">2212132145</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_2212132145"/>
+        </record>
+    
+        <record id="bank_danamon_23821424" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">23821424</field>   
+            <field name="bank" ref="bank_danamon"/>
+            <field name="bank_name">DANAMON</field>
+            <field name="bank_bic">DANAMON</field>
+            <field name="journal_id" ref="journal_bank_danamon_23821424"/>
+        </record>
+    
+        <record id="bank_danamon_0097270953" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0097270953</field>   
+            <field name="bank" ref="bank_danamon"/>
+            <field name="bank_name">DANAMON</field>
+            <field name="bank_bic">DANAMON</field>
+            <field name="journal_id" ref="journal_bank_danamon_0097270953"/>
+        </record>
+    
+        <record id="bank_danamon_0096556626" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0096556626</field>   
+            <field name="bank" ref="bank_danamon"/>
+            <field name="bank_name">DANAMON</field>
+            <field name="bank_bic">DANAMON</field>
+            <field name="journal_id" ref="journal_bank_danamon_0096556626"/>
+        </record>
+    
+        <record id="bank_danamon_0095408712" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0095408712</field>   
+            <field name="bank" ref="bank_danamon"/>
+            <field name="bank_name">DANAMON</field>
+            <field name="bank_bic">DANAMON</field>
+            <field name="journal_id" ref="journal_bank_danamon_0095408712"/>
+        </record>
+    
+        <record id="bank_bri_009801000710309" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0098.01.000710.30.9</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_009801000710309"/>
+        </record>
+    
+        <record id="bank_bri_034101000635306" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0341.01.000635.30.6</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_034101000635306"/>
+        </record>
+    
+        <record id="bank_bri_009801001720307" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0098.01.001720.30.7</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_009801001720307"/>
+        </record>
+    
+        <record id="bank_bri_009801000975307" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0098.01.000975.30.7</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_009801000975307"/>
+        </record>
+    
+        <record id="bank_bri_009801000976303" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0098.01.000976.30.3</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_009801000976303"/>
+        </record>
+    
+        <record id="bank_bri_009801001015304" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0098.01.001015.30.4</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_009801001015304"/>
+        </record>
+    
+        <record id="bank_bri_013101000287308" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0131.01.000287.30.8</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_013101000287308"/>
+        </record>
+    
+        <record id="bank_bri_034201000276300" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0342.01.000276.30.0</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_034201000276300"/>
+        </record>
+    
+        <record id="bank_bri_006301000873302" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0063.01.000873.30.2</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_006301000873302"/>
+        </record>
+    
+        <record id="bank_bri_110001000027304" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">1100.01.000027.30.4</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_110001000027304"/>
+        </record>
+    
+        <record id="bank_bri_00980100101630 0" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0098.01.001016.30 0</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_00980100101630 0"/>
+        </record>
+    
+        <record id="bank_bri_009801001014308" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0098.01.001014.30.8</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_009801001014308"/>
+        </record>
+    
+        <record id="bank_bri_009801001066305" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0098.01.001066.30.5</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_009801001066305"/>
+        </record>
+    
+        <record id="bank_bri_034101000778308" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0341.01.000778.30.8</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_034101000778308"/>
+        </record>
+    
+        <record id="bank_bri_034101000859308" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0341.01.000859.30.8</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_034101000859308"/>
+        </record>
+    
+        <record id="bank_bri_008201001324308" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0082.01.001324.30.8</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_008201001324308"/>
+        </record>
+    
+        <record id="bank_bri_009801001124307" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0098.01.001124.30.7</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_009801001124307"/>
+        </record>
+    
+        <record id="bank_bri_009801001265307" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0098.01.001265.30.7</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_009801001265307"/>
+        </record>
+    
+        <record id="bank_bri_057001000022300" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0570.01.000022.30.0</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_057001000022300"/>
+        </record>
+    
+        <record id="bank_bri_034101000767307" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0341.01.000767.30.7</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_034101000767307"/>
+        </record>
+    
+        <record id="bank_bri_027501001126307" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0275.01.001126.30.7</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_027501001126307"/>
+        </record>
+    
+        <record id="bank_bri_009801001465305" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0098.01.001465.30.5</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_009801001465305"/>
+        </record>
+    
+        <record id="bank_bri_032401000396306" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0324.01.000396.30.6</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_032401000396306"/>
+        </record>
+    
+        <record id="bank_bri_003001000874307" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0030.01.000874.30.7</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_003001000874307"/>
+        </record>
+    
+        <record id="bank_bri_009801001681309" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0098.01.001681.30.9</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_009801001681309"/>
+        </record>
+    
+        <record id="bank_bri_009801001797304" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0098.01.001797.30.4</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_009801001797304"/>
+        </record>
+    
+        <record id="bank_bri_009801001799306" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0098.01.001799.30.6</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_009801001799306"/>
+        </record>
+    
+        <record id="bank_bri_034101000763303" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0341.01.000763.30.3</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_034101000763303"/>
+        </record>
+    
+        <record id="bank_bri_019501000580302" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0195.01.000580.30.2</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_019501000580302"/>
+        </record>
+    
+        <record id="bank_bri_022301000510306" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0223.01.000510.30.6</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_022301000510306"/>
+        </record>
+    
+        <record id="bank_bri_034101000765305" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0341.01.000765.30.5</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_034101000765305"/>
+        </record>
+    
+        <record id="bank_bri_034101000769309" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0341.01.000769.30.9</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_034101000769309"/>
+        </record>
+    
+        <record id="bank_bri_034101000766301" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0341.01.000766.30.1</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_034101000766301"/>
+        </record>
+    
+        <record id="bank_bri_034101000764309" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0341.01.000764.30.9</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_034101000764309"/>
+        </record>
+    
+        <record id="bank_bri_034101000768303" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0341.01.000768.30.3</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_034101000768303"/>
+        </record>
+    
+        <record id="bank_bri_034101000793308" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0341.01.000793.30.8</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_034101000793308"/>
+        </record>
+    
+        <record id="bank_bri_034101000906309" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0341.01.000906.30.9</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_034101000906309"/>
+        </record>
+    
+        <record id="bank_bri_034101000967305" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0341.01.000967.30.5</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_034101000967305"/>
+        </record>
+    
+        <record id="bank_bri_034101001107306" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0341.01.0011.0730.6</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_034101001107306"/>
+        </record>
+    
+        <record id="bank_bri_034101001092307" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0341.01.001092.30.7</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_034101001092307"/>
+        </record>
+    
+        <record id="bank_bri_034101001109308" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0341.01.001109.30.8</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_034101001109308"/>
+        </record>
+    
+        <record id="bank_bri_034101001106300" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0341.01.001106.30.0</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_034101001106300"/>
+        </record>
+    
+        <record id="bank_bri_034101001108302" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0341.01.001108.30.2</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_034101001108302"/>
+        </record>
+    
+        <record id="bank_bri_034101001129308" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0341.01.001129.30.8</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri_034101001129308"/>
+        </record>
+    
+        <record id="bank_bank mizuho_3073630151" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">3073630151</field>   
+            <field name="bank" ref="bank_bank_mizuho"/>
+            <field name="bank_name">BANK MIZUHO</field>
+            <field name="bank_bic">BANK_MIZUHO</field>
+            <field name="journal_id" ref="journal_bank_bank mizuho_3073630151"/>
+        </record>
+    
+        <record id="bank_bca_2213039911" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">2213039911</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_2213039911"/>
+        </record>
+    
+        <record id="bank_bca_2213070959" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">2213070959</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca_2213070959"/>
+        </record>
+    
+        <record id="bank_syariah mandiri_7007054429" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">7007054429</field>   
+            <field name="bank" ref="bank_syariah_mandiri"/>
+            <field name="bank_name">SYARIAH MANDIRI</field>
+            <field name="bank_bic">SYARIAH_MANDIRI</field>
+            <field name="journal_id" ref="journal_bank_syariah mandiri_7007054429"/>
+        </record>
+    
+        <record id="bank_bank of tokyo _665-000769" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">665-000769</field>   
+            <field name="bank" ref="bank_bank_of_tokyo"/>
+            <field name="bank_name">BANK OF TOKYO</field>
+            <field name="bank_bic">BANK_OF_TOKYO</field>
+            <field name="journal_id" ref="journal_bank_bank of tokyo _665-000769"/>
+        </record>
+    
+        <record id="bank_bca df_0840538877" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0840538877</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA DF</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca df_0840538877"/>
+        </record>
+    
+        <record id="bank_bca df_0840759822" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0840759822</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA DF</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca df_0840759822"/>
+        </record>
+    
+        <record id="bank_bca df_0840760022" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0840760022</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA DF</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca df_0840760022"/>
+        </record>
+    
+        <record id="bank_bca df_0840759938" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0840759938</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA DF</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca df_0840759938"/>
+        </record>
+    
+        <record id="bank_bca df_0840759946" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0840759946</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA DF</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca df_0840759946"/>
+        </record>
+    
+        <record id="bank_bca df_0840516369" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0840516369</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA DF</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca df_0840516369"/>
+        </record>
+    
+        <record id="bank_bca df_0410910977" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0410910977</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA DF</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca df_0410910977"/>
+        </record>
+    
+        <record id="bank_bca df_0845156005" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0845156005</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA DF</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca df_0845156005"/>
+        </record>
+    
+        <record id="bank_bca df_0845220269" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0845220269</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA DF</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca df_0845220269"/>
+        </record>
+    
+        <record id="bank_bca df_0262072779" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0262072779</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA DF</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca df_0262072779"/>
+        </record>
+    
+        <record id="bank_bca df_3463258224" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">3463258224</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA DF</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca df_3463258224"/>
+        </record>
+    
+        <record id="bank_bca df_3463258844" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">3463258844</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA DF</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca df_3463258844"/>
+        </record>
+    
+        <record id="bank_bca df_1683476688" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">1683476688</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA DF</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca df_1683476688"/>
+        </record>
+    
+        <record id="bank_bca df_0840667227" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0840667227</field>   
+            <field name="bank" ref="bank_bca"/>
+            <field name="bank_name">BCA DF</field>
+            <field name="bank_bic">BCA</field>
+            <field name="journal_id" ref="journal_bank_bca df_0840667227"/>
+        </record>
+    
+        <record id="bank_bank lampung_3800002055433" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">38.0000.2055.433</field>   
+            <field name="bank" ref="bank_bank_lampung"/>
+            <field name="bank_name">Bank Lampung</field>
+            <field name="bank_bic">BANK_LAMPUNG</field>
+            <field name="journal_id" ref="journal_bank_bank lampung_3800002055433"/>
+        </record>
+    
+        <record id="bank_bank bengkulu_4040107000141" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">4040.107.000.141</field>   
+            <field name="bank" ref="bank_bank_bengkulu"/>
+            <field name="bank_name">BANK BENGKULU</field>
+            <field name="bank_bic">BANK_BENGKULU</field>
+            <field name="journal_id" ref="journal_bank_bank bengkulu_4040107000141"/>
+        </record>
+    
+        <record id="bank_bri out_009801001362303" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0098.01.001362.30.3</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI Out</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri out_009801001362303"/>
+        </record>
+    
+        <record id="bank_bri out_009801001376302" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0098.01.001376.30.2</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI Out</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri out_009801001376302"/>
+        </record>
+    
+        <record id="bank_bri out_009801001372308" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0098.01.001372.30.8</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI Out</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri out_009801001372308"/>
+        </record>
+    
+        <record id="bank_bri out_013101000496305" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0131.01.000496.30.5</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI Out</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri out_013101000496305"/>
+        </record>
+    
+        <record id="bank_bri out_034201000502303" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0342.01.000502.30.3</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI Out</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri out_034201000502303"/>
+        </record>
+    
+        <record id="bank_bri out_006301000874308" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0063.01.000874.30.8</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI Out</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri out_006301000874308"/>
+        </record>
+    
+        <record id="bank_bri out_009801001363309" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0098.01.001363.30.9</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI Out</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri out_009801001363309"/>
+        </record>
+    
+        <record id="bank_bri out_009801001373304" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0098.01.001373.30.4</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI Out</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri out_009801001373304"/>
+        </record>
+    
+        <record id="bank_bri out_0167270024" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0167270024</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI Out</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri out_0167270024"/>
+        </record>
+    
+        <record id="bank_bri out_009801000171302" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0098.01.000171.30.2</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI Out</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri out_009801000171302"/>
+        </record>
+    
+        <record id="bank_bri out_008201001721306" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0082.01.001721.30.6</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI Out</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri out_008201001721306"/>
+        </record>
+    
+        <record id="bank_bri out_009801001464309" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0098.01.001464.30.9</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI Out</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri out_009801001464309"/>
+        </record>
+    
+        <record id="bank_bri out_057001000021304" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0570.01.000021.30.4</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI Out</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri out_057001000021304"/>
+        </record>
+    
+        <record id="bank_bri out_027501001127303" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0275.01.001127.30.3</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI Out</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri out_027501001127303"/>
+        </record>
+    
+        <record id="bank_bri out_009801001466301" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0098.01.001466.30.1</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI Out</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri out_009801001466301"/>
+        </record>
+    
+        <record id="bank_bri out_032401000395300" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0324.01.000395.30.0</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI Out</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri out_032401000395300"/>
+        </record>
+    
+        <record id="bank_bri out_003001017006505" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0030.01.017006.50.5</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI Out</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri out_003001017006505"/>
+        </record>
+    
+        <record id="bank_bri out_009801001680303" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0098.01.001680.30.3</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI Out</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri out_009801001680303"/>
+        </record>
+    
+        <record id="bank_bri out_009801001798300" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0098.01.001798.30.0</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI Out</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri out_009801001798300"/>
+        </record>
+    
+        <record id="bank_bri out_009801001800301" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0098.01.001800.30.1</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI Out</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri out_009801001800301"/>
+        </record>
+    
+        <record id="bank_bri out_019501000576303" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0195.01.000576.30.3</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI Out</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri out_019501000576303"/>
+        </record>
+    
+        <record id="bank_bri out_022301000511302" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0223.01.000511.30.2</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI Out</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri out_022301000511302"/>
+        </record>
+    
+        <record id="bank_bri out_710401000032307" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">7104.01.000032.30.7</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI Out</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri out_710401000032307"/>
+        </record>
+    
+        <record id="bank_bri out_009801001884305" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0098.01.001884.30.5</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI Out</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri out_009801001884305"/>
+        </record>
+    
+        <record id="bank_bri out_009801001851302" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0098.01.001851.30.2</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI Out</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri out_009801001851302"/>
+        </record>
+    
+        <record id="bank_bri out_007901000553307" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0079.01.000553.30.7</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI Out</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri out_007901000553307"/>
+        </record>
+    
+        <record id="bank_bri out_009801001850306" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0098.01.001850.30.6</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI Out</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri out_009801001850306"/>
+        </record>
+    
+        <record id="bank_bri out_009801001932302" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0098.01.001932.30.2</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI Out</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri out_009801001932302"/>
+        </record>
+    
+        <record id="bank_bri out_013001001031308" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0130.01.001031.30.8</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI Out</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri out_013001001031308"/>
+        </record>
+    
+        <record id="bank_bri out_058501000116306" model="res.partner.bank">
+            <field name="state">bank</field>
+            <field name="acc_number">0585.01.000116.30.6</field>   
+            <field name="bank" ref="bank_bri"/>
+            <field name="bank_name">BRI Out</field>
+            <field name="bank_bic">BRI</field>
+            <field name="journal_id" ref="journal_bank_bri out_058501000116306"/>
+        </record>
+
+    </data>
+</openerp>
+            

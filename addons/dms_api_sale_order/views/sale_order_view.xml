@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="view_teds_api_button_sale_order_form" model="ir.ui.view">
+            <field name="name">teds.api.button.sale.order.form</field>
+            <field name="model">teds.api.button</field>
+            <field name="inherit_id" ref="teds_api_configuration.view_teds_api_button_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/header[@name='header_button']" position="inside">
+                    <button name="api_dms_sale_order" type="object" string="Auto Sale Order"/>
+                </xpath>
+            </field>
+        </record>
+
+		<record id="view_api_sale_order_form" model="ir.ui.view">
+            <field name="name">api.sale.order.form</field>
+            <field name="model">dealer.sale.order</field>
+            <field name="inherit_id" ref="dealer_sale_order.sale_order_dealer_form"/>
+            <field name="arch" type="xml">
+                <field name="alamat_kirim" position="after">
+                    <field name="no_buku_tamu" attrs="{'readonly': [('state','!=','draft')]}"/>
+                </field>
+            </field>
+        </record>
+</data>
+</openerp>

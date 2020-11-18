@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    
+<!-- Dealer SPK -->
+		
+        <record id="group_dealer_spk_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Dealer SPK Read</field>
+            <field name="menu_access" eval="[
+            								(4, ref('menu_dealer_spk')),
+            								]"/>
+        </record>
+        
+        <record id="access_dealer_spk_read" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_spk"/>
+            <field name="name">dealer_spk read</field>
+            <field name="group_id" ref="group_dealer_spk_read"/>
+            <field name="perm_read">1</field>
+        </record>
+		
+        <record id="access_dealer_spk_line_read" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_spk_line"/>
+            <field name="name">dealer_spk_line read</field>
+            <field name="group_id" ref="group_dealer_spk_read"/>  
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="group_dealer_spk_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Dealer SPK Update</field>
+            <field name="menu_access" eval="[
+            								(4, ref('menu_dealer_spk')),
+            								]"/>
+			<field name="implied_ids" eval="[(4, ref('group_dealer_spk_read'))]"/>
+        </record>
+        
+        <record id="access_dealer_spk_update" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_spk"/>
+            <field name="name">dealer_spk update</field> 
+            <field name="group_id" ref="group_dealer_spk_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+        
+        <record id="access_dealer_spk_line_update" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_spk_line"/>
+            <field name="name">dealer_spk_line update</field> 
+            <field name="group_id" ref="group_dealer_spk_update"/>  
+            <field name="perm_create">1</field>
+            <field name="perm_write">1</field>
+        </record>
+		
+        <record id="group_dealer_spk_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Dealer SPK Delete</field> 
+            <field name="menu_access" eval="[
+            								(4, ref('menu_dealer_spk')),
+            								]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_dealer_spk_read'))]"/>            	            	
+        </record>
+        
+		<record id="access_dealer_spk_delete" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_spk"/>
+            <field name="name">dealer_spk delete</field>
+            <field name="group_id" ref="group_dealer_spk_delete"/>
+            <field name="perm_unlink">1</field>
+        </record>
+        
+        <record id="access_dealer_spk_line_delete" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_spk_line"/>
+            <field name="name">dealer_spk_line delete</field>
+            <field name="group_id" ref="group_dealer_spk_delete"/>
+            <field name="perm_unlink">1</field>
+        </record>
+        
+        <record id="access_wtc_branch_spk_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_branch.model_wtc_branch"/>
+            <field name="name">wtc_branch read</field>
+            <field name="group_id" ref="group_dealer_spk_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_account_payment_term_spk_read" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_payment_term"/>
+            <field name="name">account_payment_term read</field>
+            <field name="group_id" ref="group_dealer_spk_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+       <record id="access_res_partner_spk_read" model="ir.model.access">
+            <field name="model_id" ref="base.model_res_partner"/>
+            <field name="name">res_partner read</field>
+            <field name="group_id" ref="group_dealer_spk_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+      	<record id="access_res_users_spk_read" model="ir.model.access">
+            <field name="model_id" ref="base.model_res_users"/>
+            <field name="name">res_users read</field>
+            <field name="group_id" ref="group_dealer_spk_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_crm_spk_read" model="ir.model.access">
+            <field name="model_id" ref="sale.model_crm_case_section"/>
+            <field name="name">crm read</field>
+            <field name="group_id" ref="group_dealer_spk_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_wtc_cddb_spk_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_res_partner_cddb.model_wtc_cddb"/>
+            <field name="name">wtc_res_partner_cddb read</field>
+            <field name="group_id" ref="group_dealer_spk_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_dealer_register_spk_read" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_register_spk_line"/>
+            <field name="name">dealer_register_spk read</field>
+            <field name="group_id" ref="group_dealer_spk_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_dealer_sale_order_spk_read" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_sale_order"/>
+            <field name="name">dealer_sale_order read</field>
+            <field name="group_id" ref="group_dealer_spk_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_product_product_spk_read" model="ir.model.access">
+            <field name="model_id" ref="product.model_product_product"/>
+            <field name="name">product_product read</field>
+            <field name="group_id" ref="group_dealer_spk_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+<!-- Dealer Sales Order -->
+		
+        <record id="group_dealer_sale_order_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Dealer Sales Order Read</field>
+            <field name="menu_access" eval="[
+            								(4, ref('menu_dealer_sale_order')),
+            								]"/>
+        </record>
+        
+        <record id="access_dealer_sale_order_read" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_sale_order"/>
+            <field name="name">dealer_sale_order read</field>
+            <field name="group_id" ref="group_dealer_sale_order_read"/>
+            <field name="perm_read">1</field>
+        </record>
+		
+        <record id="access_dealer_sale_order_line_read" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_sale_order_line"/>
+            <field name="name">dealer_sale_order_line read</field>
+            <field name="group_id" ref="group_dealer_sale_order_read"/>  
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_dealer_sale_order_approval_line_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">dealer_sale_order_approval_line read</field>
+            <field name="group_id" ref="group_dealer_sale_order_read"/>  
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_dealer_sale_order_summary_diskon_read" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_sale_order_summary_diskon"/>
+            <field name="name">dealer_sale_order_summary_diskon read</field>
+            <field name="group_id" ref="group_dealer_sale_order_read"/>  
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="group_dealer_sale_order_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Dealer Sales Order Update</field>
+            <field name="menu_access" eval="[
+            								(4, ref('menu_dealer_sale_order')),
+            								]"/>
+			<field name="implied_ids" eval="[(4, ref('group_dealer_sale_order_read'))]"/>
+        </record>
+        
+        <record id="access_dealer_sale_order_update" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_sale_order"/>
+            <field name="name">dealer_sale_order update</field> 
+            <field name="group_id" ref="group_dealer_sale_order_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+        
+        <record id="access_dealer_sale_order_line_update" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_sale_order_line"/>
+            <field name="name">dealer_sale_order_line update</field> 
+            <field name="group_id" ref="group_dealer_sale_order_update"/>  
+            <field name="perm_create">1</field>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_dealer_sale_order_approval_line_update" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">dealer_sale_order_approval_line update</field>
+            <field name="group_id" ref="group_dealer_sale_order_update"/>
+            <field name="perm_create">1</field>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_dealer_sale_order_summary_diskon_update" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_sale_order_summary_diskon"/>
+            <field name="name">dealer_sale_order_summary_diskon update</field>
+            <field name="group_id" ref="group_dealer_sale_order_update"/>  
+            <field name="perm_create">1</field>
+            <field name="perm_write">1</field>
+        </record>
+		
+        <record id="group_dealer_sale_order_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Dealer Sales Order Delete</field> 
+            <field name="menu_access" eval="[
+            								(4, ref('menu_dealer_sale_order')),
+            								]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_dealer_sale_order_read'))]"/>            	            	
+        </record>
+        
+		<record id="access_dealer_sale_order_delete" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_sale_order"/>
+            <field name="name">dealer_sale_order delete</field>
+            <field name="group_id" ref="group_dealer_sale_order_delete"/>
+            <field name="perm_unlink">1</field>
+        </record>
+        
+        <record id="access_dealer_sale_order_line_delete" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_sale_order_line"/>
+            <field name="name">dealer_sale_order_line delete</field>
+            <field name="group_id" ref="group_dealer_sale_order_delete"/>
+            <field name="perm_unlink">1</field>
+        </record>
+        
+        <record id="access_dealer_sale_order_summary_diskon_delete" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_sale_order_summary_diskon"/>
+            <field name="name">dealer_sale_order_summary_diskon delete</field>
+            <field name="group_id" ref="group_dealer_sale_order_delete"/>  
+            <field name="perm_unlink">1</field>
+        </record>
+        
+          <record id="access_res_partner_read" model="ir.model.access">
+            <field name="model_id" ref="base.model_res_partner"/>
+            <field name="name">res_partner read</field>
+            <field name="group_id" ref="group_dealer_sale_order_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+      	<record id="access_res_users_read" model="ir.model.access">
+            <field name="model_id" ref="base.model_res_users"/>
+            <field name="name">res_users read</field>
+            <field name="group_id" ref="group_dealer_sale_order_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_crm_read" model="ir.model.access">
+            <field name="model_id" ref="sale.model_crm_case_section"/>
+            <field name="name">crm read</field>
+            <field name="group_id" ref="group_dealer_sale_order_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_wtc_cddb_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_res_partner_cddb.model_wtc_cddb"/>
+            <field name="name">wtc_res_partner_cddb read</field>
+            <field name="group_id" ref="group_dealer_sale_order_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_wtc_faktur_pajak_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_faktur_pajak.model_wtc_faktur_pajak_out"/>
+            <field name="name">wtc_faktur_pajak read</field>
+            <field name="group_id" ref="group_dealer_sale_order_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_stock_production_lot_read" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">stock_production_lot read</field>
+            <field name="group_id" ref="group_dealer_sale_order_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_product_read" model="ir.model.access">
+            <field name="model_id" ref="product.model_product_product"/>
+            <field name="name">product_product read</field>
+            <field name="group_id" ref="group_dealer_sale_order_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_location_read" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_location"/>
+            <field name="name">stock_location read</field>
+            <field name="group_id" ref="group_dealer_sale_order_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_res_partner_line_read" model="ir.model.access">
+            <field name="model_id" ref="base.model_res_partner"/>
+            <field name="name">res_partner read</field>
+            <field name="group_id" ref="group_dealer_sale_order_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_wtc_city_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_address.model_wtc_city"/>
+            <field name="name">wtc_city read</field>
+            <field name="group_id" ref="group_dealer_sale_order_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_account_tax_read" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_tax"/>
+            <field name="name">account_tax read</field>
+            <field name="group_id" ref="group_dealer_sale_order_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_wtc_hutang_komisi_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_program_subsidi.model_wtc_hutang_komisi"/>
+            <field name="name">wtc_hutang_komisi read</field>
+            <field name="group_id" ref="group_dealer_sale_order_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+         <record id="access_wtc_program_subsidi_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_program_subsidi.model_wtc_program_subsidi"/>
+            <field name="name">wtc_program_subsidi read</field>
+            <field name="group_id" ref="group_dealer_sale_order_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+         <record id="access_wtc_subsidi_barang_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_program_subsidi.model_wtc_subsidi_barang"/>
+            <field name="name">wtc_subsidi_barang read</field>
+            <field name="group_id" ref="group_dealer_sale_order_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+<!-- Dealer Pengembalian SPK -->
+		
+        <record id="group_dealer_pengembalian_spk_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Dealer Pengembalian SPK Read</field>
+            <field name="menu_access" eval="[
+            								(4, ref('menu_dealer_pengembalian_spk')),
+            								]"/>
+        </record>
+        
+        <record id="access_dealer_pengembalian_spk_read" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_pengembalian_spk"/>
+            <field name="name">dealer_pengembalian_spk read</field>
+            <field name="group_id" ref="group_dealer_pengembalian_spk_read"/>
+            <field name="perm_read">1</field>
+        </record>
+		
+        <record id="access_dealer_pengembalian_spk_line_read" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_pengembalian_spk_line"/>
+            <field name="name">dealer_pengembalian_spk_line read</field>
+            <field name="group_id" ref="group_dealer_pengembalian_spk_read"/>  
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="group_dealer_pengembalian_spk_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Dealer Pengembalian SPK Update</field>
+            <field name="menu_access" eval="[
+            								(4, ref('menu_dealer_pengembalian_spk')),
+            								]"/>
+			<field name="implied_ids" eval="[(4, ref('group_dealer_pengembalian_spk_read'))]"/>
+        </record>
+        
+        <record id="access_dealer_pengembalian_spk_update" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_pengembalian_spk"/>
+            <field name="name">dealer_pengembalian_spk update</field> 
+            <field name="group_id" ref="group_dealer_pengembalian_spk_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+        
+        <record id="access_dealer_pengembalian_spk_line_update" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_pengembalian_spk_line"/>
+            <field name="name">dealer_pengembalian_spk_line update</field> 
+            <field name="group_id" ref="group_dealer_pengembalian_spk_update"/>  
+            <field name="perm_create">1</field>
+            <field name="perm_write">1</field>
+        </record>
+		
+        <record id="group_dealer_pengembalian_spk_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Dealer Pengembalian SPK Delete</field> 
+            <field name="menu_access" eval="[
+            								(4, ref('menu_dealer_pengembalian_spk')),
+            								]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_dealer_pengembalian_spk_read'))]"/>            	            	
+        </record>
+        
+		<record id="access_dealer_pengembalian_spk_delete" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_pengembalian_spk"/>
+            <field name="name">dealer_pengembalian_spk delete</field>
+            <field name="group_id" ref="group_dealer_pengembalian_spk_delete"/>
+            <field name="perm_unlink">1</field>
+        </record>
+        
+        <record id="access_dealer_pengembalian_spk_line_delete" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_pengembalian_spk_line"/>
+            <field name="name">dealer_pengembalian_spk_line delete</field>
+            <field name="group_id" ref="group_dealer_pengembalian_spk_delete"/>
+            <field name="perm_unlink">1</field>
+        </record>
+        
+<!-- Report SPK -->	
+	
+        <record id="group_report_spk_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Report SPK Read</field> 
+            <field name="menu_access" eval="[(4, ref('menu_dealer_spk_report'))]"/>  
+        </record> 
+                      
+        <record id="group_report_spk_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Report SPK Update</field> 
+            <field name="menu_access" eval="[(4, ref('menu_dealer_spk_report'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_report_spk_read'))]"/>            	            	
+        </record>
+
+    	
+<!-- Report Sale Order -->	
+	
+        <record id="group_report_sale_order_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Report Sale Order Read</field> 
+            <field name="menu_access" eval="[(4, ref('menu_dealer_sale_order_wizard_report'))]"/>  
+        </record> 
+        
+        <record id="access_report_sale_order_read" model="ir.model.access">
+            <field name="model_id" ref="model_report_dealer_sale_order_wizard"/>
+            <field name="name">report_sale_order read</field> 
+            <field name="group_id" ref="group_report_sale_order_read"/>  
+            <field name="perm_read">1</field> 
+        </record>    
+
+        <record id="access_report_sale_order_branch_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_branch.model_wtc_branch"/>
+            <field name="name">report_sale_order_wtc_branch read</field> 
+            <field name="group_id" ref="group_report_sale_order_read"/>  
+            <field name="perm_read">1</field> 
+        </record>    
+                        
+        <record id="group_report_sale_order_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Report Sale Order Update</field> 
+            <field name="menu_access" eval="[(4, ref('menu_dealer_sale_order_wizard_report'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_report_sale_order_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_report_sale_order_update" model="ir.model.access">
+            <field name="model_id" ref="model_report_dealer_sale_order_wizard"/>
+            <field name="name">report_sale_order update</field> 
+            <field name="group_id" ref="group_report_sale_order_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record> 
+        
+        <record id="access_report_sale_order_branch_update" model="ir.model.access">
+            <field name="model_id" ref="wtc_branch.model_wtc_branch"/>
+            <field name="name">report_sale_order_wtc_branch update</field> 
+            <field name="group_id" ref="group_report_sale_order_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>         
+        
+<!-- Generate Register SPK -->	
+	
+        <record id="group_generate_register_spk_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Generate Register SPK Read</field> 
+            <field name="menu_access" eval="[(4, ref('menu_dealer_register_spk')),
+            								 (4, ref('menu_dealer_generate_spk'))]"/>  
+        </record> 
+        
+        <record id="access_generate_register_spk_read" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_register_spk"/>
+            <field name="name">generate_register_spk read</field> 
+            <field name="group_id" ref="group_generate_register_spk_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+
+        <record id="access_generate_register_spk_out_read" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_register_spk_line"/>
+            <field name="name">generate_register_spk_out read</field> 
+            <field name="group_id" ref="group_generate_register_spk_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+                        
+        <record id="group_generate_register_spk_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Generate Register SPK Update</field> 
+            <field name="menu_access" eval="[(4, ref('menu_dealer_register_spk')),
+            								 (4, ref('menu_dealer_generate_spk'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_generate_register_spk_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_generate_register_spk_update" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_register_spk"/>
+            <field name="name">generate_register_spk update</field> 
+            <field name="group_id" ref="group_generate_register_spk_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+
+        <record id="access_generate_register_spk_out_update" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_register_spk_line"/>
+            <field name="name">generate_register_spk_out update</field> 
+            <field name="group_id" ref="group_generate_register_spk_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>                  
+
+        <record id="group_generate_register_spk_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Generate Register SPK Delete</field> 
+            <field name="menu_access" eval="[(4, ref('menu_dealer_register_spk')),
+            								 (4, ref('menu_dealer_generate_spk'))]"/>    
+			<field name="implied_ids" eval="[(4, ref('group_generate_register_spk_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_generate_register_spk_delete" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_register_spk"/>
+            <field name="name">generate_register_spk delete</field> 
+            <field name="group_id" ref="group_generate_register_spk_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>        
+	
+        <record id="access_generate_register_spk_out_delete" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_register_spk_line"/>
+            <field name="name">generate_register_spk_out delete</field> 
+            <field name="group_id" ref="group_generate_register_spk_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record> 
+
+<!-- Dealer Register SPK -->	
+	
+        <record id="group_dealer_register_spk_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Dealer Register SPK Read</field> 
+            <field name="menu_access" eval="[(4, ref('menu_dealer_register_spk'))]"/>  
+        </record> 
+
+        <record id="access_dealer_register_spk_out_read" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_register_spk_line"/>
+            <field name="name">dealer_register_spk_out read</field> 
+            <field name="group_id" ref="group_dealer_register_spk_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+                        
+        <record id="group_dealer_register_spk_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Dealer Register SPK Update</field> 
+            <field name="menu_access" eval="[(4, ref('menu_dealer_register_spk'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_dealer_register_spk_read'))]"/>            	            	
+        </record>     
+
+        <record id="access_dealer_register_spk_out_update" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_register_spk_line"/>
+            <field name="name">dealer_register_spk_out update</field> 
+            <field name="group_id" ref="group_dealer_register_spk_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>                  
+
+        <record id="group_dealer_register_spk_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Dealer Register SPK Delete</field> 
+            <field name="menu_access" eval="[(4, ref('menu_dealer_register_spk'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_dealer_register_spk_read'))]"/>            	            	
+        </record>   
+	
+        <record id="access_dealer_register_spk_out_delete" model="ir.model.access">
+            <field name="model_id" ref="model_dealer_register_spk_line"/>
+            <field name="name">dealer_register_spk_out delete</field> 
+            <field name="group_id" ref="group_dealer_register_spk_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>   
+        
+<!-- Dealer Distribusi SPK -->	
+	
+        <record id="group_dealer_distribusi_spk_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Dealer Distribusi SPK Read</field> 
+            <field name="menu_access" eval="[(4, ref('menu_dealer_distribusi_spk'))]"/>  
+        </record> 
+                     
+        <record id="group_dealer_distribusi_spk_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Dealer Distribusi SPK Update</field> 
+            <field name="menu_access" eval="[(4, ref('menu_dealer_distribusi_spk'))]"/>    
+			<field name="implied_ids" eval="[(4, ref('group_dealer_distribusi_spk_read'))]"/>            	            	
+        </record>
+
+<!-- Customer Invoice -->	
+	
+        <record id="group_customer_invoice_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Customer Invoice Read</field> 
+            <field name="menu_access" eval="[(4, ref('menu_action_invoice_tree1_1')),
+            								(4, ref('menu_action_invoice_tree1_2'))]"/>  
+        </record> 
+        
+        <record id="access_customer_invoice_read" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice"/>
+            <field name="name">customer_invoice read</field> 
+            <field name="group_id" ref="group_customer_invoice_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+
+        <record id="access_customer_invoice_read_tax" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice_tax"/>
+            <field name="name">customer_invoice_tax read</field> 
+            <field name="group_id" ref="group_customer_invoice_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+                
+        <record id="access_customer_invoice_line_read" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice_line"/>
+            <field name="name">customer_invoice_line read</field> 
+            <field name="group_id" ref="group_customer_invoice_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+
+        <record id="access_customer_invoice_move_line_read" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move_line"/>
+            <field name="name">customer_invoice_move_line read</field> 
+            <field name="group_id" ref="group_customer_invoice_read"/>  
+            <field name="perm_read">1</field> 
+        </record>
+                                
+        <record id="group_customer_invoice_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Customer Invoice Update</field> 
+            <field name="menu_access" eval="[(4, ref('menu_action_invoice_tree1_1')),
+            								(4, ref('menu_action_invoice_tree1_2'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_customer_invoice_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_customer_invoice_update" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice"/>
+            <field name="name">customer_invoice update</field> 
+            <field name="group_id" ref="group_customer_invoice_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+        
+        <record id="access_customer_invoice_line_update" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice_line"/>
+            <field name="name">customer_invoice_line update</field> 
+            <field name="group_id" ref="group_customer_invoice_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>                   
+
+        <record id="access_customer_invoice_approval_line_update" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move_line"/>
+            <field name="name">customer_invoice_move_line update</field> 
+            <field name="group_id" ref="group_customer_invoice_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record> 
+        
+        <record id="group_customer_invoice_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Customer Invoice Delete</field> 
+            <field name="menu_access" eval="[(4, ref('menu_action_invoice_tree1_1')),
+            								(4, ref('menu_action_invoice_tree1_2'))]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_customer_invoice_read'))]"/>            	            	
+        </record>
+                        
+        <record id="access_customer_invoice_delete" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice"/>
+            <field name="name">customer_invoice delete</field> 
+            <field name="group_id" ref="group_customer_invoice_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>      
+        
+        <record id="access_customer_invoice_line_delete" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice_line"/>
+            <field name="name">customer_invoice_line delete</field> 
+            <field name="group_id" ref="group_customer_invoice_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record> 
+        	
+<!-- Sales Team-->
+		
+        <record id="group_sales_team_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Sales Team Read</field>
+            <field name="menu_access" eval="[
+            								(4, ref('menu_master_sales_team')),
+            								]"/>
+        </record>
+        
+        <record id="access_sales_team_read" model="ir.model.access">
+            <field name="model_id" ref="sales_team.model_crm_case_section"/>
+            <field name="name">sales_team read</field>
+            <field name="group_id" ref="group_sales_team_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_sales_team_read_invoice_report" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice_report"/>
+            <field name="name">sales_team_invoice_report read</field>
+            <field name="group_id" ref="group_sales_team_read"/>
+            <field name="perm_read">1</field>
+        </record>
+                
+        <record id="access_sales_team_read_sale_order" model="ir.model.access">
+            <field name="model_id" ref="sale.model_sale_order"/>
+            <field name="name">sales_team_sale_order read</field>
+            <field name="group_id" ref="group_sales_team_read"/>
+            <field name="perm_read">1</field>
+        </record>
+                
+        <record id="access_sales_team_read_dealer_sale_order" model="ir.model.access">
+            <field name="model_id" ref="dealer_sale_order.model_dealer_sale_order"/>
+            <field name="name">sales_team_dealer_sale_order read</field>
+            <field name="group_id" ref="group_sales_team_read"/>
+            <field name="perm_read">1</field>
+        </record>
+                
+        <record id="group_sales_team_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Sales Team Update</field>
+            <field name="menu_access" eval="[
+            								(4, ref('menu_master_sales_team')),
+            								]"/>
+			<field name="implied_ids" eval="[(4, ref('group_sales_team_read'))]"/>
+        </record>
+        
+        <record id="access_sales_team_update" model="ir.model.access">
+            <field name="model_id" ref="sales_team.model_crm_case_section"/>
+            <field name="name">sales_team update</field> 
+            <field name="group_id" ref="group_sales_team_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+
+        <record id="group_sales_team_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Sales Team Delete</field> 
+            <field name="menu_access" eval="[
+            								(4, ref('menu_master_sales_team')),
+            								]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_sales_team_read'))]"/>            	            	
+        </record>
+        
+		<record id="access_sales_team_delete" model="ir.model.access">
+            <field name="model_id" ref="sales_team.model_crm_case_section"/>
+            <field name="name">sales_team delete</field>
+            <field name="group_id" ref="group_sales_team_delete"/>
+            <field name="perm_unlink">1</field>
+        </record>
+    
+        <record id="access_approval_portal_sale_order_read" model="ir.model.access">
+            <field name="model_id" ref="dealer_sale_order.model_dealer_sale_order"/>
+            <field name="name">approval_portal_dealer_sale_order read</field> 
+            <field name="group_id" ref="wtc_approval.group_approval_portal_read"/>  
+            <field name="perm_read">1</field> 
+        </record>
+                
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[(4,ref('group_report_spk_read')),
+											(4,ref('group_report_spk_update')),
+											(4,ref('group_report_sale_order_read')),
+											(4,ref('group_report_sale_order_update')),
+											(4,ref('group_generate_register_spk_read')),
+											(4,ref('group_generate_register_spk_update')),
+											(4,ref('group_generate_register_spk_delete')),
+											(4,ref('group_dealer_register_spk_read')),
+											(4,ref('group_dealer_register_spk_update')),
+											(4,ref('group_dealer_register_spk_delete')),
+											(4,ref('group_dealer_distribusi_spk_read')),
+											(4,ref('group_dealer_distribusi_spk_update')),
+											(4,ref('group_dealer_distribusi_spk_delete')),			
+											(4,ref('group_dealer_spk_read')),
+											(4,ref('group_dealer_spk_update')),
+											(4,ref('group_dealer_spk_delete')),
+											(4,ref('group_dealer_sale_order_read')),
+											(4,ref('group_dealer_sale_order_update')),
+											(4,ref('group_dealer_sale_order_delete')),
+											(4,ref('group_dealer_pengembalian_spk_read')),
+											(4,ref('group_dealer_pengembalian_spk_update')),
+											(4,ref('group_dealer_pengembalian_spk_delete')),
+											(4,ref('group_customer_invoice_read')),
+											(4,ref('group_customer_invoice_update')),
+											(4,ref('group_customer_invoice_delete')),
+											(4,ref('group_sales_team_read')),
+											(4,ref('group_sales_team_update')),
+											(4,ref('group_sales_team_delete')),			
+			]"/>            	            	
+		</record>             
+    </data>
+</openerp>

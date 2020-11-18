@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    
+<!-- Pettycash Out RFA  -->
+		
+        <record id="group_wtc_pettycash_rfa" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Pettycash Out RFA</field>
+            <field name="implied_ids" eval="[(4, ref('group_wtc_pettycash_out_read'))]"/>
+        </record>     
+        
+        <record id="access_wtc_pettycash_out_rfa" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">wtc_pettycash_out_rfa_approval_line read</field>
+            <field name="group_id" ref="group_wtc_pettycash_rfa"/>
+            <field name="perm_create">1</field>
+        </record>
+               
+        <record id="access_wtc_pettycash_out_rfa_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_pettycash"/>
+            <field name="name">wtc_pettycash_out_rfa write</field>
+            <field name="group_id" ref="group_wtc_pettycash_rfa"/>
+            <field name="perm_write">1</field>
+        </record>
+                
+<!-- Pettycash Out Cancel Approval -->
+		
+        <record id="group_wtc_pettycash_out_cancel_approval" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Pettycash Out Cancel Approval</field>
+            <field name="implied_ids" eval="[(4, ref('group_wtc_pettycash_out_read'))]"/>
+        </record>
+          
+        <record id="access_wtc_pettycash_out_cancel_approval_write" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">wtc_pettycash_out_cancel_approval_line write</field>
+            <field name="group_id" ref="group_wtc_pettycash_out_cancel_approval"/>
+            <field name="perm_write">1</field>
+        </record>
+                
+        <record id="access_wtc_pettycash_out_cancel_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_pettycash"/>
+            <field name="name">wtc_pettycash_out_cancel write</field>
+            <field name="group_id" ref="group_wtc_pettycash_out_cancel_approval"/>
+            <field name="perm_write">1</field>
+        </record>   
+        
+<!-- Pettycash Out Approve -->
+		
+        <record id="group_wtc_pettycash_out_approve_approval" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Pettycash Out Approve Approval</field>
+            <field name="implied_ids" eval="[(4, ref('group_wtc_pettycash_out_read'))]"/>
+        </record>
+          
+        <record id="access_wtc_pettycash_out_approve_approval_write" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">wtc_pettycash_out_approve_approval_line write</field>
+            <field name="group_id" ref="group_wtc_pettycash_out_approve_approval"/>
+            <field name="perm_write">1</field>
+        </record>
+                
+        <record id="access_wtc_pettycash_out_approve_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_pettycash"/>
+            <field name="name">wtc_pettycash_out_approve write</field>
+            <field name="group_id" ref="group_wtc_pettycash_out_approve_approval"/>
+            <field name="perm_write">1</field>
+        </record>       
+        
+        <record id="access_wtc_pettycash_out_approve_account_move" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move"/>
+            <field name="name">wtc_pettycash_out_approve_account_move update</field> 
+            <field name="group_id" ref="group_wtc_pettycash_out_approve_approval"/>  
+            <field name="perm_create">1</field> 
+        </record> 
+          
+        <record id="access_wtc_pettycash_out_approve_account_move_line" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move_line"/>
+            <field name="name">wtc_pettycash_out_approve_account_move_line update</field> 
+            <field name="group_id" ref="group_wtc_pettycash_out_approve_approval"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field>
+        </record>     
+        
+        <record id="access_wtc_pettycash_out_line_approve" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_pettycash_line"/>
+            <field name="name">wtc_pettycash_out_approve write</field> 
+            <field name="group_id" ref="group_wtc_pettycash_out_approve_approval"/>  
+            <field name="perm_write">1</field> 
+        </record>    
+        
+        <record id="access_wtc_pettycash_out_line_account_journal_period" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_journal_period"/>
+            <field name="name">wtc_pettycash_out_account_journal_period write</field> 
+            <field name="group_id" ref="group_wtc_pettycash_out_approve_approval"/>  
+            <field name="perm_read">1</field> 
+            <field name="perm_create">1</field> 
+        </record>
+                
+<!-- Pettycash In Post -->
+		
+        <record id="group_wtc_pettycash_in_post" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Pettycash In Post</field>
+            <field name="implied_ids" eval="[(4, ref('group_wtc_pettycash_in_read'))]"/>
+        </record>
+                
+        <record id="access_wtc_pettycash_in_post_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_pettycash_in"/>
+            <field name="name">wtc_pettycash_in_post write</field>
+            <field name="group_id" ref="group_wtc_pettycash_in_post"/>
+            <field name="perm_write">1</field>
+        </record>       
+        
+        <record id="access_wtc_pettycash_in_post_account_move" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move"/>
+            <field name="name">wtc_pettycash_in_post_account_move update</field> 
+            <field name="group_id" ref="group_wtc_pettycash_in_post"/>  
+            <field name="perm_create">1</field> 
+        </record> 
+          
+        <record id="access_wtc_pettycash_in_post_account_move_line" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move_line"/>
+            <field name="name">wtc_pettycash_in_post_account_move_line update</field> 
+            <field name="group_id" ref="group_wtc_pettycash_in_post"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field>
+        </record>     
+        
+        <record id="access_wtc_pettycash_in_line_post" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_pettycash_in_line"/>
+            <field name="name">wtc_pettycash_in_line_post write</field> 
+            <field name="group_id" ref="group_wtc_pettycash_in_post"/>  
+            <field name="perm_write">1</field> 
+        </record>    
+                
+<!-- Reimbursed Pettycash Request-->
+		
+        <record id="group_wtc_reimbursed_request" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Reimbursed Petty Cash Request</field>
+            <field name="implied_ids" eval="[(4, ref('group_wtc_reimbursed_read'))]"/>
+        </record>
+                
+        <record id="access_wtc_reimbursed_request" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_reimbursed"/>
+            <field name="name">wtc_reimbursed_request write</field> 
+            <field name="group_id" ref="group_wtc_reimbursed_request"/>  
+            <field name="perm_write">1</field> 
+        </record> 
+              
+        <record id="access_wtc_reimbursed_request_pettycash" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_pettycash"/>
+            <field name="name">wtc_reimbursed_request_pettycash write</field> 
+            <field name="group_id" ref="group_wtc_reimbursed_request"/>  
+            <field name="perm_write">1</field> 
+        </record>        
+        
+<!-- Reimbursed Pettycash Approve-->
+        
+        <record id="group_wtc_reimbursed_approve" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Reimbursed Petty Cash Approve</field>
+            <field name="implied_ids" eval="[(4, ref('group_wtc_reimbursed_read'))]"/>
+        </record>
+                
+        <record id="access_wtc_reimbursed_approve" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_reimbursed"/>
+            <field name="name">wtc_reimbursed_approve write</field> 
+            <field name="group_id" ref="group_wtc_reimbursed_approve"/>  
+            <field name="perm_write">1</field> 
+        </record> 
+
+<!-- Reimbursed Pettycash Sent to Draft-->
+		
+        <record id="group_wtc_reimbursed_sent_to_draft" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Reimbursed Petty Cash Sent to Draft</field>
+            <field name="implied_ids" eval="[(4, ref('group_wtc_reimbursed_read'))]"/>
+        </record>
+                
+        <record id="access_wtc_reimbursed_sent_to_draft" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_reimbursed"/>
+            <field name="name">wtc_reimbursed_sent_to_draft write</field> 
+            <field name="group_id" ref="group_wtc_reimbursed_sent_to_draft"/>  
+            <field name="perm_write">1</field> 
+        </record> 
+                  
+<!-- Reimbursed Pettycash Cancel-->
+		
+        <record id="group_wtc_reimbursed_cancel" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Reimbursed Petty Cash Cancel</field>
+            <field name="implied_ids" eval="[(4, ref('group_wtc_reimbursed_read'))]"/>
+        </record>
+                
+        <record id="access_wtc_reimbursed_cancel" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_reimbursed"/>
+            <field name="name">wtc_reimbursed_cancel write</field> 
+            <field name="group_id" ref="group_wtc_reimbursed_cancel"/>  
+            <field name="perm_write">1</field> 
+        </record> 
+                
+        <record id="access_wtc_reimbursed_cancel_pettycash" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_pettycash"/>
+            <field name="name">wtc_reimbursed_cancel_pettycash write</field> 
+            <field name="group_id" ref="group_wtc_reimbursed_cancel"/>  
+            <field name="perm_write">1</field> 
+        </record>
+                
+<!-- Reimbursed Pettycash Cancel-->
+		
+        <record id="group_wtc_reimbursed_reject" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Reimbursed Petty Cash Reject</field>
+            <field name="implied_ids" eval="[(4, ref('group_wtc_reimbursed_read'))]"/>
+        </record>
+                
+        <record id="access_wtc_reimbursed_reject" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_reimbursed"/>
+            <field name="name">wtc_reimbursed_reject write</field> 
+            <field name="group_id" ref="group_wtc_reimbursed_reject"/>  
+            <field name="perm_write">1</field> 
+        </record> 
+                
+        <record id="access_wtc_reimbursed_reject_pettycash" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_pettycash"/>
+            <field name="name">wtc_reimbursed_reject_pettycash write</field> 
+            <field name="group_id" ref="group_wtc_reimbursed_reject"/>  
+            <field name="perm_write">1</field> 
+        </record>
+                
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[(4,ref('group_wtc_pettycash_rfa')),
+											(4,ref('group_wtc_pettycash_out_cancel_approval')),
+											(4,ref('group_wtc_pettycash_out_approve_approval')),
+											(4,ref('group_wtc_pettycash_in_post')),
+											(4,ref('group_wtc_reimbursed_request')),
+											(4,ref('group_wtc_reimbursed_approve')),
+											(4,ref('group_wtc_reimbursed_cancel')),
+											(4,ref('group_wtc_reimbursed_reject')),
+											 ]"/> 
+		</record>                           
+    </data>
+</openerp>

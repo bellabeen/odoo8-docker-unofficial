@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    
+        <record id="sequnce_journal_pettycash_dsr" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DSR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DSR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_djj" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DJJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DJJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_djb" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DJB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DJB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_djs" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DJS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DJS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_djm" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DJM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DJM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dju" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DJU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DJU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dsm" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DSM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DSM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dsg" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DSG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DSG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dsb" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DSB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DSB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dsp" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DSP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DSP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dsk" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DSK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DSK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dup" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DUP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DUP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_duk" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DUK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DUK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dle" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DLE</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DLE/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dlp" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DLP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DLP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dlm" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DLM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DLM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dlh" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DLH</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DLH/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dlx" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DLX</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DLX/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dll" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DLL</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DLL/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dld" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DLD</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DLD/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dlf" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DLF</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DLF/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dlv" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DLV</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DLV/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dlq" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DLQ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DLQ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dlc" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DLC</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DLC/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dly" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DLY</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DLY/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dlw" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DLW</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DLW/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dlu" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DLU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DLU/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dlt" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DLT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DLT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dls" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DLS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DLS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dlo" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DLO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DLO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dln" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DLN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DLN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dlk" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DLK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DLK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dlj" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DLJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DLJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dli" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DLI</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DLI/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dlg" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DLG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DLG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dlb" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DLB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DLB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dla" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DLA</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DLA/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dlr" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DLR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DLR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_hho" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash HHO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/HHO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_mml" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash MML</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/MML/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dbl" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DBL</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DBL/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dbk" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DBK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DBK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dbb" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DBB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DBB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dbs" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DBS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DBS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dbt" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DBT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DBT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dds" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DDS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DDS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_ddc" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DDC</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DDC/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_ddb" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DDB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DDB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dda" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DDA</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DDA/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_ddd" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DDD</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DDD/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dde" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DDE</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DDE/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_ddg" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DDG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DDG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_ddm" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DDM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DDM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_ddj" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DDJ</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DDJ/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_ddt" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DDT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DDT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_ddi" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DDI</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DDI/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dxk" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DXK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DXK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dxt" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DXT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DXT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dxs" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DXS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DXS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dxg" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DXG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DXG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dxb" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DXB</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DXB/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dxn" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DXN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DXN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dwt" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DWT</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DWT/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dwr" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DWR</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DWR/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dwp" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DWP</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DWP/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dwo" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DWO</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DWO/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dwk" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DWK</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DWK/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dws" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DWS</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DWS/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dwg" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DWG</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DWG/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dwm" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DWM</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DWM/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_dwn" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DWN</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DWN/%(y)s/%(month)s/</field> 
+        </record>
+    
+        <record id="sequnce_journal_pettycash_ddu" model="ir.sequence">
+            <field name="active">TRUE</field>
+            <field name="implementation">no_gap</field>   
+            <field name="name">Journal Petty Cash DDU</field>  
+            <field name="number_next">1</field> 
+            <field name="number_next_actual">1</field> 
+            <field name="padding">5</field> 
+            <field name="prefix">PC/DDU/%(y)s/%(month)s/</field> 
+        </record>
+
+    </data>
+</openerp>
+            

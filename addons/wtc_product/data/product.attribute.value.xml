@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    	
+    	<record id="attribute_value_00" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">00</field>
+            <field name="name">00-DUMMY</field>
+        </record>
+    
+        <record id="attribute_value_91" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">91</field>
+            <field name="name">91-CREAM NO STRIPE</field>
+        </record>
+    
+        <record id="attribute_value_92" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">92</field>
+            <field name="name">92-BS EMULATOR</field>
+        </record>
+    
+        <record id="attribute_value_93" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">93</field>
+            <field name="name">93-ORANGE NO STRP</field>
+        </record>
+    
+        <record id="attribute_value_95" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">95</field>
+            <field name="name">95-PUTIH NO STRIPE</field>
+        </record>
+    
+        <record id="attribute_value_96" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">96</field>
+            <field name="name">96-BLUE NO STRIPE</field>
+        </record>
+    
+        <record id="attribute_value_98" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">98</field>
+            <field name="name">98-RED NO STRIPE</field>
+        </record>
+    
+        <record id="attribute_value_99" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">99</field>
+            <field name="name">99-BLACK NO STRIPE</field>
+        </record>
+    
+        <record id="attribute_value_ac" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">AC</field>
+            <field name="name">AC-ABU-ABU COKLAT</field>
+        </record>
+    
+        <record id="attribute_value_ag" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">AG</field>
+            <field name="name">AG-ARMY GREEN</field>
+        </record>
+    
+        <record id="attribute_value_ah" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">AH</field>
+            <field name="name">AH-ABU2 HITAM</field>
+        </record>
+    
+        <record id="attribute_value_am" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">AM</field>
+            <field name="name">AM-ABUABU-HITAM RD</field>
+        </record>
+    
+        <record id="attribute_value_ar" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">AR</field>
+            <field name="name">AR-ABU-ABU MERAH</field>
+        </record>
+    
+        <record id="attribute_value_as" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">AS</field>
+            <field name="name">AS-ABU ABU SILVER</field>
+        </record>
+    
+        <record id="attribute_value_bb" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">BB</field>
+            <field name="name">BB-BLACK BLUE</field>
+        </record>
+    
+        <record id="attribute_value_bc" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">BC</field>
+            <field name="name">BC-BIRU-KREM</field>
+        </record>
+    
+        <record id="attribute_value_be" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">BE</field>
+            <field name="name">BE-BLACK GREY</field>
+        </record>
+    
+        <record id="attribute_value_bg" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">BG</field>
+            <field name="name">BG-BLACK GREEN</field>
+        </record>
+    
+        <record id="attribute_value_bh" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">BH</field>
+            <field name="name">BH-BIRU HITAM</field>
+        </record>
+    
+        <record id="attribute_value_bk" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">BK</field>
+            <field name="name">BK-BLACK</field>
+        </record>
+    
+        <record id="attribute_value_bl" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">BL</field>
+            <field name="name">BL-BLUE</field>
+        </record>
+    
+        <record id="attribute_value_bm" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">BM</field>
+            <field name="name">BM-BIRU MERAH</field>
+        </record>
+    
+        <record id="attribute_value_bo" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">BO</field>
+            <field name="name">BO-BLACK ORANGE</field>
+        </record>
+    
+        <record id="attribute_value_bp" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">BP</field>
+            <field name="name">BP-BIRU PUTIH</field>
+        </record>
+    
+        <record id="attribute_value_bq" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">BQ</field>
+            <field name="name">BQ-BLUE</field>
+        </record>
+    
+        <record id="attribute_value_br" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">BR</field>
+            <field name="name">BR-BLACK RED</field>
+        </record>
+    
+        <record id="attribute_value_bs" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">BS</field>
+            <field name="name">BS-BLACK SILVER</field>
+        </record>
+    
+        <record id="attribute_value_bt" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">BT</field>
+            <field name="name">BT-BLUE TELKOM</field>
+        </record>
+    
+        <record id="attribute_value_bv" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">BV</field>
+            <field name="name">BV-BLACK VIOLET</field>
+        </record>
+    
+        <record id="attribute_value_bw" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">BW</field>
+            <field name="name">BW-BROWN</field>
+        </record>
+    
+        <record id="attribute_value_bx" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">BX</field>
+            <field name="name">BX-BLUE SILVER</field>
+        </record>
+    
+        <record id="attribute_value_by" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">BY</field>
+            <field name="name">BY-BLACK YELLOW</field>
+        </record>
+    
+        <record id="attribute_value_bz" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">BZ</field>
+            <field name="name">BZ-BIRU - SILVER</field>
+        </record>
+    
+        <record id="attribute_value_ch" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">CH</field>
+            <field name="name">CH-COKLAT HITAM</field>
+        </record>
+    
+        <record id="attribute_value_cp" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">CP</field>
+            <field name="name">CP-CHROME PLATING</field>
+        </record>
+    
+        <record id="attribute_value_cr" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">CR</field>
+            <field name="name">CR-CREAM</field>
+        </record>
+    
+        <record id="attribute_value_cs" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">CS</field>
+            <field name="name">CS-COKLAT - SILVER</field>
+        </record>
+    
+        <record id="attribute_value_dk" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">DK</field>
+            <field name="name">DK-DARK KNIGHT</field>
+        </record>
+    
+        <record id="attribute_value_gd" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">GD</field>
+            <field name="name">GD-GOLD</field>
+        </record>
+    
+        <record id="attribute_value_gh" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">GH</field>
+            <field name="name">GH-HIJAU HITAM</field>
+        </record>
+    
+        <record id="attribute_value_gr" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">GR</field>
+            <field name="name">GR-GREY</field>
+        </record>
+    
+        <record id="attribute_value_gs" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">GS</field>
+            <field name="name">GS-GREY SILVER</field>
+        </record>
+    
+        <record id="attribute_value_ha" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">HA</field>
+            <field name="name">HA-HITAM-ABU ABU</field>
+        </record>
+    
+        <record id="attribute_value_hb" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">HB</field>
+            <field name="name">HB-HITAM BIRU</field>
+        </record>
+    
+        <record id="attribute_value_hc" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">HC</field>
+            <field name="name">HC-HITAM-PUTIHBIRU</field>
+        </record>
+    
+        <record id="attribute_value_hd" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">HD</field>
+            <field name="name">HD-HITAM-PUTIHPINK</field>
+        </record>
+    
+        <record id="attribute_value_he" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">HE</field>
+            <field name="name">HE-HITAM-PINK</field>
+        </record>
+    
+        <record id="attribute_value_hf" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">HF</field>
+            <field name="name">HF-HITAM - COKLAT</field>
+        </record>
+    
+        <record id="attribute_value_hg" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">HG</field>
+            <field name="name">HG-HITAM PUTIH RD</field>
+        </record>
+    
+        <record id="attribute_value_hh" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">HH</field>
+            <field name="name">HH-HITAM-HIJAU</field>
+        </record>
+    
+        <record id="attribute_value_hj" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">HJ</field>
+            <field name="name">HJ-HITAM MERAH SV</field>
+        </record>
+    
+        <record id="attribute_value_hk" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">HK</field>
+            <field name="name">HK-HITAM - KUNING</field>
+        </record>
+    
+        <record id="attribute_value_hl" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">HL</field>
+            <field name="name">HL-HITAM KUNING SV</field>
+        </record>
+    
+        <record id="attribute_value_hm" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">HM</field>
+            <field name="name">HM-HITAM MERAH</field>
+        </record>
+    
+        <record id="attribute_value_ho" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">HO</field>
+            <field name="name">HO-HITAM ORANGE</field>
+        </record>
+    
+        <record id="attribute_value_hp" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">HP</field>
+            <field name="name">HP-HITAM PUTIH</field>
+        </record>
+    
+        <record id="attribute_value_hr" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">HR</field>
+            <field name="name">HR-HITAM - BIRU OR</field>
+        </record>
+    
+        <record id="attribute_value_hs" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">HS</field>
+            <field name="name">HS-HITAM SILVER</field>
+        </record>
+    
+        <record id="attribute_value_ht" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">HT</field>
+            <field name="name">HT-HIJAU PUTIH</field>
+        </record>
+    
+        <record id="attribute_value_hu" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">HU</field>
+            <field name="name">HU-HITAM - BIRU PU</field>
+        </record>
+    
+        <record id="attribute_value_hw" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">HW</field>
+            <field name="name">HW-HITAM-BEIGE</field>
+        </record>
+    
+        <record id="attribute_value_hy" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">HY</field>
+            <field name="name">HY-HITAM-SILVER YL</field>
+        </record>
+    
+        <record id="attribute_value_hz" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">HZ</field>
+            <field name="name">HZ-HITAM-SILVER BL</field>
+        </record>
+    
+        <record id="attribute_value_kc" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">KC</field>
+            <field name="name">KC-KREM-COKLAT</field>
+        </record>
+    
+        <record id="attribute_value_kh" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">KH</field>
+            <field name="name">KH-KUNING HITAM</field>
+        </record>
+    
+        <record id="attribute_value_ks" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">KS</field>
+            <field name="name">KS-KUNING SILVER</field>
+        </record>
+    
+        <record id="attribute_value_ls" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">LS</field>
+            <field name="name">LS-BIRU SILVER</field>
+        </record>
+    
+        <record id="attribute_value_ma" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">MA</field>
+            <field name="name">MA-MERAH ABU-ABU</field>
+        </record>
+    
+        <record id="attribute_value_mh" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">MH</field>
+            <field name="name">MH-MERAH HITAM</field>
+        </record>
+    
+        <record id="attribute_value_mk" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">MK</field>
+            <field name="name">MK-MERAH-KREM</field>
+        </record>
+    
+        <record id="attribute_value_mp" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">MP</field>
+            <field name="name">MP-MERAH PUTIH</field>
+        </record>
+    
+        <record id="attribute_value_ms" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">MS</field>
+            <field name="name">MS-MERAH SILVER</field>
+        </record>
+    
+        <record id="attribute_value_nk" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">NK</field>
+            <field name="name">NK-PINK</field>
+        </record>
+    
+        <record id="attribute_value_ob" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">OB</field>
+            <field name="name">OB-ORANGE BIRU</field>
+        </record>
+    
+        <record id="attribute_value_oh" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">OH</field>
+            <field name="name">OH-ORANGE HITAM</field>
+        </record>
+    
+        <record id="attribute_value_op" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">OP</field>
+            <field name="name">OP-ORANGE PUTIH</field>
+        </record>
+    
+        <record id="attribute_value_or" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">OR</field>
+            <field name="name">OR-ORANGE</field>
+        </record>
+    
+        <record id="attribute_value_os" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">OS</field>
+            <field name="name">OS-ORANGE SILVER</field>
+        </record>
+    
+        <record id="attribute_value_pa" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">PA</field>
+            <field name="name">PA-PUTIH ABU-ABU</field>
+        </record>
+    
+        <record id="attribute_value_pb" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">PB</field>
+            <field name="name">PB-PUTIH BIRU</field>
+        </record>
+    
+        <record id="attribute_value_pd" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">PD</field>
+            <field name="name">PD-PUTIH MERAH BIR</field>
+        </record>
+    
+        <record id="attribute_value_pe" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">PE</field>
+            <field name="name">PE-PUTIH-BEIGE</field>
+        </record>
+    
+        <record id="attribute_value_pf" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">PF</field>
+            <field name="name">PF-PUTIH PINK</field>
+        </record>
+    
+        <record id="attribute_value_ph" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">PH</field>
+            <field name="name">PH-PUTIH HITAM</field>
+        </record>
+    
+        <record id="attribute_value_pj" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">PJ</field>
+            <field name="name">PJ-PUTIH HIJAU</field>
+        </record>
+    
+        <record id="attribute_value_pk" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">PK</field>
+            <field name="name">PK-PINK</field>
+        </record>
+    
+        <record id="attribute_value_pm" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">PM</field>
+            <field name="name">PM-PUTIH MERAH</field>
+        </record>
+    
+        <record id="attribute_value_po" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">PO</field>
+            <field name="name">PO-PUTIH ORANGE ME</field>
+        </record>
+    
+        <record id="attribute_value_pp" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">PP</field>
+            <field name="name">PP-PINK PUTIH</field>
+        </record>
+    
+        <record id="attribute_value_pr" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">PR</field>
+            <field name="name">PR-PINK SILVER</field>
+        </record>
+    
+        <record id="attribute_value_ps" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">PS</field>
+            <field name="name">PS-PUTIH SILVER</field>
+        </record>
+    
+        <record id="attribute_value_pv" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">PV</field>
+            <field name="name">PV-PUTIH VIOLET</field>
+        </record>
+    
+        <record id="attribute_value_rd" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">RD</field>
+            <field name="name">RD-RED</field>
+        </record>
+    
+        <record id="attribute_value_rs" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">RS</field>
+            <field name="name">RS-RED SILVER</field>
+        </record>
+    
+        <record id="attribute_value_sa" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">SA</field>
+            <field name="name">SA-SILVER ABU-ABU</field>
+        </record>
+    
+        <record id="attribute_value_sb" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">SB</field>
+            <field name="name">SB-SILVER BIRU</field>
+        </record>
+    
+        <record id="attribute_value_sh" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">SH</field>
+            <field name="name">SH-SILVER HITAM</field>
+        </record>
+    
+        <record id="attribute_value_sk" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">SK</field>
+            <field name="name">SK-SILVER KUNING</field>
+        </record>
+    
+        <record id="attribute_value_sm" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">SM</field>
+            <field name="name">SM-SILVER MERAH</field>
+        </record>
+    
+        <record id="attribute_value_st" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">ST</field>
+            <field name="name">ST-STONE GREY</field>
+        </record>
+    
+        <record id="attribute_value_su" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">SU</field>
+            <field name="name">SU-SILVER UNGU</field>
+        </record>
+    
+        <record id="attribute_value_sv" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">SV</field>
+            <field name="name">SV-SILVER</field>
+        </record>
+    
+        <record id="attribute_value_sx" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">SX</field>
+            <field name="name">SX-SILVER AXIS GR.</field>
+        </record>
+    
+        <record id="attribute_value_ua" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">UA</field>
+            <field name="name">UA-BIRU ABU-ABU</field>
+        </record>
+    
+        <record id="attribute_value_uo" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">UO</field>
+            <field name="name">UO-BIRU ORANGE</field>
+        </record>
+    
+        <record id="attribute_value_vh" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">VH</field>
+            <field name="name">VH-VIOLET HITAM</field>
+        </record>
+    
+        <record id="attribute_value_vo" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">VO</field>
+            <field name="name">VO-VIOLET</field>
+        </record>
+    
+        <record id="attribute_value_vp" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">VP</field>
+            <field name="name">VP-VIOLET-PUTIH</field>
+        </record>
+    
+        <record id="attribute_value_vs" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">VS</field>
+            <field name="name">VS-VIOLET - SILVER</field>
+        </record>
+    
+        <record id="attribute_value_wg" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">WG</field>
+            <field name="name">WG-WHITE GREEN</field>
+        </record>
+    
+        <record id="attribute_value_wh" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">WH</field>
+            <field name="name">WH-WHITE</field>
+        </record>
+    
+        <record id="attribute_value_wl" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">WL</field>
+            <field name="name">WL-WHITE BLUE</field>
+        </record>
+    
+        <record id="attribute_value_wp" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">WP</field>
+            <field name="name">WP-WHITE PINK</field>
+        </record>
+    
+        <record id="attribute_value_wr" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">WR</field>
+            <field name="name">WR-WHITE RED</field>
+        </record>
+    
+        <record id="attribute_value_ws" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">WS</field>
+            <field name="name">WS-WHITE SILVER</field>
+        </record>
+    
+        <record id="attribute_value_xb" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">XB</field>
+            <field name="name">XB-HITAM - BIRU</field>
+        </record>
+    
+        <record id="attribute_value_xe" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">XE</field>
+            <field name="name">XE-HITAM - PINK</field>
+        </record>
+    
+        <record id="attribute_value_xh" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">XH</field>
+            <field name="name">XH-HITAM - HIJAU</field>
+        </record>
+    
+        <record id="attribute_value_xm" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">XM</field>
+            <field name="name">XM-HITAM - MERAH</field>
+        </record>
+    
+        <record id="attribute_value_xo" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">XO</field>
+            <field name="name">XO-HITAM - ORANGE</field>
+        </record>
+    
+        <record id="attribute_value_xs" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">XS</field>
+            <field name="name">XS-HITAM - SILVER</field>
+        </record>
+    
+        <record id="attribute_value_yl" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">YL</field>
+            <field name="name">YL-YELLOW</field>
+        </record>
+    
+        <record id="attribute_value_hv" model="product.attribute.value">
+            <field name="attribute_id" ref="attribute_warna"/>
+            <field name="code">HV</field>
+            <field name="name">HV-HITAM VIOLET</field>
+        </record>
+        
+	</data>
+</openerp>

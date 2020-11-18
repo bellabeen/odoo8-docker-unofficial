@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+    <record id="view_wtc_report_control_df" model="ir.ui.view">
+      <field name="name">Report Control DF</field>
+      <field name="model">wtc.report.control.df</field>
+      <field name="type">form</field>
+      <field name="arch" type="xml">
+         <form string="Surat Jalan">
+          <group>
+          	<field name="per_date" required="1"/>
+          </group>
+          <footer>
+            <button name="xls_export" string="Export" type="object" icon="gtk-execute" context="{'xls_export':1}" class="oe_highlight"/>
+            or <button string="Cancel" class="oe_link" special="cancel"/>
+          </footer>
+        </form>
+      </field>
+    </record>
+
+    <record id="action_report_control_df" model="ir.actions.act_window">
+      <field name="name">Laporan Control DF</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">wtc.report.control.df</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">form</field>
+      <field name="view_id" ref="view_wtc_report_control_df"/>
+      <field name="target">new</field>
+    </record>
+	 <menuitem id="menu_report_control_df"  parent="wtc_dealer_menu.showroom_report_menu" sequence="10"  action="action_report_control_df"/>	
+
+  </data>
+</openerp>

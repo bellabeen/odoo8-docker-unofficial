@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">  	
+    	
+<!-- Report Journal -->	
+	
+        <record id="group_report_journal_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Report Journal Read</field> 
+            <field name="menu_access" eval="[(4, ref('menu_report_journal'))]"/>  
+        </record> 
+	                      
+        <record id="access_report_journal_read_journal" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_journal"/>
+            <field name="name">report_journal_journal read</field> 
+            <field name="group_id" ref="group_report_journal_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+                
+        <record id="group_report_journal_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Report Journal Update</field> 
+            <field name="menu_access" eval="[(4, ref('menu_report_journal'))]"/>   
+			<field name="implied_ids" eval="[(4, ref('group_report_journal_read'))]"/>            	            	
+        </record>
+
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[(4,ref('group_report_journal_read')),
+											(4,ref('group_report_journal_update')),
+
+											]"/> 
+		</record>                                                                                            
+    </data>
+</openerp>

@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_teds_change_lot_all,teds_change_lot all,model_teds_change_lot,,1,1,1,1

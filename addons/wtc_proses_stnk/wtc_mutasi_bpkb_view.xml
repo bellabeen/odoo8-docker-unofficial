@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data> 
+		
+		<record model="ir.ui.view" id="mutasi_bpkb_tree_view">
+		    <field name="name">mutasi.bpkb.tree</field>
+		    <field name="model">wtc.mutasi.bpkb</field>
+		    <field name="arch" type="xml">
+		        <tree string="List Mutasi BPKB">
+		        	<field name="name"/>
+		            <field name="branch_id"/>
+					<field name="destination_branch_id"/>		            
+					<field name="destination_location_id"/>		            
+		            <field name="source_location_id"/>	
+		            <field name="destination_location_id"/>	
+		            <field name="tgl_mutasi"/>	
+		           	<field name="state"/>
+		        </tree>
+		     </field>
+		</record>
+ 
+		<record model="ir.ui.view" id="mutasi_bpkb_form_view">
+		    <field name="name">mutasi.bpkb.form</field>
+		    <field name="model">wtc.mutasi.bpkb</field>
+		    <field name="arch" type="xml">
+		        <form string="Form Mutasi BPKB">		        	
+				<header>
+						<button name="post_mutasi" groups='wtc_proses_stnk.group_wtc_mutasi_bpkb_post' type="object" states="draft" string="Post" class="oe_highlight"/>
+						<button name="print_report_pdf_mutasi_bpkb" groups='wtc_proses_stnk.group_wtc_mutasi_bpkb_post' type="object" states="posted" string="Print" class="oe_highlight"/>	
+						<field name="state" widget="statusbar" statusbar_visible="draft,posted" statusbar_colors='{"draft":"red","approved":"blue"}'/>	
+           		</header>		        	
+		        	<sheet>
+			        	<div class="oe_title">
+			        		<h2>
+				                <label string="Mutasi BPKB"/>    			
+				 				<field name="name" class="oe_inline"/>
+			 				</h2>
+			        	</div>       
+						<group col="2" colspan="2">   
+							<group>
+								<field name="branch_id" options="{'no_create': True,'no_open': True}" attrs="{'readonly': ['|',('state','!=','draft'),('name','!=',False)]}" required="1" on_change="onchange_branch(branch_id,destination_branch_id)"/>
+							</group>            
+						    <group>
+	                    		<field name="division" attrs="{'readonly': [('state','!=','draft')]}" required="1"/>
+	                    	</group>
+	                    	<group>
+	                    		
+							    <field name="destination_branch_id" on_change="onchange_branch(branch_id,destination_branch_id)" options="{'no_create': True,'no_open': True}" attrs="{'readonly': [('state','!=','draft')]}" required="1"/>	
+				            	<field name="source_location_id" on_change="onchange_source()" attrs="{'readonly': [('state','!=','draft')]}" required="1" domain="[('branch_id','=',branch_id)]" options="{'no_create': True,'no_open': True}"/>	    								    		                    		
+							</group>
+				            <group>  
+				            	<field name="tgl_mutasi" required="1" readonly="1" />						               
+				            	<field name="destination_location_id" attrs="{'readonly': [('state','!=','draft')]}" required="1" domain="[('branch_id','=',destination_branch_id)]" options="{'no_create': True,'no_open': True}"  on_change="onchange_destination(source_location_id,destination_location_id,branch_id,destination_branch_id)"/>
+					            	
+							</group>   
+						</group>
+	                    <notebook colspan="5">
+	                        <page string="Mutasi Line">    
+	                    	<field colspan="4" name="mutasi_line" required="1" nolabel="1" widget="one2many_list" attrs="{'readonly': [('state','!=','draft')]}">
+	                                <tree string="" editable="bottom">
+						                <field name="name" options="{'no_create': True,'no_open': True}" on_change="onchange_engine(name,parent.branch_id,parent.division,parent.source_location_id,parent.destination_location_id)"/>
+						                <field name="customer_stnk"/>
+						                <field name="no_bpkb"/>
+										<field name="tgl_bpkb"/>						                
+						                <field name="tgl_terima_bpkb"/>  
+						                <field name="no_urut_bpkb"/>	
+	                                </tree>
+	                            </field>
+	                        </page>
+							<page string="Audit Trail">
+								<group>
+									<group>
+										<field name="create_uid" readonly="1"></field>
+										<field name="create_date" readonly="1"></field>
+										<field name="confirm_uid" readonly="1"></field>
+										<field name="confirm_date" readonly="1"></field>
+									</group>
+									<group>							
+										<field name="write_uid" readonly="1"></field>
+										<field name="write_date" readonly="1"></field>
+									</group>
+								</group>
+							</page>	                        
+	                    </notebook>						
+		           </sheet>
+		        </form>
+		    </field>
+		</record>
+
+ 		<record id="view_mutasi_bpkb_filter" model="ir.ui.view">
+            <field name="name">mutasi.bpkb.list.select</field>
+            <field name="model">wtc.mutasi.bpkb</field>
+            <field name="arch" type="xml">
+                <search string="Search Mutasi BPKB">
+                    <field name="name" string="Reference"/>
+                    <field name="branch_id"/> 
+                    <field name="engine_no"/> 
+                    <field name="customer_stnk"/> 
+                    <field name="destination_branch_id"/> 
+                    <filter name="draft" string="Draft" domain="[('state','=','draft')]"/>
+                    <filter name="post" string="Posted" domain="[('state','=','posted')]"/>
+                    <group expand="0" string="Group By">
+                        <filter string="Branch" icon="terp-partner" domain="[]" context="{'group_by':'branch_id'}"/>
+                        <filter string="Tanggal" icon="terp-go-month" domain="[]" context="{'group_by':'tgl_mutasi'}"/>                    
+                        <filter string="Source Location" icon="terp-go-month" domain="[]" context="{'group_by':'source_location_id'}"/>                    
+                        <filter string="Destination Location" icon="terp-go-month" domain="[]" context="{'group_by':'destination_location_id'}"/>                    
+                        	                        	                    
+                    </group>
+                </search>
+            </field>
+        </record>		
+		 
+		<record model="ir.actions.act_window" id="mutasi_bpkb_action">
+		    <field name="name">Mutasi BPKB</field>
+		    <field name="res_model">wtc.mutasi.bpkb</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		    <field name="search_view_id" ref="view_mutasi_bpkb_filter"/>
+			<field name="context">{"search_default_draft":1}</field>		    		    			    
+		</record>
+					
+		<menuitem id="mutasi_bpkb_submenu" name="Mutasi BPKB" parent="wtc_dealer_menu.stnk_bpkb_mutasi_menu"  action="mutasi_bpkb_action" sequence="20"/>
+
+		<report 
+            string="Mutasi BPKB" 
+            id="menu_report_mutasi_bpkb" 
+            model="wtc.mutasi.bpkb" 
+            report_type="qweb-pdf"
+            name="wtc_proses_stnk.wtc_mutasi_bpkb_report" 
+            file="wtc_proses_stnk.wtc_mutasi_bpkb_report" 
+            menu="False"/>
+
+	</data>
+</openerp>
+															

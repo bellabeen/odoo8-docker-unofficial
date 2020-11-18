@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    
+<!-- Customer Payment RFA  -->
+		
+        <record id="group_wtc_account_voucher_rfa" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Customer Payment Validate/RFA</field>
+            <field name="implied_ids" eval="[(4, ref('group_customer_payment_read'))]"/>
+        </record>     
+        
+        <record id="access_wtc_account_voucher_rfa" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">wtc_account_voucher_rfa_approval_line read</field>
+            <field name="group_id" ref="group_wtc_account_voucher_rfa"/>
+            <field name="perm_create">1</field>
+        </record>
+               
+        <record id="access_wtc_account_voucher_rfa_account_account" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_account"/>
+            <field name="name">wtc_account_voucher_rfa_account_account read</field>
+            <field name="group_id" ref="group_wtc_account_voucher_rfa"/>
+            <field name="perm_read">1</field>
+        </record>
+                
+        <record id="access_wtc_account_voucher_rfa_write" model="ir.model.access">
+            <field name="model_id" ref="account_voucher.model_account_voucher"/>
+            <field name="name">wtc_account_voucher_rfa write</field>
+            <field name="group_id" ref="group_wtc_account_voucher_rfa"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_wtc_account_voucher_rfa_move_reconcile_write" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move_reconcile"/>
+            <field name="name">wtc_account_voucher_rfa_move_reconcile write</field>
+            <field name="group_id" ref="group_wtc_account_voucher_rfa"/>
+            <field name="perm_read">1</field>
+            <field name="perm_create">1</field>
+        </record>        
+        
+        <record id="access_wtc_account_voucher_rfa_sale_order" model="ir.model.access">
+            <field name="model_id" ref="sale.model_sale_order"/>
+            <field name="name">wtc_account_voucher_sale_order write</field>
+            <field name="group_id" ref="group_wtc_account_voucher_rfa"/>
+            <field name="perm_read">1</field>
+        </record>
+                
+<!-- Customer Payment Cancel Approval -->
+		
+        <record id="group_wtc_account_voucher_cancel_approval" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Customer Payment Cancel Approval</field>
+            <field name="implied_ids" eval="[(4, ref('group_customer_payment_read'))]"/>
+        </record>
+          
+        <record id="access_wtc_account_voucher_cancel_approval_write" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">wtc_account_voucher_cancel_approval_line write</field>
+            <field name="group_id" ref="group_wtc_account_voucher_cancel_approval"/>
+            <field name="perm_write">1</field>
+        </record>
+                
+        <record id="access_wtc_account_voucher_cancel_write" model="ir.model.access">
+            <field name="model_id" ref="account_voucher.model_account_voucher"/>
+            <field name="name">wtc_account_voucher_cancel write</field>
+            <field name="group_id" ref="group_wtc_account_voucher_cancel_approval"/>
+            <field name="perm_write">1</field>
+        </record>   
+        
+<!-- Customer Payment Cancel After Approval -->
+		
+        <record id="group_wtc_account_voucher_cancel_after_approval" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Customer Payment Cancel After Approval</field>
+            <field name="implied_ids" eval="[(4, ref('group_customer_payment_read'))]"/>
+        </record>
+          
+        <record id="access_wtc_account_voucher_cancel_after_approval_write" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">wtc_account_voucher_cancel_after_approval_line write</field>
+            <field name="group_id" ref="group_wtc_account_voucher_cancel_after_approval"/>
+            <field name="perm_write">1</field>
+            <field name="perm_create">1</field>
+        </record>
+                
+        <record id="access_wtc_account_voucher_after_cancel_after_a-prval_write" model="ir.model.access">
+            <field name="model_id" ref="account_voucher.model_account_voucher"/>
+            <field name="name">wtc_account_voucher_cancel_after_approval write</field>
+            <field name="group_id" ref="group_wtc_account_voucher_cancel_after_approval"/>
+            <field name="perm_write">1</field>
+        </record> 
+                
+<!-- Customer Payment Approve -->
+		
+        <record id="group_wtc_account_voucher_approve_approval" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Customer Payment Approve Approval</field>
+            <field name="implied_ids" eval="[(4, ref('group_customer_payment_read'))]"/>
+        </record>
+          
+        <record id="access_wtc_account_voucher_approve_approval_write" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">wtc_account_voucher_approve_approval_line write</field>
+            <field name="group_id" ref="group_wtc_account_voucher_approve_approval"/>
+            <field name="perm_write">1</field>
+        </record>
+                
+        <record id="access_wtc_account_voucher_approve_write" model="ir.model.access">
+            <field name="model_id" ref="account_voucher.model_account_voucher"/>
+            <field name="name">wtc_account_voucher_approve write</field>
+            <field name="group_id" ref="group_wtc_account_voucher_approve_approval"/>
+            <field name="perm_write">1</field>
+        </record>       
+        
+        <record id="access_wtc_account_voucher_approve_account_move" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move"/>
+            <field name="name">wtc_account_voucher_approve_account_move update</field> 
+            <field name="group_id" ref="group_wtc_account_voucher_approve_approval"/>  
+            <field name="perm_create">1</field> 
+        </record> 
+          
+        <record id="access_wtc_account_voucher_approve_account_move_line" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move_line"/>
+            <field name="name">wtc_account_voucher_approve_account_move_line update</field> 
+            <field name="group_id" ref="group_wtc_account_voucher_approve_approval"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field>
+        </record>     
+        
+        <record id="access_wtc_account_voucher_line_approve" model="ir.model.access">
+            <field name="model_id" ref="account_voucher.model_account_voucher_line"/>
+            <field name="name">wtc_account_voucher_line__approve write</field> 
+            <field name="group_id" ref="group_wtc_account_voucher_approve_approval"/>  
+            <field name="perm_write">1</field> 
+        </record>    
+                 
+<!-- Customer Payment Cancel -->
+		
+        <record id="group_wtc_account_voucher_cancel_receipt" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Customer Payment Cancel Receipt</field>
+            <field name="implied_ids" eval="[(4, ref('group_customer_payment_read'))]"/>
+        </record>
+                
+        <record id="access_wtc_account_voucher_cancel_receipt_write" model="ir.model.access">
+            <field name="model_id" ref="account_voucher.model_account_voucher"/>
+            <field name="name">wtc_account_voucher_cancel_receipt write</field>
+            <field name="group_id" ref="group_wtc_account_voucher_cancel_receipt"/>
+            <field name="perm_write">1</field>
+        </record>  
+
+<!-- Customer Payment Reconcile -->
+		
+        <record id="group_wtc_account_voucher_reconcile" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Customer Payment Unreconcile</field>
+            <field name="implied_ids" eval="[(4, ref('group_customer_payment_read'))]"/>
+        </record>
+                
+        <record id="access_wtc_account_voucher_reconcile_write" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move_reconcile"/>
+            <field name="name">wtc_account_voucher_reconcile write</field>
+            <field name="group_id" ref="group_wtc_account_voucher_reconcile"/>
+            <field name="perm_write">1</field>
+            <field name="perm_create">1</field>
+        </record> 
+            
+        <record id="access_wtc_account_voucher_accountmove_write" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move"/>
+            <field name="name">wtc_account_voucher_move_write</field>
+            <field name="group_id" ref="group_wtc_account_voucher_reconcile"/>
+            <field name="perm_write">1</field>
+            <field name="perm_create">1</field>
+        </record>         
+            
+<!-- Customer Payment Set to Draft -->
+		
+        <record id="group_wtc_account_voucher_to_draft" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Customer Payment Set to Draft</field>
+            <field name="implied_ids" eval="[(4, ref('group_customer_payment_read'))]"/>
+        </record>
+                
+        <record id="access_wtc_account_voucher_cancel_receipt_to_draft_write" model="ir.model.access">
+            <field name="model_id" ref="account_voucher.model_account_voucher"/>
+            <field name="name">wtc_account_voucher_cancel_set_ro_draft_receipt write</field>
+            <field name="group_id" ref="group_wtc_account_voucher_to_draft"/>
+            <field name="perm_write">1</field>
+        </record> 
+                
+<!-- Supplier Payment RFA  -->
+		
+        <record id="group_wtc_account_voucher_supplier_rfa" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Supplier Payment RFA</field>
+            <field name="implied_ids" eval="[(4, ref('group_supplier_payment_read'))]"/>
+        </record>     
+        
+        <record id="access_wtc_account_voucher_supplier_rfa" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">wtc_account_voucher_rfa_approval_line_supplier read</field>
+            <field name="group_id" ref="group_wtc_account_voucher_supplier_rfa"/>
+            <field name="perm_create">1</field>
+        </record>
+               
+        <record id="access_wtc_account_voucher_rfa_supplier_write" model="ir.model.access">
+            <field name="model_id" ref="account_voucher.model_account_voucher"/>
+            <field name="name">wtc_account_voucher_rfa_supplier write</field>
+            <field name="group_id" ref="group_wtc_account_voucher_supplier_rfa"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_wtc_account_voucher_rfa_move_reconcile_supplier_write" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move_reconcile"/>
+            <field name="name">wtc_account_voucher_rfa_move_reconcile_supplier write</field>
+            <field name="group_id" ref="group_wtc_account_voucher_supplier_rfa"/>
+            <field name="perm_read">1</field>
+            <field name="perm_create">1</field>
+        </record>        
+        
+        <record id="access_wtc_account_voucher_rfa_supplier_purchae" model="ir.model.access">
+            <field name="model_id" ref="purchase.model_purchase_order"/>
+            <field name="name">wtc_account_voucher_purchase_order write</field>
+            <field name="group_id" ref="group_wtc_account_voucher_supplier_rfa"/>
+            <field name="perm_read">1</field>
+        </record>
+                
+<!-- Supplier Payment Cancel Approval -->
+		
+        <record id="group_wtc_account_voucher_cancel_supplier_approval" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Supplier Payment Cancel Approval</field>
+            <field name="implied_ids" eval="[(4, ref('group_supplier_payment_read'))]"/>
+        </record>
+          
+        <record id="access_wtc_account_voucher_cancel_approval_supplier_write" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">wtc_account_voucher_cancel_approval_line_supplier write</field>
+            <field name="group_id" ref="group_wtc_account_voucher_cancel_supplier_approval"/>
+            <field name="perm_write">1</field>
+        </record>
+                
+        <record id="access_wtc_account_voucher_cancel_supplier_write" model="ir.model.access">
+            <field name="model_id" ref="account_voucher.model_account_voucher"/>
+            <field name="name">wtc_account_voucher_cancel_supplier write</field>
+            <field name="group_id" ref="group_wtc_account_voucher_cancel_supplier_approval"/>
+            <field name="perm_write">1</field>
+        </record>   
+                 
+<!-- Supplier Payment Unreconcile -->
+		
+        <record id="group_wtc_account_voucher_supplier_unreconcile" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Supplier Payment Unreconcile</field>
+            <field name="implied_ids" eval="[(4, ref('group_supplier_payment_read'))]"/>
+        </record>
+                
+        <record id="access_wtc_account_voucher_supplier_reconcile_write" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move_reconcile"/>
+            <field name="name">wtc_account_voucher_reconcile_supplier write</field>
+            <field name="group_id" ref="group_wtc_account_voucher_supplier_unreconcile"/>
+            <field name="perm_write">1</field>
+            <field name="perm_create">1</field>
+        </record> 
+            
+        <record id="access_wtc_account_voucher_supplier_accountmove_write" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move"/>
+            <field name="name">wtc_account_voucher_move_supplier_write</field>
+            <field name="group_id" ref="group_wtc_account_voucher_supplier_unreconcile"/>
+            <field name="perm_write">1</field>
+            <field name="perm_create">1</field>
+        </record> 
+                       
+<!-- Supplier Payment Cancel Voucher -->
+		
+        <record id="group_wtc_account_voucher_cancel_voucher" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Supplier Payment Cancel Voucher</field>
+            <field name="implied_ids" eval="[(4, ref('group_customer_payment_read'))]"/>
+        </record>
+                
+        <record id="access_wtc_account_voucher_cancel_voucher_write" model="ir.model.access">
+            <field name="model_id" ref="account_voucher.model_account_voucher"/>
+            <field name="name">wtc_account_voucher_cancel_voucher write</field>
+            <field name="group_id" ref="group_wtc_account_voucher_cancel_voucher"/>
+            <field name="perm_write">1</field>
+        </record>    
+                
+<!-- Supplier Payment Confirm -->
+		
+        <record id="group_wtc_account_voucher_supplier_confirm_after_approval" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Supplier Payment Confirm After Approval</field>
+            <field name="implied_ids" eval="[(4, ref('group_supplier_payment_read'))]"/>
+        </record>
+          
+        <record id="access_wtc_account_voucher_supplier_confirm_write" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">wtc_account_voucher_approve_supplier_confirm write</field>
+            <field name="group_id" ref="group_wtc_account_voucher_supplier_confirm_after_approval"/>
+            <field name="perm_write">1</field>
+        </record>
+                
+        <record id="access_wtc_account_voucher_supplier_confirm_write" model="ir.model.access">
+            <field name="model_id" ref="account_voucher.model_account_voucher"/>
+            <field name="name">wtc_account_voucher_supplier_confirm write</field>
+            <field name="group_id" ref="group_wtc_account_voucher_supplier_confirm_after_approval"/>
+            <field name="perm_write">1</field>
+        </record>       
+        
+        <record id="access_wtc_account_voucher_supplier_confirme_account_move" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move"/>
+            <field name="name">wtc_account_voucher_confirm_supplier_account_move update</field> 
+            <field name="group_id" ref="group_wtc_account_voucher_supplier_confirm_after_approval"/>  
+            <field name="perm_create">1</field> 
+        </record> 
+          
+        <record id="access_wtc_account_voucher_confirm_supplier_account_move_line" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move_line"/>
+            <field name="name">wtc_account_voucher_confirm_supplier_account_move_line update</field> 
+            <field name="group_id" ref="group_wtc_account_voucher_supplier_confirm_after_approval"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field>
+        </record>     
+        
+        <record id="access_wtc_account_supplier_voucher_line_confirm" model="ir.model.access">
+            <field name="model_id" ref="account_voucher.model_account_voucher_line"/>
+            <field name="name">wtc_account_voucher_supplier_line_confirm write</field> 
+            <field name="group_id" ref="group_wtc_account_voucher_supplier_confirm_after_approval"/>  
+            <field name="perm_write">1</field> 
+        </record>      
+        
+<!-- Customer Payment Confirm -->
+		
+        <record id="group_wtc_account_voucher_customer_confirm_after_approval" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Customer Payment Confirm After Approval</field>
+            <field name="implied_ids" eval="[(4, ref('group_supplier_payment_read'))]"/>
+        </record>
+          
+        <record id="access_wtc_account_voucher_customer_confirm_write" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">wtc_account_voucher_approve_customer_confirm write</field>
+            <field name="group_id" ref="group_wtc_account_voucher_customer_confirm_after_approval"/>
+            <field name="perm_write">1</field>
+        </record>
+                
+        <record id="access_wtc_account_voucher_customer_confirm_write" model="ir.model.access">
+            <field name="model_id" ref="account_voucher.model_account_voucher"/>
+            <field name="name">wtc_account_voucher_customer_confirm write</field>
+            <field name="group_id" ref="group_wtc_account_voucher_customer_confirm_after_approval"/>
+            <field name="perm_write">1</field>
+        </record>       
+        
+        <record id="access_wtc_account_voucher_customer_confirme_account_move" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move"/>
+            <field name="name">wtc_account_voucher_confirm_customer_account_move update</field> 
+            <field name="group_id" ref="group_wtc_account_voucher_customer_confirm_after_approval"/>  
+            <field name="perm_create">1</field> 
+        </record> 
+          
+        <record id="access_wtc_account_voucher_confirm_customer_account_move_line" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move_line"/>
+            <field name="name">wtc_account_voucher_confirm_customer_account_move_line update</field> 
+            <field name="group_id" ref="group_wtc_account_voucher_customer_confirm_after_approval"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field>
+        </record>     
+        
+        <record id="access_wtc_account_customer_voucher_line_confirm" model="ir.model.access">
+            <field name="model_id" ref="account_voucher.model_account_voucher_line"/>
+            <field name="name">wtc_account_voucher_customer_line_confirm write</field> 
+            <field name="group_id" ref="group_wtc_account_voucher_customer_confirm_after_approval"/>  
+            <field name="perm_write">1</field> 
+        </record> 
+                 
+<!-- Payment Request Confirm -->
+		
+        <record id="group_wtc_account_voucher_payment_request_confirm_after_approval" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Payment Request Confirm After Approval</field>
+            <field name="implied_ids" eval="[(4, ref('group_supplier_payment_read'))]"/>
+        </record>
+          
+        <record id="access_wtc_account_voucher_payment_request_confirm_write" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">wtc_account_voucher_approve_payment_request_confirm write</field>
+            <field name="group_id" ref="group_wtc_account_voucher_payment_request_confirm_after_approval"/>
+            <field name="perm_write">1</field>
+        </record>
+                
+        <record id="access_wtc_account_voucher_payment_request_confirm_write" model="ir.model.access">
+            <field name="model_id" ref="account_voucher.model_account_voucher"/>
+            <field name="name">wtc_account_voucher_payment_request_confirm write</field>
+            <field name="group_id" ref="group_wtc_account_voucher_payment_request_confirm_after_approval"/>
+            <field name="perm_write">1</field>
+        </record>       
+        
+        <record id="access_wtc_avoucher_prequest_confirme_account_move" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move"/>
+            <field name="name">wtc_account_voucher_confirm_payment_request_account_move update</field> 
+            <field name="group_id" ref="group_wtc_account_voucher_payment_request_confirm_after_approval"/>  
+            <field name="perm_create">1</field> 
+        </record> 
+          
+        <record id="access_wtc_avoucher_confirm_prequest_account_move_line" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move_line"/>
+            <field name="name">wtc_account_voucher_confirm_payment_request_account_move_line update</field> 
+            <field name="group_id" ref="group_wtc_account_voucher_payment_request_confirm_after_approval"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field>
+        </record>     
+        
+        <record id="access_wtc_account_prequest_voucher_line_confirm" model="ir.model.access">
+            <field name="model_id" ref="account_voucher.model_account_voucher_line"/>
+            <field name="name">wtc_account_voucher_payment_request_line_confirm write</field> 
+            <field name="group_id" ref="group_wtc_account_voucher_payment_request_confirm_after_approval"/>  
+            <field name="perm_write">1</field> 
+        </record> 
+                
+<!-- Supplier Payment Cancel After Approval -->
+		
+        <record id="group_wtc_supplier_payment_cancel_after_approval" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Supplier Payment Cancel After Approval</field>
+            <field name="implied_ids" eval="[(4, ref('group_customer_payment_read'))]"/>
+        </record>
+          
+        <record id="access_wtc_supplier_payment_cancel_after_approval_write" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">wtc_payment_supplier_cancel_after_approval_line write</field>
+            <field name="group_id" ref="group_wtc_supplier_payment_cancel_after_approval"/>
+            <field name="perm_write">1</field>
+            <field name="perm_create">1</field>
+        </record>
+                
+        <record id="access_wtc_supplier_payment_after_cancel_after_a-prval_write" model="ir.model.access">
+            <field name="model_id" ref="account_voucher.model_account_voucher"/>
+            <field name="name">wtc_payment_supplier_cancel_after_approval write</field>
+            <field name="group_id" ref="group_wtc_supplier_payment_cancel_after_approval"/>
+            <field name="perm_write">1</field>
+        </record> 
+        
+<!-- Payment Request Cancel After Approval -->
+		
+        <record id="group_wtc_payment_request_cancel_after_approval" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Payment Request Cancel After Approval</field>
+            <field name="implied_ids" eval="[(4, ref('group_customer_payment_read'))]"/>
+        </record>
+          
+        <record id="access_wtc_payment_request_cancel_after_approval_write" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">wtc_payment_request_cancel_after_approval_line write</field>
+            <field name="group_id" ref="group_wtc_payment_request_cancel_after_approval"/>
+            <field name="perm_write">1</field>
+            <field name="perm_create">1</field>
+        </record>
+                
+        <record id="access_wtc_payment_request_after_cancel_after_a-prval_write" model="ir.model.access">
+            <field name="model_id" ref="account_voucher.model_account_voucher"/>
+            <field name="name">wtc_payment_request_cancel_after_approval write</field>
+            <field name="group_id" ref="group_wtc_payment_request_cancel_after_approval"/>
+            <field name="perm_write">1</field>
+        </record>                 
+        
+        <record id="group_wtc_account_voucher_is_payment" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Payment Request Is Payment Klik</field>
+            <field name="implied_ids" eval="[(4, ref('group_supplier_payment_read'))]"/>
+        </record>
+          
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[(4,ref('group_wtc_account_voucher_rfa')),
+											 (4,ref('group_wtc_account_voucher_cancel_approval')),
+											 (4,ref('group_wtc_account_voucher_approve_approval')),
+											 (4,ref('group_wtc_account_voucher_cancel_receipt')),
+										     (4,ref('group_wtc_account_voucher_to_draft')),
+										     (4,ref('group_wtc_account_voucher_supplier_rfa')),
+										     (4,ref('group_wtc_account_voucher_cancel_supplier_approval')),
+										     (4,ref('group_wtc_account_voucher_supplier_unreconcile')),
+											 (4,ref('group_wtc_account_voucher_cancel_voucher')),
+											 (4,ref('group_wtc_account_voucher_customer_confirm_after_approval')),
+											 (4,ref('group_wtc_account_voucher_payment_request_confirm_after_approval')),
+											 (4,ref('group_wtc_payment_request_cancel_after_approval')),
+											 (4,ref('group_wtc_supplier_payment_cancel_after_approval')),
+								
+																				
+				]">
+			</field> 
+		</record>                           
+    </data>
+</openerp>

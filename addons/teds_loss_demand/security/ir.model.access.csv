@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_teds_loss_demand,teds_loss_demand,model_teds_loss_demand,,1,1,1,1

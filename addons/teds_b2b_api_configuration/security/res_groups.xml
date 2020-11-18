@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">  	
+    	
+    <!-- API B2B Config -->		
+        <record id="group_teds_b2b_api_config_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">B2B API Config Read</field> 
+            <field name="menu_access" eval="[(4, ref('teds_b2b_api_config_menuitem'))]"/>  
+        </record> 
+        
+        <record id="access_teds_b2b_api_config_read" model="ir.model.access">
+            <field name="model_id" ref="model_teds_b2b_api_config"/>
+            <field name="name">teds_b2b_api_config read</field> 
+            <field name="group_id" ref="group_teds_b2b_api_config_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+        <record id="access_teds_b2b_api_token_read" model="ir.model.access">
+            <field name="model_id" ref="model_teds_b2b_api_token"/>
+            <field name="name">teds_b2b_api_token read</field> 
+            <field name="group_id" ref="group_teds_b2b_api_config_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+
+
+        <record id="group_teds_b2b_api_config_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">B2B API Config Update</field> 
+            <field name="menu_access" eval="[(4, ref('teds_b2b_api_config_menuitem'))]"/>   
+            <field name="implied_ids" eval="[(4, ref('group_teds_b2b_api_config_read'))]"/>
+        </record>
+                        
+        <record id="access_teds_b2b_api_config_update" model="ir.model.access">
+            <field name="model_id" ref="model_teds_b2b_api_config"/>
+            <field name="name">teds_b2b_api_config update</field> 
+            <field name="group_id" ref="group_teds_b2b_api_config_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>
+        <record id="access_teds_b2b_api_token_update" model="ir.model.access">
+            <field name="model_id" ref="model_teds_b2b_api_token"/>
+            <field name="name">teds_b2b_api_token update</field> 
+            <field name="group_id" ref="group_teds_b2b_api_config_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>
+
+
+        <record id="group_teds_b2b_api_config_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">B2B API Config Delete</field> 
+            <field name="menu_access" eval="[(4, ref('teds_b2b_api_config_menuitem'))]"/>   
+            <field name="implied_ids" eval="[(4, ref('group_teds_b2b_api_config_read'))]"/>
+        </record>
+                        
+        <record id="access_teds_b2b_api_config_delete" model="ir.model.access">
+            <field name="model_id" ref="model_teds_b2b_api_config"/>
+            <field name="name">teds_b2b_api_config delete</field> 
+            <field name="group_id" ref="group_teds_b2b_api_config_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>
+        <record id="access_teds_b2b_api_token_delete" model="ir.model.access">
+            <field name="model_id" ref="model_teds_b2b_api_token"/>
+            <field name="name">teds_b2b_api_token delete</field> 
+            <field name="group_id" ref="group_teds_b2b_api_config_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>
+
+
+    <!-- API B2B Log -->        
+        <record id="group_teds_b2b_api_log_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">B2B API Log Read</field> 
+            <field name="menu_access" eval="[(4, ref('teds_b2b_api_log_menuitem'))]"/>  
+        </record> 
+    
+        <record id="access_teds_b2b_api_log_read" model="ir.model.access">
+            <field name="model_id" ref="model_teds_b2b_api_log"/>
+            <field name="name">teds_b2b_api_log read</field> 
+            <field name="group_id" ref="group_teds_b2b_api_log_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+
+        <record id="group_teds_b2b_api_log_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">B2B API Log Update</field> 
+            <field name="menu_access" eval="[(4, ref('teds_b2b_api_log_menuitem'))]"/>   
+            <field name="implied_ids" eval="[(4, ref('group_teds_b2b_api_log_read'))]"/>
+        </record>
+                        
+        <record id="access_teds_b2b_api_log_update" model="ir.model.access">
+            <field name="model_id" ref="model_teds_b2b_api_log"/>
+            <field name="name">teds_b2b_api_log update</field> 
+            <field name="group_id" ref="group_teds_b2b_api_log_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+
+        <record id="group_teds_b2b_api_log_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">B2B API Log Delete</field> 
+            <field name="menu_access" eval="[(4, ref('teds_b2b_api_log_menuitem'))]"/>   
+            <field name="implied_ids" eval="[(4, ref('group_teds_b2b_api_log_read'))]"/>
+        </record>
+                        
+        <record id="access_teds_b2b_api_log_delete" model="ir.model.access">
+            <field name="model_id" ref="model_teds_b2b_api_log"/>
+            <field name="name">teds_b2b_api_log delete</field> 
+            <field name="group_id" ref="group_teds_b2b_api_log_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>  
+
+    <!-- API B2B Schedule -->
+       <record id="group_teds_b2b_api_schedule_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">B2B API Schedule Read</field> 
+            <field name="menu_access" eval="[(4, ref('teds_b2b_api_schedule_menuitem'))]"/>  
+        </record> 
+        
+        <record id="access_teds_b2b_api_schedule_read" model="ir.model.access">
+            <field name="model_id" ref="model_teds_b2b_api_schedule"/>
+            <field name="name">teds_b2b_api_schedule read</field> 
+            <field name="group_id" ref="group_teds_b2b_api_schedule_read"/>  
+            <field name="perm_read">1</field> 
+        </record>
+        <record id="access_teds_b2b_api_schedule_detail_read" model="ir.model.access">
+            <field name="model_id" ref="model_teds_b2b_api_schedule_detail"/>
+            <field name="name">teds_b2b_api_schedule_detail read</field> 
+            <field name="group_id" ref="group_teds_b2b_api_schedule_read"/>  
+            <field name="perm_read">1</field> 
+        </record>
+
+
+        <record id="group_teds_b2b_api_schedule_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">B2B API Schedule Update</field> 
+            <field name="menu_access" eval="[(4, ref('teds_b2b_api_schedule_menuitem'))]"/>   
+            <field name="implied_ids" eval="[(4, ref('group_teds_b2b_api_schedule_read'))]"/>                                
+        </record>
+                        
+        <record id="access_teds_b2b_api_schedule_update" model="ir.model.access">
+            <field name="model_id" ref="model_teds_b2b_api_schedule"/>
+            <field name="name">teds_b2b_api_schedule update</field> 
+            <field name="group_id" ref="group_teds_b2b_api_schedule_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>
+        <record id="access_teds_b2b_api_schedule_detail_update" model="ir.model.access">
+            <field name="model_id" ref="model_teds_b2b_api_schedule_detail"/>
+            <field name="name">teds_b2b_api_schedule_detail update</field> 
+            <field name="group_id" ref="group_teds_b2b_api_schedule_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>
+
+
+        <record id="group_teds_b2b_api_schedule_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">B2B API Schedule Delete</field> 
+            <field name="menu_access" eval="[(4, ref('teds_b2b_api_schedule_menuitem'))]"/>   
+            <field name="implied_ids" eval="[(4, ref('group_teds_b2b_api_schedule_read'))]"/>                                
+        </record>
+                        
+        <record id="access_teds_b2b_api_schedule_delete" model="ir.model.access">
+            <field name="model_id" ref="model_teds_b2b_api_schedule"/>
+            <field name="name">teds_b2b_api_schedule delete</field> 
+            <field name="group_id" ref="group_teds_b2b_api_schedule_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>
+        <record id="access_teds_b2b_api_schedule_detail_delete" model="ir.model.access">
+            <field name="model_id" ref="model_teds_b2b_api_schedule_detail"/>
+            <field name="name">teds_b2b_api_schedule_detail delete</field> 
+            <field name="group_id" ref="group_teds_b2b_api_schedule_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>
+
+    <!-- API B2B URL -->
+       <record id="group_teds_b2b_api_url_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">B2B API URL Read</field> 
+            <field name="menu_access" eval="[(4, ref('teds_b2b_api_url_menuitem'))]"/>  
+        </record> 
+        
+        <record id="access_teds_b2b_api_url_read" model="ir.model.access">
+            <field name="model_id" ref="model_teds_b2b_api_url"/>
+            <field name="name">teds_b2b_api_url read</field> 
+            <field name="group_id" ref="group_teds_b2b_api_url_read"/>  
+            <field name="perm_read">1</field> 
+        </record> 
+
+        <record id="group_teds_b2b_api_url_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">B2B API URL Update</field> 
+            <field name="menu_access" eval="[(4, ref('teds_b2b_api_url_menuitem'))]"/>   
+            <field name="implied_ids" eval="[(4, ref('group_teds_b2b_api_url_read'))]"/>                                
+        </record>
+                        
+        <record id="access_teds_b2b_api_url_update" model="ir.model.access">
+            <field name="model_id" ref="model_teds_b2b_api_url"/>
+            <field name="name">teds_b2b_api_url update</field> 
+            <field name="group_id" ref="group_teds_b2b_api_url_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+
+        <record id="group_teds_b2b_api_url_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">B2B API URL Delete</field> 
+            <field name="menu_access" eval="[(4, ref('teds_b2b_api_url_menuitem'))]"/>   
+            <field name="implied_ids" eval="[(4, ref('group_teds_b2b_api_url_read'))]"/>                                
+        </record>
+                        
+        <record id="access_teds_b2b_api_url_delete" model="ir.model.access">
+            <field name="model_id" ref="model_teds_b2b_api_url"/>
+            <field name="name">teds_b2b_api_url delete</field> 
+            <field name="group_id" ref="group_teds_b2b_api_url_delete"/>  
+            <field name="perm_unlink">1</field> 
+        </record>  
+
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+            <field name="implied_ids" eval="[
+                (4,ref('group_teds_b2b_api_config_read')),
+                (4,ref('group_teds_b2b_api_config_update')),
+                (4,ref('group_teds_b2b_api_config_delete')),
+                (4,ref('group_teds_b2b_api_log_read')),
+                (4,ref('group_teds_b2b_api_log_update')),
+                (4,ref('group_teds_b2b_api_log_delete')),
+                (4,ref('group_teds_b2b_api_schedule_read')),
+                (4,ref('group_teds_b2b_api_schedule_update')),
+                (4,ref('group_teds_b2b_api_schedule_delete')),
+
+            ]" />
+        </record>
+    </data>
+</openerp>

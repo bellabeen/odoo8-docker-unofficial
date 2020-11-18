@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+<template id="teds_act_plan_btl_print">
+    <t t-call="report.html_container">
+        <t t-foreach="docs" t-as="o">
+                <div class="page">
+                    <div class="oe_structure"/>
+                        <div class="row"> 
+                        </div>
+                        <div class="col-xs-12">
+                            <table style="font-size:10px">
+                                <tr>
+                                    <td colspan="2"><strong>PT.TUNAS DWIPA MATRA</strong></td>
+                                </tr>
+                                <tr>
+                                    <td width="20%">Cabang</td>
+                                    <td><span t-esc="branch(data)"/></td>
+                                </tr>
+                                <tr>
+                                    <td width="20%">Periode</td>
+                                    <td><span t-esc="periode(data)"/></td>
+                                </tr>
+                            </table>
+                            <p align="center" style="font-size:10px">PROPOSAL PERPANJANGAN &amp; PENGAJUAN PAMERAN</p>
+                            <table class="table table-bordered" style="font-size:8px">
+                                <tr>
+                                    <th>No</th>
+                                    <th>Lokasi</th>
+                                    <th>Periode</th>
+                                    <th>Pic Lokasi</th>
+                                    <th>Market</th>
+                                    <th>Evaluasi BTL</th>
+                                    <th>Foto Lokasi BTL</th>
+                                    <th>Biaya</th>
+                                </tr>
+                                <tr t-foreach="detail_ids(data)" style="page-break-inside: avoid !important;font-size: 8px;" t-as="detail">
+                                    <td><span t-esc="no_urut()"/></td>
+                                    <td>
+                                        <table style="font-size:8px; width:100%; line-height:200%">
+                                            <tr>
+                                                <th>Nama</th>
+                                                <td>:</td>
+                                                <td><span t-esc="detail['name']"/></td>
+                                                
+                                                <th>Jarak</th>
+                                                <td width="5%">:</td>
+                                                <td><span t-esc="detail['jarak']"/> Km</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Alamat</th>
+                                                <td>:</td>
+                                                <td>
+                                                    <span t-esc="detail['alamat']"/> ,Rt/Rw: <span t-esc="detail['rt']"/> / <span t-esc="detail['rw']"/> <br/>
+                                                    ,Kota: <span t-esc="detail['city']"/><br/>
+                                                    Kec: <span t-esc="detail['kecamatan']"/> ,Kel: <span t-esc="detail['kelurahan']"/> 
+                                                </td>
+                                                <th>Waktu</th>
+                                                <td width="5%">: </td>
+                                                <td><span t-esc="detail['waktu']"/> Menit</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table style="font-size:8px; width:100%; line-height:200%" border="1">
+                                            <tr>
+                                                <th>Tgl Awal</th>
+                                                <td width="5%">: </td>
+                                                <td><span t-esc="detail['start_date']"/></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Tgl Akhir</th>
+                                                <td>:</td>
+                                                <td><span t-esc="detail['end_date']"/></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table style="font-size:8px; width:100%; line-height:200%" border="1">
+                                            <tr>
+                                                <th>Nama</th>
+                                                <td width="5%">: </td>
+                                                <td><span t-esc="detail['pic']"/></td>
+                                            </tr>
+                                            <tr>
+                                                <th>NIK</th>
+                                                <td width="5%">: </td>
+                                                <td><span t-esc="detail['nik']"/></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Jabatan</th>
+                                                <td width="5%">: </td>
+                                                <td><span t-esc="detail['jabatan']"/></td>
+                                            </tr>
+                                            <tr>
+                                                <th>No Telp</th>
+                                                <td width="5%">: </td>
+                                                <td><span t-esc="detail['no_telp']"/></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table style="font-size:8px; width:100%; line-height:200%" border="1">
+                                            <tr>
+                                                <th>Display (Unit)</th>
+                                                <td width="5%">: </td>
+                                                <td><span t-esc="detail['display_unit']"/></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Target (Unit)</th>
+                                                <td width="5%">: </td>
+                                                <td><span t-esc="detail['target_unit']"/></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <t t-if="detail['history_ids'] != []">
+                                                        <b><u>Pencapaian Bulan</u></b>
+                                                        <table style="font-size:8px; width:100%; line-height:200%" border="1">
+                                                            <tr t-foreach="detail['history_ids']" style="page-break-inside: avoid !important;font-size: 8px;" t-as="history">
+                                                                <td>
+                                                                    <table style="font-size:8px; width:100%; line-height:200%" border="1">
+                                                                        <tr>
+                                                                            <th>- <span t-esc="history['name']"/></th>
+                                                                            <td width="5%">: </td>
+                                                                            <td><span t-esc="history['qty']"/></td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </t>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table style="font-size:8px; width:100%; line-height:200%" border="1">
+                                            <tr>
+                                                <th>Pencapaian (Unit)</th>
+                                                <td width="5%">: </td>
+                                                <td><span t-esc="detail['pencapaian_unit']"/></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <t t-if="detail['detail_unit_ids'] != False">
+                                                        <b><u>Pencapaian Bulan Terakhir</u></b>
+                                                        <table style="font-size:8px; width:100%; line-height:200%" border="1">
+                                                            <tr t-foreach="detail['detail_unit_ids']" style="page-break-inside: avoid !important;font-size: 8px;" t-as="history_detail">
+                                                                <td>
+                                                                    <table style="font-size:8px; width:100%; line-height:200%" border="1">
+                                                                        <tr>
+                                                                            <th>- <span t-esc="history_detail['categ_id']"/></th>
+                                                                            <td width="5%">: </td>
+                                                                            <td><span t-esc="history_detail['qty']"/></td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </t>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <img t-attf-src="data:image/*;base64,{{detail['foto']}}" width="100px" height="70px"/>
+                                    </td>
+                                    <td>
+                                        <table style="font-size:8px; width:100%; line-height:200%" border="1">
+                                            <tr t-foreach="detail['biaya_ids']" style="page-break-inside: avoid !important;font-size: 8px;" t-as="biaya">
+                                                <td>
+                                                    <table style="font-size:8px; width:100%; line-height:200%" border="1">
+                                                        <tr>
+                                                            <th>Biaya</th>
+                                                            <td width="5%">: </td>
+                                                            <td><span t-esc="biaya['name']"/></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Partner</th>
+                                                            <td width="5%">: </td>
+                                                            <td><span t-esc="biaya['finco']"/></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>DPP</th>
+                                                            <td width="5%">: </td>
+                                                            <td><span t-esc="'{0:,.2f}'.format(biaya['amount'])"/></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>PPH 10%</th>
+                                                            <td width="5%">: </td>
+                                                            <td><span t-esc="'{0:,.2f}'.format(biaya['subtotal'] - biaya['amount'])"/></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Total</th>
+                                                            <td width="5%">: </td>
+                                                            <td><span t-esc="'{0:,.2f}'.format(biaya['subtotal'])"/></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="8">
+                                        <b><u>Summary</u></b><br/>
+                                        <div class="col-xs-4">
+                                            <table style="font-size:8px; width:100%; line-height:70%;" class="table table-bordered">
+                                                <tr>
+                                                    <th colspan="4">A. Biaya Aktivitas BTL</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Biaya</th>
+                                                    <th>Total DPP</th>
+                                                    <th>Total PPH</th>
+                                                    <th>Subtotal</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Beban TDM</td>
+                                                    <td>Rp <span t-esc="'{0:,.2f}'.format(total_biaya_tdm(data))"/></td>
+                                                    <td>Rp <span t-esc="'{0:,.2f}'.format(total_biaya_tdm_ppn(data) - total_biaya_tdm(data))"/></td>
+                                                    <td>Rp <span t-esc="'{0:,.2f}'.format(total_biaya_tdm_ppn(data))"/></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Beban Leasing</td>
+                                                    <td>Rp <span t-esc="'{0:,.2f}'.format(total_biaya_leasing(data))"/></td>
+                                                    <td>Rp <span t-esc="'{0:,.2f}'.format(total_biaya_leasing_ppn(data) - total_biaya_leasing(data))"/></td>
+                                                    <td>Rp <span t-esc="'{0:,.2f}'.format(total_biaya_leasing_ppn(data))"/></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th style="font-size:9px" width="50%" colspan="2">Subtotal DPP</th>
+                                                    <th style="font-size:9px" colspan="2">Rp <span t-esc="'{0:,.2f}'.format(total_biaya_tdm(data) + total_biaya_leasing(data))"/></th>
+                                                </tr>
+                                                <tr>
+                                                    <th style="font-size:9px" width="50%" colspan="2">Subtotal PPH 10%</th>
+                                                    <th style="font-size:9px" colspan="2">Rp <span t-esc="'{0:,.2f}'.format((total_biaya_tdm_ppn(data) - total_biaya_tdm(data))  + ( total_biaya_leasing_ppn(data) - total_biaya_leasing(data)))"/></th>
+                                                </tr>
+                                                <tr>
+                                                    <th style="font-size:9px" width="50%" colspan="2">Subtotal</th>
+                                                    <th style="font-size:9px" colspan="2">Rp <span t-esc="'{0:,.2f}'.format(total_biaya_tdm_ppn(data)  + total_biaya_leasing_ppn(data))"/></th>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="4"><span t-esc="data['create_uid']"/>, <span t-esc="data['create_date']"/></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <table style="font-size:9px; width:100%; line-height:200%" border="2" class="table table-bordered" align="right">
+                                                <tr>
+                                                    <th style="text-align:center">Area Manager</th>
+                                                    <th style="text-align:center">GM Operational</th>
+                                                </tr>
+                                                <tr height="40">
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr height="10">
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            
+                        </div>                  
+                    <div class="oe_structure"/>
+                </div>
+        </t>
+    </t>
+</template>
+
+<template id="teds_act_plan_btl_print_tree">
+    <t t-call="report.html_container">
+        <div class="page">
+            <div class="oe_structure"/>
+                <div class="row"> 
+                </div>
+                <div class="col-xs-12">
+                    <table style="font-size:10px">
+                        <tr>
+                            <td colspan="2"><strong>PT.TUNAS DWIPA MATRA</strong></td>
+                        </tr>
+                        <tr>
+                            <td width="20%">Cabang</td>
+                            <td><span t-esc="branch()"/></td>
+                        </tr>
+                        <tr>
+                            <td width="20%">Periode</td>
+                            <td><span t-esc="periode()"/></td>
+                        </tr>
+                    </table>
+                    <p align="center" style="font-size:10px">PROPOSAL PERPANJANGAN &amp; PENGAJUAN PAMERAN</p>
+                    <table class="table table-bordered" style="font-size:8px">
+                        <tr>
+                            <th>No</th>
+                            <th>Lokasi</th>
+                            <th>Periode</th>
+                            <th>Pic Lokasi</th>
+                            <th>Market</th>
+                            <th>Evaluasi BTL</th>
+                            <th>Foto Lokasi BTL</th>
+                            <th>Biaya</th>
+                        </tr>
+                        <tr t-foreach="detail_ids()" style="page-break-inside: avoid !important;font-size: 8px;" t-as="detail">
+                            <td><span t-esc="no_urut()"/></td>
+                            <td>
+                                <table style="font-size:8px; width:100%; line-height:200%">
+                                    <tr>
+                                        <th>Nama</th>
+                                        <td>:</td>
+                                        <td><span t-esc="detail['name']"/></td>
+                                        
+                                        <th>Jarak</th>
+                                        <td width="5%">:</td>
+                                        <td><span t-esc="detail['jarak']"/> Km</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Alamat</th>
+                                        <td>:</td>
+                                        <td>
+                                            <span t-esc="detail['alamat']"/> ,Rt/Rw: <span t-esc="detail['rt']"/> / <span t-esc="detail['rw']"/> <br/>
+                                            ,Kota: <span t-esc="detail['city']"/><br/>
+                                            Kec: <span t-esc="detail['kecamatan']"/> ,Kel: <span t-esc="detail['kelurahan']"/> 
+                                        </td>
+                                        <th>Waktu</th>
+                                        <td width="5%">: </td>
+                                        <td><span t-esc="detail['waktu']"/> Menit</td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <table style="font-size:8px; width:100%; line-height:200%" border="1">
+                                    <tr>
+                                        <th>Tgl Awal</th>
+                                        <td width="5%">: </td>
+                                        <td><span t-esc="detail['start_date']"/></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Tgl Akhir</th>
+                                        <td>:</td>
+                                        <td><span t-esc="detail['end_date']"/></td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <table style="font-size:8px; width:100%; line-height:200%" border="1">
+                                    <tr>
+                                        <th>Nama</th>
+                                        <td width="5%">: </td>
+                                        <td><span t-esc="detail['pic']"/></td>
+                                    </tr>
+                                    <tr>
+                                        <th>NIK</th>
+                                        <td width="5%">: </td>
+                                        <td><span t-esc="detail['nik']"/></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Jabatan</th>
+                                        <td width="5%">: </td>
+                                        <td><span t-esc="detail['jabatan']"/></td>
+                                    </tr>
+                                    <tr>
+                                        <th>No Telp</th>
+                                        <td width="5%">: </td>
+                                        <td><span t-esc="detail['no_telp']"/></td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <table style="font-size:8px; width:100%; line-height:200%" border="1">
+                                    <tr>
+                                        <th>Display (Unit)</th>
+                                        <td width="5%">: </td>
+                                        <td><span t-esc="detail['display_unit']"/></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Target (Unit)</th>
+                                        <td width="5%">: </td>
+                                        <td><span t-esc="detail['target_unit']"/></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <t t-if="detail['history_ids'] != []">
+                                                <b><u>Pencapaian Bulan</u></b>
+                                                <table style="font-size:8px; width:100%; line-height:200%" border="1">
+                                                    <tr t-foreach="detail['history_ids']" style="page-break-inside: avoid !important;font-size: 8px;" t-as="history">
+                                                        <td>
+                                                            <table style="font-size:8px; width:100%; line-height:200%" border="1">
+                                                                <tr>
+                                                                    <th>- <span t-esc="history['name']"/></th>
+                                                                    <td width="5%">: </td>
+                                                                    <td><span t-esc="history['qty']"/></td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </t>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <table style="font-size:8px; width:100%; line-height:200%" border="1">
+                                    <tr>
+                                        <th>Pencapaian (Unit)</th>
+                                        <td width="5%">: </td>
+                                        <td><span t-esc="detail['pencapaian_unit']"/></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <t t-if="detail['detail_unit_ids'] != False">
+                                                <b><u>Pencapaian Bulan Terakhir</u></b>
+                                                <table style="font-size:8px; width:100%; line-height:200%" border="1">
+                                                    <tr t-foreach="detail['detail_unit_ids']" style="page-break-inside: avoid !important;font-size: 8px;" t-as="history_detail">
+                                                        <td>
+                                                            <table style="font-size:8px; width:100%; line-height:200%" border="1">
+                                                                <tr>
+                                                                    <th>- <span t-esc="history_detail['categ_id']"/></th>
+                                                                    <td width="5%">: </td>
+                                                                    <td><span t-esc="history_detail['qty']"/></td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </t>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <img t-attf-src="data:image/*;base64,{{detail['foto']}}" width="100px" height="70px"/>
+                            </td>
+                            <td>
+                                <table style="font-size:8px; width:100%; line-height:200%" border="1">
+                                    <tr t-foreach="detail['biaya_ids']" style="page-break-inside: avoid !important;font-size: 8px;" t-as="biaya">
+                                        <td>
+                                            <table style="font-size:8px; width:100%; line-height:200%" border="1">
+                                                <tr>
+                                                    <th>Biaya</th>
+                                                    <td width="5%">: </td>
+                                                    <td><span t-esc="biaya['name']"/></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Partner</th>
+                                                    <td width="5%">: </td>
+                                                    <td><span t-esc="biaya['finco']"/></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>DPP</th>
+                                                    <td width="5%">: </td>
+                                                    <td><span t-esc="'{0:,.2f}'.format(biaya['amount'])"/></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>PPH 10%</th>
+                                                    <td width="5%">: </td>
+                                                    <td><span t-esc="'{0:,.2f}'.format(biaya['subtotal'] - biaya['amount'])"/></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Total</th>
+                                                    <td width="5%">: </td>
+                                                    <td><span t-esc="'{0:,.2f}'.format(biaya['subtotal'])"/></td>
+                                                </tr>
+
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="8">
+                                <b><u>Summary</u></b><br/>
+                                <div class="col-xs-4">
+                                    <table style="font-size:8px; width:100%; line-height:70%;" class="table table-bordered">
+                                        <tr>
+                                            <th colspan="4">A. Biaya Aktivitas BTL</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Biaya</th>
+                                            <th>Total DPP</th>
+                                            <th>Total PPH</th>
+                                            <th>Subtotal</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Beban TDM</td>
+                                            <td>Rp <span t-esc="'{0:,.2f}'.format(total_biaya_tdm())"/></td>
+                                            <td>Rp <span t-esc="'{0:,.2f}'.format(total_biaya_tdm_ppn() - total_biaya_tdm())"/></td>
+                                            <td>Rp <span t-esc="'{0:,.2f}'.format(total_biaya_tdm_ppn())"/></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Beban Leasing</td>
+                                            <td>Rp <span t-esc="'{0:,.2f}'.format(total_biaya_leasing())"/></td>
+                                            <td>Rp <span t-esc="'{0:,.2f}'.format(total_biaya_leasing_ppn() - total_biaya_leasing())"/></td>
+                                            <td>Rp <span t-esc="'{0:,.2f}'.format(total_biaya_leasing_ppn())"/></td>
+                                        </tr>
+
+                                        <tr>
+                                            <th style="font-size:10px" width="50%" colspan="2">Subtotal DPP</th>
+                                            <th style="font-size:10px" colspan="2">Rp <span t-esc="'{0:,.2f}'.format(total_biaya_tdm() + total_biaya_leasing())"/></th>
+                                        </tr>
+                                        <tr>
+                                            <th style="font-size:10px" width="50%" colspan="2">Subtotal PPH 10%</th>
+                                            <th style="font-size:10px" colspan="2">Rp <span t-esc="'{0:,.2f}'.format((total_biaya_tdm_ppn() - total_biaya_tdm())  + ( total_biaya_leasing_ppn() - total_biaya_leasing()))"/></th>
+                                        </tr>
+                                        <tr>
+                                            <th style="font-size:9px" width="50%" colspan="2">Subtotal</th>
+                                            <th style="font-size:9px" colspan="2">Rp <span t-esc="'{0:,.2f}'.format(total_biaya_tdm_ppn()  + total_biaya_leasing_ppn())"/></th>
+                                        </tr>
+
+                                        <tr>
+                                            <td colspan="4"><span t-esc="create_uid()"/>, <span t-esc="create_date()"/></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="col-xs-3">
+                                    <table style="font-size:9px; width:100%; line-height:200%" border="2" class="table table-bordered">
+                                        <tr>
+                                            <th style="text-align:center">Area Manager</th>
+                                            <th style="text-align:center">GM Operational</th>
+                                        </tr>
+                                        <tr height="40">
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr height="10">
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>                  
+            <div class="oe_structure"/>
+        </div>
+    </t>
+</template>
+
+</data>
+</openerp>

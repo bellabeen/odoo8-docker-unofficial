@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+		<record id="module_category_tdm" model="ir.module.category">
+			<field name="name">TDM</field>
+		</record>
+		<record id="groups_vp" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Vice President</field>
+		</record>
+		<record id="groups_spv_tsd" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Supervisor TSD</field>
+		</record>
+		<record id="groups_spv_treasury" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Supervisor Treasury</field>
+		</record>
+		<record id="groups_spv_tax" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Supervisor Tax</field>
+		</record>
+		<record id="groups_spv_sa" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Supervisor Service Advisor</field>
+		</record>
+		<record id="groups_spv_promotion" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Supervisor Promotion</field>
+		</record>
+		<record id="groups_spv_pdev" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Supervisor People Development</field>
+		</record>
+		<record id="groups_spv_ass" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Supervisor Penjualan ASS</field>
+		</record>
+		<record id="groups_spv_pdca" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Supervisor PDCA</field>
+		</record>
+		<record id="groups_spv_payment" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Supervisor Payment</field>
+		</record>
+		<record id="groups_spv_logistik" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Supervisor Logistik</field>
+		</record>
+		<record id="goups_spv_legal" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Supervisor Legal</field>
+		</record>
+		<record id="groups_spv_wh_head" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Supervisor Kepala Gudang</field>
+		</record>
+		<record id="groups_spv_ws_head" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Supervisor Kepala Bengkel</field>
+		</record>
+		<record id="groups_spv_it_support" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Supervisor IT Support</field>
+		</record>
+		<record id="groups_spv_it_infra" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Supervisor IT Infrastruktur</field>
+		</record>
+		<record id="groups_spv_it_ba" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Supervisor IT Bisnis Analis</field>
+		</record>
+		<record id="groups_spv_hc3" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Supervisor HC3</field>
+		</record>
+		<record id="groups_spv_ga" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Supervisor GA</field>
+		</record>
+		<record id="groups_spv_purchasing" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Supervisor GA Purchasing</field>
+		</record>
+		<record id="groups_spv_funding" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Supervisor Funding</field>
+		</record>
+		<record id="goups_spv_compliance" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Supervisor Compliance</field>
+		</record>
+		<record id="groups_spv_budget" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Supervisor Budget</field>
+		</record>
+		<record id="groups_spv_bp" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Supervisor BP</field>
+		</record>
+		<record id="goups_spv_area" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Supervisor Area</field>
+		</record>
+		<record id="groups_spv_arcontrol" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Supervisor AR Control</field>
+		</record>
+		<record id="groups_spv_ass_admin" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Supervisor Administrasi ASS</field>
+		</record>
+		<record id="groups_spv_acc" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Supervisor Accounting</field>
+		</record>
+		<record id="groups_staff_it_infra" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staff IT Infrastruktur</field>
+		</record>
+		<record id="groups_staff_tax" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf Tax</field>
+		</record>
+		<record id="groups_staff_secretary" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf Sekretariat</field>
+		</record>
+		<record id="groups_staff_qc" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf QC</field>
+		</record>
+		<record id="groups_staff_promotion" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf Promotion</field>
+		</record>
+		<record id="groups_staff_pdev" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf People Development</field>
+		</record>
+		<record id="groups_staff_pdi" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf PDI</field>
+		</record>
+		<record id="groups_staff_pdca" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf PDCA</field>
+		</record>
+		<record id="groups_staff_payment" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf Payment</field>
+		</record>
+		<record id="groups_staff_unit_operation" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf Operation Support Unit</field>
+		</record>
+		<record id="groups_staff_ass_operation" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf Operation Support ASS</field>
+		</record>
+		<record id="groups_staff_logistic" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf Logistik</field>
+		</record>
+		<record id="groups_staff_legal" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf Legal Administrasi</field>
+		</record>
+		<record id="groups_staff_it_support" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf IT Support</field>
+		</record>
+		<record id="groups_staff_it_maintenance" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf IT Maintenance</field>
+		</record>
+		<record id="groups_staff_it_admin" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf IT Administrasi</field>
+		</record>
+		<record id="groups_staff_hrd_payroll" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf HRD Payroll</field>
+		</record>
+		<record id="groups_staff_hrd_admin" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf HRD Administrasi</field>
+		</record>
+		<record id="groups_staff_hc3" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf HC3</field>
+		</record>
+		<record id="groups_staff_wh_unit" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf Gudang Unit</field>
+		</record>
+		<record id="groups_staff_wh_umum" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf Gudang Umum</field>
+		</record>
+		<record id="groups_staff_wh_part" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf Gudang Part</field>
+		</record>
+		<record id="groups_staff_purchase" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf GA Pembelian</field>
+		</record>
+		<record id="groups_staff_ga_maintenance" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf GA Maintenance</field>
+		</record>
+		<record id="groups_staff_ga_admin" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf GA Administrasi</field>
+		</record>
+		<record id="groups_staff_funding" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf Funding</field>
+		</record>
+		<record id="groups_staff_fact" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf FAct</field>
+		</record>
+		<record id="groups_staff_compliance" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf Compliance</field>
+		</record>
+		<record id="groups_staff_bdev" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf Business Development</field>
+		</record>
+		<record id="groups_staff_budget_switcho" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf Budget Switching and Over</field>
+		</record>
+		<record id="groups_staff_budget_commit" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf Budget Commit</field>
+		</record>
+		<record id="groups_staff_bpadmin" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf BP Administrasi</field>
+		</record>
+		<record id="groups_staff_arcontrol" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf AR Control</field>
+		</record>
+		<record id="groups_staff_sales_admin" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf Administrasi Penjualan</field>
+		</record>
+		<record id="groups_staff_wh_admin" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf Administrasi Gudang</field>
+		</record>
+		<record id="groups_staff_ass_admin" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf Administrasi ASS</field>
+		</record>
+		<record id="groups_staff_stnk_admin" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf Admin STNK/BPKB</field>
+		</record>
+		<record id="groups_staff_sr_admin" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf Admin SR</field>
+		</record>
+		<record id="groups_staff_ws_admin" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf Admin WS</field>
+		</record>
+		<record id="groups_staff_srws_admin" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf Admin SR and WS</field>
+		</record>
+		<record id="groups_staff_pos_admin" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf Admin POS</field>
+		</record>
+		<record id="groups_staff_md_admin" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf Admin MD</field>
+		</record>
+		<record id="groups_staff_acc_reporting" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf Accounting Reporting</field>
+		</record>
+		<record id="groups_staff_acc_jm" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf Accounting Jurnal Memorial</field>
+		</record>
+		<record id="groups_staff_acc_closing" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Staf Accounting Closing</field>
+		</record>
+		<record id="groups_driver" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Sopir</field>
+		</record>
+		<record id="groups_soh" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">SOH</field>
+		</record>
+		<record id="group_mt_soh" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">SOH Management Trainee</field>
+		</record>
+		<record id="groups_security" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">SECURITY</field>
+		</record>
+		<record id="groups_sales_trainee" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Salesman Training</field>
+		</record>
+		<record id="groups_sales" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Salesman Tetap</field>
+		</record>
+		<record id="groups_sales_magang" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Salesman Magang</field>
+		</record>
+		<record id="groups_sales_contract" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Salesman Kontrak</field>
+		</record>
+		<record id="groups_sales_ass" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Salesman ASS</field>
+		</record>
+		<record id="groups_sales_counter" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Sales Counter</field>
+		</record>
+		<record id="groups_pd" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Presdir</field>
+		</record>
+		<record id="groups_ob" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Office Boy</field>
+		</record>
+		<record id="groups_mec" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Mekanik</field>
+		</record>
+		<record id="groups_mec_magang" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Mekanik Magang</field>
+		</record>
+		<record id="groups_marketing_mds" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Marketing Data Support MD</field>
+		</record>
+		<record id="groups_manager_tsd" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Manager TSD</field>
+		</record>
+		<record id="groups_manager_service" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Manager Service</field>
+		</record>
+		<record id="groups_manager_promotion" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Manager Promotion</field>
+		</record>
+		<record id="groups_manager_marketing" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Manager Marketing MD</field>
+		</record>
+		<record id="groups_manager_it" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Manager IT</field>
+		</record>
+		<record id="groups_manager_audit" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Manager Internal Audit Operation</field>
+		</record>
+		<record id="groups_manager_hr" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Manager HR</field>
+		</record>
+		<record id="groups_manager_hc3" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Manager HC3</field>
+		</record>
+		<record id="groups_manager_ga" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Manager GA</field>
+		</record>
+		<record id="groups_manager_finance" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Manager Finance</field>
+		</record>
+		<record id="groups_manager_branch" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Manager Branch</field>
+		</record>
+		<record id="groups_manager_bp" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Manager BP</field>
+		</record>
+		<record id="groups_manager_area" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Manager Area</field>
+		</record>
+		<record id="groups_manager_admin" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Manager Administration</field>
+		</record>
+		<record id="groups_manager_acct" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Manager Accounting and Tax</field>
+		</record>
+		<record id="groups_koordinator_partman" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Kordinator Partman</field>
+		</record>
+		<record id="groups_koordinator_sales" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Koordinator Salesman</field>
+		</record>
+		<record id="groups_comissioner" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Komisaris</field>
+		</record>
+		<record id="groups_kamec" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Kepala Mekanik</field>
+		</record>
+		<record id="groups_kenek" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Kenek</field>
+		</record>
+		<record id="groups_cashier" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Kasir</field>
+		</record>
+		<record id="groups_helpdesk" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Helpdesk</field>
+		</record>
+		<record id="groups_gm_md" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">GM MD</field>
+		</record>
+		<record id="groups_gm_retail" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">GM Retail</field>
+		</record>
+		<record id="groups_gm_facc" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">GM Finance Accounting</field>
+		</record>
+		<record id="groups_frontd_part" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Frontdesk+Partman </field>
+		</record>
+		<record id="groups_frontd" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Frontdesk</field>
+		</record>
+		<record id="groups_ws_foreman" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Foreman WS</field>
+		</record>
+		<record id="groups_director" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Direksi</field>
+		</record>
+		<record id="groups_sales_admin" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Administrasi Salesman</field>
+		</record>
+		<record id="groups_aas" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Admin Area Supervisor</field>
+		</record>
+		<record id="groups_adh" model="res.groups">
+			<field name="category_id" ref="module_category_tdm"/>
+			<field name="name">Administration Head</field>
+		</record>
+
+
+    </data>
+</openerp>

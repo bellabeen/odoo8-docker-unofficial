@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    
+<!-- Net Off RFA  -->
+		
+        <record id="group_wtc_net_off_rfa" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Net Off RFA</field>
+            <field name="implied_ids" eval="[(4, ref('group_net_off_read'))]"/>
+        </record>     
+        
+        <record id="access_wtc_net_off_out_rfa" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">wtc_net_off_rfa_approval_line read</field>
+            <field name="group_id" ref="group_wtc_net_off_rfa"/>
+            <field name="perm_create">1</field>
+        </record>
+               
+        <record id="access_wtc_net_off_rfa_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_net_off"/>
+            <field name="name">wtc_net_off_rfa write</field>
+            <field name="group_id" ref="group_wtc_net_off_rfa"/>
+            <field name="perm_write">1</field>
+        </record>
+                
+<!-- Net Off Cancel Approval -->
+		
+        <record id="group_wtc_net_off_cancel_approval" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Net Off Cancel Approval</field>
+            <field name="implied_ids" eval="[(4, ref('group_net_off_read'))]"/>
+        </record>
+          
+        <record id="access_wtc_net_off_cancel_approval_write" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">wtc_net_off_cancel_approval_line write</field>
+            <field name="group_id" ref="group_wtc_net_off_cancel_approval"/>
+            <field name="perm_write">1</field>
+        </record>
+                
+        <record id="access_wtc_net_off_cancel_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_net_off"/>
+            <field name="name">wtc_net_off_cancel write</field>
+            <field name="group_id" ref="group_wtc_net_off_cancel_approval"/>
+            <field name="perm_write">1</field>
+        </record>   
+        
+<!-- Net Off Approve -->
+		
+        <record id="group_wtc_net_off_approve_approval" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Net Off Approve Approval</field>
+            <field name="implied_ids" eval="[(4, ref('group_net_off_read'))]"/>
+        </record>
+          
+        <record id="access_wtc_net_off_approve_approval_write" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">wtc_net_off_approve_approval_line write</field>
+            <field name="group_id" ref="group_wtc_net_off_approve_approval"/>
+            <field name="perm_write">1</field>
+        </record>
+                
+        <record id="access_wtc_net_off_approve_write" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_net_off"/>
+            <field name="name">wtc_net_off_approve write</field>
+            <field name="group_id" ref="group_wtc_net_off_approve_approval"/>
+            <field name="perm_write">1</field>
+        </record>       
+        
+        <record id="access_wtc_net_off_approve_account_move_reconcile" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move_reconcile"/>
+            <field name="name">wtc_net_off_approve_account_move_reconcile update</field> 
+            <field name="group_id" ref="group_wtc_net_off_approve_approval"/>  
+            <field name="perm_create">1</field> 
+        </record> 
+          
+        <record id="access_wtc_net_off_approve_account_move_line" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move_line"/>
+            <field name="name">wtc_net_off_approve_account_move_line update</field> 
+            <field name="group_id" ref="group_wtc_net_off_approve_approval"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field>
+        </record>     
+        
+        <record id="access_wtc_net_off_approve_account_move" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_move"/>
+            <field name="name">wtc_net_off_approve_account_move update</field> 
+            <field name="group_id" ref="group_wtc_net_off_approve_approval"/>  
+            <field name="perm_read">1</field> 
+        </record>
+                
+        <record id="access_wtc_net_off_line_approve" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_net_off_line"/>
+            <field name="name">wtc_net_off_line__approve write</field> 
+            <field name="group_id" ref="group_wtc_net_off_approve_approval"/>  
+            <field name="perm_write">1</field> 
+        </record>    
+            
+                                           
+    </data>
+</openerp>

@@ -1,0 +1,303 @@
+<!DOCTYPE document SYSTEM "rml.dtd">
+<document filename="example_11.pdf">
+
+
+   
+   
+<template pageSize="(20cm, 29.7cm)" showBoundary="0" title="Other Receivable"  allowSplitting="20">
+<pageTemplate id="Layout1" >
+	<!-- three frames are defined here: -->
+	<frame id="frame_header" x1="0.0" y1="27cm" width="20cm" height="2.7cm"/>
+	<frame id="frame_content" x1="0.0" y1="17.5cm" width="20cm" height="12cm"/>
+	
+<docinit>
+	   <registerFont fontFile="/opt/odoo/TDM/font/AGENCYR.TTF"  expr="{'fontFile':str(police_absolute_path('addons/l10n_ch/report/ocrbb.ttf'))}"  fontName="teds"   />
+   </docinit>
+	
+
+</pageTemplate>
+</template>
+<stylesheet>
+ <!-- Mendefiniskan Style Tabel -->
+    <blockTableStyle id="Table_No_Line">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <blockLeftPadding length="0.5mm"/>
+	  <blockRightPadding length="0.5mm"/>
+	  <blockTopPadding length="0.5mm"/>
+    </blockTableStyle>
+    
+     <!-- Mendefiniskan Style Tabel -->
+    <blockTableStyle id="Table_No_Line_Right">
+      <blockAlignment value="RIGHT"/>
+      <blockValign value="TOP"/>
+      <blockLeftPadding length="0.5mm"/>
+	  <blockRightPadding length="0.5mm"/>
+	  <blockTopPadding length="0.5mm"/>
+    </blockTableStyle>
+ 
+     
+    <blockTableStyle id="Table_Line">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <blockLeftPadding length="0.5mm"/>
+	  <blockRightPadding length="0.5mm"/>
+	  <blockTopPadding length="0.5mm"/>
+        <!-- Kolom ke-1 -->
+        <!-- atas --><lineStyle kind="LINEABOVE" colorName="#000000" start="0,0" stop="0,0"/>
+        <!-- kanan --><lineStyle kind="LINEBEFORE" colorName="#000000" start="1,-1" stop="1,-1"/>
+        <!-- bawah --><lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+        <!-- kiri --><lineStyle kind="LINEBEFORE" colorName="#000000" start="0,0" stop="0,0"/>
+        <!-- Kolom ke-2 -->
+        <!-- atas --><lineStyle kind="LINEABOVE" colorName="#000000" start="1,0" stop="1,0"/>
+        <!-- kanan --><lineStyle kind="LINEBEFORE" colorName="#000000" start="2,-1" stop="2,-1"/>
+        <!-- bawah --><lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+        <!-- kiri --><lineStyle kind="LINEBEFORE" colorName="#000000" start="1,0" stop="1,0"/>
+        <!-- Kolom ke-3 -->
+        <!-- atas --><lineStyle kind="LINEABOVE" colorName="#000000" start="2,0" stop="2,0"/>
+        <!-- kanan --><lineStyle kind="LINEBEFORE" colorName="#000000" start="3,-1" stop="3,-1"/>
+        <!-- bawah --><lineStyle kind="LINEBELOW" colorName="#000000" start="2,-1" stop="2,-1"/>
+        <!-- kiri --><lineStyle kind="LINEBEFORE" colorName="#000000" start="2,0" stop="2,0"/>
+        <!-- Kolom ke-4 -->
+        <!-- atas --><lineStyle kind="LINEABOVE" colorName="#000000" start="3,0" stop="3,0"/>
+        <!-- kanan --><lineStyle kind="LINEBEFORE" colorName="#000000" start="4,-1" stop="4,-1"/>
+        <!-- bawah --><lineStyle kind="LINEBELOW" colorName="#000000" start="3,-1" stop="3,-1"/>
+        <!-- kiri --><lineStyle kind="LINEBEFORE" colorName="#000000" start="3,0" stop="3,0"/>
+        <!-- Kolom ke-5 -->
+        <!-- atas --><lineStyle kind="LINEABOVE" colorName="#000000" start="4,0" stop="4,0"/>
+        <!-- kanan --><lineStyle kind="LINEBEFORE" colorName="#000000" start="5,-1" stop="5,-1"/>
+        <!-- bawah --><lineStyle kind="LINEBELOW" colorName="#000000" start="4,-1" stop="4,-1"/>
+        <!-- kiri --><lineStyle kind="LINEBEFORE" colorName="#000000" start="4,0" stop="4,0"/>
+        <!-- Kolom ke-6 -->
+        <!-- atas --><lineStyle kind="LINEABOVE" colorName="#000000" start="5,0" stop="5,0"/>
+        <!-- kanan --><lineStyle kind="LINEBEFORE" colorName="#000000" start="6,-1" stop="6,-1"/>
+        <!-- bawah --><lineStyle kind="LINEBELOW" colorName="#000000" start="5,-1" stop="5,-1"/>
+        <!-- kiri --><lineStyle kind="LINEBEFORE" colorName="#000000" start="5,0" stop="5,0"/>
+		<!-- Kolom ke-7 -->
+        <!-- atas --><lineStyle kind="LINEABOVE" colorName="#000000" start="6,0" stop="6,0"/>
+        <!-- kanan --><lineStyle kind="LINEBEFORE" colorName="#000000" start="7,-1" stop="7,-1"/>
+        <!-- bawah --><lineStyle kind="LINEBELOW" colorName="#000000" start="6,-1" stop="6,-1"/>
+        <!-- kiri --><lineStyle kind="LINEBEFORE" colorName="#000000" start="6,0" stop="6,0"/>
+        <!-- Kolom ke-8 -->
+        <!-- atas --><lineStyle kind="LINEABOVE" colorName="#000000" start="7,0" stop="7,0"/>
+        <!-- kanan --><lineStyle kind="LINEBEFORE" colorName="#000000" start="8,-1" stop="8,-1"/>
+        <!-- bawah --><lineStyle kind="LINEBELOW" colorName="#000000" start="7,-1" stop="7,-1"/>
+        <!-- kiri --><lineStyle kind="LINEBEFORE" colorName="#000000" start="7,0" stop="7,0"/>
+		
+    </blockTableStyle>
+     
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+
+    <paraStyle name="terp_header_besar" fontName="Helvetica-Bold" fontSize="11.0" leading="15" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_header_kecil" fontName="teds" fontSize="11.0" leading="0.3cm" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_header_kecil_center" fontName="teds" fontSize="11.0" leading="0.3cm" alignment="CENTER" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_enter_tanda_tangan"  leading="0.5cm"/>
+    <paraStyle name="terp_isi_table" fontName="teds" fontSize="11.0" leading="0.3cm" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+   	<paraStyle name="terp_isi_table_right" fontName="teds" fontSize="11.0" leading="0.4cm" alignment="RIGHT" spaceBefore="0.0" spaceAfter="0.0"/>
+   	<paraStyle name="terp_isi_table_line" fontName="teds" fontSize="11.0" leading="0.4cm" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_isi_table_line_right" fontName="teds" fontSize="11.0" leading="0.4cm" alignment="RIGHT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_isi_table_line_center" fontName="teds" fontSize="11.0" leading="0.45cm" alignment="CENTER" spaceBefore="0.0" spaceAfter="0.0"/>
+     <paraStyle name="terp_isi_footer" fontName="teds" fontSize="11.0" leading="0.3cm" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+</stylesheet>
+
+<story>
+
+
+
+	
+
+<nextFrame name="frame_content"/>
+<para style="header">[[repeatIn(objects, 'p')]]</para>
+
+
+
+	<blockTable colWidths="12cm,6.5cm" style="Table_No_Line">
+
+   		<tr>
+   			<td>
+   				<para style="terp_header_besar">[[ p.branch_id.company_id.name]] [[ p.branch_id.name]] </para>
+   				<blockTable colWidths="10cm" style="Table_No_Line">
+	      	   		<tr>
+	      	   			<td><para style="terp_header_kecil"> </para></td>
+	      	   		</tr>
+	      	   		<tr>
+	      	   			<td>
+	      	   			<para style="terp_header_kecil">
+	      	   			 </para>
+	      	   			
+	      	   			</td>
+	      	   		</tr>
+	      	   		</blockTable>
+	      	   		
+	      	   		<blockTable colWidths="8cm,10cm" style="Table_No_Line">
+	      	   		<tr>
+	      	   			<td><para style="terp_header_kecil">  </para></td>
+	      	   			
+	      	   			<td><para style="terp_header_kecil"> </para></td>
+	      	   		</tr>
+				</blockTable>
+				
+				
+	      	   		
+	      	   		<blockTable colWidths="6cm,12cm" style="Table_No_Line">
+	      	   		<tr>
+	      	   			<td><para style="terp_header_kecil">NPWP : [[p.branch_id.npwp]]  </para></td>
+	      	   			
+	      	   			<td><para style="terp_header_kecil">Tanggal Pengukuhan : [[ formatLang(p.branch_id.tgl_kukuh, date= True) ]] </para></td>
+	      	   		</tr>
+				</blockTable>
+   			</td>
+   			<td>
+   			<para style="terp_header_besar">Invoice</para>
+   			<blockTable colWidths="2cm,0.5cm,5cm" style="Table_No_Line">
+	      	   		<tr>
+	      	   			<td><para style="terp_header_kecil">No </para></td>
+	      	   			<td><para style="terp_header_kecil">: </para></td>
+	      	   			<td><para style="terp_header_kecil">[[invoice_id()]]</para></td>
+	      	   		</tr>
+	      	   		<tr>
+	      	   			<td><para style="terp_header_kecil">Tanggal </para></td>
+	      	   			<td><para style="terp_header_kecil">: </para></td>
+	      	   			<td><para style="terp_header_kecil"> [[ formatLang(p.date, date= True) ]]</para></td>
+	      	   		</tr>
+				</blockTable>
+   			
+   			</td>
+   		</tr>
+	</blockTable>
+	
+	<blockTable colWidths="18.5cm" style="Table_Line">
+   		<tr>
+	   		<td>
+	   			<blockTable colWidths="3.5cm,0.3cm,2cm,2.5cm,0.3cm,5.3cm,1.5cm,0.3cm,4.1cm" style="Table_No_Line">
+			   		<tr>
+				   		<td><para style="terp_isi_table">No Polisi </para></td>
+				   		<td><para style="terp_isi_table">: </para></td>
+				   		<td><para style="terp_isi_table">[[ p.no_pol]] </para></td>
+				   		<td><para style="terp_isi_table">Jenis Mtr </para></td>
+				   		<td><para style="terp_isi_table">:</para></td>
+				   		<td><para style="terp_isi_table">[[ p.product_id.description]]</para></td>
+				   		<td><para style="terp_isi_table">Warna </para></td>
+				   		<td><para style="terp_isi_table">: </para></td>
+				   		<td><para style="terp_isi_table">[[p.product_id.attribute_value_ids.name]] </para></td>
+			   		</tr>
+			   		<tr>
+				   		<td><para style="terp_isi_table">No Honda Card </para></td>
+				   		<td><para style="terp_isi_table">: </para></td>
+				   		<td><para style="terp_isi_table">[[ p.member]] </para></td>
+				   		<td><para style="terp_isi_table">No Mesin</para></td>
+				   		<td><para style="terp_isi_table">:</para></td>
+				   		<td><para style="terp_isi_table">[[ p.lot_id.name]]</para></td>
+				   		<td><para style="terp_isi_table">Km </para></td>
+				   		<td><para style="terp_isi_table">: </para></td>
+				   		<td><para style="terp_isi_table"> [[ p.km]] </para></td>
+			   		</tr>
+			   		<tr>
+				   		<td><para style="terp_isi_table"></para></td>
+				   		<td><para style="terp_isi_table"> </para></td>
+				   		<td><para style="terp_isi_table"> </para></td>
+				   		<td><para style="terp_isi_table">No Rangka</para></td>
+				   		<td><para style="terp_isi_table">:</para></td>
+				   		<td><para style="terp_isi_table">[[ p.lot_id.chassis_no]]</para></td>
+				   		<td><para style="terp_isi_table">Meknk </para></td>
+				   		<td><para style="terp_isi_table">: </para></td>
+				   		<td><para style="terp_isi_table">[[ p.mekanik_id.name]] </para></td>
+			   		</tr>
+				</blockTable>
+				<blockTable colWidths="3.5cm,0.3cm,10.2cm" style="Table_No_Line">
+			   		<tr>
+				   		<td><para style="terp_isi_table">Nama Pemilik </para></td>
+				   		<td><para style="terp_isi_table">: </para></td>
+				   		<td><para style="terp_isi_table">[[ p.customer_id.name]] [[ p.customer_id.street]] </para></td>
+
+			   		</tr>
+			   	</blockTable>
+			   	
+	   		</td>
+   		</tr>
+	</blockTable>	
+	<blockTable colWidths="1cm,3.5cm,5.5cm,1cm,3cm,1.5cm,3cm" style="Table_Line">
+   		<tr>
+   			<td><para style="terp_isi_table_line">No. </para></td>
+   			<td><para style="terp_isi_table_line"> No WO </para></td>
+   			<td><para style="terp_isi_table_line">Jenis Barang / Service </para></td>
+   			<td><para style="terp_isi_table_line_center">Jml </para></td>
+   			<td><para style="terp_isi_table_line_center">Hrg Satuan </para></td>
+   			<td><para style="terp_isi_table_line_center">Disc </para></td>
+   			<td><para style="terp_isi_table_line_center">Subtotal </para></td>
+   		</tr>
+	</blockTable>
+	<section>
+	<para style="terp_default">[[ repeatIn(p.work_lines, 'x') ]]</para>
+	<blockTable colWidths="1cm,3.5cm,5.5cm,1cm,3cm,1.5cm,3cm" style="Table_Line">
+   		<tr>
+   			<td><para style="terp_isi_table_line"><seq id="number"/> </para></td>
+   			<td><para style="terp_isi_table_line">[[p.name]]  </para></td>
+   			<td><para style="terp_isi_table_line">[[ x.product_id.default_code]] </para></td>
+   			<td><para style="terp_isi_table_line_right">[[x.product_qty ]]</para></td>
+   			<td><para style="terp_isi_table_line_right">[[formatLang(x.price_unit, digits=0)]]</para></td>
+   			<td><para style="terp_isi_table_line_right">[[formatLang(x.discount, digits=0)]] %</para></td>
+   			<td><para style="terp_isi_table_line_right">[[formatLang(x.price_subtotal, digits=0)]] </para></td>
+   		</tr>
+	</blockTable>
+	</section>
+	<para><seqReset id="number"/></para>
+	<blockTable colWidths="1cm,3.5cm,5.5cm,1cm,3cm,1.5cm,3cm" style="Table_Line">
+   		<tr>
+   			<td><para style="terp_isi_table_line"> </para></td>
+   			<td><para style="terp_isi_table_line">  </para></td>
+   			<td><para style="terp_isi_table_line"></para></td>
+   			<td><para style="terp_isi_table_line"> </para></td>
+   			<td><para style="terp_isi_table_line_center"> </para></td>
+   			<td><para style="terp_isi_table_line_center">Total </para></td>
+   			<td><para style="terp_isi_table_line_right">[[formatLang(p.amount_total, digits=0)]] </para></td>
+   		</tr>
+	</blockTable>
+	<blockTable colWidths="18.5cm" style="Table_No_Line">
+   		<tr>
+   			<td><para style="terp_isi_table">## [[terbilang(p.amount_total)]]## </para></td>
+   		</tr>
+	</blockTable>
+	<blockTable colWidths="13.5cm,2cm,0.5cm,2.5cm" style="Table_No_Line">
+   		<tr>
+   			<td><para style="terp_isi_table"> </para></td>
+   			<td><para style="terp_isi_table">DPP</para></td>
+   			<td><para style="terp_isi_table">: </para></td>
+   			<td><para style="terp_isi_table_right">[[formatLang(p.amount_untaxed, digits=0)]] </para></td>
+   		</tr>
+   		<tr>
+   			<td><para style="terp_isi_table"> </para></td>
+   			<td><para style="terp_isi_table">PPN 10 %</para></td>
+   			<td><para style="terp_isi_table">: </para></td>
+   			<td><para style="terp_isi_table_right">  [[formatLang(p.amount_tax, digits=0)]]	</para></td>
+   		</tr>
+	</blockTable>
+	
+  <blockTable colWidths="6.5cm,12cm" style="Table_No_Line">
+   		<tr>
+   			<td>
+   				<para style="terp_isi_table_line">Dicetak oleh</para>
+   				<para style="terp_enter_tanda_tangan"><font color="white">1</font></para>
+   				<para style="terp_isi_table_line">__________________________</para>
+   				<para style="terp_isi_table_line">[[ user.name]] [[waktu_local()]] </para>
+   			 </td>
+   			<td>
+   				<para style="terp_isi_footer">[1]Garansi KPB, service reguler dan jasa pasang 7 hari dari tanggal invoice</para>
+   				<para style="terp_isi_footer">[2]Garansi semi overhaul 14 hari dari tanggal invoice</para>
+   				<para style="terp_isi_footer">[3]Garansi overhaul 30 hari dari tanggal invoice</para>
+   				<para style="terp_isi_footer">Lembar ke-1 Pelanggan / Lembar ke-2 Arsip Cabang</para>
+   			</td>
+   		</tr>
+   </blockTable>
+  
+
+</story>
+
+
+
+
+
+
+</document>

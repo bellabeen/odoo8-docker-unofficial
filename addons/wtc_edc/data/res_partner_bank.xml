@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    	<record id="bank_mandiri" model="res.partner">
+    		<field name="name">Bank Mandiri</field>
+    		<field name="rel_code">MANDIRI</field>
+    		<field name="mobile"> 021500888 </field>
+    		<field name="customer">True</field>
+    	</record>
+    	<record id="bank_bca" model="res.partner">
+    		<field name="name">Bank BCA</field>
+    		<field name="rel_code">BCA</field>
+    		<field name="mobile">14000</field>
+    		<field name="customer">True</field>
+    	</record>
+    </data>
+</openerp>

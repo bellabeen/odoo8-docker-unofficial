@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    <record id="hitung_insentif_form_view" model="ir.ui.view">
+        <field name="name">teds.hitung.insentif.form.view</field>
+        <field name="model">teds.hitung.insentif</field>
+        <field name="arch" type="xml">
+            <form string="Hitung Insentif">
+
+                <header>
+                    <!-- <button name="posted" string="Post" type="object" attrs="{'invisible': [('state','!=','confirmed')]}" class="oe_highlight"/>                     -->
+                    <!-- <button name="view_picking" string="View Picking" type="object" attrs="{'invisible': [('state','not in',('confirmed','posted'))]}" class="oe_highlight"/> -->
+                    <!-- <button name="confirmed" string="Confirm" type="object" attrs="{'invisible': [('state','!=','approved')]}" class="oe_highlight"/>                     -->
+                    <!-- <field name="state" widget="statusbar" statusbar_visible="draft,waiting_for_approval,approved,confirmed,posted"/> -->
+                </header>
+
+                <sheet>
+                    <group col="2">
+                        <group>
+                            <field name="branch_id" required="1" options="{'no_open':True,'no_create':True}" string="Branch" on_change="onchange_hitung_insentif(branch_id, name, start_date, end_date)"/>
+                            <field name="name" required="1" options="{'no_open':True,'no_create':True}" domain="[('branch_id','=',branch_id)]" string="Sales Force" on_change="onchange_hitung_insentif(branch_id, name, start_date, end_date)"/>
+                            <field name="unit_cash" readonly="1"/>
+                            <field name="unit_credit" readonly="1"/>
+                            <field name="total_unit" readonly="1"/>
+                            <field name="unit_ar_cash" readonly="1"/>
+                            <field name="unit_ar_credit" readonly="1"/>
+                            <field name="reward" readonly="1"/>
+                            <field name="mediator_cash" readonly="1"/>
+                            <field name="total_unit_mediator" readonly="1"/>
+                            <field name="jml_bawahan" readonly="1"/>
+                            <field name="produktivitas" readonly="1"/>
+                        </group>
+                        <group>
+                            <!-- <field name="jml_insentif" invisible="1"/> -->
+                            <label for="start_date" string="Date"/>
+                            <div>
+                                <field name="start_date" required="1" class="oe_inline" on_change="onchange_hitung_insentif(branch_id, name, start_date, end_date)"/> - <field name="end_date" required="1" class="oe_inline" on_change="onchange_hitung_insentif(branch_id, name, start_date, end_date)"/>
+                            </div>
+                            <field name="job_name" readonly="1"/>
+                            <field name="rupiah_unit_cash" readonly="1" string="Rp Cash / Rp Cash Credit"/>
+                            <field name="rupiah_unit_credit" readonly="1" string="Rp Credit / Rp Credit Ke"/>
+                            <field name="rupiah_total_unit" readonly="1"/>
+                            <field name="rupiah_unit_ar_cash" readonly="1"/>
+                            <field name="rupiah_unit_ar_credit" readonly="1"/>
+                            <field name="rupiah_reward" readonly="1"/>
+                            <field name="mediator_credit" readonly="1"/>
+                            <field name="rupiah_persen_credit" readonly="1"/>
+                            <field name="rupiah_persen_mediator" readonly="1"/>
+                            <field name="rupiah_persen_absensi" readonly="1"/>
+                        </group>
+                    </group>
+                    <group>
+                        <div class="oe_title">                      
+                       
+                        </div>
+                        <div class="oe_title">                      
+                            <h1>
+                                <label string="Insentif Diterima"/>
+                                <field name="jml_insentif" readonly="1" widget='monetary'/>     
+                            </h1>
+                        </div>
+                    </group>
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model='ir.actions.act_window' id='hitung_insentif_action'>
+        <field name='name'>Hitung Insentif</field>
+        <field name='res_model'>teds.hitung.insentif</field>
+        <field name='view_type'>form</field>
+        <field name='view_mode'>form</field>
+    </record>
+    
+    <menuitem name='Hitung Insentif' id='hitung_insentif_menu_showroom' parent='wtc_dealer_menu.showroom_sales_menu' action='hitung_insentif_action' sequence="0"/> 
+    
+    </data>
+</openerp>

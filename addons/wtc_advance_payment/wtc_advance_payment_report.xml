@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>    
+       <report  
+            id="report_advance_payment" string="advance_payment" 
+            model="wtc.advance.payment" 
+            name="rml.advance.payment" 
+            rml="wtc_advance_payment/report/wtc_advance_payment_report.rml" 
+            auto="False" menu="False"/>
+            
+        <report 
+            id="report_teds_advance_payment" 
+            string="Advance Payment QWEB" 
+            model="wtc.advance.payment" 
+            report_type="qweb-pdf"
+            name="wtc_advance_payment.teds_advance_payment"
+            file="Advance Payment PDF"
+            menu="False"
+        />
+        <record id="paperformat_avp" model="report.paperformat">
+            <field name="name">Advance Payment</field>
+            <field name="default" eval="True"/>
+            <field name="format">A4</field>
+            <field name="orientation">Portrait</field>
+            <field name="margin_top">3</field>
+            <field name="margin_bottom">3</field>
+            <field name="margin_left">3</field>
+            <field name="margin_right">3</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">0</field>
+            <field name="dpi">80</field>
+        </record>
+        <record id="report_teds_advance_payment" model="ir.actions.report.xml">
+            <field name="paperformat_id" ref="wtc_advance_payment.paperformat_avp"/>
+        </record>
+
+       <report  
+            id="report_advance_payment_done" string="advance_payment_done" 
+            model="wtc.advance.payment.done" 
+            name="rml.advance.payment.done" 
+            rml="wtc_advance_payment/report/wtc_advance_payment_done_report.rml" 
+            auto="False" menu="False"/> 
+            
+        <report  
+            id="report_settlement" string="settlement" 
+            model="wtc.settlement" 
+            name="rml.settlement" 
+            rml="wtc_advance_payment/report/wtc_settlement_report.rml" 
+            auto="False" menu="False"/>
+            
+        <report  
+            id="report_settlement_done" string="settlement" 
+            model="wtc.settlement.done" 
+            name="rml.settlement.done" 
+            rml="wtc_advance_payment/report/wtc_settlement_done_report.rml" 
+            auto="False" menu="False"/>
+            
+    </data>
+</openerp>

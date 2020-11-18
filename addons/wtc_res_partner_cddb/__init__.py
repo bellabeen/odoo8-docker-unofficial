@@ -1,0 +1,3 @@
+import wtc_res_partner_wizard
+import wtc_res_partner_cddb
+import wtc_questionnaire

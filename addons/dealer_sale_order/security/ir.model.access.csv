@@ -1,0 +1,16 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_dealer_sale_order_summary_diskon_all,dealer_sale_order_summary_diskon all,model_dealer_sale_order_summary_diskon,,1,1,1,1
+access_dealer_distribusi_spk_all,dealer_distribusi_spk all,model_dealer_distribusi_spk,,1,1,1,1
+access_dealer_distribusi_spk_line_all,dealer_distribusi_spk_line all,model_dealer_distribusi_spk_line,,1,1,1,1
+access_dealer_pengembalian_spk_all,dealer_pengembalian_spk all,model_dealer_pengembalian_spk,,1,1,1,1
+access_dealer_pengembalian_spk_line_all,dealer_pengembalian_spk_line all,model_dealer_pengembalian_spk_line,,1,1,1,1
+access_dealer_register_spk_all,dealer_register_spk all,model_dealer_register_spk,,1,1,1,1
+access_dealer_register_spk_line_all,dealer_register_spk_line all,model_dealer_register_spk_line,,1,1,1,1
+access_dealer_sale_order_all,dealer_sale_order all,model_dealer_sale_order,,1,1,1,1
+access_dealer_sale_order_line_all,wtc_dealer_sale_order_line all,model_dealer_sale_order_line,,1,1,1,1
+access_dealer_sale_order_line_discount_line_all,dealer_sale_order_line_discount_line all,model_dealer_sale_order_line_discount_line,,1,1,1,1
+access_dealer_sale_order_line_brgbonus_line_all,dealer_sale_order_line_brgbonus_line all,model_dealer_sale_order_line_brgbonus_line,,1,1,1,1
+access_dealer_spk_all,dealer_spk all,model_dealer_spk,,1,1,1,1
+access_dealer_spk_line_all,dealer_spk_line all,model_dealer_spk_line,,1,1,1,1
+access_dealer_sale_order_analysis_all,dealer_sale_order_analysis all,model_dealer_sale_order_analysis,,1,1,1,1
+access_dealer_spk_report_all,dealer_spk_report all,model_dealer_spk_report,,1,1,1,1

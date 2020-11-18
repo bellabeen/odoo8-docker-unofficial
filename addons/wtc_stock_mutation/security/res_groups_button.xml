@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+	
+		<!-- Mutation Request RFA -->
+
+		<record id="group_wtc_mutation_request_rfa" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Mutation Request RFA</field>
+            <field name="implied_ids" eval="[(4, ref('group_wtc_mutation_request_read'))]"/>
+        </record>
+        
+        <record id="access_wtc_mutation_request_rfa" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_mutation_request"/>
+            <field name="name">wtc_mutation_request_rfa update</field>
+            <field name="group_id" ref="group_wtc_mutation_request_rfa"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_wtc_mutation_request_approval_line_rfa" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">wtc_mutation_request_approval_line_rfa write</field>
+            <field name="group_id" ref="group_wtc_mutation_request_rfa"/>
+            <field name="perm_create">1</field>
+        </record>
+        
+        <!-- Mutation Request Cancel Approval -->
+
+		<record id="group_wtc_mutation_request_cancel_approval" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Mutation Request Cancel Approval</field>
+            <field name="implied_ids" eval="[(4, ref('group_wtc_mutation_request_read'))]"/>
+        </record>
+        
+        <record id="access_wtc_mutation_request_cancel_approval" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_mutation_request"/>
+            <field name="name">wtc_mutation_request_cancel_approval update</field>
+            <field name="group_id" ref="group_wtc_mutation_request_cancel_approval"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_wtc_mutation_request_approval_line_cancel" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">wtc_mutation_request_approval_line_cancel write</field>
+            <field name="group_id" ref="group_wtc_mutation_request_cancel_approval"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <!-- Mutation Request Approve -->
+
+		<record id="group_wtc_mutation_request_approve" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Mutation Request Approve</field>
+            <field name="implied_ids" eval="[(4, ref('group_wtc_mutation_request_read'))]"/>
+        </record>
+        
+        <record id="access_wtc_mutation_request_approve" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_mutation_request"/>
+            <field name="name">wtc_mutation_request_approve update</field>
+            <field name="group_id" ref="group_wtc_mutation_request_approve"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_wtc_mutation_request_distribution_approve" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_stock_distribution"/>
+            <field name="name">wtc_mutation_request_distribution_approve write</field>
+            <field name="group_id" ref="group_wtc_mutation_request_approve"/>
+            <field name="perm_create">1</field>
+        </record>
+        
+        <!-- Mutation Request Cancel -->
+
+		<record id="group_wtc_mutation_request_cancel" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Mutation Request Cancel</field>
+            <field name="implied_ids" eval="[(4, ref('group_wtc_mutation_request_read'))]"/>
+        </record>
+        
+        <record id="access_wtc_mutation_request_cancel" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_mutation_request"/>
+            <field name="name">wtc_mutation_request_cancel update</field>
+            <field name="group_id" ref="group_wtc_mutation_request_cancel"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_wtc_stock_distribution_request_cancel" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_stock_distribution"/>
+            <field name="name">wtc_mutation_request_distribution_cancel write</field>
+            <field name="group_id" ref="group_wtc_mutation_request_cancel"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <!-- Stock Distribution Reject -->
+
+		<record id="group_wtc_stock_distribution_reject" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Stock Distribution Reject</field>
+            <field name="implied_ids" eval="[(4, ref('group_wtc_stock_distribution_read'))]"/>
+        </record>
+        
+        <record id="access_wtc_stock_distribution_reject" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_stock_distribution"/>
+            <field name="name">wtc_stock_distribution_reject update</field>
+            <field name="group_id" ref="group_wtc_stock_distribution_reject"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_wtc_stock_distribution_request_reject" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_mutation_request"/>
+            <field name="name">wtc_stock_distribution_request_reject write</field>
+            <field name="group_id" ref="group_wtc_stock_distribution_reject"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <!-- Stock Distribution RFA -->
+
+		<record id="group_wtc_stock_distribution_rfa" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Stock Distribution RFA</field>
+            <field name="implied_ids" eval="[(4, ref('group_wtc_stock_distribution_read'))]"/>
+        </record>
+        
+        <record id="access_wtc_stock_distribution_rfa" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_stock_distribution"/>
+            <field name="name">wtc_stock_distribution_rfa update</field>
+            <field name="group_id" ref="group_wtc_stock_distribution_rfa"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_wtc_stock_distribution_approval_line_rfa" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">wtc_stock_distribution_approval_line_rfa write</field>
+            <field name="group_id" ref="group_wtc_stock_distribution_rfa"/>
+            <field name="perm_create">1</field>
+        </record>
+        
+        <!-- Stock Distribution Cancel Approval -->
+
+		<record id="group_wtc_stock_distribution_cancel_approval" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Stock Distribution Cancel Approval</field>
+            <field name="implied_ids" eval="[(4, ref('group_wtc_stock_distribution_read'))]"/>
+        </record>
+        
+        <record id="access_wtc_stock_distribution_cancel_approval" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_stock_distribution"/>
+            <field name="name">wtc_stock_distribution_request_cancel_approval update</field>
+            <field name="group_id" ref="group_wtc_stock_distribution_cancel_approval"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_wtc_stock_distribution_approval_line_cancel" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">wtc_stock_distribution_approval_line_cancel write</field>
+            <field name="group_id" ref="group_wtc_stock_distribution_cancel_approval"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <!-- Stock Distribution Create/View Order -->
+
+		<record id="group_stock_distribution_order" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Stock Distribution Create/View Order</field>
+            <field name="implied_ids" eval="[(4, ref('group_wtc_stock_distribution_read'))]"/>
+        </record>
+        
+        <record id="access_stock_distribution_order" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_stock_distribution"/>
+            <field name="name">stock_distribution_order update</field>
+            <field name="group_id" ref="group_stock_distribution_order"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_stock_distribution_mo_order" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_mutation_order"/>
+            <field name="name">stock_distribution_mo_order write</field>
+            <field name="group_id" ref="group_stock_distribution_order"/>
+            <field name="perm_create">1</field>
+        </record>
+        
+        <record id="access_stock_distribution_mo_order" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_mutation_order"/>
+            <field name="name">stock_distribution_mo_order write</field>
+            <field name="group_id" ref="group_stock_distribution_order"/>
+            <field name="perm_create">1</field>
+        </record>
+        
+        <record id="access_stock_distribution_so_order" model="ir.model.access">
+            <field name="model_id" ref="sale.model_sale_order"/>
+            <field name="name">stock_distribution_so_order write</field>
+            <field name="group_id" ref="group_stock_distribution_order"/>
+            <field name="perm_create">1</field>
+        </record>
+        
+        <!-- Stock Distribution Close Order -->
+
+		<record id="group_wtc_stock_distribution_close_order" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Stock Distribution Close Order</field>
+            <field name="implied_ids" eval="[(4, ref('group_wtc_stock_distribution_read'))]"/>
+        </record>
+        
+        <record id="access_wtc_stock_distribution_close_order" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_stock_distribution"/>
+            <field name="name">wtc_stock_distribution_close_order update</field>
+            <field name="group_id" ref="group_wtc_stock_distribution_close_order"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_wtc_stock_distribution_order_close_order" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_mutation_order"/>
+            <field name="name">wtc_stock_distribution_order_close_order write</field>
+            <field name="group_id" ref="group_wtc_stock_distribution_close_order"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_wtc_stock_distribution_request_close_order" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_mutation_request"/>
+            <field name="name">wtc_stock_distribution_request_close_order write</field>
+            <field name="group_id" ref="group_wtc_stock_distribution_close_order"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_wtc_stock_distribution_picking_close_order" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_picking"/>
+            <field name="name">wtc_stock_distribution_picking_close_order write</field>
+            <field name="group_id" ref="group_wtc_stock_distribution_close_order"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <!-- Mutation Order Confirm -->
+
+		<record id="group_wtc_mutation_order_confirm" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Mutation Order Confirm</field>
+            <field name="implied_ids" eval="[(4, ref('group_wtc_mutation_order_read'))]"/>
+        </record>
+        
+        <record id="access_wtc_mutation_order_confirm" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_mutation_order"/>
+            <field name="name">wtc_mutation_order_confirm update</field>
+            <field name="group_id" ref="group_wtc_mutation_order_confirm"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_wtc_mutation_order_distribution_confirm" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_stock_distribution"/>
+            <field name="name">wtc_mutation_order_distribution_confirm write</field>
+            <field name="group_id" ref="group_wtc_mutation_order_confirm"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        <record id="access_wtc_mutation_order_picking_confirm" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_picking"/>
+            <field name="name">wtc_mutation_order_picking_confirm write</field>
+            <field name="group_id" ref="group_wtc_mutation_order_confirm"/>
+            <field name="perm_create">1</field>
+        </record>
+        
+        <!-- Mutation Order Renew Available -->
+
+		<record id="group_wtc_mutation_order_renew_available" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Mutation Order Renew Available</field>
+            <field name="implied_ids" eval="[(4, ref('group_wtc_mutation_order_read'))]"/>
+        </record>
+        
+        <record id="access_wtc_mutation_order_renew_available" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_mutation_order"/>
+            <field name="name">wtc_mutation_order_renew_available update</field>
+            <field name="group_id" ref="group_wtc_mutation_order_renew_available"/>
+            <field name="perm_write">1</field>
+        </record>
+        
+        
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[(4,ref('group_wtc_mutation_request_rfa')),
+				(4,ref('group_wtc_mutation_request_cancel_approval')),
+				(4,ref('group_wtc_mutation_request_approve')),
+				(4,ref('group_wtc_mutation_request_cancel')),
+				(4,ref('group_wtc_stock_distribution_reject')),
+				(4,ref('group_wtc_stock_distribution_rfa')),
+				(4,ref('group_wtc_stock_distribution_cancel_approval')),
+				(4,ref('group_stock_distribution_order')),
+				(4,ref('group_wtc_stock_distribution_close_order')),
+				(4,ref('group_wtc_mutation_order_confirm')),
+				(4,ref('group_wtc_mutation_order_renew_available')),
+				]">
+			</field>
+		</record>
+	
+	</data>
+</openerp>

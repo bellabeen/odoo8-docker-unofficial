@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+		<record id="view_teds_branch_config_location_tree" model="ir.ui.view">
+            <field name="name">teds.branch.config.location.tree</field>
+            <field name="model">teds.branch.config.location</field>
+            <field name="arch" type="xml">
+            	<tree editable="top">
+            		<field name="branch_id" options="{'no_create':True,'no_open':True}" required="1"/>
+            		<field name="division" required="1"/>
+            		<field name="type_id" options="{'no_create':True,'no_open':True}" required="1"/>
+            		<field name="location_id" options="{'no_create':True,'no_open':True}" required="1"/>
+            	</tree>
+            </field>
+        </record>
+
+        <record id="teds_branch_config_location_action" model="ir.actions.act_window">
+            <field name="name">Branch Config Location</field>
+            <field name="res_model">teds.branch.config.location</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree</field>
+           	<field name="view_id" ref="view_teds_branch_config_location_tree"/> 
+        </record>
+        
+        <menuitem id='teds_branch_config_location_menuitem' parent='wtc_dealer_menu.ma_branches_menu' action='teds_branch_config_location_action' sequence='120'/>
+    </data>
+</openerp>

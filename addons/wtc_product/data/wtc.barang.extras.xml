@@ -1,0 +1,3036 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+	
+		<record id="extras_temp_CR1_tools_TREVO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_CR1"/>
+            <field name="product_id" ref="product_extras_tools_TREVO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_CT0_tools_TVARIO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_CT0"/>
+            <field name="product_id" ref="product_extras_tools_TVARIO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_CY0_tools_TREVO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_CY0"/>
+            <field name="product_id" ref="product_extras_tools_TREVO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FE1_tools_TVARIO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FE1"/>
+            <field name="product_id" ref="product_extras_tools_TVARIO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FK0_tools_TSPACY" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FK0"/>
+            <field name="product_id" ref="product_extras_tools_TSPACY"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FL0_tools_TSUPRA_HELM_IN" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FL0"/>
+            <field name="product_id" ref="product_extras_tools_TSUPRA_HELM_IN"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DT0_tools_TOOL_PCX" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DT0"/>
+            <field name="product_id" ref="product_extras_tools_TOOL_PCX"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FV0_tools_TBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FV0"/>
+            <field name="product_id" ref="product_extras_tools_TBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FW0_tools_TBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FW0"/>
+            <field name="product_id" ref="product_extras_tools_TBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FX0_tools_TBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FX0"/>
+            <field name="product_id" ref="product_extras_tools_TBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DK0_tools_TCB150R" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DK0"/>
+            <field name="product_id" ref="product_extras_tools_TCB150R"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FZ0_tools_TREVO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FZ0"/>
+            <field name="product_id" ref="product_extras_tools_TREVO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DN0_tools_TVERZA" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DN0"/>
+            <field name="product_id" ref="product_extras_tools_TVERZA"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DM0_tools_TVERZA" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DM0"/>
+            <field name="product_id" ref="product_extras_tools_TVERZA"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FNA_tools_TBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FNA"/>
+            <field name="product_id" ref="product_extras_tools_TBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GK0_tools_TVARIO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GK0"/>
+            <field name="product_id" ref="product_extras_tools_TVARIO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GB0_tools_TREVO_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GB0"/>
+            <field name="product_id" ref="product_extras_tools_TREVO_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GC0_tools_TREVO_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GC0"/>
+            <field name="product_id" ref="product_extras_tools_TREVO_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GD0_tools_TREVO_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GD0"/>
+            <field name="product_id" ref="product_extras_tools_TREVO_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DL0_tools_TMEGA PRO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DL0"/>
+            <field name="product_id" ref="product_extras_tools_TMEGA_PRO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GE0_tools_TSUPRA_125_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GE0"/>
+            <field name="product_id" ref="product_extras_tools_TSUPRA_125_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GF0_tools_TSUPRA_125_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GF0"/>
+            <field name="product_id" ref="product_extras_tools_TSUPRA_125_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GG0_tools_TREVO_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GG0"/>
+            <field name="product_id" ref="product_extras_tools_TREVO_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GH0_tools_TREVO_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GH0"/>
+            <field name="product_id" ref="product_extras_tools_TREVO_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GHA_tools_TREVO_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GHA"/>
+            <field name="product_id" ref="product_extras_tools_TREVO_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GL0_tools_TVARIO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GL0"/>
+            <field name="product_id" ref="product_extras_tools_TVARIO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GJ0_tools_TVARIO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GJ0"/>
+            <field name="product_id" ref="product_extras_tools_TVARIO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GM0_tools_TBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GM0"/>
+            <field name="product_id" ref="product_extras_tools_TBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GP0_tools_TBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GP0"/>
+            <field name="product_id" ref="product_extras_tools_TBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GN0_tools_TBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GN0"/>
+            <field name="product_id" ref="product_extras_tools_TBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GRA_tools_TBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GRA"/>
+            <field name="product_id" ref="product_extras_tools_TBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DPA_tools_TCBR 150" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DPA"/>
+            <field name="product_id" ref="product_extras_tools_TCBR_150"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GS0_tools_TBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GS0"/>
+            <field name="product_id" ref="product_extras_tools_TBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GV0_tools_TBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GV0"/>
+            <field name="product_id" ref="product_extras_tools_TBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GW0_tools_TBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GW0"/>
+            <field name="product_id" ref="product_extras_tools_TBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GX0_tools_TBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GX0"/>
+            <field name="product_id" ref="product_extras_tools_TBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GY0_tools_TBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GY0"/>
+            <field name="product_id" ref="product_extras_tools_TBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GT0_tools_TBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GT0"/>
+            <field name="product_id" ref="product_extras_tools_TBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GZA_tools_TVARIO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GZA"/>
+            <field name="product_id" ref="product_extras_tools_TVARIO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_HA0_tools_TVARIO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_HA0"/>
+            <field name="product_id" ref="product_extras_tools_TVARIO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_HB0_tools_TVARIO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_HB0"/>
+            <field name="product_id" ref="product_extras_tools_TVARIO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_CY0_tools_TREVO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_CY0"/>
+            <field name="product_id" ref="product_extras_tools_TREVO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DE0_tools_TMEGA PRO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DE0"/>
+            <field name="product_id" ref="product_extras_tools_TMEGA_PRO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DF0_tools_TMEGA PRO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DF0"/>
+            <field name="product_id" ref="product_extras_tools_TMEGA_PRO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DRB_tools_TCBR 250" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DRB"/>
+            <field name="product_id" ref="product_extras_tools_TCBR_250"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DPA_tools_TCBR 150" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DPA"/>
+            <field name="product_id" ref="product_extras_tools_TCBR_150"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DP0_tools_TCBR 150" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DP0"/>
+            <field name="product_id" ref="product_extras_tools_TCBR_150"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DPB_tools_TCBR 150" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DPB"/>
+            <field name="product_id" ref="product_extras_tools_TCBR_150"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FE1_tools_TVARIO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FE1"/>
+            <field name="product_id" ref="product_extras_tools_TVARIO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FK0_tools_TSPACY" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FK0"/>
+            <field name="product_id" ref="product_extras_tools_TSPACY"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FL0_tools_TSUPRA_HELM_IN" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FL0"/>
+            <field name="product_id" ref="product_extras_tools_TSUPRA_HELM_IN"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FM3_tools_TSUPRA_HELM_IN" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FM3"/>
+            <field name="product_id" ref="product_extras_tools_TSUPRA_HELM_IN"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FR2_tools_TSPACY" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FR2"/>
+            <field name="product_id" ref="product_extras_tools_TSPACY"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DT0_tools_TOOL_PCX" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DT0"/>
+            <field name="product_id" ref="product_extras_tools_TOOL_PCX"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FV0_tools_TBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FV0"/>
+            <field name="product_id" ref="product_extras_tools_TBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FW0_tools_TBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FW0"/>
+            <field name="product_id" ref="product_extras_tools_TBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FX0_tools_TBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FX0"/>
+            <field name="product_id" ref="product_extras_tools_TBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DK1_tools_TCB150R" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DK1"/>
+            <field name="product_id" ref="product_extras_tools_TCB150R"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DK2_tools_TCB150R" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DK2"/>
+            <field name="product_id" ref="product_extras_tools_TCB150R"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DK0_tools_TCB150R" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DK0"/>
+            <field name="product_id" ref="product_extras_tools_TCB150R"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FZ0_tools_TREVO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FZ0"/>
+            <field name="product_id" ref="product_extras_tools_TREVO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DN1_tools_TVERZA" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DN1"/>
+            <field name="product_id" ref="product_extras_tools_TVERZA"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DM1_tools_TVERZA" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DM1"/>
+            <field name="product_id" ref="product_extras_tools_TVERZA"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FNA_tools_TBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FNA"/>
+            <field name="product_id" ref="product_extras_tools_TBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GK0_tools_TVARIO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GK0"/>
+            <field name="product_id" ref="product_extras_tools_TVARIO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GB0_tools_TREVO_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GB0"/>
+            <field name="product_id" ref="product_extras_tools_TREVO_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GC0_tools_TREVO_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GC0"/>
+            <field name="product_id" ref="product_extras_tools_TREVO_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GD0_tools_TREVO_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GD0"/>
+            <field name="product_id" ref="product_extras_tools_TREVO_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DL0_tools_TMEGA PRO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DL0"/>
+            <field name="product_id" ref="product_extras_tools_TMEGA_PRO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GE0_tools_TSUPRA_125_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GE0"/>
+            <field name="product_id" ref="product_extras_tools_TSUPRA_125_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GF0_tools_TSUPRA_125_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GF0"/>
+            <field name="product_id" ref="product_extras_tools_TSUPRA_125_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GG0_tools_TREVO_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GG0"/>
+            <field name="product_id" ref="product_extras_tools_TREVO_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GH0_tools_TREVO_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GH0"/>
+            <field name="product_id" ref="product_extras_tools_TREVO_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GHA_tools_TREVO_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GHA"/>
+            <field name="product_id" ref="product_extras_tools_TREVO_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GL0_tools_TVARIO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GL0"/>
+            <field name="product_id" ref="product_extras_tools_TVARIO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GJ0_tools_TVARIO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GJ0"/>
+            <field name="product_id" ref="product_extras_tools_TVARIO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GM0_tools_TBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GM0"/>
+            <field name="product_id" ref="product_extras_tools_TBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GP0_tools_TBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GP0"/>
+            <field name="product_id" ref="product_extras_tools_TBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GN0_tools_TBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GN0"/>
+            <field name="product_id" ref="product_extras_tools_TBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GR0_tools_TBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GR0"/>
+            <field name="product_id" ref="product_extras_tools_TBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GRA_tools_TBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GRA"/>
+            <field name="product_id" ref="product_extras_tools_TBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GS0_tools_TBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GS0"/>
+            <field name="product_id" ref="product_extras_tools_TBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GV0_tools_TBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GV0"/>
+            <field name="product_id" ref="product_extras_tools_TBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GW0_tools_TBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GW0"/>
+            <field name="product_id" ref="product_extras_tools_TBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GX0_tools_TBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GX0"/>
+            <field name="product_id" ref="product_extras_tools_TBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GY0_tools_TBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GY0"/>
+            <field name="product_id" ref="product_extras_tools_TBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GT0_tools_TBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GT0"/>
+            <field name="product_id" ref="product_extras_tools_TBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GZ0_tools_TVARIO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GZ0"/>
+            <field name="product_id" ref="product_extras_tools_TVARIO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GZA_tools_TVARIO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GZA"/>
+            <field name="product_id" ref="product_extras_tools_TVARIO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_HA0_tools_TVARIO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_HA0"/>
+            <field name="product_id" ref="product_extras_tools_TVARIO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_HB0_tools_TVARIO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_HB0"/>
+            <field name="product_id" ref="product_extras_tools_TVARIO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_CR1_spion_SNF110_SP" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_CR1"/>
+            <field name="product_id" ref="product_extras_spion_SNF110_SP"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_CT0_spion_SNC110" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_CT0"/>
+            <field name="product_id" ref="product_extras_spion_SNC110"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_CY0_spion_SNF110_SP" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_CY0"/>
+            <field name="product_id" ref="product_extras_spion_SNF110_SP"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FE1_spion_SNC110" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FE1"/>
+            <field name="product_id" ref="product_extras_spion_SNC110"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FK0_spion_SKZLG" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FK0"/>
+            <field name="product_id" ref="product_extras_spion_SKZLG"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FL0_spion_SNF_100_T" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FL0"/>
+            <field name="product_id" ref="product_extras_spion_SNF_100_T"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DT0_spion_BKMR_PCX" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DT0"/>
+            <field name="product_id" ref="product_extras_spion_BKMR_PCX"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FV0_spion_SK25A" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FV0"/>
+            <field name="product_id" ref="product_extras_spion_SK25A"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FW0_spion_SK25A" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FW0"/>
+            <field name="product_id" ref="product_extras_spion_SK25A"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FX0_spion_SK25A" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FX0"/>
+            <field name="product_id" ref="product_extras_spion_SK25A"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DK0_spion_SGLS" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DK0"/>
+            <field name="product_id" ref="product_extras_spion_SGLS"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FZ0_spion_SNF110_SP" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FZ0"/>
+            <field name="product_id" ref="product_extras_spion_SNF110_SP"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DN0_spion_SK18A" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DN0"/>
+            <field name="product_id" ref="product_extras_spion_SK18A"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DM0_spion_SK18A" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DM0"/>
+            <field name="product_id" ref="product_extras_spion_SK18A"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FNA_spion_SK16G" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FNA"/>
+            <field name="product_id" ref="product_extras_spion_SK16G"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GK0_spion_SKZRA" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GK0"/>
+            <field name="product_id" ref="product_extras_spion_SKZRA"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GB0_spion_SK03S" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GB0"/>
+            <field name="product_id" ref="product_extras_spion_SK03S"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GC0_spion_SK03S" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GC0"/>
+            <field name="product_id" ref="product_extras_spion_SK03S"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GD0_spion_SK03S" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GD0"/>
+            <field name="product_id" ref="product_extras_spion_SK03S"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DL0_spion_SGLS" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DL0"/>
+            <field name="product_id" ref="product_extras_spion_SGLS"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GE0_spion_SK03_Supra_f1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GE0"/>
+            <field name="product_id" ref="product_extras_spion_SK03_Supra_f1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GF0_spion_SK03_Supra_f1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GF0"/>
+            <field name="product_id" ref="product_extras_spion_SK03_Supra_f1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GG0_spion_SK03S" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GG0"/>
+            <field name="product_id" ref="product_extras_spion_SK03S"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GH0_spion_SK03S" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GH0"/>
+            <field name="product_id" ref="product_extras_spion_SK03S"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GHA_spion_SK03S" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GHA"/>
+            <field name="product_id" ref="product_extras_spion_SK03S"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GL0_spion_SKZRA" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GL0"/>
+            <field name="product_id" ref="product_extras_spion_SKZRA"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GJ0_spion_SK25A" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GJ0"/>
+            <field name="product_id" ref="product_extras_spion_SK25A"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GM0_spion_SK25A" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GM0"/>
+            <field name="product_id" ref="product_extras_spion_SK25A"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GP0_spion_SK25A" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GP0"/>
+            <field name="product_id" ref="product_extras_spion_SK25A"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GN0_spion_SK25A" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GN0"/>
+            <field name="product_id" ref="product_extras_spion_SK25A"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GRA_spion_SK16G" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GRA"/>
+            <field name="product_id" ref="product_extras_spion_SK16G"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DPA_spion_SCBR_150" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DPA"/>
+            <field name="product_id" ref="product_extras_spion_SCBR_150"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GS0_spion_SK25A" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GS0"/>
+            <field name="product_id" ref="product_extras_spion_SK25A"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GV0_spion_SK25A" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GV0"/>
+            <field name="product_id" ref="product_extras_spion_SK25A"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GW0_spion_K61A" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GW0"/>
+            <field name="product_id" ref="product_extras_spion_K61A"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GX0_spion_K61A" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GX0"/>
+            <field name="product_id" ref="product_extras_spion_K61A"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GY0_spion_K61A" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GY0"/>
+            <field name="product_id" ref="product_extras_spion_K61A"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GT0_spion_SK25A" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GT0"/>
+            <field name="product_id" ref="product_extras_spion_SK25A"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GZA_spion_SKZRA" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GZA"/>
+            <field name="product_id" ref="product_extras_spion_SKZRA"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_HA0_spion_SKZRA" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_HA0"/>
+            <field name="product_id" ref="product_extras_spion_SKZRA"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_HB0_spion_SKZRA" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_HB0"/>
+            <field name="product_id" ref="product_extras_spion_SKZRA"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_CY0_spion_SNF110_SP" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_CY0"/>
+            <field name="product_id" ref="product_extras_spion_SNF110_SP"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DE0_spion_SGLS" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DE0"/>
+            <field name="product_id" ref="product_extras_spion_SGLS"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DF0_spion_SGLS" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DF0"/>
+            <field name="product_id" ref="product_extras_spion_SGLS"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DRB_spion_SCBR_250" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DRB"/>
+            <field name="product_id" ref="product_extras_spion_SCBR_250"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DPA_spion_SCBR_150" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DPA"/>
+            <field name="product_id" ref="product_extras_spion_SCBR_150"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DP0_spion_SCBR_150" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DP0"/>
+            <field name="product_id" ref="product_extras_spion_SCBR_150"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DPB_spion_SCBR_150" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DPB"/>
+            <field name="product_id" ref="product_extras_spion_SCBR_150"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FE1_spion_SNC110" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FE1"/>
+            <field name="product_id" ref="product_extras_spion_SNC110"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FK0_spion_SKZLG" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FK0"/>
+            <field name="product_id" ref="product_extras_spion_SKZLG"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FL0_spion_SNF_100_T" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FL0"/>
+            <field name="product_id" ref="product_extras_spion_SNF_100_T"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FM3_spion_SNF_100_T" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FM3"/>
+            <field name="product_id" ref="product_extras_spion_SNF_100_T"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FR2_spion_SKZLG" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FR2"/>
+            <field name="product_id" ref="product_extras_spion_SKZLG"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DT0_spion_BKMR_PCX" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DT0"/>
+            <field name="product_id" ref="product_extras_spion_BKMR_PCX"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FV0_spion_SK25A" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FV0"/>
+            <field name="product_id" ref="product_extras_spion_SK25A"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FW0_spion_SK25A" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FW0"/>
+            <field name="product_id" ref="product_extras_spion_SK25A"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FX0_spion_SK25A" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FX0"/>
+            <field name="product_id" ref="product_extras_spion_SK25A"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DK1_spion_SGLS" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DK1"/>
+            <field name="product_id" ref="product_extras_spion_SGLS"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DK2_spion_SGLS" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DK2"/>
+            <field name="product_id" ref="product_extras_spion_SGLS"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DK0_spion_SGLS" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DK0"/>
+            <field name="product_id" ref="product_extras_spion_SGLS"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FZ0_spion_SNF110_SP" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FZ0"/>
+            <field name="product_id" ref="product_extras_spion_SNF110_SP"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DN1_spion_SK18A" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DN1"/>
+            <field name="product_id" ref="product_extras_spion_SK18A"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DM1_spion_SK18A" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DM1"/>
+            <field name="product_id" ref="product_extras_spion_SK18A"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FNA_spion_SK16G" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FNA"/>
+            <field name="product_id" ref="product_extras_spion_SK16G"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GK0_spion_SKZRA" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GK0"/>
+            <field name="product_id" ref="product_extras_spion_SKZRA"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GB0_spion_SK03S" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GB0"/>
+            <field name="product_id" ref="product_extras_spion_SK03S"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GC0_spion_SK03S" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GC0"/>
+            <field name="product_id" ref="product_extras_spion_SK03S"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GD0_spion_SK03S" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GD0"/>
+            <field name="product_id" ref="product_extras_spion_SK03S"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DL0_spion_SGLS" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DL0"/>
+            <field name="product_id" ref="product_extras_spion_SGLS"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GE0_spion_SK03_Supra_f1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GE0"/>
+            <field name="product_id" ref="product_extras_spion_SK03_Supra_f1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GF0_spion_SK03_Supra_f1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GF0"/>
+            <field name="product_id" ref="product_extras_spion_SK03_Supra_f1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GG0_spion_SK03S" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GG0"/>
+            <field name="product_id" ref="product_extras_spion_SK03S"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GH0_spion_SK03S" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GH0"/>
+            <field name="product_id" ref="product_extras_spion_SK03S"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GHA_spion_SK03S" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GHA"/>
+            <field name="product_id" ref="product_extras_spion_SK03S"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GL0_spion_SKZRA" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GL0"/>
+            <field name="product_id" ref="product_extras_spion_SKZRA"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GJ0_spion_SK25A" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GJ0"/>
+            <field name="product_id" ref="product_extras_spion_SK25A"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GM0_spion_SK25A" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GM0"/>
+            <field name="product_id" ref="product_extras_spion_SK25A"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GP0_spion_SK25A" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GP0"/>
+            <field name="product_id" ref="product_extras_spion_SK25A"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GN0_spion_SK25A" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GN0"/>
+            <field name="product_id" ref="product_extras_spion_SK25A"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GR0_spion_SK16G" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GR0"/>
+            <field name="product_id" ref="product_extras_spion_SK16G"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GRA_spion_SK16G" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GRA"/>
+            <field name="product_id" ref="product_extras_spion_SK16G"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GS0_spion_SK25A" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GS0"/>
+            <field name="product_id" ref="product_extras_spion_SK25A"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GV0_spion_SK25A" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GV0"/>
+            <field name="product_id" ref="product_extras_spion_SK25A"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GW0_spion_K61A" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GW0"/>
+            <field name="product_id" ref="product_extras_spion_K61A"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GX0_spion_K61A" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GX0"/>
+            <field name="product_id" ref="product_extras_spion_K61A"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GY0_spion_K61A" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GY0"/>
+            <field name="product_id" ref="product_extras_spion_K61A"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GT0_spion_SK25A" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GT0"/>
+            <field name="product_id" ref="product_extras_spion_SK25A"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GZ0_spion_SKZRA" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GZ0"/>
+            <field name="product_id" ref="product_extras_spion_SKZRA"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GZA_spion_SKZRA" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GZA"/>
+            <field name="product_id" ref="product_extras_spion_SKZRA"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_HA0_spion_SKZRA" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_HA0"/>
+            <field name="product_id" ref="product_extras_spion_SKZRA"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_HB0_spion_SKZRA" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_HB0"/>
+            <field name="product_id" ref="product_extras_spion_SKZRA"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_CR1_buku_service_BSREVO_110" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_CR1"/>
+            <field name="product_id" ref="product_extras_buku_service_BSREVO_110"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_CT0_buku_service_BSVARIO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_CT0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSVARIO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_CY0_buku_service_BSREVO_110" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_CY0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSREVO_110"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FE1_buku_service_BSVARIO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FE1"/>
+            <field name="product_id" ref="product_extras_buku_service_BSVARIO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FK0_buku_service_BSSPACY" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FK0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSSPACY"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FL0_buku_service_BSHISUPRA_X_125_" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FL0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSHISUPRA_X_125_HELM_IN"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DT0_buku_service_BSPCX" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DT0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSPCX"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FV0_buku_service_BSFIBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FV0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FW0_buku_service_BSFIBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FW0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FX0_buku_service_BSFIBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FX0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DK0_buku_service_BSCB150R" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DK0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSCB150R"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FZ0_buku_service_BSBLADE" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FZ0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSBLADE"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DN0_buku_service_BSVerza" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DN0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSVerza"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DM0_buku_service_BSVerza" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DM0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSVerza"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FNA_buku_service_BSFISCOOPY" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FNA"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFISCOOPY"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GK0_buku_service_BSFIVARIO_125" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GK0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIVARIO_125"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GB0_buku_service_BSREVO_110_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GB0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSREVO_110_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GC0_buku_service_BSREVO_110_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GC0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSREVO_110_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GD0_buku_service_BSREVO_110_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GD0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSREVO_110_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DL0_buku_service_BSMEGA_PRO_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DL0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSMEGA_PRO_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GE0_buku_service_BSSUPRA_X_125_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GE0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSSUPRA_X_125_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GF0_buku_service_BSSUPRA_X_125_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GF0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSSUPRA_X_125_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GG0_buku_service_BSBLADEF1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GG0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSBLADEF1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GH0_buku_service_BSBLADEF1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GH0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSBLADEF1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GHA_buku_service_BSBLADEF1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GHA"/>
+            <field name="product_id" ref="product_extras_buku_service_BSBLADEF1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GL0_buku_service_BSFIVARIO_125" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GL0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIVARIO_125"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GJ0_buku_service_BSFIVARIO_110F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GJ0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIVARIO_110F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GM0_buku_service_BSFIBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GM0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GP0_buku_service_BSFIBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GP0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GN0_buku_service_BSFIBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GN0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GRA_buku_service_BSFISCOOPY" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GRA"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFISCOOPY"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DPA_buku_service_BSCBR_150" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DPA"/>
+            <field name="product_id" ref="product_extras_buku_service_BSCBR_150"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GS0_buku_service_BSFIBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GS0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GV0_buku_service_BSFIBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GV0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GW0_buku_service_BSFIBEAT_POP" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GW0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIBEAT_POP"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GX0_buku_service_BSFIBEAT_POP" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GX0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIBEAT_POP"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GY0_buku_service_BSFIBEAT_POP" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GY0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIBEAT_POP"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GT0_buku_service_BSFIBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GT0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GZA_buku_service_BSFIVARIO_150" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GZA"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIVARIO_150"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_HA0_buku_service_BSFIVARIO_125" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_HA0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIVARIO_125"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_HB0_buku_service_BSFIVARIO_125" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_HB0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIVARIO_125"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_CY0_buku_service_BSREVO_110" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_CY0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSREVO_110"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DE0_buku_service_BSMEGA_PRO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DE0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSMEGA_PRO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DF0_buku_service_BSMEGA_PRO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DF0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSMEGA_PRO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DRB_buku_service_BSCBR_250" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DRB"/>
+            <field name="product_id" ref="product_extras_buku_service_BSCBR_250"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DPA_buku_service_BSCBR_150" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DPA"/>
+            <field name="product_id" ref="product_extras_buku_service_BSCBR_150"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DP0_buku_service_BSCBR_150" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DP0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSCBR_150"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DPB_buku_service_BSCBR_150" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DPB"/>
+            <field name="product_id" ref="product_extras_buku_service_BSCBR_150"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FE1_buku_service_BSVARIO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FE1"/>
+            <field name="product_id" ref="product_extras_buku_service_BSVARIO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FK0_buku_service_BSSPACY" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FK0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSSPACY"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FL0_buku_service_BSHISUPRA_X_125_" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FL0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSHISUPRA_X_125_HELM_IN"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FM3_buku_service_BSFISUPRA_X_125_" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FM3"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFISUPRA_X_125_INJECTION"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FR2_buku_service_BSFISPACY_HELM_I" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FR2"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFISPACY_HELM_IN_INJECTION"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DT0_buku_service_BSPCX" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DT0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSPCX"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FV0_buku_service_BSFIBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FV0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FW0_buku_service_BSFIBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FW0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FX0_buku_service_BSFIBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FX0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DK1_buku_service_BSCB150R" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DK1"/>
+            <field name="product_id" ref="product_extras_buku_service_BSCB150R"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DK2_buku_service_BSCB150R" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DK2"/>
+            <field name="product_id" ref="product_extras_buku_service_BSCB150R"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DK0_buku_service_BSCB150R" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DK0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSCB150R"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FZ0_buku_service_BSBLADE" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FZ0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSBLADE"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DN1_buku_service_BSVerza" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DN1"/>
+            <field name="product_id" ref="product_extras_buku_service_BSVerza"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DM1_buku_service_BSVerza" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DM1"/>
+            <field name="product_id" ref="product_extras_buku_service_BSVerza"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FNA_buku_service_BSFISCOOPY" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FNA"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFISCOOPY"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GK0_buku_service_BSFIVARIO_125" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GK0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIVARIO_125"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GB0_buku_service_BSREVO_110_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GB0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSREVO_110_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GC0_buku_service_BSREVO_110_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GC0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSREVO_110_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GD0_buku_service_BSREVO_110_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GD0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSREVO_110_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DL0_buku_service_BSMEGA_PRO_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DL0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSMEGA_PRO_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GE0_buku_service_BSSUPRA_X_125_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GE0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSSUPRA_X_125_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GF0_buku_service_BSSUPRA_X_125_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GF0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSSUPRA_X_125_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GG0_buku_service_BSBLADEF1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GG0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSBLADEF1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GH0_buku_service_BSBLADEF1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GH0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSBLADEF1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GHA_buku_service_BSBLADEF1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GHA"/>
+            <field name="product_id" ref="product_extras_buku_service_BSBLADEF1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GL0_buku_service_BSFIVARIO_125" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GL0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIVARIO_125"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GJ0_buku_service_BSFIVARIO_110F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GJ0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIVARIO_110F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GM0_buku_service_BSFIBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GM0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GP0_buku_service_BSFIBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GP0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GN0_buku_service_BSFIBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GN0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GR0_buku_service_BSFISCOOPY" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GR0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFISCOOPY"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GRA_buku_service_BSFISCOOPY" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GRA"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFISCOOPY"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GS0_buku_service_BSFIBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GS0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GV0_buku_service_BSFIBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GV0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GW0_buku_service_BSFIBEAT_POP" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GW0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIBEAT_POP"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GX0_buku_service_BSFIBEAT_POP" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GX0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIBEAT_POP"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GY0_buku_service_BSFIBEAT_POP" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GY0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIBEAT_POP"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GT0_buku_service_BSFIBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GT0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GZ0_buku_service_BSFIVARIO_150" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GZ0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIVARIO_150"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GZA_buku_service_BSFIVARIO_150" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GZA"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIVARIO_150"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_HA0_buku_service_BSFIVARIO_125" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_HA0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIVARIO_125"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_HB0_buku_service_BSFIVARIO_125" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_HB0"/>
+            <field name="product_id" ref="product_extras_buku_service_BSFIVARIO_125"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_CR1_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_CR1"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_CT0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_CT0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_CY0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_CY0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FE1_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FE1"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FK0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FK0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FL0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FL0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DT0_battery_ACCU_CBR_PCX" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DT0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU_CBR_PCX"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FV0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FV0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FW0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FW0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FX0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FX0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DK0_battery_ACCU_KERING_6V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DK0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU_KERING_6V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FZ0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FZ0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DN0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DN0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DM0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DM0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FNA_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FNA"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GK0_battery_ACCU_KERING_6V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GK0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU_KERING_6V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GB0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GB0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GC0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GC0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GD0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GD0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DL0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DL0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GE0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GE0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GF0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GF0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GG0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GG0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GH0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GH0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GHA_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GHA"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GL0_battery_ACCU_KERING_6V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GL0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU_KERING_6V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GJ0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GJ0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GM0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GM0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GP0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GP0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GN0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GN0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GRA_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GRA"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DPA_battery_ACCU_CBR_PCX" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DPA"/>
+            <field name="product_id" ref="product_extras_battery_ACCU_CBR_PCX"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GS0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GS0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GV0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GV0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GW0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GW0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GX0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GX0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GY0_battery_ACCU_KERING_6V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GY0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU_KERING_6V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GT0_battery_ACCU_KERING_6V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GT0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU_KERING_6V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GZA_battery_ACCU_KERING_6V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GZA"/>
+            <field name="product_id" ref="product_extras_battery_ACCU_KERING_6V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_HA0_battery_ACCU_KERING_6V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_HA0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU_KERING_6V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_HB0_battery_ACCU_KERING_6V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_HB0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU_KERING_6V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_CY0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_CY0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DE0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DE0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DF0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DF0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DRB_battery_ACCU_CBR_PCX" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DRB"/>
+            <field name="product_id" ref="product_extras_battery_ACCU_CBR_PCX"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DPA_battery_ACCU_CBR_PCX" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DPA"/>
+            <field name="product_id" ref="product_extras_battery_ACCU_CBR_PCX"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DP0_battery_ACCU_CBR_PCX" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DP0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU_CBR_PCX"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DPB_battery_ACCU_CBR_PCX" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DPB"/>
+            <field name="product_id" ref="product_extras_battery_ACCU_CBR_PCX"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FE1_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FE1"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FK0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FK0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FL0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FL0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FM3_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FM3"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FR2_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FR2"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DT0_battery_ACCU_CBR_PCX" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DT0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU_CBR_PCX"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FV0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FV0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FW0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FW0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FX0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FX0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DK1_battery_ACCU_KERING_6V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DK1"/>
+            <field name="product_id" ref="product_extras_battery_ACCU_KERING_6V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DK2_battery_ACCU_KERING_6V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DK2"/>
+            <field name="product_id" ref="product_extras_battery_ACCU_KERING_6V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DK0_battery_ACCU_KERING_6V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DK0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU_KERING_6V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FZ0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FZ0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DN1_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DN1"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DM1_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DM1"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FNA_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FNA"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GK0_battery_ACCU_KERING_6V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GK0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU_KERING_6V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GB0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GB0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GC0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GC0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GD0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GD0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DL0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DL0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GE0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GE0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GF0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GF0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GG0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GG0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GH0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GH0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GHA_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GHA"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GL0_battery_ACCU_KERING_6V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GL0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU_KERING_6V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GJ0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GJ0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GM0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GM0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GP0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GP0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GN0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GN0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GR0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GR0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GRA_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GRA"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GS0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GS0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GV0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GV0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GW0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GW0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GX0_battery_ACCU KERING 4V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GX0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU KERING 4V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GY0_battery_ACCU_KERING_6V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GY0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU_KERING_6V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GT0_battery_ACCU_KERING_6V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GT0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU_KERING_6V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GZ0_battery_ACCU_KERING_6V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GZ0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU_KERING_6V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GZA_battery_ACCU_KERING_6V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GZA"/>
+            <field name="product_id" ref="product_extras_battery_ACCU_KERING_6V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_HA0_battery_ACCU_KERING_6V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_HA0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU_KERING_6V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_HB0_battery_ACCU_KERING_6V" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_HB0"/>
+            <field name="product_id" ref="product_extras_battery_ACCU_KERING_6V"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_CR1_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_CR1"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_CT0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_CT0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_CY0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_CY0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FE1_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FE1"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FK0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FK0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FL0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FL0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DT0_helm_HELM_PCX" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DT0"/>
+            <field name="product_id" ref="product_extras_helm_HELM_PCX"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FV0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FV0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FW0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FW0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FX0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FX0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DK0_helm_TRX_R" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DK0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_R"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FZ0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FZ0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DN0_helm_TRX_R" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DN0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_R"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DM0_helm_TRX_R" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DM0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_R"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FNA_helm_TRX_S" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FNA"/>
+            <field name="product_id" ref="product_extras_helm_TRX_S"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GK0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GK0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GB0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GB0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GC0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GC0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GD0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GD0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DL0_helm_TRX_R" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DL0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_R"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GE0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GE0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GF0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GF0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GG0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GG0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GH0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GH0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GHA_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GHA"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GL0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GL0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GJ0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GJ0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GM0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GM0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GP0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GP0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GN0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GN0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GRA_helm_TRX_S" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GRA"/>
+            <field name="product_id" ref="product_extras_helm_TRX_S"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DPA_helm_TRCBR" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DPA"/>
+            <field name="product_id" ref="product_extras_helm_TRCBR"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GS0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GS0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GV0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GV0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GW0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GW0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GX0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GX0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GY0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GY0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GT0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GT0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GZA_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GZA"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_HA0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_HA0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_HB0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_HB0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_CY0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_CY0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DE0_helm_TRX_R" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DE0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_R"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DF0_helm_TRX_R" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DF0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_R"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DRB_helm_TRCBR" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DRB"/>
+            <field name="product_id" ref="product_extras_helm_TRCBR"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DPA_helm_TRCBR" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DPA"/>
+            <field name="product_id" ref="product_extras_helm_TRCBR"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DP0_helm_TRCBR" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DP0"/>
+            <field name="product_id" ref="product_extras_helm_TRCBR"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DPB_helm_TRCBR" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DPB"/>
+            <field name="product_id" ref="product_extras_helm_TRCBR"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FE1_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FE1"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FK0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FK0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FL0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FL0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FM3_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FM3"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FR2_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FR2"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DT0_helm_HELM_PCX" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DT0"/>
+            <field name="product_id" ref="product_extras_helm_HELM_PCX"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FV0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FV0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FW0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FW0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FX0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FX0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DK1_helm_TRX_R" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DK1"/>
+            <field name="product_id" ref="product_extras_helm_TRX_R"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DK2_helm_TRX_R" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DK2"/>
+            <field name="product_id" ref="product_extras_helm_TRX_R"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DK0_helm_TRX_R" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DK0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_R"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FZ0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FZ0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DN1_helm_TRX_R" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DN1"/>
+            <field name="product_id" ref="product_extras_helm_TRX_R"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DM1_helm_TRX_R" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DM1"/>
+            <field name="product_id" ref="product_extras_helm_TRX_R"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FNA_helm_TRX_S" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FNA"/>
+            <field name="product_id" ref="product_extras_helm_TRX_S"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GK0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GK0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GB0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GB0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GC0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GC0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GD0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GD0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DL0_helm_TRX_R" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DL0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_R"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GE0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GE0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GF0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GF0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GG0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GG0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GH0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GH0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GHA_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GHA"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GL0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GL0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GJ0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GJ0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GM0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GM0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GP0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GP0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GN0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GN0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GR0_helm_TRX_S" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GR0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_S"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GRA_helm_TRX_S" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GRA"/>
+            <field name="product_id" ref="product_extras_helm_TRX_S"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GS0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GS0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GV0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GV0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GW0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GW0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GX0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GX0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GY0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GY0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GT0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GT0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GZ0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GZ0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GZA_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GZA"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_HA0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_HA0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_HB0_helm_TRX_3" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_HB0"/>
+            <field name="product_id" ref="product_extras_helm_TRX_3"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_CY0_buku_manual_BMREVO_110" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_CY0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMREVO_110"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DE0_buku_manual_BMMEGA_PRO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DE0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMMEGA_PRO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DF0_buku_manual_BMMEGA_PRO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DF0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMMEGA_PRO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DRB_buku_manual_BMCBR_250" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DRB"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMCBR_250"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DPA_buku_manual_BMCBR_150" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DPA"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMCBR_150"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DP0_buku_manual_BMCBR_150" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DP0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMCBR_150"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DPB_buku_manual_BMCBR_150" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DPB"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMCBR_150"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FE1_buku_manual_BMVARIO" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FE1"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMVARIO"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FK0_buku_manual_BMSPACY" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FK0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMSPACY"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FL0_buku_manual_BMHISUPRA_X_125_H" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FL0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMHISUPRA_X_125_HELM_IN"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FM3_buku_manual_BMFISUPRA_X_125_I" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FM3"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMFISUPRA_X_125_INJECTION"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FR2_buku_manual_BMFISPACY_HELM_IN" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FR2"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMFISPACY_HELM_IN_INJECTION"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DT0_buku_manual_BMPCX" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DT0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMPCX"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FV0_buku_manual_BMFIBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FV0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMFIBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FW0_buku_manual_BMFIBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FW0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMFIBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FX0_buku_manual_BMFIBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FX0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMFIBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DK1_buku_manual_BMCB150R" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DK1"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMCB150R"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DK2_buku_manual_BMCB150R" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DK2"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMCB150R"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DK0_buku_manual_BMCB150R" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DK0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMCB150R"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FZ0_buku_manual_BMBLADE" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FZ0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMBLADE"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DN1_buku_manual_BMVerza" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DN1"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMVerza"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DM1_buku_manual_BMVerza" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DM1"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMVerza"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_FNA_buku_manual_BMFISCOOPY" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_FNA"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMFISCOOPY"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GK0_buku_manual_BMFIVARIO_125" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GK0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMFIVARIO_125"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GB0_buku_manual_BMREVO_110_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GB0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMREVO_110_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GC0_buku_manual_BFREVO_110_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GC0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BFREVO_110_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GD0_buku_manual_BFREVO_110_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GD0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BFREVO_110_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_DL0_buku_manual_BMMEGA_PRO_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_DL0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMMEGA_PRO_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GE0_buku_manual_BMSUPRA_X_125_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GE0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMSUPRA_X_125_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GF0_buku_manual_BMSUPRA_X_125_F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GF0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMSUPRA_X_125_F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GG0_buku_manual_BMBLADEF1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GG0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMBLADEF1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GH0_buku_manual_BMBLADEF1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GH0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMBLADEF1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GHA_buku_manual_BMBLADEF1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GHA"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMBLADEF1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GL0_buku_manual_BMFIVARIO_125" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GL0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMFIVARIO_125"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GJ0_buku_manual_BMFIVARIO_110F1" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GJ0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMFIVARIO_110F1"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GM0_buku_manual_BMFIBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GM0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMFIBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GP0_buku_manual_BMFIBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GP0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMFIBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GN0_buku_manual_BMFIBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GN0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMFIBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GR0_buku_manual_BMFISCOOPY" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GR0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMFISCOOPY"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GRA_buku_manual_BMFISCOOPY" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GRA"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMFISCOOPY"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GS0_buku_manual_BMFIBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GS0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMFIBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GV0_buku_manual_BMFIBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GV0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMFIBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GW0_buku_manual_BMFIBEAT_POP" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GW0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMFIBEAT_POP"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GX0_buku_manual_BMFIBEAT_POP" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GX0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMFIBEAT_POP"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GY0_buku_manual_BMFIBEAT_POP" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GY0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMFIBEAT_POP"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GT0_buku_manual_BMFIBEAT" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GT0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMFIBEAT"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GZ0_buku_manual_BMFIVARIO_150" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GZ0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMFIVARIO_150"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_GZA_buku_manual_BMFIVARIO_150" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_GZA"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMFIVARIO_150"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_HA0_buku_manual_BMFIVARIO_125" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_HA0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMFIVARIO_125"/>
+            <field name="quantity">1</field>
+        </record>
+    
+        <record id="extras_temp_HB0_buku_manual_BMFIVARIO_125" model="wtc.barang.extras">
+            <field name="barang_extras_id" ref="temp_HB0"/>
+            <field name="product_id" ref="product_extras_buku_manual_BMFIVARIO_125"/>
+            <field name="quantity">1</field>
+        </record>
+	
+	</data>
+</openerp>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    
+<!--Return Penjualan -->
+		<record id="wtc_return_penjualan_group_read" model="res.groups">
+			<field name="category_id" ref="wtc_branch.tdm_role" />
+			<field name="name">Return Penjualan Read</field>
+			<field name="menu_access" eval="[(4, ref('menu_return_penjualan'))]" />
+		</record>
+		<record id="wtc_return_penjualan_access_read" model="ir.model.access">
+			<field name="model_id" ref="model_wtc_return_penjualan" />
+			<field name="name">wtc_return_penjualan read</field>
+			<field name="group_id" ref="wtc_return_penjualan_group_read" />
+			<field name="perm_read">1</field>
+		</record>
+		
+		
+	<record id="wtc_return_penjualan_group_update" model="res.groups">
+			<field name="category_id" ref="wtc_branch.tdm_role" />
+			<field name="name">Return Penjualan Update</field>
+			<field name="implied_ids" eval="[(4, ref('wtc_return_penjualan_group_read'))]" />
+	</record>
+	
+	<record id="wtc_return_penjualan_access_update" model="ir.model.access">
+			<field name="model_id" ref="model_wtc_return_penjualan" />
+			<field name="name">wtc_return_penjualan update</field>
+			<field name="group_id" ref="wtc_return_penjualan_group_update" />
+			<field name="perm_create">1</field>
+			<field name="perm_write">1</field>
+	</record>
+	
+	
+	<record id="wtc_return_penjualan_group_delete" model="res.groups">
+			<field name="category_id" ref="wtc_branch.tdm_role" />
+			<field name="name">Return Penjualan Delete</field>
+			<field name="implied_ids" eval="[(4, ref('wtc_return_penjualan_group_read'))]" />
+	</record>
+	
+	<record id="wtc_return_penjualan_access_delete" model="ir.model.access">
+			<field name="model_id" ref="model_wtc_return_penjualan" />
+			<field name="name">wtc_return_penjualan delete</field>
+			<field name="group_id" ref="wtc_return_penjualan_group_delete" />
+			<field name="perm_unlink">1</field>
+	</record>
+		
+    
+<!--Return Pembelian -->
+		
+        <record id="group_wtc_return_pembelian_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Return Pembelian Read</field>
+            <field name="menu_access" eval="[
+            								(4, ref('menu_return_pembelian')),
+            								]"/>
+        </record>
+        
+        <record id="access_wtc_return_pembelian_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_return_pembelian"/>
+            <field name="name">wtc_return_pembelian read</field>
+            <field name="group_id" ref="group_wtc_return_pembelian_read"/>
+            <field name="perm_read">1</field>
+        </record>
+		
+        <record id="access_wtc_return_pembelian_line_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_return_pembelian_line"/>
+            <field name="name">wtc_return_pembelian_line read</field> 
+            <field name="group_id" ref="group_wtc_return_pembelian_read"/>  
+            <field name="perm_read">1</field> 
+        </record>  
+        
+        <record id="group_wtc_return_pembelian_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Return Pembelian Update</field>
+            <field name="menu_access" eval="[
+            								(4, ref('menu_return_pembelian')),
+            								]"/>
+			<field name="implied_ids" eval="[(4, ref('group_wtc_return_pembelian_read'))]"/>
+        </record>
+        
+        <record id="access_wtc_return_pembelian_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_return_pembelian"/>
+            <field name="name">wtc_return_pembelian update</field> 
+            <field name="group_id" ref="group_wtc_return_pembelian_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>      
+        
+        <record id="access_wtc_return_pembelian_line_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_return_pembelian_line"/>
+            <field name="name">wtc_return_pembelian_line update</field> 
+            <field name="group_id" ref="group_wtc_return_pembelian_update"/>  
+            <field name="perm_create">1</field>
+            <field name="perm_write">1</field>
+        </record>
+		
+        <record id="group_wtc_return_pembelian_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Return Pembelian Delete</field> 
+            <field name="menu_access" eval="[
+            								(4, ref('menu_return_pembelian')),
+            								]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_wtc_return_pembelian_read'))]"/>            	            	
+        </record>
+        
+		<record id="access_wtc_return_pembelian_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_return_pembelian"/>
+            <field name="name">wtc_return_pembelian delete</field>
+            <field name="group_id" ref="group_wtc_return_pembelian_delete"/>
+            <field name="perm_unlink">1</field>
+        </record>
+        
+        <record id="access_wtc_return_pembelian_line_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_return_pembelian_line"/>
+            <field name="name">wtc_return_pembelian_line delete</field>
+            <field name="group_id" ref="group_wtc_return_pembelian_delete"/>
+            <field name="perm_unlink">1</field>
+        </record>
+        
+        <record id="access_wtc_branch_return_pembelian_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_branch.model_wtc_branch"/>
+            <field name="name">wtc_branch read</field>
+            <field name="group_id" ref="group_wtc_return_pembelian_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+         <record id="access_res_partner_return_pembelian_read" model="ir.model.access">
+            <field name="model_id" ref="base.model_res_partner"/>
+            <field name="name">res_partner read</field>
+            <field name="group_id" ref="group_wtc_return_pembelian_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        
+        <record id="access_account_payment_term_return_pembelian_read" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_payment_term"/>
+            <field name="name">account_payment_term read</field>
+            <field name="group_id" ref="group_wtc_return_pembelian_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        
+         <record id="access_account_invoice_return_pembelian_read" model="ir.model.access">
+            <field name="model_id" ref="account.model_account_invoice"/>
+            <field name="name">account_invoice read</field>
+            <field name="group_id" ref="group_wtc_return_pembelian_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+      
+        
+    
+                
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[(4,ref('group_wtc_return_pembelian_read')),
+											(4,ref('group_wtc_return_pembelian_update')),
+											
+											(4,ref('wtc_return_penjualan_group_read')),
+											(4,ref('wtc_return_penjualan_group_update')),
+											(4,ref('wtc_return_penjualan_group_delete')),
+												
+			]"/>            	            	
+		</record>             
+    </data>
+</openerp>

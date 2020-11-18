@@ -1,0 +1,1735 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    
+        <record id="journal_pettycash_sr_dsr" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dsr"/>
+            <field name="code">PCSRDSR</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Riau</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DSR"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DSR"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dsr"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_djj" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_djj"/>
+            <field name="code">PCSRDJJ</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Jambi</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DJJ"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DJJ"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_djj"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_djb" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_djb"/>
+            <field name="code">PCSRDJB</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Bangko</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DJB"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DJB"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_djb"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_djs" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_djs"/>
+            <field name="code">PCSRDJS</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Muara Sabak</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DJS"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DJS"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_djs"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_djm" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_djm"/>
+            <field name="code">PCSRDJM</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Merlung</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DJM"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DJM"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_djm"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dju" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dju"/>
+            <field name="code">PCSRDJU</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Muarabungo</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DJU"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DJU"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dju"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dsm" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dsm"/>
+            <field name="code">PCSRDSM</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Martapura</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DSM"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DSM"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dsm"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dsg" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dsg"/>
+            <field name="code">PCSRDSG</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Gelumbang</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DSG"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DSG"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dsg"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dsb" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dsb"/>
+            <field name="code">PCSRDSB</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Pangkalan Balai</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DSB"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DSB"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dsb"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dsp" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dsp"/>
+            <field name="code">PCSRDSP</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Palembang</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DSP"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DSP"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dsp"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dsk" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dsk"/>
+            <field name="code">PCSRDSK</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Kayu Agung</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DSK"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DSK"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dsk"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dup" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dup"/>
+            <field name="code">PCSRDUP</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Putri Hijau</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DUP"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DUP"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dup"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_duk" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_duk"/>
+            <field name="code">PCSRDUK</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Kepahyang</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DUK"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DUK"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_duk"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dle" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dle"/>
+            <field name="code">PCSRDLE</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Way Sekampung</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DLE"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DLE"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dle"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dlp" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlp"/>
+            <field name="code">PCSRDLP</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Pahoman</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DLP"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DLP"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlp"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dlm" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlm"/>
+            <field name="code">PCSRDLM</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Simpang Pematang</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DLM"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DLM"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlm"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dlh" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlh"/>
+            <field name="code">PCSRDLH</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Seputih Mataram</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DLH"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DLH"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlh"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dlx" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlx"/>
+            <field name="code">PCSRDLX</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Kalianda</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DLX"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DLX"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlx"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dll" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dll"/>
+            <field name="code">PCSRDLL</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Kemiling</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DLL"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DLL"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dll"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dld" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dld"/>
+            <field name="code">PCSRDLD</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Tulang Bawang Barat</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DLD"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DLD"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dld"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dlf" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlf"/>
+            <field name="code">PCSRDLF</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Trimurjo</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DLF"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DLF"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlf"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dlv" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlv"/>
+            <field name="code">PCSRDLV</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Purbolinggo</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DLV"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DLV"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlv"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dlq" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlq"/>
+            <field name="code">PCSRDLQ</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Tirtayasa</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DLQ"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DLQ"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlq"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dlc" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlc"/>
+            <field name="code">PCSRDLC</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Rawajitu</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DLC"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DLC"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlc"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dly" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dly"/>
+            <field name="code">PCSRDLY</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Yos Sudarso</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DLY"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DLY"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dly"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dlw" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlw"/>
+            <field name="code">PCSRDLW</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Way Kanan</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DLW"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DLW"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlw"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dlu" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlu"/>
+            <field name="code">PCSRDLU</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Kota Bumi</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DLU"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DLU"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlu"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dlt" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlt"/>
+            <field name="code">PCSRDLT</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Tulang Bawang</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DLT"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DLT"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlt"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dls" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dls"/>
+            <field name="code">PCSRDLS</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Sidomulyo</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DLS"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DLS"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dls"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dlo" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlo"/>
+            <field name="code">PCSRDLO</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Kota Gajah</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DLO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DLO"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlo"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dln" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dln"/>
+            <field name="code">PCSRDLN</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Kota Agung</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DLN"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DLN"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dln"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dlk" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlk"/>
+            <field name="code">PCSRDLK</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Krui</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DLK"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DLK"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlk"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dlj" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlj"/>
+            <field name="code">PCSRDLJ</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Way Jepara</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DLJ"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DLJ"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlj"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dli" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dli"/>
+            <field name="code">PCSRDLI</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Tanjung Bintang</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DLI"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DLI"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dli"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dlg" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlg"/>
+            <field name="code">PCSRDLG</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Gading Rejo</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DLG"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DLG"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlg"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dlb" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlb"/>
+            <field name="code">PCSRDLB</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Bakauheni</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DLB"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DLB"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlb"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dla" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dla"/>
+            <field name="code">PCSRDLA</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Antasari</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DLA"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DLA"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dla"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dlr" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlr"/>
+            <field name="code">PCSRDLR</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Raden Intan</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DLR"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DLR"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlr"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_hho" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_hho"/>
+            <field name="code">PCSRHHO</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - fice</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102HHO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102HHO"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_hho"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_mml" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_mml"/>
+            <field name="code">PCSRMML</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - ung</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102MML"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102MML"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_mml"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dbl" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dbl"/>
+            <field name="code">PCSRDBL</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Belitung</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DBL"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DBL"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dbl"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dbk" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dbk"/>
+            <field name="code">PCSRDBK</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Kelapa</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DBK"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DBK"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dbk"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dbb" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dbb"/>
+            <field name="code">PCSRDBB</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Bangka</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DBB"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DBB"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dbb"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dbs" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dbs"/>
+            <field name="code">PCSRDBS</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Sungai Liat</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DBS"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DBS"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dbs"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dbt" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dbt"/>
+            <field name="code">PCSRDBT</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Toboali</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DBT"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DBT"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dbt"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dds" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dds"/>
+            <field name="code">PCSRDDS</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Saharjo</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DDS"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DDS"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dds"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_ddc" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddc"/>
+            <field name="code">PCSRDDC</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Cimareme</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DDC"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DDC"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_ddc"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_ddb" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddb"/>
+            <field name="code">PCSRDDB</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Bekasi</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DDB"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DDB"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_ddb"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dda" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dda"/>
+            <field name="code">PCSRDDA</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Caman</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DDA"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DDA"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dda"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_ddd" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddd"/>
+            <field name="code">PCSRDDD</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Depok</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DDD"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DDD"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_ddd"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dde" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dde"/>
+            <field name="code">PCSRDDE</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Temanggung</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DDE"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DDE"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dde"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_ddg" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddg"/>
+            <field name="code">PCSRDDG</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Godean</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DDG"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DDG"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_ddg"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_ddm" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddm"/>
+            <field name="code">PCSRDDM</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Mojosari</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DDM"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DDM"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_ddm"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_ddj" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddj"/>
+            <field name="code">PCSRDDJ</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Jombang</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DDJ"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DDJ"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_ddj"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_ddt" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddt"/>
+            <field name="code">PCSRDDT</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Tabanan</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DDT"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DDT"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_ddt"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_ddi" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddi"/>
+            <field name="code">PCSRDDI</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Bima</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DDI"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DDI"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_ddi"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dxk" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dxk"/>
+            <field name="code">PCSRDXK</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Ketapang</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DXK"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DXK"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dxk"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dxt" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dxt"/>
+            <field name="code">PCSRDXT</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Tenggarong</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DXT"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DXT"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dxt"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dxs" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dxs"/>
+            <field name="code">PCSRDXS</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Samarinda</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DXS"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DXS"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dxs"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dxg" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dxg"/>
+            <field name="code">PCSRDXG</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Tanah Grogot</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DXG"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DXG"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dxg"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dxb" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dxb"/>
+            <field name="code">PCSRDXB</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Balikpapan</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DXB"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DXB"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dxb"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dxn" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dxn"/>
+            <field name="code">PCSRDXN</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Nanga Pinoh</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DXN"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DXN"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dxn"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dwt" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dwt"/>
+            <field name="code">PCSRDWT</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Tuminting</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DWT"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DWT"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dwt"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dwr" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dwr"/>
+            <field name="code">PCSRDWR</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Pare-Pare</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DWR"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DWR"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dwr"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dwp" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dwp"/>
+            <field name="code">PCSRDWP</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Pinrang</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DWP"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DWP"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dwp"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dwo" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dwo"/>
+            <field name="code">PCSRDWO</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Palopo</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DWO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DWO"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dwo"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dwk" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dwk"/>
+            <field name="code">PCSRDWK</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Kendari</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DWK"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DWK"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dwk"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dws" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dws"/>
+            <field name="code">PCSRDWS</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Sengkang</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DWS"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DWS"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dws"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dwg" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dwg"/>
+            <field name="code">PCSRDWG</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Pangkep</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DWG"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DWG"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dwg"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dwm" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dwm"/>
+            <field name="code">PCSRDWM</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Tomoni</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DWM"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DWM"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dwm"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_dwn" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dwn"/>
+            <field name="code">PCSRDWN</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Gorontalo</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DWN"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DWN"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dwn"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_sr_ddu" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddu"/>
+            <field name="code">PCSRDDU</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - SR - Sukabumi</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111102DDU"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111102DDU"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_ddu"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dsr" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dsr"/>
+            <field name="code">PCWSDSR</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Riau</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DSR"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DSR"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dsr"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_djj" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_djj"/>
+            <field name="code">PCWSDJJ</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Jambi</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DJJ"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DJJ"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_djj"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_djb" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_djb"/>
+            <field name="code">PCWSDJB</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Bangko</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DJB"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DJB"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_djb"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_djs" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_djs"/>
+            <field name="code">PCWSDJS</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Muara Sabak</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DJS"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DJS"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_djs"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_djm" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_djm"/>
+            <field name="code">PCWSDJM</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Merlung</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DJM"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DJM"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_djm"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dju" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dju"/>
+            <field name="code">PCWSDJU</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Muarabungo</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DJU"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DJU"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dju"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dsm" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dsm"/>
+            <field name="code">PCWSDSM</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Martapura</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DSM"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DSM"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dsm"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dsg" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dsg"/>
+            <field name="code">PCWSDSG</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Gelumbang</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DSG"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DSG"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dsg"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dsb" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dsb"/>
+            <field name="code">PCWSDSB</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Pangkalan Balai</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DSB"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DSB"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dsb"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dsp" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dsp"/>
+            <field name="code">PCWSDSP</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Palembang</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DSP"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DSP"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dsp"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dsk" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dsk"/>
+            <field name="code">PCWSDSK</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Kayu Agung</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DSK"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DSK"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dsk"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dup" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dup"/>
+            <field name="code">PCWSDUP</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Putri Hijau</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DUP"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DUP"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dup"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_duk" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_duk"/>
+            <field name="code">PCWSDUK</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Kepahyang</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DUK"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DUK"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_duk"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dle" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dle"/>
+            <field name="code">PCWSDLE</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Way Sekampung</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DLE"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DLE"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dle"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dlp" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlp"/>
+            <field name="code">PCWSDLP</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Pahoman</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DLP"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DLP"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlp"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dlm" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlm"/>
+            <field name="code">PCWSDLM</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Simpang Pematang</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DLM"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DLM"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlm"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dlh" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlh"/>
+            <field name="code">PCWSDLH</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Seputih Mataram</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DLH"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DLH"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlh"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dlx" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlx"/>
+            <field name="code">PCWSDLX</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Kalianda</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DLX"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DLX"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlx"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dll" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dll"/>
+            <field name="code">PCWSDLL</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Kemiling</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DLL"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DLL"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dll"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dld" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dld"/>
+            <field name="code">PCWSDLD</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Tulang Bawang Barat</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DLD"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DLD"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dld"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dlf" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlf"/>
+            <field name="code">PCWSDLF</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Trimurjo</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DLF"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DLF"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlf"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dlv" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlv"/>
+            <field name="code">PCWSDLV</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Purbolinggo</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DLV"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DLV"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlv"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dlq" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlq"/>
+            <field name="code">PCWSDLQ</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Tirtayasa</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DLQ"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DLQ"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlq"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dlc" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlc"/>
+            <field name="code">PCWSDLC</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Rawajitu</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DLC"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DLC"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlc"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dly" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dly"/>
+            <field name="code">PCWSDLY</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Yos Sudarso</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DLY"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DLY"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dly"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dlw" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlw"/>
+            <field name="code">PCWSDLW</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Way Kanan</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DLW"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DLW"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlw"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dlu" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlu"/>
+            <field name="code">PCWSDLU</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Kota Bumi</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DLU"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DLU"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlu"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dlt" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlt"/>
+            <field name="code">PCWSDLT</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Tulang Bawang</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DLT"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DLT"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlt"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dls" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dls"/>
+            <field name="code">PCWSDLS</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Sidomulyo</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DLS"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DLS"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dls"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dlo" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlo"/>
+            <field name="code">PCWSDLO</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Kota Gajah</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DLO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DLO"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlo"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dln" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dln"/>
+            <field name="code">PCWSDLN</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Kota Agung</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DLN"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DLN"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dln"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dlk" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlk"/>
+            <field name="code">PCWSDLK</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Krui</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DLK"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DLK"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlk"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dlj" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlj"/>
+            <field name="code">PCWSDLJ</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Way Jepara</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DLJ"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DLJ"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlj"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dli" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dli"/>
+            <field name="code">PCWSDLI</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Tanjung Bintang</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DLI"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DLI"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dli"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dlg" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlg"/>
+            <field name="code">PCWSDLG</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Gading Rejo</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DLG"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DLG"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlg"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dlb" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlb"/>
+            <field name="code">PCWSDLB</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Bakauheni</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DLB"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DLB"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlb"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dla" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dla"/>
+            <field name="code">PCWSDLA</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Antasari</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DLA"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DLA"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dla"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dlr" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dlr"/>
+            <field name="code">PCWSDLR</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Raden Intan</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DLR"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DLR"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dlr"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_hho" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_hho"/>
+            <field name="code">PCWSHHO</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - fice</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103HHO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103HHO"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_hho"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_mml" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_mml"/>
+            <field name="code">PCWSMML</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - ung</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103MML"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103MML"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_mml"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dbl" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dbl"/>
+            <field name="code">PCWSDBL</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Belitung</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DBL"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DBL"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dbl"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dbk" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dbk"/>
+            <field name="code">PCWSDBK</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Kelapa</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DBK"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DBK"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dbk"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dbb" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dbb"/>
+            <field name="code">PCWSDBB</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Bangka</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DBB"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DBB"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dbb"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dbs" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dbs"/>
+            <field name="code">PCWSDBS</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Sungai Liat</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DBS"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DBS"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dbs"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dbt" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dbt"/>
+            <field name="code">PCWSDBT</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Toboali</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DBT"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DBT"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dbt"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dds" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dds"/>
+            <field name="code">PCWSDDS</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Saharjo</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DDS"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DDS"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dds"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_ddc" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddc"/>
+            <field name="code">PCWSDDC</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Cimareme</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DDC"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DDC"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_ddc"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_ddb" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddb"/>
+            <field name="code">PCWSDDB</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Bekasi</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DDB"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DDB"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_ddb"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dda" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dda"/>
+            <field name="code">PCWSDDA</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Caman</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DDA"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DDA"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dda"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_ddd" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddd"/>
+            <field name="code">PCWSDDD</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Depok</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DDD"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DDD"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_ddd"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dde" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dde"/>
+            <field name="code">PCWSDDE</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Temanggung</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DDE"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DDE"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dde"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_ddg" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddg"/>
+            <field name="code">PCWSDDG</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Godean</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DDG"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DDG"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_ddg"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_ddm" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddm"/>
+            <field name="code">PCWSDDM</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Mojosari</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DDM"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DDM"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_ddm"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_ddj" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddj"/>
+            <field name="code">PCWSDDJ</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Jombang</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DDJ"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DDJ"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_ddj"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_ddt" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddt"/>
+            <field name="code">PCWSDDT</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Tabanan</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DDT"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DDT"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_ddt"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_ddi" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddi"/>
+            <field name="code">PCWSDDI</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Bima</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DDI"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DDI"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_ddi"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dxk" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dxk"/>
+            <field name="code">PCWSDXK</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Ketapang</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DXK"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DXK"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dxk"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dxt" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dxt"/>
+            <field name="code">PCWSDXT</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Tenggarong</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DXT"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DXT"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dxt"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dxs" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dxs"/>
+            <field name="code">PCWSDXS</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Samarinda</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DXS"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DXS"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dxs"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dxg" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dxg"/>
+            <field name="code">PCWSDXG</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Tanah Grogot</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DXG"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DXG"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dxg"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dxb" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dxb"/>
+            <field name="code">PCWSDXB</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Balikpapan</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DXB"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DXB"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dxb"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dxn" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dxn"/>
+            <field name="code">PCWSDXN</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Nanga Pinoh</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DXN"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DXN"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dxn"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dwt" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dwt"/>
+            <field name="code">PCWSDWT</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Tuminting</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DWT"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DWT"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dwt"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dwr" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dwr"/>
+            <field name="code">PCWSDWR</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Pare-Pare</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DWR"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DWR"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dwr"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dwp" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dwp"/>
+            <field name="code">PCWSDWP</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Pinrang</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DWP"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DWP"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dwp"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dwo" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dwo"/>
+            <field name="code">PCWSDWO</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Palopo</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DWO"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DWO"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dwo"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dwk" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dwk"/>
+            <field name="code">PCWSDWK</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Kendari</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DWK"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DWK"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dwk"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dws" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dws"/>
+            <field name="code">PCWSDWS</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Sengkang</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DWS"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DWS"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dws"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dwg" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dwg"/>
+            <field name="code">PCWSDWG</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Pangkep</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DWG"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DWG"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dwg"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dwm" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dwm"/>
+            <field name="code">PCWSDWM</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Tomoni</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DWM"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DWM"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dwm"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_dwn" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_dwn"/>
+            <field name="code">PCWSDWN</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Gorontalo</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DWN"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DWN"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_dwn"/>   
+            <field name="cash_control">1</field> 
+        </record>
+    
+        <record id="journal_pettycash_ws_ddu" model="account.journal">
+            <field name="branch_id" ref="wtc_branch.branch_ddu"/>
+            <field name="code">PCWSDDU</field>
+            <field name="type">cash</field>   
+            <field name="name">Petty Cash - WS - Sukabumi</field>  
+            <field name="default_debit_account_id" ref="l10n_id_honda.chart_111103DDU"/>
+            <field name="default_credit_account_id" ref="l10n_id_honda.chart_111103DDU"/>   
+                         
+            <field name="sequence_id" ref="sequnce_journal_pettycash_ddu"/>   
+            <field name="cash_control">1</field> 
+        </record>
+
+    </data>
+</openerp>
+            

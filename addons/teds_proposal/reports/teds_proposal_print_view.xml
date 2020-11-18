@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template id="proposal_external_layout_header">
+            <div class="header">
+                <div class="row" style="font-size: 10px; font-style: italic;">
+                    <div class="col-xs-6 text-left" style="font-weight: bold;">
+                        &#160;&#160;PT Tunas Dwipa Matra
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        Page <span class="page"/>/<span class="topage"/>&#160;&#160;
+                    </div>
+                </div>
+            </div>
+        </template>
+        <template id="proposal_external_layout">
+            <!-- Multicompany -->
+            <t t-if="not o and doc">
+                <t t-set="o" t-value="doc"/>
+            </t>
+            <t t-if="o and 'company_id' in o">
+                <t t-set="company" t-value="o.company_id"></t>
+            </t>
+            <t t-if="not o or not 'company_id' in o">
+                <t t-set="company" t-value="res_company"></t>
+            </t>
+
+            <t t-call="teds_proposal.proposal_external_layout_header" />
+            <t t-raw="0" />
+        </template>
+        <template id="print_proposal_pdf">
+            <t t-call="report.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="teds_proposal.proposal_external_layout">
+                        <div class="page">
+                            <style type="text/css">
+                                table#outborder {
+                                    width: 100%;
+                                    height: 100%;
+                                    padding: 2px;
+                                    border: 2px solid black;
+                                    border-collapse: collapse;
+                                }
+                                table.nborder {
+                                    width: 100%;
+                                }
+                                table.content {
+                                    width: 100%;
+                                    font-size: 10px;
+                                    border-collapse: collapse;
+                                }
+                            </style>
+                            <table id="outborder">
+                                <!-- HEADER -->
+                                <tr>
+                                    <td>
+                                        <table class="nborder">
+                                            <tr>
+                                                <td colspan="2" style="font-size: 16px; font-weight: bold; text-align: center;"><span t-esc="o.name" /></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- PROPOSED BY -->
+                                <tr>
+                                    <td>
+                                        <table class="content">
+                                            <tr style="border-top: 2px solid black;">
+                                                <td colspan="4" style="font-style: italic; font-weight: bold; color: #757171;">&#160;Filled by User</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 15%;">&#160;Activity</td>
+                                                <td style="width: 1%;">:</td>
+                                                <td colspan="2" style="width: 84%;">&#160;&#160;<span t-esc="o.event" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 15%;">&#160;Budget Code</td>
+                                                <td style="width: 1%;">:</td>
+                                                <td colspan="2" style="width: 84%;"><span t-esc="o.kode_budget" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 15%; padding-bottom: 5px;">&#160;Departemen</td>
+                                                <td style="width: 1%; padding-bottom: 5px;">:</td>
+                                                <td style="width: 34%; padding-bottom: 5px;">&#160;&#160;<span t-esc="o.department_id.name" /></td>
+                                                <td style="width: 50%;  padding-bottom: 5px;">&#160;</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 15%;">&#160;</td>
+                                                <td style="width: 1%;">&#160;</td>
+                                                <td style="width: 34%; border-top: 1px solid black; border-left: 1px solid black; border-right: 1px solid black;">&#160;&#160;Proposed by,</td>
+                                                <td style="width: 50%;">&#160;</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 15%;">&#160;</td>
+                                                <td style="width: 1%;">&#160;</td>
+                                                <td style="width: 34%; border-left: 1px solid black; border-right: 1px solid black;">&#160;</td>
+                                                <td style="width: 50%;">&#160;</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 15%;">&#160;</td>
+                                                <td style="width: 1%;">&#160;</td>
+                                                <td style="width: 34%; border-left: 1px solid black; border-right: 1px solid black;">&#160;</td>
+                                                <td style="width: 50%;">&#160;</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 15%;"></td>
+                                                <td style="width: 1%;"></td>
+                                                <td style="width: 34%; border-left: 1px solid black; border-right: 1px solid black;">&#160;</td>
+                                                <td style="width: 50%;"></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 15%;">&#160;Nama PIC</td>
+                                                <td style="width: 1%;">:</td>
+                                                <td style="width: 34%; border-left: 1px solid black; border-right: 1px solid black;">&#160;&#160;<span t-esc="o.pic_id.name_related" /></td>
+                                                <td style="width: 50%;"></td>
+                                            </tr>
+                                            <tr style="padding-bottom: 3px;">
+                                                <td style="width: 15%;">&#160;NIK</td>
+                                                <td style="width: 1%;">:</td>
+                                                <td style="width: 34%; border-left: 1px solid black; border-right: 1px solid black; border-bottom: 1px solid black;">&#160;&#160;<span t-esc="o.pic_id.nip" /></td>
+                                                <td style="width: 50%;"></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- BACKGROUND, WHAT, WHY, WHERE & WHEN, HOW -->
+                                <tr>
+                                    <td>
+                                        <table class="content" style="margin-top: 3px;">
+                                            <tr>
+                                                <td style="font-weight: bold; text-decoration: underline; padding-left: 3px; padding-right: 3px; background-color: #C0C0C0;">&#160;Background</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-bottom: 3px; padding-left: 3px; padding-right: 3px;"><t t-raw="o.latar_belakang" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-decoration: underline; padding-left: 3px; padding-right: 3px; background-color: #C0C0C0;">&#160;What</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-bottom: 3px; padding-left: 3px; padding-right: 3px;"><t t-raw="o.what" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-decoration: underline; padding-left: 3px; padding-right: 3px; background-color: #C0C0C0;">&#160;Why</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-bottom: 3px; padding-left: 3px; padding-right: 3px;"><t t-raw="o.tujuan" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-decoration: underline; padding-left: 3px; padding-right: 3px; background-color: #C0C0C0;">&#160;Where &amp; When</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table class="content" style="margin-top: 2px; margin-bottom: 2px;">
+                                                        <tr>
+                                                            <th style="text-align: center; border: 1px solid black;">No</th>
+                                                            <th style="text-align: center; border: 1px solid black;">Lokasi</th>
+                                                            <th style="text-align: center; border: 1px solid black;">Start date</th>
+                                                            <th style="text-align: center; border: 1px solid black;">End date</th>
+                                                            <th style="text-align: center; border: 1px solid black;">Days</th>
+                                                            <th style="text-align: center; border: 1px solid black;">Close date</th>
+                                                        </tr>
+                                                        <t t-foreach="[0,1,2]" t-as="i">
+                                                            <t t-if="i &lt; len(o.schedule_ids)">
+                                                                <tr>
+                                                                    <td style="text-align: center; padding-left: 3px; padding-right: 3px; border: 1px solid black;"><t t-esc="i+1" /></td>
+                                                                    <td style="padding-left: 3px; padding-right: 3px; border: 1px solid black;"><t t-esc="o.schedule_ids[i].location" /></td>
+                                                                    <td style="text-align: center; border: 1px solid black;"><t t-esc="o.schedule_ids[i].date_start" /></td>
+                                                                    <td style="text-align: center; border: 1px solid black;"><t t-esc="o.schedule_ids[i].date_end" /></td>
+                                                                    <td style="text-align: center; border: 1px solid black;"><t t-esc="o.schedule_ids[i].day_count" /></td>
+                                                                    <td style="border: 1px solid black;">&#160;</td>
+                                                                </tr>
+                                                            </t>
+                                                            <t t-if="i &gt;= len(o.schedule_ids)">
+                                                                <tr>
+                                                                    <td style="text-align: center; padding-left: 3px; padding-right: 3px; border: 1px solid black;"><t t-esc="i+1" /></td>
+                                                                    <td style="border: 1px solid black;">&#160;</td>
+                                                                    <td style="border: 1px solid black;">&#160;</td>
+                                                                    <td style="border: 1px solid black;">&#160;</td>
+                                                                    <td style="border: 1px solid black;">&#160;</td>
+                                                                    <td style="border: 1px solid black;">&#160;</td>
+                                                                </tr>
+                                                            </t>
+                                                        </t>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; text-decoration: underline; padding-left: 3px; padding-right: 3px; background-color: #C0C0C0;">&#160;How</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-bottom: 3px; padding-left: 3px; padding-right: 3px;"><t t-raw="o.how" /></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- HOW MUCH - DETAILS -->
+                                <tr>
+                                    <td>
+                                        <table class="content" style="margin-top: 3px;">
+                                            <tr>
+                                                <td colspan="2" style="width: 60%; padding-left: 3px; padding-right: 3px; background-color: #C0C0C0;">
+                                                    <span style="font-weight: bold; text-decoration: underline;">&#160;How Much</span>
+                                                    <span style="font-style: italic;">&#160;(Details attached)</span>
+                                                </td>
+                                                <td style="width: 2%;">&#160;</td>
+                                                <td style="width: 17%; font-style: italic; font-weight: bold; color: #757171; text-align: center; border-top: 1px solid black; border-left: 1px solid black; border-right: 1px solid black;">Over Budget Approval</td>
+                                                <td style="width: 21%; font-style: italic; font-weight: bold; color: #757171; text-align: center; border-top: 1px solid black; border-left: 1px solid black;">Budget Control Signed-off</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 45%; padding-left: 3px;">&#160;Transfer to Supplier</td>
+                                                <td style="width: 15%; text-align: right; padding-right: 3px;"><span t-esc="'{:,.2f}'.format(amounts()['amount_transfer'])" /></td>
+                                                <td style="width: 2%;">&#160;</td>
+                                                <td style="width: 17%; border-left: 1px solid black; border-right: 1px solid black;">&#160;</td>
+                                                <td style="width: 21%; font-style: italic; text-align: center; border-left: 1px solid black;">Budget Balance (Over)*</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 45%; padding-left: 3px;">&#160;Cash to PIC</td>
+                                                <td style="width: 15%; text-align: right; padding-right: 3px; border-bottom: 1px solid black;"><span t-esc="'{:,.2f}'.format(amounts()['amount_cash'])" /></td>
+                                                <td style="width: 2%;">&#160;</td>
+                                                <td style="width: 17%; border-left: 1px solid black; border-right: 1px solid black;">&#160;</td>
+                                                <td style="width: 21%; border-left: 1px solid black;">&#160;</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 45%; font-weight: bold; padding-left: 3px;">&#160;Total</td>
+                                                <td style="width: 15%; font-weight: bold; text-align: right; padding-right: 3px;"><span t-esc="'{:,.2f}'.format(amounts()['amount_total'])" /></td>
+                                                <td style="width: 2%;">&#160;</td>
+                                                <td style="width: 17%; border-left: 1px solid black; border-right: 1px solid black;">&#160;</td>
+                                                <td style="width: 21%; border-left: 1px solid black;">&#160;</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 45%; padding-left: 3px;">&#160;Biaya Sponsorship</td>
+                                                <td style="width: 15%; text-align: right; padding-right: 3px; border-bottom: 1px solid black;"><span t-esc="'{:,.2f}'.format(amounts()['amount_sponsor'])" /></td>
+                                                <td style="width: 2%;">&#160;</td>
+                                                <td style="width: 17%; border-left: 1px solid black; border-right: 1px solid black;">&#160;</td>
+                                                <td style="width: 21%; border-left: 1px solid black;">&#160;Name: </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 45%; font-weight: bold; padding-left: 3px;">&#160;Net Expense</td>
+                                                <td style="width: 15%; font-weight: bold; text-align: right; padding-right: 3px;"><span t-esc="'{:,.2f}'.format(amounts()['amount_total'] - amounts()['amount_sponsor'])" /></td>
+                                                <td style="width: 2%;">&#160;</td>
+                                                <td style="width: 17%; border-left: 1px solid black; border-right: 1px solid black;">&#160;</td>
+                                                <td style="width: 21%; border-left: 1px solid black;">&#160;NIK: </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 45%; padding-left: 3px;">&#160;Available Budget</td>
+                                                <td style="width: 15%; text-align: right; padding-right: 3px; border-bottom: 1px solid black;">&#160;</td>
+                                                <td style="width: 2%;">&#160;</td>
+                                                <td style="width: 17%; border-left: 1px solid black; border-right: 1px solid black;">&#160;BOD: </td>
+                                                <td style="width: 21%; border-left: 1px solid black;">&#160;Received date: </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 45%; font-style: italic; padding-left: 3px;">&#160;Budget Balance (Over)*</td>
+                                                <td style="width: 15%; text-align: right; padding-right: 3px; border-bottom: 1px solid black;">&#160;</td>
+                                                <td style="width: 2%;">&#160;</td>
+                                                <td style="width: 17%; border-bottom: 1px solid black; border-left: 1px solid black; border-right: 1px solid black;">&#160;Date: </td>
+                                                <td style="width: 21%; border-bottom: 1px solid black; border-left: 1px solid black;">&#160;Rejected date: </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- HOW MUCH - SPONSORSHIP -->
+                                <tr>
+                                    <td>
+                                        <table class="content" style="margin-top: 1px;">
+                                            <tr>
+                                                <td colspan="3" style="width: 41%; font-weight: bold; text-decoration: underline;">&#160;Sponsor Partner(s)</td>
+                                                <td style="width: 2%;">&#160;</td>
+                                                <td colspan="2" style="width: 27%; font-style: italic; font-weight: bold; color: #757171; text-align: center; border-top: 1px solid black; border-left: 1px solid black; border-right: 1px solid black;">Filled by Tax</td>
+                                                <td colspan="2" style="width: 30%; font-style: italic; font-weight: bold; color: #757171; text-align: center; border-top: 1px solid black; border-left: 1px solid black;">Filled by AR Control</td>
+                                            </tr>
+                                            <tr>
+                                                <th style="font-weight: bold; text-align: center;">No</th>
+                                                <th style="font-weight: bold; text-align: center;">Company</th>
+                                                <th style="font-weight: bold; text-align: center;">Amount</th>
+                                                <th style="width: 2%;">&#160;</th>
+                                                <th style="font-weight: bold; text-align: center; border-left: 1px solid black;">PPN</th>
+                                                <th style="font-weight: bold; text-align: center; border-right: 1px solid black;">FP Reg. No.</th>
+                                                <th style="font-weight: bold; text-align: center;">AR Other (227) Reg. No.</th>
+                                                <th style="font-weight: bold; text-align: center;">Receipt No.</th>
+                                            </tr>
+                                            <t t-set="jml_sponsor" t-value="len(o.sponsor_ids)"/>
+                                            <t t-foreach="[0,1,2,3,4]" t-as="i">
+                                                <t t-if="i &lt; jml_sponsor">
+                                                    <tr>
+                                                        <td style="text-align: center; padding-left: 3px; padding-right: 3px;"><t t-esc="i+1" />.</td>
+                                                        <t t-if="i == 4 and jml_sponsor - i &gt; 1">
+                                                            <td style="padding-left: 3px;">.....</td>
+                                                            <td style="text-align: right;">.....</td>
+                                                        </t>
+                                                        <t t-if="i != 4 or jml_sponsor - i &lt;= 1">
+                                                            <td style="padding-left: 3px;"><t t-esc="o.sponsor_ids[i].supplier_id.name" /></td>
+                                                            <td style="text-align: right;"><t t-esc="'{:,.2f}'.format(o.sponsor_ids[i].amount)" /></td>
+                                                        </t>
+                                                        <td style="width: 2%;">&#160;</td>
+                                                        <td style="border-left: 1px solid black;">&#160;</td>
+                                                        <td style="border-right: 1px solid black;">&#160;</td>
+                                                        <td>&#160;</td>
+                                                        <td>&#160;</td>
+                                                    </tr>
+                                                </t>
+                                                <t t-if="i &gt;= jml_sponsor">
+                                                    <tr>
+                                                        <td style="text-align: center; padding-left: 3px; padding-right: 3px;"><t t-esc="i+1" />.</td>
+                                                        <td>&#160;</td>
+                                                        <td>&#160;</td>
+                                                        <td style="width: 2%;">&#160;</td>
+                                                        <td style="border-left: 1px solid black;">&#160;</td>
+                                                        <td style="border-right: 1px solid black;">&#160;</td>
+                                                        <td>&#160;</td>
+                                                        <td>&#160;</td>
+                                                    </tr>
+                                                </t>
+                                            </t>
+                                            <tr>
+                                                <td colspan="2" style="font-weight: bold; text-align: center;">&#160;Total</td>
+                                                <td style="font-weight: bold; text-align: right; padding-right: 3px; border-top: 1px solid black; border-bottom: 1px solid black;"><span t-esc="'{:,.2f}'.format(amounts()['amount_sponsor'])" /></td>
+                                                <td style="width: 2%;">&#160;</td>
+                                                <td style="border-bottom: 1px solid black; border-left: 1px solid black;">&#160;</td>
+                                                <td style="border-bottom: 1px solid black; border-right: 1px solid black;">&#160;</td>
+                                                <td style="border-bottom: 1px solid black;">&#160;</td>
+                                                <td style="border-bottom: 1px solid black;">&#160;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- RINCIAN BIAYA -->
+                                <tr>
+                                    <td>
+                                        <table class="content" style="margin-top: 1px;">
+                                            <tr>
+                                                <td colspan="9" style="width: 100%; font-weight: bold; text-decoration: underline;">&#160;Rincian Biaya</td>
+                                            </tr>
+                                            <tr>
+                                                <th style="font-weight: bold; text-align: center; border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black;">No</th>
+                                                <th style="font-weight: bold; text-align: center; border: 1px solid black;">Description</th>
+                                                <th style="font-weight: bold; text-align: center; border: 1px solid black;">Qty</th>
+                                                <th style="font-weight: bold; text-align: center; border: 1px solid black;">Price/unit</th>
+                                                <th style="font-weight: bold; text-align: center; border: 1px solid black;">Total Price</th>
+                                                <th style="font-weight: bold; text-align: center; border: 1px solid black;">PPN</th>
+                                                <th style="font-weight: bold; text-align: center; border: 1px solid black;">Price after PPN</th>
+                                                <th style="font-weight: bold; text-align: center; border: 1px solid black;">Cash/Transfer</th>
+                                                <th style="font-weight: bold; text-align: center; border-top: 1px solid black; border-bottom: 1px solid black; border-left: 1px solid black;">Vendor</th>
+                                            </tr>
+                                            <t t-set="jml_item" t-value="len(o.item_ids)"/>
+                                            <t t-foreach="[0,1,2,3,4,5,6,7,8,9]" t-as="i">
+                                                <t t-if="i &lt; jml_item">
+                                                    <tr>
+                                                        <td style="text-align: center; padding-left: 3px; padding-right: 3px; border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black;"><t t-esc="i+1" />.</td>
+                                                        <t t-if="i == 9 and jml_item - i &gt; 1">
+                                                            <td colspan="8" style="font-style: italic; padding-left: 3px; padding-right: 3px; border-top: 1px solid black; border-bottom: 1px solid black; border-left: 1px solid black;">(Terlampir)</td>
+                                                        </t>
+                                                        <t t-if="i != 9 or jml_item - i &lt;= 1">
+                                                            <td style="padding-left: 3px; padding-right: 3px; border: 1px solid black;"><t t-esc="o.item_ids[i].description" /></td>
+                                                            <td style="text-align: right; padding-right: 3px; border: 1px solid black;"><t t-esc="'{:,.2f}'.format(o.item_ids[i].qty)" /></td>
+                                                            <td style="text-align: right; padding-right: 3px; border: 1px solid black;"><t t-esc="'{:,.2f}'.format(o.item_ids[i].price_unit)" /></td>
+                                                            <td style="text-align: right; padding-right: 3px; border: 1px solid black;"><t t-esc="'{:,.2f}'.format(o.item_ids[i].amount_total)" /></td>
+                                                            <td style="border: 1px solid black;">&#160;</td>
+                                                            <td style="border: 1px solid black;">&#160;</td>
+                                                            <t t-if="o.item_ids[i].jenis_pembayaran == 'C'">
+                                                                <td style="text-align: center; padding-left: 3px; padding-right: 3px; border: 1px solid black;">Cash</td>
+                                                                <td style="padding-left: 3px; padding-right: 3px; border-top: 1px solid black; border-bottom: 1px solid black; border-left: 1px solid black;"><t t-esc="o.item_ids[i].cash_remark" /></td>
+                                                            </t>
+                                                            <t t-if="o.item_ids[i].jenis_pembayaran == 'T'">
+                                                                <td style="text-align: center; padding-left: 3px; padding-right: 3px; border: 1px solid black;">Transfer</td>
+                                                                <td style="padding-left: 3px; padding-right: 3px; border-top: 1px solid black; border-bottom: 1px solid black; border-left: 1px solid black;"><t t-esc="o.item_ids[i].supplier_id.name" /></td>
+                                                            </t>
+                                                        </t>
+                                                    </tr>
+                                                </t>
+                                                <t t-if="i &gt;= jml_item">
+                                                    <tr>
+                                                        <td style="text-align: center; padding-left: 3px; padding-right: 3px; border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black;"><t t-esc="i+1" />.</td>
+                                                        <td style="border: 1px solid black;">&#160;</td>
+                                                        <td style="border: 1px solid black;">&#160;</td>
+                                                        <td style="border: 1px solid black;">&#160;</td>
+                                                        <td style="border: 1px solid black;">&#160;</td>
+                                                        <td style="border: 1px solid black;">&#160;</td>
+                                                        <td style="border: 1px solid black;">&#160;</td>
+                                                        <td style="border: 1px solid black;">&#160;</td>
+                                                        <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-left: 1px solid black;">&#160;</td>
+                                                    </tr>
+                                                </t>
+                                            </t>
+                                            <tr>
+                                                <td colspan="2" style="font-style: italic; font-weight: bold; text-align: center; border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black;">Total Expense</td>
+                                                <td style="border: 1px solid black;">&#160;</td>
+                                                <td style="border: 1px solid black;">&#160;</td>
+                                                <td style="font-style: italic; font-weight: bold; text-align: right; padding-left: 3px; padding-right: 3px; border: 1px solid black;"><t t-esc="'{:,.2f}'.format(o.amount_total)" /></td>
+                                                <td style="border: 1px solid black;">&#160;</td>
+                                                <td style="border: 1px solid black;">&#160;</td>
+                                                <td style="border: 1px solid black;">&#160;</td>
+                                                <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-left: 1px solid black;">&#160;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- APPROVED BY -->
+                                <tr>
+                                    <td>
+                                        <table class="content" style="margin-top: 3px;">
+                                            <tr>
+                                                <td colspan="5" style="font-weight: bold; text-decoration: underline; padding-left: 3px; padding-right: 3px; background-color: #C0C0C0;">&#160;Approved by</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 20%;">&#160;</td>
+                                                <td style="width: 20%;">&#160;</td>
+                                                <td style="width: 20%;">&#160;</td>
+                                                <td style="width: 20%;">&#160;</td>
+                                                <td style="width: 20%;">&#160;</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 20%; font-style: italic; text-align: center;"><t t-esc="approvers()[0][0]" /></td>
+                                                <td style="width: 20%; font-style: italic; text-align: center;"><t t-esc="approvers()[1][0]" /></td>
+                                                <td style="width: 20%; font-style: italic; text-align: center;"><t t-esc="approvers()[2][0]" /></td>
+                                                <td style="width: 20%; font-style: italic; text-align: center;">&#160;</td>
+                                                <td style="width: 20%; font-style: italic; text-align: center;">&#160;</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 20%; font-style: italic; text-align: center;"><t t-esc="approvers()[0][1]" /></td>
+                                                <td style="width: 20%; font-style: italic; text-align: center;"><t t-esc="approvers()[1][1]" /></td>
+                                                <td style="width: 20%; font-style: italic; text-align: center;"><t t-esc="approvers()[2][1]" /></td>
+                                                <td style="width: 20%; font-style: italic; text-align: center;"></td>
+                                                <td style="width: 20%; font-style: italic; text-align: center;"></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 20%; font-style: italic; text-align: center;"><t t-esc="approvers()[0][2]" /></td>
+                                                <td style="width: 20%; font-style: italic; text-align: center;"><t t-esc="approvers()[1][2]" /></td>
+                                                <td style="width: 20%; font-style: italic; text-align: center;"><t t-esc="approvers()[2][2]" /></td>
+                                                <td style="width: 20%;">&#160;</td>
+                                                <td style="width: 20%;">&#160;</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 20%; font-style: italic; font-weight: bold; text-align: center;">Dept Head</td>
+                                                <td style="width: 20%; font-style: italic; font-weight: bold; text-align: center;">Div Head</td>
+                                                <td style="width: 20%; font-style: italic; font-weight: bold; text-align: center;">COO</td>
+                                                <td style="width: 20%; font-style: italic; font-weight: bold; text-align: center;">BOD</td>
+                                                <td style="width: 20%; font-style: italic; font-weight: bold; text-align: center;">BOD</td>
+                                            </tr>
+                                            <tr>
+                                                <!-- Special characters not show! -->
+                                                <td style="width: 20%; font-style: italic; text-align: center;">&#40; &#160;Rp 2,000,000&#160;&#41;</td>
+                                                <td style="width: 20%; font-style: italic; text-align: center;">&#40; &#160;Rp 5,000,000&#160;&#41;</td>
+                                                <td style="width: 20%; font-style: italic; text-align: center;">&#40; &#160;Rp 10,000,000&#160;&#41;</td>
+                                                <td style="width: 20%; font-style: italic; text-align: center;">&#40; &#160;Rp 25,000,000&#160;&#41;</td>
+                                                <td style="width: 20%; font-style: italic; text-align: center;">&#40; &#62;&#160;Rp 25,000,000&#160;&#41;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- ADDITIONAL NOTE -->
+                                <tr>
+                                    <td>
+                                        <table class="content" style="margin-top: 3px;">
+                                            <tr>
+                                                <td style="font-weight: bold; text-decoration: underline; padding-left: 3px; padding-right: 3px; background-color: #C0C0C0;">&#160;Additional Note</td>
+                                            </tr>
+                                            <tr>
+                                                <td>&#160;</td>
+                                            </tr>
+                                            <tr>
+                                                <td>&#160;</td>
+                                            </tr>
+                                            <tr>
+                                                <td>&#160;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <p style="page-break-after: always;" />
+                            <!-- LAMPIRAN BIAYA -->
+                            <t t-if="jml_item > 10">
+                                <table id="outborder">
+                                    <!-- HEADER -->
+                                    <tr>
+                                        <td>
+                                            <table class="nborder">
+                                                <!-- <tr>
+                                                    <td style="font-size: 10px; font-style: italic; font-weight: bold;">
+                                                        &#160;PT Tunas Dwipa Matra
+                                                    </td>
+                                                </tr> -->
+                                                <tr>
+                                                    <td colspan="2" style="font-size: 16px; font-weight: bold; text-align: center;">LAMPIRAN BIAYA</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table class="content">
+                                                <tr style="border-top: 2px solid black;">
+                                                    <td colspan="4" style="font-style: italic; font-weight: bold; color: #757171;">&#160;Filled by User</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 15%;">&#160;Activity</td>
+                                                    <td style="width: 1%;">:</td>
+                                                    <td colspan="2" style="width: 84%;">&#160;&#160;<span t-esc="o.event" /></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 15%;">&#160;Budget Code</td>
+                                                    <td style="width: 1%;">:</td>
+                                                    <td colspan="2" style="width: 84%;"><span t-esc="o.kode_budget" /></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 15%; padding-bottom: 5px;">&#160;Departemen</td>
+                                                    <td style="width: 1%; padding-bottom: 5px;">:</td>
+                                                    <td style="width: 34%; padding-bottom: 5px;">&#160;&#160;<span t-esc="o.department_id.name" /></td>
+                                                    <td style="width: 50%;  padding-bottom: 5px;">&#160;</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <!-- RINCIAN BIAYA -->
+                                    <tr>
+                                        <td>
+                                            <table class="content" style="margin-top: 3px; margin-bottom: 3px;">
+                                                <tr>
+                                                    <td colspan="2" style="width: 100%; font-weight: bold; text-align: center; border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black;">&#160;Rincian Biaya</td>
+                                                    <td colspan="5" style="width: 100%; font-weight: bold; text-align: center; border: 1px solid black;">&#160;Plan</td>
+                                                    <td colspan="3" style="width: 100%; font-weight: bold; text-align: center; border-top: 1px solid black; border-bottom: 1px solid black; border-left: 1px solid black;">&#160;Payment Control</td>
+                                                </tr>
+                                                <tr style="vertical-align: middle;">
+                                                    <th style="width: 3%; font-weight: bold; text-align: center; border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black;">No</th>
+                                                    <th style="width: 15%; font-weight: bold; text-align: center; border: 1px solid black;">Description</th>
+                                                    <th style="width: 15%; font-weight: bold; text-align: center; border: 1px solid black;">Nama Vendor</th>
+                                                    <th style="width: 5%; font-weight: bold; text-align: center; border: 1px solid black;">Qty</th>
+                                                    <th style="width: 10%; font-weight: bold; text-align: center; border: 1px solid black;">Price/unit</th>
+                                                    <th style="width: 12%; font-weight: bold; text-align: center; border: 1px solid black;">Total Price</th>
+                                                    <th style="width: 8%; font-weight: bold; text-align: center; border: 1px solid black;">Cash/Transfer</th>
+                                                    <th style="width: 12%; font-weight: bold; text-align: center; border: 1px solid black;">Total Price</th>
+                                                    <th style="width: 10%; font-weight: bold; text-align: center; border: 1px solid black;">Payment Request</th>
+                                                    <th style="width: 10%; font-weight: bold; text-align: center; border-top: 1px solid black; border-bottom: 1px solid black; border-left: 1px solid black;">Bank Transfer</th>
+                                                </tr>
+                                                <t t-foreach="range(50)" t-as="i">
+                                                    <t t-if="i &lt; jml_item">
+                                                        <tr>
+                                                            <td style="text-align: center; padding-left: 3px; padding-right: 3px; border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black;"><t t-esc="i+1" />.</td>
+                                                            <td style="padding-left: 3px; padding-right: 3px; border: 1px solid black;"><t t-esc="o.item_ids[i].description" /></td>
+                                                            <t t-if="o.item_ids[i].jenis_pembayaran == 'C'">
+                                                                <td style="padding-left: 3px; padding-right: 3px; border: 1px solid black;"><t t-esc="o.item_ids[i].cash_remark" /></td>
+                                                            </t>
+                                                            <t t-if="o.item_ids[i].jenis_pembayaran == 'T'">
+                                                                <td style="padding-left: 3px; padding-right: 3px; border: 1px solid black;"><t t-esc="o.item_ids[i].supplier_id.name" /></td>
+                                                            </t>
+                                                            <td style="text-align: right; padding-right: 3px; border: 1px solid black;"><t t-esc="'{:,.2f}'.format(o.item_ids[i].qty)" /></td>
+                                                            <td style="text-align: right; padding-right: 3px; border: 1px solid black;"><t t-esc="'{:,.2f}'.format(o.item_ids[i].price_unit)" /></td>
+                                                            <td style="text-align: right; padding-right: 3px; border: 1px solid black;"><t t-esc="'{:,.2f}'.format(o.item_ids[i].amount_total)" /></td>
+                                                            <t t-if="o.item_ids[i].jenis_pembayaran == 'C'">
+                                                                <td style="text-align: center; padding-left: 3px; padding-right: 3px; border: 1px solid black;">Cash</td>
+                                                            </t>
+                                                            <t t-if="o.item_ids[i].jenis_pembayaran == 'T'">
+                                                                <td style="text-align: center; padding-left: 3px; padding-right: 3px; border: 1px solid black;">Transfer</td>
+                                                            </t>
+                                                            <td style="border: 1px solid black;">&#160;</td>
+                                                            <td style="border: 1px solid black;">&#160;</td>
+                                                            <td style="border: 1px solid black; border-top: 1px solid black; border-bottom: 1px solid black; border-left: 1px solid black;">&#160;</td>
+                                                        </tr>
+                                                    </t>
+                                                    <t t-if="i &gt;= jml_item">
+                                                        <tr>
+                                                            <td style="text-align: center; padding-left: 3px; padding-right: 3px; border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black;"><t t-esc="i+1" />.</td>
+                                                            <td style="border: 1px solid black;">&#160;</td>
+                                                            <td style="border: 1px solid black;">&#160;</td>
+                                                            <td style="border: 1px solid black;">&#160;</td>
+                                                            <td style="border: 1px solid black;">&#160;</td>
+                                                            <td style="border: 1px solid black;">&#160;</td>
+                                                            <td style="border: 1px solid black;">&#160;</td>
+                                                            <td style="border: 1px solid black;">&#160;</td>
+                                                            <td style="border: 1px solid black;">&#160;</td>
+                                                            <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-left: 1px solid black;">&#160;</td>
+                                                        </tr>
+                                                    </t>
+                                                </t>
+                                                <tr>
+                                                    <td colspan="5" style="font-style: italic; font-weight: bold; text-align: center; border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black;">Total Expense</td>
+                                                    <td style="font-style: italic; font-weight: bold; text-align: right; padding-left: 3px; padding-right: 3px; border: 1px solid black;"><t t-esc="'{:,.2f}'.format(o.amount_total)" /></td>
+                                                    <td style="border: 1px solid black;">&#160;</td>
+                                                    <td style="border: 1px solid black;">&#160;</td>
+                                                    <td style="border: 1px solid black;">&#160;</td>
+                                                    <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-left: 1px solid black;">&#160;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="5" style="font-style: italic; font-weight: bold; text-align: center; border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black;">Total Cash</td>
+                                                    <td style="font-style: italic; font-weight: bold; text-align: right; padding-left: 3px; padding-right: 3px; border: 1px solid black;"><t t-esc="'{:,.2f}'.format(amounts()['amount_cash'])" /></td>
+                                                    <td style="border: 1px solid black;">&#160;</td>
+                                                    <td style="border: 1px solid black;">&#160;</td>
+                                                    <td style="border: 1px solid black;">&#160;</td>
+                                                    <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-left: 1px solid black;">&#160;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="5" style="font-style: italic; font-weight: bold; text-align: center; border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black;">Total Transfer</td>
+                                                    <td style="font-style: italic; font-weight: bold; text-align: right; padding-left: 3px; padding-right: 3px; border: 1px solid black;"><t t-esc="'{:,.2f}'.format(amounts()['amount_transfer'])" /></td>
+                                                    <td style="border: 1px solid black;">&#160;</td>
+                                                    <td style="border: 1px solid black;">&#160;</td>
+                                                    <td style="border: 1px solid black;">&#160;</td>
+                                                    <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-left: 1px solid black;">&#160;</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </t>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</openerp>

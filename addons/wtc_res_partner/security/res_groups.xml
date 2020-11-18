@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    
+<!-- Request Payment Term -->
+		
+        <record id="group_wtc_request_payment_term_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Request Payment Term Read</field>
+            <field name="menu_access" eval="[
+            								(4, ref('payment_request_submenu'))            								]"/>
+        </record>
+        
+        <record id="access_wtc_request_payment_term_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_request_payment_term"/>
+            <field name="name">wtc_request_payment_term read</field>
+            <field name="group_id" ref="group_wtc_request_payment_term_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_wtc_request_payment_term_read_property" model="ir.model.access">
+            <field name="model_id" ref="base.model_ir_property"/>
+            <field name="name">wtc_request_payment_term_property read</field>
+            <field name="group_id" ref="group_wtc_request_payment_term_read"/>
+            <field name="perm_read">1</field>
+        </record>
+                
+        <record id="access_wtc_request_payment_term_read_lot" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">wtc_request_payment_term_lot read</field>
+            <field name="group_id" ref="group_wtc_request_payment_term_read"/>
+            <field name="perm_read">1</field>
+        </record>
+                
+        <record id="access_wtc_request_payment_term_read_partner" model="ir.model.access">
+            <field name="model_id" ref="base.model_res_partner"/>
+            <field name="name">wtc_request_payment_term_partner read</field>
+            <field name="group_id" ref="group_wtc_request_payment_term_read"/>
+            <field name="perm_read">1</field>
+        </record>
+                
+        <record id="access_wtc_request_payment_term_approval_line_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">wtc_request_payment_term_approval_line read</field>
+            <field name="group_id" ref="group_wtc_request_payment_term_read"/>  
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="group_wtc_request_payment_term_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Request Payment Term Update</field>
+            <field name="menu_access" eval="[
+            								(4, ref('payment_request_submenu'))            								]"/>
+			<field name="implied_ids" eval="[(4, ref('group_wtc_request_payment_term_read'))]"/>
+        </record>
+        
+        <record id="access_wtc_request_payment_term_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_request_payment_term"/>
+            <field name="name">wtc_request_payment_term update</field> 
+            <field name="group_id" ref="group_wtc_request_payment_term_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>
+        
+        <record id="access_wtc_request_payment_term_update_property" model="ir.model.access">
+            <field name="model_id" ref="base.model_ir_property"/>
+            <field name="name">wtc_request_payment_term_property update</field>
+            <field name="group_id" ref="group_wtc_request_payment_term_read"/>
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>
+                
+        <record id="access_wtc_request_payment_term_update_partner" model="ir.model.access">
+            <field name="model_id" ref="base.model_res_partner"/>
+            <field name="name">wtc_request_payment_term_partner update</field>
+            <field name="group_id" ref="group_wtc_request_payment_term_update"/>
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>
+                
+        <record id="access_wtc_request_payment_term_approval_line_update" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">wtc_request_payment_term_approval_line update</field>
+            <field name="group_id" ref="group_wtc_request_payment_term_update"/>
+            <field name="perm_create">1</field>
+            <field name="perm_write">1</field>
+        </record>
+		
+        <record id="group_wtc_request_payment_term_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Request Payment Term Delete</field> 
+            <field name="menu_access" eval="[
+            								(4, ref('payment_request_submenu')),
+            								]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_wtc_request_payment_term_read'))]"/>            	            	
+        </record>
+        
+        <record id="access_wtc_request_approval_line_delete" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">wtc_request_payment_term_approval_line delete</field>
+            <field name="group_id" ref="group_wtc_request_payment_term_delete"/>  
+            <field name="perm_unlink">1</field>
+        </record>
+        
+		<record id="access_wtc_request_payment_term_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_request_payment_term"/>
+            <field name="name">wtc_request_payment_term delete</field>
+            <field name="group_id" ref="group_wtc_request_payment_term_delete"/>
+            <field name="perm_unlink">1</field>
+        </record>
+        
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[(4,ref('group_wtc_request_payment_term_read')),
+											(4,ref('group_wtc_request_payment_term_update')),
+											(4,ref('group_wtc_request_payment_term_delete'))
+			                               ]"/> 
+		</record> 
+		
+		<record id="access_approval_portal_wtc_request_payment_term_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_request_payment_term"/>
+            <field name="name">approval_portal_model_wtc_request_payment_term read</field> 
+            <field name="group_id" ref="wtc_approval.group_approval_portal_read"/>  
+            <field name="perm_read">1</field> 
+        </record>	
+        
+<!-- Request Platform-->
+		
+        <record id="group_wtc_request_platform_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Request Platform Read</field>
+            <field name="menu_access" eval="[
+            								(4, ref('request_platform_submenu'))            								]"/>
+        </record>
+        
+        <record id="access_wtc_request_platform_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_request_platform"/>
+            <field name="name">wtc_request_platform read</field>
+            <field name="group_id" ref="group_wtc_request_platform_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="access_wtc_request_platform_read_property" model="ir.model.access">
+            <field name="model_id" ref="base.model_ir_property"/>
+            <field name="name">wtc_request_platform_property read</field>
+            <field name="group_id" ref="group_wtc_request_platform_read"/>
+            <field name="perm_read">1</field>
+        </record>
+                
+        <record id="access_wtc_request_platform_read_lot" model="ir.model.access">
+            <field name="model_id" ref="stock.model_stock_production_lot"/>
+            <field name="name">wtc_request_platform_lot read</field>
+            <field name="group_id" ref="group_wtc_request_platform_read"/>
+            <field name="perm_read">1</field>
+        </record>
+                
+        <record id="access_wtc_request_platform_read_partner" model="ir.model.access">
+            <field name="model_id" ref="base.model_res_partner"/>
+            <field name="name">wtc_request_platform_partner read</field>
+            <field name="group_id" ref="group_wtc_request_platform_read"/>
+            <field name="perm_read">1</field>
+        </record>
+                
+        <record id="access_wtc_request_platform_approval_line_read" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">wtc_request_platform_approval_line read</field>
+            <field name="group_id" ref="group_wtc_request_platform_read"/>  
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="group_wtc_request_platform_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Request Platform Update</field>
+            <field name="menu_access" eval="[
+            								(4, ref('request_platform_submenu'))            								]"/>
+			<field name="implied_ids" eval="[(4, ref('group_wtc_request_platform_read'))]"/>
+        </record>
+        
+        <record id="access_wtc_request_platform_update" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_request_platform"/>
+            <field name="name">wtc_request_platform update</field> 
+            <field name="group_id" ref="group_wtc_request_platform_update"/>  
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>
+        
+        <record id="access_wtc_request_platform_update_property" model="ir.model.access">
+            <field name="model_id" ref="base.model_ir_property"/>
+            <field name="name">wtc_request_platform_property update</field>
+            <field name="group_id" ref="group_wtc_request_platform_update"/>
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>
+                
+        <record id="access_wtc_request_platform_update_partner" model="ir.model.access">
+            <field name="model_id" ref="base.model_res_partner"/>
+            <field name="name">wtc_request_platform_partner update</field>
+            <field name="group_id" ref="group_wtc_request_platform_update"/>
+            <field name="perm_create">1</field> 
+            <field name="perm_write">1</field> 
+        </record>
+                
+        <record id="access_wtc_request_platform_approval_line_update" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">wtc_request_platform_approval_line update</field>
+            <field name="group_id" ref="group_wtc_request_platform_update"/>
+            <field name="perm_create">1</field>
+            <field name="perm_write">1</field>
+        </record>
+		
+        <record id="group_wtc_request_platform_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">Request Platform Delete</field> 
+            <field name="menu_access" eval="[
+            								(4, ref('request_platform_submenu')),
+            								]"/>  
+			<field name="implied_ids" eval="[(4, ref('group_wtc_request_platform_read'))]"/>            	            	
+        </record>
+        
+        <record id="access_wtc_request_approval_line_delete" model="ir.model.access">
+            <field name="model_id" ref="wtc_approval.model_wtc_approval_line"/>
+            <field name="name">wtc_request_platform_approval_line delete</field>
+            <field name="group_id" ref="group_wtc_request_platform_delete"/>  
+            <field name="perm_unlink">1</field>
+        </record>
+        
+		<record id="access_wtc_request_platform_delete" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_request_platform"/>
+            <field name="name">wtc_request_platform delete</field>
+            <field name="group_id" ref="group_wtc_request_platform_delete"/>
+            <field name="perm_unlink">1</field>
+        </record>
+		
+		<record id="access_approval_portal_wtc_request_platform_read" model="ir.model.access">
+            <field name="model_id" ref="model_wtc_request_platform"/>
+            <field name="name">approval_portal_model_wtc_request_platform read</field> 
+            <field name="group_id" ref="wtc_approval.group_approval_portal_read"/>  
+            <field name="perm_read">1</field> 
+        </record>        
+    </data>
+</openerp>

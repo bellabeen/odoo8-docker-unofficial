@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="ir_cron_teds_sales_activity_plan_action_get_actual_done" model="ir.cron">
+            <field name="name">Get Sales Activity BTL Done</field>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="interval_number">1</field>
+            <field name="interval_type">months</field>
+            <field name="numbercall">-1</field>
+            <field eval="False" name="doall"/>
+            <field eval="'teds.sales.plan.activity'" name="model"/>
+            <field eval="'get_done_act'" name="function"/>
+            <field eval="'(None,)'" name="args"/>
+        </record> 
+
+    </data>
+</openerp>    

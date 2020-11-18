@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template id="teds_payment_request_proposal" inherit_id="wtc_dn_nc.teds_payment_request">
+            <xpath expr="//table[@name='nc_header']" position="replace">
+                <table class="nborder" name="nc_header">
+                    <tr>
+                        <td style="width: 50%; font-weight: bold;"><span t-esc="o.branch_id.name" /></td>
+                        <td colspan="2" style="width: 50%; font-weight: bold; text-align: right;">PERMINTAAN PEMBAYARAN</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%;">
+                            <span t-esc="o.branch_id.street" />
+                            <span t-if="o.branch_id.kecamatan">, <span t-esc="o.branch_id.kecamatan" /></span>
+                            <span t-if="o.branch_id.city_id">, <span t-esc="o.branch_id.city_id.name" /></span>
+                        </td>
+                        <td style="width: 30%; text-align: right;">No&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</td>
+                        <td style="width: 20%;">:&#160;&#160;<span t-esc="o.number" /></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%;"><span t-esc="o.branch_id.state_id.name" /></td>
+                        <td style="width: 30%; text-align: right;">Tanggal&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</td>
+                        <td style="width: 20%;">:&#160;&#160;<span t-esc="o.date" /></td>
+                    </tr>
+                    <t t-if="o.proposal_id">
+                        <tr>
+                            <td style="width: 50%;">&#160;</td>
+                            <td style="width: 30%; text-align: right;">&#160;&#160;No Proposal&#160;</td>
+                            <td style="width: 20%;">:&#160;&#160;<span t-esc="o.proposal_id.name" /></td>
+                        </tr>
+                    </t>
+                </table>
+	        </xpath>
+        </template>
+    </data>
+</openerp>

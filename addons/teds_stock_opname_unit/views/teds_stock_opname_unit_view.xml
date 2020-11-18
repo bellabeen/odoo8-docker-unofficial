@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record id="view_teds_so_unit_bakso_wizard" model="ir.ui.view">
+			<field name="name">teds.so.unit.bakso.wizard</field>
+			<field name="model">teds.stock.opname.unit.bakso.wizard</field>
+			<field name="arch" type="xml">
+				<form string="Berita Acara">
+					<sheet>
+						<group>
+							<field name="opname_id" readonly="1" options="{'no_open':True,'no_create':True}"/>
+							<field name="tipe" required="1"/>
+							<field name="note_bakso"/>
+						</group>
+						<footer>
+		                    <button name="action_submit_bakso" string="Print" type="object" class="oe_highlight" />
+		                    <button string="Close" class="oe_link" special="cancel" />
+		                </footer>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<record id="view_teds_stock_opname_unit_tree" model="ir.ui.view">
+			<field name="name">teds.stock.opname.unit.tree</field>
+			<field name="model">teds.stock.opname.unit</field>
+			<field name="arch" type="xml">
+				<tree string="Stock Opname Unit">
+					<field name="name"/>
+					<field name="branch_id"/>
+					<field name="date"/>
+					<field name="generate_date"/>
+					<field name="state"/>
+				</tree>
+			</field>
+		</record>
+		
+		<record id="view_teds_stock_opname_unit_form" model="ir.ui.view">
+			<field name="name">teds.stock.opname.unit.form</field>
+			<field name="model">teds.stock.opname.unit</field>
+			<field name="arch" type="xml">
+				<form string="Stock Opname Unit">
+					<header>
+	                	<button name="action_generate_stock" attrs="{'invisible':['|',('create_date','=',False),('generate_date','!=',False)]}" string="Generate Stock" class="oe_highlight" type="object" groups="teds_stock_opname_unit.group_teds_so_unit_generate_stock_button"/>
+
+	                	<button name="action_post" attrs="{'invisible':['|',('state','!=','draft'),('generate_date','=',False)]}" string="Post" class="oe_highlight" type="object" confirm="Harap pastikan kembali validasi unit sudah sesuai antara fisik dan sistem ! Pastikan semua data validasi Unit dan Accesories sudah sesuai !" groups="teds_stock_opname_unit.group_teds_so_unit_posted_button"/>
+
+	                	<button name="action_print_validasi" states="posted" string="Print Validasi Unit" class="oe_highlight" type="object"/>
+						
+						<button name="action_print_validasi_aksesoris" states="posted" string="Print Validasi Aksesoris" class="oe_highlight" type="object"/>
+
+	                	<button name="action_bakso" states="posted" string="Berita Acara SO" type="object"/>
+	                	
+	                	<button name="action_download_excel" type="object" string="Download Excel"/>
+	                	<field name="state" widget="statusbar" statusbar_visible="draft,posted"/>
+	                </header>
+					<div class="oe_title">                      
+							<h1>
+							<field name="name" readonly="1"/>
+						</h1>
+					</div>
+					<group>
+						<group>
+							<field name="branch_id" options="{'no_open':True,'no_create':True}" attrs="{'readonly':[('create_date','!=',False)]}" required="1"/>
+							<field name="create_date" invisible="1"/>
+							<field name="staff_bbn" required="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+							<field name="adh" required="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+							<field name="soh" required="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+							<field name="total_unit" readonly="1" attrs="{'invisible':[('total_unit','=',0)]}"/>
+							<field name="total_fisik" readonly="1" attrs="{'invisible':[('total_fisik','=',0)]}"/>
+						</group>
+						<group>
+							<field name="date" readonly="1"/>
+							<field name="division" required="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+							<field name="generate_date" readonly="1" attrs="{'invisible':[('generate_date','=',False)]}"/>
+						</group>
+					</group>
+					<notebook>
+						<page string="Stock Unit">
+							<field name="detail_ids" nolabel="1" attrs="{'readonly':[('state','!=','draft')]}">
+								<tree create="false" delete="false" editable="top">
+									<field name="name" readonly="1"/>
+									<field name="engine_no" readonly="1"/>
+									<field name="chassis_no" readonly="1"/>
+									<field name="validasi_fisik" attrs="{'required':[('validasi_fisik','!=',False)]}"/>
+									<field name="validasi_engine" attrs="{'readonly':['|',('validasi_fisik','=',False),('validasi_fisik','!=','Fisik Ada')],'required':[('validasi_fisik','!=',False)]}"/>
+									<field name="validasi_chassis" attrs="{'readonly':['|',('validasi_fisik','=',False),('validasi_fisik','!=','Fisik Ada')],'required':[('validasi_fisik','!=',False)]}"/>
+									<field name="product_type" readonly="1"/>
+									<field name="product_warna" readonly="1"/>
+									<field name="validasi_warna" attrs="{'readonly':['|',('validasi_fisik','=',False),('validasi_fisik','!=','Fisik Ada')],'required':[('validasi_fisik','!=',False)]}"/>
+									<field name="incoming_date" readonly="1"/>
+									<field name="validasi_taging" attrs="{'readonly':['|',('validasi_fisik','=',False),('validasi_fisik','!=','Fisik Ada')],'required':[('validasi_fisik','!=',False)]}"/>
+									<field name="lokasi" readonly="1"/>
+									<field name="kondisi_fisik" attrs="{'readonly':['|',('validasi_fisik','=',False),('validasi_fisik','!=','Fisik Ada')],'required':[('validasi_fisik','!=',False)]}"/>
+									<field name="keterangan" attrs="{'required':[('validasi_fisik','in',('Terjual','Mutasi POS/PMR/CHN','Mutasi Cabang Lain','Return ke MD','Hilang / Tidak diketahui'))]}"/>
+								</tree>
+							</field>
+						</page>
+						<page string="Stock Accesories">
+							<field name="aksesoris_ids" attrs="{'readonly':[('state','!=','draft')]}">
+								<tree create="false" delete="false" editable="top">
+									<field name="name" readonly="1"/>
+									<field name="category" readonly="1"/>
+									<field name="qty_good" required="1" sum="Total"/>
+									<field name="qty_not_good" required="1" sum="Total"/>
+									<field name="total" required="1" sum="Total"/>
+									<field name="total_unit" readonly="1" sum="Total"/>
+									<field name="ket_not_good" attrs="{'required':[('qty_not_good','!=',0)],'readonly':[('qty_not_good','=',0)]}"/>
+									<field name="last_not_good" required="1" sum="Total"/>
+									<field name="selisih" readonly="1" sum="Total"/>
+									<field name="keterangan_selisih" attrs="{'required':[('selisih','!=',0),('total','!=',0)],'readonly':[('selisih','=',0)]}"/>
+									<field name="selisih_so_lalu" required="1" sum="Total"/>
+								</tree>
+							</field>
+						</page>
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"/>
+									<field name="create_date" readonly="1"/>
+									<field name="post_uid" readonly="1" attrs="{'invisible':[('post_uid','=',False)]}"/>
+									<field name="post_date" readonly="1" attrs="{'invisible':[('post_date','=',False)]}"/>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+								</group>
+							</group>
+						</page>		          
+					</notebook>
+				</form>
+			</field>
+		</record>
+		
+		<record id="action_teds_stock_opname_unit" model="ir.actions.act_window">
+        	<field name="name">Unit</field>
+			<field name="res_model">teds.stock.opname.unit</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<!-- Print Validasi -->
+		<report 
+            string="Print Validasi SO Unit" 
+            id="action_teds_stock_opname_unit_print_validasi" 
+            model="teds.stock.opname.unit" 
+            report_type="qweb-pdf"
+            name="teds_stock_opname_unit.teds_stock_opname_unit_print_validasi" 
+            file="teds_stock_opname_unit.teds_stock_opname_unit_print_validasi" 
+            menu="False"/>	
+
+        <report 
+            string="Print Validasi SO Aksesoris" 
+            id="action_teds_stock_opname_aksesoris_unit_print_validasi" 
+            model="teds.stock.opname.unit" 
+            report_type="qweb-pdf"
+            name="teds_stock_opname_unit.teds_stock_opname_aksesoris_unit_print_validasi" 
+            file="teds_stock_opname_unit.teds_stock_opname_aksesoris_unit_print_validasi" 
+            menu="False"/>
+		
+		<!-- Print Bakso -->
+		<report 
+            string="Print Bakso Unit" 
+            id="action_teds_stock_opname_unit_print_bakso" 
+            model="teds.stock.opname.unit.bakso.wizard" 
+            report_type="qweb-pdf"
+            name="teds_stock_opname_unit.teds_stock_opname_unit_print_bakso" 
+            file="teds_stock_opname_unit.teds_stock_opname_unit_print_bakso" 
+            menu="False"/>
+		
+		<report 
+            string="Print Bakso Aksesoris" 
+            id="action_teds_stock_opname_aksesoris_unit_print_bakso" 
+            model="teds.stock.opname.unit.bakso.wizard" 
+            report_type="qweb-pdf"
+            name="teds_stock_opname_unit.teds_stock_opname_aksesoris_unit_print_bakso" 
+            file="teds_stock_opname_unit.teds_stock_opname_aksesoris_unit_print_bakso" 
+            menu="False"/>
+
+		<menuitem id="teds_stock_opname_unit_menuitem" action="action_teds_stock_opname_unit" parent="teds_stock_opname.stock_opname_sub_menu" sequence="4"/>
+
+	</data>
+</openerp>

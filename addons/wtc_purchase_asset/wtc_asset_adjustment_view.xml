@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data> 
+    	
+		<record model="ir.ui.view" id="assetadjustment_tree_view">
+		    <field name="name">wtc.asset.adjustment.tree.view</field>
+		    <field name="model">wtc.asset.adjustment</field>
+		    <field name="arch" type="xml">
+		        <tree string="List Asset Adjustment">
+		        	<field name="name"/>
+		        	<field name="date"/>
+		            <field name="branch_id"/>
+					<field name="asset_id"/>
+		            <field name='state'/>
+		        </tree>
+		     </field>
+		</record>
+		    	
+		<record model="ir.ui.view" id="assetadjustment_form_view">
+		    <field name="name">wtc.asset.adjustment.form.view</field>
+		    <field name="model">wtc.asset.adjustment</field>
+		    <field name="arch" type="xml">
+				<form>
+					<header>
+						<button name="request_approval" groups='wtc_purchase_asset.group_adjustment_asset_rfa' states='draft' string="RFA" type="object" class="oe_highlight"/>
+						<button name="approve_approval" states='waiting_for_approval' string="Approve" type="object" class="oe_highlight"/>
+						<button name="%(wtc_approval.wtc_approval_reject_wizard_action)d" states='waiting_for_approval' string="Reject" type="action"
+							context="{'model_name':'wtc.asset.adjustment','update_value':{'approval_state':'r','state':'draft'}}"/>
+						<button name="%(wtc_approval.wtc_approval_cancel_wizard_action)d" states='waiting_for_approval' 
+							string="Cancel Approval" type="action" context="{'model_name':'wtc.asset.adjustment','update_value':{'approval_state':'b','state':'draft'}}"/>
+						<button name="post_adjustment" groups='wtc_purchase_asset.group_account_asset_adustment_post' states='approved' string="Post" type="object" class="oe_highlight"/>
+						<button name="%(wtc_approval.wtc_cancel_approval_wizard)d"  states="approved" string="Cancel Approval" type="action"  
+						groups="wtc_purchase_asset.group_adjustment_asset_cancel_app" 
+						context="{'model_name':'wtc.asset.adjustment','update_value':{'approval_state':'b','state':'draft'}}"/>
+						<field name="state" widget="statusbar" statusbar_visible="draft,post"/>
+	           		</header>
+					<sheet>
+	        			<div class="oe_title">
+			        		<h2>
+				                <label string="Asset Adjustment"/>
+				 				<field name="name" class="oe_inline" readonly='1'/>
+			 				</h2>
+	 					</div>
+						<group col="2" colspan="2">   
+							<group>
+								<field name="branch_id" required='1' options="{'no_create': True,'no_open': True}" attrs="{'readonly': ['|',('state','!=','draft'),('name','!=',False)]}" />
+							</group>  
+							<group>		
+								<field name="division" required='1' invisible='1'/>	
+								<field name="date" readonly='1' />
+																							
+							</group>
+							<group>
+							    <field name="asset_id" domain="[('branch_id','=',branch_id),('state','!=','closed')]" options="{'no_create': True,'no_open': True}" required="1" attrs="{'readonly': [('state','!=','draft')]}"/>
+							</group>
+							<group>
+								<field name="new_branch_id" options="{'no_create': True,'no_open': True}" attrs="{'readonly': [('state','!=','draft')]}"/>
+								<field name="bool_journal_branch" attrs="{'readonly': [('state','!=','draft')]}"/>
+							</group> 
+							<group>
+								<field name="category_id" readonly="1" options="{'no_create': True,'no_open': True}"/>
+							</group> 
+							<group>
+								<field name="new_category_id" options="{'no_create': True,'no_open': True}" attrs="{'readonly': [('state','!=','draft')]}"/>
+								<field name="bool_journal_category" attrs="{'readonly': [('state','!=','draft')]}"/>
+							</group>      	
+							<group>
+								<field name="number_depreciation" readonly='1' />
+							</group>
+							<group>
+								<field name="new_number_depreciation" attrs="{'readonly': [('state','!=','draft')]}"/>
+							</group> 
+							<group>
+								<field name="purchase_value" readonly='1'/>
+							</group> 
+							<group>
+								<field name="new_purchase_value" attrs="{'readonly': [('state','!=','draft')]}"/>
+								<field name="bool_journal_gross_value" attrs="{'readonly': [('state','!=','draft')]}"/>
+							</group>
+							<group>
+								<field name="purchase_date" readonly="1"/>
+							</group>
+							<group>
+								<field name="new_purchase_date" attrs="{'readonly': [('state','!=','draft')]}"/>
+							</group>
+						</group>
+	                    <notebook colspan="5">
+	                        <page string="Journal Items" attrs="{'invisible': [('state','=','draft')]}">
+	                        	<field name="move_ids" readonly="1">
+	                               <tree string="Journal Items">
+	                                   <field name="move_id"/>
+	                                   <field name="branch_id"/>
+	                                   <field name="ref"/>
+	                                   <field name="date"/>
+	                                   <field name="statement_id"/>
+	                                   <field name="partner_id"/>
+	                                   <field name="account_id"/>
+	                                   <field name="name"/>
+	                                   <field name="debit"/>
+	                                   <field name="credit"/>
+	                                   <field name="state"/>
+	                                   <field name="reconcile_id"/>
+	                               </tree>
+	                            </field>
+	                        </page>  
+							<page string="Approval">
+								<field name="approval_ids">
+									<tree string="Approval" editable="bottom" create="false" edit="false" delete="false" >
+										<field name="group_id" />
+										<field name="branch_id"/>
+										<field name="division"/>
+										<field name="product_template_id"/>
+										<field name="limit"/>
+										<field name="sts"/>
+										<field name="reason"/>
+										<field name="pelaksana_id"/>
+										<field name="tanggal"/>
+									</tree>
+								</field>
+							</page>
+							<page string="Audit Trail">
+								<group>
+									<group>
+										<field name="create_uid" readonly="1"></field>
+										<field name="create_date" readonly="1"></field>
+									</group>
+									<group>
+										<field name="write_uid" readonly="1"></field>
+										<field name="write_date" readonly="1"></field>
+										<field name="confirm_uid" readonly="1"></field>
+										<field name="confirm_date" readonly="1"></field>
+									</group>
+								</group>
+							</page>
+	                    </notebook>
+					</sheet>
+				</form>	
+		    </field>
+		</record>
+		
+ 		<record id="view_assetadjustment" model="ir.ui.view">
+            <field name="name">assetadjustment.list.select</field>
+            <field name="model">wtc.asset.adjustment</field>
+            <field name="arch" type="xml">
+                <search string="Search Asset Adjustment">
+                    <field name="name" string="Reference"/>
+                    <field name="branch_id"/> 
+                    <field name='asset_id'/>
+                </search>
+            </field>
+        </record>		
+		<record model="ir.actions.act_window" id="assetadjustment_action">
+		    <field name="name">Asset Adjustment</field>
+		    <field name="res_model">wtc.asset.adjustment</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		    <field name="search_view_id" ref="view_assetadjustment"/>
+		</record>
+					
+		<menuitem id="assetadjustment_submenu" name="Asset Adjustment" parent="wtc_dealer_menu.ga_purchase_menu"  action="assetadjustment_action" sequence="90"/> 		
+        	        		
+	</data>
+</openerp>

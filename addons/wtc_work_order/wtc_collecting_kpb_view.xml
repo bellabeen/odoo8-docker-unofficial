@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data> 
+            	
+        <record id="wtc_outstanding_claim_kpb_form_wizard_view" model="ir.ui.view">
+            <field name="name">wtc.outstanding.claim.kpb.wizard.form</field>
+            <field name="model">wtc.work.order</field>
+            <field name="arch" type="xml">
+                <form string="Work Order">
+				<header>
+						<field name="state" invisible='1' widget="statusbar" statusbar_visible="draft,open,approved,done" statusbar_colors='{"draft":"red","approved":"blue"}' />	
+           		</header>                               
+				<sheet>
+					<h1>
+			            <div class="oe_title">		         		
+				            <label string="Work Order"/>     			
+				 			<field name="name" class="oe_inline" readonly='1'/>	
+			         	</div>
+			        </h1>
+                    <group col="2" colspan="2">
+                    	<group>
+                    		<field name="branch_id" readonly='1'/>
+                    	</group>
+                    	<group>
+                    		<field name="division" readonly='1'/>
+                    	</group>
+                    	<group>
+                    		<label for="type"/>
+                    		<div>
+	                    		<field name="type" class="oe_inline" readonly='1'/>
+	                    		<field name="kpb_ke" attrs="{'required': [('type','==','KPB')]}" class="oe_inline" readonly='1'/>
+	                    		<field name="prev_work_order_id" attrs="{'invisible': [('type','!=','WAR')]}" class="oe_inline" readonly='1'/>
+							</div>                    		
+	                    	<field name="lot_id" required='1'/>
+	                    	<field name="chassis_no" readonly="1"/>
+                    		<field name="customer_name" required='1'/>
+                    		<field name="date" required='1' readonly="1"/>
+                    		<label for="tanggal_pembelian"/>
+                    		<div>
+                    			<field name="tanggal_pembelian" attrs="{'required': [('type','==','KPB')]}" class="oe_inline" on_change="onchange_tanggal(tanggal_pembelian,date)"/>
+                    			<field name="days" readonly='1' class="oe_inline"></field>
+                    			<label string="Hari" class="oe_inline"/>
+                    		</div>                   		
+	                    	<field name="tipe_buku" />
+	                    	<field name="kode_buku" attrs="{'required': [('type','==','KPB')]}"/>
+	                    	<field name="nama_buku" attrs="{'required': [('type','==','KPB')]}"/>	
+	                    	<field name="dealer_penjual" /> 	           
+	                    	<field name="km" required='1'/>         	
+							<field name="jenis_oli" widget="radio"/> 
+                    	</group>
+                    	<group>                    		
+		                	<field name="stampel_ahass" widget="radio" />
+							<field name="stampel_dealer_depan" widget="radio"/>                   		
+	                    	<field name="stampel_dealer_belakang" widget="radio"/>
+	                    	<field name="tt_pemilik" widget="radio"/>
+	                    	<field name="km_cek" widget="radio"/>
+	                   		<field name="tgl_beli_cek" widget="radio"/>
+							<field name="tgl_service_cek" widget="radio"/>                   		
+	                    	<field name="chassis_no_cek" widget="radio"/>
+	                    	<field name="engine_no_cek" widget="radio"/>
+	                    	<field name="no_buk_cek" widget="radio"/>                   	
+		                </group>
+		            </group>
+                </sheet>
+                	<footer>
+		                <button name="wtc_collected_ok" string="Ok" type="object" class="oe_highlight"/>
+		                or
+		                <button string="Discard" class="oe_link" special="cancel" />
+		            </footer>
+				 
+                </form>
+            </field>
+        </record>	
+		<record model="ir.ui.view" id="wtc_outstanding_claim_kpb_tree_view">
+		    <field name="name">wtc.outstanding.claim.kpb.tree</field>
+		    <field name="model">wtc.work.order</field>
+		    <field name="arch" type="xml">   	
+                <tree string="Work Order">
+	                <field name="name"/>
+	                <field name="date"/>  
+	                <field name="lot_id"/>	
+					<field name="chassis_no"/>							                
+	                <field name="type"/>  
+	                <field name="kpb_ke"/> 
+	               	<field name="km"/> 	              
+	                <field name="state" invisible='1'/>                
+					<field name="kpb_collected"/>	
+		        	<button name="wtc_outstanding_claim_kpb_wizard" type="object" string="Indext" icon="gtk-index"/>												                
+                </tree>
+		     </field>
+		</record>
+
+		<record model="ir.actions.act_window" id="wtc_outstanding_claim_kpb_action_view">
+		    <field name="name">Collecting KPB Data</field>
+		    <field name="res_model">wtc.work.order</field>
+		    <field name="type">ir.actions.act_window</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree</field>
+		    <field name="view_id" ref="wtc_outstanding_claim_kpb_tree_view" />
+		    <field name="domain">['|',('type','=','KPB'),('type','=','CLA'),('kpb_collected','!=','collected'),('state','=','open')]</field>		    
+		</record>
+
+		<record model="ir.ui.view" id="wtc_collecting_kpb_tree_view">
+		    <field name="name">wtc.collecting_kpb.tree</field>
+		    <field name="model">wtc.collecting.kpb</field>
+		    <field name="arch" type="xml">  	
+                <tree string="Collecting KPB">
+	                <field name="name"/>
+	                <field name="branch_id"/>  
+					<field name="division"/>
+					<field name="supplier_id"/>		
+					<field name="date"/>	
+					<field name="state"/>	
+					<field name="start_date"/>	
+					<field name="end_date"/>					                																	                
+                </tree>
+		     </field>
+		</record>
+
+		<record model="ir.ui.view" id="wtc_collecting_kpb_form_view">
+		    <field name="name">wtc.collecting_kpb.form</field>
+		    <field name="model">wtc.collecting.kpb</field>
+		    <field name="arch" type="xml">
+		    		        	
+                <form string="Collecting KPB">  
+	                <header>
+	                	<button string="Get Detail" attrs="{'invisible': [('amount','!=',0)]}" name="action_get_detail" type="object" class="oe_highlight" />
+	                    <button name="invoice_create" type="object"  attrs="{'invisible':['|',('amount','=',0), ('state','!=', 'draft')]}"  string="Validate" class="oe_highlight"/>
+						<!-- <button name="view_invoice"  type="object" states="open,done" string="View Invoice" class="oe_highlight" /> -->
+	                    <field name="state" widget="statusbar" statusbar_visible="draft,posted" statusbar_colors='{"draft":"red","posted":"blue"}'/>	
+	           		</header>                                                            
+					<sheet>
+						<h1>
+				            <div class="oe_title">		         		
+					            <label string="Collecting KPB"/>     			
+					 			<field name="name" class="oe_inline"/>	
+				         	</div>
+				        </h1>
+	                    <group col="2" colspan="2">
+	                    	<group>
+	                    		<field name="branch_id" options="{'no_show':True,'no_create':True,'no_open':True}" attrs="{'readonly': [('state','!=','draft')]}"/>
+                    		</group>
+	                    	<group>
+	                    		<field name="division" attrs="{'readonly': [('state','!=','draft')]}"/>
+	                    		
+	                    	</group>
+	                    	<group>
+	                    		<field name="amount" invisible='1'/>  
+	                    		<field name="supplier_id" options="{'no_show':True,'no_create':True,'no_open':True}" attrs="{'readonly': [('state','!=','draft')]}"/>
+								<field name="type" required='1' attrs="{'readonly': [('state','!=','draft')]}" />	      
+								<field name="supplier_ref" attrs="{'readonly': [('state','!=','draft')]}"/>              		
+	                    	</group>
+	                    	<group>
+	                    		<field name='date' readonly='1'/>
+								<label for="start_date" string="WO Date"/>
+				   				<div>
+				   					<field name="start_date" required='1'  class="oe_inline" attrs="{'readonly': [('state','!=','draft')]}"/> - 
+				   					<field name="end_date" required='1'  class="oe_inline" attrs="{'readonly': [('state','!=','draft')]}"/>
+				   				</div>
+				   				<field name="due_date" invisible="1"/>
+				   				<field name="due_date_show"/>
+
+	                    	</group>
+			            </group>
+	                    <notebook colspan="5">
+	                        <page string="Order line">
+	                            <field colspan="4" name="work_order_ids" readonly="1" nolabel="1" widget="one2many_list" attrs="{'readonly': [('state','!=','draft')]}">
+	                                <tree string="" editable="top" edit="false" create="false">
+						                <field name="name"/>
+						                <field name="date"/>  
+						                <field name="lot_id"/>	
+										<field name="chassis_no"/>							                
+						                <field name="type"/>  
+						                <field name="kpb_ke"/> 
+						               	<field name="km"/> 	              
+						                <field name="state" invisible='1'/>                
+										<field name="kpb_collected"/>
+	                                </tree>
+	                                <form>
+						                <field name="name"/>
+						                <field name="date"/>  
+						                <field name="lot_id" options="{'no_open':True,'no_create':True}"/>	
+										<field name="chassis_no"/>							                
+						                <field name="type"/>  
+						                <field name="kpb_ke"/> 
+						               	<field name="km"/> 	              
+						                <field name="state" invisible='1'/>                
+										<field name="kpb_collected"/>
+	                                </form>
+	                            </field>
+	                        </page>
+	                        <page string="Collecting Line">
+	                            <field colspan="4" name="collecting_line" nolabel="1" widget="one2many_list" readonly="1">
+	                                <tree string="" editable="top" edit="false" create="false">
+						                <field name="categ" invisible="1"/>
+						                <field name="kpb_ke"/>  
+						                <field name="qty"/>	
+										<field name="jasa" invisible="1"/>							                
+						                <field name="oli" invisible="1"/>
+						                <field name="total_jasa"/>
+						                <field name="total_oli"/>
+	                                </tree>
+	                            </field>
+	                        </page>
+							<page string="Audit Trail">
+								<group>
+									<group>
+										<field name="create_uid" readonly="1"></field>
+										<field name="create_date" readonly="1"></field>
+										<field name="confirm_uid" readonly="1"></field>
+										<field name="confirm_date" readonly="1"></field>
+									</group>
+									<group>							
+										<field name="write_uid" readonly="1"></field>
+										<field name="write_date" readonly="1"></field>
+									</group>
+								</group>
+							</page>	                        
+	                    </notebook>
+	                </sheet> 
+                </form>
+		     </field>
+		</record>
+ 		 <record id="view_wtc_collecting_kpb_search" model="ir.ui.view">
+            <field name="name">wtc.collecting.kpb.search</field>
+            <field name="model">wtc.collecting.kpb</field>
+            <field name="arch" type="xml">
+                <search string="Search Collecting KPB">
+                	<field name='name'/>
+					<field name='branch_id'/>
+					<field name='division'/>               	
+        			<field name='supplier_id'/>
+        			<field name='supplier_ref'/>
+                    <group expand="0" string="Group By">
+                        <filter string="Branch" icon="terp-go-month" domain="[]" context="{'group_by':'branch_id'}"/>
+               
+                    </group>
+                </search>
+            </field>
+        </record>  		
+		<record model="ir.actions.act_window" id="wtc_collecting_kpb_action_view">
+		    <field name="name">Collecting KPB Data</field>
+		    <field name="res_model">wtc.collecting.kpb</field>
+		    <field name="type">ir.actions.act_window</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		    		    
+		</record>
+		  
+    <menuitem id="wtc_collecting_kpb_menu_sub" name="Collecting KPB" parent="wtc_dealer_menu.wtc_dealer_top_menu" sequence="30" /> 
+    <menuitem id="wtc_outstanding_claim_kpb_menu_item" name="Outstanding Claim KPB" parent="wtc_dealer_menu.workshop_collecting_menu" sequence="1" action="wtc_outstanding_claim_kpb_action_view"/> 
+    <menuitem id="wtc_collecting_menu_item" name="Collecting KPB" parent="wtc_dealer_menu.workshop_collecting_menu" sequence="2"  action="wtc_collecting_kpb_action_view"/> 
+    			
+	</data>
+</openerp>
+															

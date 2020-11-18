@@ -1,0 +1,97 @@
+id,name,default_code,categ_id:id,description,type,cost_method,valuation,uom_id,uom_po_id,sale_ok,purchase_ok,active
+product_extras_tools_TSUPRA_125,TSUPRA 125,TSUPRA 125,product_extras_tools,TSUPRA 125,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_tools_TREVO,TREVO,TREVO,product_extras_tools,TREVO,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_tools_TVARIO,TVARIO,TVARIO,product_extras_tools,TVARIO,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_tools_TBEAT,TBEAT,TBEAT,product_extras_tools,TBEAT,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_tools_TTIGER,TTIGER,TTIGER,product_extras_tools,TTIGER,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_tools_TMEGA_PRO,TMEGA PRO,TMEGA PRO,product_extras_tools,TMEGA PRO,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_tools_TCBR_250,TCBR 250,TCBR 250,product_extras_tools,TCBR 250,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_tools_TCBR_150,TCBR 150,TCBR 150,product_extras_tools,TCBR 150,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_tools_TSPACY,TSPACY,TSPACY,product_extras_tools,TSPACY,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_tools_TSUPRA_HELM_IN,TSUPRA HELM IN,TSUPRA HELM IN,product_extras_tools,TSUPRA HELM IN,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_tools_TOOL_PCX,TOOL-PCX,TOOL-PCX,product_extras_tools,TOOL-PCX,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_tools_TCB150R,TCB150R,TCB150R,product_extras_tools,TCB150R,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_tools_TVERZA,TVERZA,TVERZA,product_extras_tools,TVERZA,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_tools_TREVO_F1,TREVO F1,TREVO F1,product_extras_tools,TREVO F1,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_tools_TSUPRA_125_F1,TSUPRA 125 F1,TSUPRA 125 F1,product_extras_tools,TSUPRA 125 F1,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_spion_SNF_100_T,SNF 100-T,SNF 100-T,product_extras_spion,SNF 100-T,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_spion_SNF110_SP,SNF110 SP,SNF110 SP,product_extras_spion,SNF110 SP,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_spion_SNC110,SNC110,SNC110,product_extras_spion,SNC110,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_spion_SATL_110,SATL-110,SATL-110,product_extras_spion,SATL-110,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_spion_SKYT,SKYT,SKYT,product_extras_spion,SKYT,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_spion_SGLS,SGLS,SGLS,product_extras_spion,SGLS,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_spion_SCBR_250,SCBR 250,SCBR 250,product_extras_spion,SCBR 250,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_spion_SCBR_150,SCBR 150,SCBR 150,product_extras_spion,SCBR 150,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_spion_SKZLG,SKZLG,SKZLG,product_extras_spion,SKZLG,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_spion_SKZRA,SKZRA,SKZRA,product_extras_spion,SKZRA,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_spion_BKMR_PCX,BKMR-PCX,BKMR-PCX,product_extras_spion,BKMR-PCX,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_spion_SK25A,SK25A,SK25A,product_extras_spion,SK25A,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_spion_SK18A,SK18A,SK18A,product_extras_spion,SK18A,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_spion_SK16G,SK16G,SK16G,product_extras_spion,SK16G,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_spion_SK03S,SK03S,SK03S,product_extras_spion,SK03S,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_spion_SK03_Supra_f1,SK03 Supra f1,SK03 Supra f1,product_extras_spion,SK03 Supra f1,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_spion_K61A,K61A,K61A,product_extras_spion,K61A,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_service_BSSUPRA_X_125,BSSUPRA X 125,BSSUPRA X 125,product_extras_buku_service,BSSUPRA X 125,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_service_BSBLADE,BSBLADE,BSBLADE,product_extras_buku_service,BSBLADE,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_service_BSREVO_110,BSREVO 110,BSREVO 110,product_extras_buku_service,BSREVO 110,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_service_BSVARIO,BSVARIO,BSVARIO,product_extras_buku_service,BSVARIO,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_service_BSBEAT,BSBEAT,BSBEAT,product_extras_buku_service,BSBEAT,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_service_BSSCOOPY,BSSCOOPY,BSSCOOPY,product_extras_buku_service,BSSCOOPY,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_service_BSTIGER,BSTIGER,BSTIGER,product_extras_buku_service,BSTIGER,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_service_BSMEGA_PRO,BMMEGA_PRO,BSMEGA PRO,product_extras_buku_service,BSMEGA PRO,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_service_BSCBR_250,BSCBR 250,BSCBR 250,product_extras_buku_service,BSCBR 250,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_service_BSCBR_150,BSCBR 150,BSCBR 150,product_extras_buku_service,BSCBR 150,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_service_BSSPACY ,BSSPACY ,BSSPACY ,product_extras_buku_service,BSSPACY ,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_service_BSHISUPRA_X_125_HELM_IN,BSHISUPRA X 125 HELM IN,BSHISUPRA X 125 HELM IN,product_extras_buku_service,BSHISUPRA X 125 HELM IN,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_service_BSFISUPRA_X_125_INJECTION,BSFISUPRA X 125 INJECTION,BSFISUPRA X 125 INJECTION,product_extras_buku_service,BSFISUPRA X 125 INJECTION,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_service_BSFISPACY_HELM_IN_INJECTION,BSFISPACY HELM IN INJECTION,BSFISPACY HELM IN INJECTION,product_extras_buku_service,BSFISPACY HELM IN INJECTION,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_service_BSFIVARIO_125,BSFIVARIO 125,BSFIVARIO 125,product_extras_buku_service,BSFIVARIO 125,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_service_BSPCX,BSPCX,BSPCX,product_extras_buku_service,BSPCX,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_service_BSFIBEAT,BSFIBEAT,BSFIBEAT,product_extras_buku_service,BSFIBEAT,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_service_BSCB150R,BSCB150R,BSCB150R,product_extras_buku_service,BSCB150R,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_service_BSVerza,BSVerza,BSVerza,product_extras_buku_service,BSVerza,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_service_BSFISCOOPY,BSFISCOOPY,BSFISCOOPY,product_extras_buku_service,BSFISCOOPY,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_service_BSREVO_110_F1,BSREVO 110 F1,BSREVO 110 F1,product_extras_buku_service,BSREVO 110 F1,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_service_BSMEGA_PRO_F1,BSMEGA PRO F1,BSMEGA PRO F1,product_extras_buku_service,BSMEGA PRO F1,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_service_BSSUPRA_X_125_F1,BSSUPRA X 125 F1,BSSUPRA X 125 F1,product_extras_buku_service,BSSUPRA X 125 F1,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_service_BSBLADEF1,BSBLADEF1,BSBLADEF1,product_extras_buku_service,BSBLADEF1,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_service_BSFIVARIO_110F1,BSFIVARIO 110F1,BSFIVARIO 110F1,product_extras_buku_service,BSFIVARIO 110F1,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_service_BSFIBEAT_POP,BSFIBEAT POP,BSFIBEAT POP,product_extras_buku_service,BSFIBEAT POP,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_service_BSFIVARIO_150,BSFIVARIO 150,BSFIVARIO 150,product_extras_buku_service,BSFIVARIO 150,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_battery_ACCU KERING 4V,ACCU KERING 4V,ACCU KERING 4V,product_extras_battery,ACCU KERING 4V,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_battery_ACCU_BASAH,ACCU BASAH,ACCU BASAH,product_extras_battery,ACCU BASAH,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_battery_ACCU_CBR_PCX,ACCU CBR-PCX,ACCU CBR-PCX,product_extras_battery,ACCU CBR-PCX,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_battery_ACCU_KERING_6V,ACCU KERING 6V,ACCU KERING 6V,product_extras_battery,ACCU KERING 6V,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_helm_TRX_3,TRX 3,TRX 3,product_extras_helm,TRX 3,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_helm_TRX_S,TRX S,TRX S,product_extras_helm,TRX S,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_helm_TRX_R,TRX R,TRX R,product_extras_helm,TRX R,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_helm_TRCBR,TRCBR,TRCBR,product_extras_helm,TRCBR,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_helm_HELM_PCX,HELM-PCX,HELM-PCX,product_extras_helm,HELM-PCX,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_manual_BMSUPRA_X_125,BMSUPRA X 125,BMSUPRA X 125,product_extras_buku_manual,BMSUPRA X 125,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_manual_BMBLADE,BMBLADE,BMBLADE,product_extras_buku_manual,BMBLADE,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_manual_BMREVO_110,BMREVO 110,BMREVO 110,product_extras_buku_manual,BMREVO 110,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_manual_BMVARIO,BMVARIO,BMVARIO,product_extras_buku_manual,BMVARIO,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_manual_BMBEAT,BMBEAT,BMBEAT,product_extras_buku_manual,BMBEAT,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_manual_BMSCOOPY,BMSCOOPY,BMSCOOPY,product_extras_buku_manual,BMSCOOPY,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_manual_BMTIGER,BMTIGER,BMTIGER,product_extras_buku_manual,BMTIGER,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_manual_BMMEGA_PRO,BMMEGA PRO,BMMEGA PRO,product_extras_buku_manual,BMMEGA PRO,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_manual_BMCBR_250,BMCBR 250,BMCBR 250,product_extras_buku_manual,BMCBR 250,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_manual_BMCBR_150,BMCBR 150,BMCBR 150,product_extras_buku_manual,BMCBR 150,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_manual_BMSPACY ,BMSPACY ,BMSPACY ,product_extras_buku_manual,BMSPACY ,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_manual_BMHISUPRA_X_125_HELM_IN,BMHISUPRA X 125 HELM IN,BMHISUPRA X 125 HELM IN,product_extras_buku_manual,BMHISUPRA X 125 HELM IN,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_manual_BMFISUPRA_X_125_INJECTION,BMFISUPRA X 125 INJECTION,BMFISUPRA X 125 INJECTION,product_extras_buku_manual,BMFISUPRA X 125 INJECTION,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_manual_BMFISPACY_HELM_IN_INJECTION,BMFISPACY HELM IN INJECTION,BMFISPACY HELM IN INJECTION,product_extras_buku_manual,BMFISPACY HELM IN INJECTION,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_manual_BMFIVARIO_125,BMFIVARIO 125,BMFIVARIO 125,product_extras_buku_manual,BMFIVARIO 125,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_manual_BMPCX,BMPCX,BMPCX,product_extras_buku_manual,BMPCX,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_manual_BMFIBEAT,BMFIBEAT,BMFIBEAT,product_extras_buku_manual,BMFIBEAT,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_manual_BMCB150R,BMCB150R,BMCB150R,product_extras_buku_manual,BMCB150R,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_manual_BMVerza,BMVerza,BMVerza,product_extras_buku_manual,BMVerza,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_manual_BMFISCOOPY,BMFISCOOPY,BMFISCOOPY,product_extras_buku_manual,BMFISCOOPY,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_manual_BMREVO_110_F1,BMREVO 110 F1,BMREVO 110 F1,product_extras_buku_manual,BMREVO 110 F1,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_manual_BFREVO_110_F1,BFREVO 110 F1,BFREVO 110 F1,product_extras_buku_manual,BFREVO 110 F1,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_manual_BMMEGA_PRO_F1,BMMEGA PRO F1,BMMEGA PRO F1,product_extras_buku_manual,BMMEGA PRO F1,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_manual_BMSUPRA_X_125_F1,BMSUPRA X 125 F1,BMSUPRA X 125 F1,product_extras_buku_manual,BMSUPRA X 125 F1,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_manual_BMBLADEF1,BMBLADEF1,BMBLADEF1,product_extras_buku_manual,BMBLADEF1,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_manual_BMFIVARIO_110F1,BMFIVARIO 110F1,BMFIVARIO 110F1,product_extras_buku_manual,BMFIVARIO 110F1,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_manual_BMFIBEAT_POP,BMFIBEAT POP,BMFIBEAT POP,product_extras_buku_manual,BMFIBEAT POP,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True
+product_extras_buku_manual_BMFIVARIO_150,BMFIVARIO 150,BMFIVARIO 150,product_extras_buku_manual,BMFIVARIO 150,product,standard,real_time,product.product_uom_unit,product.product_uom_unit,False,False,True

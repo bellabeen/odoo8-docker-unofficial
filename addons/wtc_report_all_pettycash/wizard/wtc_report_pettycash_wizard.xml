@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+    <record id="view_wtc_report_all_pettycash" model="ir.ui.view">
+      <field name="name">Report All Petty Cash</field>
+      <field name="model">wtc.report.all.pettycash</field>
+      <field name="type">form</field>
+      <field name="arch" type="xml">
+         <form string="Report All Petty Cash">
+          <group attrs="{'invisible':[('state_x','=','get')]}">
+          	<field name="option" required="1"/>
+      			<field name="state_pettycash_out" attrs="{'invisible':[('option','!=','pettycash_out')]}"/>
+      			<field name="state_pettycash_in" attrs="{'invisible':[('option','!=','pettycash_in')]}"/>
+      			<field name="state_reimburse" attrs="{'invisible':[('option','!=','reimbursed')]}"/>			
+      			<field name="state_bank_transfer" attrs="{'invisible':[('option','!=','bank_transfer')]}"/>		
+      			<field name="division" attrs="{'invisible': [('option','=','pettycash_in_out')]}"/>
+      			<field name="journal_id" attrs="{'invisible': [('option','not in',('pettycash_in_out','pettycash_out','pettycash_in'))]}"/>
+      			<field name="journal_bt_id" attrs="{'invisible': [('option','!=','bank_transfer')]}"/>	
+      			<field name="pettycash_id" attrs="{'invisible': [('option','!=','pettycash_in')]}"/>					
+			     <label for="start_date" string="Date"/>
+  			<div >
+  				<field name="start_date" class="oe_inline"/> - <field name="end_date" class="oe_inline"/>
+  			</div>          	    
+          </group>
+          
+          <notebook colspan="5" attrs="{'invisible':[('state_x','=','get')]}">
+	          <page string="Branchs">
+	          	 <field name="branch_ids" colspan="4" nolabel="1"/>
+	          </page>
+          </notebook>
+
+        <newline/>  
+
+        <field invisible="1" name="state_x"/> 
+        <group col="4" fill="0" attrs="{'invisible':[('state_x','!=','get')]}">
+            <separator colspan="4" string="Excel Report Generated. Click link below to download ..." attrs="{'invisible':[('state_x','=','choose')]}"/>
+            <field name="name" invisible="1" width="100" attrs="{'invisible':[('state_x','=','choose')]}"/>
+            <field name="data_x" nolabel="1" readonly="0" width="100" filename="name" attrs="{'invisible':[('state_x','=','choose')]}"/>
+        </group>
+
+        <footer>
+          <button name="excel_report" string="Export" type="object" class="oe_highlight" attrs="{'invisible':[('state_x','=','get')]}"/>
+          <label string="or  . " attrs="{'invisible':[('state_x','=','get')]}" />
+          <button string="Cancel" attrs="{'invisible':[('state_x','=','get')]}" class="oe_link" special="cancel" />
+        </footer>
+        </form>
+      </field>
+    </record>
+
+    <record id="action_report_all_petty_cash_wizard" model="ir.actions.act_window">
+      <field name="name">All Petty Cash</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">wtc.report.all.pettycash</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">form</field>
+      <field name="view_id" ref="view_wtc_report_all_pettycash"/>
+      <field name="target">new</field>
+    </record>
+	 <menuitem id="menu_report_all_petty_cash"  parent="wtc_dealer_menu.backoffice_report_menu" sequence="4"  action="action_report_all_petty_cash_wizard"/>	
+
+  </data>
+</openerp>

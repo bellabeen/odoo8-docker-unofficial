@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>    
+       <report  
+            id="report_proses_stnk" string="Proses STNK" 
+       		model="wtc.proses.stnk" 
+       		name="rml.proses.stnk" 
+       		rml="wtc_proses_stnk/report/wtc_proses_stnk_report.rml" 
+       		auto="False" menu="False"/>  
+       
+       <report  
+            id="report_penerimaan_stnk" string="Penerimaan STNK" 
+       		model="wtc.penerimaan.stnk" 
+       		name="rml.penerimaan.stnk" 
+       		rml="wtc_proses_stnk/report/wtc_penerimaan_stnk_report.rml" 
+       		auto="False" menu="False"/>   
+       		
+       	<report  
+            id="report_proses_birojasa" string="Proses Birojasa" 
+       		model="wtc.proses.birojasa" 
+       		name="rml.proses.birojasa" 
+       		rml="wtc_proses_stnk/report/wtc_proses_birojasa_report.rml" 
+       		auto="False" menu="False"/>  
+       		  
+    </data>
+</openerp>

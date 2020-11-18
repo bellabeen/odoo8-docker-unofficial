@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    	
+        <record id="view_wtc_cancel_kwitansi_tree" model="ir.ui.view">
+            <field name="name">wtc.cancel.kwitansi.line.tree</field>
+            <field name="model">wtc.cancel.kwitansi</field>
+            <field eval="1" name="priority"/>
+            <field name="arch" type="xml">
+                <tree string="Cancel Kwitansi">
+                    <field name="name"/>
+                    <field name="branch_id"/>
+                    <field name="date"/>
+                    <field name="division"/>
+					<field name="kwitansi_id"/>
+					<field name="voucher_id_show"/>                   
+                    <field name="reason"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>    	
+ 
+		<record model="ir.ui.view" id="wtc_cancel_kwitansi_form_view">
+		    <field name="name">wtc.cancel.kwitansi.form</field>
+		    <field name="model">wtc.cancel.kwitansi</field>
+		    <field name="arch" type="xml">
+		        <form string="Cancel Kwitansi">	 
+					<header>
+							<button name="validate_kwitansi" type="object" states="draft" string="Validate" class="oe_highlight"></button>
+							<button name="cancel_kwitansi" type="object" states="draft" string="Cancel"></button>						
+														
+							<field name="state" widget="statusbar" statusbar_visible="draft,validate,cancel" statusbar_colors='{"draft":"red","approved":"blue"}'/>	
+	           		</header>		        	       	
+		        	<sheet>
+			        	<div class="oe_title">
+			        		<h2>
+				                <label string="Cancel Kwitansi"/>   
+				                <field name="name" class="oe_inline" readonly='1'/>			
+			 				</h2>
+			        	</div>       
+						<group>   
+							<group>
+								<field name="branch_id" options="{'no_create': True,'no_open': True}" attrs="{'readonly': ['|',('state','!=','draft'),('name','!=',False)]}" />O                    			                    	
+							</group>            
+						    <group>
+	                    		<field name="division" required="1" attrs="{'readonly': ['|',('state','!=','draft'),('name','!=',False)]}" />
+	                    	</group>
+	                    	<group>
+								<field name="kwitansi_id" required="1" options="{'no_create': True,'no_open': True}" attrs="{'readonly': [('state','!=','draft')]}" />	                    			                    		
+							    <field name="voucher_id" attrs="{'readonly': [('state','!=','draft')],'invisible':[('state','!=','draft')]}" options="{'no_create': True,'no_open': True}" />	
+							   	<field name="voucher_id_show" readonly="1" attrs="{'invisible': [('state','!=','draft')]}" options="{'no_create': True,'no_open': True}" />								    	
+							</group>
+				            <group> 
+				            	<field name="date" readonly="1"/> 
+							   	<field name="reason" required="1" attrs="{'readonly': [('state','!=','draft')]}"/> 							    																	
+							</group>   
+						</group>	
+						
+						<notebook colspan="5">
+							<page string="Audit Trail">
+								<group>
+									<group>
+										<field name="create_uid" readonly="1"></field>
+										<field name="create_date" readonly="1"></field>
+										<field name="confirm_uid" readonly="1"></field>
+										<field name="confirm_date" readonly="1"></field>										
+									</group>
+									<group>							
+										<field name="write_uid" readonly="1"></field>
+										<field name="write_date" readonly="1"></field>
+										<field name="cancel_uid" readonly="1"></field>
+										<field name="cancel_date" readonly="1"></field>										
+									</group>
+								</group>
+							</page>			                    
+		                </notebook>				
+		           </sheet>
+		        </form>
+		    </field>
+		</record>
+
+ 		<record id="view_wtc_cancel_kwitansi_filter" model="ir.ui.view">
+            <field name="name">wtc.cancel.kwitansi.filter.select</field>
+            <field name="model">wtc.cancel.kwitansi</field>
+            <field name="arch" type="xml">
+                <search string="Search Cancel Kwitansi">
+                    <field name="name"/>
+                    <field name="branch_id"/>
+                    <field name="kwitansi_id"/>
+                </search>
+            </field>
+        </record>		
+		<record model="ir.actions.act_window" id="wtc_cancel_kwitansi_action">
+		    <field name="name">Cancel Kwitansi</field>
+		    <field name="res_model">wtc.cancel.kwitansi</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		    <field name="search_view_id" ref="view_wtc_cancel_kwitansi_filter"/>
+		</record>
+					
+		<menuitem id="cancel_kwitansi_submenu" name="Cancel Kwitansi" parent="wtc_dealer_menu.showroom_configuration_menu" action="wtc_cancel_kwitansi_action" sequence="100"/>    	
+    </data>
+</openerp>
+    

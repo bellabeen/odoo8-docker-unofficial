@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    
+        <record id="pricelist_beli_part_2015" model="product.pricelist.version">
+            <field name="pricelist_id" ref="pricelist_beli_part"/>   
+            <field name="name">Harga Beli Part (HET) 2015</field>   
+            <field name="date_start">2015-01-01</field> 
+            <field name="date_end">2015-12-31</field>  
+        </record>
+    
+        <record id="pricelist_jual_part_2015" model="product.pricelist.version">
+            <field name="pricelist_id" ref="pricelist_jual_part"/>   
+            <field name="name">Harga Jual Part (HET) 2015</field>   
+            <field name="date_start">2015-01-01</field> 
+            <field name="date_end">2015-12-31</field>  
+        </record>
+    
+        <record id="pricelist_jual_bbn_merah_all_2015" model="product.pricelist.version">
+            <field name="pricelist_id" ref="pricelist_jual_bbn_merah_all"/>   
+            <field name="name">Harga Jual BBN Merah (All Branch) 2015</field>   
+            <field name="date_start">2015-01-01</field> 
+            <field name="date_end">2015-12-31</field>  
+        </record>
+
+     </data>
+</openerp>
+               

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>    
+		
+		<record model="ir.ui.view" id="wtc_receipt_asset_form_view">
+            <field name="name">wtc.receipt.asset.form.view</field>            
+            <field name="model">wtc.transfer.asset</field>            
+            <field name="arch" type="xml">
+				<form string="Asset Reciept">
+		            <header>		            	
+		                <button name="confirm" groups='wtc_purchase_asset.group_wtc_receipt_asset_create_asset' states='draft' string="Confirm" type="object" class="oe_highlight"/>
+						<field name="state" widget="statusbar" statusbar_visible="draft,done" statusbar_colors='{"draft":"red","posted":"blue"}'/>	   			                
+		            </header>	
+		            <sheet>
+			        	<div class="oe_title">
+			        		<h2>
+				                <label string="Receipt Asset"/>    			
+				 				<field name="name" class="oe_inline" readonly="1"/>
+			 				</h2>
+			        	</div>	
+			        	<group>
+			        		<field name="date" readonly="1"/>
+			        	</group>	
+			        <notebook>		
+			        	<page string="Receipt Detail">
+						   <field colspan="4" name="transfer_ids" nolabel="1" attrs="{'readonly': [('state','!=','draft')]}">
+						       <tree editable="top">
+								  <field name="asset_id" options="{'no_create': True,'no_open': True}" required='1'/>	
+								  <field name="branch_id" readonly='1' options="{'no_create': True,'no_open': True}" />
+								  <field name="document_date" required='1'/>								  									  	  									  																       							       	
+								  <field name="product_id" readonly='1' options="{'no_create': True,'no_open': True}"/>
+								  <field name="description" required="1" readonly='1'/>
+								  <field name="purchase_value" required='1'/>
+								  <field name="responsible_id" options="{'no_create': True,'no_open': True}" readonly='1'/>						  							  
+								  <field name="category_id" required='1' options="{'no_create': True,'no_open': True}"/>
+								  <field name="asset_classification_id" options="{'no_create': True,'no_open': True}"  readonly='1'/>							  	
+								  <field name="retensi"/>								  								  									  
+								  <field name="method_number"/>	
+								  <field name="method_period" readonly='1'/>	
+						       </tree>			                
+				           </field>	
+			          	 </page>
+			        	<page string="Asset Items">
+						   <field colspan="4" name="asset_ids" nolabel="1" attrs="{'readonly': [('state','!=','draft')]}">
+						       <tree edit="false" create="false">
+								  <field name="name"/>	
+								  <field name="code"/>								  									  										
+								  <field name="branch_id"/>
+								  <field name="category_id"/>
+								  <field name="asset_classification_id"/>
+								  <field name="purchase_date"/>
+								  <field name="purchase_asset_id"/>
+								  <field name="invoice_id"/>
+								  <field name="purchase_value"/>
+								  <field name="value_residual"/>
+								  <field name="partner_id"/>	
+								  <field name="state"/>									          
+						       </tree>			                
+				           </field>	
+			          	 </page>			          	 
+						<page string="Audit Trail">
+							<group>
+								<group>
+									<field name="create_uid" readonly="1"></field>
+									<field name="create_date" readonly="1"></field>
+									<field name="confirm_uid" readonly="1"></field>
+									<field name="confirm_date" readonly="1"></field>
+								</group>
+								<group>							
+									<field name="write_uid" readonly="1"></field>
+									<field name="write_date" readonly="1"></field>
+									<field name="cancel_uid" readonly="1"></field>
+									<field name="cancel_date" readonly="1"></field>									
+								</group>
+							</group>
+						</page>				          	 
+			          </notebook>	
+		           </sheet>					           
+		        </form>
+            </field>		
+		</record>
+				
+		<record model="ir.ui.view" id="wtc_receipt_asset_tree">
+		    <field name="name">wtc.transfer.asset.tree</field>
+		    <field name="model">wtc.transfer.asset</field>
+		    <field name="arch" type="xml">		    		        	
+                <tree string="Receipt Asset">
+	                <field name="name"/>
+					<field name="date"/>	   
+					<field name="state"/>	                
+                </tree>
+		     </field>
+		</record>	
+		
+       <record id="view_receipt_asset_filter" model="ir.ui.view">
+            <field name="name">wtc.transfer.asset.form.search</field>
+            <field name="model">wtc.transfer.asset</field>
+            <field name="arch" type="xml">
+                <search string="Search">
+                   <field name="name"/>
+				   <field name="date"/>                                      	               
+                </search>
+            </field>
+        </record>	
+        		
+		<record model="ir.actions.act_window" id="receipt_asset_action">
+		    <field name="name">Receipt Asset</field>
+		    <field name="res_model">wtc.transfer.asset</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		    <field name="search_view_id" ref="view_receipt_asset_filter"/>
+		</record>
+				
+		<record id="view_asset_tree_form" model="ir.actions.act_window.view">
+			<field name="view_mode">tree</field>
+			<field name="view_id" ref="wtc_receipt_asset_tree" />
+			<field name="act_window_id" ref="receipt_asset_action" />
+		</record>
+
+		<record id="view_asset_form_form" model="ir.actions.act_window.view">
+			<field name="view_mode">form</field>
+			<field name="view_id" ref="wtc_receipt_asset_form_view" />
+			<field name="act_window_id" ref="receipt_asset_action" />
+		</record>
+        		
+		<menuitem id="wtc_receipt_asset_submenu_showroom" parent="wtc_dealer_menu.ga_purchase_menu" action="receipt_asset_action" sequence="50"/>
+        <menuitem action="account_voucher.action_vendor_payment" icon="STOCK_JUSTIFY_FILL" sequence="40" id="menu_action_vendor_payment_asset"  parent="wtc_dealer_menu.ga_purchase_menu"/>								
+        <menuitem action="account.action_invoice_tree2" id="menu_action_invoice_tree_asset" parent="wtc_dealer_menu.ga_purchase_menu" sequence="30"/>
+        										
+   	</data>
+</openerp>
+
+
+

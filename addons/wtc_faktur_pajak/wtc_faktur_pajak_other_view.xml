@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+     
+	<record id="view_faktur_pajak_other_tree" model="ir.ui.view">
+            <field name="name">wtc.faktur.pajak.other.tree</field>
+            <field name="model">wtc.faktur.pajak.other</field>
+            <field name="priority">2</field>
+            <field name="arch" type="xml">
+                <tree string="Faktur Pajak Others">   
+                	<field name="name"/>                
+                    <field name="date"/>
+                    <field name="faktur_pajak_id"/>
+                    <field name="partner_id"/>
+                    <field name="tgl_terbit"/> 
+                    <field name="thn_penggunaan"/> 
+                    <field name="pajak_gabungan"/>      
+                    <field name="untaxed_amount"/>      
+                    <field name="tax_amount"/>      
+                    <field name="total_amount"/>    
+                    <field name="state"/>                     
+                </tree>
+            </field>
+     </record>
+		 <record id="view_faktur_pajak_other_search" model="ir.ui.view">
+            <field name="name">wtc.faktur.pajak.other.search</field>
+            <field name="model">wtc.faktur.pajak.other</field>
+            <field name="arch" type="xml">
+                <search string="Search Faktur Pajak Others">
+                	<field name='name'/>
+        			<field name="faktur_pajak_id"/>
+					<field name="partner_id"/>
+					<field name="pajak_gabungan"/>          			
+                </search>
+            </field>
+        </record> 	
+	<record id="wtc_faktur_pajak_other_form" model="ir.ui.view">
+            <field name="name">wtc.faktur.pajak.other.form</field>
+            <field name="model">wtc.faktur.pajak.other</field>            
+            <field name="arch" type="xml">
+                <form string="Faktur Pajak Others"  >
+                
+                <header>
+                	 <button name="action_post" states="draft" groups='wtc_faktur_pajak.group_wtc_faktur_pajak_other_post' string="Post" class="oe_highlight" type="object"/>
+                	<field name="state" widget="statusbar" statusbar_visible="draft,posted" />
+                </header>
+                <sheet>
+                   		<div class="oe_title">                      
+		       				<h1>
+		       					<label string="Faktur Pajak Others"/> 
+					            <field name="name" readonly="1"/>
+		    			    </h1>
+	                    </div>
+	                    <group col="2" colspan="2">
+	                   		<group >
+		                    	<field name="faktur_pajak_id" required="1" options="{'no_create': True,'no_open': True}" attrs="{'readonly': [('state','not in','draft')]}" />
+			                	<field name="partner_id" required="1" options="{'no_create': True,'no_open': True}" attrs="{'readonly': [('state','not in','draft')]}" />
+			                    <field name="pajak_gabungan" attrs="{'readonly': [('state','not in','draft')]}"/> 						                					                   
+			                	 <field name="tgl_terbit" required="1" attrs="{'readonly': [('state','not in','draft')]}"/>  
+			                	 <field name='kwitansi_no' attrs="{'readonly': [('state','not in','draft')]}"/> 
+			                 </group>
+			                 <group>
+			           			<field name="date" readonly='1' attrs="{'readonly': [('state','not in','draft')]}"/>			                 				                 	
+			                    <field name="thn_penggunaan" placeholder="2015" required="1" attrs="{'readonly': [('state','not in','draft')]}"/> 	
+			                    <field name="untaxed_amount" required="1" attrs="{'readonly': [('state','not in','draft')]}"/> 	
+			                    <field name="tax_amount" required="1" attrs="{'readonly': [('state','not in','draft')]}"/> 	
+			                    <field name="total_amount" invisible='1' attrs="{'readonly': [('state','not in','draft')]}"/>
+   			                	 <field name='memo' attrs="{'readonly': [('state','not in','draft')]}"/>			                    	                		
+			                 </group>
+		                 </group>           
+		                
+		                  <notebook> 
+							<page string="Audit Trail">
+								<group>
+									<group>
+										<field name="create_uid" readonly="1"></field>
+										<field name="create_date" readonly="1"></field>
+										<field name="confirm_uid" readonly="1"></field>
+										<field name="confirm_date" readonly="1"></field>
+									</group>
+									<group>							
+										<field name="write_uid" readonly="1"></field>
+										<field name="write_date" readonly="1"></field>
+									</group>
+								</group>
+							</page>		                 
+		            		</notebook>
+                	</sheet>   	                    
+                </form>
+            </field>
+        </record>
+        
+    	<record model="ir.actions.act_window" id="wtc_faktur_pajak_other_action">
+		    <field name="name">Faktur Pajak Others</field>
+		    <field name="res_model">wtc.faktur.pajak.other</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		</record>
+		
+		
+		
+		<menuitem action="wtc_faktur_pajak_other_action" sequence='300' id="menu_wtc_faktur_pajak_other2" parent="wtc_dealer_menu.backoffice_tax_menu" />
+       	
+	</data>
+</openerp>

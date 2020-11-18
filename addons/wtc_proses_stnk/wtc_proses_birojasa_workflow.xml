@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="proses_birojasa" model="workflow">
+            <field name="name">Proses Biro Jasa Basic Workflow</field>
+            <field name="osv">wtc.proses.birojasa</field>
+            <field name="on_create">True</field>
+        </record>
+
+        <record id="act_draft" model="workflow.activity">
+            <field name="wkf_id" ref="proses_birojasa"/>
+            <field name="flow_start">True</field>
+            <field name="name">draft</field>
+        </record>
+        <record id="act_confirmed" model="workflow.activity">
+            <field name="wkf_id" ref="proses_birojasa"/>
+            <field name="name">confirmed</field>
+            <field name="split_mode">OR</field>
+            <field name="kind">function</field>
+            <field name="action">wkf_confirm_birojasa()</field>
+        </record>
+        <record id="act_cancel" model="workflow.activity">
+            <field name="wkf_id" ref="proses_birojasa"/>
+            <field name="name">cancel</field>
+            <field name="kind">function</field>
+            <field name="flow_stop">True</field>
+            <field name="action">wkf_action_cancel()</field>
+        </record>
+        <record id="act_except_invoice" model="workflow.activity">
+            <field name="wkf_id" ref="proses_birojasa"/>
+            <field name="name">except_invoice</field>
+           <field name="kind">function</field>
+            <field name="action">write({'state':'except_invoice'})</field>
+        </record>
+        <record id="act_router" model="workflow.activity">
+            <field name="wkf_id" ref="proses_birojasa"/>
+            <field name="name">router</field>
+            <field name="kind">function</field>
+            <field name="action">wkf_act_router()</field>
+        </record>
+        <record id="act_invoice" model="workflow.activity">
+            <field name="wkf_id" ref="proses_birojasa"/>
+            <field name="name">invoice</field>
+            <field name="kind">subflow</field>
+            <field name="subflow_id" search="[('osv','=','account.invoice')]"/>
+            <field name="action">action_invoice_create()</field>
+        </record>
+        <record id="act_invoice_done" model="workflow.activity">
+            <field name="wkf_id" ref="proses_birojasa"/>
+            <field name="name">invoice_done</field>
+            <field name="action">invoice_done()</field>
+            <field name="kind">function</field>
+        </record>
+        <record id="act_invoice_end" model="workflow.activity">
+            <field name="wkf_id" ref="proses_birojasa"/>
+            <field name="name">invoice_end</field>
+        </record>
+        <record id="act_done" model="workflow.activity">
+            <field name="wkf_id" ref="proses_birojasa"/>
+            <field name="name">done</field>
+            <field name="action">invoice_done()</field>
+            <field name="kind">function</field>
+            <field name="flow_stop">True</field>
+            <field name="join_mode">AND</field>
+        </record>
+        
+        <record id="trans_confirmed_cancel" model="workflow.transition">
+            <field name="act_from" ref="act_confirmed"/>
+            <field name="act_to" ref="act_cancel"/>
+            <field name="signal">birojasa_cancel</field>
+        </record>
+        <record id="trans_draft_cancel" model="workflow.transition">
+            <field name="act_from" ref="act_draft"/>
+            <field name="act_to" ref="act_cancel"/>
+            <field name="signal">birojasa_cancel</field>
+        </record> 
+        <record id="trans_done_cancel" model="workflow.transition">
+            <field name="act_from" ref="act_done"/>
+            <field name="act_to" ref="act_cancel"/>
+            <field name="signal">birojasa_cancel</field>
+        </record>
+        <record id="trans_inv_cancel" model="workflow.transition">
+            <field name="act_from" ref="act_invoice_done"/>
+            <field name="act_to" ref="act_cancel"/>
+            <field name="signal">birojasa_cancel</field>
+        </record>                       
+        <record id="trans_confirmed_router" model="workflow.transition">
+            <field name="act_from" ref="act_confirmed"/>
+            <field name="act_to" ref="act_router"/>
+        </record>
+        <record id="trans_router_invoice" model="workflow.transition">
+            <field name="act_from" ref="act_router"/>
+            <field name="act_to" ref="act_invoice"/>
+        </record>
+
+       <record id="trans_except_invoice_invoice_done" model="workflow.transition">
+            <field name="act_from" ref="act_except_invoice"/>
+           <field name="act_to" ref="act_invoice_done"/>
+            <field name="signal">invoice_ok</field>
+       </record>
+        <record id="trans_except_invoice" model="workflow.transition">
+            <field name="act_from" ref="act_except_invoice"/>
+           <field name="act_to" ref="act_cancel"/>
+           <field name="signal">birojasa_cancel</field>
+        </record>
+       <record id="trans_invoice_except_invoice" model="workflow.transition">
+           <field name="act_from" ref="act_invoice"/>
+           <field name="act_to" ref="act_except_invoice"/>
+           <field name="signal">subflow.cancel</field>
+       </record>
+        <record id="trans_invoice_invoice_done" model="workflow.transition">
+            <field name="act_from" ref="act_invoice"/>
+            <field name="act_to" ref="act_invoice_done"/>
+            <field name="signal">subflow.paid</field>
+        </record>
+        <record id="trans_invoice_done_done" model="workflow.transition">
+            <field name="act_from" ref="act_invoice_done"/>
+            <field name="act_to" ref="act_invoice_end"/>
+            <field name="condition">invoiced and is_not_cancelled()</field>
+        </record>
+        <record id="trans_invoice_end_done" model="workflow.transition">
+            <field name="act_from" ref="act_invoice_end"/>
+            <field name="act_to" ref="act_done"/>
+            <field name="condition">invoiced and is_not_cancelled()</field>
+        </record>
+
+    </data>
+</openerp>

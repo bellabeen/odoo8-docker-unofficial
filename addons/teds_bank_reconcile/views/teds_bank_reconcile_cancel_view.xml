@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record id="view_teds_bank_reconcile_cancel_tree" model="ir.ui.view">
+			<field name="name">teds.bank.reconcile.cancel.tree</field>
+			<field name="model">teds.bank.reconcile.cancel</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="name"/>
+					<field name="branch_id"/>
+					<field name="bank_reconcile_id"/>
+					<field name="date"/>
+					<field name="state"/>
+				</tree>
+			</field>
+		</record>
+		
+		<record id="view_teds_bank_reconcile_cancel_form" model="ir.ui.view">
+			<field name="name">teds.bank.reconcile.cancel.form</field>
+			<field name="model">teds.bank.reconcile.cancel</field>
+			<field name="arch" type="xml">
+				<form>
+		    		<header>
+		    			<button name="action_rfa" states="draft" string="RFA" type="object" class="oe_highlight"/>
+						<button name="action_approved" string="Approve" type="object" class="oe_highlight" states="waiting_for_approval" groups="teds_bank_reconcile.group_button_bank_reconcile_cancel_approve"/>
+						<button name="action_confirm" string="Confirm" type="object" class="oe_highlight" states="approved" groups="teds_bank_reconcile.group_button_bank_reconcile_cancel_confirm"/>
+		    			<button name="action_cancel_approved" string="Set to Draft" type="object" class="oe_highlight" attrs="{'invisible':[('state','not in',('waiting_for_approval','approved'))]}"  groups="teds_bank_reconcile.group_button_bank_reconcile_cancel_set_draft"/>
+		    			<field name="state" widget="statusbar" statusbar_visible="draft,waiting_for_approval,approved,confirmed"/>
+		    		</header>
+		    		<sheet>
+		    			<div class="oe_title">
+							<h1><field name="name" readonly="1"/></h1>
+						</div>
+						<group>
+							<group>
+								<field name="branch_id" options="{'no_open':True,'no_create':True}" required="1" attrs="{'readonly':[('create_date','!=',False)]}"/>
+								<field name="bank_reconcile_id" options="{'no_open':True,'no_create':True}" required="1" attrs="{'readonly':[('state','!=','draft')]}" domain="[('branch_id','=',branch_id),('state','in',('posted','Auto Reconcile'))]"/>
+							</group>
+							<group>
+								<field name="date" readonly="1"/>
+								<field name="reason" required="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+							</group>
+						</group>
+						<notebook>
+							<page string="Audit Trail">
+								<group>
+									<group>
+										<field name="create_uid" readonly="1"/>
+										<field name="create_date" readonly="1"/>
+										<field name="approve_uid" readonly="1" attrs="{'invisible':[('approve_uid','=',False)]}"/>
+										<field name="approve_date" readonly="1" attrs="{'invisible':[('approve_date','=',False)]}"/>
+									</group>
+									<group>							
+										<field name="write_uid" readonly="1"/>
+										<field name="write_date" readonly="1"/>
+										<field name="confirm_uid" readonly="1" attrs="{'invisible':[('confirm_uid','=',False)]}"/>
+										<field name="confirm_date" readonly="1" attrs="{'invisible':[('confirm_date','=',False)]}"/>
+									</group>
+								</group>
+							</page>
+						</notebook>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<!-- Search -->
+		<record id="view_teds_bank_reconcile_cancel_filter" model="ir.ui.view">
+            <field name="name">teds.bank.reconcile.cancel.filter</field>
+            <field name="model">teds.bank.reconcile.cancel</field>
+            <field name="arch" type="xml">
+                <search string="Search">
+                	<field name="name" string="Name"/>
+                    <field name="bank_reconcile_id" string="Bank Reconcile"/>
+                    <field name="branch_id" string="Branch"/>
+                    <field name="date" string="Date"/>
+                    <filter name="state_draft" string="Draft" domain="[('state','=','draft')]"/>
+                    <filter name="state_rfa" string="Waiting for approval" domain="[('state','=','waiting_for_approval')]"/>
+                    <filter name="state_approved" string="Approved" domain="[('state','=','approved')]"/>
+                    <filter name="state_confirm" string="Confirmed" domain="[('state','=','confirmed')]"/>
+
+                    <group expand="1" string="Group By">
+	                    <filter string="Branch" name="gby_branch_id" context="{'group_by':'branch_id'}"/>
+					</group>	                   
+		        </search>
+            </field>
+        </record> 
+
+		<record id="action_teds_bank_reconcile_cancel" model="ir.actions.act_window">
+             <field name="res_model">teds.bank.reconcile.cancel</field>
+             <field name="view_type">form</field>
+             <field name="view_mode">tree,form</field>
+             <field name="name">Bank Reconcile Cancel</field>
+             <field name="context">{'search_default_state_draft':1,'search_default_state_rfa':1,'search_default_state_approved':1}</field>
+       	</record>
+       
+       	<menuitem id="teds_bank_reconcile_cancel_menuitem"  parent="bank_reconcile_submenu"  action="action_teds_bank_reconcile_cancel" sequence="50"/> 
+
+	</data>
+</openerp>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+<!-- Master Activity Budget -->
+        <record id="group_teds_master_act_budget_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">TEDS Master Activity Budget Read</field>
+            <field name="menu_access" eval="[
+                (4, ref('teds_master_act_budget_menuitem')),
+                (4, ref('teds_master_act_budget_category_menuitem'))
+            ]"/>
+        </record>        
+        <record id="access_teds_master_act_budget_read" model="ir.model.access">
+            <field name="model_id" ref="model_teds_master_act_budget"/>
+            <field name="name">teds_master_act_budget read</field>
+            <field name="group_id" ref="group_teds_master_act_budget_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        <record id="access_teds_master_act_budget_category_read" model="ir.model.access">
+            <field name="model_id" ref="model_teds_master_act_budget_category"/>
+            <field name="name">teds_master_act_budget_category read</field>
+            <field name="group_id" ref="group_teds_master_act_budget_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="group_teds_master_act_budget_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">TEDS Master Activity Budget Update</field>
+            <field name="menu_access" eval="[
+                (4, ref('teds_master_act_budget_menuitem')),
+                (4, ref('teds_master_act_budget_category_menuitem'))
+            ]"/>
+			<field name="implied_ids" eval="[(4, ref('group_teds_master_act_budget_read'))]"/>
+        </record>
+        <record id="access_teds_master_act_budget_update" model="ir.model.access">
+            <field name="model_id" ref="model_teds_master_act_budget"/>
+            <field name="name">teds_master_act_budget update</field>
+            <field name="group_id" ref="group_teds_master_act_budget_update"/>
+            <field name="perm_create">1</field>
+            <field name="perm_write">1</field>
+        </record>
+        <record id="access_teds_master_act_budget_category_update" model="ir.model.access">
+            <field name="model_id" ref="model_teds_master_act_budget_category"/>
+            <field name="name">teds_master_act_budget_category update</field>
+            <field name="group_id" ref="group_teds_master_act_budget_update"/>
+            <field name="perm_create">1</field>
+            <field name="perm_write">1</field>
+        </record>
+		
+        <record id="group_teds_master_act_budget_delete" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">TEDS Master Activity Budget Delete</field> 
+            <field name="menu_access" eval="[
+                (4, ref('teds_master_act_budget_menuitem')),
+                (4, ref('teds_master_act_budget_category_menuitem'))
+            ]"/>
+			<field name="implied_ids" eval="[(4, ref('group_teds_master_act_budget_read'))]"/>
+        </record>        
+		<record id="access_teds_master_act_budget_delete" model="ir.model.access">
+            <field name="model_id" ref="model_teds_master_act_budget"/>
+            <field name="name">teds_master_act_budget delete</field>
+            <field name="group_id" ref="group_teds_master_act_budget_delete"/>
+            <field name="perm_unlink">1</field>
+        </record>
+        <record id="access_teds_master_act_budget_category_delete" model="ir.model.access">
+            <field name="model_id" ref="model_teds_master_act_budget_category"/>
+            <field name="name">teds_master_act_budget_category delete</field>
+            <field name="group_id" ref="group_teds_master_act_budget_delete"/>
+            <field name="perm_unlink">1</field>
+        </record>
+
+<!-- Upload Master Activity Budget -->
+        <record id="group_teds_master_act_budget_upload_read" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">TEDS Upload Master Activity Budget Read</field>
+            <field name="menu_access" eval="[(4, ref('teds_master_act_budget_upload_wizard_menuitem'))]"/>
+        </record>        
+        <record id="access_teds_master_act_budget_upload_read" model="ir.model.access">
+            <field name="model_id" ref="model_teds_master_act_budget_upload_wizard"/>
+            <field name="name">teds_master_act_budget_upload read</field>
+            <field name="group_id" ref="group_teds_master_act_budget_upload_read"/>
+            <field name="perm_read">1</field>
+        </record>
+        
+        <record id="group_teds_master_act_budget_upload_update" model="res.groups">
+            <field name="category_id" ref="wtc_branch.tdm_role"/>
+            <field name="name">TEDS Upload Master Activity Budget Update</field>
+            <field name="menu_access" eval="[(4, ref('teds_master_act_budget_upload_wizard_menuitem'))]"/>
+			<field name="implied_ids" eval="[(4, ref('group_teds_master_act_budget_upload_read'))]"/>
+        </record>
+        <record id="access_teds_master_act_budget_upload_update" model="ir.model.access">
+            <field name="model_id" ref="model_teds_master_act_budget_upload_wizard"/>
+            <field name="name">teds_master_act_budget_upload update</field>
+            <field name="group_id" ref="group_teds_master_act_budget_upload_update"/>
+            <field name="perm_create">1</field>
+            <field name="perm_write">1</field>
+        </record>
+    
+        <record id="wtc_branch.group_sys_admin" model="res.groups">
+			<field name="implied_ids" eval="[
+                (4,ref('group_teds_master_act_budget_read')),	
+				(4,ref('group_teds_master_act_budget_update')),	
+				(4,ref('group_teds_master_act_budget_delete')),	
+				(4,ref('group_teds_master_act_budget_upload_read')),	
+				(4,ref('group_teds_master_act_budget_upload_update')),					
+			]"/> 
+		</record>
+    </data>
+</openerp>

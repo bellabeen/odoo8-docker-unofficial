@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+   
+       
+        <record id="config_approval_pa" model="wtc.approval.config">
+            <field name="name">Purchase Asset</field>        	        	
+            <field name="form_id" ref="wtc_purchase_asset.model_wtc_purchase_asset"/> 
+            <field name="code"> </field>
+            <field name="type">biaya</field>
+        </record>   
+            
+        <record id="config_approval_asset_adjustment" model="wtc.approval.config">
+            <field name="name">Asset Adjustment</field>        	        	
+            <field name="form_id" ref="wtc_purchase_asset.model_wtc_asset_adjustment"/> 
+            <field name="code"> </field>
+            <field name="type">biaya</field>
+        </record> 
+         
+        <record id="config_approval_asset_disposal" model="wtc.approval.config">
+            <field name="name">Disposal Asset</field>        	        	
+            <field name="form_id" ref="wtc_purchase_asset.model_wtc_disposal_asset"/> 
+            <field name="code"> </field>
+            <field name="type">biaya</field>
+        </record>
+        
+    </data>
+</openerp>
+            

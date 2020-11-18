@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="pricelist_beli_part" model="product.pricelist">
+            <field name="name">Harga Beli Part (HET)</field>   
+            <field name="type">purchase</field> 
+        </record>
+    
+        <record id="pricelist_jual_part" model="product.pricelist">
+            <field name="name">Harga Jual Part (HET)</field>   
+            <field name="type">sale</field> 
+        </record>
+    
+        <record id="pricelist_jual_bbn_merah_all" model="product.pricelist">
+            <field name="name">Harga Jual BBN Merah (All Branch)</field>   
+            <field name="type">sale_bbn_merah</field> 
+        </record>
+    </data>
+</openerp>
+                
