@@ -1,5 +1,0 @@
-import dms_api_stock_distribution
-import teds_api_stock_picking
-import dms_api_stock_distribution_reject
-import stock_picking
-import teds_api_button

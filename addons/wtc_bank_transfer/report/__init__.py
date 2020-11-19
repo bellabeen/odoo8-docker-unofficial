@@ -1,3 +1,0 @@
-import wtc_bank_transfer_report
-import fungsi_terbilang
-import teds_bank_transfer_cancel_print

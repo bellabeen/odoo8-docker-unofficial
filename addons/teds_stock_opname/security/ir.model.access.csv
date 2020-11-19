@@ -1,8 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_teds_stock_opname_stnk,teds_stock_opname_stnk,model_teds_stock_opname_stnk,,1,0,0,0
-access_teds_stock_opname_stnk_line,teds_stock_opname_stnk_line,model_teds_stock_opname_stnk_line,,1,0,0,0
-access_teds_stock_opname_stnk_other,teds_stock_opname_stnk_other,model_teds_stock_opname_stnk_other,,1,0,0,0
-access_teds_stock_opname_bpkb,teds_stock_opname_bpkb,model_teds_stock_opname_bpkb,,1,0,0,0
-access_teds_stock_opname_bpkb_line,teds_stock_opname_bppkb,model_teds_stock_opname_bpkb_line,,1,0,0,0
-access_teds_stock_opname_bpkb_other,teds_stock_opname_bpkb_other,model_teds_stock_opname_bpkb_other,,1,0,0,0
-

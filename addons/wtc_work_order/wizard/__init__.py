@@ -1,2 +1,0 @@
-import wtc_work_order_wip
-import teds_work_order_import_wizard

@@ -1,5 +1,0 @@
-import wtc_p2p_config
-import wtc_p2p_product
-import wtc_p2p_periode
-import wtc_p2p_purhase_order
-import report

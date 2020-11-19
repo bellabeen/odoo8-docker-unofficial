@@ -1,4 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_wtc_barang_extras_all,wtc_barang_extras all,model_wtc_barang_extras,,1,1,1,1
-access_wtc_category_product_all,wtc_category_product_all,model_wtc_category_product,,1,1,1,1
-access_wtc_category_product_service_all,wtc_category_product_service_all,model_wtc_category_product_service,,1,1,1,1

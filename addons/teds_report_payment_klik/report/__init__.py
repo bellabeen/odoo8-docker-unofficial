@@ -1,1 +1,0 @@
-import teds_report_payment_klik_wizard

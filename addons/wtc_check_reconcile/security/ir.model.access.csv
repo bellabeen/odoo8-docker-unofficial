@@ -1,3 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_wtc_check_reconcile_all,wtc_collecting_kpb all,model_wtc_collecting_kpb,,1,1,1,1
-access_wtc_check_reconcile_line_all,wtc_collecting_kpb_line all,model_wtc_collecting_kpb_line,,1,1,1,1

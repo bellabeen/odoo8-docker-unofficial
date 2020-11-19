@@ -1,3 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_wtc_payments_request_type_all,wtc_wtc_payments_request_type all,model_wtc_payments_request_type,,1,1,1,1
-access_wtc_account_receivable_report_all,wtc_account_receivable_report all,model_wtc_account_receivable_report,,1,1,1,1

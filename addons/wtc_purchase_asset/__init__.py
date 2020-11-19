@@ -1,8 +1,0 @@
-import asset
-import receipt_asset
-import wtc_purchase_asset
-import wtc_branch_config
-import wtc_asset_adjustment
-import wtc_disposal_asset
-import report
-import models

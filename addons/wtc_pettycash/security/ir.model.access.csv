@@ -1,6 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_wtc_pettycash_all,wtc_pettycash all,model_wtc_pettycash,,1,1,1,1
-access_wtc_pettycash_line_all,wtc_pettycash_line all,model_wtc_pettycash_line,,1,1,1,1
-access_wtc_reimbursed_all,wtc_reimbursed all,model_wtc_reimbursed,,1,1,1,1
-access_wtc_pettycash_in_all,wtc_pettycash_in all,model_wtc_pettycash_in,,1,1,1,1
-access_wtc_pettycash_in_line_all,wtc_pettycash_line all,model_wtc_pettycash_in_line,,1,1,1,1

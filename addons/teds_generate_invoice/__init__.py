@@ -1,2 +1,0 @@
-import teds_generate_invoice
-import teds_generate_invoice_txt

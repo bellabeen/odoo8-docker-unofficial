@@ -1,8 +1,0 @@
-import wtc_res_partner
-import wtc_incentive_finco_line
-import wtc_partner_incentive
-import wtc_request_payment_term
-import wtc_approval_rpt
-import wtc_res_users
-import wtc_request_platform
-import wtc_approval_platform

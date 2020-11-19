@@ -1,2 +1,0 @@
-import teds_stock_ideal
-import teds_topup

@@ -1,3 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_stock_ideal,stock.ideal,model_stock_ideal,,1,1,1,1
-access_stock_ideal_line,stock.ideal.line,model_stock_ideal_line,,1,1,1,1

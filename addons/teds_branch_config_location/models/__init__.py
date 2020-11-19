@@ -1,2 +1,0 @@
-import teds_branch_location_config
-import teds_stock_packing

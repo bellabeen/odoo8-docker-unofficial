@@ -1,4 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_wtc_disbursement_all,wtc_disbursement_all,model_wtc_disbursement,,1,1,1,1
-access_wtc_disbursement_line_all,wtc_disbursement_line_all,model_wtc_disbursement_line,,1,1,1,1
-access_wtc_cancel_disbursement_all,wtc_cancel_disbursement_all,model_wtc_cancel_disbursement,,1,1,1,1

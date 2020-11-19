@@ -1,8 +1,0 @@
-import wtc_report_supplier
-import wtc_report_forwarder
-import wtc_report_principle
-import wtc_report_finance_company
-import wtc_report_biro_jasa
-import wtc_report_ahass
-import wtc_report_dealer
-import wtc_report_showroom

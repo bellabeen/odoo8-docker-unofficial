@@ -1,4 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_teds_pengiriman_bpkb,teds_pengiriman_bpkb,model_teds_pengiriman_bpkb,,1,0,0,0
-access_teds_pengiriman_bpkb_line,teds_pengiriman_bpkb_line,model_teds_pengiriman_bpkb_line,,1,0,0,0
-

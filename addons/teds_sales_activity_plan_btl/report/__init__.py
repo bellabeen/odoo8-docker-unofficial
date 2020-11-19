@@ -1,3 +1,0 @@
-import teds_sale_activity_report
-import teds_sales_activity_print
-import teds_sale_activity_ansuransi_report

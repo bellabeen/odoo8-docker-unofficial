@@ -1,1 +1,0 @@
-import teds_stock_location

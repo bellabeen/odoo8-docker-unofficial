@@ -1,7 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_teds_act_type_sumber_penjualan,teds_act_type_sumber_penjualan,model_teds_act_type_sumber_penjualan,,1,1,1,1
-access_teds_sales_plan_activity,teds_sales_plan_activity,model_teds_sales_plan_activity,,1,1,1,1
-access_teds_sales_plan_activity_line,teds_sales_plan_activity_line,model_teds_sales_plan_activity_line,,1,1,1,1
-access_teds_activity_detail_biaya,teds_activity_detail_biaya,model_teds_activity_detail_biaya,,1,1,1,1
-access_teds_sales_plan_history_location,teds_sales_plan_history_location,model_teds_sales_plan_history_location,,1,1,1,1
-access_teds_history_location_detail,teds_history_location_detail,model_teds_history_location_detail,,1,1,1,1

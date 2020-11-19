@@ -1,3 +1,0 @@
-import ir_sequence
-import hr_department
-import teds_master_act_budget

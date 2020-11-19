@@ -1,7 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_wtc_hutang_komisi_all,wtc_hutang_komisi all,model_wtc_hutang_komisi,,1,1,1,1
-access_wtc_hutang_komisi_line_all,wtc_hutang_komisi_line all,model_wtc_hutang_komisi_line,,1,1,1,1
-access_wtc_program_subsidi_all,wtc_program_subsidi all,model_wtc_program_subsidi,,1,1,1,1
-access_wtc_program_subsidi_line_all,wtc_program_subsidi_line all,model_wtc_program_subsidi_line,,1,1,1,1
-access_wtc_subsidi_barang_all,wtc_subsidi_barang all,model_wtc_subsidi_barang,,1,1,1,1
-access_wtc_subsidi_barang_line_all,wtc_subsidi_barang_line all,model_wtc_subsidi_barang_line,,1,1,1,1

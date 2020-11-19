@@ -1,5 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_teds_bank_mutasi_all,teds_bank_mutasi all,model_teds_bank_mutasi,,1,1,1,1
-access_teds_import_rekening_koran_all,teds_import_rekening_koran all,model_teds_import_rekening_koran,,1,1,1,1
-access_teds_bank_mutasi_all,teds_bank_mutasi all,model_teds_bank_mutasi,,1,1,1,1
-access_teds_bank_reconcile_all,_teds_bank_reconcile all,model_teds_bank_reconcile,,1,1,1,1

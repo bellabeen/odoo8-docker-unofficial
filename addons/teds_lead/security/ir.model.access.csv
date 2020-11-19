@@ -1,7 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_teds_lead,teds_lead,model_teds_lead,,1,0,0,0
-access_teds_lead_activity,teds_lead_activity,model_teds_lead_activity,,1,0,0,0
-access_teds_master_result_lead_activity,teds_master_result_lead_activity,model_teds_master_result_lead_activity,,1,0,0,0
-access_teds_lead_stage,teds_lead_stage,model_teds_lead_stage,,1,0,0,0
-
-

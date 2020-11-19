@@ -1,2 +1,0 @@
-import wtc_product
-import wtc_category_product

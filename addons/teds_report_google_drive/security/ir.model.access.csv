@@ -1,8 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_teds_report_google_drive_type,teds_report_google_drive_type,model_teds_report_google_drive_type,,1,0,0,0
-access_teds_report_google_drive_config,teds_report_google_drive_config,model_teds_report_google_drive_config,,1,0,0,0
-access_teds_report_google_drive_config_line,teds_report_google_drive_config_line,model_teds_report_google_drive_config_line,,1,0,0,0
-access_teds_report_google_drive,teds_report_google_drive,model_teds_report_google_drive,,1,0,0,0
-
-
-

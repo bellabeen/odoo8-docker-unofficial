@@ -1,1 +1,0 @@
-import teds_payment_request_type

@@ -1,1 +1,0 @@
-import teds_customer_payment_import

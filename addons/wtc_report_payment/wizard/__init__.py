@@ -1,1 +1,0 @@
-import wtc_report_payment_wizard

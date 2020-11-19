@@ -1,2 +1,0 @@
-import dms_stock_picking_history
-import dms_api_unfield_stock_picking

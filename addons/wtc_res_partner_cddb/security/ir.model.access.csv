@@ -1,4 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_wtc_questionnaire_all,wtc_questionnaire all,model_wtc_questionnaire,,1,1,1,1
-access_wtc_cddb_all,wtc_cddb all,model_wtc_cddb,,1,1,1,1
-access_wtc_kartu_keluarga_all,wtc_kartu_keluarga all,model_wtc_kartu_keluarga,,1,1,1,1

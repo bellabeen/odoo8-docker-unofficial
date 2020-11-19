@@ -1,5 +1,0 @@
-import teds_api_configuration
-import teds_api_log
-import teds_api_button
-import teds_api_list_partner
-import teds_api_manual_execute

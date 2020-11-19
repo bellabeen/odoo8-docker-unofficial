@@ -1,4 +1,0 @@
-import dms_api_penerimaan_stnk
-import dms_api_penerimaan_bpkb
-import dms_api_penyerahan_stnk
-import dms_api_penyerahan_bpkb

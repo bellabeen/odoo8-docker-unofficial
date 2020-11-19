@@ -1,5 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_wtc_listing_incentive_sales_all,wtc_listing_incentive_sales all,model_wtc_listing_incentive_sales,,1,1,1,1
-access_wtc_listing_incentive_sales_line_all,wtc_listing_incentive_sales_line all,model_wtc_listing_incentive_sales_line,,1,1,1,1
-access_wtc_import_absensi_all,wtc_import_absensi all,model_wtc_import_absensi,,1,1,1,1
-access_wtc_absensi_all,wtc_absensi all,model_wtc_absensi,,1,1,1,1

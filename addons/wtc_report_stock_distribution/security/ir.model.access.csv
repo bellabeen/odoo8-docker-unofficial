@@ -1,2 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_wtc_report_order_fulfillment_wizard_all,wtc_report_order_fulfillment_wizard all,model_wtc_report_order_fulfillment_wizard,,1,1,1,1

@@ -1,4 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_wtc_city_all,wtc_city all,model_wtc_city,,1,1,1,1
-access_wtc_kecamatan_all,wtc_kecamatan all,model_wtc_kecamatan,,1,1,1,1
-access_wtc_kelurahan_all,wtc_kelurahan all,model_wtc_kelurahan,,1,1,1,1

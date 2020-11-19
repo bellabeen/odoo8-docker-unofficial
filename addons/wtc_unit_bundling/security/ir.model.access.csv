@@ -1,3 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_wtc_unit_bundling_all,wtc_unit_bundling all,model_wtc_unit_bundling,,1,1,1,1
-access_wtc_unit_bundling_line_all,wtc_unit_bundling_line all,model_wtc_unit_bundling_line,,1,1,1,1

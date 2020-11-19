@@ -1,9 +1,0 @@
-import wtc_sale_order
-import wtc_account_invoice
-import res_partner
-import wtc_branch_config
-import wtc_procurement
-import report
-import wtc_generate_df
-import teds_stock_picking
-import teds_approval_so

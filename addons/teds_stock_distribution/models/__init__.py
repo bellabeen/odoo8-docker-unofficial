@@ -1,3 +1,0 @@
-import teds_stock_distribution
-import teds_stock_distribution_wizard
-import teds_stock_distribution_create_order_wizard

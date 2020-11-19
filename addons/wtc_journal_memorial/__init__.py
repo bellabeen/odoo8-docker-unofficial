@@ -1,2 +1,0 @@
-import wtc_journal_memorial
-import wtc_branch_config

@@ -1,2 +1,0 @@
-import wtc_report_intransit_beli
-import wtc_report_intransit_part_ahm

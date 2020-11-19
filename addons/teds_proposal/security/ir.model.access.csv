@@ -1,3 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_teds_proposal_all,teds_proposal all,model_teds_proposal,,1,1,1,1
-access_teds_advance_payment_proposal_all,teds_advance_payment_proposal all,model_teds_advance_payment_proposal,,1,1,1,1

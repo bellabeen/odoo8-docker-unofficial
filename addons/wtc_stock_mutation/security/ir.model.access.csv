@@ -1,7 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_wtc_mutation_request_all,wtc_mutation_request_all,model_wtc_mutation_request,,1,1,1,1
-access_wtc_mutation_request_line_all,wtc_mutation_request_line_all,model_wtc_mutation_request_line,,1,1,1,1
-access_wtc_stock_distribution_all,wtc_stock_distribution_all,model_wtc_stock_distribution,,1,1,1,1
-access_wtc_stock_distribution_line_all,wtc_stock_distribution_line_all,model_wtc_stock_distribution_line,,1,1,1,1
-access_wtc_mutation_order_all,wtc_mutation_order_all,model_wtc_mutation_order,,1,1,1,1
-access_wtc_mutation_order_line_all,wtc_mutation_order_line_all,model_wtc_mutation_order_line,,1,1,1,1

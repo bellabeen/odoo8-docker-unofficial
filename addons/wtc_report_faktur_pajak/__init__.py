@@ -1,3 +1,0 @@
-import wizard
-import report
-import wtc_report_faktur_pajak

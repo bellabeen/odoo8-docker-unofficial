@@ -1,1 +1,0 @@
-import wtc_account_journal
